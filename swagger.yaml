@@ -13,18 +13,32 @@ servers:
   - url: https://api.vocdoni.io/version/v3
 tags:
   - name: chain
-    description: Everything about internal Vochain information (transactions, organizations, blocks, stats...)
+    description: "Everything about internal Vochain information (transactions, organizations, blocks, stats...)"
     externalDocs:
       description: Find out more
       url: https://docs.vocdoni.io/architecture/services/gateway.html#api-definition
   - name: election
-    description: Create, manage and get information about elections
+    description: "Create, manage and get information about elections"
     externalDocs:
       description: Find out more
       url: https://docs.vocdoni.io/architecture/services/gateway.html#api-definition
-  # todo(kon) : is this `vote/` instead?
-  - name: envelope
-    description: Everything about envelopes
+  - name: account
+    description: "Account metadata management"
+    externalDocs:
+      description: Find out more
+      url: https://docs.vocdoni.io/architecture/services/gateway.html#api-definition
+  - name: wallet
+    description: "Wallet management functions"
+    externalDocs:
+      description: Find out more
+      url: https://docs.vocdoni.io/architecture/services/gateway.html#api-definition
+  - name: census
+    description: "Manage census: create, add, get..."
+    externalDocs:
+      description: Find out more
+      url: https://docs.vocdoni.io/architecture/services/gateway.html#api-definition
+  - name: vote
+    description: "Submit, get, and verify votes"
     externalDocs:
       description: Find out more
       url: https://docs.vocdoni.io/architecture/services/gateway.html#api-definition
@@ -410,7 +424,7 @@ paths:
                   "todo": "object"
                 }
 
-  /election/{electionID}:
+  /election/{electionId}:
     get:
       summary: "Full election information"
       operationId: electionById
@@ -473,7 +487,7 @@ paths:
                     "costExponent": 10000
                   }
                 }
-  /election/{electionID}/keys:
+  /election/{electionId}/keys:
     get:
       summary: "Keys for specific election"
       operationId: electionGetKeys
@@ -491,7 +505,7 @@ paths:
                 {
                   "todo": "object"
                 }
-  /election/{electionID}/votes:
+  /election/{electionId}/votes:
     get:
       summary: "Election paginated list of nullifiers (envelopes)"
       operationId: electionVotes
@@ -509,7 +523,7 @@ paths:
                 {
                   "todo": "object"
                 }
-  /election/{electionID}/votes/count:
+  /election/{electionId}/votes/count:
     get:
       summary: "Count of election emitted votes"
       operationId: electionVotesCount
@@ -555,26 +569,509 @@ paths:
                 }
 
   ####################################################
-  ## /???????/envelope                            ##
+  ## /account/                                      ##
   ####################################################
-
-  /envelope/{nullifier}:
+  /account/{address}:
     get:
+      summary: "Return specific account information"
+      operationId: accountByAddress
       tags:
-        - envelope
-      summary: Get the information of a vote
-      description:  >-
-        Get the content of an existing Vote Envelope. The envelope is identified by the nullifier. Height and
-        txIndex refer to the block height and the index on that block, respectively, of the transaction containing this 
-        vote envelope.
-      operationId: getEnvelope
+        - account
       parameters:
-        - name: nullifier
+        - name: address
           in: path
-          description: nullifier of the vote
+          description: "The account address also known as organization Id"
           required: true
           schema:
-            type: string
+            $ref: '#/components/schemas/OrganizationId'
+      responses:
+        "200":
+          description: "Return account data"
+          content:
+            # todo(kon): use schema reference object
+            application/json:
+              example: |-
+                {
+                  "address": "e0c941dd44ff4c43fc4683088b846ddb3234d169",
+                   "balance": 9568,
+                   "nonce": 186,
+                   "infoURI": "ipfs://",
+                   "processIndex": 38
+                }
+  /account:
+    post:
+      summary: "Register an account to the blockchain"
+      description: "It includes IPFS metadata upload"
+      operationId: accountSubmit
+      tags:
+        - account
+      requestBody:
+        description: "Base64 encoded blobs for txPayload and metadata objects"
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AccountSubmit'
+      responses:
+        "200":
+          description: "Return account data"
+          content:
+            # todo(kon): use schema reference object
+            application/json:
+              example: |-
+                {
+                  "txHash": "6cc88bda2da0edef96b8d4f75f0a8134953e9816918e665254ea06801af59a70",
+                  "metadataURL": "ipfs://QmVsMox8HynD9X2KZY1DtWc7GqatFfiD6PrxGgyzB3p4gz"
+                }
+
+  # TODOS:
+  #     - delegate add/del
+  #     - collectFaucet
+
+  ####################################################
+  ## /wallet                                        ##
+  ####################################################
+  /wallet/add/{privateKey}:
+    post:
+      summary: "Adds a new wallet to the storage using privateKey"
+      description: |-
+        - PrivateKey is a 32 bytes hexadecimal string
+        - Returns a Bearer Token that must be used on further wallet calls (if the token is lost, the API backend cannot
+        recover the privatekey).
+      operationId: addWallet
+      tags:
+        - wallet
+      parameters:
+        - name: privateKey
+          in: path
+          description: "32 bytes hexadecimal string"
+          required: true
+          schema:
+            $ref: '#/components/schemas/WalletPrivateKey'
+      responses:
+        "200":
+          description: "Return account data"
+          content:
+            # todo(kon): use schema reference object
+            application/json:
+              example: |-
+                {
+                  "todo": "object"
+                }
+  /wallet/bootstrap:
+    post:
+      # todo(kon): same as account?
+      summary: "Creates the account in the blockchain"
+      operationId: walletBootstrap
+      tags:
+        - wallet
+      responses:
+        "200":
+          description: "todo"
+          content:
+            # todo(kon): use schema reference object
+            application/json:
+              example: |-
+                {
+                  "todo": "object"
+                }
+  /wallet/transfer/{destAddr}/{amount}:
+    post:
+      summary: "Transfer VOC tokens"
+      description: "Transfer an amount of VOC tokens to a public destination address"
+      operationId: walletTransfer
+      tags:
+        - wallet
+      parameters:
+        - name: destAddr
+          in: path
+          description: "Wallet destination address"
+          required: true
+          schema:
+            $ref: '#/components/schemas/WalletAddress'
+        - name: amount
+          in: path
+          description: "Amount of VOC tokens"
+          required: true
+          schema:
+            type: number
+            format: double # todo(kon): is this type?
+            example: "2.2"
+      responses:
+        "200":
+          description: "todo"
+          content:
+            # todo(kon): use schema reference object
+            application/json:
+              example: |-
+                {
+                  "todo": "object"
+                }
+  /wallet/election:
+    post:
+      summary: "Creates an election"
+      operationId: walletElectionPost
+      tags:
+        - wallet
+      # todo(kon): duplicated with POST election/
+      # todo(kon): add parameters
+      responses:
+        "200":
+          description: "todo"
+          content:
+            # todo(kon): use schema reference object
+            application/json:
+              example: |-
+                {
+                  "title": "APIv2 test process",
+                  "description": "this is a testing election",
+                  "header": "https://unsplash.com/photos/-TgHIH6glbk/download?ixid=MnwxMjA3fDB8MXxhbGx8Mjd8fHx8fHwyfHwxNjY0MjI3ODM1&force=true&w=640",
+                  "streamUri": "",
+                  "startDate": "2022-09-27T00:40:29+02:00",
+                  "endDate": "2022-09-28T00:20:29+02:00",
+                  "voteType": {
+                    "uniqueChoices": false,
+                    "maxVoteOverwrites": 1,
+                    "costFromWeight": false,
+                    "costExponent": 10000
+                  },
+                  "electionType": {
+                    "autoStart": true,
+                    "interruptible": true,
+                    "dynamicCensus": false,
+                    "secretUntilTheEnd": false,
+                    "anonymous": false
+                  },
+                  "census": {
+                    "type": "csp",
+                    "publicKey": "f6e19f03a6304cd25ba0bc536c5cfa2b5b6c9aa05d2d25fce2aa0682bc18dbda"
+                  },
+                  "questions": [
+                    {
+                      "title": {
+                        "default": "first question"
+                      },
+                      "description": {
+                        "default": "lets vote"
+                      },
+                      "choices": [
+                        {
+                          "title": {
+                            "default": "this is a choice"
+                          },
+                          "value": 0
+                        },
+                        {
+                          "title": {
+                            "default": "this is another choice"
+                          },
+                          "value": 1
+                        }
+                      ]
+                    }
+                  ]
+                }
+
+  ####################################################
+  ## /census                                        ##
+  ####################################################
+  /census/{type}:
+    post:
+      summary: "Create new census"
+      description: |-
+        - Available types are: `weighted` and `zkindexed`
+        - Requires a Bearer token
+        - A new random censusID is created in the backend side, the census can only be managed by the Bearer token used when create is called
+      operationId: censusPost
+      security:
+        - bearerAuth: [ ]
+      tags:
+        - census
+      parameters:
+        - name: type
+          in: path
+          description: "Census types"
+          required: true
+          schema:
+            $ref: '#/components/schemas/CensusType'
+      responses:
+        "200":
+          description: "Return new census id"
+          content:
+            # todo(kon): use schema reference object
+            application/json:
+              example: |-
+                {
+                  "censusID":"b547a9c83ad7d61b568cf10ebbb25338d680810fa219fa69477cfbd860b386c2"
+                }
+  /census/{censusId}/add/{publicKey}/{weight}:
+    post:
+      summary: "Create new census"
+      description: |-
+        - Requires Bearer token 
+        - Adds a new wallet public key or wallet address to a census with a specific weight
+        - If the weight parameter is missing, weight=1 is considered
+      operationId: censusAddKey
+      security:
+        - bearerAuth: [ ]
+      tags:
+        - census
+      parameters:
+        - $ref: "#/components/parameters/censusIdParameter"
+        - $ref: "#/components/parameters/walletPublicKeyParameter"
+        - name: weight
+          in: path
+          description: "Vote weight for this key"
+          allowEmptyValue: true
+          required: true
+          schema:
+            type: integer
+            example: 1
+            default: 1
+      responses:
+        "200":
+          description: "todo"
+          content:
+            # todo(kon): use schema reference object
+            application/json:
+              example: |-
+                {
+                  "todo": "object"
+                }
+  /census/{censusId}/root:
+    get:
+      summary: "Returns the merkle root for the census"
+      description: |-
+        No require auth
+        todo: describe what is merkle root and what is used for 
+        (Is the hash of hashes of census public keys/addresses?)
+      operationId: censusRoot
+      tags:
+        - census
+      parameters:
+        - $ref: "#/components/parameters/censusIdParameter"
+      responses:
+        "200":
+          description: "Return Merkle Root"
+          content:
+            # todo(kon): use schema reference object
+            application/json:
+              example: |-
+                {
+                  "root":"b4a875b03f6f993e9daf804f67a6fc183b7a4d9b6390abcb6d7f56ff14d394b6"
+                }
+  /census/{censusId}/dump:
+    get:
+      summary: "Export census to JSON format"
+      description: |-
+        - Requires Bearer token
+      operationId: censusExport
+      security:
+        - bearerAuth: [ ]
+      tags:
+        - census
+      parameters:
+        - $ref: "#/components/parameters/censusIdParameter"
+      responses:
+        "200":
+          description: "Census JSON format"
+          content:
+            # todo(kon): use schema reference object
+            application/json:
+              example: |-
+                {
+                  "type": 1,
+                  "rootHash": "tKh1sD9vmT6dr4BPZ6b8GDt6TZtjkKvLbX9W/xTTlLY=",
+                  "data": "KLUv/QQAbQEAVAIgIAAUhfh8HDhDtV8Z+nm1Je+bGVzm2nEScc1pkPtfARvh4AIAAVQWAhsleowCTw==",
+                  "indexed": false
+                }
+  /census/{censusId}/import:
+    get:
+      summary: "Import census from JSON"
+      description: |-
+        - Requires Bearer token
+        - Previously exported
+      operationId: censusImport
+      security:
+        - bearerAuth: [ ]
+      tags:
+        - census
+      parameters:
+        - $ref: "#/components/parameters/censusIdParameter"
+      responses:
+        "200":
+          description: "todo"
+          content:
+            # todo(kon): use schema reference object
+            application/json:
+              example: |-
+                {
+                  "todo": "object"
+                }
+  /census/{censusId}/weight:
+    get:
+      summary: "Get total weight for the census "
+      description: |-
+        - Sum of all weights added
+        - Weight is a stringified bigInt
+        - Public
+      operationId: censusWeight
+      tags:
+        - census
+      parameters:
+        - $ref: "#/components/parameters/censusIdParameter"
+      responses:
+        "200":
+          description: "Stringified bigInt"
+          content:
+            # todo(kon): use schema reference object
+            application/json:
+              example: |-
+                {
+                  "weight": "2"
+                }
+  /census/{censusId}/size:
+    get:
+      summary: "Total number of keys added to the census"
+      description: |-
+        - Size as integer
+      operationId: censusSize
+      tags:
+        - census
+      parameters:
+        - $ref: "#/components/parameters/censusIdParameter"
+      responses:
+        "200":
+          description: "Size as integer"
+          content:
+            # todo(kon): use schema reference object
+            application/json:
+              example: |-
+                {
+                  "size": 1
+                }
+  /census/{censusId}/publish:
+    post:
+      summary: "Register the census to the storage (IPFS in our case)"
+      description: |-
+        - Requires Bearer token
+        - The census is copied to a new census identified by its Merkle Root
+        - The new census **cannot be modified**
+        - The census is published to the storage provided (IPFS in our case)
+        - The new census ID is returned and can be used for querying
+        - If a censusID with the same root has been already published, the request will fail
+      operationId: censusPublish
+      security:
+        - bearerAuth: [ ]
+      tags:
+        - census
+      parameters:
+        - $ref: "#/components/parameters/censusIdParameter"
+      responses:
+        "200":
+          description: "New census Id and storage uri"
+          content:
+            # todo(kon): use schema reference object
+            application/json:
+              example: |-
+                {
+                  "censusID": "b4a875b03f6f993e9daf804f67a6fc183b7a4d9b6390abcb6d7f56ff14d394b6",
+                  "uri": "ipfs://QmQDpDj2s3wNCaDyCkjUaxjPXS9LjmPnWcQoi3TanjRgU1"
+                }
+  /census/{censusId}/proof/{publicKey}:
+    get:
+      summary: "Prove the key and weight belong to the census root hash"
+      description: |-
+        - Requires Bearer token 
+        - Returns a merkle proof, proving the key and weight belongs to the census root hash
+      operationId: censusVerifyKey
+      security:
+        - bearerAuth: [ ]
+      tags:
+        - census
+      parameters:
+        - $ref: "#/components/parameters/censusIdParameter"
+        - $ref: "#/components/parameters/walletPublicKeyParameter"
+      responses:
+        "200":
+          description: "todo"
+          content:
+            # todo(kon): use schema reference object
+            application/json:
+              example: |-
+                {
+                  "weight": "2",
+                  "proof": "04000000",
+                  "value": "0200000000000000000000000000000000000000000000000000000000000000"
+                }
+  /census/{censusId}/verify:
+    get:
+      summary: "Verify merkle proof"
+      operationId: censusVerifyProof
+      tags:
+        - census
+      parameters:
+        - $ref: "#/components/parameters/censusIdParameter"
+#      todo(kon): this has a body, need to understand how it works
+#      requestBody:
+#        description: "Transaction payload Base64 string"
+#        required: true
+#        content:
+#          application/json:
+#            schema:
+#              $ref: '#/components/schemas/TransactionSubmit'
+      responses:
+        "200":
+          description: "todo"
+          content:
+            # todo(kon): use schema reference object
+            application/json:
+              example: |-
+                {
+                  "valid": true
+                }
+  /census/{censusId}/delete:
+    delete:
+      summary: "Delete unpublished census"
+      description: |-
+        - Requires Bearer token
+        - Deletes a census from the server storage
+        - Published census cannot be deleted
+      operationId: censusDelete
+      security:
+        - bearerAuth: [ ]
+      tags:
+        - census
+      parameters:
+        - $ref: "#/components/parameters/censusIdParameter"
+      responses:
+        # todo(kon): error responses
+        "200":
+          description: "todo"
+          content:
+            # todo(kon): use schema reference object
+            application/json:
+              example: |-
+                {
+                  "todo": "object"
+                }
+
+  ####################################################
+  ## /vote                                          ##
+  ####################################################
+
+  /vote/{voteId}:
+    get:
+      tags:
+        - vote
+      summary: Get full vote data
+      description:  >-
+        Get the content of an existing Vote. The Vote is identified by the nullifier. Height and
+        txIndex refer to the block height and the index on that block, respectively, of the transaction containing this 
+        vote envelope.
+      operationId: voteGet
+      parameters:
+        - $ref: "#/components/parameters/voteIdParameter"
       responses:
         '200':
           description: Successful operation
@@ -588,9 +1085,51 @@ paths:
           description: Vote not found
         '500':
           description: Internal server error
-
+  /vote:
+    post:
+      tags:
+        - vote
+      summary: Submit a vote
+      operationId: voteSubmit
+      # todo(kon): document json body
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            # todo(kon): use schema reference object
+            application/json:
+              example: |-
+                {
+                  "todo": "object"
+                }
+  /vote/verify/{electionId}/{voteId}:
+    post:
+      tags:
+        - vote
+      summary: Submit a vote
+      operationId: voteVerify
+      parameters:
+        - $ref: "#/components/parameters/voteIdParameter"
+        - $ref: "#/components/parameters/electionIdParameter"
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            # todo(kon): use schema reference object
+            application/json:
+              example: |-
+                {
+                  "todo": "object"
+                }
 components:
   parameters:
+    censusIdParameter:
+      name: censusId
+      in: path
+      description: "Census id"
+      required: true
+      schema:
+        $ref: '#/components/schemas/CensusId'
     paginatorParameter:
       name: page
       in: path
@@ -602,16 +1141,77 @@ components:
         example: 1
         default: 0
     electionIdParameter:
-      name: electionID
+      name: electionId
       in: path
       description: "Election Id on 0x format"
       required: true
       schema:
         $ref: '#/components/schemas/ElectionId'
+    voteIdParameter:
+      name: voteId
+      in: path
+      description: "Nullifier of the vote"
+      required: true
+      schema:
+        type: string
+    walletPublicKeyParameter:
+      name: publicKey
+      in: path
+      description: "Wallet Public key or address"
+      required: true
+      schema:
+        $ref: '#/components/schemas/WalletPublicKey'
+
   schemas:
     ####################################################
     ## Requests                                       ##
     ####################################################
+    AccountSubmit:
+      type: "object"
+      properties:
+        txPayload:
+          type: "string"
+        metadata: # TODO(kon): is this required?
+          type: "string"
+      example: |-
+        {
+         "txPayload": "<base64>",
+         "metadata": "<base64>"
+        }
+    BlockHeight:
+      type: integer
+      format: int32
+      example: 64924
+    BlockHash:
+      type: string
+      example: "0x8617ef5bef3551ab1386845ff03ee2f43e13377d6b75e9e2d656bfb0276c0170"
+    CreateElection:
+      type: "object"
+      required:
+        - txPayload
+      properties:
+        # todo(kon): how to document this?
+        txPayload:
+          type: "string"
+          example: "Base64 string of NewProcessTx transaction bytes"
+        metadata:
+          type: string
+          example: "optional: base64 string of election metadata JSON object"
+    CensusType:
+      type: string
+      enum: [ todo, todo2 ]
+    CensusId:
+      type: string
+      example: "b547a9c83ad7d61b568cf10ebbb25338d680810fa219fa69477cfbd860b386c2"
+    ElectionStatus:
+      type: string
+      enum: [ weighted, zkindexed ]
+      description: >
+        todo(kon): find this on docs
+      example: "weighted|zkindexed"
+    ElectionId:
+      type: string
+      example: "0xcfc47afa95bc60bc32ef4ff214df79ea8f53881640094d0ce63817bf6e867845"
     TransactionSubmit:
       type: "object"
       properties:
@@ -626,39 +1226,18 @@ components:
       type: integer
       format: int32
       example: 0
-    BlockHeight:
-      type: integer
-      format: int32
-      example: 64924
-    BlockHash:
-      type: string
-      example: "0x8617ef5bef3551ab1386845ff03ee2f43e13377d6b75e9e2d656bfb0276c0170"
     OrganizationId:
       type: string
       example: "0x370372b92514d81a0e3efb8eba9d036ae0877653"
-    ElectionStatus:
+    WalletPrivateKey:
       type: string
-      enum: [todo, todo2]
-      description: >
-        todo(kon): find this docs 
-         * `asc` - Ascending, from A to Z
-         * `desc` - Descending, from Z to A
-      example: "todo|todo2"
-    ElectionId:
+      example: "E9873D79C6D87DC0FB6A5778633389F4453213303DA61F20BD67FC233AA33262"
+    WalletPublicKey:
       type: string
-      example: "0xcfc47afa95bc60bc32ef4ff214df79ea8f53881640094d0ce63817bf6e867845"
-    CreateElection:
-      type: "object"
-      required:
-        - txPayload
-      properties:
-        # todo(kon): how to document this?
-        txPayload:
-          type: "string"
-          example: "Base64 string of NewProcessTx transaction bytes"
-        metadata:
-          type: string
-          example: "optional: base64 string of election metadata JSON object"
+      example: "1f7fecf4cf4564c88a92af55046c5c4bf0a76b9b5536f7d30962192552f92237"
+    WalletAddress:
+      type: string
+      example: "0x1ABC7154748D1CE5144478CDEB574AE244B939B5."
     TimeStamp:
       type: string
       format: date-time
@@ -710,3 +1289,12 @@ components:
             weight:
               type: string
               example: "1"
+  responses:
+    UnauthorizedError:
+      description: Access token is missing or invalid
+  securitySchemes:
+    bearerAuth: # arbitrary name for the security scheme
+      type: http
+      scheme: bearer
+security:
+  - bearerAuth: []
