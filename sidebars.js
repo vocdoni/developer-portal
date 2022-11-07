@@ -31,58 +31,6 @@ const sidebars = {
       items: require("./docs/vocdoni-api/sidebar.js"),
     },
   ],
-
-  "petstore-2.0.0": [
-    {
-      type: "html",
-      defaultStyle: true,
-      value: versionSelector(petstoreVersions),
-      className: "version-button",
-    },
-    {
-      type: "html",
-      defaultStyle: true,
-      value: versionCrumb(`v2.0.0`),
-    },
-    {
-      type: "category",
-      label: "Petstore",
-      link: {
-        type: "generated-index",
-        title: "Petstore API (latest)",
-        description:
-          "This is a sample server Petstore server. You can find out more about Swagger at http://swagger.io or on irc.freenode.net, #swagger. For this sample, you can use the api key special-key to test the authorization filters.",
-        slug: "/category/petstore-versioned-api",
-      },
-      items: require("./docs/petstore_versioned/sidebar.js"),
-    },
-  ],
-
-  "petstore-1.0.0": [
-    {
-      type: "html",
-      defaultStyle: true,
-      value: versionSelector(petstoreVersions),
-      className: "version-button",
-    },
-    {
-      type: "html",
-      defaultStyle: true,
-      value: versionCrumb(`v1.0.0`),
-    },
-    {
-      type: "category",
-      label: "Petstore",
-      link: {
-        type: "generated-index",
-        title: "Petstore API (v1.0.0)",
-        description:
-          "This is a sample server Petstore server. You can find out more about Swagger at http://swagger.io or on irc.freenode.net, #swagger. For this sample, you can use the api key special-key to test the authorization filters.",
-        slug: "/category/petstore-api-1.0.0",
-      },
-      items: require("./docs/petstore_versioned/1.0.0/sidebar.js"),
-    },
-  ],
 };
 
 module.exports = sidebars;

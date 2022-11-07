@@ -68,19 +68,9 @@ const config = {
             label: 'SDK',
           },
           {
-            type: "dropdown",
-            label: "Demos",
             position: "left",
-            items: [
-              {
-                label: "Vocdoni ",
-                to: "/category/vocdoni-api",
-              },
-              {
-                label: "Petstore (versioned example)",
-                to: "/category/petstore-versioned-api",
-              },
-            ],
+            label: "API",
+            to: "/category/vocdoni-api",
           },
           {
             href: "https://blog.vocdoni.io",
@@ -192,25 +182,6 @@ const config = {
         id: "openapi",
         docsPluginId: "classic",
         config: {
-          petstore_versioned: {
-            specPath: "examples/petstore.yaml",
-            outputDir: "docs/petstore_versioned", // No trailing slash
-            sidebarOptions: {
-              groupPathsBy: "tag",
-              categoryLinkSource: "tag",
-            },
-            version: "2.0.0", // Current version
-            label: "v2.0.0", // Current version label
-            baseUrl: "/petstore_versioned/swagger-petstore-yaml", // Leading slash is important
-            versions: {
-              "1.0.0": {
-                specPath: "examples/petstore-1.0.0.yaml",
-                outputDir: "docs/petstore_versioned/1.0.0", // No trailing slash
-                label: "v1.0.0",
-                baseUrl: "/petstore_versioned/1.0.0/swagger-petstore-yaml", // Leading slash is important
-              },
-            },
-          },
           vocdoni: {
             specPath: "swaggers/vocdoni-api.yaml",
             outputDir: "docs/vocdoni-api",
