@@ -10,14 +10,14 @@ const config = {
   title: "Vocdoni developer portal",
   tagline: "API and SDK docs to use the underlying Vocdoni Open Stack",
   url: "https://vocdoni.github.io/",
-  baseUrl: "/developer-portal",
+  baseUrl: "/",
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
   organizationName: "vocdoni",
   projectName: "developer-portal",
   deploymentBranch: "gh-pages",
-  // trailingSlash: false,
+  trailingSlash: false,
 
   presets: [
     [
