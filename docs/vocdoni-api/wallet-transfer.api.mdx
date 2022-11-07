@@ -1,0 +1,33 @@
+---
+id: wallet-transfer
+title: "Transfer VOC tokens"
+description: "Transfer an amount of VOC tokens to a public destination address"
+sidebar_label: Transfer VOC tokens
+hide_title: true
+hide_table_of_contents: true
+api: {"description":"Transfer an amount of VOC tokens to a public destination address","operationId":"walletTransfer","tags":["wallet"],"parameters":[{"name":"destAddr","in":"path","description":"Wallet destination address","required":true,"schema":{"type":"string","example":"0x1ABC7154748D1CE5144478CDEB574AE244B939B5."}},{"name":"amount","in":"path","description":"Amount of VOC tokens","required":true,"schema":{"type":"number","format":"double","example":"2.2"}}],"responses":{"200":{"description":"todo","content":{"application/json":{"example":"{\n  \"todo\": \"object\"\n}"}}}},"method":"post","path":"/wallet/transfer/{destAddr}/{amount}","servers":[{"url":"https://api.vocdoni.io/version/v3"}],"security":[{"bearerAuth":[]}],"securitySchemes":{"bearerAuth":{"type":"http","scheme":"bearer"}},"info":{"version":"2.0.0","title":"Vocdoni API","license":{"name":"MIT"},"description":"**Goals and Objectives:** The Vocdoni API is meant to be the entry point for external integrators to add voting capabilities to an existing  CRM, customer base and product experience. The API should act as a satellite that facilitates creating votes using  Vocdoni, without the hassle of learning a deep platform."},"postman":{"name":"Transfer VOC tokens","description":{"content":"Transfer an amount of VOC tokens to a public destination address","type":"text/plain"},"url":{"path":["wallet","transfer",":destAddr",":amount"],"host":["{{baseUrl}}"],"query":[],"variable":[{"disabled":false,"description":{"content":"(Required) Wallet destination address","type":"text/plain"},"type":"any","value":"","key":"destAddr"},{"disabled":false,"description":{"content":"(Required) Amount of VOC tokens","type":"text/plain"},"type":"any","value":"","key":"amount"}]},"header":[{"key":"Accept","value":"application/json"}],"method":"POST"}}
+sidebar_class_name: "post api-method"
+info_path: vocdoni-api/vocdoni-api
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem"
+import SchemaTabs from "@theme/SchemaTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import TabItem from "@theme/TabItem";
+
+## Transfer VOC tokens
+
+
+
+Transfer an amount of VOC tokens to a public destination address
+
+<details style={{"marginBottom":"1rem"}} data-collapsed={false} open={true}><summary style={{}}><strong>Path Parameters</strong></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"destAddr","in":"path","description":"Wallet destination address","required":true,"schema":{"type":"string","example":"0x1ABC7154748D1CE5144478CDEB574AE244B939B5."}}}></ParamsItem><ParamsItem className={"paramsItem"} param={{"name":"amount","in":"path","description":"Amount of VOC tokens","required":true,"schema":{"type":"number","format":"double","example":"2.2"}}}></ParamsItem></ul></div></details><div><ApiTabs><TabItem label={"200"} value={"200"}><div>
+
+todo
+
+</div><div><MimeTabs schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs><TabItem label={"Example"} value={"Example"}><ResponseSamples responseExample={"{\n  \"todo\": \"object\"\n}"} language={"json"}></ResponseSamples></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem></ApiTabs></div>
+      

@@ -1,0 +1,33 @@
+---
+id: organization-count
+title: "Get registered organizations count"
+description: "Get registered organizations count"
+sidebar_label: Get registered organizations count
+hide_title: true
+hide_table_of_contents: true
+api: {"operationId":"organizationCount","tags":["chain"],"responses":{"200":{"description":"It return corresponding blockHeight and transactionIndex","content":{"application/json":{"example":"{\n  \"todo\": \"object\"\n}"}}}},"description":"Get registered organizations count","method":"get","path":"/chain/organization/count","servers":[{"url":"https://api.vocdoni.io/version/v3"}],"security":[{"bearerAuth":[]}],"securitySchemes":{"bearerAuth":{"type":"http","scheme":"bearer"}},"info":{"version":"2.0.0","title":"Vocdoni API","license":{"name":"MIT"},"description":"**Goals and Objectives:** The Vocdoni API is meant to be the entry point for external integrators to add voting capabilities to an existing  CRM, customer base and product experience. The API should act as a satellite that facilitates creating votes using  Vocdoni, without the hassle of learning a deep platform."},"postman":{"name":"Get registered organizations count","description":{"type":"text/plain"},"url":{"path":["chain","organization","count"],"host":["{{baseUrl}}"],"query":[],"variable":[]},"header":[{"key":"Accept","value":"application/json"}],"method":"GET"}}
+sidebar_class_name: "get api-method"
+info_path: vocdoni-api/vocdoni-api
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem"
+import SchemaTabs from "@theme/SchemaTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import TabItem from "@theme/TabItem";
+
+## Get registered organizations count
+
+
+
+Get registered organizations count
+
+<div><ApiTabs><TabItem label={"200"} value={"200"}><div>
+
+It return corresponding blockHeight and transactionIndex
+
+</div><div><MimeTabs schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs><TabItem label={"Example"} value={"Example"}><ResponseSamples responseExample={"{\n  \"todo\": \"object\"\n}"} language={"json"}></ResponseSamples></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem></ApiTabs></div>
+      

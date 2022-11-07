@@ -1,0 +1,33 @@
+---
+id: elections-by-organization-and-status
+title: "Get elections by organization id and status"
+description: "Default page is 0 if no page specified"
+sidebar_label: Get elections by organization id and status
+hide_title: true
+hide_table_of_contents: true
+api: {"description":"Default page is 0 if no page specified","operationId":"electionsByOrganizationAndStatus","tags":["election"],"parameters":[{"name":"organizationID","in":"path","description":"Organization Id","required":true,"schema":{"type":"string","example":"0x370372b92514d81a0e3efb8eba9d036ae0877653"}},{"name":"status","in":"path","description":"Status of the election","required":true,"schema":{"type":"string","enum":["weighted","zkindexed"],"description":"todo(kon): find this on docs\n","example":"weighted|zkindexed"}},{"name":"page","in":"path","description":"When returning a list it define de page number. If empty, default is 0","allowEmptyValue":true,"required":true,"schema":{"type":"integer","example":1,"default":0}}],"responses":{"200":{"description":"It return a list of elections","content":{"application/json":{"example":"{\n  \"todo\": \"object\"\n}"}}}},"method":"get","path":"/election/list/{organizationID}/status/{status}/{page}","servers":[{"url":"https://api.vocdoni.io/version/v3"}],"security":[{"bearerAuth":[]}],"securitySchemes":{"bearerAuth":{"type":"http","scheme":"bearer"}},"info":{"version":"2.0.0","title":"Vocdoni API","license":{"name":"MIT"},"description":"**Goals and Objectives:** The Vocdoni API is meant to be the entry point for external integrators to add voting capabilities to an existing  CRM, customer base and product experience. The API should act as a satellite that facilitates creating votes using  Vocdoni, without the hassle of learning a deep platform."},"postman":{"name":"Get elections by organization id and status","description":{"content":"Default page is 0 if no page specified","type":"text/plain"},"url":{"path":["election","list",":organizationID","status",":status",":page"],"host":["{{baseUrl}}"],"query":[],"variable":[{"disabled":false,"description":{"content":"(Required) Organization Id","type":"text/plain"},"type":"any","value":"","key":"organizationID"},{"disabled":false,"description":{"content":"(Required) Status of the election","type":"text/plain"},"type":"any","value":"","key":"status"},{"disabled":false,"description":{"content":"(Required) When returning a list it define de page number. If empty, default is 0","type":"text/plain"},"type":"any","value":"","key":"page"}]},"header":[{"key":"Accept","value":"application/json"}],"method":"GET"}}
+sidebar_class_name: "get api-method"
+info_path: vocdoni-api/vocdoni-api
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem"
+import SchemaTabs from "@theme/SchemaTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import TabItem from "@theme/TabItem";
+
+## Get elections by organization id and status
+
+
+
+Default page is 0 if no page specified
+
+<details style={{"marginBottom":"1rem"}} data-collapsed={false} open={true}><summary style={{}}><strong>Path Parameters</strong></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"organizationID","in":"path","description":"Organization Id","required":true,"schema":{"type":"string","example":"0x370372b92514d81a0e3efb8eba9d036ae0877653"}}}></ParamsItem><ParamsItem className={"paramsItem"} param={{"name":"status","in":"path","description":"Status of the election","required":true,"schema":{"type":"string","enum":["weighted","zkindexed"],"description":"todo(kon): find this on docs\n","example":"weighted|zkindexed"}}}></ParamsItem><ParamsItem className={"paramsItem"} param={{"name":"page","in":"path","description":"When returning a list it define de page number. If empty, default is 0","allowEmptyValue":true,"required":true,"schema":{"type":"integer","example":1,"default":0}}}></ParamsItem></ul></div></details><div><ApiTabs><TabItem label={"200"} value={"200"}><div>
+
+It return a list of elections
+
+</div><div><MimeTabs schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs><TabItem label={"Example"} value={"Example"}><ResponseSamples responseExample={"{\n  \"todo\": \"object\"\n}"} language={"json"}></ResponseSamples></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem></ApiTabs></div>
+      

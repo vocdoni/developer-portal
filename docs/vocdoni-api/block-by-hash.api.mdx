@@ -1,0 +1,33 @@
+---
+id: block-by-hash
+title: "Get full block information by block hash"
+description: "Get full block information by block hash"
+sidebar_label: Get full block information by block hash
+hide_title: true
+hide_table_of_contents: true
+api: {"operationId":"blockByHash","tags":["chain"],"parameters":[{"name":"hash","in":"path","description":"Block hash","required":true,"schema":{"type":"string","example":"0x8617ef5bef3551ab1386845ff03ee2f43e13377d6b75e9e2d656bfb0276c0170"}}],"responses":{"200":{"description":"Full block information","content":{"application/json":{"example":"{\n  \"todo\": \"object\"\n}"}}}},"description":"Get full block information by block hash","method":"get","path":"/chain/block/hash/{hash}","servers":[{"url":"https://api.vocdoni.io/version/v3"}],"security":[{"bearerAuth":[]}],"securitySchemes":{"bearerAuth":{"type":"http","scheme":"bearer"}},"info":{"version":"2.0.0","title":"Vocdoni API","license":{"name":"MIT"},"description":"**Goals and Objectives:** The Vocdoni API is meant to be the entry point for external integrators to add voting capabilities to an existing  CRM, customer base and product experience. The API should act as a satellite that facilitates creating votes using  Vocdoni, without the hassle of learning a deep platform."},"postman":{"name":"Get full block information by block hash","description":{"type":"text/plain"},"url":{"path":["chain","block","hash",":hash"],"host":["{{baseUrl}}"],"query":[],"variable":[{"disabled":false,"description":{"content":"(Required) Block hash","type":"text/plain"},"type":"any","value":"","key":"hash"}]},"header":[{"key":"Accept","value":"application/json"}],"method":"GET"}}
+sidebar_class_name: "get api-method"
+info_path: vocdoni-api/vocdoni-api
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem"
+import SchemaTabs from "@theme/SchemaTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import TabItem from "@theme/TabItem";
+
+## Get full block information by block hash
+
+
+
+Get full block information by block hash
+
+<details style={{"marginBottom":"1rem"}} data-collapsed={false} open={true}><summary style={{}}><strong>Path Parameters</strong></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"hash","in":"path","description":"Block hash","required":true,"schema":{"type":"string","example":"0x8617ef5bef3551ab1386845ff03ee2f43e13377d6b75e9e2d656bfb0276c0170"}}}></ParamsItem></ul></div></details><div><ApiTabs><TabItem label={"200"} value={"200"}><div>
+
+Full block information
+
+</div><div><MimeTabs schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs><TabItem label={"Example"} value={"Example"}><ResponseSamples responseExample={"{\n  \"todo\": \"object\"\n}"} language={"json"}></ResponseSamples></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem></ApiTabs></div>
+      

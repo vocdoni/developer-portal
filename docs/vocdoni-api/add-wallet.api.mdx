@@ -1,0 +1,37 @@
+---
+id: add-wallet
+title: "Adds a new wallet to the storage using privateKey"
+description: "- PrivateKey is a 32 bytes hexadecimal string
+- Returns a Bearer Token that must be used on further wallet calls (if the token is lost, the API backend cannot
+recover the privatekey)."
+sidebar_label: Adds a new wallet to the storage using privateKey
+hide_title: true
+hide_table_of_contents: true
+api: {"description":"- PrivateKey is a 32 bytes hexadecimal string\n- Returns a Bearer Token that must be used on further wallet calls (if the token is lost, the API backend cannot\nrecover the privatekey).","operationId":"addWallet","tags":["wallet"],"parameters":[{"name":"privateKey","in":"path","description":"32 bytes hexadecimal string","required":true,"schema":{"type":"string","example":"E9873D79C6D87DC0FB6A5778633389F4453213303DA61F20BD67FC233AA33262"}}],"responses":{"200":{"description":"Return account data","content":{"application/json":{"example":"{\n  \"todo\": \"object\"\n}"}}}},"method":"post","path":"/wallet/add/{privateKey}","servers":[{"url":"https://api.vocdoni.io/version/v3"}],"security":[{"bearerAuth":[]}],"securitySchemes":{"bearerAuth":{"type":"http","scheme":"bearer"}},"info":{"version":"2.0.0","title":"Vocdoni API","license":{"name":"MIT"},"description":"**Goals and Objectives:** The Vocdoni API is meant to be the entry point for external integrators to add voting capabilities to an existing  CRM, customer base and product experience. The API should act as a satellite that facilitates creating votes using  Vocdoni, without the hassle of learning a deep platform."},"postman":{"name":"Adds a new wallet to the storage using privateKey","description":{"content":"- PrivateKey is a 32 bytes hexadecimal string\n- Returns a Bearer Token that must be used on further wallet calls (if the token is lost, the API backend cannot\nrecover the privatekey).","type":"text/plain"},"url":{"path":["wallet","add",":privateKey"],"host":["{{baseUrl}}"],"query":[],"variable":[{"disabled":false,"description":{"content":"(Required) 32 bytes hexadecimal string","type":"text/plain"},"type":"any","value":"","key":"privateKey"}]},"header":[{"key":"Accept","value":"application/json"}],"method":"POST"}}
+sidebar_class_name: "post api-method"
+info_path: vocdoni-api/vocdoni-api
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem"
+import SchemaTabs from "@theme/SchemaTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import TabItem from "@theme/TabItem";
+
+## Adds a new wallet to the storage using privateKey
+
+
+
+- PrivateKey is a 32 bytes hexadecimal string
+- Returns a Bearer Token that must be used on further wallet calls (if the token is lost, the API backend cannot
+recover the privatekey).
+
+<details style={{"marginBottom":"1rem"}} data-collapsed={false} open={true}><summary style={{}}><strong>Path Parameters</strong></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"privateKey","in":"path","description":"32 bytes hexadecimal string","required":true,"schema":{"type":"string","example":"E9873D79C6D87DC0FB6A5778633389F4453213303DA61F20BD67FC233AA33262"}}}></ParamsItem></ul></div></details><div><ApiTabs><TabItem label={"200"} value={"200"}><div>
+
+Return account data
+
+</div><div><MimeTabs schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs><TabItem label={"Example"} value={"Example"}><ResponseSamples responseExample={"{\n  \"todo\": \"object\"\n}"} language={"json"}></ResponseSamples></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem></ApiTabs></div>
+      

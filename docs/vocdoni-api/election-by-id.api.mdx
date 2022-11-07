@@ -1,0 +1,33 @@
+---
+id: election-by-id
+title: "Full election information"
+description: "Full election information"
+sidebar_label: Full election information
+hide_title: true
+hide_table_of_contents: true
+api: {"operationId":"electionById","tags":["election"],"parameters":[{"name":"electionId","in":"path","description":"Election Id on 0x format","required":true,"schema":{"type":"string","example":"0xcfc47afa95bc60bc32ef4ff214df79ea8f53881640094d0ce63817bf6e867845"}}],"responses":{"200":{"description":"Election full info","content":{"application/json":{"example":"{\n  \"electionId\": \"93c39f49436963051f60ae1d0ce4ad788f265dcdd6177e10e17c4a86b2c95035\",\n  \"type\": \"anonymous open single\",\n  \"status\": \"READY\",\n  \"startDate\": \"2023-02-02T04:06:07.059306547+01:00\",\n  \"endDate\": \"2023-02-08T06:10:37.059306844+01:00\",\n  \"voteCount\": 6,\n  \"finalResults\": false,\n  \"result\": [\n    {\n      \"value\": [\n        \"6049752455547578274294031\",\n        \"33965616553398058290000\",\n        \"0\"\n      ]\n    }\n  ],\n  \"electionCount\": 0,\n  \"census\": {\n    \"censusOrigin\": \"OFF_CHAIN_CA\",\n    \"censusRoot\": \"27b187b6346959574285b9ac59fbe1760d054fcdac9200c3546f0ba871293398\",\n    \"postRegisterCensusRoot\": \"\",\n    \"censusURL\": \"\"\n  },\n  \"metadataURL\": \"ipfs://QmXxgLNRSeK6jtFkJ9TsL8nYxFnJ8RKa2xXHUFKGankX6k\",\n  \"creationTime\": \"2022-09-25T07:39:27+02:00\",\n  \"voteMode\": {\n    \"serial\": false,\n    \"anonymous\": true,\n    \"encryptedVotes\": false,\n    \"uniqueValues\": false,\n    \"costFromWeight\": false\n  },\n  \"electionMode\": {\n    \"autoStart\": true,\n    \"interruptible\": false,\n    \"dynamicCensus\": false,\n    \"encryptedMetaData\": false,\n    \"preRegister\": false\n  },\n  \"tallyMode\": {\n    \"maxCount\": 1,\n    \"maxValue\": 2,\n    \"maxVoteOverwrites\": 1,\n    \"maxTotalCost\": 0,\n    \"costExponent\": 10000\n  }\n}"}}}},"description":"Full election information","method":"get","path":"/election/{electionId}","servers":[{"url":"https://api.vocdoni.io/version/v3"}],"security":[{"bearerAuth":[]}],"securitySchemes":{"bearerAuth":{"type":"http","scheme":"bearer"}},"info":{"version":"2.0.0","title":"Vocdoni API","license":{"name":"MIT"},"description":"**Goals and Objectives:** The Vocdoni API is meant to be the entry point for external integrators to add voting capabilities to an existing  CRM, customer base and product experience. The API should act as a satellite that facilitates creating votes using  Vocdoni, without the hassle of learning a deep platform."},"postman":{"name":"Full election information","description":{"type":"text/plain"},"url":{"path":["election",":electionId"],"host":["{{baseUrl}}"],"query":[],"variable":[{"disabled":false,"description":{"content":"(Required) Election Id on 0x format","type":"text/plain"},"type":"any","value":"","key":"electionId"}]},"header":[{"key":"Accept","value":"application/json"}],"method":"GET"}}
+sidebar_class_name: "get api-method"
+info_path: vocdoni-api/vocdoni-api
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem"
+import SchemaTabs from "@theme/SchemaTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import TabItem from "@theme/TabItem";
+
+## Full election information
+
+
+
+Full election information
+
+<details style={{"marginBottom":"1rem"}} data-collapsed={false} open={true}><summary style={{}}><strong>Path Parameters</strong></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"electionId","in":"path","description":"Election Id on 0x format","required":true,"schema":{"type":"string","example":"0xcfc47afa95bc60bc32ef4ff214df79ea8f53881640094d0ce63817bf6e867845"}}}></ParamsItem></ul></div></details><div><ApiTabs><TabItem label={"200"} value={"200"}><div>
+
+Election full info
+
+</div><div><MimeTabs schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs><TabItem label={"Example"} value={"Example"}><ResponseSamples responseExample={"{\n  \"electionId\": \"93c39f49436963051f60ae1d0ce4ad788f265dcdd6177e10e17c4a86b2c95035\",\n  \"type\": \"anonymous open single\",\n  \"status\": \"READY\",\n  \"startDate\": \"2023-02-02T04:06:07.059306547+01:00\",\n  \"endDate\": \"2023-02-08T06:10:37.059306844+01:00\",\n  \"voteCount\": 6,\n  \"finalResults\": false,\n  \"result\": [\n    {\n      \"value\": [\n        \"6049752455547578274294031\",\n        \"33965616553398058290000\",\n        \"0\"\n      ]\n    }\n  ],\n  \"electionCount\": 0,\n  \"census\": {\n    \"censusOrigin\": \"OFF_CHAIN_CA\",\n    \"censusRoot\": \"27b187b6346959574285b9ac59fbe1760d054fcdac9200c3546f0ba871293398\",\n    \"postRegisterCensusRoot\": \"\",\n    \"censusURL\": \"\"\n  },\n  \"metadataURL\": \"ipfs://QmXxgLNRSeK6jtFkJ9TsL8nYxFnJ8RKa2xXHUFKGankX6k\",\n  \"creationTime\": \"2022-09-25T07:39:27+02:00\",\n  \"voteMode\": {\n    \"serial\": false,\n    \"anonymous\": true,\n    \"encryptedVotes\": false,\n    \"uniqueValues\": false,\n    \"costFromWeight\": false\n  },\n  \"electionMode\": {\n    \"autoStart\": true,\n    \"interruptible\": false,\n    \"dynamicCensus\": false,\n    \"encryptedMetaData\": false,\n    \"preRegister\": false\n  },\n  \"tallyMode\": {\n    \"maxCount\": 1,\n    \"maxValue\": 2,\n    \"maxVoteOverwrites\": 1,\n    \"maxTotalCost\": 0,\n    \"costExponent\": 10000\n  }\n}"} language={"json"}></ResponseSamples></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem></ApiTabs></div>
+      

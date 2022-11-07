@@ -1,0 +1,33 @@
+---
+id: wallet-election-post
+title: "Creates an election"
+description: "Creates an election"
+sidebar_label: Creates an election
+hide_title: true
+hide_table_of_contents: true
+api: {"operationId":"walletElectionPost","tags":["wallet"],"responses":{"200":{"description":"todo","content":{"application/json":{"example":"{\n  \"title\": \"APIv2 test process\",\n  \"description\": \"this is a testing election\",\n  \"header\": \"https://unsplash.com/photos/-TgHIH6glbk/download?ixid=MnwxMjA3fDB8MXxhbGx8Mjd8fHx8fHwyfHwxNjY0MjI3ODM1&force=true&w=640\",\n  \"streamUri\": \"\",\n  \"startDate\": \"2022-09-27T00:40:29+02:00\",\n  \"endDate\": \"2022-09-28T00:20:29+02:00\",\n  \"voteType\": {\n    \"uniqueChoices\": false,\n    \"maxVoteOverwrites\": 1,\n    \"costFromWeight\": false,\n    \"costExponent\": 10000\n  },\n  \"electionType\": {\n    \"autoStart\": true,\n    \"interruptible\": true,\n    \"dynamicCensus\": false,\n    \"secretUntilTheEnd\": false,\n    \"anonymous\": false\n  },\n  \"census\": {\n    \"type\": \"csp\",\n    \"publicKey\": \"f6e19f03a6304cd25ba0bc536c5cfa2b5b6c9aa05d2d25fce2aa0682bc18dbda\"\n  },\n  \"questions\": [\n    {\n      \"title\": {\n        \"default\": \"first question\"\n      },\n      \"description\": {\n        \"default\": \"lets vote\"\n      },\n      \"choices\": [\n        {\n          \"title\": {\n            \"default\": \"this is a choice\"\n          },\n          \"value\": 0\n        },\n        {\n          \"title\": {\n            \"default\": \"this is another choice\"\n          },\n          \"value\": 1\n        }\n      ]\n    }\n  ]\n}"}}}},"description":"Creates an election","method":"post","path":"/wallet/election","servers":[{"url":"https://api.vocdoni.io/version/v3"}],"security":[{"bearerAuth":[]}],"securitySchemes":{"bearerAuth":{"type":"http","scheme":"bearer"}},"info":{"version":"2.0.0","title":"Vocdoni API","license":{"name":"MIT"},"description":"**Goals and Objectives:** The Vocdoni API is meant to be the entry point for external integrators to add voting capabilities to an existing  CRM, customer base and product experience. The API should act as a satellite that facilitates creating votes using  Vocdoni, without the hassle of learning a deep platform."},"postman":{"name":"Creates an election","description":{"type":"text/plain"},"url":{"path":["wallet","election"],"host":["{{baseUrl}}"],"query":[],"variable":[]},"header":[{"key":"Accept","value":"application/json"}],"method":"POST"}}
+sidebar_class_name: "post api-method"
+info_path: vocdoni-api/vocdoni-api
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem"
+import SchemaTabs from "@theme/SchemaTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import TabItem from "@theme/TabItem";
+
+## Creates an election
+
+
+
+Creates an election
+
+<div><ApiTabs><TabItem label={"200"} value={"200"}><div>
+
+todo
+
+</div><div><MimeTabs schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs><TabItem label={"Example"} value={"Example"}><ResponseSamples responseExample={"{\n  \"title\": \"APIv2 test process\",\n  \"description\": \"this is a testing election\",\n  \"header\": \"https://unsplash.com/photos/-TgHIH6glbk/download?ixid=MnwxMjA3fDB8MXxhbGx8Mjd8fHx8fHwyfHwxNjY0MjI3ODM1&force=true&w=640\",\n  \"streamUri\": \"\",\n  \"startDate\": \"2022-09-27T00:40:29+02:00\",\n  \"endDate\": \"2022-09-28T00:20:29+02:00\",\n  \"voteType\": {\n    \"uniqueChoices\": false,\n    \"maxVoteOverwrites\": 1,\n    \"costFromWeight\": false,\n    \"costExponent\": 10000\n  },\n  \"electionType\": {\n    \"autoStart\": true,\n    \"interruptible\": true,\n    \"dynamicCensus\": false,\n    \"secretUntilTheEnd\": false,\n    \"anonymous\": false\n  },\n  \"census\": {\n    \"type\": \"csp\",\n    \"publicKey\": \"f6e19f03a6304cd25ba0bc536c5cfa2b5b6c9aa05d2d25fce2aa0682bc18dbda\"\n  },\n  \"questions\": [\n    {\n      \"title\": {\n        \"default\": \"first question\"\n      },\n      \"description\": {\n        \"default\": \"lets vote\"\n      },\n      \"choices\": [\n        {\n          \"title\": {\n            \"default\": \"this is a choice\"\n          },\n          \"value\": 0\n        },\n        {\n          \"title\": {\n            \"default\": \"this is another choice\"\n          },\n          \"value\": 1\n        }\n      ]\n    }\n  ]\n}"} language={"json"}></ResponseSamples></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem></ApiTabs></div>
+      

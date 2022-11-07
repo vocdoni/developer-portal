@@ -1,0 +1,37 @@
+---
+id: transaction-submit
+title: "Sumbit a transaction"
+description: "Sumbit a transaction"
+sidebar_label: Sumbit a transaction
+hide_title: true
+hide_table_of_contents: true
+api: {"operationId":"transactionSubmit","tags":["chain"],"requestBody":{"description":"Transaction payload Base64 string","required":true,"content":{"application/json":{"schema":{"type":"object","properties":{"payload":{"type":"string"}},"example":"{ \"payload\": \"base64 string\" }"}}}},"responses":{"200":{"description":"OK"}},"description":"Sumbit a transaction","method":"post","path":"/chain/transaction/submit","servers":[{"url":"https://api.vocdoni.io/version/v3"}],"security":[{"bearerAuth":[]}],"securitySchemes":{"bearerAuth":{"type":"http","scheme":"bearer"}},"jsonRequestBodyExample":"{ \"payload\": \"base64 string\" }","info":{"version":"2.0.0","title":"Vocdoni API","license":{"name":"MIT"},"description":"**Goals and Objectives:** The Vocdoni API is meant to be the entry point for external integrators to add voting capabilities to an existing  CRM, customer base and product experience. The API should act as a satellite that facilitates creating votes using  Vocdoni, without the hassle of learning a deep platform."},"postman":{"name":"Sumbit a transaction","description":{"type":"text/plain"},"url":{"path":["chain","transaction","submit"],"host":["{{baseUrl}}"],"query":[],"variable":[]},"header":[{"key":"Content-Type","value":"application/json"}],"method":"POST","body":{"mode":"raw","raw":"\"\"","options":{"raw":{"language":"json"}}}}}
+sidebar_class_name: "post api-method"
+info_path: vocdoni-api/vocdoni-api
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem"
+import SchemaTabs from "@theme/SchemaTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import TabItem from "@theme/TabItem";
+
+## Sumbit a transaction
+
+
+
+Sumbit a transaction
+
+<MimeTabs><TabItem label={"application/json"} value={"application/json-schema"}><details style={{}} data-collapsed={false} open={true}><summary style={{"textAlign":"left"}}><strong>Request Body</strong><strong style={{"fontSize":"var(--ifm-code-font-size)","color":"var(--openapi-required)"}}> required</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}><div style={{"marginTop":"1rem","marginBottom":"1rem"}}>
+
+Transaction payload Base64 string
+
+</div></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={false} name={"payload"} required={false} schemaDescription={undefined} schemaName={"string"} qualifierMessage={undefined} defaultValue={undefined}></SchemaItem></ul></details></TabItem></MimeTabs><div><ApiTabs><TabItem label={"200"} value={"200"}><div>
+
+OK
+
+</div><div></div></TabItem></ApiTabs></div>
+      
