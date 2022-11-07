@@ -5,50 +5,44 @@ info:
   license:
     name: MIT
   description: >-
-    **Goals and Objectives:**
+    **Goals and Objectives:** çsda
+    
     The Vocdoni API is meant to be the entry point for external integrators to add voting capabilities to an existing 
     CRM, customer base and product experience. The API should act as a satellite that facilitates creating votes using 
     Vocdoni, without the hassle of learning a deep platform.
+    
+    This API should allow to perform the basic primitives of the Vocdoni Protocol such as manage organizations, voting 
+    processes and be able to vote, abstracting as much as possible the complexity and doing so, offering simple and 
+    clear methods to perform such actions.
+
+    Last but not least, the API should be modular and allow further expansion with other independent modules such as 
+    payments, CSPs, SSI providers, CRM’s, etc. becoming a open voting block/”lego” for the Web2.0 & Web 3.0 world.
+
 servers:
   - url: https://api.vocdoni.io/version/v3
 tags:
   - name: chain
     description: "Everything about internal Vochain information (transactions, organizations, blocks, stats...)"
-    externalDocs:
-      description: Find out more
-      url: https://docs.vocdoni.io/architecture/services/gateway.html#api-definition
+#    externalDocs:
+#      description: Find out more
+#      url: https://docs.vocdoni.io/architecture/services/gateway.html#api-definition
   - name: election
     description: "Create, manage and get information about elections"
-    externalDocs:
-      description: Find out more
-      url: https://docs.vocdoni.io/architecture/services/gateway.html#api-definition
   - name: account
-    description: "Account metadata management"
-    externalDocs:
-      description: Find out more
-      url: https://docs.vocdoni.io/architecture/services/gateway.html#api-definition
+    description: "Related to account metadata (additional account information like balance, storage URI, process count...)"
   - name: wallet
-    description: "Wallet management functions"
-    externalDocs:
-      description: Find out more
-      url: https://docs.vocdoni.io/architecture/services/gateway.html#api-definition
+    description: "Create and use a wallet to perform operations on the Vochain relaying private key custody backend side."
   - name: census
-    description: "Manage census: create, add, get..."
-    externalDocs:
-      description: Find out more
-      url: https://docs.vocdoni.io/architecture/services/gateway.html#api-definition
+    description: "Manage census: create, add, get, verify..."
   - name: vote
     description: "Submit, get, and verify votes"
-    externalDocs:
-      description: Find out more
-      url: https://docs.vocdoni.io/architecture/services/gateway.html#api-definition
 paths:
   ####################################################
   ## /chain/transaction                             ##
   ####################################################
   /chain/transaction/cost:
     get:
-      summary: "Get transaction actual cost"
+      summary: "Get current cost for transactions"
       operationId: transactionCost
       tags:
         - chain
@@ -94,7 +88,7 @@ paths:
           description: "OK"
   /chain/transaction/reference/{hash}:
     get:
-      summary: "Get the transaction reference by hash"
+      summary: "Get transaction reference by hash reference"
       operationId: transactionByReference
       tags:
         - chain
@@ -118,7 +112,7 @@ paths:
                   }
   /chain/transaction/{blockHeight}/{txIndex}:
     get:
-      summary: "Returns the raw transaction content"
+      summary: "Get transaction by block height and index"
       operationId: transactionByBlockIndex
       tags:
         - chain
@@ -137,7 +131,7 @@ paths:
             $ref: '#/components/schemas/TxIndex'
       responses:
         "200":
-          description: "Transaction object"
+          description: "Returns raw transaction content"
           content:
             application/json:
               # todo(kon): use schema reference object
@@ -171,7 +165,7 @@ paths:
 
   /chain/organization/count:
     get:
-      summary: "Get registered organizations count"
+      summary: "Organizations count"
       operationId: organizationCount
       tags:
         - chain
@@ -187,7 +181,7 @@ paths:
                 }
   /chain/organization/{page}:
     get:
-      summary: "Get list of registered organizations"
+      summary: "List organizations"
       description: "If no page is defined, will assume page 0"
       operationId: organizationList
       tags:
@@ -257,7 +251,8 @@ paths:
                 }
   /chain/block:
     get:
-      summary: "Get list of blocks with its height, hash and number of transactions"
+      summary: "List blocks"
+      description: "Get list of blocks with its height, hash and number of transactions"
       operationId: blockList
       tags:
         - chain
@@ -274,7 +269,8 @@ paths:
 
   /chain/blockdate/{timestamp}:
     get:
-      summary: "Estimates future or past block height by given timestamp."
+      summary: "Estimate block height by given timestamp"
+      description: "Estimates future or past block height by given timestamp."
       operationId: blockFromDate
       tags:
         - chain
@@ -318,7 +314,7 @@ paths:
                 }
   /chain/info:
     get:
-      summary: "Return blockchain basic information"
+      summary: "Blockchain basic information"
       operationId: info
       tags:
         - chain
@@ -346,7 +342,7 @@ paths:
   ####################################################
   /election/list/{organizationID}/status/{status}/{page}:
     get:
-      summary: "Get elections by organization id and status"
+      summary: "List elections of a organization by status"
       description: "Default page is 0 if no page specified"
       operationId: electionsByOrganizationAndStatus
       tags:
@@ -378,7 +374,7 @@ paths:
 
   /election/list/{organizationID}/{page}:
     get:
-      summary: "List of organization elections"
+      summary: "List elections of a organization "
       operationId: electionsByOrganization
       tags:
         - election
@@ -402,7 +398,7 @@ paths:
                 }
   /election/count/{organizationID}:
     get:
-      summary: "Get elections published by organization id"
+      summary: "Get elections count published by organization"
       operationId: electionsByOrganizationCount
       tags:
         - election
@@ -426,7 +422,7 @@ paths:
 
   /election/{electionId}:
     get:
-      summary: "Full election information"
+      summary: "Get full election info"
       operationId: electionById
       tags:
         - election
@@ -489,7 +485,7 @@ paths:
                 }
   /election/{electionId}/keys:
     get:
-      summary: "Keys for specific election"
+      summary: "Get keys for specific election"
       operationId: electionGetKeys
       tags:
         - election
@@ -507,7 +503,8 @@ paths:
                 }
   /election/{electionId}/votes:
     get:
-      summary: "Election paginated list of nullifiers (envelopes)"
+      summary: "List votes of an election "
+      description: "Get a list of votes `nullifiers` for a election. The `nullifier` is a unique identifier for an election"
       operationId: electionVotes
       tags:
         - election
@@ -573,7 +570,7 @@ paths:
   ####################################################
   /account/{address}:
     get:
-      summary: "Return specific account information"
+      summary: "Get specific account info"
       operationId: accountByAddress
       tags:
         - account
@@ -600,8 +597,9 @@ paths:
                 }
   /account:
     post:
-      summary: "Register an account to the blockchain"
-      description: "It includes IPFS metadata upload"
+      summary: "Register an account "
+      description: "It register an account to the blockchain including IPFS metadata upload. It require a signed 
+      hash transaction on the body."
       operationId: accountSubmit
       tags:
         - account
@@ -633,8 +631,9 @@ paths:
   ####################################################
   /wallet/add/{privateKey}:
     post:
-      summary: "Adds a new wallet to the storage using privateKey"
+      summary: "Add wallet"
       description: |-
+        Adds a new wallet to the storage using privateKey
         - PrivateKey is a 32 bytes hexadecimal string
         - Returns a Bearer Token that must be used on further wallet calls (if the token is lost, the API backend cannot
         recover the privatekey).
@@ -660,8 +659,10 @@ paths:
                 }
   /wallet/bootstrap:
     post:
-      # todo(kon): same as account?
-      summary: "Creates the account in the blockchain"
+      # todo(kon): write differences between `POST account/` endpoint
+      summary: "Create an account"
+      description: "Creates the account in the blockchain relaying private key custody backend side. It differs from 
+      `POST account/` that require signed transaction on the body"
       operationId: walletBootstrap
       tags:
         - wallet
@@ -709,11 +710,13 @@ paths:
                 }
   /wallet/election:
     post:
+      # todo(kon): write differences between `POST election/` endpoint
       summary: "Creates an election"
+      description: "It differs with `POST election/`: is not needed to sign anything and the data model  included in the 
+      body is much simplified "
       operationId: walletElectionPost
       tags:
         - wallet
-      # todo(kon): duplicated with POST election/
       # todo(kon): add parameters
       responses:
         "200":
@@ -806,7 +809,7 @@ paths:
                 }
   /census/{censusId}/add/{publicKey}/{weight}:
     post:
-      summary: "Create new census"
+      summary: "Add public key or address to a Census"
       description: |-
         - Requires Bearer token 
         - Adds a new wallet public key or wallet address to a census with a specific weight
@@ -840,7 +843,7 @@ paths:
                 }
   /census/{censusId}/root:
     get:
-      summary: "Returns the merkle root for the census"
+      summary: "Get merkle root for a census"
       description: |-
         No require auth
         todo: describe what is merkle root and what is used for 
@@ -910,7 +913,7 @@ paths:
                 }
   /census/{censusId}/weight:
     get:
-      summary: "Get total weight for the census "
+      summary: "Get total weight for a census"
       description: |-
         - Sum of all weights added
         - Weight is a stringified bigInt
@@ -932,8 +935,9 @@ paths:
                 }
   /census/{censusId}/size:
     get:
-      summary: "Total number of keys added to the census"
+      summary: "Get census size"
       description: |-
+        Total number of keys added to the census. 
         - Size as integer
       operationId: censusSize
       tags:
@@ -952,8 +956,9 @@ paths:
                 }
   /census/{censusId}/publish:
     post:
-      summary: "Register the census to the storage (IPFS in our case)"
+      summary: "Register a census to the storage"
       description: |-
+        (IPFS in our case)
         - Requires Bearer token
         - The census is copied to a new census identified by its Merkle Root
         - The new census **cannot be modified**
@@ -1064,7 +1069,7 @@ paths:
     get:
       tags:
         - vote
-      summary: Get full vote data
+      summary: "Get full vote data"
       description:  >-
         Get the content of an existing Vote. The Vote is identified by the nullifier. Height and
         txIndex refer to the block height and the index on that block, respectively, of the transaction containing this 
@@ -1089,7 +1094,7 @@ paths:
     post:
       tags:
         - vote
-      summary: Submit a vote
+      summary: "Submit a vote"
       operationId: voteSubmit
       # todo(kon): document json body
       responses:
@@ -1106,7 +1111,7 @@ paths:
     post:
       tags:
         - vote
-      summary: Submit a vote
+      summary: "Check if vote is registered"
       operationId: voteVerify
       parameters:
         - $ref: "#/components/parameters/voteIdParameter"
