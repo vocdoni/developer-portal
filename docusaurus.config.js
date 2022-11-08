@@ -66,9 +66,14 @@ const config = {
         items: [
           {
             type: "doc",
-            docId: "intro",
+            docId: "get-started/intro",
             position: "left",
             label: "Get Started",
+          },
+          {
+            position: "left",
+            label: "API",
+            to: "/category/vocdoni-api",
           },
           {
             type: 'doc',
@@ -77,9 +82,10 @@ const config = {
             label: 'SDK',
           },
           {
-            position: "left",
-            label: "API",
-            to: "/category/vocdoni-api",
+            href: "https://documentation.aragon.org/products/aragon-vocdoni/what-is-aragon-vocdoni",
+            docId: 'sdk/sdk',
+            position: 'left',
+            label: 'Guides',
           },
           {
             href: "https://blog.vocdoni.io",
