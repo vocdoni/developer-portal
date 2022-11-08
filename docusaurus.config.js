@@ -43,6 +43,9 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      metadata: [{name: 'keywords', content: "Blockchain Voting, Mobile Voting, Universally Verifiable, " +
+            "Voting-As-A-Service, Decentralized Governance, Anonymous Voting, Privacy Centric, Secure Electronic Voting, " +
+            "Tamper-Proof Digital Voting, Data-Sovereignty, Resilient Governance, Governance/Coordination Tools"}],
       docs: {
         sidebar: {
           hideable: true,
