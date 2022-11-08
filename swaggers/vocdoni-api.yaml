@@ -72,7 +72,7 @@ paths:
                     }
   /chain/transaction/submit:
     post:
-      summary: "Sumbit a transaction"
+      summary: "Submit a transaction"
       operationId: transactionSubmit
       tags:
         - chain
