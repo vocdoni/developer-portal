@@ -1,5 +1,6 @@
 import React, {ReactNode} from 'react';
 import Layout from '@theme/Layout';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import {ComponentCard} from '../components/ComponentCard';
 import styled from 'styled-components';
 import {
@@ -9,7 +10,7 @@ import {
   IllustrationCore,
   IllustrationDesignSystem,
 } from '../components';
-// import {IconInfo} from '@aragon/ui-components';
+import {IconInfo} from '@aragon/ui-components';
 
 type ComponentCard = {
   title: string;
@@ -84,8 +85,8 @@ export default function Home(): JSX.Element {
     <Layout>
       <Container>
         <HeroHeader
-          title="Welcome to the Docs"
-          subtitle="Here you'll finds guides, resources and references to build with aragon"
+          title="Vocdoni developer portal"
+          subtitle="Here you'll finds guides, resources and references to use Vocdoni stack"
           img={require('@site/static/img/welcome-image.png').default}
         />
         <WelcomeCardsWrapper>

@@ -61,7 +61,7 @@ const config = {
         title: "Vocdoni - Docs",
         logo: {
           alt: "Vocdoni logo",
-          src: "img/fallback-account-logo-dark.png",
+          src: "img/logo-dark.png",
         },
         items: [
           {

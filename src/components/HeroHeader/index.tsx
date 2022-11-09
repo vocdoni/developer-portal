@@ -13,23 +13,23 @@ interface IHeroHeader {
 export const HeroHeader = (props: IHeroHeader) => {
   const {isMobile} = useScreenSize();
   return (
-    <HeaderWrapper>
-      {isMobile && <Image src={props.img} alt="" />}
-      <TextWrapper>
-        <Title>{props.title}</Title>
-        <Subtitle>{props.subtitle}</Subtitle>
-      </TextWrapper>
+      <HeaderWrapper>
+        {isMobile && <Image src={props.img} alt="" />}
+        <TextWrapper>
+          <Title>{props.title}</Title>
+          <Subtitle>{props.subtitle}</Subtitle>
+        </TextWrapper>
 
-      {/* TODO: FIX ME  */}
-      {/* 
+        {/* TODO: FIX ME  */}
+        {/*
       <IllustrationHuman
         body='chart'
         expression='casual'
         width={800}
         height={450}
       /> */}
-      {!isMobile && <Image src={props.img} alt="" />}
-    </HeaderWrapper>
+        {!isMobile && <Image src={props.img} alt="" />}
+      </HeaderWrapper>
   );
 };
 

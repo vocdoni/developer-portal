@@ -6,33 +6,33 @@ const currentYear = new Date().getFullYear();
 const leftLinks = [
   {
     text: 'Home',
-    to: 'https://aragon.org',
+    to: 'https://vocdoni.app',
   },
   {
     text: 'Quickstart',
-    to: 'https://aragon.org',
+    to: 'https://vocdoni.app',
   },
   {
     text: 'Guides',
-    to: 'https://aragon.org',
+    to: 'https://vocdoni.app',
   },
   {
     text: 'Support',
-    to: 'https://aragon.org',
+    to: 'https://vocdoni.app',
   },
 ];
 const rightLinks = [
   {
-    text: 'Aragon.org',
-    to: 'https://aragon.org',
+    text: 'Vocdoni.app',
+    to: 'https://vocdoni.app',
   },
   {
     text: 'Terms of service',
-    to: 'https://aragon.org',
+    to: 'https://vocdoni.app',
   },
   {
     text: 'Privacy',
-    to: 'https://aragon.org',
+    to: 'https://vocdoni.app',
   },
 ];
 
@@ -40,7 +40,7 @@ export const Footer = () => {
   return (
     <FooterWrapper>
       <LeftContainer>
-        <Image src={require('@site/static/img/logo-dark.png').default}></Image>
+        <Image src={require('@site/static/img/logo-full.png').default}></Image>
         <LinksContainer>
           {leftLinks.map((link, index) => (
             <Link src={link.to} key={index}>
@@ -57,7 +57,7 @@ export const Footer = () => {
             </Link>
           ))}
         </LinksContainer>
-        <Text>© {currentYear} Aragon</Text>
+        <Text>© {currentYear} Vocdoni</Text>
       </RightContainer>
     </FooterWrapper>
   );
