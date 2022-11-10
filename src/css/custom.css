@@ -122,3 +122,10 @@ a {
 .theme-edit-this-page{
   display: flex;
 }
+
+.imgBanner {
+  border: 3px solid #fff;
+  border-radius: 12px;
+  max-width: 250px;
+  width: 250px;
+}
