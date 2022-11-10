@@ -87,5 +87,5 @@ const Text = styled.span.attrs({
   className: textColor,
 })``;
 const Link = styled.a.attrs({
-  className: 'text-white hover:text-secondary-700 cursor-pointer ' + textColor,
+  className: 'hover:text-secondary-700 cursor-pointer ' + textColor,
 })``;

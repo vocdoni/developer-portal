@@ -19,7 +19,7 @@ export const ComponentCard = (props: IComponentCardProps) => {
   const {isMobile} = useScreenSize();
   return (
     <CardWrapper>
-      <SvgContainer isMobile={isMobile}>{props.img}</SvgContainer>
+      <ImgBanner src={props.img} />
       <ContentWrapper>
         <TextWrapper>
           <Title>{props.title}</Title>
@@ -35,18 +35,25 @@ export const ComponentCard = (props: IComponentCardProps) => {
   );
 };
 
+const ImgBanner = styled.img.attrs({
+  className: 'imgBanner'
+})``;
+
 const CardWrapper = styled.div.attrs({
   className: 'flex flex-col md:flex-row rounded-xl border-2 border-neutral-50',
 })`
   box-shadow: 0px 10px 20px rgba(31, 41, 51, 0.04),
     0px 2px 6px rgba(31, 41, 51, 0.04), 0px 0px 1px rgba(31, 41, 51, 0.04);
 `;
+
 const ContentWrapper = styled.div.attrs({
   className: 'flex flex-col space-y-3 md:py-8 p-6',
 })``;
+
 const TextWrapper = styled.div.attrs({
   className: 'flex flex-col space-y-1',
 })``;
+
 const SvgContainer = styled.div.attrs({
   className: 'flex rounded-xl',
 })`
@@ -56,12 +63,15 @@ const SvgContainer = styled.div.attrs({
     border-radius: ${getSvgBorderRadius};
   }
 `;
+
 const Title = styled.p.attrs({
   className: 'text-xl font-bold text-ui-800',
 })``;
+
 const Description = styled.p.attrs({
   className: 'line-clamp-4 md:line-clamp-2 text-ui-600',
 })``;
+
 const Image = styled.img.attrs({
   className: 'max-h-46',
 })`
@@ -74,6 +84,7 @@ function getSvgBorderRadius(props: SvgContainerProps) {
   }
   return '8px 0px 0px 8px';
 }
+
 function getSvgSize(props: SvgContainerProps) {
   if (props.isMobile) {
     return '100%';
