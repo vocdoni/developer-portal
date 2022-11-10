@@ -90,7 +90,7 @@ module.exports = {
       //   46: '184px',
       // },
       fontFamily: {
-        monospace: ['Fira Code'],
+        sans: ['Manrope'],
       },
     },
   },

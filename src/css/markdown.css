@@ -1,3 +1,57 @@
+/* Openapi Markdown */
+
+.markdown {
+    --ifm-h1-vertical-rhythm-top: 3;
+    --ifm-h2-vertical-rhythm-top: 2;
+    --ifm-h3-vertical-rhythm-top: 1.5;
+    --ifm-heading-vertical-rhythm-top: 1.25;
+    --ifm-h1-vertical-rhythm-bottom: 1.25;
+    --ifm-heading-vertical-rhythm-bottom: 1;
+}
+
+.markdown li, body {
+    word-wrap: break-word;
+}
+
+.markdown ol, ul {
+    margin: 0 0 var(--ifm-list-margin);
+    padding-left: var(--ifm-list-left-padding);
+}
+
+
+ul {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+ol {
+    list-style-type: decimal;
+    list-style-position: inside;
+}
+ul ul,
+ol ul {
+    list-style-type: circle;
+    list-style-position: inside;
+}
+ol ol,
+ul ol {
+    list-style-type: lower-latin;
+    list-style-position: inside;
+}
+
+.markdown p {
+    margin: 0 0 var(--ifm-paragraph-margin-bottom);
+}
+
+.markdown hr {
+    background-color: var(--ifm-hr-background-color);
+    border: 0;
+    height: var(--ifm-hr-height);
+    margin: var(--ifm-hr-margin-vertical) 0;
+}
+
+.markdown [class^="codeBlock"] > pre {
+    margin-bottom: 0;
+}
 /*:root {*/
 /*  --neutral-500: #52606d;*/
 /*  --neutral-700: #323f4b;*/
@@ -47,26 +101,6 @@
 /*  margin-bottom: 16px;*/
 /*}*/
 
-/*ul {*/
-/*  list-style-type: disc;*/
-/*  list-style-position: inside;*/
-/*}*/
-/*ol {*/
-/*  list-style-type: decimal;*/
-/*  list-style-position: inside;*/
-/*}*/
-/*ul ul,*/
-/*ol ul {*/
-/*  list-style-type: circle;*/
-/*  list-style-position: inside;*/
-/*  margin-left: 16px;*/
-/*}*/
-/*ol ol,*/
-/*ul ol {*/
-/*  list-style-type: lower-latin;*/
-/*  list-style-position: inside;*/
-/*  margin-left: 16px;*/
-/*}*/
 
 /*.table-cell-positive {*/
 /*  color: green;*/
