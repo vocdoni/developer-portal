@@ -63,6 +63,8 @@ export const Footer = () => {
   );
 };
 
+const textColor = "text-neutral-800"
+
 const FooterWrapper = styled.div.attrs({
   className:
     'flex space-y-8 flex-col md:flex-row bg-primary-50 p-6 md:justify-between md:align-center md:space-y-0 md:space-x-8',
@@ -82,8 +84,8 @@ const LinksContainer = styled.div.attrs({
   className: 'flex flex-rox space-x-6',
 })``;
 const Text = styled.span.attrs({
-  className: 'text-black',
+  className: textColor,
 })``;
 const Link = styled.a.attrs({
-  className: 'text-white text-neutral-800 hover:text-secondary-700 cursor-pointer',
+  className: 'text-white hover:text-secondary-700 cursor-pointer ' + textColor,
 })``;
