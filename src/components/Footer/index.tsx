@@ -65,7 +65,7 @@ export const Footer = () => {
 
 const FooterWrapper = styled.div.attrs({
   className:
-    'flex space-y-8 flex-col md:flex-row bg-primary-400 p-6 md:justify-between md:align-center md:space-y-0 md:space-x-8',
+    'flex space-y-8 flex-col md:flex-row bg-primary-50 p-6 md:justify-between md:align-center md:space-y-0 md:space-x-8',
 })``;
 const Image = styled.img.attrs({
   className: '',
@@ -82,8 +82,8 @@ const LinksContainer = styled.div.attrs({
   className: 'flex flex-rox space-x-6',
 })``;
 const Text = styled.span.attrs({
-  className: 'text-white',
+  className: 'text-black',
 })``;
 const Link = styled.a.attrs({
-  className: 'text-white hover:text-neutral-100 cursor-pointer',
+  className: 'text-white text-neutral-800 hover:text-secondary-700 cursor-pointer',
 })``;
