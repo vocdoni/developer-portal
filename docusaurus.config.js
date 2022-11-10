@@ -55,7 +55,15 @@ const config = {
       }),
     ],
   ],
-
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en'],
+    localeConfigs: {
+      en: {
+        label: 'En',
+      },
+    },
+  },
   themeConfig:
   /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
       ({
@@ -235,7 +243,7 @@ const config = {
             },
             // template: "api.mustache", // Customize API MDX with mustache template
             downloadUrl:
-                "https://raw.githubusercontent.com/vocdoni/developer-portal/main/swaggers/vocdoni-api.yaml",
+              "https://raw.githubusercontent.com/vocdoni/developer-portal/main/swaggers/vocdoni-api.yaml",
           },
         },
       },
