@@ -73,12 +73,12 @@ module.exports = {
           900: '#770A30',
         },
       },
-      spacing: {
-        18: '72px',
-        46: '184px',
-      },
+      // spacing: {
+      //   18: '72px',
+      //   46: '184px',
+      // },
       fontFamily: {
-        sans: ['Manrope'],
+        monospace: ['Fira Code'],
       },
     },
   },
