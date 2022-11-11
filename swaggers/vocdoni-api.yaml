@@ -21,18 +21,18 @@ info:
 servers:
   - url: https://api.vocdoni.io/version/v3
 tags:
-  - name: chain
+  - name: Chain
     description: "Everything about internal Vochain information (transactions, organizations, blocks, stats...)"
 #    externalDocs:
 #      description: Find out more
 #      url: https://docs.vocdoni.io/architecture/services/gateway.html#api-definition
-  - name: election
+  - name: Elections
     description: "Create, manage and get information about elections"
-  - name: account
+  - name: Accounts
     description: "Related to account metadata (additional account information like balance, storage URI, process count...)"
-  - name: wallet
+  - name: Wallet
     description: "Create and use a wallet to perform operations on the Vochain relaying private key custody backend side."
-  - name: census
+  - name: Censuses
     description: "Manage census: create, add, get, verify..."
   - name: vote
     description: "Submit, get, and verify votes"
@@ -42,10 +42,11 @@ paths:
   ####################################################
   /chain/transactions/cost:
     get:
-      summary: "Get current cost for transactions"
+      summary: "Transactions cost"
+      description: "Get the current cost for transactions"
       operationId: transactionCost
       tags:
-        - chain
+        - Chain
       responses:
         200:
           description: Return transaction cost parameters
@@ -72,10 +73,10 @@ paths:
                     }
   /chain/transactions:
     post:
-      summary: "Submit a transaction"
+      summary: "Submit transaction"
       operationId: transactionSubmit
       tags:
-        - chain
+        - Chain
       requestBody:
         description: "Transaction payload Base64 string"
         required: true
@@ -88,10 +89,11 @@ paths:
           description: "OK"
   /chain/transactions/reference/{hash}:
     get:
-      summary: "Get transaction reference by hash reference"
+      summary: "Transaction by hash"
+      description: "Get transaction block height and index by transaction hash"
       operationId: transactionByReference
       tags:
-        - chain
+        - Chain
       parameters:
         - name: hash
           in: path
@@ -112,10 +114,11 @@ paths:
                   }
   /chain/transactions/{blockHeight}/{txIndex}:
     get:
-      summary: "Get transaction by block height and index"
+      summary: "Transaction by block height and index"
+      description: "Get transaction information by block height and index"
       operationId: transactionByBlockIndex
       tags:
-        - chain
+        - Chain
       parameters:
         - name: blockHeight
           in: path
@@ -165,10 +168,10 @@ paths:
 
   /chain/organizations/count:
     get:
-      summary: "Organizations count"
+      summary: "Count organizations"
       operationId: organizationCount
       tags:
-        - chain
+        - Chain
       responses:
         "200":
           description: "It return corresponding blockHeight and transactionIndex"
@@ -185,7 +188,7 @@ paths:
       description: "If no page is defined, will assume page 0"
       operationId: organizationList
       tags:
-        - chain
+        - Chain
       parameters:
         - $ref: "#/components/parameters/paginatorParameter"
       responses:
@@ -205,10 +208,11 @@ paths:
 
   /chain/blocks/height/{height}:
     get:
-      summary: "Get full block information by height"
+      summary: "Block by height"
+      description: "Get full block information by height"
       operationId: blockByHeight
       tags:
-        - chain
+        - Chain
       parameters:
         - name: height
           in: path
@@ -228,10 +232,11 @@ paths:
                 }
   /chain/blocks/hash/{hash}:
     get:
-      summary: "Get full block information by block hash"
+      summary: "Block information by hash"
+      description: "Get full block information by block hash"
       operationId: blockByHash
       tags:
-        - chain
+        - Chain
       parameters:
         - name: hash
           in: path
@@ -255,7 +260,7 @@ paths:
       description: "Get list of blocks with its height, hash and number of transactions"
       operationId: blockList
       tags:
-        - chain
+        - Chain
       responses:
         "200":
           description: "For every block it return height, hash and number of transactions"
@@ -269,11 +274,11 @@ paths:
 
   /chain/dateToBlock/{timestamp}:
     get:
-      summary: "Estimate block height by given timestamp"
+      summary: "Estimate block height"
       description: "Estimates future or past block height by given timestamp."
       operationId: blockFromDate
       tags:
-        - chain
+        - Chain
       parameters:
         - name: timestamp
           in: path
@@ -298,10 +303,10 @@ paths:
   # todo: /chain/validators
   /chain/stats:
     get:
-      summary: "Get blockchain statistics"
+      summary: "Blockchain statistics"
       operationId: stats
       tags:
-        - chain
+        - Chain
       responses:
         "200":
           description: "Vochain stats object"
@@ -314,10 +319,11 @@ paths:
                 }
   /chain/info:
     get:
-      summary: "Blockchain basic information"
+      summary: "Vochain information"
+      description: "Return basic Vochain information like blockTime, chainId, current height..."
       operationId: info
       tags:
-        - chain
+        - Chain
       responses:
         "200":
           description: "Vochain info object"
@@ -343,10 +349,11 @@ paths:
 
   /elections/{electionId}:
     get:
-      summary: "Get full election info"
+      summary: "Election information"
+      description: "Get full election information"
       operationId: electionById
       tags:
-        - election
+        - Elections
       parameters:
         - $ref: "#/components/parameters/electionIdParameter"
       responses:
@@ -406,10 +413,11 @@ paths:
                 }
   /elections/{electionId}/keys:
     get:
-      summary: "Get keys for specific election"
+      summary: "Election keys"
+      description: "Get keys for specific election"
       operationId: electionGetKeys
       tags:
-        - election
+        - Elections
       parameters:
         - $ref: "#/components/parameters/electionIdParameter"
       responses:
@@ -424,11 +432,11 @@ paths:
                 }
   /elections/{electionId}/votes:
     get:
-      summary: "List votes of an election "
+      summary: "List election votes"
       description: "Get a list of votes `nullifiers` for a election. The `nullifier` is a unique identifier for an election"
       operationId: electionVotes
       tags:
-        - election
+        - Elections
       parameters:
         - $ref: "#/components/parameters/electionIdParameter"
       responses:
@@ -443,10 +451,11 @@ paths:
                 }
   /elections/{electionId}/votes/count:
     get:
-      summary: "Count of election emitted votes"
+      summary: "Count election votes"
+      description: "Count of election emitted votes"
       operationId: electionVotesCount
       tags:
-        - election
+        - Elections
       parameters:
         - $ref: "#/components/parameters/electionIdParameter"
       responses:
@@ -464,7 +473,7 @@ paths:
       summary: "Create an election"
       operationId: createElection
       tags:
-        - election
+        - Elections
       requestBody:
         description: "The payloads must be a base64 representation of the needed JSON objects."
         required: true
@@ -491,10 +500,10 @@ paths:
   ####################################################
   /accounts/{accountId}:
     get:
-      summary: "Get account info"
+      summary: "Account information"
       operationId: accountByAddress
       tags:
-        - account
+        - Accounts
       parameters:
         - name: accountId
           in: path
@@ -523,7 +532,7 @@ paths:
       hash transaction on the body."
       operationId: accountSubmit
       tags:
-        - account
+        - Accounts
       requestBody:
         description: "Base64 encoded blobs for txPayload and metadata objects"
         required: true
@@ -549,7 +558,7 @@ paths:
       description: "Default page is 0 if no page specified"
       operationId: electionsByOrganizationAndStatus
       tags:
-        - account
+        - Accounts
       parameters:
         - name: accountId
           in: path
@@ -580,7 +589,7 @@ paths:
       summary: "List account elections "
       operationId: electionsByOrganization
       tags:
-        - account
+        - Accounts
       parameters:
         - name: accountId
           in: path
@@ -601,10 +610,10 @@ paths:
                 }
   /accounts/{accountId}/elections/count:
     get:
-      summary: "Count of account elections"
+      summary: "Count account elections"
       operationId: electionsByOrganizationCount
       tags:
-        - account
+        - Accounts
       parameters:
         - name: accountId
           in: path
@@ -641,7 +650,7 @@ paths:
         recover the privatekey).
       operationId: addWallet
       tags:
-        - wallet
+        - Wallet
       parameters:
         - name: privateKey
           in: path
@@ -667,7 +676,7 @@ paths:
       `POST account/` that require signed transaction on the body"
       operationId: walletBootstrap
       tags:
-        - wallet
+        - Wallet
       responses:
         "200":
           description: "todo"
@@ -684,7 +693,7 @@ paths:
       description: "Transfer an amount of VOC tokens to a public destination address"
       operationId: walletTransfer
       tags:
-        - wallet
+        - Wallet
       parameters:
         - name: destAddr
           in: path
@@ -713,12 +722,12 @@ paths:
   /wallet/elections:
     post:
       # todo(kon): write differences between `POST election/` endpoint
-      summary: "Creates an election"
+      summary: "Create an election"
       description: "It differs with `POST election/`: is not needed to sign anything and the data model  included in the 
       body is much simplified "
       operationId: walletElectionPost
       tags:
-        - wallet
+        - Wallet
       # todo(kon): add parameters
       responses:
         "200":
@@ -791,7 +800,7 @@ paths:
       security:
         - bearerAuth: [ ]
       tags:
-        - census
+        - Censuses
       parameters:
         - name: type
           in: path
@@ -811,14 +820,14 @@ paths:
                 }
   /censuses/{censusId}/root:
     get:
-      summary: "Get merkle root for a census"
+      summary: "Census merkle root"
       description: |-
         No require auth
         todo: describe what is merkle root and what is used for 
         (Is the hash of hashes of census public keys/addresses?)
       operationId: censusRoot
       tags:
-        - census
+        - Censuses
       parameters:
         - $ref: "#/components/parameters/censusIdParameter"
       responses:
@@ -833,14 +842,15 @@ paths:
                 }
   /censuses/{censusId}/export:
     get:
-      summary: "Export census to JSON format"
+      summary: "Export census"
       description: |-
+        Export census to JSON format
         - Requires Bearer token
       operationId: censusExport
       security:
         - bearerAuth: [ ]
       tags:
-        - census
+        - Censuses
       parameters:
         - $ref: "#/components/parameters/censusIdParameter"
       responses:
@@ -858,15 +868,16 @@ paths:
                 }
   /censuses/{censusId}/import:
     get:
-      summary: "Import census from JSON"
+      summary: "Import census"
       description: |-
+        Import census from JSON
         - Requires Bearer token
-        - Previously exported
+        - Previously exported using `/censuses/{censusId}/export`
       operationId: censusImport
       security:
         - bearerAuth: [ ]
       tags:
-        - census
+        - Censuses
       parameters:
         - $ref: "#/components/parameters/censusIdParameter"
       responses:
@@ -881,14 +892,14 @@ paths:
                 }
   /censuses/{censusId}/weight:
     get:
-      summary: "Get total weight for a census"
+      summary: "Census total weight"
       description: |-
         - Sum of all weights added
         - Weight is a stringified bigInt
         - Public
       operationId: censusWeight
       tags:
-        - census
+        - Censuses
       parameters:
         - $ref: "#/components/parameters/censusIdParameter"
       responses:
@@ -903,13 +914,13 @@ paths:
                 }
   /censuses/{censusId}/size:
     get:
-      summary: "Get census size"
+      summary: "Census size"
       description: |-
         Total number of keys added to the census. 
         - Size as integer
       operationId: censusSize
       tags:
-        - census
+        - Censuses
       parameters:
         - $ref: "#/components/parameters/censusIdParameter"
       responses:
@@ -924,9 +935,9 @@ paths:
                 }
   /censuses/{censusId}/publish:
     post:
-      summary: "Register a census to the storage"
+      summary: "Register census"
       description: |-
-        (IPFS in our case)
+        Register a census to the storage (IPFS in our case).
         - Requires Bearer token
         - The census is copied to a new census identified by its Merkle Root
         - The new census **cannot be modified**
@@ -937,7 +948,7 @@ paths:
       security:
         - bearerAuth: [ ]
       tags:
-        - census
+        - Censuses
       parameters:
         - $ref: "#/components/parameters/censusIdParameter"
       responses:
@@ -953,15 +964,16 @@ paths:
                 }
   /censuses/{censusId}/proof/{publicKey}:
     get:
-      summary: "Prove the key and weight belong to the census root hash"
+      summary: "Prove key to census"
       description: |-
+        Prove the key and weight belong to the census root hash.
         - Requires Bearer token 
         - Returns a merkle proof, proving the key and weight belongs to the census root hash
       operationId: censusVerifyKey
       security:
         - bearerAuth: [ ]
       tags:
-        - census
+        - Censuses
       parameters:
         - $ref: "#/components/parameters/censusIdParameter"
         - $ref: "#/components/parameters/walletPublicKeyParameter"
@@ -982,7 +994,7 @@ paths:
       summary: "Verify merkle proof"
       operationId: censusVerifyProof
       tags:
-        - census
+        - Censuses
       parameters:
         - $ref: "#/components/parameters/censusIdParameter"
 #      todo(kon): this has a body, need to understand how it works
@@ -1005,8 +1017,9 @@ paths:
                 }
   /censuses/{censusId}:
     post:
-      summary: "Add list of public key/address with weight"
+      summary: "Add keys to census"
       description: |-
+        Add list of public key/address with weight.
         - Requires Bearer token 
         - Adds a list of wallet public key or wallet address to a census with a specific weight
         - If the weight parameter is missing, weight=1 is considered
@@ -1014,7 +1027,7 @@ paths:
       security:
         - bearerAuth: [ ]
       tags:
-        - census
+        - Censuses
       parameters:
         - $ref: "#/components/parameters/censusIdParameter"
       requestBody:
@@ -1035,8 +1048,9 @@ paths:
                   "todo": "object"
                 }
     delete:
-      summary: "Delete unpublished census"
+      summary: "Delete census"
       description: |-
+        Delete unpublished census (not on the storage yet)
         - Requires Bearer token
         - Deletes a census from the server storage
         - Published census cannot be deleted
@@ -1044,7 +1058,7 @@ paths:
       security:
         - bearerAuth: [ ]
       tags:
-        - census
+        - Censuses
       parameters:
         - $ref: "#/components/parameters/censusIdParameter"
       responses:
@@ -1066,8 +1080,8 @@ paths:
   /votes/{voteId}:
     get:
       tags:
-        - vote
-      summary: "Get full vote data"
+        - Votes
+      summary: "Get vote"
       description:  >-
         Get the content of an existing Vote. The Vote is identified by the nullifier. Height and
         txIndex refer to the block height and the index on that block, respectively, of the transaction containing this 
@@ -1091,8 +1105,8 @@ paths:
   /votes:
     post:
       tags:
-        - vote
-      summary: "Submit a vote"
+        - Votes
+      summary: "Submit vote"
       operationId: voteSubmit
       # todo(kon): document json body
       responses:
@@ -1108,8 +1122,9 @@ paths:
   /votes/verify/{electionId}/{voteId}:
     post:
       tags:
-        - vote
-      summary: "Check if vote is registered"
+        - Votes
+      summary: "Verify vote"
+      description: "Check if vote is registered"
       operationId: voteVerify
       parameters:
         - $ref: "#/components/parameters/voteIdParameter"
