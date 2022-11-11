@@ -1,3 +1,20 @@
+/*Inside markdown documents*/
+.theme-api-markdown ul {
+  padding-left: 0;
+}
+.docItemCol_node_modules-docusaurus-theme-openapi-docs-lib-next-theme-ApiItem-Layout-styles-module article {
+  width: 120%;
+}
+
+/*Tag pages*/
+.docItemCol_node_modules-docusaurus-theme-openapi-docs-lib-next-theme-ApiItem-Layout-styles-module .card > h2 {
+  overflow: unset;
+  text-overflow: unset;
+  white-space: unset;
+}
+
+/*Others*/
+
 .breadcrumbs svg {
   display:inline;
 }
