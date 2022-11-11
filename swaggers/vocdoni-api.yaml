@@ -303,7 +303,8 @@ paths:
   # todo: /chain/validators
   /chain/stats:
     get:
-      summary: "Blockchain statistics"
+      summary: "Vochain statistics"
+      description: "Vocdoni Blockchain (Vochain) statistics"
       operationId: stats
       tags:
         - Chain
@@ -320,7 +321,7 @@ paths:
   /chain/info:
     get:
       summary: "Vochain information"
-      description: "Return basic Vochain information like blockTime, chainId, current height..."
+      description: "Return basic Vocdoni Blockchain (Vochain) information like blockTime, chainId, current height..."
       operationId: info
       tags:
         - Chain
