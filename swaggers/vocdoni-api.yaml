@@ -5,7 +5,7 @@ info:
   license:
     name: MIT
   description: >-
-    **Goals and Objectives:** çsda
+    **Goals and Objectives:** 
     
     The Vocdoni API is meant to be the entry point for external integrators to add voting capabilities to an existing 
     CRM, customer base and product experience. The API should act as a satellite that facilitates creating votes using 
@@ -38,9 +38,9 @@ tags:
     description: "Submit, get, and verify votes"
 paths:
   ####################################################
-  ## /chain/transaction                             ##
+  ## /chain/transactions                             ##
   ####################################################
-  /chain/transaction/cost:
+  /chain/transactions/cost:
     get:
       summary: "Get current cost for transactions"
       operationId: transactionCost
@@ -70,7 +70,7 @@ paths:
                         "SetProcessStatus": 1
                       }
                     }
-  /chain/transaction/submit:
+  /chain/transactions:
     post:
       summary: "Submit a transaction"
       operationId: transactionSubmit
@@ -86,7 +86,7 @@ paths:
       responses:
         "200":
           description: "OK"
-  /chain/transaction/reference/{hash}:
+  /chain/transactions/reference/{hash}:
     get:
       summary: "Get transaction reference by hash reference"
       operationId: transactionByReference
@@ -110,7 +110,7 @@ paths:
                     "blockHeight":64924,
                     "transactionIndex":60
                   }
-  /chain/transaction/{blockHeight}/{txIndex}:
+  /chain/transactions/{blockHeight}/{txIndex}:
     get:
       summary: "Get transaction by block height and index"
       operationId: transactionByBlockIndex
@@ -160,10 +160,10 @@ paths:
                 }
 
   ####################################################
-  ## /chain/organization                            ##
+  ## /chain/organizations                            ##
   ####################################################
 
-  /chain/organization/count:
+  /chain/organizations/count:
     get:
       summary: "Organizations count"
       operationId: organizationCount
@@ -179,7 +179,7 @@ paths:
                 {
                   "todo": "object"
                 }
-  /chain/organization/{page}:
+  /chain/organizations/{page}:
     get:
       summary: "List organizations"
       description: "If no page is defined, will assume page 0"
@@ -203,7 +203,7 @@ paths:
   ## /chain/blocks                                  ##
   ####################################################
 
-  /chain/block/height/{height}:
+  /chain/blocks/height/{height}:
     get:
       summary: "Get full block information by height"
       operationId: blockByHeight
@@ -226,7 +226,7 @@ paths:
                 {
                   "todo": "object"
                 }
-  /chain/block/hash/{hash}:
+  /chain/blocks/hash/{hash}:
     get:
       summary: "Get full block information by block hash"
       operationId: blockByHash
@@ -249,7 +249,7 @@ paths:
                 {
                   "todo": "object"
                 }
-  /chain/block:
+  /chain/blocks:
     get:
       summary: "List blocks"
       description: "Get list of blocks with its height, hash and number of transactions"
@@ -267,7 +267,7 @@ paths:
                   "todo": "object"
                 }
 
-  /chain/blockdate/{timestamp}:
+  /chain/dateToBlock/{timestamp}:
     get:
       summary: "Estimate block height by given timestamp"
       description: "Estimates future or past block height by given timestamp."
@@ -338,89 +338,10 @@ paths:
                   "blockTimestamp": 1663949191 // last block timestamp
                 }
   ####################################################
-  ## /election/                                     ##
+  ## /elections/                                     ##
   ####################################################
-  /election/list/{organizationID}/status/{status}/{page}:
-    get:
-      summary: "List elections of a organization by status"
-      description: "Default page is 0 if no page specified"
-      operationId: electionsByOrganizationAndStatus
-      tags:
-        - election
-      parameters:
-        - name: organizationID
-          in: path
-          description: "Organization Id"
-          required: true
-          schema:
-            $ref: '#/components/schemas/OrganizationId'
-        - name: status
-          in: path
-          description: "Status of the election"
-          required: true
-          schema:
-            $ref: '#/components/schemas/ElectionStatus'
-        - $ref: "#/components/parameters/paginatorParameter"
-      responses:
-        "200":
-          description: "It return a list of elections"
-          content:
-            # todo(kon): use schema reference object
-            application/json:
-              example: |-
-                {
-                  "todo": "object"
-                }
 
-  /election/list/{organizationID}/{page}:
-    get:
-      summary: "List elections of a organization "
-      operationId: electionsByOrganization
-      tags:
-        - election
-      parameters:
-        - name: organizationID
-          in: path
-          description: "Organization Id"
-          required: true
-          schema:
-            $ref: '#/components/schemas/OrganizationId'
-        - $ref: "#/components/parameters/paginatorParameter"
-      responses:
-        "200":
-          description: "It return a list of elections"
-          content:
-            # todo(kon): use schema reference object
-            application/json:
-              example: |-
-                {
-                  "todo": "object"
-                }
-  /election/count/{organizationID}:
-    get:
-      summary: "Get elections count published by organization"
-      operationId: electionsByOrganizationCount
-      tags:
-        - election
-      parameters:
-        - name: organizationID
-          in: path
-          description: "Organization Id"
-          required: true
-          schema:
-            $ref: '#/components/schemas/OrganizationId'
-      responses:
-        "200":
-          description: "Count of elections"
-          content:
-            # todo(kon): use schema reference object
-            application/json:
-              example: |-
-                {
-                  "todo": "object"
-                }
-
-  /election/{electionId}:
+  /elections/{electionId}:
     get:
       summary: "Get full election info"
       operationId: electionById
@@ -483,7 +404,7 @@ paths:
                     "costExponent": 10000
                   }
                 }
-  /election/{electionId}/keys:
+  /elections/{electionId}/keys:
     get:
       summary: "Get keys for specific election"
       operationId: electionGetKeys
@@ -501,7 +422,7 @@ paths:
                 {
                   "todo": "object"
                 }
-  /election/{electionId}/votes:
+  /elections/{electionId}/votes:
     get:
       summary: "List votes of an election "
       description: "Get a list of votes `nullifiers` for a election. The `nullifier` is a unique identifier for an election"
@@ -520,7 +441,7 @@ paths:
                 {
                   "todo": "object"
                 }
-  /election/{electionId}/votes/count:
+  /elections/{electionId}/votes/count:
     get:
       summary: "Count of election emitted votes"
       operationId: electionVotesCount
@@ -538,7 +459,7 @@ paths:
                 {
                   "todo": "object"
                 }
-  /election:
+  /elections:
     post:
       summary: "Create an election"
       operationId: createElection
@@ -566,21 +487,21 @@ paths:
                 }
 
   ####################################################
-  ## /account/                                      ##
+  ## /accounts/                                      ##
   ####################################################
-  /account/{address}:
+  /accounts/{accountId}:
     get:
-      summary: "Get specific account info"
+      summary: "Get account info"
       operationId: accountByAddress
       tags:
         - account
       parameters:
-        - name: address
+        - name: accountId
           in: path
-          description: "The account address also known as organization Id"
+          description: "The account address (also known as accountId)"
           required: true
           schema:
-            $ref: '#/components/schemas/OrganizationId'
+            $ref: '#/components/schemas/AccountId'
       responses:
         "200":
           description: "Return account data"
@@ -595,7 +516,7 @@ paths:
                    "infoURI": "ipfs://",
                    "processIndex": 38
                 }
-  /account:
+  /accounts:
     post:
       summary: "Register an account "
       description: "It register an account to the blockchain including IPFS metadata upload. It require a signed 
@@ -622,6 +543,87 @@ paths:
                   "metadataURL": "ipfs://QmVsMox8HynD9X2KZY1DtWc7GqatFfiD6PrxGgyzB3p4gz"
                 }
 
+  /accounts/{accountId}/elections/status/{status}/{page}:
+    get:
+      summary: "List account elections by status"
+      description: "Default page is 0 if no page specified"
+      operationId: electionsByOrganizationAndStatus
+      tags:
+        - account
+      parameters:
+        - name: accountId
+          in: path
+          description: "Account Id"
+          required: true
+          schema:
+            $ref: '#/components/schemas/AccountId'
+        - name: status
+          in: path
+          description: "Status of the election"
+          required: true
+          schema:
+            $ref: '#/components/schemas/ElectionStatus'
+        - $ref: "#/components/parameters/paginatorParameter"
+      responses:
+        "200":
+          description: "It return a list of elections"
+          content:
+            # todo(kon): use schema reference object
+            application/json:
+              example: |-
+                {
+                  "todo": "object"
+                }
+
+  /accounts/{accountId}/elections/{page}:
+    get:
+      summary: "List account elections "
+      operationId: electionsByOrganization
+      tags:
+        - account
+      parameters:
+        - name: accountId
+          in: path
+          description: "Organization Id"
+          required: true
+          schema:
+            $ref: '#/components/schemas/AccountId'
+        - $ref: "#/components/parameters/paginatorParameter"
+      responses:
+        "200":
+          description: "It return a list of elections"
+          content:
+            # todo(kon): use schema reference object
+            application/json:
+              example: |-
+                {
+                  "todo": "object"
+                }
+  /accounts/{accountId}/elections/count:
+    get:
+      summary: "Count of account elections"
+      operationId: electionsByOrganizationCount
+      tags:
+        - account
+      parameters:
+        - name: accountId
+          in: path
+          description: "Organization Id"
+          required: true
+          schema:
+            $ref: '#/components/schemas/AccountId'
+      responses:
+        "200":
+          description: "Count of elections"
+          content:
+            # todo(kon): use schema reference object
+            application/json:
+              example: |-
+                {
+                  "todo": "object"
+                }
+
+
   # TODOS:
   #     - delegate add/del
   #     - collectFaucet
@@ -629,7 +631,7 @@ paths:
   ####################################################
   ## /wallet                                        ##
   ####################################################
-  /wallet/add/{privateKey}:
+  /wallet/{privateKey}:
     post:
       summary: "Add wallet"
       description: |-
@@ -708,7 +710,7 @@ paths:
                 {
                   "todo": "object"
                 }
-  /wallet/election:
+  /wallet/elections:
     post:
       # todo(kon): write differences between `POST election/` endpoint
       summary: "Creates an election"
@@ -776,9 +778,9 @@ paths:
                 }
 
   ####################################################
-  ## /census                                        ##
+  ## /censuses                                        ##
   ####################################################
-  /census/{type}:
+  /censuses/{type}:
     post:
       summary: "Create new census"
       description: |-
@@ -807,41 +809,7 @@ paths:
                 {
                   "censusID":"b547a9c83ad7d61b568cf10ebbb25338d680810fa219fa69477cfbd860b386c2"
                 }
-  /census/{censusId}/add/{publicKey}/{weight}:
-    post:
-      summary: "Add public key or address to a Census"
-      description: |-
-        - Requires Bearer token 
-        - Adds a new wallet public key or wallet address to a census with a specific weight
-        - If the weight parameter is missing, weight=1 is considered
-      operationId: censusAddKey
-      security:
-        - bearerAuth: [ ]
-      tags:
-        - census
-      parameters:
-        - $ref: "#/components/parameters/censusIdParameter"
-        - $ref: "#/components/parameters/walletPublicKeyParameter"
-        - name: weight
-          in: path
-          description: "Vote weight for this key"
-          allowEmptyValue: true
-          required: true
-          schema:
-            type: integer
-            example: 1
-            default: 1
-      responses:
-        "200":
-          description: "todo"
-          content:
-            # todo(kon): use schema reference object
-            application/json:
-              example: |-
-                {
-                  "todo": "object"
-                }
-  /census/{censusId}/root:
+  /censuses/{censusId}/root:
     get:
       summary: "Get merkle root for a census"
       description: |-
@@ -863,7 +831,7 @@ paths:
                 {
                   "root":"b4a875b03f6f993e9daf804f67a6fc183b7a4d9b6390abcb6d7f56ff14d394b6"
                 }
-  /census/{censusId}/dump:
+  /censuses/{censusId}/export:
     get:
       summary: "Export census to JSON format"
       description: |-
@@ -888,7 +856,7 @@ paths:
                   "data": "KLUv/QQAbQEAVAIgIAAUhfh8HDhDtV8Z+nm1Je+bGVzm2nEScc1pkPtfARvh4AIAAVQWAhsleowCTw==",
                   "indexed": false
                 }
-  /census/{censusId}/import:
+  /censuses/{censusId}/import:
     get:
       summary: "Import census from JSON"
       description: |-
@@ -911,7 +879,7 @@ paths:
                 {
                   "todo": "object"
                 }
-  /census/{censusId}/weight:
+  /censuses/{censusId}/weight:
     get:
       summary: "Get total weight for a census"
       description: |-
@@ -933,7 +901,7 @@ paths:
                 {
                   "weight": "2"
                 }
-  /census/{censusId}/size:
+  /censuses/{censusId}/size:
     get:
       summary: "Get census size"
       description: |-
@@ -954,7 +922,7 @@ paths:
                 {
                   "size": 1
                 }
-  /census/{censusId}/publish:
+  /censuses/{censusId}/publish:
     post:
       summary: "Register a census to the storage"
       description: |-
@@ -983,7 +951,7 @@ paths:
                   "censusID": "b4a875b03f6f993e9daf804f67a6fc183b7a4d9b6390abcb6d7f56ff14d394b6",
                   "uri": "ipfs://QmQDpDj2s3wNCaDyCkjUaxjPXS9LjmPnWcQoi3TanjRgU1"
                 }
-  /census/{censusId}/proof/{publicKey}:
+  /censuses/{censusId}/proof/{publicKey}:
     get:
       summary: "Prove the key and weight belong to the census root hash"
       description: |-
@@ -1009,7 +977,7 @@ paths:
                   "proof": "04000000",
                   "value": "0200000000000000000000000000000000000000000000000000000000000000"
                 }
-  /census/{censusId}/verify:
+  /censuses/{censusId}/verify:
     get:
       summary: "Verify merkle proof"
       operationId: censusVerifyProof
@@ -1035,7 +1003,37 @@ paths:
                 {
                   "valid": true
                 }
-  /census/{censusId}/delete:
+  /censuses/{censusId}:
+    post:
+      summary: "Add list of public key/address with weight"
+      description: |-
+        - Requires Bearer token 
+        - Adds a list of wallet public key or wallet address to a census with a specific weight
+        - If the weight parameter is missing, weight=1 is considered
+      operationId: censusAddKey
+      security:
+        - bearerAuth: [ ]
+      tags:
+        - census
+      parameters:
+        - $ref: "#/components/parameters/censusIdParameter"
+      requestBody:
+        description: "PublicKey - weight array "
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CensusAddKeys'
+      responses:
+        "200":
+          description: "todo"
+          content:
+            # todo(kon): use schema reference object
+            application/json:
+              example: |-
+                {
+                  "todo": "object"
+                }
     delete:
       summary: "Delete unpublished census"
       description: |-
@@ -1062,10 +1060,10 @@ paths:
                 }
 
   ####################################################
-  ## /vote                                          ##
+  ## /votes                                          ##
   ####################################################
 
-  /vote/{voteId}:
+  /votes/{voteId}:
     get:
       tags:
         - vote
@@ -1090,7 +1088,7 @@ paths:
           description: Vote not found
         '500':
           description: Internal server error
-  /vote:
+  /votes:
     post:
       tags:
         - vote
@@ -1107,7 +1105,7 @@ paths:
                 {
                   "todo": "object"
                 }
-  /vote/verify/{electionId}/{voteId}:
+  /votes/verify/{electionId}/{voteId}:
     post:
       tags:
         - vote
@@ -1183,6 +1181,9 @@ components:
          "txPayload": "<base64>",
          "metadata": "<base64>"
         }
+    AccountId:
+      type: string
+      example: "0x370372b92514d81a0e3efb8eba9d036ae0877653"
     BlockHeight:
       type: integer
       format: int32
@@ -1208,6 +1209,23 @@ components:
     CensusId:
       type: string
       example: "b547a9c83ad7d61b568cf10ebbb25338d680810fa219fa69477cfbd860b386c2"
+    CensusAddKeys:
+      type: array
+      items:
+        type: "object"
+        properties:
+          address:
+            $ref: "#/components/schemas/WalletPublicKey"
+          weight:
+            description: "Vote weight for this key"
+  #          allowEmptyValue: true
+  #          required: true
+  #          schema:
+            type: integer
+            example: 1
+            default: 1
+  #      example: |-
+  #        { "todo": "base64 string" }
     ElectionStatus:
       type: string
       enum: [ weighted, zkindexed ]
@@ -1231,9 +1249,6 @@ components:
       type: integer
       format: int32
       example: 0
-    OrganizationId:
-      type: string
-      example: "0x370372b92514d81a0e3efb8eba9d036ae0877653"
     WalletPrivateKey:
       type: string
       example: "E9873D79C6D87DC0FB6A5778633389F4453213303DA61F20BD67FC233AA33262"

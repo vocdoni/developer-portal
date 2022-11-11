@@ -1,13 +1,11 @@
 ---
 id: census-root
-title: "Returns the merkle root for the census"
-description: "No require auth
-todo: describe what is merkle root and what is used for 
-(Is the hash of hashes of census public keys/addresses?)"
-sidebar_label: Returns the merkle root for the census
+title: "Get merkle root for a census"
+description: "No require auth"
+sidebar_label: Get merkle root for a census
 hide_title: true
 hide_table_of_contents: true
-api: {"description":"No require auth\ntodo: describe what is merkle root and what is used for \n(Is the hash of hashes of census public keys/addresses?)","operationId":"censusRoot","tags":["census"],"parameters":[{"name":"censusId","in":"path","description":"Census id","required":true,"schema":{"type":"string","example":"b547a9c83ad7d61b568cf10ebbb25338d680810fa219fa69477cfbd860b386c2"}}],"responses":{"200":{"description":"Return Merkle Root","content":{"application/json":{"example":"{\n  \"root\":\"b4a875b03f6f993e9daf804f67a6fc183b7a4d9b6390abcb6d7f56ff14d394b6\"\n}"}}}},"method":"get","path":"/census/{censusId}/root","servers":[{"url":"https://api.vocdoni.io/version/v3"}],"security":[{"bearerAuth":[]}],"securitySchemes":{"bearerAuth":{"type":"http","scheme":"bearer"}},"info":{"version":"2.0.0","title":"Vocdoni API","license":{"name":"MIT"},"description":"**Goals and Objectives:** The Vocdoni API is meant to be the entry point for external integrators to add voting capabilities to an existing  CRM, customer base and product experience. The API should act as a satellite that facilitates creating votes using  Vocdoni, without the hassle of learning a deep platform."},"postman":{"name":"Returns the merkle root for the census","description":{"content":"No require auth\ntodo: describe what is merkle root and what is used for \n(Is the hash of hashes of census public keys/addresses?)","type":"text/plain"},"url":{"path":["census",":censusId","root"],"host":["{{baseUrl}}"],"query":[],"variable":[{"disabled":false,"description":{"content":"(Required) Census id","type":"text/plain"},"type":"any","value":"","key":"censusId"}]},"header":[{"key":"Accept","value":"application/json"}],"method":"GET"}}
+api: {"description":"No require auth\ntodo: describe what is merkle root and what is used for \n(Is the hash of hashes of census public keys/addresses?)","operationId":"censusRoot","tags":["census"],"parameters":[{"name":"censusId","in":"path","description":"Census id","required":true,"schema":{"type":"string","example":"b547a9c83ad7d61b568cf10ebbb25338d680810fa219fa69477cfbd860b386c2"}}],"responses":{"200":{"description":"Return Merkle Root","content":{"application/json":{"example":"{\n  \"root\":\"b4a875b03f6f993e9daf804f67a6fc183b7a4d9b6390abcb6d7f56ff14d394b6\"\n}"}}}},"method":"get","path":"/censuses/{censusId}/root","servers":[{"url":"https://api.vocdoni.io/version/v3"}],"security":[{"bearerAuth":[]}],"securitySchemes":{"bearerAuth":{"type":"http","scheme":"bearer"}},"info":{"version":"2.0.0","title":"Vocdoni API","license":{"name":"MIT"},"description":"**Goals and Objectives:** \nThe Vocdoni API is meant to be the entry point for external integrators to add voting capabilities to an existing  CRM, customer base and product experience. The API should act as a satellite that facilitates creating votes using  Vocdoni, without the hassle of learning a deep platform.\nThis API should allow to perform the basic primitives of the Vocdoni Protocol such as manage organizations, voting  processes and be able to vote, abstracting as much as possible the complexity and doing so, offering simple and  clear methods to perform such actions.\nLast but not least, the API should be modular and allow further expansion with other independent modules such as  payments, CSPs, SSI providers, CRM’s, etc. becoming a open voting block/”lego” for the Web2.0 & Web 3.0 world."},"postman":{"name":"Get merkle root for a census","description":{"content":"No require auth\ntodo: describe what is merkle root and what is used for \n(Is the hash of hashes of census public keys/addresses?)","type":"text/plain"},"url":{"path":["censuses",":censusId","root"],"host":["{{baseUrl}}"],"query":[],"variable":[{"disabled":false,"description":{"content":"(Required) Census id","type":"text/plain"},"type":"any","value":"","key":"censusId"}]},"header":[{"key":"Accept","value":"application/json"}],"method":"GET"}}
 sidebar_class_name: "get api-method"
 info_path: vocdoni-api/vocdoni-api
 ---
@@ -21,7 +19,7 @@ import SchemaTabs from "@theme/SchemaTabs";
 import DiscriminatorTabs from "@theme/DiscriminatorTabs";
 import TabItem from "@theme/TabItem";
 
-## Returns the merkle root for the census
+## Get merkle root for a census
 
 
 
