@@ -1,11 +1,11 @@
 ---
 id: organization-list
-title: "Get list of registered organizations"
+title: "List organizations"
 description: "If no page is defined, will assume page 0"
-sidebar_label: Get list of registered organizations
+sidebar_label: List organizations
 hide_title: true
 hide_table_of_contents: true
-api: {"description":"If no page is defined, will assume page 0","operationId":"organizationList","tags":["chain"],"parameters":[{"name":"page","in":"path","description":"When returning a list it define de page number. If empty, default is 0","allowEmptyValue":true,"required":true,"schema":{"type":"integer","example":1,"default":0}}],"responses":{"200":{"description":"It return a list of organizations id","content":{"application/json":{"example":"{\n  \"todo\": \"object\"\n}"}}}},"method":"get","path":"/chain/organization/{page}","servers":[{"url":"https://api.vocdoni.io/version/v3"}],"security":[{"bearerAuth":[]}],"securitySchemes":{"bearerAuth":{"type":"http","scheme":"bearer"}},"info":{"version":"2.0.0","title":"Vocdoni API","license":{"name":"MIT"},"description":"**Goals and Objectives:** The Vocdoni API is meant to be the entry point for external integrators to add voting capabilities to an existing  CRM, customer base and product experience. The API should act as a satellite that facilitates creating votes using  Vocdoni, without the hassle of learning a deep platform."},"postman":{"name":"Get list of registered organizations","description":{"content":"If no page is defined, will assume page 0","type":"text/plain"},"url":{"path":["chain","organization",":page"],"host":["{{baseUrl}}"],"query":[],"variable":[{"disabled":false,"description":{"content":"(Required) When returning a list it define de page number. If empty, default is 0","type":"text/plain"},"type":"any","value":"","key":"page"}]},"header":[{"key":"Accept","value":"application/json"}],"method":"GET"}}
+api: {"description":"If no page is defined, will assume page 0","operationId":"organizationList","tags":["chain"],"parameters":[{"name":"page","in":"path","description":"When returning a list it define de page number. If empty, default is 0","allowEmptyValue":true,"required":true,"schema":{"type":"integer","example":1,"default":0}}],"responses":{"200":{"description":"It return a list of organizations id","content":{"application/json":{"example":"{\n  \"todo\": \"object\"\n}"}}}},"method":"get","path":"/chain/organizations/{page}","servers":[{"url":"https://api.vocdoni.io/version/v3"}],"security":[{"bearerAuth":[]}],"securitySchemes":{"bearerAuth":{"type":"http","scheme":"bearer"}},"info":{"version":"2.0.0","title":"Vocdoni API","license":{"name":"MIT"},"description":"**Goals and Objectives:** \nThe Vocdoni API is meant to be the entry point for external integrators to add voting capabilities to an existing  CRM, customer base and product experience. The API should act as a satellite that facilitates creating votes using  Vocdoni, without the hassle of learning a deep platform.\nThis API should allow to perform the basic primitives of the Vocdoni Protocol such as manage organizations, voting  processes and be able to vote, abstracting as much as possible the complexity and doing so, offering simple and  clear methods to perform such actions.\nLast but not least, the API should be modular and allow further expansion with other independent modules such as  payments, CSPs, SSI providers, CRM’s, etc. becoming a open voting block/”lego” for the Web2.0 & Web 3.0 world."},"postman":{"name":"List organizations","description":{"content":"If no page is defined, will assume page 0","type":"text/plain"},"url":{"path":["chain","organizations",":page"],"host":["{{baseUrl}}"],"query":[],"variable":[{"disabled":false,"description":{"content":"(Required) When returning a list it define de page number. If empty, default is 0","type":"text/plain"},"type":"any","value":"","key":"page"}]},"header":[{"key":"Accept","value":"application/json"}],"method":"GET"}}
 sidebar_class_name: "get api-method"
 info_path: vocdoni-api/vocdoni-api
 ---
@@ -19,7 +19,7 @@ import SchemaTabs from "@theme/SchemaTabs";
 import DiscriminatorTabs from "@theme/DiscriminatorTabs";
 import TabItem from "@theme/TabItem";
 
-## Get list of registered organizations
+## List organizations
 
 
 

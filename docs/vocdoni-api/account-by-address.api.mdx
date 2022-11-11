@@ -1,11 +1,11 @@
 ---
 id: account-by-address
-title: "Return specific account information"
-description: "Return specific account information"
-sidebar_label: Return specific account information
+title: "Get account info"
+description: "Get account info"
+sidebar_label: Get account info
 hide_title: true
 hide_table_of_contents: true
-api: {"operationId":"accountByAddress","tags":["account"],"parameters":[{"name":"address","in":"path","description":"The account address also known as organization Id","required":true,"schema":{"type":"string","example":"0x370372b92514d81a0e3efb8eba9d036ae0877653"}}],"responses":{"200":{"description":"Return account data","content":{"application/json":{"example":"{\n  \"address\": \"e0c941dd44ff4c43fc4683088b846ddb3234d169\",\n   \"balance\": 9568,\n   \"nonce\": 186,\n   \"infoURI\": \"ipfs://\",\n   \"processIndex\": 38\n}"}}}},"description":"Return specific account information","method":"get","path":"/account/{address}","servers":[{"url":"https://api.vocdoni.io/version/v3"}],"security":[{"bearerAuth":[]}],"securitySchemes":{"bearerAuth":{"type":"http","scheme":"bearer"}},"info":{"version":"2.0.0","title":"Vocdoni API","license":{"name":"MIT"},"description":"**Goals and Objectives:** The Vocdoni API is meant to be the entry point for external integrators to add voting capabilities to an existing  CRM, customer base and product experience. The API should act as a satellite that facilitates creating votes using  Vocdoni, without the hassle of learning a deep platform."},"postman":{"name":"Return specific account information","description":{"type":"text/plain"},"url":{"path":["account",":address"],"host":["{{baseUrl}}"],"query":[],"variable":[{"disabled":false,"description":{"content":"(Required) The account address also known as organization Id","type":"text/plain"},"type":"any","value":"","key":"address"}]},"header":[{"key":"Accept","value":"application/json"}],"method":"GET"}}
+api: {"operationId":"accountByAddress","tags":["account"],"parameters":[{"name":"accountId","in":"path","description":"The account address (also known as accountId)","required":true,"schema":{"type":"string","example":"0x370372b92514d81a0e3efb8eba9d036ae0877653"}}],"responses":{"200":{"description":"Return account data","content":{"application/json":{"example":"{\n  \"address\": \"e0c941dd44ff4c43fc4683088b846ddb3234d169\",\n   \"balance\": 9568,\n   \"nonce\": 186,\n   \"infoURI\": \"ipfs://\",\n   \"processIndex\": 38\n}"}}}},"description":"Get account info","method":"get","path":"/accounts/{accountId}","servers":[{"url":"https://api.vocdoni.io/version/v3"}],"security":[{"bearerAuth":[]}],"securitySchemes":{"bearerAuth":{"type":"http","scheme":"bearer"}},"info":{"version":"2.0.0","title":"Vocdoni API","license":{"name":"MIT"},"description":"**Goals and Objectives:** \nThe Vocdoni API is meant to be the entry point for external integrators to add voting capabilities to an existing  CRM, customer base and product experience. The API should act as a satellite that facilitates creating votes using  Vocdoni, without the hassle of learning a deep platform.\nThis API should allow to perform the basic primitives of the Vocdoni Protocol such as manage organizations, voting  processes and be able to vote, abstracting as much as possible the complexity and doing so, offering simple and  clear methods to perform such actions.\nLast but not least, the API should be modular and allow further expansion with other independent modules such as  payments, CSPs, SSI providers, CRM’s, etc. becoming a open voting block/”lego” for the Web2.0 & Web 3.0 world."},"postman":{"name":"Get account info","description":{"type":"text/plain"},"url":{"path":["accounts",":accountId"],"host":["{{baseUrl}}"],"query":[],"variable":[{"disabled":false,"description":{"content":"(Required) The account address (also known as accountId)","type":"text/plain"},"type":"any","value":"","key":"accountId"}]},"header":[{"key":"Accept","value":"application/json"}],"method":"GET"}}
 sidebar_class_name: "get api-method"
 info_path: vocdoni-api/vocdoni-api
 ---
@@ -19,13 +19,13 @@ import SchemaTabs from "@theme/SchemaTabs";
 import DiscriminatorTabs from "@theme/DiscriminatorTabs";
 import TabItem from "@theme/TabItem";
 
-## Return specific account information
+## Get account info
 
 
 
-Return specific account information
+Get account info
 
-<details style={{"marginBottom":"1rem"}} data-collapsed={false} open={true}><summary style={{}}><strong>Path Parameters</strong></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"address","in":"path","description":"The account address also known as organization Id","required":true,"schema":{"type":"string","example":"0x370372b92514d81a0e3efb8eba9d036ae0877653"}}}></ParamsItem></ul></div></details><div><ApiTabs><TabItem label={"200"} value={"200"}><div>
+<details style={{"marginBottom":"1rem"}} data-collapsed={false} open={true}><summary style={{}}><strong>Path Parameters</strong></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"accountId","in":"path","description":"The account address (also known as accountId)","required":true,"schema":{"type":"string","example":"0x370372b92514d81a0e3efb8eba9d036ae0877653"}}}></ParamsItem></ul></div></details><div><ApiTabs><TabItem label={"200"} value={"200"}><div>
 
 Return account data
 
