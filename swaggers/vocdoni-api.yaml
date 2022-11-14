@@ -19,7 +19,7 @@ info:
     payments, CSPs, SSI providers, CRM’s, etc. becoming a open voting block/”lego” for the Web2.0 & Web 3.0 world.
 
 servers:
-  - url: https://api.vocdoni.io/version/v3
+  - url: https://api.vocdoni.io/v2/
 tags:
   - name: Chain
     description: "Everything about internal Vochain information (transactions, organizations, blocks, stats...)"
@@ -182,11 +182,28 @@ paths:
                 {
                   "todo": "object"
                 }
-  /chain/organizations/{page}:
+  /chain/organizations:
     get:
       summary: "List organizations"
       description: "If no page is defined, will assume page 0"
       operationId: organizationList
+      tags:
+        - Chain
+      responses:
+        "200":
+          description: "It return a list of organizations id"
+          content:
+            application/json:
+              # todo(kon): use schema reference object
+              example: |-
+                {
+                  "todo": "object"
+                }
+  /chain/organizations/page/{page}:
+    get:
+      summary: "Paginated organizations list"
+      description: "If no page is defined, will assume page 0"
+      operationId: organizationListPaginated
       tags:
         - Chain
       parameters:
@@ -434,12 +451,36 @@ paths:
   /elections/{electionId}/votes:
     get:
       summary: "List election votes"
-      description: "Get a list of votes `nullifiers` for a election. The `nullifier` is a unique identifier for an election"
+      description: |-
+        Get a list of votes `nullifiers` for a election. The `nullifier` is a unique identifier for an election
+        Default page is 0 if no page specified
       operationId: electionVotes
       tags:
         - Elections
       parameters:
         - $ref: "#/components/parameters/electionIdParameter"
+      responses:
+        "200":
+          description: "Return list of nullifiers"
+          content:
+            # todo(kon): use schema reference object
+            application/json:
+              example: |-
+                {
+                  "todo": "object"
+                }
+  /elections/{electionId}/votes/page/{page}:
+    get:
+      summary: "Paginated election votes list"
+      description: |-
+        Get a list of votes `nullifiers` for a election. The `nullifier` is a unique identifier for an election
+        Default page is 0 if no page specified
+      operationId: electionVotesPaginated
+      tags:
+        - Elections
+      parameters:
+        - $ref: "#/components/parameters/electionIdParameter"
+        - $ref: "#/components/parameters/paginatorParameter"
       responses:
         "200":
           description: "Return list of nullifiers"
@@ -553,7 +594,37 @@ paths:
                   "metadataURL": "ipfs://QmVsMox8HynD9X2KZY1DtWc7GqatFfiD6PrxGgyzB3p4gz"
                 }
 
-  /accounts/{accountId}/elections/status/{status}/{page}:
+  /accounts/{accountId}/elections/status/{status}:
+    get:
+      summary: "List account elections by status"
+      description: "Default page is 0 if no page specified"
+      operationId: electionsByOrganizationAndStatusPaginated
+      tags:
+        - Accounts
+      parameters:
+        - name: accountId
+          in: path
+          description: "Account Id"
+          required: true
+          schema:
+            $ref: '#/components/schemas/AccountId'
+        - name: status
+          in: path
+          description: "Status of the election"
+          required: true
+          schema:
+            $ref: '#/components/schemas/ElectionStatus'
+      responses:
+        "200":
+          description: "It return a list of elections"
+          content:
+            # todo(kon): use schema reference object
+            application/json:
+              example: |-
+                {
+                  "todo": "object"
+                }
+  /accounts/{accountId}/elections/status/{status}/page/{page}:
     get:
       summary: "List account elections by status"
       description: "Default page is 0 if no page specified"
@@ -584,10 +655,34 @@ paths:
                 {
                   "todo": "object"
                 }
-
-  /accounts/{accountId}/elections/{page}:
+  /accounts/{accountId}/elections/:
     get:
       summary: "List account elections "
+      description: "If no page is defined, will assume page 0"
+      operationId: electionsByOrganizationPaginated
+      tags:
+        - Accounts
+      parameters:
+        - name: accountId
+          in: path
+          description: "Organization Id"
+          required: true
+          schema:
+            $ref: '#/components/schemas/AccountId'
+      responses:
+        "200":
+          description: "It return a list of elections"
+          content:
+            # todo(kon): use schema reference object
+            application/json:
+              example: |-
+                {
+                  "todo": "object"
+                }
+  /accounts/{accountId}/elections/page/{page}:
+    get:
+      summary: "List account elections "
+      description: "If no page is defined, will assume page 0"
       operationId: electionsByOrganization
       tags:
         - Accounts
@@ -641,7 +736,7 @@ paths:
   ####################################################
   ## /wallet                                        ##
   ####################################################
-  /wallet/{privateKey}:
+  /wallet/add/{privateKey}:
     post:
       summary: "Add wallet"
       description: |-
@@ -720,7 +815,7 @@ paths:
                 {
                   "todo": "object"
                 }
-  /wallet/elections:
+  /wallet/election:
     post:
       # todo(kon): write differences between `POST election/` endpoint
       summary: "Create an election"
@@ -934,6 +1029,29 @@ paths:
                 {
                   "size": 1
                 }
+#  /censuses/{censusId}/publish/{root}:
+#    post:
+#      summary: "todo"
+#      description: |-
+#        todo
+#      operationId: censusPublishRoot
+#      security:
+#        - bearerAuth: [ ]
+#      tags:
+#        - Censuses
+#      parameters:
+#        - $ref: "#/components/parameters/censusIdParameter"
+#      responses:
+#        "200":
+#          description: "New census Id and storage uri"
+#          content:
+#            # todo(kon): use schema reference object
+#            application/json:
+#              example: |-
+#                {
+#                  "censusID": "b4a875b03f6f993e9daf804f67a6fc183b7a4d9b6390abcb6d7f56ff14d394b6",
+#                  "uri": "ipfs://QmQDpDj2s3wNCaDyCkjUaxjPXS9LjmPnWcQoi3TanjRgU1"
+#                }
   /censuses/{censusId}/publish:
     post:
       summary: "Register census"
@@ -1016,11 +1134,11 @@ paths:
                 {
                   "valid": true
                 }
-  /censuses/{censusId}:
+  /censuses/{censusId}/participants:
     post:
-      summary: "Add keys to census"
+      summary: "Add participants to census"
       description: |-
-        Add list of public key/address with weight.
+        Add list of public key/address with its weight.
         - Requires Bearer token 
         - Adds a list of wallet public key or wallet address to a census with a specific weight
         - If the weight parameter is missing, weight=1 is considered
@@ -1226,22 +1344,25 @@ components:
       type: string
       example: "b547a9c83ad7d61b568cf10ebbb25338d680810fa219fa69477cfbd860b386c2"
     CensusAddKeys:
-      type: array
-      items:
-        type: "object"
-        properties:
-          address:
-            $ref: "#/components/schemas/WalletPublicKey"
-          weight:
-            description: "Vote weight for this key"
-  #          allowEmptyValue: true
-  #          required: true
-  #          schema:
-            type: integer
-            example: 1
-            default: 1
-  #      example: |-
-  #        { "todo": "base64 string" }
+      type: "object"
+      properties:
+        participants:
+          type: array
+          items:
+            type: "object"
+            properties:
+              key:
+                $ref: "#/components/schemas/WalletPublicKey"
+              weight:
+                description: "Vote weight for this key"
+      #          allowEmptyValue: true
+      #          required: true
+      #          schema:
+                type: integer
+                example: 1
+                default: 1
+      #      example: |-
+      #        { "todo": "base64 string" }
     ElectionStatus:
       type: string
       enum: [ weighted, zkindexed ]
