@@ -57,17 +57,17 @@ export const Footer = () => {
             </Link>
           ))}
         </LinksContainer>
-        <Text>© {currentYear} Vocdoni</Text>
+        <Link>© {currentYear} Vocdoni</Link>
       </RightContainer>
     </FooterWrapper>
   );
 };
 
-const textColor = "text-neutral-800"
+const textColor = "ifm-color-primary"
 
 const FooterWrapper = styled.div.attrs({
   className:
-    'flex space-y-8 flex-col md:flex-row bg-primary-50 p-6 md:justify-between md:align-center md:space-y-0 md:space-x-8',
+    'footer flex space-y-8 flex-col md:flex-row p-6 md:justify-between md:align-center md:space-y-0 md:space-x-8',
 })``;
 const Image = styled.img.attrs({
   className: '',
