@@ -1,0 +1,34 @@
+---
+id: election-votes-paginated
+title: "Paginated election votes list"
+description: "Get a list of votes `nullifiers` for a election. The `nullifier` is a unique identifier for an election"
+sidebar_label: Paginated election votes list
+hide_title: true
+hide_table_of_contents: true
+api: {"description":"Get a list of votes `nullifiers` for a election. The `nullifier` is a unique identifier for an election\nDefault page is 0 if no page specified","operationId":"electionVotesPaginated","tags":["Elections"],"parameters":[{"name":"electionId","in":"path","description":"Election Id on 0x format","required":true,"schema":{"type":"string","example":"0xcfc47afa95bc60bc32ef4ff214df79ea8f53881640094d0ce63817bf6e867845"}},{"name":"page","in":"path","description":"When returning a list it define de page number. If empty, default is 0","allowEmptyValue":true,"required":true,"schema":{"type":"integer","example":1,"default":0}}],"responses":{"200":{"description":"Return list of nullifiers","content":{"application/json":{"example":"{\n  \"todo\": \"object\"\n}"}}}},"method":"get","path":"/elections/{electionId}/votes/page/{page}","servers":[{"url":"https://api.vocdoni.io/v2/"}],"security":[{"bearerAuth":[]}],"securitySchemes":{"bearerAuth":{"type":"http","scheme":"bearer"}},"info":{"version":"2.0.0","title":"Vocdoni API","license":{"name":"MIT"},"description":"**Goals and Objectives:** \nThe Vocdoni API is meant to be the entry point for external integrators to add voting capabilities to an existing  CRM, customer base and product experience. The API should act as a satellite that facilitates creating votes using  Vocdoni, without the hassle of learning a deep platform.\nThis API should allow to perform the basic primitives of the Vocdoni Protocol such as manage organizations, voting  processes and be able to vote, abstracting as much as possible the complexity and doing so, offering simple and  clear methods to perform such actions.\nLast but not least, the API should be modular and allow further expansion with other independent modules such as  payments, CSPs, SSI providers, CRM’s, etc. becoming a open voting block/”lego” for the Web2.0 & Web 3.0 world."},"postman":{"name":"Paginated election votes list","description":{"content":"Get a list of votes `nullifiers` for a election. The `nullifier` is a unique identifier for an election\nDefault page is 0 if no page specified","type":"text/plain"},"url":{"path":["elections",":electionId","votes","page",":page"],"host":["{{baseUrl}}"],"query":[],"variable":[{"disabled":false,"description":{"content":"(Required) Election Id on 0x format","type":"text/plain"},"type":"any","value":"","key":"electionId"},{"disabled":false,"description":{"content":"(Required) When returning a list it define de page number. If empty, default is 0","type":"text/plain"},"type":"any","value":"","key":"page"}]},"header":[{"key":"Accept","value":"application/json"}],"method":"GET"}}
+sidebar_class_name: "get api-method"
+info_path: vocdoni-api/vocdoni-api
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem"
+import SchemaTabs from "@theme/SchemaTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import TabItem from "@theme/TabItem";
+
+## Paginated election votes list
+
+
+
+Get a list of votes `nullifiers` for a election. The `nullifier` is a unique identifier for an election
+Default page is 0 if no page specified
+
+<details style={{"marginBottom":"1rem"}} data-collapsed={false} open={true}><summary style={{}}><strong>Path Parameters</strong></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"electionId","in":"path","description":"Election Id on 0x format","required":true,"schema":{"type":"string","example":"0xcfc47afa95bc60bc32ef4ff214df79ea8f53881640094d0ce63817bf6e867845"}}}></ParamsItem><ParamsItem className={"paramsItem"} param={{"name":"page","in":"path","description":"When returning a list it define de page number. If empty, default is 0","allowEmptyValue":true,"required":true,"schema":{"type":"integer","example":1,"default":0}}}></ParamsItem></ul></div></details><div><ApiTabs><TabItem label={"200"} value={"200"}><div>
+
+Return list of nullifiers
+
+</div><div><MimeTabs schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs><TabItem label={"Example"} value={"Example"}><ResponseSamples responseExample={"{\n  \"todo\": \"object\"\n}"} language={"json"}></ResponseSamples></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem></ApiTabs></div>
+      

@@ -1029,34 +1029,41 @@ paths:
                 {
                   "size": 1
                 }
-#  /censuses/{censusId}/publish/{root}:
-#    post:
-#      summary: "todo"
-#      description: |-
-#        todo
-#      operationId: censusPublishRoot
-#      security:
-#        - bearerAuth: [ ]
-#      tags:
-#        - Censuses
-#      parameters:
-#        - $ref: "#/components/parameters/censusIdParameter"
-#      responses:
-#        "200":
-#          description: "New census Id and storage uri"
-#          content:
-#            # todo(kon): use schema reference object
-#            application/json:
-#              example: |-
-#                {
-#                  "censusID": "b4a875b03f6f993e9daf804f67a6fc183b7a4d9b6390abcb6d7f56ff14d394b6",
-#                  "uri": "ipfs://QmQDpDj2s3wNCaDyCkjUaxjPXS9LjmPnWcQoi3TanjRgU1"
-#                }
+  /censuses/{censusId}/publish/{root}:
+    post:
+      summary: "Publish census at specific root"
+      description: |-
+        Publish the census at specific root. 
+        
+        See [censuses/{censusId}/participants](census-publish) and 
+        [censuses/{censusId}/participants](census-add-participants)
+      operationId: censusPublishRoot
+      security:
+        - bearerAuth: [ ]
+      tags:
+        - Censuses
+      parameters:
+        - $ref: "#/components/parameters/censusIdParameter"
+      responses:
+        "200":
+          description: "New census Id and storage uri"
+          content:
+            # todo(kon): use schema reference object
+            application/json:
+              example: |-
+                {
+                  "censusID": "b4a875b03f6f993e9daf804f67a6fc183b7a4d9b6390abcb6d7f56ff14d394b6",
+                  "uri": "ipfs://QmQDpDj2s3wNCaDyCkjUaxjPXS9LjmPnWcQoi3TanjRgU1"
+                }
   /censuses/{censusId}/publish:
     post:
-      summary: "Register census"
+      summary: "Publish census"
       description: |-
-        Register a census to the storage (IPFS in our case).
+        Register a census to the storage (IPFS in our case). After this, the census can't be edited. 
+        
+        You could provide the census Merkle root to specify census publication at specific snapshot. 
+        See [censuses/{censusId}/participants](census-add-participants)
+        
         - Requires Bearer token
         - The census is copied to a new census identified by its Merkle Root
         - The new census **cannot be modified**
@@ -1138,11 +1145,26 @@ paths:
     post:
       summary: "Add participants to census"
       description: |-
-        Add list of public key/address with its weight.
+        Add list of public key/address with its weight to an unpublished census and returns the resulting 
+        [Merkle Root](https://en.wikipedia.org/wiki/Merkle_tree).  
+        
+        Each addition will modify the census merkle root creating a new "snapshot" of the census at this moment. This 
+        root  identifies the census at this point and can be used to publish the census at this specific state.
+        
+        For example, supposing a census with id `0x1234` (random hex string generated during census creation), add 10 
+        keys will generate specific root for this state, ex `0xabcd`. 
+        
+        If we add 5 keys more, the resulting root changes, the keys are added and the new census have the first 10 keys
+        plus the last 5, with a resulting root of `0xffff`. 
+        
+        So, at [publishing moment](census-publish), you could specify no root to publish census on the last 
+        state (`0xffff`), which will publish the first 10 plus the last 5. Or either specify the snapshot point which 
+        you want to publish the census, for example `0x1234`, which will publish just the first 10th.
+               
         - Requires Bearer token 
         - Adds a list of wallet public key or wallet address to a census with a specific weight
         - If the weight parameter is missing, weight=1 is considered
-      operationId: censusAddKey
+      operationId: censusAddParticipants
       security:
         - bearerAuth: [ ]
       tags:
@@ -1166,6 +1188,7 @@ paths:
                 {
                   "todo": "object"
                 }
+  /censuses/{censusId}:
     delete:
       summary: "Delete census"
       description: |-
@@ -1263,7 +1286,7 @@ components:
     censusIdParameter:
       name: censusId
       in: path
-      description: "Census id"
+      description: "Census id provided during census creation"
       required: true
       schema:
         $ref: '#/components/schemas/CensusId'
@@ -1342,6 +1365,7 @@ components:
       enum: [ todo, todo2 ]
     CensusId:
       type: string
+      description: "Random 32 bytes hex string"
       example: "b547a9c83ad7d61b568cf10ebbb25338d680810fa219fa69477cfbd860b386c2"
     CensusAddKeys:
       type: "object"
