@@ -1,0 +1,39 @@
+---
+id: organizations-list
+title: "List organizations"
+description: "An **Organizations** is an account with `infoUri` that contains organization associated  metadata."
+sidebar_label: List organizations
+hide_title: true
+hide_table_of_contents: true
+api: {"description":"An **Organizations** is an account with `infoUri` that contains organization associated  metadata. \nAn **Account** instead could be a validator, an oracle, a voter or just someone who wants to transfer tokens. \n\nThe `/chain/organizations` endpoints are related only to the Organization account type.\n\n- Return list of organizations ids.\n- If no page is defined, will assume page 0.","operationId":"organizationsList","tags":["Chain"],"responses":{"200":{"description":"It return a list of organizations id","content":{"application/json":{"schema":{"type":"object","properties":{"organizations":{"type":"array","items":{"type":"object","properties":{"organization_id":{"type":"string","example":"0x370372b92514d81a0e3efb8eba9d036ae0877653"},"election_count":{"type":"integer","format":"int32","example":1}}}}}}}}}},"method":"get","path":"/chain/organizations","servers":[{"url":"https://api.vocdoni.io/v2/"}],"securitySchemes":{"bearerAuth":{"type":"http","scheme":"bearer"}},"info":{"version":"2.0.0","title":"Vocdoni API","license":{"name":"MIT"},"description":"**Goals and Objectives:** \nThe Vocdoni API is meant to be the entry point for external integrators to add voting capabilities to an existing  CRM, customer base and product experience. The API should act as a satellite that facilitates creating votes using  Vocdoni, without the hassle of learning a deep platform.\nThis API should allow to perform the basic primitives of the Vocdoni Protocol such as manage organizations, voting  processes and be able to vote, abstracting as much as possible the complexity and doing so, offering simple and  clear methods to perform such actions.\nLast but not least, the API should be modular and allow further expansion with other independent modules such as  payments, CSPs, SSI providers, CRM’s, etc. becoming a open voting block/”lego” for the Web2.0 & Web 3.0 world."},"postman":{"name":"List organizations","description":{"content":"An **Organizations** is an account with `infoUri` that contains organization associated  metadata. \nAn **Account** instead could be a validator, an oracle, a voter or just someone who wants to transfer tokens. \n\nThe `/chain/organizations` endpoints are related only to the Organization account type.\n\n- Return list of organizations ids.\n- If no page is defined, will assume page 0.","type":"text/plain"},"url":{"path":["chain","organizations"],"host":["{{baseUrl}}"],"query":[],"variable":[]},"header":[{"key":"Accept","value":"application/json"}],"method":"GET"}}
+sidebar_class_name: "get api-method"
+info_path: vocdoni-api/vocdoni-api
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem"
+import SchemaTabs from "@theme/SchemaTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import TabItem from "@theme/TabItem";
+
+## List organizations
+
+
+
+An **Organizations** is an account with `infoUri` that contains organization associated  metadata. 
+An **Account** instead could be a validator, an oracle, a voter or just someone who wants to transfer tokens. 
+
+The `/chain/organizations` endpoints are related only to the Organization account type.
+
+- Return list of organizations ids.
+- If no page is defined, will assume page 0.
+
+<div><ApiTabs><TabItem label={"200"} value={"200"}><div>
+
+It return a list of organizations id
+
+</div><div><MimeTabs schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs><TabItem label={"Schema"} value={"Schema"}><details style={{}} data-collapsed={false} open={true}><summary style={{"textAlign":"left"}}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={true} className={"schemaItem"}><details style={{}}><summary style={{}}><strong>organizations</strong><span style={{"opacity":"0.6"}}> object[]</span></summary><div style={{"marginLeft":"1rem"}}><SchemaItem collapsible={false} name={"organization_id"} required={false} schemaDescription={undefined} schemaName={"string"} qualifierMessage={undefined} defaultValue={undefined}></SchemaItem><SchemaItem collapsible={false} name={"election_count"} required={false} schemaDescription={undefined} schemaName={"int32"} qualifierMessage={undefined} defaultValue={undefined}></SchemaItem></div></details></SchemaItem></ul></details></TabItem><TabItem label={"Example (from schema)"} value={"Example (from schema)"}><ResponseSamples responseExample={"{\n  \"organizations\": [\n    {\n      \"organization_id\": \"0x370372b92514d81a0e3efb8eba9d036ae0877653\",\n      \"election_count\": 1\n    }\n  ]\n}"} language={"json"}></ResponseSamples></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem></ApiTabs></div>
+      
