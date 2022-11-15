@@ -44,7 +44,7 @@
 
 .get > .menu__link::before {
   content: "get";
-  background-color: var(--ifm-color-primary);
+  background-color: #3465a4;
 }
 
 .post > .menu__link::before {
