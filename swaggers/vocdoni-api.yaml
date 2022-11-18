@@ -1429,7 +1429,7 @@ components:
           example: 1
     ElectionStatusFilter:
       type: string
-      enum: [ active, paused, ended ]
+      enum: [ ready, ended, canceled, paused, results ]
       description: >
         Election status enum
       example: "active"
