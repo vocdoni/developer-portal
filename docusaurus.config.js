@@ -27,8 +27,6 @@ const config = {
         docs: {
           routeBasePath: "/",
           sidebarPath: require.resolve("./sidebars.js"),
-          editUrl:
-            "https://github.com/vocdoni/developer-portal/",
           docLayoutComponent: "@theme/DocPage",
           docItemComponent: "@theme/ApiItem", // Derived from docusaurus-theme-openapi
         },
