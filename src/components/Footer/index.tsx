@@ -48,7 +48,7 @@ export const Footer = () => {
           <LinksContainer>
             {leftLinks.map((link, index) => (
                 // todo(kon): Fix this and use correctly the react link
-                <a href={link.to}>
+                <a href={link.to} target="_blank">
                   <Link src={link.to} key={index}>
                     {link.text}
                   </Link>

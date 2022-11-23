@@ -19,7 +19,7 @@ const componentCards: IComponentCardProps[] = [
     description:
         'Vocdoni defines an open architecture and the protocols to empower large communities to exercise full democracy with the best guarantees.',
     img: '/img/layers3.jpg',
-    to: 'https://docs.vocdoni.io/architecture/general.html#service-architecture',
+    to: '/get-started/intro',
     external: true
   },
   {
