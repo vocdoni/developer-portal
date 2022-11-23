@@ -78,19 +78,19 @@ export default function Home(): JSX.Element {
           subtitle="Here you'll finds guides, resources and references to use Vocdoni stack"
           img={require('@site/static/img/welcome-image.png').default}
         />
-        <WelcomeCardsWrapper>
-          {welcomeCards.map((card, index) => (
-            <WelcomeCard
-              key={index}
-              title={card.title}
-              description={card.description}
-              icon={card.icon}
-              href={card.href}
-              linkLabel={card.linkLabel}
-              external={card.external}
-            />
-          ))}
-        </WelcomeCardsWrapper>
+        {/*<WelcomeCardsWrapper>*/}
+        {/*  {welcomeCards.map((card, index) => (*/}
+        {/*    <WelcomeCard*/}
+        {/*      key={index}*/}
+        {/*      title={card.title}*/}
+        {/*      description={card.description}*/}
+        {/*      icon={card.icon}*/}
+        {/*      href={card.href}*/}
+        {/*      linkLabel={card.linkLabel}*/}
+        {/*      external={card.external}*/}
+        {/*    />*/}
+        {/*  ))}*/}
+        {/*</WelcomeCardsWrapper>*/}
         <ComponentCardsWrapper>
           <ComponentCardsTitle>Explore Components</ComponentCardsTitle>
           {componentCards.map((card, index) => (
