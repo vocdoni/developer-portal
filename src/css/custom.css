@@ -81,7 +81,7 @@ h6 { font-size: var(--ifm-h6-font-size); }
 
 /* Center all columns in main wrapper */
 .main-wrapper {
-  align-self: center;
+  /*align-self: center;*/
 }
 
 .main-wrapper h1[class^="docTitle"] {
