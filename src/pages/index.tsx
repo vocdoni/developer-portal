@@ -34,6 +34,7 @@ const componentCards: IComponentCardProps[] = [
       'Vocdoni defines an open architecture and the protocols to empower large communities to exercise full democracy with the aforementioned guarantees.',
     img: '/img/layers3.jpg',
     to: 'https://docs.vocdoni.io/architecture/general.html#service-architecture',
+    external: true
   },
 ];
 
@@ -64,6 +65,7 @@ const welcomeCards: IWelcomeCardProps[] = [
     icon: <StyledInfoIcon />,
     linkLabel: 'Know More',
     href: 'https://documentation.aragon.org/products/aragon-vocdoni/what-is-aragon-vocdoni',
+    external: true
   },
 ];
 
@@ -85,6 +87,7 @@ export default function Home(): JSX.Element {
               icon={card.icon}
               href={card.href}
               linkLabel={card.linkLabel}
+              external={card.external}
             />
           ))}
         </WelcomeCardsWrapper>
@@ -97,6 +100,7 @@ export default function Home(): JSX.Element {
               description={card.description}
               img={card.img}
               to={card.to}
+              external={card.external}
             />
           ))}
         </ComponentCardsWrapper>

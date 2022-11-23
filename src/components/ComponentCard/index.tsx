@@ -9,6 +9,7 @@ export interface IComponentCardProps {
   description: string;
   img: ReactNode;
   to: string;
+  external?: boolean;
 }
 
 type SvgContainerProps = {
@@ -29,6 +30,7 @@ export const ComponentCard = (props: IComponentCardProps) => {
           href={props.to}
           iconRight={<IconChevronRight />}
           label="Learn More"
+          external={props.external ?? false}
         />
       </ContentWrapper>
     </CardWrapper>
