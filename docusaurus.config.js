@@ -100,7 +100,7 @@ const config = {
             href: "https://explorer.vote",
             docId: 'sdk/sdk',
             position: 'left',
-            label: 'Explore',
+            label: 'Explorer',
           },
           {
             href: "https://blog.vocdoni.io",
