@@ -5,13 +5,13 @@ const currentYear = new Date().getFullYear();
 
 const leftLinks = [
   {
-    text: 'Home',
-    to: '/',
+    text: 'Vocdoni.app',
+    to: 'https://vocdoni.app',
   },
-  {
-    text: 'Quickstart',
-    to: '/get-started/intro',
-  },
+  // {
+  //   text: 'Quickstart',
+  //   to: '/get-started/intro',
+  // },
   {
     text: 'Explorer',
     to: 'https://explorer.vote',
@@ -26,10 +26,10 @@ const leftLinks = [
   // },
 ];
 const rightLinks = [
-  {
-    text: 'Vocdoni.app',
-    to: 'https://vocdoni.app',
-  },
+  // {
+  //   text: 'Vocdoni.app',
+  //   to: 'https://vocdoni.app',
+  // },
   // {
   //   text: 'Terms of service',
   //   to: 'https://vocdoni.app',
@@ -44,7 +44,7 @@ export const Footer = () => {
   return (
       <FooterWrapper>
         <LeftContainer>
-          <Image width="120px" src={require('@site/static/img/logo-full.png').default}></Image>
+          <a href="/"><Image width="120px" src={require('@site/static/img/logo-full.png').default}></Image></a>
           <LinksContainer>
             {leftLinks.map((link, index) => (
                 // todo(kon): Fix this and use correctly the react link
@@ -67,7 +67,7 @@ export const Footer = () => {
                 </a>
             ))}
           </LinksContainer>
-          <Link>© {currentYear} Vocdoni</Link>
+          {/*<Link>© {currentYear} Vocdoni</Link>*/}
         </RightContainer>
       </FooterWrapper>
   );
