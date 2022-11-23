@@ -40,7 +40,7 @@ export const Footer = () => {
   return (
     <FooterWrapper>
       <LeftContainer>
-        <Image src={require('@site/static/img/logo-full.png').default}></Image>
+        <Image width="120px" src={require('@site/static/img/logo-full.png').default}></Image>
         <LinksContainer>
           {leftLinks.map((link, index) => (
             <Link src={link.to} key={index}>
