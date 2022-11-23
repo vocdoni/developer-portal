@@ -97,10 +97,10 @@ const config = {
             label: 'SDK',
           },
           {
-            href: "https://documentation.aragon.org/products/aragon-vocdoni/what-is-aragon-vocdoni",
+            href: "https://explorer.vote",
             docId: 'sdk/sdk',
             position: 'left',
-            label: 'Guides',
+            label: 'Explore',
           },
           {
             href: "https://blog.vocdoni.io",
