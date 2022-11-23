@@ -32,7 +32,7 @@ export const WelcomeCard = (props: IWelcomeCardProps) => {
 
 const CardWrapper = styled.div.attrs({
   className:
-    'flex flex-col w-1/3 space-y-5 rounded-xl border-2 border-neutral-50 p-6',
+    'flex flex-col sm:w-1/3 w-auto space-y-5 rounded-xl border-2 border-neutral-50 p-6',
 })`
   box-shadow: 0px 10px 20px rgba(31, 41, 51, 0.04),
     0px 2px 6px rgba(31, 41, 51, 0.04), 0px 0px 1px rgba(31, 41, 51, 0.04);
