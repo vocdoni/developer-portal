@@ -6,15 +6,15 @@ const currentYear = new Date().getFullYear();
 const leftLinks = [
   {
     text: 'Home',
-    to: 'https://vocdoni.app',
+    to: '/',
   },
   {
     text: 'Quickstart',
-    to: 'https://vocdoni.app',
+    to: '/get-started/intro',
   },
   {
     text: 'Guides',
-    to: 'https://vocdoni.app',
+    to: 'https://documentation.aragon.org/products/aragon-vocdoni/what-is-aragon-vocdoni',
   },
   {
     text: 'Support',
@@ -38,45 +38,51 @@ const rightLinks = [
 
 export const Footer = () => {
   return (
-    <FooterWrapper>
-      <LeftContainer>
-        <Image width="120px" src={require('@site/static/img/logo-full.png').default}></Image>
-        <LinksContainer>
-          {leftLinks.map((link, index) => (
-            <Link src={link.to} key={index}>
-              {link.text}
-            </Link>
-          ))}
-        </LinksContainer>
-      </LeftContainer>
-      <RightContainer>
-        <LinksContainer>
-          {rightLinks.map((link, index) => (
-            <Link src={link.to} key={index}>
-              {link.text}
-            </Link>
-          ))}
-        </LinksContainer>
-        <Link>© {currentYear} Vocdoni</Link>
-      </RightContainer>
-    </FooterWrapper>
+      <FooterWrapper>
+        <LeftContainer>
+          <Image width="120px" src={require('@site/static/img/logo-full.png').default}></Image>
+          <LinksContainer>
+            {leftLinks.map((link, index) => (
+                // todo(kon): Fix this and use correctly the react link
+                <a href={link.to}>
+                  <Link src={link.to} key={index}>
+                    {link.text}
+                  </Link>
+                </a>
+            ))}
+          </LinksContainer>
+        </LeftContainer>
+        <RightContainer>
+          <LinksContainer>
+            {rightLinks.map((link, index) => (
+                // todo(kon): Fix this and use correctly the react link
+                <a href={link.to}>
+                  <Link src={link.to} key={index}>
+                    {link.text}
+                  </Link>
+                </a>
+            ))}
+          </LinksContainer>
+          <Link>© {currentYear} Vocdoni</Link>
+        </RightContainer>
+      </FooterWrapper>
   );
 };
 
 const FooterWrapper = styled.div.attrs({
   className:
-    'footer flex space-y-8 flex-col md:flex-row p-6 md:justify-between md:align-center md:space-y-0 md:space-x-8',
+      'footer flex space-y-8 flex-col md:flex-row p-6 md:justify-between md:align-center md:space-y-0 md:space-x-8',
 })``;
 const Image = styled.img.attrs({
   className: '',
 })``;
 const LeftContainer = styled.div.attrs({
   className:
-    'space-y-8 flex flex-col items-center md:flex-row md:space-y-0 md:space-x-8',
+      'space-y-8 flex flex-col items-center md:flex-row md:space-y-0 md:space-x-8',
 })``;
 const RightContainer = styled.div.attrs({
   className:
-    'space-y-8 flex flex-col items-center md:flex-row md:space-y-0 md:space-x-6',
+      'space-y-8 flex flex-col items-center md:flex-row md:space-y-0 md:space-x-6',
 })``;
 const LinksContainer = styled.div.attrs({
   className: 'flex flex-rox space-x-6',
