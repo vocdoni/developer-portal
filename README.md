@@ -21,6 +21,11 @@ This will generate all the API static files.
 
 ## Deploy
 
+* After push the branch you want to deploy
+* And, locally, on the branch you want to deploy
+
+Run:
+
 ```bash
 USE_SSH=true yarn deploy
 ```
