@@ -3,11 +3,14 @@ div[class^='announcementBar'], div[class*=' announcementBar'] {
     background-color: green;
     height: fit-content;
     background: rgba(0, 0, 0, 0) linear-gradient(101.89deg, rgb(241, 255, 223) 17.32%, rgb(225, 255, 255) 68.46%) repeat scroll 0% 0%;
-    padding: 15px 20px 10px 20px;
+    padding: 8px 20px 10px 20px;
+}
+
+div[class^='announcementBar'], div[class*=' announcementBar'] h2 {
+    margin-bottom: 5px;
 }
 
 div[class^='announcementBar'], div[class*=' announcementBar'] p {
-    font-size: 18px;
+    font-size: 15px;
     color: rgb(13, 71, 82);
-    margin-bottom: 20px;
 }
