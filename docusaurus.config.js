@@ -194,6 +194,9 @@ const config = {
         //   logoClass: "php",
         // },
       ],
+      colorMode: {
+        disableSwitch: true,
+      },
     }),
 
   plugins: [
