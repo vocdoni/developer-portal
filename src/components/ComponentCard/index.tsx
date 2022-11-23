@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import {Link} from '@aragon/ui-components';
 import {useScreenSize} from '../../hooks/useScreenSize';
 
-interface IComponentCardProps {
+export interface IComponentCardProps {
   title: string;
   description: string;
   img: ReactNode;
