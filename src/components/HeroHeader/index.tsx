@@ -46,5 +46,5 @@ const Subtitle = styled.p.attrs({
   className: 'text-xl text-ui-600 text-center md:text-left',
 })``;
 const Image = styled.img.attrs({
-  className: 'flex',
+  className: 'flex max-h-40',
 })``;
