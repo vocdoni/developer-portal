@@ -14,7 +14,7 @@ const leftLinks = [
   // },
   {
     text: 'Explorer',
-    to: 'https://explorer.vote',
+    to: 'https://dev.explorer.vote',
   },
   // {
   //   text: 'Guides',
