@@ -13,27 +13,31 @@ const leftLinks = [
     to: '/get-started/intro',
   },
   {
-    text: 'Guides',
-    to: 'https://documentation.aragon.org/products/aragon-vocdoni/what-is-aragon-vocdoni',
+    text: 'Explorer',
+    to: 'https://explorer.vote',
   },
-  {
-    text: 'Support',
-    to: 'https://vocdoni.app',
-  },
+  // {
+  //   text: 'Guides',
+  //   to: 'https://documentation.aragon.org/products/aragon-vocdoni/what-is-aragon-vocdoni',
+  // },
+  // {
+  //   text: 'Support',
+  //   to: 'https://vocdoni.app',
+  // },
 ];
 const rightLinks = [
   {
     text: 'Vocdoni.app',
     to: 'https://vocdoni.app',
   },
-  {
-    text: 'Terms of service',
-    to: 'https://vocdoni.app',
-  },
-  {
-    text: 'Privacy',
-    to: 'https://vocdoni.app',
-  },
+  // {
+  //   text: 'Terms of service',
+  //   to: 'https://vocdoni.app',
+  // },
+  // {
+  //   text: 'Privacy',
+  //   to: 'https://vocdoni.app',
+  // },
 ];
 
 export const Footer = () => {
