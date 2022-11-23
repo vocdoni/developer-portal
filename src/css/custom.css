@@ -81,8 +81,6 @@ h6 { font-size: var(--ifm-h6-font-size); }
 
 /* Center all columns in main wrapper */
 .main-wrapper {
-  max-width: 1400px;
-  width: 1400px;
   align-self: center;
 }
 
@@ -107,7 +105,6 @@ h6 { font-size: var(--ifm-h6-font-size); }
 
 /* Center navbar items */
 .navbar__inner {
-  max-width: 1360px;
   margin: 0 auto;
 }
 
