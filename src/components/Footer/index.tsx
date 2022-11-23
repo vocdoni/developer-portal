@@ -63,8 +63,6 @@ export const Footer = () => {
   );
 };
 
-const textColor = "ifm-color-primary"
-
 const FooterWrapper = styled.div.attrs({
   className:
     'footer flex space-y-8 flex-col md:flex-row p-6 md:justify-between md:align-center md:space-y-0 md:space-x-8',
@@ -83,9 +81,8 @@ const RightContainer = styled.div.attrs({
 const LinksContainer = styled.div.attrs({
   className: 'flex flex-rox space-x-6',
 })``;
-const Text = styled.span.attrs({
-  className: textColor,
-})``;
+
 const Link = styled.a.attrs({
-  className: 'hover:text-secondary-700 cursor-pointer ' + textColor,
+  className: 'navbar__link hover:text-secondary-700 cursor-pointer ',
 })``;
+
