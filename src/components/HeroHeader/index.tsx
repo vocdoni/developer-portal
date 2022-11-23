@@ -17,7 +17,10 @@ export const HeroHeader = (props: IHeroHeader) => {
         {isMobile && <Image src={props.img} alt="" />}
         <TextWrapper>
           <Title>{props.title}</Title>
-          <Subtitle>{props.subtitle}</Subtitle>
+          {/*<Subtitle>{props.subtitle}</Subtitle>*/}
+          <LeText>Vocdoni Protocol is an open source, universally verifiable, flexible and scalable voting system. </LeText>
+          <LeText>The Developer Portal contains all you need to start integrating the Vocdoni Protocol, including the API and SDK, and extensive documentation about the protocol design. </LeText>
+          <LeText>You can reach us at <a href="https://chat.vocdoni.io">chat.vocdoni.io</a> if you need assistance</LeText>
         </TextWrapper>
 
         {/* TODO: FIX ME  */}
@@ -37,13 +40,16 @@ const HeaderWrapper = styled.div.attrs({
   className: 'flex flex-col space-y-2.5 md:flex-row md:justify-between',
 })``;
 const TextWrapper = styled.div.attrs({
-  className: 'flex flex-col space-y-2 justify-center',
+  className: 'flex sm:w-2/3 w-auto  flex-col space-y-2 justify-center',
 })``;
 const Title = styled.p.attrs({
   className: 'text-4xl font-bold text-ui-800 text-center md:text-left',
 })``;
 const Subtitle = styled.p.attrs({
   className: 'text-xl text-ui-600 text-center md:text-left',
+})``;
+const LeText = styled.p.attrs({
+  className: 'text-l text-ui-600 text-center md:text-left',
 })``;
 const Image = styled.img.attrs({
   className: 'flex max-h-40',
