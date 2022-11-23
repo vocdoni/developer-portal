@@ -9,6 +9,7 @@ export interface IWelcomeCardProps {
   icon: ReactNode;
   linkLabel: string;
   href?: string;
+  external?: boolean;
 }
 
 export const WelcomeCard = (props: IWelcomeCardProps) => {
@@ -19,16 +20,12 @@ export const WelcomeCard = (props: IWelcomeCardProps) => {
         <Title>{props.title}</Title>
         <Description> {props.description}</Description>
       </ContentWrapper>
-        {/*{props.href && <Link*/}
-        {/*    href={props.href}*/}
-        {/*    iconRight={<IconChevronRight/>}*/}
-        {/*    label={props.linkLabel}*/}
-        {/*/>}*/}
-      <Link
-          href={props.href}
-          iconRight={<IconChevronRight/>}
-          label={props.linkLabel}
-      />
+        {props.href && <Link
+            href={props.href}
+            iconRight={<IconChevronRight/>}
+            label={props.linkLabel}
+            external={props.external ?? false}
+        />}
     </CardWrapper>
   );
 };
