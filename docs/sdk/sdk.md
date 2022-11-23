@@ -45,8 +45,8 @@ our blockchain (vochain):
 
 ~~~ts
 (async () => {
-    const info = await client.createAccount()
-    console.log(info) // will show account information
+  const info = await client.createAccount()
+  console.log(info) // will show account information
 })();
 ~~~
 
@@ -61,8 +61,8 @@ also decide to just fetch it, without falling back to an account registration:
 
 ~~~ts
 (async () => {
-    const info = await client.fetchAccountInfo()
-    console.log(info) // shows info (only if account exists, otherwise throws error)
+  const info = await client.fetchAccountInfo()
+  console.log(info) // shows info (only if account exists, otherwise throws error)
 })();
 ~~~
 
@@ -75,9 +75,9 @@ for a byte64 string faucet, and specify it when creating your account:
 
 ~~~ts
 (async () => {
-    const info = await client.createAccount({
-        faucetPayload: "<b64string>"
-    })
+  const info = await client.createAccount({
+    faucetPayload: "<b64string>"
+  })
 })();
 ~~~
 
@@ -89,10 +89,10 @@ to the included faucet:
 
 ~~~ts
 (async () => {
-    const info = await client.createAccount()
-    if (info.balance === 0) {
-        await client.collectFaucetTokens()
-    }
+  const info = await client.createAccount()
+  if (info.balance === 0) {
+    await client.collectFaucetTokens()
+  }
 })();
 ~~~
 
@@ -113,8 +113,8 @@ const census = new PlainCensus()
 census.add(address)
 census.add('0x0000000000000000000000000000000000000000')
 (async () => {
-    // random wallet, for example purposes
-    census.add(await Wallet.createRandom().getAddress())
+  // random wallet, for example purposes
+  census.add(await Wallet.createRandom().getAddress())
 })();
 ~~~
 
@@ -167,7 +167,7 @@ election.addQuestion('Ain\'t this process awesome?', [
     value: 2,
   },
   {
-    title: 'Elder (17-60 yo)',
+    title: 'Elder (60+ yo)',
     value: 3,
   },
 ])
@@ -250,9 +250,8 @@ This SDK is licensed under the [GNU Affero General Public License v3.0][license]
 [Vocdoni API]: https://api.vocdoni.io
 [nodejs]: https://nodejs.org
 [ethers]: https://github.com/ethers-io/ethers.js
-[vochain explorer]: https://dev.explorer.vote
 [dev vochain explorer]: https://dev.explorer.vote
-[election interface]: ./src/types/election.ts#L23
-[examples]: ./examples
-[full featured CRA]: ./examples/cra/readme.md
-[license]: ./LICENSE
+[election interface]: https://github.com/vocdoni/vocdoni-sdk/src/types/election.ts#L23
+[examples]: https://github.com/vocdoni/vocdoni-sdk/examples
+[full featured CRA]: https://github.com/vocdoni/vocdoni-sdk/examples/cra/readme.md
+[license]: https://github.com/vocdoni/vocdoni-sdk/LICENSE
