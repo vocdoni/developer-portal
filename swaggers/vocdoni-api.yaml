@@ -19,23 +19,23 @@ info:
     payments, CSPs, SSI providers, CRM’s, etc. becoming a open voting block/”lego” for the Web2.0 & Web 3.0 world.
 
 servers:
-  - url: https://api.vocdoni.io/v2/
+  - url: https://api-dev.vocdoni.net/v2/
 tags:
-  - name: Accounts
-    description: "Related to account metadata (additional account information like balance, storage URI, process count...)"
-  - name: Censuses
-    description: "Manage census: create, add, get, verify..."
   - name: Chain
     description: "Everything about internal Vochain information (transactions, organizations, blocks, stats...)"
       #    externalDocs:
-      #      description: Find out more
-      #      url: https://docs.vocdoni.io/architecture/services/gateway.html#api-definition
+    #      description: Find out more
+    #      url: https://docs.vocdoni.io/architecture/services/gateway.html#api-definition
+  - name: Accounts
+    description: "Related to account metadata (additional account information like balance, storage URI, process count...)"
   - name: Elections
     description: "Create, manage and get information about elections"
+  - name: Censuses
+    description: "Manage census: create, add, get, verify..."
   - name: Votes
     description: "Submit, get, and verify votes"
-  - name: Wallet
-    description: "Create and use a wallet to perform operations on the Vochain relaying private key custody backend side."
+#  - name: Wallet
+#    description: "Create and use a wallet to perform operations on the Vochain relaying private key custody backend side."
 paths:
   ####################################################
   ## /chain/transactions                             ##
@@ -666,186 +666,186 @@ paths:
   ####################################################
   ## /wallet                                        ##
   ####################################################
-  /wallet/add/{privateKey}:
-    post:
-      summary: "Add wallet"
-      description: |-
-        Adds a new wallet to the storage using privateKey
-        - PrivateKey is a 32 bytes hexadecimal string
-        - Returns a Bearer Token that must be used on further wallet calls (if the token is lost, the API backend cannot
-        recover the privatekey). Token is a [UUID](https://en.wikipedia.org/wiki/Universally_unique_identifier)
-      operationId: addWallet
-      tags:
-        - Wallet
-      parameters:
-        - name: privateKey
-          in: path
-          description: "32 bytes hexadecimal string"
-          required: true
-          schema:
-            $ref: '#/components/schemas/WalletPrivateKey'
-      responses:
-        "200":
-          description: "Return account data"
-          content:
-            application/json:
-              schema:
-                type: object
-                properties:
-                  token:
-                    $ref: "#/components/schemas/Uuid"
-                  address:
-                    $ref: "#/components/schemas/WalletAddress"
-  /wallet/bootstrap:
-    post:
-      summary: "Create an account"
-      description: |-
-        Creates the account on the blockchain relaying private key custody backend side. It differs from 
-        `POST account/` that require signed transaction on the body".
-        
-        The `response` attribute on the response object is the newly created account id.
-        
-        All `wallet/` operations relay on the private key custody by the backend.
-      operationId: walletBootstrap
-      tags:
-        - Wallet
-      security:
-        - bearerAuth: [ ]
-      responses:
-        "200":
-          description: "Return signed and sent transaction response from the blockchain"
-          content:
-            application/json:
-              schema:
-                type: object
-                properties:
-                  response:
-                    $ref: "#/components/schemas/AccountId"
-                  code:
-                    type: integer
-                    format: int32
-                    example: 1
-                  hash:
-                    $ref: "#/components/schemas/TransactionHash"
-  /wallet/transfer/{destAddr}/{amount}:
-    post:
-      summary: "Transfer VOC tokens"
-      description: |-
-        Transfer an amount of VOC tokens to a public destination address.
-        Return blockchain transaction
-      operationId: walletTransfer
-      security:
-        - bearerAuth: [ ]
-      tags:
-        - Wallet
-      parameters:
-        - name: destAddr
-          in: path
-          description: "Wallet destination address"
-          required: true
-          schema:
-            $ref: '#/components/schemas/WalletAddress'
-        - name: amount
-          in: path
-          description: "Amount of VOC tokens"
-          required: true
-          schema:
-            type: number
-            format: double
-            example: "2.2"
-      responses:
-        "200":
-          description: "Operation success"
-          content:
-            application/json:
-              schema:
-                type: object
-                properties:
-                  response:
-                    $ref: "#/components/schemas/AccountId"
-                  code:
-                    type: integer
-                    format: int32
-                    example: 1
-                  hash:
-                    $ref: "#/components/schemas/TransactionHash"
-  /wallet/election:
-    post:
-      summary: "Create an election"
-      description: |-
-        It differs with `POST election/` because is not needed to send signed transactions on the body so its data model 
-        is much simplified.
-        
-        It return election information.
-        
-        All `wallet/` operations relay on the private key custody by the backend.
-      operationId: walletElectionPost
-      security:
-        - bearerAuth: [ ]
-      tags:
-        - Wallet
-      requestBody:
-        description: "Election description "
-        required: true
-        content:
-          application/json:
-            schema:
-              $ref: "#/components/schemas/WalletElectionRequest"
-      responses:
-        "200":
-          description: "Election information object"
-          content:
-            application/json:
-              example: |-
-                {
-                  "title": "APIv2 test process",
-                  "description": "this is a testing election",
-                  "header": "https://unsplash.com/photos/-TgHIH6glbk/download?ixid=MnwxMjA3fDB8MXxhbGx8Mjd8fHx8fHwyfHwxNjY0MjI3ODM1&force=true&w=640",
-                  "streamUri": "",
-                  "startDate": "2022-09-27T00:40:29+02:00",
-                  "endDate": "2022-09-28T00:20:29+02:00",
-                  "voteType": {
-                    "uniqueChoices": false,
-                    "maxVoteOverwrites": 1,
-                    "costFromWeight": false,
-                    "costExponent": 10000
-                  },
-                  "electionType": {
-                    "autoStart": true,
-                    "interruptible": true,
-                    "dynamicCensus": false,
-                    "secretUntilTheEnd": false,
-                    "anonymous": false
-                  },
-                  "census": {
-                    "type": "csp",
-                    "publicKey": "f6e19f03a6304cd25ba0bc536c5cfa2b5b6c9aa05d2d25fce2aa0682bc18dbda"
-                  },
-                  "questions": [
-                    {
-                      "title": {
-                        "default": "first question"
-                      },
-                      "description": {
-                        "default": "lets vote"
-                      },
-                      "choices": [
-                        {
-                          "title": {
-                            "default": "this is a choice"
-                          },
-                          "value": 0
-                        },
-                        {
-                          "title": {
-                            "default": "this is another choice"
-                          },
-                          "value": 1
-                        }
-                      ]
-                    }
-                  ]
-                }
+#  /wallet/add/{privateKey}:
+#    post:
+#      summary: "Add wallet"
+#      description: |-
+#        Adds a new wallet to the storage using privateKey
+#        - PrivateKey is a 32 bytes hexadecimal string
+#        - Returns a Bearer Token that must be used on further wallet calls (if the token is lost, the API backend cannot
+#        recover the privatekey). Token is a [UUID](https://en.wikipedia.org/wiki/Universally_unique_identifier)
+#      operationId: addWallet
+#      tags:
+#        - Wallet
+#      parameters:
+#        - name: privateKey
+#          in: path
+#          description: "32 bytes hexadecimal string"
+#          required: true
+#          schema:
+#            $ref: '#/components/schemas/WalletPrivateKey'
+#      responses:
+#        "200":
+#          description: "Return account data"
+#          content:
+#            application/json:
+#              schema:
+#                type: object
+#                properties:
+#                  token:
+#                    $ref: "#/components/schemas/Uuid"
+#                  address:
+#                    $ref: "#/components/schemas/WalletAddress"
+#  /wallet/bootstrap:
+#    post:
+#      summary: "Create an account"
+#      description: |-
+#        Creates the account on the blockchain relaying private key custody backend side. It differs from
+#        `POST account/` that require signed transaction on the body".
+#
+#        The `response` attribute on the response object is the newly created account id.
+#
+#        All `wallet/` operations relay on the private key custody by the backend.
+#      operationId: walletBootstrap
+#      tags:
+#        - Wallet
+#      security:
+#        - bearerAuth: [ ]
+#      responses:
+#        "200":
+#          description: "Return signed and sent transaction response from the blockchain"
+#          content:
+#            application/json:
+#              schema:
+#                type: object
+#                properties:
+#                  response:
+#                    $ref: "#/components/schemas/AccountId"
+#                  code:
+#                    type: integer
+#                    format: int32
+#                    example: 1
+#                  hash:
+#                    $ref: "#/components/schemas/TransactionHash"
+#  /wallet/transfer/{destAddr}/{amount}:
+#    post:
+#      summary: "Transfer VOC tokens"
+#      description: |-
+#        Transfer an amount of VOC tokens to a public destination address.
+#        Return blockchain transaction
+#      operationId: walletTransfer
+#      security:
+#        - bearerAuth: [ ]
+#      tags:
+#        - Wallet
+#      parameters:
+#        - name: destAddr
+#          in: path
+#          description: "Wallet destination address"
+#          required: true
+#          schema:
+#            $ref: '#/components/schemas/WalletAddress'
+#        - name: amount
+#          in: path
+#          description: "Amount of VOC tokens"
+#          required: true
+#          schema:
+#            type: number
+#            format: double
+#            example: "2.2"
+#      responses:
+#        "200":
+#          description: "Operation success"
+#          content:
+#            application/json:
+#              schema:
+#                type: object
+#                properties:
+#                  response:
+#                    $ref: "#/components/schemas/AccountId"
+#                  code:
+#                    type: integer
+#                    format: int32
+#                    example: 1
+#                  hash:
+#                    $ref: "#/components/schemas/TransactionHash"
+#  /wallet/election:
+#    post:
+#      summary: "Create an election"
+#      description: |-
+#        It differs with `POST election/` because is not needed to send signed transactions on the body so its data model
+#        is much simplified.
+#
+#        It return election information.
+#
+#        All `wallet/` operations relay on the private key custody by the backend.
+#      operationId: walletElectionPost
+#      security:
+#        - bearerAuth: [ ]
+#      tags:
+#        - Wallet
+#      requestBody:
+#        description: "Election description "
+#        required: true
+#        content:
+#          application/json:
+#            schema:
+#              $ref: "#/components/schemas/WalletElectionRequest"
+#      responses:
+#        "200":
+#          description: "Election information object"
+#          content:
+#            application/json:
+#              example: |-
+#                {
+#                  "title": "APIv2 test process",
+#                  "description": "this is a testing election",
+#                  "header": "https://unsplash.com/photos/-TgHIH6glbk/download?ixid=MnwxMjA3fDB8MXxhbGx8Mjd8fHx8fHwyfHwxNjY0MjI3ODM1&force=true&w=640",
+#                  "streamUri": "",
+#                  "startDate": "2022-09-27T00:40:29+02:00",
+#                  "endDate": "2022-09-28T00:20:29+02:00",
+#                  "voteType": {
+#                    "uniqueChoices": false,
+#                    "maxVoteOverwrites": 1,
+#                    "costFromWeight": false,
+#                    "costExponent": 10000
+#                  },
+#                  "electionType": {
+#                    "autoStart": true,
+#                    "interruptible": true,
+#                    "dynamicCensus": false,
+#                    "secretUntilTheEnd": false,
+#                    "anonymous": false
+#                  },
+#                  "census": {
+#                    "type": "csp",
+#                    "publicKey": "f6e19f03a6304cd25ba0bc536c5cfa2b5b6c9aa05d2d25fce2aa0682bc18dbda"
+#                  },
+#                  "questions": [
+#                    {
+#                      "title": {
+#                        "default": "first question"
+#                      },
+#                      "description": {
+#                        "default": "lets vote"
+#                      },
+#                      "choices": [
+#                        {
+#                          "title": {
+#                            "default": "this is a choice"
+#                          },
+#                          "value": 0
+#                        },
+#                        {
+#                          "title": {
+#                            "default": "this is another choice"
+#                          },
+#                          "value": 1
+#                        }
+#                      ]
+#                    }
+#                  ]
+#                }
 
   ####################################################
   ## /censuses                                        ##
