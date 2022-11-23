@@ -15,6 +15,14 @@ import {IconInfo} from '@aragon/ui-components';
 
 const componentCards: IComponentCardProps[] = [
   {
+    title: 'Introduction',
+    description:
+        'Vocdoni defines an open architecture and the protocols to empower large communities to exercise full democracy with the aforementioned guarantees.',
+    img: '/img/layers3.jpg',
+    to: 'https://docs.vocdoni.io/architecture/general.html#service-architecture',
+    external: true
+  },
+  {
     title: 'API Endpoints',
     description:
       'Integrate Secure, Digital Voting Everywhere. No need to create a voting system from scratch. Solve your governance needs, or those of your customers, by taking advantage of Vocdoni\'s voting protocol, using our API.',
@@ -27,14 +35,6 @@ const componentCards: IComponentCardProps[] = [
       'We care about the right abstractions so your teams can integrate voting functionality comfortably and quickly.',
     img: '/img/layers1.jpg',
     to: '/sdk',
-  },
-  {
-    title: 'Smart contracts',
-    description:
-      'Vocdoni defines an open architecture and the protocols to empower large communities to exercise full democracy with the aforementioned guarantees.',
-    img: '/img/layers3.jpg',
-    to: 'https://docs.vocdoni.io/architecture/general.html#service-architecture',
-    external: true
   },
 ];
 
