@@ -97,7 +97,7 @@ const config = {
             label: 'SDK',
           },
           {
-            href: "https://explorer.vote",
+            href: "https://dev.explorer.vote",
             docId: 'sdk/sdk',
             position: 'left',
             label: 'Explorer',

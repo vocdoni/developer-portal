@@ -250,7 +250,7 @@ This SDK is licensed under the [GNU Affero General Public License v3.0][license]
 [Vocdoni API]: https://api.vocdoni.io
 [nodejs]: https://nodejs.org
 [ethers]: https://github.com/ethers-io/ethers.js
-[vochain explorer]: https://explorer.vote
+[vochain explorer]: https://dev.explorer.vote
 [dev vochain explorer]: https://dev.explorer.vote
 [election interface]: ./src/types/election.ts#L23
 [examples]: ./examples
