@@ -52,5 +52,5 @@ const LeText = styled.p.attrs({
   className: 'text-l text-ui-600 text-center md:text-left',
 })``;
 const Image = styled.img.attrs({
-  className: 'flex max-h-40',
+  className: 'flex sm:max-h-40',
 })``;
