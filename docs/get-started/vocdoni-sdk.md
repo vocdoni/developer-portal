@@ -43,8 +43,8 @@ our blockchain (vochain):
 
 ~~~ts
 (async () => {
-  const info = await client.createAccount()
-  console.log(info) // will show account information
+    const info = await client.createAccount()
+    console.log(info) // will show account information
 })();
 ~~~
 
@@ -59,8 +59,8 @@ also decide to just fetch it, without falling back to an account registration:
 
 ~~~ts
 (async () => {
-  const info = await client.fetchAccountInfo()
-  console.log(info) // shows info (only if account exists, otherwise throws error)
+    const info = await client.fetchAccountInfo()
+    console.log(info) // shows info (only if account exists, otherwise throws error)
 })();
 ~~~
 
@@ -73,9 +73,9 @@ for a byte64 string faucet, and specify it when creating your account:
 
 ~~~ts
 (async () => {
-  const info = await client.createAccount({
-    faucetPayload: "<b64string>"
-  })
+    const info = await client.createAccount({
+        faucetPayload: "<b64string>"
+    })
 })();
 ~~~
 
@@ -87,10 +87,10 @@ to the included faucet:
 
 ~~~ts
 (async () => {
-  const info = await client.createAccount()
-  if (info.balance === 0) {
-    await client.collectFaucetTokens()
-  }
+    const info = await client.createAccount()
+    if (info.balance === 0) {
+        await client.collectFaucetTokens()
+    }
 })();
 ~~~
 
@@ -111,17 +111,15 @@ const census = new PlainCensus()
 census.add(address)
 census.add('0x0000000000000000000000000000000000000000')
 (async () => {
-  // random wallet, for example purposes
-  census.add(await Wallet.createRandom().getAddress())
+    // random wallet, for example purposes
+    census.add(await Wallet.createRandom().getAddress())
 })();
 ~~~
 
 Note you can also use compressed public keys when adding them to the census:
 
 ~~~ts
-(async () => {
-  census.add(computePublicKey(Wallet.createRandom().publicKey, true));
-})();
+census.add(computePublicKey(Wallet.createRandom().publicKey, true));
 ~~~
 
 After you got all the addresses for your census, you may as well create the
@@ -220,13 +218,6 @@ option (or options) being voted:
   const vote = new Vote([0, 2]);
   const voteId = await client.submitVote(vote)
 })();
-~~~
-
-In case you have multiple options in your voting process, just specify the
-values in order in the array:
-
-~~~ts
-client.submitVote([0, 1, 4, 2] as any)
 ~~~
 
 ## Examples
