@@ -4,9 +4,6 @@ The Vocdoni SDK is a convenient way to interact with the Vocdoni Protocol
 through [the new API][Vocdoni API], allowing anyone to create, manage and
 participate in voting processes and collective decision making.
 
-The Vocdoni SDK is the easiest way to use [our new API][Vocdoni API], allowing
-you to easily create new voting processes, fetch their information and vote them.
-
 ## Prerequisites
 
 You'll need a working [nodejs] environment, but other than that, you're
