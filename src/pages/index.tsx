@@ -17,7 +17,7 @@ const componentCards: IComponentCardProps[] = [
   {
     title: 'Introduction',
     description:
-        'Vocdoni defines an open architecture and the protocols to empower large communities to exercise full democracy with the aforementioned guarantees.',
+        'Vocdoni defines an open architecture and the protocols to empower large communities to exercise full democracy with the best guarantees.',
     img: '/img/layers3.jpg',
     to: 'https://docs.vocdoni.io/architecture/general.html#service-architecture',
     external: true
@@ -92,7 +92,7 @@ export default function Home(): JSX.Element {
         {/*  ))}*/}
         {/*</WelcomeCardsWrapper>*/}
         <ComponentCardsWrapper>
-          <ComponentCardsTitle>Explore Components</ComponentCardsTitle>
+          <ComponentCardsTitle>Explore</ComponentCardsTitle>
           {componentCards.map((card, index) => (
             <ComponentCard
               key={index}
