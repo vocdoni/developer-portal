@@ -14,7 +14,11 @@
 }
 
 .markdown ol, ul {
-    margin: 0 0 var(--ifm-list-margin);
+    margin: 0 0 var(--ifm-list-margin) 0;
+    /*padding-left: var(--ifm-list-left-padding);*/
+}
+
+.markdown li {
     padding-left: var(--ifm-list-left-padding);
 }
 
