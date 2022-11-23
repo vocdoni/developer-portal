@@ -48,7 +48,7 @@ const welcomeCards: IWelcomeCardProps[] = [
       'Start here if you want to know from scratch how to use Vocdoni technology',
     icon: <StyledInfoIcon />,
     linkLabel: 'Get started',
-    href: '/get-started',
+    href: '/get-started/intro',
   },
   {
     title: 'Tutorials',
