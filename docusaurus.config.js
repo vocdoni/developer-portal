@@ -83,7 +83,7 @@ const config = {
             type: "doc",
             docId: "get-started/intro",
             position: "left",
-            label: "Get Started",
+            label: "Introduction",
           },
           {
             position: "left",
