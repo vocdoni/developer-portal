@@ -19,6 +19,10 @@ const config = {
   deploymentBranch: "gh-pages",
   trailingSlash: false,
 
+  markdown: {
+    mermaid: true,
+  },
+
   presets: [
     [
       "classic",
@@ -254,7 +258,7 @@ const config = {
     // ],
   ],
 
-  themes: ["docusaurus-theme-openapi-docs"],
+  themes: ["docusaurus-theme-openapi-docs", '@docusaurus/theme-mermaid'],
   stylesheets: [
     {
       href: "https://use.fontawesome.com/releases/v5.11.0/css/all.css",
