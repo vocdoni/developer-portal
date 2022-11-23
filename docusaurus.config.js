@@ -40,6 +40,7 @@ const config = {
             require.resolve("./src/css/custom.css"),
             require.resolve("./src/css/open-api.css"),
             require.resolve("./src/css/markdown.css"),
+            require.resolve("./src/css/announcement-bar.css"),
           ]
         },
         sitemap: {
@@ -62,6 +63,14 @@ const config = {
         sidebar: {
           hideable: true,
         },
+      },
+      announcementBar: {
+        id: 'wip_bar',
+        content:
+            '<h2>Disclaimer: WIP</h2><p>We are working in this repo (WIP) and changes will be made. Review this documentation often to be up-to-date with the new changes</p>',
+        backgroundColor: '#fafbfc',
+        textColor: '#091E42',
+        isCloseable: false,
       },
       navbar: {
         title: "Vocdoni - Docs",
