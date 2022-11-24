@@ -22,7 +22,7 @@ const sidebars = {
         id: 'sdk/sdk',
       },
       collapsed: false,
-      items: require("./docs/sdk/sidebars-api")
+      items: require("./docs/sdk/sidebars-api").sdk
     },
   ],
   vocdoniApi: [
