@@ -39,7 +39,7 @@ This section provides an overview of the Vocdoni flow for creating a participato
 The following diagram is a summary of the flow, from creating an organization account to the vote casting.
 
 
-![](https://i.imgur.com/iX3utKG.png)
+![](img/process_overview.png)
 
 Let's explore in more detail the different concepts.
 
