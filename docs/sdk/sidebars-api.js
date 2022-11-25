@@ -1,5 +1,5 @@
 module.exports = {
-  "sdk": [
+  "api": [
     {
       "type": "category",
       "label": "Class",
