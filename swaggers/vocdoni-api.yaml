@@ -280,53 +280,50 @@ paths:
   ####################################################
   ## /chain/blocks                                  ##
   ####################################################
+  /chain/blocks/height/{height}:
+    get:
+      summary: "Block by height"
+      description: "Get full block information by height"
+      operationId: blockByHeight
+      tags:
+        - Chain
+      parameters:
+        - name: height
+          in: path
+          description: "Block height"
+          required: true
+          schema:
+            $ref: '#/components/schemas/BlockHeight'
+      responses:
+        "200":
+          description: "Full block information"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/BlockInfo"
+
+  /chain/blocks/hash/{hash}:
+    get:
+      summary: "Block information by hash"
+      description: "Get full block information by block hash"
+      operationId: blockByHash
+      tags:
+        - Chain
+      parameters:
+        - name: hash
+          in: path
+          description: "Block hash"
+          required: true
+          schema:
+            $ref: '#/components/schemas/BlockHash'
+      responses:
+        "200":
+          description: "Full block information"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/BlockInfo"
   # todo(kon): this endpoint is not implemented yet
-#  /chain/blocks/height/{height}:
-#    get:
-#      summary: "Block by height"
-#      description: "Get full block information by height"
-#      operationId: blockByHeight
-#      tags:
-#        - Chain
-#      parameters:
-#        - name: height
-#          in: path
-#          description: "Block height"
-#          required: true
-#          schema:
-#            $ref: '#/components/schemas/BlockHeight'
-#      responses:
-#        "200":
-#          description: "Full block information"
-#          content:
-#            application/json:
-#              example: |-
-#                {
-#                }
-# todo(kon): this endpoint is not implemented yet
-  #  /chain/blocks/hash/{hash}:
-#    get:
-#      summary: "Block information by hash"
-#      description: "Get full block information by block hash"
-#      operationId: blockByHash
-#      tags:
-#        - Chain
-#      parameters:
-#        - name: hash
-#          in: path
-#          description: "Block hash"
-#          required: true
-#          schema:
-#            $ref: '#/components/schemas/BlockHash'
-#      responses:
-#        "200":
-#          description: "Full block information"
-#          content:
-#            application/json:
-#              example: |-
-#                {
-#                }
-# todo(kon): this endpoint is not implemented yet
 #  /chain/blocks:
 #    get:
 #      summary: "List blocks"
@@ -367,6 +364,36 @@ paths:
                 properties:
                   height:
                     $ref: '#/components/schemas/BlockHeight'
+
+  /chain/validators:
+    get:
+      summary: "Get Validators"
+      description: |-
+        Return list of Vochain validators.
+      operationId: validators
+      tags:
+        - Chain
+      responses:
+        "200":
+          description: "Validators list"
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  address:
+                    $ref: "#/components/schemas/WalletAddress"
+                  name:
+                    type: string
+                    example: "Validator1"
+                  power:
+                    type: integer
+                    format: uint64
+                    example: 10
+                  pubKey:
+                    $ref: "#/components/schemas/WalletPublicKey"
+
+
 
   ####################################################
   ## /chain/ stats, infos ...                       ##
@@ -678,6 +705,26 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/CountResponse'
+  /accounts/treasurer:
+    get:
+      summary: "Treasurer address"
+      description: |-
+        Get the treasurer address. 
+        The treasurer is a new authority entity identified by its Ethereum address and is the only one that can Mint new
+        tokens.
+      operationId: treasurerAddress
+      tags:
+        - Accounts
+      responses:
+        "200":
+          description: "Treasurer address"
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  address:
+                    $ref: "#/components/schemas/WalletAddress"
   ####################################################
   ## /wallet                                        ##
   ####################################################
@@ -1334,6 +1381,115 @@ components:
     AccountId:
       type: string
       example: "0x370372b92514d81a0e3efb8eba9d036ae0877653"
+    BlockInfoBlockId:
+      # USed on BlockInfo
+      type: object
+      properties:
+        hash:
+          $ref: "#/components/schemas/BlockHash"
+        parts:
+          type: object
+          properties:
+            total:
+              type: integer
+              example: 1
+            hash:
+              $ref: "#/components/schemas/BlockHash"
+    BlockInfoSignatures:
+      type: object
+      properties:
+        block_id_flag:
+          type: integer
+          example: 2
+        validator_address:
+          type: string
+          example: "2E1B244B84E223747126EF621C022D5CEFC56F69"
+        timestamp:
+          $ref: "#/components/schemas/TimeStampCustom"
+        signature:
+          type: string
+          example: "R/bPxbDLcsKBqDS31Ibbse1lw2f61IpgrPqTuwRskH9AELTwIJ0dGiJ3jL29NWILu5kR0LDv+/83zkQLqNuiCA=="
+    BlockInfo:
+      type: object
+      properties:
+        header:
+          type: object
+          properties:
+            version:
+              type: object
+              properties:
+                block:
+                  type: integer
+                  example: 11
+                app:
+                  type: integer
+                  example: 0
+            chain_id:
+              type: string
+              example: "vocdoni-development-71"
+            height:
+              $ref: "#/components/schemas/BlockHeight"
+            time:
+              $ref: "#/components/schemas/TimeStampCustom"
+            last_block_id:
+              $ref: "#/components/schemas/BlockInfoBlockId"
+            last_commit_hash:
+              type: string
+              example: "04BCC46D061A39722A836E24690B9995FBD952FF5554D3DAC9CC4759813A66C5"
+            data_hash:
+              type: string
+              example: "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+            validators_hash:
+              type: string
+              example: "E28E7EFDF1EAD64EE3349052D6A1D8547EF0F482B4E467AB4B1250B9E5ED7F86"
+            next_validators_hash:
+              type: string
+              example: "E28E7EFDF1EAD64EE3349052D6A1D8547EF0F482B4E467AB4B1250B9E5ED7F86"
+            consensus_hash:
+              type: string
+              example: "9C51FE2637CF9460E108B5008DDEE1D25ECBC8C77926296836786D39C64686E4"
+            app_hash:
+              type: string
+              example: "05AC01E023D1ACFCB5C1CC23D2BC848EDC2BA381087207E9296B77A82C601530"
+            last_results_hash:
+              type: string
+              example: "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+            evidence_hash:
+              type: string
+              example: "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+            proposer_address:
+              type: string
+              example: "5C69093136E0CB84E5CFA8E958DADB33C0D0CCCF"
+            data:
+              type: object
+              properties:
+                txs:
+                  type: array
+                  items:
+                    $ref: "#/components/schemas/TransactionHash"
+            evidence:
+              type: object
+              properties:
+                evidence:
+                  type: array
+                  items:
+                    type: string
+                    example: ""
+            last_commit:
+              type: object
+              properties:
+                height:
+                  type: integer
+                  example: 122
+                round:
+                  type: integer
+                  example: 0
+                block_id:
+                  $ref: "#/components/schemas/BlockInfoBlockId"
+                signatures:
+                  type: array
+                  items:
+                    $ref: "#/components/schemas/BlockInfoSignatures"
     BlockHeight:
       type: integer
       format: int32
@@ -1364,7 +1520,7 @@ components:
         height:
           $ref: "#/components/schemas/BlockHeight"
         blockTimestamp:
-          $ref: "#/components/schemas/TimeStamp"
+          $ref: "#/components/schemas/TimeStampCustom"
     CreateElection:
       type: "object"
       required:
@@ -1683,6 +1839,10 @@ components:
       description: "Unix time timestamp"
       format: date-time
       example: "1668503879"
+    TimeStampCustom:
+      type: string
+      format: date-time
+      example: "2022-11-17T18:00:57.379551614Z"
 
     ####################################################
     ## Responses                                      ##
