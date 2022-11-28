@@ -9,42 +9,45 @@
     --ifm-heading-vertical-rhythm-bottom: 1;
 }
 
+.markdown h1:first-child {
+    margin-top: 0;
+    font-size: 2.5rem;
+}
+
+.markdown h1 {
+    padding-top: 30px;
+    border-top: 1px dotted #bbb;
+    margin-top: 35px;
+}
+
+.markdown h2, .markdown h3{
+    padding-top: 20px;
+}
+
+.markdown h4 {
+    padding-top: 15px;
+}
+
 .markdown li, body {
     word-wrap: break-word;
 }
 
-.markdown ol, ul {
-    /*margin: 0 0 var(--ifm-list-margin) 0;*/
-    margin: var(--ifm-list-margin);
-    padding-left: var(--ifm-list-left-padding);
+
+.markdown ul, .markdown ol {
+    line-height: var(--voc-line-height);
 }
 
 .markdown li {
-    padding-left: var(--ifm-list-left-padding);
+    text-align: justify;
 }
 
-
-ul {
-    list-style-type: disc;
-    list-style-position: inside;
-}
-ol {
-    list-style-type: decimal;
-    list-style-position: inside;
-}
-ul ul,
-ol ul {
-    list-style-type: circle;
-    list-style-position: inside;
-}
-ol ol,
-ul ol {
-    list-style-type: lower-latin;
-    list-style-position: inside;
-}
 
 .markdown p {
     margin: 0 0 var(--ifm-paragraph-margin-bottom);
+}
+
+.markdown ol, .markdown ul {
+    margin: 0 0 var(--ifm-paragraph-margin-bottom) 30px;
 }
 
 .markdown hr {
@@ -57,6 +60,11 @@ ul ol {
 .markdown [class^="codeBlock"] > pre {
     margin-bottom: 0;
 }
+
+.docusaurus-mermaid-container{
+    margin: 50px 10px;
+}
+
 /*:root {*/
 /*  --neutral-500: #52606d;*/
 /*  --neutral-700: #323f4b;*/
