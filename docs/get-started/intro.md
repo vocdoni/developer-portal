@@ -4,11 +4,13 @@ sidebar_position: 1
 
 # Vocdoni introduction
 
+## 1. Introduction
+
 Voĉdoni in Esperanto translates to "to give voice". We aim to achieve change by empowering society from the bottom up, building the necessary primitives and tools to enable every voice to be heard, from a few individuals to millions of citizens. We aspire to be the most accessible and functional toolset on earth, open to every group of people, regardless of their position or resources.
 
 We perceive voting as a collective signaling mechanism "to give voice", that can be fully digitalized, iff provided with cryptographic guarantees about its integrity and its outcome. To this end, we have designed and implemented the Vocdoni Protocol, a universally verifiable set of rules and primitives that allow anyone to create and participate in collective decision making.
 
-## 1.1 The blockchain
+### 1.1 The blockchain
 
 The Vocdoni blockchain is named **Vochain**. It is a Byzantine fault-tolerant network based on [Tendermint](https://tendermint.com/) that executes the Vocdoni Protocol logic represented as a state machine. Its main purpose is to register votes in a decentralized and verifiable format. Currently, the network can process more than 30K votes per minute while using no more than the resources found on commodity computers.
 
@@ -18,21 +20,21 @@ Vochain is currently based on Proof-of-Authority consensus. However, we are alre
 
 The current vocdoni-node code can be found [in our github repository](https://github.com/vocdoni/vocdoni-node/tree/master/vochain).
 
-## 1.2 Gateways
+### 1.2 Gateways
 
 The Gateways provide entry points to our P2P network. They allow clients to reach decentralized services through a standard **HTTP(s) API interface**.
 
 Internally, the Gateways act as a standard blockchain full node, but also as indexers, meaning that they store and update a separate non state-related database that containg digested information useful for fulfilling client query requirements. For instance, **Gateways compute election results** (which are not part of the state) and provide census services (so voters can fetch their election Merkle proof). To perform the indexer function, Gateways need access to the auxiliary distributed filestore.
 
 
-## 1.3 Distributed storage
+### 1.3 Distributed storage
 
 Vocdoni currently relies on the [InterPlanetary File System (IPFS)](https://www.ipfs.tech/) for storing auxiliary information. In a voting process, this includes information such as texts (questions, descriptions, and options), complementary images, as well as census. This data does not need to be permanent in order to ensure the voting guarantees, and is expensive to keep it around, so it is published to IPFS until it can be discarded.
 
 We have designed the Vocdoni primitives in a modular fashion, which allows us to incorporate more data layers in the future, such as Ethersphere Swarm, DAT, STORj or Filecoin.
 
 
-# 2. Process overview
+## 2. Process overview
 
 This section provides an overview of the Vocdoni flow for creating a participatory process, its main attributes, and configuration options.
 
@@ -44,7 +46,7 @@ The following diagram is a summary of the flow, from creating an organization ac
 Let's explore in more detail the different concepts.
 
 
-## 2.1 The census
+### 2.1 The census
 
 The census is a key component of every voting process. It defines the set of users (identified by a public key or address) who are elegible for participating in a election.
 
@@ -87,7 +89,7 @@ A **prover** is able to prove the inclusion of any leaf of the Merkle Tree to a 
 
 
 
-## 2.2 Accounts
+### 2.2 Accounts
 
 A Vocdoni account is identified by an Ethereum-like address. This allows us to use standard Web3 signers such as Metamask.
 
@@ -103,7 +105,7 @@ For creating an account, a faucet package is required, since bootstrapping requi
 An account often represents an organization and might have associated an `infoURL` pointing to an external IPFS file contaning the metadata details (name, description, logo, etc.). All Vochain nodes automatically distribute and store this data. 
 
 
-## 2.3 Elections
+### 2.3 Elections
 
 An Election (named a `process` internally) is a rule-set of options and requirements written into the blockchain state, thus guaranteeing that they can no longer be modified (unless explicitly configured to be upgradeable). The election is created and configured by an account owner or account delegates.
 
@@ -154,7 +156,7 @@ Ended-->Results
 + **Encrypted:** If enabled, the payload of the votes emitted will remain encrypted until the end of the process. The results will be available once the encryption keys are published by the miners at the end of the process. If disabled, the results can be seen in real time.
 + **CostFromWeight:** If enabled, the total cost defined in the ballot protocol will equal the voter's census weight.
 
-## 2.4 Anonymous vote
+### 2.4 Anonymous vote
 
 A voting envelope is composed of two parts: the census proof (which defines the eligibility of the voter) and the ballot (the actual contents of the vote, containing the chosen options). The anonymization of the voting envelope is achieved by anonymizing the census proof using zk-SNARKs technology.
 
@@ -164,7 +166,7 @@ The goal of the Vocdoni zk-SNARK circuit is to prove that a voter (identified by
 
 *Note: while zk-SNARK voting is enabled in the protocol and available at [https://vocdoni.app](https://vocdoni.app), it is not yet implemented as part of the current SDK.*
 
-## 2.5 Results
+### 2.5 Results
 
 The results are computed by a set of rules configured by the election owner and following the [Vocdoni ballot protocol](https://blog.aragon.org/vocdoni-ballot-protocol), which allows for almost any type of voting such as Range or Quadratic.
 
@@ -180,7 +182,7 @@ The Gateway nodes will also compute the results locally, so the end user can eit
 Verifiability is guaranteed, since every end user may fetch the list of votes of an election from the blockchain state and reproduce the tally locally.
 
 
-## 2.6 Transactions and fees
+### 2.6 Transactions and fees
 
 Vochain transactions are protobuf encoded and signed by the sender. However, the SDK handles this operation transparently for the end user.
 
