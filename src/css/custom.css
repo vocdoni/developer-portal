@@ -30,6 +30,7 @@
   --ifm-footer-background-color: transparent;
 
   --voc-line-height: 28px;
+  --voc-font-size: 18px;
 
   font-family: Manrope, sans-serif;
 }
@@ -74,18 +75,19 @@ h6 { font-size: var(--ifm-h6-font-size); }
 p {
   line-height: var(--voc-line-height);
   text-align: justify;
-  font-size: 16px;
+  font-size: var(--voc-font-size);
   margin-bottom: 25px;
 }
 
+ul, ol{
+  list-style-position: inside;
+}
 
 ul {
   list-style-type: disc;
-  list-style-position: inside;
 }
 ol {
   list-style-type: decimal;
-  list-style-position: inside;
 }
 ul ul,
 ol ul {
