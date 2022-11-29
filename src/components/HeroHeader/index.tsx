@@ -43,13 +43,13 @@ const TextWrapper = styled.div.attrs({
   className: 'flex sm:w-2/3 w-auto  flex-col space-y-2 justify-center',
 })``;
 const Title = styled.p.attrs({
-  className: 'text-4xl font-bold text-ui-800 text-center md:text-left',
+  className: 'text-4xl font-bold text-center md:text-left',
 })``;
 const Subtitle = styled.p.attrs({
-  className: 'text-xl text-ui-600 text-center md:text-left',
+  className: 'text-xl text-center md:text-left',
 })``;
 const LeText = styled.p.attrs({
-  className: 'text-l text-ui-600 text-center md:text-left',
+  className: 'text-l text-center md:text-left',
 })``;
 const Image = styled.img.attrs({
   className: 'flex sm:max-h-40',
