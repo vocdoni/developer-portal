@@ -30,6 +30,8 @@
   --ifm-footer-background-color: transparent;
 
   --voc-line-height: 28px;
+
+  font-family: Manrope, sans-serif;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
