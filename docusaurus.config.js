@@ -67,7 +67,7 @@ const config = {
       announcementBar: {
         id: 'wip_bar',
         content:
-            '<h2>Disclaimer: WIP</h2><p>We are working in this repo (WIP) and changes will be made. Review this documentation often to be up-to-date with the new changes.</p>',
+            '<h3>Disclaimer: WIP</h3><p>We are working in this repo (WIP) and changes will be made. Review this documentation often to be up-to-date with the new changes.</p>',
         backgroundColor: '#fafbfc',
         textColor: '#091E42',
         isCloseable: false,
