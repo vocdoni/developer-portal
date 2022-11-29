@@ -35,6 +35,7 @@
 
 .markdown ul, .markdown ol {
     line-height: var(--voc-line-height);
+    font-size: var(--voc-font-size);
 }
 
 .markdown li {
