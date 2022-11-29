@@ -19,20 +19,19 @@
   --ifm-color-primary-light: #007575;
   --ifm-color-primary-lighter: #00A7A7;
   --ifm-color-primary-lightest: #00DBDB;
-  --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 
-  /*--ifm-font-family-monospace: "Fira Code", monospace;*/
-  --ifm-font-size-base: 95%;
-  --ifm-code-font-size: 90%;
+
 
   --ifm-background-color: var(--ifm-color-emphasis-0) !important;
   --ifm-footer-background-color: transparent;
 
+  --ifm-font-family-monospace: "Fira Code", monospace;
+  --ifm-font-family-base:  Manrope, sans-serif;
+  font-family:  Manrope, sans-serif;
+  --ifm-code-font-size: 90%;
   --voc-line-height: 28px;
-  --voc-font-size: 18px;
-
-  font-family: Manrope, sans-serif;
+  --ifm-font-size-base: 17px;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -75,7 +74,6 @@ h6 { font-size: var(--ifm-h6-font-size); }
 p {
   line-height: var(--voc-line-height);
   text-align: justify;
-  font-size: var(--voc-font-size);
   margin-bottom: 25px;
 }
 
