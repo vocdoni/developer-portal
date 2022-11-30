@@ -665,7 +665,7 @@ paths:
         
         - Requires a signed protobuff transaction on the body to perform the operation.
         - Metadata is not required, but if no metadata is provided the account won't be listed on 
-        [/chain/organizaions](organizations-list) endpoint. Check there to read about differences between an account and
+        [/chain/organizations](organizations-list) endpoint. Check there to read about differences between an account and
         a organization.
       operationId: accountSubmit
       tags:
