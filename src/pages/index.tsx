@@ -92,7 +92,7 @@ export default function Home(): JSX.Element {
         {/*  ))}*/}
         {/*</WelcomeCardsWrapper>*/}
         <ComponentCardsWrapper>
-          <ComponentCardsTitle>Explore</ComponentCardsTitle>
+          {/*<ComponentCardsTitle>Explore</ComponentCardsTitle>*/}
           {componentCards.map((card, index) => (
             <ComponentCard
               key={index}
@@ -111,7 +111,7 @@ export default function Home(): JSX.Element {
 }
 
 const Container = styled.div.attrs({
-  className: 'md:p-18 p-6 flex-col flex space-y-12',
+  className: 'md:p-18 p-6 flex-col flex space-y-12 w-full md:w-4/5 m-auto',
 })``;
 const ComponentCardsWrapper = styled.div.attrs({
   className: 'flex flex-col space-y-6',

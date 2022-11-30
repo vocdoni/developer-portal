@@ -31,7 +31,11 @@ export const HeroHeader = (props: IHeroHeader) => {
         width={800}
         height={450}
       /> */}
-        {!isMobile && <Image src={props.img} alt="" />}
+        {!isMobile &&
+            <ImageWrapper>
+              <Image src={props.img} alt="" />
+            </ImageWrapper>
+        }
       </HeaderWrapper>
   );
 };
@@ -40,7 +44,10 @@ const HeaderWrapper = styled.div.attrs({
   className: 'flex flex-col space-y-2.5 md:flex-row md:justify-between',
 })``;
 const TextWrapper = styled.div.attrs({
-  className: 'flex sm:w-2/3 w-auto  flex-col space-y-2 justify-center',
+  className: 'flex sm:w-2/4 w-auto  flex-col space-y-2 justify-center',
+})``;
+const ImageWrapper = styled.div.attrs({
+  className: 'm-auto',
 })``;
 const Title = styled.p.attrs({
   className: 'text-4xl font-bold text-center md:text-left',
@@ -52,5 +59,5 @@ const LeText = styled.p.attrs({
   className: 'text-l text-center md:text-left',
 })``;
 const Image = styled.img.attrs({
-  className: 'flex sm:max-h-40',
+  className: 'flex sm:max-h-72',
 })``;
