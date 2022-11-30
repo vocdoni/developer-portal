@@ -280,7 +280,7 @@ paths:
   ####################################################
   ## /chain/blocks                                  ##
   ####################################################
-  /chain/blocks/height/{height}:
+  /chain/blocks/{height}:
     get:
       summary: "Block by height"
       description: "Get full block information by height"
@@ -498,7 +498,8 @@ paths:
         - $ref: "#/components/parameters/electionIdParameter"
       responses:
         "200":
-          description: "Return list of nullifiers"
+          description: |-
+            Return list of nullifiers. `voterId` could be null if is anonymous vote
           content:
             application/json:
               schema:
@@ -517,7 +518,8 @@ paths:
         - $ref: "#/components/parameters/paginatorParameter"
       responses:
         "200":
-          description: "Return list of nullifiers"
+          description: |-
+            Return list of nullifiers. `voterId` could be null if is anonymous vote
           content:
             application/json:
               schema:
@@ -1398,10 +1400,10 @@ components:
     BlockInfoSignatures:
       type: object
       properties:
-        block_id_flag:
+        blockIdFlag:
           type: integer
           example: 2
-        validator_address:
+        validatorAddress:
           type: string
           example: "2E1B244B84E223747126EF621C022D5CEFC56F69"
         timestamp:
@@ -1424,40 +1426,40 @@ components:
                 app:
                   type: integer
                   example: 0
-            chain_id:
+            chainId:
               type: string
               example: "vocdoni-development-71"
             height:
               $ref: "#/components/schemas/BlockHeight"
             time:
               $ref: "#/components/schemas/TimeStampCustom"
-            last_block_id:
+            lastBlockId:
               $ref: "#/components/schemas/BlockInfoBlockId"
-            last_commit_hash:
+            lastCommitHash:
               type: string
               example: "04BCC46D061A39722A836E24690B9995FBD952FF5554D3DAC9CC4759813A66C5"
-            data_hash:
+            dataHash:
               type: string
               example: "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
-            validators_hash:
+            validatorsHash:
               type: string
               example: "E28E7EFDF1EAD64EE3349052D6A1D8547EF0F482B4E467AB4B1250B9E5ED7F86"
-            next_validators_hash:
+            nextValidatorsHash:
               type: string
               example: "E28E7EFDF1EAD64EE3349052D6A1D8547EF0F482B4E467AB4B1250B9E5ED7F86"
-            consensus_hash:
+            consensusHash:
               type: string
               example: "9C51FE2637CF9460E108B5008DDEE1D25ECBC8C77926296836786D39C64686E4"
-            app_hash:
+            appHash:
               type: string
               example: "05AC01E023D1ACFCB5C1CC23D2BC848EDC2BA381087207E9296B77A82C601530"
-            last_results_hash:
+            lastResultsHash:
               type: string
               example: "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
-            evidence_hash:
+            evidenceHash:
               type: string
               example: "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
-            proposer_address:
+            proposerAddress:
               type: string
               example: "5C69093136E0CB84E5CFA8E958DADB33C0D0CCCF"
             data:
@@ -1475,7 +1477,7 @@ components:
                   items:
                     type: string
                     example: ""
-            last_commit:
+            lastCommit:
               type: object
               properties:
                 height:
@@ -1484,7 +1486,7 @@ components:
                 round:
                   type: integer
                   example: 0
-                block_id:
+                blockId:
                   $ref: "#/components/schemas/BlockInfoBlockId"
                 signatures:
                   type: array
@@ -1875,15 +1877,6 @@ components:
             "6cc88bda2da0edef96b8d4f75f0a8134953e9816918e665254ea06801af59a70"
         metadataURL:
           $ref: "#/components/schemas/IpfsUri"
-    AccountElectionListResponse:
-      type: "object"
-      properties:
-        account_id:
-          $ref: "#/components/parameters/accountIdParameter"
-        elections:
-          type: array
-          items:
-            $ref: "#/components/schemas/ElectionId"
     CountResponse:
       type: "object"
       properties:
@@ -1917,9 +1910,9 @@ components:
           items:
             type: object
             properties:
-              organization_id:
+              organizationId:
                 $ref: "#/components/schemas/AccountId"
-              election_count:
+              electionCount:
                 type: integer
                 format: int32
                 example: 1
@@ -1969,13 +1962,13 @@ components:
     VoteListResponse:
       type: object
       properties:
-        vote_id:
+        voteId:
           $ref: "#/components/schemas/VoteId"
-        voter_id:
+        voterId:
           $ref: "#/components/schemas/VoterId"
-        tx_hash:
+        txHash:
           $ref: "#/components/schemas/TransactionHash"
-        block_height:
+        blockHeight:
           $ref: "#/components/schemas/BlockHeight"
     VoteEnvelopeResponse:
       type: object
@@ -1983,7 +1976,7 @@ components:
         envelope:
           type: object
           properties:
-            encryption_key_indexes:
+            encryptionKeyIndexes:
               type: array
               items:
                 type: integer
@@ -1998,13 +1991,13 @@ components:
                 nullifier:
                   type: string
                   example: "c3f32730a196d8ba928e775fad430969b500633adf33b3f63922b9d8713317a2"
-                process_id:
+                processId:
                   type: string
                   example: "0213b31d622b6475d4f3a32cffdc26b02f3ea7589a72c1ea2b03587b7dc7a576"
-                tx_hash:
+                txHash:
                   type: string
                   example: "75e8f822f5dd13973ac5158d600f0a2a5fea4bfefce9712ab5195bf17884cfad"
-                tx_index:
+                txIndex:
                   type: integer
                   format: int32
                   example: 0
@@ -2014,7 +2007,7 @@ components:
             signature:
               type: string
               example: "a7b8b2b4e9fb753627145b2f84770169e944f9e3f509c3402b7bb7d9c873a88a061de02aabc73355529f2b422d2a8d64f8ae39f0363d2aef7504142ef04d386c1c"
-            vote_package:
+            votePackage:
               type: string
               example: "Yaiw2PMe8YZ+iTcPvOHAaZVoAiNzz3vdEed0pPXTRwF4unD15N79+7P4Jx5fk55CDBvhQuvpmD9mEprVJehur4I8ovqeaktwNoWUHvT8ue090r2J4yL33YqvZGlcpoa5lnGUMcRPra8bnBhqd1HX6KTTzhXV74fNijncNbj57/sdTr04ljolaA=="
             weight:
