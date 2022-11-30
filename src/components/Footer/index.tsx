@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-
+import PoweredByAragon from '@site/static/img/powered-by-aragon.svg'
 const currentYear = new Date().getFullYear();
 
 const leftLinks = [
@@ -68,6 +68,7 @@ export const Footer = () => {
             ))}
           </LinksContainer>
           {/*<Link>© {currentYear} Vocdoni</Link>*/}
+          <a href="https://aragon.org"><PoweredByAragon height="32px" width="215px" /></a>
         </RightContainer>
       </FooterWrapper>
   );
