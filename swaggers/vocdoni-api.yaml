@@ -171,7 +171,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/TransactionListObject"
+                $ref: "#/components/schemas/TransactionList"
   /chain/transactions/page/{page}:
     get:
       summary: "Paginated transactions list"
@@ -190,7 +190,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/TransactionListObject"
+                $ref: "#/components/schemas/TransactionList"
   /chain/transactions/reference/{hash}:
     get:
       summary: "Transaction by hash"
@@ -213,18 +213,34 @@ paths:
           content:
             application/json:
               schema:
-                type: object
-                properties:
-                  blockHeight:
-                    $ref: "#/components/schemas/BlockHeight"
-                  transactionIndex:
-                    $ref: "#/components/schemas/TxIndex"
-                  transactionNumber:
-                      type: integer
-                      format: int32
-                      example: 944
-                  transactionHash:
-                    $ref: "#/components/schemas/TransactionHash"
+                $ref: "#/components/schemas/TransactionReferenceObject"
+  /chain/transactions/reference/index/{index}:
+    get:
+      summary: "Transaction by index"
+      description: |-
+        Get transaction by its index. This is not transaction reference (hash), and neither the block height and block 
+        index. The transaction index is an incremental counter for each transaction. 
+        You could use the transaction `block` and `index` to retrieve full info using 
+        [transaction by block and index](transaction-by-block-index).
+      operationId: transactionByIndex
+      tags:
+        - Chain
+      parameters:
+        - name: index
+          in: path
+          description: "Transaction index"
+          required: true
+          schema:
+            type: integer
+            format: int32
+            example: 100
+      responses:
+        "200":
+          description: "It return corresponding blockHeight and transactionIndex"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TransactionReferenceObject"
   /chain/transactions/{blockHeight}/{txIndex}:
     get:
       summary: "Transaction by block height and index"
@@ -1830,8 +1846,8 @@ components:
           $ref: "#/components/schemas/LangString"
         title:
           $ref: "#/components/schemas/LangString"
-    TransactionListObject:
-      type: "object"
+    TransactionReferenceObject:
+      type: object
       properties:
         transactionNumber:
           type: integer
@@ -1845,11 +1861,31 @@ components:
           type: integer
           format: int32
           example: 0
+        transactionType:
+          $ref: "#/components/schemas/TransactionType"
+    TransactionList:
+      type: array
+      items:
+        $ref: "#/components/schemas/TransactionReferenceObject"
     TransactionSubmit:
       type: "object"
       properties:
         payload:
           $ref: "#/components/schemas/TransactionHash"
+    TransactionType:
+      type: string
+      enum:
+        - voteEnvelope
+        - newProcessTx
+        - adminTx
+        - setProcessTx
+        - registerKeyTx
+        - mintTokensTx
+        - sendTokensTx
+        - setTransactionCostsTx
+        - setAccountTx
+        - collectFaucetTx
+        - setKeykeeperTx
     TransactionHash:
       type: string
       example: "75e8f822f5dd13973ac5158d600f0a2a5fea4bfefce9712ab5195bf17884cfad"
