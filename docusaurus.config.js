@@ -9,7 +9,7 @@ const { DOCUSAURUS_VERSION } = require("@docusaurus/utils");
 const config = {
   title: "Vocdoni developer portal",
   tagline: "API and SDK docs to use the underlying Vocdoni Open Stack",
-  url: "https://vocdoni.github.io/",
+  url: "https://developer.vocdoni.io/",
   baseUrl: "/",
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
@@ -54,159 +54,164 @@ const config = {
   ],
 
   themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
-      metadata: [{name: 'keywords', content: "Blockchain Voting, Mobile Voting, Universally Verifiable, " +
-            "Voting-As-A-Service, Decentralized Governance, Anonymous Voting, Privacy Centric, Secure Electronic Voting, " +
-            "Tamper-Proof Digital Voting, Data-Sovereignty, Resilient Governance, Governance/Coordination Tools"}],
-      docs: {
-        sidebar: {
-          hideable: true,
-        },
-      },
-      announcementBar: {
-        id: 'wip_bar',
-        content:
-            '<h3>Disclaimer: WIP</h3><p>We are working in this repo (WIP) and changes will be made. Review this documentation often to be up-to-date with the new changes.</p>',
-        backgroundColor: '#fafbfc',
-        textColor: '#091E42',
-        isCloseable: false,
-      },
-      navbar: {
-        title: "Vocdoni - Docs",
-        logo: {
-          alt: "Vocdoni logo",
-          src: "img/logo-dark.png",
-        },
-        items: [
-          {
-            type: "doc",
-            docId: "get-started/intro",
-            position: "left",
-            label: "Introduction",
-          },
-          {
-            position: "left",
-            label: "API",
-            to: "/category/vocdoni-api",
-          },
-          {
-            type: 'doc',
-            docId: 'sdk/sdk',
-            position: 'left',
-            label: 'SDK',
-          },
-          {
-            href: "https://dev.explorer.vote",
-            docId: 'sdk/sdk',
-            position: 'left',
-            label: 'Explorer',
-          },
-          {
-            href: "https://blog.vocdoni.io",
-            position: "right",
-            className: "header-medium-link",
-            "aria-label": "Blog",
-          },
-          {
-            href: "https://github.com/vocdoni",
-            position: "right",
-            className: "header-github-link",
-            "aria-label": "GitHub repository",
-          },
+  /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+      ({
+        image: 'img/logo-dark.png', // Image for og:image and twitter:image
+        metadata: [
+          {name: 'keywords', content: "Blockchain Voting, Mobile Voting, Universally Verifiable, " +
+                "Voting-As-A-Service, Decentralized Governance, Anonymous Voting, Privacy Centric, Secure Electronic Voting, " +
+                "Tamper-Proof Digital Voting, Data-Sovereignty, Resilient Governance, Governance/Coordination Tools"},
+          {property: 'og:description', content: "The Developer Portal contains everything you need to start integrating the " +
+                "Vocdoni Protocol, including the API and SDK, as well as extensive documentation about the protocol design. "},
         ],
-      },
-      footer: {
-        style: "dark",
-        links: [
+        docs: {
+          sidebar: {
+            hideable: true,
+          },
+        },
+        announcementBar: {
+          id: 'wip_bar',
+          content:
+              '<h3>Disclaimer: WIP</h3><p>We are working in this repo (WIP) and changes will be made. Review this documentation often to be up-to-date with the new changes.</p>',
+          backgroundColor: '#fafbfc',
+          textColor: '#091E42',
+          isCloseable: false,
+        },
+        navbar: {
+          title: "Vocdoni - Docs",
+          logo: {
+            alt: "Vocdoni logo",
+            src: "img/logo-dark.png",
+          },
+          items: [
+            {
+              type: "doc",
+              docId: "get-started/intro",
+              position: "left",
+              label: "Introduction",
+            },
+            {
+              position: "left",
+              label: "API",
+              to: "/category/vocdoni-api",
+            },
+            {
+              type: 'doc',
+              docId: 'sdk/sdk',
+              position: 'left',
+              label: 'SDK',
+            },
+            {
+              href: "https://dev.explorer.vote",
+              docId: 'sdk/sdk',
+              position: 'left',
+              label: 'Explorer',
+            },
+            {
+              href: "https://blog.vocdoni.io",
+              position: "right",
+              className: "header-medium-link",
+              "aria-label": "Blog",
+            },
+            {
+              href: "https://github.com/vocdoni",
+              position: "right",
+              className: "header-github-link",
+              "aria-label": "GitHub repository",
+            },
+          ],
+        },
+        footer: {
+          style: "dark",
+          links: [
+            {
+              title: "Docs",
+              items: [
+                {
+                  label: "OpenAPI Docs",
+                  to: "/",
+                },
+              ],
+            },
+            {
+              title: "Community",
+              items: [
+                {
+                  label: "Stack Overflow",
+                  href: "https://stackoverflow.com/questions/tagged/docusaurus",
+                },
+                {
+                  label: "Discord",
+                  href: "https://discordapp.com/invite/docusaurus",
+                },
+                {
+                  label: "Twitter",
+                  href: "https://twitter.com/docusaurus",
+                },
+              ],
+            },
+            {
+              title: "More",
+              items: [
+                {
+                  label: "Blog",
+                  href: "https://medium.com/palo-alto-networks-developer-blog",
+                },
+                {
+                  label: "GitHub",
+                  href: "https://github.com/PaloAltoNetworks/docusaurus-openapi-docs",
+                },
+              ],
+            },
+          ],
+          copyright: `Copyright © ${new Date().getFullYear()} Palo Alto Networks, Inc. Built with Docusaurus ${DOCUSAURUS_VERSION}.`,
+        },
+        prism: {
+          theme: lightCodeTheme,
+          darkTheme: darkCodeTheme,
+          additionalLanguages: ["ruby", "csharp", "php"],
+        },
+        languageTabs: [
           {
-            title: "Docs",
-            items: [
-              {
-                label: "OpenAPI Docs",
-                to: "/",
-              },
-            ],
+            highlight: "bash",
+            language: "curl",
+            logoClass: "bash",
           },
           {
-            title: "Community",
-            items: [
-              {
-                label: "Stack Overflow",
-                href: "https://stackoverflow.com/questions/tagged/docusaurus",
-              },
-              {
-                label: "Discord",
-                href: "https://discordapp.com/invite/docusaurus",
-              },
-              {
-                label: "Twitter",
-                href: "https://twitter.com/docusaurus",
-              },
-            ],
+            highlight: "python",
+            language: "python",
+            logoClass: "python",
           },
           {
-            title: "More",
-            items: [
-              {
-                label: "Blog",
-                href: "https://medium.com/palo-alto-networks-developer-blog",
-              },
-              {
-                label: "GitHub",
-                href: "https://github.com/PaloAltoNetworks/docusaurus-openapi-docs",
-              },
-            ],
+            highlight: "go",
+            language: "go",
+            logoClass: "go",
           },
+          {
+            highlight: "javascript",
+            language: "nodejs",
+            logoClass: "nodejs",
+          },
+          // {
+          //   highlight: "ruby",
+          //   language: "ruby",
+          //   logoClass: "ruby",
+          // },
+          {
+            highlight: "csharp",
+            language: "csharp",
+            logoClass: "csharp",
+          },
+          // {
+          //   highlight: "php",
+          //   language: "php",
+          //   logoClass: "php",
+          // },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Palo Alto Networks, Inc. Built with Docusaurus ${DOCUSAURUS_VERSION}.`,
-      },
-      prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
-        additionalLanguages: ["ruby", "csharp", "php"],
-      },
-      languageTabs: [
-        {
-          highlight: "bash",
-          language: "curl",
-          logoClass: "bash",
+        colorMode: {
+          disableSwitch: true,
         },
-        {
-          highlight: "python",
-          language: "python",
-          logoClass: "python",
-        },
-        {
-          highlight: "go",
-          language: "go",
-          logoClass: "go",
-        },
-        {
-          highlight: "javascript",
-          language: "nodejs",
-          logoClass: "nodejs",
-        },
-        // {
-        //   highlight: "ruby",
-        //   language: "ruby",
-        //   logoClass: "ruby",
-        // },
-        {
-          highlight: "csharp",
-          language: "csharp",
-          logoClass: "csharp",
-        },
-        // {
-        //   highlight: "php",
-        //   language: "php",
-        //   logoClass: "php",
-        // },
-      ],
-      colorMode: {
-        disableSwitch: true,
-      },
-    }),
+      }),
 
   plugins: [
     [
@@ -224,7 +229,7 @@ const config = {
             },
             // template: "api.mustache", // Customize API MDX with mustache template
             downloadUrl:
-              "https://raw.githubusercontent.com/vocdoni/developer-portal/main/swaggers/vocdoni-api.yaml",
+                "https://raw.githubusercontent.com/vocdoni/developer-portal/main/swaggers/vocdoni-api.yaml",
           },
         },
       },
