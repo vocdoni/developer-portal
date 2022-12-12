@@ -1,0 +1,198 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.sdk.category.Vocdoni SDK": {
+    "message": "Vocdoni SDK",
+    "description": "The label for category Vocdoni SDK in sidebar sdk"
+  },
+  "sidebar.sdk.category.Class": {
+    "message": "Class",
+    "description": "The label for category Class in sidebar sdk"
+  },
+  "sidebar.sdk.category.Global": {
+    "message": "Global",
+    "description": "The label for category Global in sidebar sdk"
+  },
+  "sidebar.vocdoniApi.category.Vocdoni": {
+    "message": "Vocdoni",
+    "description": "The label for category Vocdoni in sidebar vocdoniApi"
+  },
+  "sidebar.vocdoniApi.category.Vocdoni.link.generated-index.title": {
+    "message": "Vocdoni API",
+    "description": "The generated-index page title for category Vocdoni in sidebar vocdoniApi"
+  },
+  "sidebar.vocdoniApi.category.Vocdoni.link.generated-index.description": {
+    "message": "The Vocdoni API (API) would be the main entry point for using the underlying Vocdoni Open Stack.",
+    "description": "The generated-index page description for category Vocdoni in sidebar vocdoniApi"
+  },
+  "sidebar.vocdoniApi.category.Chain": {
+    "message": "Chain",
+    "description": "The label for category Chain in sidebar vocdoniApi"
+  },
+  "sidebar.vocdoniApi.category.Accounts": {
+    "message": "Accounts",
+    "description": "The label for category Accounts in sidebar vocdoniApi"
+  },
+  "sidebar.vocdoniApi.category.Elections": {
+    "message": "Elections",
+    "description": "The label for category Elections in sidebar vocdoniApi"
+  },
+  "sidebar.vocdoniApi.category.Censuses": {
+    "message": "Censuses",
+    "description": "The label for category Censuses in sidebar vocdoniApi"
+  },
+  "sidebar.vocdoniApi.category.Votes": {
+    "message": "Votes",
+    "description": "The label for category Votes in sidebar vocdoniApi"
+  },
+  "sidebar.vocdoniApi.doc.Transactions cost": {
+    "message": "Transactions cost",
+    "description": "The label for the doc item Transactions cost in sidebar vocdoniApi, linking to the doc vocdoni-api/transaction-cost"
+  },
+  "sidebar.vocdoniApi.doc.Submit transaction": {
+    "message": "Submit transaction",
+    "description": "The label for the doc item Submit transaction in sidebar vocdoniApi, linking to the doc vocdoni-api/transaction-submit"
+  },
+  "sidebar.vocdoniApi.doc.Transaction by hash": {
+    "message": "Transaction by hash",
+    "description": "The label for the doc item Transaction by hash in sidebar vocdoniApi, linking to the doc vocdoni-api/transaction-by-reference"
+  },
+  "sidebar.vocdoniApi.doc.Transaction by block height and index": {
+    "message": "Transaction by block height and index",
+    "description": "The label for the doc item Transaction by block height and index in sidebar vocdoniApi, linking to the doc vocdoni-api/transaction-by-block-index"
+  },
+  "sidebar.vocdoniApi.doc.Count organizations": {
+    "message": "Count organizations",
+    "description": "The label for the doc item Count organizations in sidebar vocdoniApi, linking to the doc vocdoni-api/organization-count"
+  },
+  "sidebar.vocdoniApi.doc.List organizations": {
+    "message": "List organizations",
+    "description": "The label for the doc item List organizations in sidebar vocdoniApi, linking to the doc vocdoni-api/organizations-list"
+  },
+  "sidebar.vocdoniApi.doc.Paginated organizations list": {
+    "message": "Paginated organizations list",
+    "description": "The label for the doc item Paginated organizations list in sidebar vocdoniApi, linking to the doc vocdoni-api/organization-list-paginated"
+  },
+  "sidebar.vocdoniApi.doc.Estimate block height": {
+    "message": "Estimate block height",
+    "description": "The label for the doc item Estimate block height in sidebar vocdoniApi, linking to the doc vocdoni-api/block-from-date"
+  },
+  "sidebar.vocdoniApi.doc.Vochain information": {
+    "message": "Vochain information",
+    "description": "The label for the doc item Vochain information in sidebar vocdoniApi, linking to the doc vocdoni-api/info"
+  },
+  "sidebar.vocdoniApi.doc.Get account information": {
+    "message": "Get account information",
+    "description": "The label for the doc item Get account information in sidebar vocdoniApi, linking to the doc vocdoni-api/account-by-address"
+  },
+  "sidebar.vocdoniApi.doc.Register an account": {
+    "message": "Register an account",
+    "description": "The label for the doc item Register an account in sidebar vocdoniApi, linking to the doc vocdoni-api/account-submit"
+  },
+  "sidebar.vocdoniApi.doc.List account elections by status": {
+    "message": "List account elections by status",
+    "description": "The label for the doc item List account elections by status in sidebar vocdoniApi, linking to the doc vocdoni-api/elections-by-organization-and-status-paginated"
+  },
+  "sidebar.vocdoniApi.doc.List paginated account elections by status": {
+    "message": "List paginated account elections by status",
+    "description": "The label for the doc item List paginated account elections by status in sidebar vocdoniApi, linking to the doc vocdoni-api/elections-by-organization-and-status"
+  },
+  "sidebar.vocdoniApi.doc.List account elections": {
+    "message": "List account elections",
+    "description": "The label for the doc item List account elections in sidebar vocdoniApi, linking to the doc vocdoni-api/elections-by-organization-paginated"
+  },
+  "sidebar.vocdoniApi.doc.List paginated account elections": {
+    "message": "List paginated account elections",
+    "description": "The label for the doc item List paginated account elections in sidebar vocdoniApi, linking to the doc vocdoni-api/elections-by-organization"
+  },
+  "sidebar.vocdoniApi.doc.Count account elections": {
+    "message": "Count account elections",
+    "description": "The label for the doc item Count account elections in sidebar vocdoniApi, linking to the doc vocdoni-api/elections-by-organization-count"
+  },
+  "sidebar.vocdoniApi.doc.Election information": {
+    "message": "Election information",
+    "description": "The label for the doc item Election information in sidebar vocdoniApi, linking to the doc vocdoni-api/election-by-id"
+  },
+  "sidebar.vocdoniApi.doc.Election keys": {
+    "message": "Election keys",
+    "description": "The label for the doc item Election keys in sidebar vocdoniApi, linking to the doc vocdoni-api/election-get-keys"
+  },
+  "sidebar.vocdoniApi.doc.List election votes": {
+    "message": "List election votes",
+    "description": "The label for the doc item List election votes in sidebar vocdoniApi, linking to the doc vocdoni-api/election-votes"
+  },
+  "sidebar.vocdoniApi.doc.Paginated election votes list": {
+    "message": "Paginated election votes list",
+    "description": "The label for the doc item Paginated election votes list in sidebar vocdoniApi, linking to the doc vocdoni-api/election-votes-paginated"
+  },
+  "sidebar.vocdoniApi.doc.Count election votes": {
+    "message": "Count election votes",
+    "description": "The label for the doc item Count election votes in sidebar vocdoniApi, linking to the doc vocdoni-api/election-votes-count"
+  },
+  "sidebar.vocdoniApi.doc.Create an election": {
+    "message": "Create an election",
+    "description": "The label for the doc item Create an election in sidebar vocdoniApi, linking to the doc vocdoni-api/create-election"
+  },
+  "sidebar.vocdoniApi.doc.Create new census": {
+    "message": "Create new census",
+    "description": "The label for the doc item Create new census in sidebar vocdoniApi, linking to the doc vocdoni-api/census-create"
+  },
+  "sidebar.vocdoniApi.doc.Census Merkle Root": {
+    "message": "Census Merkle Root",
+    "description": "The label for the doc item Census Merkle Root in sidebar vocdoniApi, linking to the doc vocdoni-api/census-root"
+  },
+  "sidebar.vocdoniApi.doc.Export census": {
+    "message": "Export census",
+    "description": "The label for the doc item Export census in sidebar vocdoniApi, linking to the doc vocdoni-api/census-export"
+  },
+  "sidebar.vocdoniApi.doc.Import census": {
+    "message": "Import census",
+    "description": "The label for the doc item Import census in sidebar vocdoniApi, linking to the doc vocdoni-api/census-import"
+  },
+  "sidebar.vocdoniApi.doc.Census total weight": {
+    "message": "Census total weight",
+    "description": "The label for the doc item Census total weight in sidebar vocdoniApi, linking to the doc vocdoni-api/census-weight"
+  },
+  "sidebar.vocdoniApi.doc.Census size": {
+    "message": "Census size",
+    "description": "The label for the doc item Census size in sidebar vocdoniApi, linking to the doc vocdoni-api/census-size"
+  },
+  "sidebar.vocdoniApi.doc.Publish census at specific root": {
+    "message": "Publish census at specific root",
+    "description": "The label for the doc item Publish census at specific root in sidebar vocdoniApi, linking to the doc vocdoni-api/census-publish-root"
+  },
+  "sidebar.vocdoniApi.doc.Publish census": {
+    "message": "Publish census",
+    "description": "The label for the doc item Publish census in sidebar vocdoniApi, linking to the doc vocdoni-api/census-publish"
+  },
+  "sidebar.vocdoniApi.doc.Prove key to census": {
+    "message": "Prove key to census",
+    "description": "The label for the doc item Prove key to census in sidebar vocdoniApi, linking to the doc vocdoni-api/census-verify-key"
+  },
+  "sidebar.vocdoniApi.doc.Verify merkle proof": {
+    "message": "Verify merkle proof",
+    "description": "The label for the doc item Verify merkle proof in sidebar vocdoniApi, linking to the doc vocdoni-api/census-verify-proof"
+  },
+  "sidebar.vocdoniApi.doc.Add participants to census": {
+    "message": "Add participants to census",
+    "description": "The label for the doc item Add participants to census in sidebar vocdoniApi, linking to the doc vocdoni-api/census-add-participants"
+  },
+  "sidebar.vocdoniApi.doc.Delete census": {
+    "message": "Delete census",
+    "description": "The label for the doc item Delete census in sidebar vocdoniApi, linking to the doc vocdoni-api/census-delete"
+  },
+  "sidebar.vocdoniApi.doc.Get vote": {
+    "message": "Get vote",
+    "description": "The label for the doc item Get vote in sidebar vocdoniApi, linking to the doc vocdoni-api/vote-get"
+  },
+  "sidebar.vocdoniApi.doc.Submit vote": {
+    "message": "Submit vote",
+    "description": "The label for the doc item Submit vote in sidebar vocdoniApi, linking to the doc vocdoni-api/vote-submit"
+  },
+  "sidebar.vocdoniApi.doc.Verify vote": {
+    "message": "Verify vote",
+    "description": "The label for the doc item Verify vote in sidebar vocdoniApi, linking to the doc vocdoni-api/vote-verify"
+  }
+}
