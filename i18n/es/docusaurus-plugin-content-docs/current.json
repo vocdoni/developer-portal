@@ -194,5 +194,21 @@
   "sidebar.vocdoniApi.doc.Verify vote": {
     "message": "Verify vote",
     "description": "The label for the doc item Verify vote in sidebar vocdoniApi, linking to the doc vocdoni-api/vote-verify"
+  },
+  "sidebar.vocdoniApi.doc.Block by height": {
+    "message": "Block by height",
+    "description": "The label for the doc item Block by height in sidebar vocdoniApi, linking to the doc vocdoni-api/block-by-height"
+  },
+  "sidebar.vocdoniApi.doc.Block information by hash": {
+    "message": "Block information by hash",
+    "description": "The label for the doc item Block information by hash in sidebar vocdoniApi, linking to the doc vocdoni-api/block-by-hash"
+  },
+  "sidebar.vocdoniApi.doc.Get Validators": {
+    "message": "Get Validators",
+    "description": "The label for the doc item Get Validators in sidebar vocdoniApi, linking to the doc vocdoni-api/validators"
+  },
+  "sidebar.vocdoniApi.doc.Treasurer address": {
+    "message": "Treasurer address",
+    "description": "The label for the doc item Treasurer address in sidebar vocdoniApi, linking to the doc vocdoni-api/treasurer-address"
   }
 }
