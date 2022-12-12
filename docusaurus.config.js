@@ -57,10 +57,13 @@ const config = {
   ],
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'es'],
     localeConfigs: {
       en: {
         label: 'En',
+      },
+      es: {
+        label: 'Es',
       },
     },
   },
@@ -132,6 +135,10 @@ const config = {
               position: "right",
               className: "header-github-link",
               "aria-label": "GitHub repository",
+            },
+            {
+              type: 'localeDropdown',
+              position: 'right',
             },
           ],
         },
