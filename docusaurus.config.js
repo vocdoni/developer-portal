@@ -56,7 +56,7 @@ const config = {
   themeConfig:
   /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
       ({
-        image: 'img/logo-dark.png', // Image for og:image and twitter:image
+        image: 'img/open-graph.png', // Image for og:image and twitter:image
         metadata: [
           {name: 'keywords', content: "Blockchain Voting, Mobile Voting, Universally Verifiable, " +
                 "Voting-As-A-Service, Decentralized Governance, Anonymous Voting, Privacy Centric, Secure Electronic Voting, " +
