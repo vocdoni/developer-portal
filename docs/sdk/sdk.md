@@ -39,7 +39,7 @@ connected to the API endpoint corresponding to `dev` or `prod`:
 
 ~~~ts
 const client = new VocdoniSDKClient({
-  env: EnvironmentInitialitzationOptions.DEV, // mandatory, can be 'dev' or 'prod'
+  env: EnvOptions.DEV, // mandatory, can be 'dev' or 'prod'
   wallet: signer, // optional, the signer used (Metamask, Walletconnect)
 })
 ~~~
@@ -75,8 +75,8 @@ also decide to just fetch it, without falling back to an account registration:
 ### Vocdoni tokens; faucet & balance
 
 Accounts require Vocdoni tokens in order to be able to register against our
-blockchain. The process above will automatically fetch some tokens from a faucet
-**under development**. For production environments, you should contact us (chat.vocdoni.io)
+blokchain. The process above will automatically fetch some tokens from a faucet
+**under development**. For production environments, you should contact us (Vocdoni)
 for a byte64 string faucet, and specify it when creating your account:
 
 ~~~ts
