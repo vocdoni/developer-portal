@@ -23,7 +23,7 @@ const config = {
     mermaid: true,
   },
 
-  scripts: [{src: 'https://plausible.io/js/script.tagged-events.js', defer: true, 'data-domain': 'developer.vocdoni.io'}],
+  scripts: [{src: 'https://plausible.io/js/script.tagged-events.outbound-links.js', defer: true, 'data-domain': 'developer.vocdoni.io'}],
 
   presets: [
     [

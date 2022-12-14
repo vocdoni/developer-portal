@@ -20,7 +20,7 @@ export const HeroHeader = (props: IHeroHeader) => {
           {/*<Subtitle>{props.subtitle}</Subtitle>*/}
           <LeText>Vocdoni Protocol is an open source, universally verifiable, flexible and scalable voting system. </LeText>
           <LeText>The Developer Portal contains everything you need to start integrating the Vocdoni Protocol, including the API and SDK, as well as extensive documentation about the protocol design. </LeText>
-          <LeText>You can reach us at <a href="https://chat.vocdoni.io">chat.vocdoni.io</a> for further assistance.</LeText>
+          <LeText>You can reach us at <a href="https://chat.vocdoni.io" className={"plausible-event-name=Chat"}>chat.vocdoni.io</a> for further assistance.</LeText>
         </TextWrapper>
 
         {/* TODO: FIX ME  */}

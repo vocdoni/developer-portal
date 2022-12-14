@@ -20,7 +20,8 @@ const componentCards: IComponentCardProps[] = [
         'Vocdoni defines an open architecture and the protocols to empower large communities to exercise full democracy with the best guarantees.',
     img: '/img/layers3.jpg',
     to: '/get-started/intro',
-    external: true
+    external: true,
+    plausibleClass: "plausible-event-name=Learn+More+Introduction"
   },
   {
     title: 'API Endpoints',
@@ -28,6 +29,7 @@ const componentCards: IComponentCardProps[] = [
       'Integrate Secure, Digital Voting Everywhere. No need to create a voting system from scratch. Solve your governance needs, or those of your customers, by taking advantage of Vocdoni\'s voting protocol, using our API.',
     img: '/img/layers2.jpg',
     to: '/category/vocdoni-api',
+    plausibleClass: "plausible-event-name=Learn+More+API",
   },
   {
     title: 'SDK',
@@ -35,6 +37,7 @@ const componentCards: IComponentCardProps[] = [
       'We care about the right abstractions so your teams can integrate voting functionality comfortably and quickly.',
     img: '/img/layers1.jpg',
     to: '/sdk',
+    plausibleClass: "plausible-event-name=Learn+More+SDK",
   },
 ];
 
@@ -101,6 +104,7 @@ export default function Home(): JSX.Element {
               img={card.img}
               to={card.to}
               external={card.external}
+              plausibleClass={card.plausibleClass}
             />
           ))}
         </ComponentCardsWrapper>
