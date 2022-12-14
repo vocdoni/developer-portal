@@ -76,7 +76,7 @@ also decide to just fetch it, without falling back to an account registration:
 
 Accounts require Vocdoni tokens in order to be able to register against our
 blockchain. The process above will automatically fetch some tokens from a faucet
-**under development**. For production environments, you should contact us (Vocdoni)
+**under development**. For production environments, you should contact us (chat.vocdoni.io)
 for a byte64 string faucet, and specify it when creating your account:
 
 ~~~ts
