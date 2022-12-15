@@ -91,17 +91,20 @@ const config = {
               docId: "get-started/intro",
               position: "left",
               label: "Introduction",
+              className: "plausible-event-name=Header+Introduction",
             },
             {
               position: "left",
               label: "API",
               to: "/category/vocdoni-api",
+              className: "plausible-event-name=Header+API",
             },
             {
               type: 'doc',
               docId: 'sdk/sdk',
               position: 'left',
               label: 'SDK',
+              className: "plausible-event-name=Header+SDK",
             },
             {
               href: "https://dev.explorer.vote",
