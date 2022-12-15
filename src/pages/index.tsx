@@ -20,7 +20,7 @@ const componentCards: IComponentCardProps[] = [
         'Vocdoni defines an open architecture and the protocols to empower large communities to exercise full democracy with the best guarantees.',
     img: '/img/layers3.jpg',
     to: '/get-started/intro',
-    external: true,
+    // external: true,
     plausibleClass: "plausible-event-name=Learn+More+Introduction"
   },
   {
