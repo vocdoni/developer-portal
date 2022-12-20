@@ -35,12 +35,12 @@ Cannot be constructed.
 
 Fetches info about the specified process.
 
-**Returns**: Promise&lt;IElectionInfoRequest&gt;
+**Returns**: Promise&lt;IElectionInfoResponse&gt;
 
 |PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
 |:---:|:---:|:---:|:---:|:---:|
 |url|string|||API endpoint URL|
-|request|IElectionInfoRequest||||
+|electionId|string|||The identifier of the election|
 
 ### keys {#keys}
 
@@ -55,7 +55,7 @@ Fetches the encryption keys from the specified process.
 |PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
 |:---:|:---:|:---:|:---:|:---:|
 |url|string|||API endpoint URL|
-|electionId|string|||The election id|
+|electionId|string|||The identifier of the election|
 
 ### create {#create}
 
@@ -65,10 +65,11 @@ Fetches the encryption keys from the specified process.
 
 Creates a new election.
 
-**Returns**: Promise&lt;IElectionCreateRequest&gt;
+**Returns**: Promise&lt;IElectionCreateResponse&gt;
 
 |PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
 |:---:|:---:|:---:|:---:|:---:|
 |url|string|||API endpoint URL|
-|data|IElectionCreateRequest||||
+|payload|string|||The set information info raw payload to be submitted to the chain|
+|metadata|string|||The base64 encoded metadata JSON object|
 

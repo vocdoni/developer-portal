@@ -134,7 +134,7 @@ After you got all the addresses for your census, you may as well create the
 process instance:
 
 ~~~ts
-const election = new Election({
+const election = Election.from({
   title: 'Election title',
   description: 'Election description',
   // a header image for your process (this is for example purposes; avoid using random sources)
@@ -205,14 +205,65 @@ You can always access a process information and metadata using `fetchElection`:
 
 ~~~ts
 (async () => {
+  const info = await client.fetchElection(id)
+  console.log(info) // shows election information and metadata
+})();
+
+// or...
+(async () => {
   client.setElectionId(id)
   const info = await client.fetchElection()
   console.log(info) // shows election information and metadata
 })();
 ~~~
 
-See the [Election interface][election interface] details for more information
+See the [PublishedElection class][publishedelection class] details for more information
 about the returning object.
+
+### Changing election status
+
+See the [Election lifecycle states][election-lifecycle-states] details for more information
+about the election status and the possible status changes once the election is created.
+
+#### Pause
+
+~~~ts
+(async () => {
+  await client.pauseElection(id)
+  const election = await client.fetchElection(id)
+  console.log(election.status) // Matches ElectionStatus.PAUSED
+})();
+~~~
+
+#### Cancel
+
+~~~ts
+(async () => {
+  await client.cancelElection(id)
+  const election = await client.fetchElection(id)
+  console.log(election.status) // Matches ElectionStatus.CANCELED
+})();
+~~~
+
+#### End
+
+~~~ts
+(async () => {
+  await client.endElection(id)
+  const election = await client.fetchElection(id)
+  console.log(election.status) // Matches ElectionStatus.ENDED
+})();
+~~~
+
+#### Continue
+
+~~~ts
+(async () => {
+  await client.continueElection(id)
+  const election = await client.fetchElection(id)
+  console.log(election.status) // Matches ElectionStatus.READY
+})();
+~~~
 
 ### Voting to a process
 
@@ -262,9 +313,10 @@ This SDK is licensed under the [GNU Affero General Public License v3.0][license]
 [ethers]: https://github.com/ethers-io/ethers.js
 [vochain explorer]: https://explorer.vote
 [dev vochain explorer]: https://dev.explorer.vote
-[election interface]: ./src/types/election.ts#L29
-[examples]: ./examples
-[full featured CRA]: ./examples/cra
-[license]: ./LICENSE
+[publishedelection class]: https://github.com/vocdoni/vocdoni-sdk/blob/main/src/types/election/published.ts
+[election-lifecycle-states]: https://developer.vocdoni.io/get-started/intro#election-lifecycle-states
+[examples]: https://github.com/vocdoni/vocdoni-sdk/blob/main/examples
+[full featured CRA]: https://github.com/vocdoni/vocdoni-sdk/blob/main/examples/cra
+[license]: https://github.com/vocdoni/vocdoni-sdk/blob/main/LICENSE
 [devportal]: https://developer.vocdoni.io/sdk
-[builddocs]: ./docs/README.md
+[builddocs]: https://github.com/vocdoni/vocdoni-sdk/blob/main/docs/README.md
