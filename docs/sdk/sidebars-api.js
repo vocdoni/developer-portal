@@ -23,6 +23,8 @@ module.exports = {
         "sdk/PublishedCensus",
         "sdk/WeightedCensus",
         "sdk/Election",
+        "sdk/PublishedElection",
+        "sdk/UnpublishedElection",
         "sdk/Vote",
         "sdk/Asymmetric",
         "sdk/Signing"
