@@ -2066,6 +2066,8 @@ components:
           $ref: "#/components/schemas/TransactionHash"
         blockHeight:
           $ref: "#/components/schemas/BlockHeight"
+        transactionIndex:
+          $ref: "#/components/schemas/TxIndex"
     VoteEnvelopeResponse:
       type: object
       properties:
