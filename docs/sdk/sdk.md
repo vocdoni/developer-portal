@@ -8,7 +8,7 @@ participate in voting processes and collective decision-making.
 
 You can test the SDK [here](https://vocdoni.github.io/vocdoni-sdk/).
 
-![Live preview](./docs/images/cra.png)
+![Live preview](https://raw.githubusercontent.com/vocdoni/vocdoni-sdk/main/docs/images/cra.png)
 
 > **No funds needed in your wallet**: Metamask or Walletconnect are only used for
 > signing transactions that are sent to the Vocdoni chain! Testing tokens in `dev`
