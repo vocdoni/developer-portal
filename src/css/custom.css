@@ -163,3 +163,11 @@ a {
   max-width: 250px;
   width: 250px;
 }
+
+.comments-wrapper button {
+  background-color: red;
+}
+.comments-wrapper button[aria-label="Add +1 reaction"] {
+  display: none;
+
+}
