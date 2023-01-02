@@ -30,6 +30,7 @@
     "@docusaurus/theme-mermaid": "^2.2.0",
     "@mantine/hooks": "^4.2.12",
     "@mdx-js/react": "^1.6.22",
+    "@ramseyinhouse/feedback-component": "^1.0.3",
     "autoprefixer": "^10.4.13",
     "clsx": "^1.1.1",
     "docusaurus-plugin-openapi-docs": "^1.5.0",
@@ -45,7 +46,6 @@
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "^2.2.0",
-    "@giscus/react": "^2.2.6",
     "@tailwindcss/line-clamp": "^0.4.0",
     "@tsconfig/docusaurus": "^1.0.6",
     "@typescript-eslint/eslint-plugin": "^5.38.1",

@@ -35,8 +35,10 @@ function useDocTOC() {
 export default function DocItemLayout({ children }) {
   const docTOC = useDocTOC();
   const {
-    frontMatter: { api },
+      frontMatter: { api },
+      metadata: { id }
   } = useDoc();
+
   return (
     <div className="row">
       <div className={clsx("col", !docTOC.hidden && styles.docItemCol)}>
@@ -47,6 +49,7 @@ export default function DocItemLayout({ children }) {
             <DocVersionBadge />
             {docTOC.mobile}
             <DocItemContent>{children}</DocItemContent>
+            <Feedback id={id.replace("/", "+")}/>
             <div className={clsx("col", api ? "col--7" : "col--12")}>
               <DocItemFooter />
             </div>
@@ -54,8 +57,6 @@ export default function DocItemLayout({ children }) {
           <div className={clsx("col", api ? "col--7" : "col--12")}>
             <DocItemPaginator />
           </div>
-          <Feedback />
-
         </div>
       </div>
       {docTOC.desktop && <div className="col col--3">{docTOC.desktop}</div>}
