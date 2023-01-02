@@ -1,53 +1,23 @@
-import React, {useEffect} from 'react';
-import Giscus from '@giscus/react';
-import { useColorMode } from '@docusaurus/theme-common';
-import styles from "./styles.module.css";
+import React from 'react';
+import "@ramseyinhouse/feedback-component/dist/index.umd.js"
 
-export default function Feedback({}) {
-    const { colorMode } = useColorMode();
-
-    // useEffect(() => {
-    //     document.getElementById('comments').contentDocument.querySelector("h1#firstHeading").style.color = "red";
-    // }, [])
+export default function Feedback({ id } : { id: string }) {
     return (
-        <div
-            className={"comments-wrapper"}
-        >
-            <div className={styles.kk}>Our feedback component for page </div>
-            <div >
-
-                <button aria-label="Add +1 reaction" type="button" className="gsc-emoji-button no-token" disabled="">
-                    <span className="gsc-emoji">👍</span></button>
-                <button aria-label="Add -1 reaction" type="button" className="gsc-emoji-button no-token" disabled="">
-                    <span className="gsc-emoji">👎</span></button>
-                <button aria-label="Add Laugh reaction" type="button" className="gsc-emoji-button no-token" disabled="">
-                    <span className="gsc-emoji">😄</span></button>
-                <button aria-label="Add Hooray reaction" type="button" className="gsc-emoji-button no-token"
-                        disabled=""><span className="gsc-emoji">🎉</span></button>
-                <button aria-label="Add Confused reaction" type="button" className="gsc-emoji-button no-token"
-                        disabled=""><span className="gsc-emoji">😕</span></button>
-                <button aria-label="Add Love reaction" type="button" className="gsc-emoji-button no-token" disabled="">
-                    <span className="gsc-emoji">❤️</span></button>
-                <button aria-label="Add Rocket reaction" type="button" className="gsc-emoji-button no-token"
-                        disabled=""><span className="gsc-emoji">🚀</span></button>
-                <button aria-label="Add Eyes reaction" type="button" className="gsc-emoji-button no-token" disabled="">
-                    <span className="gsc-emoji">👀</span></button>
-            </div>
-            <Giscus
-                id="comments"
-                repo="vocdoni/developer-portal"
-                repoId="R_kgDOIWy9aQ"
-                category="Announcements"
-                categoryId="DIC_kwDOIWy9ac4CTH36"
-                mapping="pathname"
-                reactionsEnabled="1"
-                emitMetadata="0"
-                inputPosition="bottom"
-                // theme="/styles.css"
-                lang="en"
-                loading="lazy"
-
-            />
+        <div>
+            {/*@ts-ignore*/}
+            <feedback-component>
+                <span slot="cta">Was this helpful?</span>
+                <span slot="confirmation">Thanks for your feedback! </span>
+                {/*Thumbs up*/}
+                <span slot="option-icon:0" className={"plausible-event-name=feedback-component-vote-up plausible-event-page="+id}>
+                    <i className="far fa-thumbs-up"></i>
+                </span>
+                {/*Thumbs down*/}
+                <span slot="option-icon:1" className={"plausible-event-name=feedback-component-vote-down plausible-event-page="+id}>
+                    <i className="far fa-thumbs-down"></i>
+                </span>
+                {/*@ts-ignore*/}
+            </feedback-component>
         </div>
     );
 }
