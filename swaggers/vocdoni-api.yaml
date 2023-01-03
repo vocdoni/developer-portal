@@ -606,15 +606,53 @@ paths:
     post:
       summary: "Create an election"
       description: |-
-        Create an election. 
-        - Where `txPayload` is a protobuff signed transaction
-        - `Metadata` is the base64 election metadata to save on the storage (IPFS on our case). If metadataURL is 
-        returned empty, means that there is some issue with the storage provider
+        It creates an election on the Vochain. 
+        
+        To use this endpoint, you will need to provide a signed transaction that has been encoded on the client side 
+        using the Vocdoni SDK. This transaction, referred to as txPayload, must include the IPFS CID-formatted hash of 
+        the metadata for the election.
+        
+        The metadata for the election is optional and is provided as a base64-encoded JSON object. This object should 
+        follow the Entity metadata specification and includes information about the election, such as the list of 
+        candidates and the election's description. This metadata is stored within IPFS so that participants can access it.
+        
+        The API endpoint will verify that the hash in the txPayload transaction matches the uploaded metadata. If these 
+        do not match, the API will return an error.
+        
+        Example of election metadata object:
+        
+        ```json
+        {
+          "version": "1.0",
+          "title": {"default": "hello", "en": "hello", "es": "hola"},
+          "description": {"default": "hello", "en": "hello", "es": "hola"},
+          // Following fields are optional
+          "media": {
+            "header": "url to an image"
+            "streamUri": "url to a stream resource"
+          },
+          "questions": [
+            {
+              "choices": [ 
+                { 
+                  "title": {"default": "hello", "en": "hello", "es": "hola"},
+                  "value": 0
+                } 
+              ], 
+              "description": {"default": "hello", "en": "hello", "es": "hola"},
+              "title": {"default": "hello", "en": "hello", "es": "hola"}
+            }
+          ]
+        }
+        ```
+        
+        [Read more about process creation](https://docs.vocdoni.io/architecture/process-overview.html#process-creation)
+
       operationId: createElection
       tags:
         - Elections
       requestBody:
-        description: "The payloads must be a base64 representation of the needed JSON objects."
+        description: "Uses `txPayload` protobuff signed transaction, and the `metadata` base64-encoded JSON object"
         required: true
         content:
           application/json:
@@ -622,7 +660,9 @@ paths:
               $ref: '#/components/schemas/CreateElection'
       responses:
         "200":
-          description: "It return txId, electionId and the metadataURL for the newly created election"
+          description: |-
+            It return txId, electionId and the metadataURL for the newly created election. If metadataURL is returned 
+            empty, means that there is some issue with the storage provider.
           content:
             application/json:
               schema:
