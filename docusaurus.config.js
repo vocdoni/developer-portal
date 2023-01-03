@@ -43,6 +43,7 @@ const config = {
             require.resolve("./src/css/open-api.css"),
             require.resolve("./src/css/markdown.css"),
             require.resolve("./src/css/announcement-bar.css"),
+            require.resolve("./src/css/feedback.css"),
           ]
         },
         sitemap: {

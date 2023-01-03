@@ -1,24 +1,53 @@
-import React from 'react';
-import "@ramseyinhouse/feedback-component/dist/index.umd.js"
-import styles from "./styles.module.css"
+import React, {useState} from 'react';
+
+const FeedbackComponent = ({ id } : { id: string }) => {
+    const [haveVoted, setHaveVoted] = useState(false);
+    const vote = () => setHaveVoted(true)
+
+    return (
+        <div className="feedback-wrapper">
+            {haveVoted ? (
+                <div className="confirmation-content">
+                  <span className="confirmation-message">
+                    <span>Thanks for your feedback! </span>
+                  </span>
+                </div>
+            ) : (
+                <div className="cta-content" >
+                  <span className="cta-text">
+                    <span>Was this helpful?</span>
+                  </span>
+                    <ul className="feedback-options">
+                        <li>
+                        {/*Thumbs up*/}
+                            <button
+                                  onClick={vote}
+                                  className={ "feedback-button " +
+                                "plausible-event-name=feedback-component-vote-up plausible-event-page="+id}
+                            >
+                                <i className="far fa-thumbs-up fa-lg"></i>
+                            </button>
+                        </li>
+                        {/*Thumbs down*/}
+                        <li>
+                            <button
+                                  onClick={vote}
+                                  className={ "feedback-button " +
+                                      "plausible-event-name=feedback-component-vote-down plausible-event-page="+id}
+                            >
+                                <i className="far fa-thumbs-down fa-lg"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            )}
+        </div>
+    )
+}
+
 
 export default function Feedback({ id } : { id: string }) {
     return (
-        <div className="feedback">
-            {/*@ts-ignore*/}
-            <feedback-component>
-                <span slot="cta">Was this helpful?</span>
-                <span slot="confirmation">Thanks for your feedback! </span>
-                {/*Thumbs up*/}
-                <span slot="option-icon:0" className={"plausible-event-name=feedback-component-vote-up plausible-event-page="+id}>
-                    <i className="far fa-thumbs-up fa-2x"></i>
-                </span>
-                {/*Thumbs down*/}
-                <span slot="option-icon:1" className={"plausible-event-name=feedback-component-vote-down plausible-event-page="+id}>
-                    <i className="far fa-thumbs-down fa-2x"></i>
-                </span>
-                {/*@ts-ignore*/}
-            </feedback-component>
-        </div>
+        <FeedbackComponent id={id} />
     );
 }
