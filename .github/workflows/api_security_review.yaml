@@ -1,0 +1,71 @@
+name: API security review
+
+on:
+  workflow_dispatch:
+    inputs:
+      dummyLogLevel:
+        description: 'Dummy Log Level'
+        required: false
+        default: 'warning'
+        type: choice
+        options: [info, warning, debug] 
+  push:
+    branches: 
+      - main
+      - 'DOPS-400-*'
+  pull_request:
+    types:
+      - opened
+    branches:
+      - main
+      - 'DOPS-400-*'
+env:
+  API_SPECS_FILE_PATH: swaggers/vocdoni-api.yaml
+
+concurrency:
+  group: ${{ github.ref }}-${{ github.workflow }}
+  cancel-in-progress: true
+
+jobs:
+  spectral_cli:
+    name: Spectral CLI
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16.x
+
+      - name: Install Spectral and initial rulesets
+        run: |
+          npm install @stoplight/spectral-cli
+          npm install @stoplight/spectral-owasp-ruleset
+
+      - name: Setup Spectral rulesets
+        run: |
+          echo 'extends: ["spectral:oas"]' > .spectral_oas.yaml
+          echo 'extends: ["@stoplight/spectral-owasp-ruleset"]' > .spectral_owasp.yaml
+          mkdir -p _out/
+
+      - name: Run Spectral - ruleset OAS
+        run: |
+          set -o pipefail
+          npx spectral lint ${{ env.API_SPECS_FILE_PATH }} -r .spectral_oas.yaml -v | tee _out/spectral_oas.log
+          set +o pipefail
+
+      - name: Run Spectral - ruleset OWASP
+        if: ${{ success() }} || ${{ failure() }}
+        run: |
+          set -o pipefail
+          npx spectral lint ${{ env.API_SPECS_FILE_PATH }} -r .spectral_owasp.yaml -v | tee _out/spectral_owasp.log
+          set +o pipefail
+
+      - name: Archive Spectral reports
+        if: ${{ success() }} || ${{ failure() }}
+        uses: actions/upload-artifact@v3
+        with:
+          name: API security reports
+          path: _out/*.log
