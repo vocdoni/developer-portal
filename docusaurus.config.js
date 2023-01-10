@@ -201,7 +201,7 @@ const config = {
               "https://raw.githubusercontent.com/vocdoni/developer-portal/main/swaggers/vocdoni-api.yaml",
           },
         },
-      },
+      }
     ],
     async function TailwindPlugin(context, options) {
       return {
@@ -214,6 +214,18 @@ const config = {
         },
       };
     },
+    // [ "@easyops-cn/docusaurus-search-local",
+    //   /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
+    //   {
+    //     // `hashed` is recommended as long-term-cache of index file is possible.
+    //     hashed: true,
+    //     indexBlog: false,
+    //     searchResultLimits: 1,
+    //     searchBarPosition: "right"
+    //
+    //   }
+    // ],
+
     // [
     //   "@docusaurus/plugin-pwa",
     //   {
@@ -244,7 +256,21 @@ const config = {
     // ],
   ],
 
-  themes: ["docusaurus-theme-openapi-docs", '@docusaurus/theme-mermaid'],
+  themes: [
+    "docusaurus-theme-openapi-docs",
+    '@docusaurus/theme-mermaid',
+    [
+        "@easyops-cn/docusaurus-search-local",
+        /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
+        {
+          // `hashed` is recommended as long-term-cache of index file is possible.
+          hashed: true,
+          indexBlog: false,
+          searchBarPosition: "right",
+          docsRouteBasePath: "/"
+        }
+    ]
+  ],
   stylesheets: [
     {
       href: "https://use.fontawesome.com/releases/v5.11.0/css/all.css",
