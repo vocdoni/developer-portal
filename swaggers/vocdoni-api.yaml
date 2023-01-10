@@ -549,9 +549,13 @@ paths:
     get:
       summary: "List election votes"
       description: |-
-        Get a list of votes `nullifiers` for a election. The `nullifier` is a unique identifier for an election
+        Get a list of votes of an election. The `voteId`, or vote `nullifier`, is the unique vote identifier that can be
+        used to [verify the vote](https://explorer.vote/verify/). 
+        
+        If election is not ended, it show the votes only if the envelope type is not encrypted. Also, the `voterId` 
+        won't be sent if the election is anonymous.
+
         Default page is 0 if no page specified
-        If election is not ended, it show the votes only if the envelope type is not encrypted.
       operationId: electionVotes
       tags:
         - Elections
@@ -1353,8 +1357,22 @@ paths:
         - Votes
       summary: "Get vote"
       description:  >-
-        Get the content of an existing Vote. The Vote is identified by the nullifier. Height and txIndex refer to the 
-        block height and the index of the transaction where vote is registered.
+        Get the content of an existing Vote. 
+        
+        
+        The Vote is identified by its `voteId`, also called `nullifier`. The `nullifier` is deterministic and its hash 
+        could be computed as following (using `Keccak256`):
+        
+        * For signature based elections, is the hash of the `voterAddress` + `processId`
+        
+        * For anonymous elections, the `privateKey` + `processId`
+        
+        
+        As well, on the response, the `voterId` won't be returned for anonymous elections, and the `encryptionKeyIndexes`
+        only for finished encrypted elections.
+        
+        
+        Height and txIndex refer to the block height and the index of the transaction where vote is registered.
       operationId: voteGet
       parameters:
         - $ref: "#/components/parameters/voteIdParameter"
@@ -2119,38 +2137,21 @@ components:
               items:
                 type: integer
               example: [ 1, 2 ]
-            meta:
-              type: object
-              properties:
-                height:
-                  type: integer
-                  format: int32
-                  example: 2929397
-                nullifier:
-                  type: string
-                  example: "c3f32730a196d8ba928e775fad430969b500633adf33b3f63922b9d8713317a2"
-                processId:
-                  type: string
-                  example: "0213b31d622b6475d4f3a32cffdc26b02f3ea7589a72c1ea2b03587b7dc7a576"
-                txHash:
-                  type: string
-                  example: "75e8f822f5dd13973ac5158d600f0a2a5fea4bfefce9712ab5195bf17884cfad"
-                txIndex:
-                  type: integer
-                  format: int32
-                  example: 0
-            nonce:
-              type: string
-              example: "4b6e87d0b01c82cd269a57658c49ef2c429eaf4d480ca6710ff07af72c7059df"
-            signature:
-              type: string
-              example: "a7b8b2b4e9fb753627145b2f84770169e944f9e3f509c3402b7bb7d9c873a88a061de02aabc73355529f2b422d2a8d64f8ae39f0363d2aef7504142ef04d386c1c"
-            votePackage:
-              type: string
-              example: "Yaiw2PMe8YZ+iTcPvOHAaZVoAiNzz3vdEed0pPXTRwF4unD15N79+7P4Jx5fk55CDBvhQuvpmD9mEprVJehur4I8ovqeaktwNoWUHvT8ue090r2J4yL33YqvZGlcpoa5lnGUMcRPra8bnBhqd1HX6KTTzhXV74fNijncNbj57/sdTr04ljolaA=="
+            txHash:
+              $ref: "#/components/schemas/TransactionHash"
+            voteId:
+              $ref: "#/components/schemas/VoteId"
+            voterId:
+              $ref: "#/components/schemas/VoterId"
             weight:
               type: string
               example: "1"
+            electionID:
+              $ref: '#/components/schemas/ElectionId'
+            blockHeight:
+              $ref: "#/components/schemas/BlockHeight"
+            transactionIndex:
+              $ref: "#/components/schemas/TxIndex"
     CensusTypeWalletRequest:
       description: "Used on wallet operations"
       type: object
