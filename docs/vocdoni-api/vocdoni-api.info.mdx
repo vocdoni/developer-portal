@@ -13,9 +13,13 @@ import Tabs from "@theme/Tabs";
 import TabItem from "@theme/TabItem";
 import Export from "@theme/ApiDemoPanel/Export";
 
+````mdx-code-block
 <span className={"theme-doc-version-badge badge badge--secondary"}>Version: 2.0.0</span>
+````
 
+````mdx-code-block
 <Export url={"https://raw.githubusercontent.com/vocdoni/developer-portal/main/swaggers/vocdoni-api.yaml"} proxy={undefined}></Export>
+````
 
 # Vocdoni API
 
@@ -29,5 +33,7 @@ You can review the API endpoints documentation in this section, the main entitie
 - [**Censuses**](censuses): The census is a key component of any voting process. It specifies the set of users (identified by a  public key or address) eligible for participating in an election. To understand more about the Censuses you can  check [here](../get-started/intro#21-the-census). Here you will be able to get censuses information like the Merkle  root, total weight & size, import/export the censuses and create new ones.
 - [**Votes**](votes): All the information related to the vote issued by a participant in a vote, you can check the validity of  the vote, consult your information and send a vote.
 
+````mdx-code-block
 <div style={{"marginBottom":"2rem"}}><h2 id={"authentication"} style={{"marginBottom":"1rem"}}>Authentication</h2><Tabs><TabItem label={"Bearer Auth"} value={"bearerAuth"}><div><table><tbody><tr><th>Security Scheme Type:</th><td>http</td></tr><tr><th>HTTP Authorization Scheme:</th><td>bearer</td></tr><tr><th>Bearer format:</th><td></td></tr></tbody></table></div></TabItem></Tabs></div>
+````
       
