@@ -36,9 +36,13 @@ See [censuses/{censusId}/participants](census-add-participants)
 - The new census ID is returned and can be used for querying
 - If a censusID with the same root has been already published, the request will fail
 
+````mdx-code-block
 <details style={{"marginBottom":"1rem"}} data-collapsed={false} open={true}><summary style={{}}><strong>Path Parameters</strong></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"censusId","in":"path","description":"Census id provided during census creation","required":true,"schema":{"type":"string","description":"Random 32 bytes hex string","example":"b547a9c83ad7d61b568cf10ebbb25338d680810fa219fa69477cfbd860b386c2"}}}></ParamsItem></ul></div></details><div><ApiTabs><TabItem label={"200"} value={"200"}><div>
+````
 
 New census Id and storage uri
 
+````mdx-code-block
 </div><div><MimeTabs schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs><TabItem label={"Schema"} value={"Schema"}><details style={{}} data-collapsed={false} open={true}><summary style={{"textAlign":"left"}}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={false} name={"censusID"} required={false} deprecated={undefined} schemaDescription={"Random 32 bytes hex string"} schemaName={"string"} qualifierMessage={undefined} defaultValue={undefined}></SchemaItem><SchemaItem collapsible={false} name={"uri"} required={false} deprecated={undefined} schemaDescription={undefined} schemaName={"string"} qualifierMessage={undefined} defaultValue={undefined}></SchemaItem></ul></details></TabItem><TabItem label={"Example (from schema)"} value={"Example (from schema)"}><ResponseSamples responseExample={"{\n  \"censusID\": \"b547a9c83ad7d61b568cf10ebbb25338d680810fa219fa69477cfbd860b386c2\",\n  \"uri\": \"ipfs://QmXxgLNRSeK6jtFkJ9TsL8nYxFnJ8RKa2xXHUFKGankX6k\"\n}"} language={"json"}></ResponseSamples></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem></ApiTabs></div>
+````
       
