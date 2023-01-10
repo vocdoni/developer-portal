@@ -53,6 +53,10 @@
     /*margin-left: 0.5rem;*/
 }
 
+.feedback-wrapper .feedback-button:hover {
+    background: #afb0b0;
+}
+
 .feedback-wrapper .feedback-button i {
     display: inherit;
     /*width:  1rem;*/
