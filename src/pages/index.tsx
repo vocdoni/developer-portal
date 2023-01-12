@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from '@theme/Layout';
 import styled from 'styled-components';
-
+import { BsDiscord } from 'react-icons/bs';
 
 export default function Home(): JSX.Element {
     return (
@@ -11,9 +11,8 @@ export default function Home(): JSX.Element {
                 alt={"Vector background"}
             />
             <Page>
-
                 <MainSection>
-                    <div>
+                    <MainSubsection>
                         <MainTitle>
                             Create digital voting <br />applications <br />quickly and easily.
                         </MainTitle>
@@ -26,12 +25,12 @@ export default function Home(): JSX.Element {
                         </Paragraph>
                         <div>
                             <CTA>Get Started</CTA>
-                            <span>chat.vocdoni.io</span>
+                            <DiscordLink href={"https://chat.vocdoni.io/"}><BsDiscord /> chat.vocdoni.io </DiscordLink>
                         </div>
-                    </div>
-                    <div>
+                    </MainSubsection>
+                    <MainSubsection>
                         <MainTitle>Create digital voting applications quickly and easily.</MainTitle>
-                    </div>
+                    </MainSubsection>
                 </MainSection>
 
                 <Section>
@@ -57,10 +56,17 @@ const Page = styled.div.attrs({})`
 `;
 
 const Section = styled.div.attrs({
-    className: 'min-h-screen md:p-18 pr-24 pl-24 pb-24 flex w-auto m-auto place-items-center h-screen',
+    className: 'sm:flex-column sm:px-4 sm:py-4 min-h-screen md:px-24 md:pb-24 flex flex-wrap w-auto m-auto place-items-center h-screen place-content-center ',
+    // className: 'flex flex-wrap sm:flex-col',
 })``;
 
 const MainSection = styled(Section)`
+`;
+const MainSubsection = styled.div.attrs({
+    // className: 'place-content-center w-full md:w-1/2 p-4'
+    className: 'place-content-center'
+})`
+    max-width: 500px;
 `;
 
 const MainTitle = styled.h1`
@@ -89,5 +95,13 @@ const CTA = styled.button`
   /* Note: backdrop-filter has minimal browser support */
   border-radius: 8px;
   font-weight: bold;
+`
 
+const DiscordLink = styled.a`
+  color: black;
+  display: inline-flex;
+  gap: 10px;
+  padding-left: 25px;
+  align-items: center;
+  font-weight: bold;
 `
