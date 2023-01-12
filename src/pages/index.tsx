@@ -81,13 +81,10 @@ const CTA = styled.button`
   padding: 12px 16px;
   gap: 8px;
 
-  //background: linear-gradient(90deg, rgba(255, 255, 255, 0) -0.01%, #00DDB3 100%), linear-gradient(90deg, rgba(0, 221, 179, 0) -0.01%, #FF005D 80%);
   background: rgb(255,255,255);
   background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(142,0,255,0.25) 40%, rgba(0,221,179,0.85) 100%);
-  //border: 1px solid rgba(255, 255, 255, 0.5);
-  box-shadow: inset 0px 2px 4px rgba(255, 255, 255, 0.5);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.90));
-  //backdrop-filter: blur(8px);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  backdrop-filter: blur(8px);
 
   /* Note: backdrop-filter has minimal browser support */
   border-radius: 8px;
