@@ -23,7 +23,11 @@ const config = {
     mermaid: true,
   },
 
-  scripts: [{src: 'https://plausible.io/js/script.tagged-events.outbound-links.js', defer: true, 'data-domain': 'developer.vocdoni.io'}],
+  scripts: [
+      {
+        src: 'https://plsbl-proxy.vocdoni.net/js/script.tagged-events.outbound-links.js', defer: true, 'data-domain': 'developer.vocdoni.io', 'api-host': 'https://plsbl-proxy.vocdoni.net'
+      }
+  ],
 
   presets: [
     [
