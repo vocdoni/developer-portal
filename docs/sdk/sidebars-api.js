@@ -12,6 +12,7 @@ module.exports = {
         "sdk/FileAPI",
         "sdk/VoteAPI",
         "sdk/WalletAPI",
+        "sdk/VocdoniSDKClient",
         "sdk/AccountCore",
         "sdk/ElectionCore",
         "sdk/TransactionCore",
@@ -28,6 +29,17 @@ module.exports = {
         "sdk/Vote",
         "sdk/Asymmetric",
         "sdk/Signing"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Typedef",
+      "items": [
+        "sdk/AccountData",
+        "sdk/CensusProof",
+        "sdk/FaucetPackage",
+        "sdk/FaucetOptions",
+        "sdk/ClientOptions"
       ]
     },
     {

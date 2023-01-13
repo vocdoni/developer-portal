@@ -1,0 +1,374 @@
+---
+custom_edit_url: null
+---
+
+```ts
+class VocdoniSDKClient
+```
+
+<div>
+
+</div>
+
+Main Vocdoni client object. It's a wrapper for all the methods in api, core<br />and types, allowing you to easily use the vocdoni API from a single entry<br />point.
+
+<div className="container">
+  <div className="row mb-2"><div className="col col--12"><strong>Methods</strong></div></div>
+  <div className="row"><div className="col col--12"><a href="#setElectionId">setElectionId</a><br/><a href="#fetchChainId">fetchChainId</a><br/><a href="#fetchAccountInfo">fetchAccountInfo</a><br/><a href="#calculateCID">calculateCID</a><br/><a href="#fetchFaucetPayload">fetchFaucetPayload</a><br/><a href="#parseFaucetPackage">parseFaucetPackage</a><br/><a href="#fetchAccountToken">fetchAccountToken</a><br/><a href="#fetchElection">fetchElection</a><br/><a href="#waitForTransaction">waitForTransaction</a><br/><a href="#fetchProof">fetchProof</a><br/><a href="#fetchProofForWallet">fetchProofForWallet</a><br/><a href="#setAccountInfo">setAccountInfo</a><br/><a href="#createAccount">createAccount</a><br/><a href="#collectFaucetTokens">collectFaucetTokens</a><br/><a href="#createCensus">createCensus</a><br/><a href="#createElection">createElection</a><br/><a href="#endElection">endElection</a><br/><a href="#pauseElection">pauseElection</a><br/><a href="#cancelElection">cancelElection</a><br/><a href="#continueElection">continueElection</a><br/><a href="#changeElectionStatus">changeElectionStatus</a><br/><a href="#isInCensus">isInCensus</a><br/><a href="#hasAlreadyVoted">hasAlreadyVoted</a><br/><a href="#isAbleToVote">isAbleToVote</a><br/><a href="#submitVote">submitVote</a></div></div>
+</div>
+
+## constructor
+```ts
+new VocdoniSDKClient(opts)
+```
+
+<div>
+
+</div>
+
+Instantiate new VocdoniSDK client.<br /><br />To instantiate the client just pass the `ClientOptions` you want or empty object to let defaults.<br /><br />`const client = new VocdoniSDKClient({EnvOptions.PROD})`
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|opts|[ClientOptions](ClientOptions)|||optional arguments|
+
+## Methods
+
+### setElectionId {#setElectionId}
+
+<div>
+
+</div>
+
+Sets an election id. Required by other methods like submitVote or createElection.
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|electionId|string|||Election id string|
+
+### fetchChainId {#fetchChainId}
+
+<div>
+  <span className="badge badge--success">async</span>
+</div>
+
+Fetches blockchain information if needed and returns the chain id.
+
+**Returns**: Promise&lt;string&gt;
+
+### fetchAccountInfo {#fetchAccountInfo}
+
+<div>
+  <span className="badge badge--success">async</span>
+</div>
+
+Fetches account information.
+
+**Returns**: Promise&lt;[AccountData](AccountData)&gt;
+
+### calculateCID {#calculateCID}
+
+<div>
+  <span className="badge badge--success">async</span>
+</div>
+
+Fetches the CID expected for the specified data content.
+
+**Returns**: Promise&lt;string&gt;
+- Resulting CID
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|data|string|||The data of which we want the CID of|
+
+### fetchFaucetPayload {#fetchFaucetPayload}
+
+<div>
+  <span className="badge badge--success">async</span>
+</div>
+
+Fetches a faucet payload. Only for development.
+
+**Returns**: Promise&lt;{string}&gt;
+
+### parseFaucetPackage {#parseFaucetPackage}
+
+<div>
+
+</div>
+
+Parses a faucet package.
+
+**Returns**: [FaucetPackage](FaucetPackage)
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|faucetPackage|string||||
+
+### fetchAccountToken {#fetchAccountToken}
+
+<div>
+  <span className="badge badge--success">async</span>
+</div>
+
+Fetches the specific account token auth and sets it to the current instance.
+
+**Returns**: Promise&lt;void&gt;
+
+### fetchElection {#fetchElection}
+
+<div>
+  <span className="badge badge--success">async</span>
+</div>
+
+Fetches info about an election.
+
+**Returns**: Promise&lt;[UnpublishedElection](UnpublishedElection)&gt;
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|electionId|string|✔️||The id of the election|
+
+### waitForTransaction {#waitForTransaction}
+
+<div>
+  <span className="badge badge--success">async</span>
+</div>
+
+A convenience method to wait for a transaction to be executed. It will<br />loop trying to get the transaction information, and will retry every time<br />it fails.
+
+**Returns**: Promise&lt;void&gt;
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|tx|string|||Transaction to wait for|
+|wait|number|✔️|1000|The delay between tries|
+
+### fetchProof {#fetchProof}
+
+<div>
+  <span className="badge badge--success">async</span>
+</div>
+
+Fetches proof that an address is part of the specified census.
+
+**Returns**: Promise&lt;[CensusProof](CensusProof)&gt;
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|censusId|string|||Census we want to check the address against|
+|key|string|||The address to be found|
+|type|CensusProofType|||Type of census|
+
+### fetchProofForWallet {#fetchProofForWallet}
+
+<div>
+  <span className="badge badge--success">async</span>
+</div>
+
+Fetches proof that an address is part of the specified census.
+
+**Returns**: Promise&lt;[CensusProof](CensusProof)&gt;
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|election|[PublishedElection](PublishedElection)||||
+|wallet|Wallet \| Signer||||
+
+### setAccountInfo {#setAccountInfo}
+
+<div>
+  <span className="badge badge--success">async</span>
+</div>
+
+Sets account information.
+
+**Returns**: Promise&lt;[AccountData](AccountData)&gt;
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|options|Object|||Additional options,<br />like extra information of the account, or the faucet package string.|
+
+### createAccount {#createAccount}
+
+<div>
+  <span className="badge badge--success">async</span>
+</div>
+
+Registers an account against vochain, so it can create new elections.
+
+**Returns**: Promise&lt;[AccountData](AccountData)&gt;
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|options|Object|✔️||Additional<br />options, like extra information of the account, or the faucet package string|
+
+### collectFaucetTokens {#collectFaucetTokens}
+
+<div>
+  <span className="badge badge--success">async</span>
+</div>
+
+Calls the faucet to get new tokens. Only under development.
+
+**Returns**: Promise&lt;[AccountData](AccountData)&gt;
+- Account data information updated with new balance
+
+### createCensus {#createCensus}
+
+<div>
+  <span className="badge badge--success">async</span>
+</div>
+
+Publishes the given census.
+
+**Returns**: Promise&lt;void&gt;
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|census|[PlainCensus](PlainCensus) \| [WeightedCensus](WeightedCensus)|||The census to be published.|
+
+### createElection {#createElection}
+
+<div>
+  <span className="badge badge--success">async</span>
+</div>
+
+Creates a new voting election.
+
+**Returns**: Promise&lt;string&gt;
+- Resulting election id.
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|election|[UnpublishedElection](UnpublishedElection)|||The election object to be created.|
+
+### endElection {#endElection}
+
+<div>
+  <span className="badge badge--success">async</span>
+</div>
+
+Ends an election.
+
+**Returns**: Promise&lt;void&gt;
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|electionId|string|✔️||The id of the election|
+
+### pauseElection {#pauseElection}
+
+<div>
+  <span className="badge badge--success">async</span>
+</div>
+
+Pauses an election.
+
+**Returns**: Promise&lt;void&gt;
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|electionId|string|✔️||The id of the election|
+
+### cancelElection {#cancelElection}
+
+<div>
+  <span className="badge badge--success">async</span>
+</div>
+
+Cancels an election.
+
+**Returns**: Promise&lt;void&gt;
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|electionId|string|✔️||The id of the election|
+
+### continueElection {#continueElection}
+
+<div>
+  <span className="badge badge--success">async</span>
+</div>
+
+Continues an election.
+
+**Returns**: Promise&lt;void&gt;
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|electionId|string|✔️||The id of the election|
+
+### changeElectionStatus {#changeElectionStatus}
+
+<div>
+  <span className="badge badge--success">async</span>
+</div>
+
+Changes the status of an election.
+
+**Returns**: Promise&lt;void&gt;
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|electionId|string|||The id of the election|
+|newStatus|ElectionStatus|||The new status|
+
+### isInCensus {#isInCensus}
+
+<div>
+  <span className="badge badge--success">async</span>
+</div>
+
+Checks if the user is in census.
+
+**Returns**: Promise&lt;boolean&gt;
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|electionId|string|✔️||The id of the election|
+|key|Object|✔️||The key in the census to check|
+
+### hasAlreadyVoted {#hasAlreadyVoted}
+
+<div>
+  <span className="badge badge--success">async</span>
+</div>
+
+Checks if the user has already voted
+
+**Returns**: Promise&lt;boolean&gt;
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|electionId|string|✔️||The id of the election|
+
+### isAbleToVote {#isAbleToVote}
+
+<div>
+  <span className="badge badge--success">async</span>
+</div>
+
+Checks if the user is able to vote
+
+**Returns**: Promise&lt;boolean&gt;
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|electionId|string|✔️||The id of the election|
+
+### submitVote {#submitVote}
+
+<div>
+  <span className="badge badge--success">async</span>
+</div>
+
+Submits a vote to the current instance election id.
+
+**Returns**: Promise&lt;string&gt;
+- Vote confirmation id.
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|vote|[Vote](Vote)|||The vote (or votes) to be sent.|
+
