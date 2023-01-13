@@ -2,6 +2,19 @@ import React from 'react';
 import Layout from '@theme/Layout';
 import styled from 'styled-components';
 import { BsDiscord } from 'react-icons/bs';
+import TypewriterCodeBlock from "../components/TypewriterCodeBlock";
+import {FakeWindow} from "../components/TypewriterCodeBlock/fakeWindow";
+
+const codeBlockString = `
+const election = new Election({
+  title: 'Election title',
+  description: 'Election description',
+  header: 'https://source.unsplash.com/random',
+  streamUri:'https://source.unsplash.com/random',
+  endDate: new Date().getTime() + 10000000,
+  census,
+});
+`
 
 export default function Home(): JSX.Element {
     return (
@@ -29,7 +42,14 @@ export default function Home(): JSX.Element {
                         </div>
                     </MainSubsection>
                     <MainSubsection>
-                        <MainTitle>Create digital voting applications quickly and easily.</MainTitle>
+                        <FakeWindow className={'h-72'}>
+                            <TypewriterCodeBlock
+                                timeout={1}
+                                language={'typescript'}
+                                className={'text-sm'}>
+                                {codeBlockString}
+                            </TypewriterCodeBlock>
+                        </FakeWindow>
                     </MainSubsection>
                 </MainSection>
 
@@ -62,11 +82,12 @@ const Section = styled.div.attrs({
 
 const MainSection = styled(Section)`
 `;
+
 const MainSubsection = styled.div.attrs({
     // className: 'place-content-center w-full md:w-1/2 p-4'
-    className: 'place-content-center'
+    className: 'place-content-center w-full '
 })`
-    max-width: 500px;
+  max-width: 500px;
 `;
 
 const MainTitle = styled.h1`
