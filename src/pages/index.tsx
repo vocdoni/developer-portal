@@ -3,7 +3,7 @@ import Layout from '@theme/Layout';
 import styled from 'styled-components';
 import { BsDiscord } from 'react-icons/bs';
 import TypewriterCodeBlock from "../components/TypewriterCodeBlock";
-import {FakeWindow} from "../components/TypewriterCodeBlock/fakeWindow";
+import {FakeWindow} from "@components/TypewriterCodeBlock/fake-window";
 
 const codeBlockString = `
 const election = new Election({
@@ -24,7 +24,7 @@ export default function Home(): JSX.Element {
                 alt={"Vector background"}
             />
             <Page>
-                <MainSection>
+                <Section>
                     <MainSubsection>
                         <MainTitle>
                             Create digital voting <br />applications <br />quickly and easily.
@@ -51,7 +51,7 @@ export default function Home(): JSX.Element {
                             </TypewriterCodeBlock>
                         </FakeWindow>
                     </MainSubsection>
-                </MainSection>
+                </Section>
 
                 <Section>
                     <h1>Section 2</h1>
@@ -79,9 +79,6 @@ const Section = styled.div.attrs({
     className: 'sm:flex-column sm:px-4 sm:py-4 min-h-screen md:px-24 md:pb-24 flex flex-wrap w-auto m-auto place-items-center h-screen place-content-center ',
     // className: 'flex flex-wrap sm:flex-col',
 })``;
-
-const MainSection = styled(Section)`
-`;
 
 const MainSubsection = styled.div.attrs({
     // className: 'place-content-center w-full md:w-1/2 p-4'
