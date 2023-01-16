@@ -104,10 +104,10 @@ const config = {
           isCloseable: false,
         },
         navbar: {
-          title: "Vocdoni - Docs",
+          title: "",
           logo: {
             alt: "Vocdoni logo",
-            src: "img/logo-white.png",
+            src: "img/navbar-logo.svg",
           },
           items: [
             {
