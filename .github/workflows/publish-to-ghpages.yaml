@@ -2,9 +2,9 @@ name: Publish to GH Pages
 
 on:
   workflow_dispatch:
-  # push:
-  #   branches: 
-  #     - main
+   push:
+     branches:
+       - main
 
 jobs:
   publish_to_ghpages:
