@@ -2,6 +2,7 @@ import React from 'react';
 import Layout from '@theme/Layout';
 import styled from 'styled-components';
 import GetStarted from "../components/LandingPage/get-started";
+import MultiCards from "../components/LandingPage/multi-cards";
 
 
 export default function Home(): JSX.Element {
@@ -16,7 +17,7 @@ export default function Home(): JSX.Element {
                     <GetStarted />
                 </Section>
                 <Section>
-                    <h1>Section 2</h1>
+                    <MultiCards />
                 </Section>
             </Page>
         </Layout>
@@ -34,5 +35,5 @@ const Page = styled.div.attrs({})`
 `;
 
 const Section = styled.div.attrs({
-    className: 'sm:flex-column sm:px-4 sm:py-4 min-h-screen md:px-24 md:pb-24 flex flex-wrap w-auto m-auto place-items-center h-screen place-content-center ',
+    className: 'sm:flex-column sm:px-4 sm:py-4 min-h-screen md:pb-24 flex flex-wrap w-auto m-auto place-items-center h-screen place-content-center ',
 })``;
