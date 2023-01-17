@@ -191,6 +191,11 @@ const config = {
         },
         languageTabs: [
           {
+            highlight: "javascript",
+            language: "nodejs",
+            logoClass: "nodejs",
+          },
+          {
             highlight: "bash",
             language: "curl",
             logoClass: "bash",
@@ -204,11 +209,6 @@ const config = {
             highlight: "go",
             language: "go",
             logoClass: "go",
-          },
-          {
-            highlight: "javascript",
-            language: "nodejs",
-            logoClass: "nodejs",
           },
           // {
           //   highlight: "ruby",
