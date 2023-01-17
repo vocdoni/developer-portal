@@ -165,3 +165,8 @@ a {
   max-width: 250px;
   width: 250px;
 }
+
+/*Sidebar padding*/
+.menu__list li {
+  padding-left: 0;
+}
