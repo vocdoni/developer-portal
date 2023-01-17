@@ -96,3 +96,15 @@ html[data-theme="dark"] .header-github-link:before {
 .markdown #authentication, .markdown #authentication + div {
   display: none;
 }
+
+.badge + span {
+  vertical-align: middle;
+}
+
+.formItem_node_modules-docusaurus-theme-openapi-docs-lib-next-theme-ApiDemoPanel-FormItem-styles-module > code{
+  padding: 5px 8px;
+}
+
+.required_node_modules-docusaurus-theme-openapi-docs-lib-next-theme-ApiDemoPanel-FormItem-styles-module {
+  margin-left: 8px;
+}
