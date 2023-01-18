@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import React from "react";
-import { FiArrowUpRight } from "react-icons/fi";
+import { BsArrowUpRight } from "react-icons/bs";
 
 
 interface ICard {
@@ -59,7 +59,7 @@ const Card = ({title = '', body='', linkText = '', href = '', n }: { n: number }
             <CardBody>{body}</CardBody>
             <CardLink href={href}>
                 {linkText}
-                <FiArrowUpRight />
+                <BsArrowUpRight />
             </CardLink>
         </CardBox>
     )
@@ -119,7 +119,7 @@ const CardBody = styled.p.attrs({
 })``;
 
 const CardLink = styled.a.attrs({
-    className: 'inline-flex items-center hover:underline text-black pt-7 place-items-end'
+    className: 'inline-flex gap-3 items-center hover:underline text-black pt-7 place-items-end'
 })`
   font-style: normal;
   font-weight: 700;
