@@ -15,7 +15,7 @@ const election = new Election({
 });
 `
 
-export default function GetStarted(): JSX.Element {
+export default function TopSection(): JSX.Element {
     return (
         <>
             <MainSubsection>
