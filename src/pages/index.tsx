@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import TopSection from "../components/LandingPage/top-section";
 import MultiCards from "../components/LandingPage/multi-cards";
 import GetStarted from "../components/LandingPage/get-started";
+import Blog from "../components/LandingPage/blog";
 
 
 export default function Home(): JSX.Element {
@@ -22,6 +23,9 @@ export default function Home(): JSX.Element {
                 </Section>
                 <Section>
                     <GetStarted />
+                </Section>
+                <Section>
+                    <Blog />
                 </Section>
             </Page>
         </Layout>
