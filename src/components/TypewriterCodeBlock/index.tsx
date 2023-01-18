@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import CodeBlock from '@theme/CodeBlock';
 
-const TypewriterCodeBlock = ({ language = '', title = '', timeout = 50, className = '', children }) => {
+const TypewriterCodeBlock = (
+    { language = '', title = '', timeout = 50, className = '', children }
+) => {
     const [code, setCode] = useState('');
 
     useEffect(() => {

@@ -3,6 +3,7 @@ import Layout from '@theme/Layout';
 import styled from 'styled-components';
 import TopSection from "../components/LandingPage/top-section";
 import MultiCards from "../components/LandingPage/multi-cards";
+import GetStarted from "../components/LandingPage/get-started";
 
 
 export default function Home(): JSX.Element {
@@ -18,6 +19,9 @@ export default function Home(): JSX.Element {
                 </Section>
                 <Section>
                     <MultiCards />
+                </Section>
+                <Section>
+                    <GetStarted />
                 </Section>
             </Page>
         </Layout>
