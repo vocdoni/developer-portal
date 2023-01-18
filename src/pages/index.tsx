@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from '@theme/Layout';
 import styled from 'styled-components';
-import GetStarted from "../components/LandingPage/get-started";
+import TopSection from "../components/LandingPage/top-section";
 import MultiCards from "../components/LandingPage/multi-cards";
 
 
@@ -14,7 +14,7 @@ export default function Home(): JSX.Element {
             />
             <Page>
                 <Section>
-                    <GetStarted />
+                    <TopSection />
                 </Section>
                 <Section>
                     <MultiCards />
