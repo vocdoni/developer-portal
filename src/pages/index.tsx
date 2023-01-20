@@ -38,7 +38,7 @@ const VectorImage = styled.img`
 `;
 
 const Page = styled.div.attrs({})`
-  background: linear-gradient(90deg, rgba(231, 255, 0, 0) -0.01%, #00DDB3 100%);
+  background: var(--voc-landing-background-gradient);
   opacity: 0.7;
 `;
 
