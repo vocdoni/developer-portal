@@ -138,9 +138,8 @@ const config = {
             },
             {
               href: "https://blog.vocdoni.io",
-              position: "right",
-              className: "header-medium-link",
-              "aria-label": "Blog",
+              position: "left",
+              "label": "Blog",
             },
             {
               href: "https://github.com/vocdoni",
