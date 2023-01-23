@@ -110,13 +110,13 @@ const config = {
             src: "img/navbar-logo.svg",
           },
           items: [
-            {
-              type: "doc",
-              docId: "get-started/intro",
-              position: "left",
-              label: "Introduction",
-              className: "plausible-event-name=Header+Introduction",
-            },
+            // {
+            //   type: "doc",
+            //   docId: "get-started/intro",
+            //   position: "left",
+            //   label: "Introduction",
+            //   className: "plausible-event-name=Header+Introduction",
+            // },
             {
               position: "left",
               label: "API",
@@ -129,6 +129,13 @@ const config = {
               position: 'left',
               label: 'SDK',
               className: "plausible-event-name=Header+SDK",
+            },
+            {
+              type: 'doc',
+              docId: 'sdk/sdk',
+              position: 'left',
+              label: 'About',
+              // className: "plausible-event-name=Header+SDK",
             },
             {
               href: "https://dev.explorer.vote",

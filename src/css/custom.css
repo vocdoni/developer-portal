@@ -36,6 +36,11 @@
   --feedback-component-button-size: 3rem;
 
   --voc-landing-background-gradient: linear-gradient(90deg,rgba(231,255,0,0) -0.01%, #00DDB3 100%);
+
+  --ifm-navbar-shadow: rgba(255, 255, 255, 0.5) 0px 1px 1px 0px;
+  --ifm-navbar-search-input-background-color: transparent;
+  --ifm-navbar-search-input-color: black;
+  --ifm-navbar-search-input-placeholder-color: var(--ifm-navbar-search-input-color);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */

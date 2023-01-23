@@ -3,8 +3,8 @@ div[class^='announcementBar'], div[class*=' announcementBar'] {
     height: fit-content;
     padding: 0 0 0 0;
     background: linear-gradient(90deg, rgba(231, 255, 0, 0) -0.01%, #00DDB3 100%);
-
     backdrop-filter: blur(12px);
+    border-bottom: none;
 }
 
 div[class^='announcementBar'] p, div[class*=' announcementBar'] p {

@@ -1,3 +1,20 @@
 .navbar {
     background: rgba(255, 255, 255, 0.25);
 }
+.navbar__link {
+    font-weight: var(--ifm-font-weight-bold);
+}
+
+/*Search bar*/
+.navbar__search-input::placeholder {
+    color: var(--ifm-navbar-search-input-color);
+}
+
+.navbar__search-input {
+    border: 1px solid var(--ifm-navbar-search-input-color);
+}
+
+.navbar kbd {
+    border: 1px solid var(--ifm-navbar-search-input-color);
+    box-shadow: inset 0 -1px 0 var(--ifm-navbar-search-input-color);
+}
