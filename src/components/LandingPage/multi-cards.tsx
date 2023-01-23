@@ -57,10 +57,12 @@ const Card = ({title = '', body='', linkText = '', href = '', n }: { n: number }
                 <CardTitle>{n}{title}</CardTitle>
             </a>
             <CardBody>{body}</CardBody>
-            <CardLink href={href}>
-                {linkText}
-                <BsArrowUpRight />
-            </CardLink>
+            <CardLinkWrapper>
+                <CardLink href={href}>
+                    {linkText}
+                    <BsArrowUpRight />
+                </CardLink>
+            </CardLinkWrapper>
         </CardBox>
     )
 }
@@ -101,13 +103,18 @@ const CardsWrapper = styled.div.attrs({
 })``;
 
 const CardBox = styled.div.attrs({
-    className: 'max-w-sm p-5 bg-white border border-gray-200 shadow-md'
+    className: 'max-w-sm p-5 bg-white shadow-md'
 })`
+  transition: background .4s ease-in;
+
   background: linear-gradient(202.06deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
   box-shadow: inset -1px 1px 4px rgba(255, 255, 255, 0.25);
   filter: drop-shadow(-2px 2px 16px rgba(0, 0, 0, 0.1));
   backdrop-filter: blur(4px);
   border-radius: 8px;
+  &:hover {
+    background: linear-gradient(77.73deg,  rgba(255,255,255,1) 0%, rgba(142,0,255,0.75) 40%, rgba(0,221,179,1) 100%);
+  }
 `;
 
 const CardTitle = styled.h5.attrs({
@@ -127,3 +134,7 @@ const CardLink = styled.a.attrs({
   line-height: 125%;
   
 `;
+
+const CardLinkWrapper  = styled.div.attrs({
+    className: 'flex justify-end'
+})``
