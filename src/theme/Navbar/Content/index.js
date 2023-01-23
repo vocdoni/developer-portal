@@ -41,7 +41,6 @@ export default function NavbarContent() {
     const items = useNavbarItems();
     const [leftItems, rightItems] = splitNavbarItems(items);
     const searchBarItem = items.find((item) => item.type === 'search');
-    console.log("AAAAAAAAAA", !mobileSidebar.shouldRender, mobileSidebar)
     return (
         <NavbarContentLayout
             left={
@@ -59,13 +58,13 @@ export default function NavbarContent() {
                 // TODO stop hardcoding items?
                 // Ask the user to add the respective navbar items => more flexible
                 <>
-                    <NavbarItems items={rightItems} />
-                    <NavbarColorModeToggle className={styles.colorModeToggle} />
                     {!searchBarItem && (
                         <NavbarSearch>
                             <SearchBar />
                         </NavbarSearch>
                     )}
+                    <NavbarItems items={rightItems} />
+                    <NavbarColorModeToggle className={styles.colorModeToggle} />
                 </>
             }
         />
