@@ -7,16 +7,18 @@ import GetStarted from "../components/LandingPage/get-started";
 import Blog from "../components/LandingPage/blog";
 import '../css/navbar.css';
 
+import LandingVector from '@site/static/img/landing-vector.svg'
+
+
 
 export default function Home(): JSX.Element {
     return (
         <>
             <GlobalStyle />
             <Layout>
-                <VectorImage
-                    src={"/img/landing-vector.svg"}
-                    alt={"Vector background"}
-                />
+                <VectorWrapper>
+                    <LandingVector  />
+                </VectorWrapper>
                 <Page>
                     <NavbarBg />
                     <Section>
@@ -36,11 +38,21 @@ export default function Home(): JSX.Element {
         </>
     )
 }
-
-const VectorImage = styled.img`
+const VectorWrapper = styled.div`
+  overflow: hidden; 
+  width: 100%;
   position: absolute;
-  top: 40%;
-`;
+  z-index: -1;
+  height: 2000px;
+  object-fit: contain;
+
+  & > img {
+    left: 24.69%;
+    right: -8.06%;
+    bottom: 55.48%;
+    top: 0%;
+  }
+`
 
 const Page = styled.div.attrs({})`
   opacity: 0.7;
