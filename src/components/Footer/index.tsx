@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import PoweredByAragon from '@site/static/img/powered-by-aragon.svg'
 const currentYear = new Date().getFullYear()
 import VocdoniLogo from '@site/static/img/footer-build-change.svg'
+import PoweredByAragon from '@site/static/img/powered-by-aragon.svg'
 
 
 interface ISections {
@@ -63,10 +63,10 @@ export const Footer = () => {
   return (
       <FooterWrapper>
           <FooterColumns>
-              <FooterSectionWrapper>
+              <FooterSectionWrapperLogos>
                   <VocdoniLogo />
-                  <PoweredByAragon height="23px" width="160px" />
-              </FooterSectionWrapper>
+                  <PoweredByAragon  height="93px" width="130px" />
+              </FooterSectionWrapperLogos>
               {sections.map((s, i) => (
                   <FooterSection title={s.title} links={s.links} />
               ))}
@@ -84,6 +84,11 @@ const Hr = styled.div.attrs({
 const FooterSectionWrapper = styled.div.attrs({
     className:
         'flex flex-col align-center gap-2'
+})``
+
+const FooterSectionWrapperLogos = styled(FooterSectionWrapper).attrs({
+    className:
+        'gap-1 justify-center items-center'
 })``
 
 const FooterColumns = styled.div.attrs({
