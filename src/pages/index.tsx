@@ -7,7 +7,7 @@ import GetStarted from "../components/LandingPage/get-started";
 import Blog from "../components/LandingPage/blog";
 import '../css/navbar.css';
 
-import LandingVector from '@site/static/img/landing-vector.svg'
+import LandingVector from '@site/static/img/landing/landing-vector.svg'
 
 
 
