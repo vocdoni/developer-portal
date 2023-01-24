@@ -68,7 +68,7 @@ export const Footer = () => {
             ))}
           </LinksContainer>
           {/*<Link>© {currentYear} Vocdoni</Link>*/}
-          <a href="https://aragon.org"><PoweredByAragon height="32px" width="215px" /></a>
+          <a href="https://aragon.org"><PoweredByAragon height="40px" width="215px" /></a>
         </RightContainer>
       </FooterWrapper>
   );
