@@ -8,7 +8,7 @@ import Blog from "../components/LandingPage/blog";
 import '../css/navbar.css';
 
 import LandingVector from '@site/static/img/landing/landing-vector.svg'
-
+import Bottom from "../components/LandingPage/bottom";
 
 
 export default function Home(): JSX.Element {
@@ -33,6 +33,9 @@ export default function Home(): JSX.Element {
                     {/*<Section>*/}
                     {/*    <Blog />*/}
                     {/*</Section>*/}
+                    <Section>
+                        <Bottom />
+                    </Section>
                 </Page>
             </Layout>
         </>
@@ -43,7 +46,7 @@ const VectorWrapper = styled.div`
   width: 100%;
   position: absolute;
   z-index: -1;
-  height: 2000px;
+  height: 3000px;
   object-fit: contain;
 
   & > img {
