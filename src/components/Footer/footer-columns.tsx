@@ -73,7 +73,7 @@ export const FooterColumns = () => {
 
 const FooterSectionWrapper = styled.div.attrs({
     className:
-        'flex flex-col align-center gap-2'
+        'flex flex-col align-center gap-2 '
 })``
 
 const FooterSectionWrapperLogos = styled(FooterSectionWrapper).attrs({
@@ -83,7 +83,7 @@ const FooterSectionWrapperLogos = styled(FooterSectionWrapper).attrs({
 
 const FooterColumnsWrapper = styled.div.attrs({
     className:
-        'flex flex-row p-6 justify-between align-center'
+    'flex flex-wrap justify-between my-6 py-8 px-8 md:px-4 gap-8'
 })``
 
 
