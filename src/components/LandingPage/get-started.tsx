@@ -116,7 +116,8 @@ export default function GetStarted(): JSX.Element {
 
 
 const MainSubsection = styled.div.attrs({
-    className: 'place-content-center w-full mx-4'
+    className: 'place-content-center w-full mb-8 ' +
+        'md:mx-4'
 })`
   max-width: 500px;
 `;
@@ -147,7 +148,7 @@ const Paragraph = styled.p`
 `;
 
 const ButtonsWrapper = styled.div.attrs({
-    className: 'flex justify-between my-6'
+    className: 'flex flex-wrap md:justify-between my-6 gap-4 md:gap-1'
 })``;
 
 const TopicsButton = styled.button`

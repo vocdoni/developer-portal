@@ -50,7 +50,8 @@ export default function TopSection(): JSX.Element {
 
 
 const MainSubsection = styled.div.attrs({
-    className: 'place-content-center w-full '
+    className: 'place-content-center w-full mb-8 ' +
+        'md:mb-0'
 })`
   max-width: 500px;
 `;
