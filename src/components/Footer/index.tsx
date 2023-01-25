@@ -1,99 +1,21 @@
 import React from 'react';
 import styled from 'styled-components';
-const currentYear = new Date().getFullYear()
-import VocdoniLogo from '@site/static/img/footer-build-change.svg'
-import PoweredByAragon from '@site/static/img/powered-by-aragon.svg'
-
-
-interface ISections {
-    title: string
-    links: Array<{
-      title: string
-      href: string
-      soon?: boolean
-    }>
-}
-
-const sections: ISections[] = [
-    {
-        title: 'Company',
-        links: [
-            { title: 'About', href:"#"},
-            { title: 'How we work', href:"#"},
-            { title: 'Blog', href:"#"},
-        ]
-    },
-    {
-        title: 'Developer',
-        links: [
-            { title: 'Developer Portal', href:"#"},
-            { title: 'Vocdoni API', href:"#"},
-            { title: 'Vocdoni APP', href:"#"},
-        ]
-    },
-    {
-        title: 'Resources',
-        links: [
-            { title: 'Guides', href:"#", soon: true},
-            { title: 'Tutorials', href:"#", soon: true},
-        ]
-    },
-    {
-        title: 'Contact',
-        links: [
-            { title: 'info@vocdoni.io', href:"mailto:info@vocdoni.io"},
-        ]
-    },
-]
-
-const FooterSection = ({title, links}: ISections) => {
-    return (
-      <FooterSectionWrapper>
-          <h4>{title}</h4>
-          <div>
-              {links.map((l, i) => (
-                  <><a href={l.href}>{l.title}</a><br/></>
-              ))}
-          </div>
-      </FooterSectionWrapper>
-    );
-}
+import {FooterColumns} from './footer-columns'
+import {FooterOfFooter} from "./footer-of-footer";
 
 export const Footer = () => {
   return (
       <FooterWrapper>
-          <FooterColumns>
-              <FooterSectionWrapperLogos>
-                  <VocdoniLogo />
-                  <PoweredByAragon  height="93px" width="130px" />
-              </FooterSectionWrapperLogos>
-              {sections.map((s, i) => (
-                  <FooterSection title={s.title} links={s.links} />
-              ))}
-          </FooterColumns>
+          <FooterColumns/>
           <Hr />
+          <FooterOfFooter />
       </FooterWrapper>
   );
 };
 
 const Hr = styled.div.attrs({
     className:
-        'border-b-2 w-3/4'
-})``
-
-const FooterSectionWrapper = styled.div.attrs({
-    className:
-        'flex flex-col align-center gap-2'
-})``
-
-const FooterSectionWrapperLogos = styled(FooterSectionWrapper).attrs({
-    className:
-        'gap-1 justify-center items-center'
-})``
-
-const FooterColumns = styled.div.attrs({
-  className:
-    'flex flex-row p-6 justify-between align-center'
+        'border-b w-full border-black'
 })``
 
 const FooterWrapper = styled.div.attrs({
