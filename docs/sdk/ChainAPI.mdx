@@ -12,7 +12,7 @@ class ChainAPI
 
 <div className="container">
   <div className="row mb-2"><div className="col col--12"><strong>Methods</strong></div></div>
-  <div className="row"><div className="col col--12"><a href="#info">info</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#txInfo">txInfo</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#submitTx">submitTx</a><span className="badge badge--info margin-left--sm">static</span></div></div>
+  <div className="row"><div className="col col--12"><a href="#info">info</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#txInfo">txInfo</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#submitTx">submitTx</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#organizationCount">organizationCount</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#organizationList">organizationList</a><span className="badge badge--info margin-left--sm">static</span></div></div>
 </div>
 
 ## constructor
@@ -33,7 +33,7 @@ Cannot be constructed.
   <span className="badge badge--info">static</span>
 </div>
 
-Fetches info about the blokchain status.
+Fetches info about the blockchain status.
 
 **Returns**: Promise&lt;IChainGetInfoResponse&gt;
 
@@ -70,4 +70,33 @@ Submits a transaction to the blockchain
 |:---:|:---:|:---:|:---:|:---:|
 |url|string|||API endpoint URL|
 |payload|string|||The transaction data payload|
+
+### organizationCount {#organizationCount}
+
+<div>
+  <span className="badge badge--info">static</span>
+</div>
+
+Returns the number of organizations
+
+**Returns**: Promise&lt;IChainOrganizationCountResponse&gt;
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|url|string|||API endpoint URL|
+
+### organizationList {#organizationList}
+
+<div>
+  <span className="badge badge--info">static</span>
+</div>
+
+Returns the list of organizations by page
+
+**Returns**: Promise&lt;IChainOrganizationListResponse&gt;
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|url|string|||API endpoint URL|
+|page|number|✔️|0|The page number|
 
