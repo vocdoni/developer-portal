@@ -1943,17 +1943,17 @@ components:
     TransactionType:
       type: string
       enum:
-        - voteEnvelope
-        - newProcessTx
-        - adminTx
-        - setProcessTx
-        - registerKeyTx
-        - mintTokensTx
-        - sendTokensTx
-        - setTransactionCostsTx
-        - setAccountTx
-        - collectFaucetTx
-        - setKeykeeperTx
+        - vote
+        - newProcess
+        - admin
+        - setProcess
+        - registerKey
+        - mintTokens
+        - sendTokens
+        - setTransactionCosts
+        - setAccount
+        - collectFaucet
+        - setKeykeeper
     TransactionHash:
       type: string
       example: "75e8f822f5dd13973ac5158d600f0a2a5fea4bfefce9712ab5195bf17884cfad"
