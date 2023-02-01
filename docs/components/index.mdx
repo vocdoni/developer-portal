@@ -3,16 +3,45 @@ title: Vocdoni React Components
 description: Vocdoni React Components library live coding page
 ---
 
-## Image
+## Layout
 
-Image component used to represent an image url
+Components used on a layout construction.
+
+### Image
+
+The Image component is used to display images with support for fallback.
+
+- Supports `ipfs://` uris.
+- [Chakra docs](https://chakra-ui.com/docs/components/image/usage)
 
 ```jsx live
-
     <Image
         borderRadius="full"
         boxSize="100px"
         src="https://picsum.photos/200"
         alt="random image"
     />
+```
+
+
+### Markdown
+
+Text Markdown parser. It uses the package [`react-markdown`](https://www.npmjs.com/package/react-markdown)
+
+```jsx live
+<Markdown>
+This is a `markdown` text parser from [react-markdown](https://www.npmjs.com/package/react-markdown)!
+</Markdown>
+```
+
+### HR
+
+Shows a horizontal rule used to separate elements.
+
+```jsx live
+<>
+    Just an item
+    <HR />
+    Separator
+</>
 ```
