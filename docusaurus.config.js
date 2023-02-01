@@ -306,6 +306,7 @@ const config = {
   ],
 
   themes: [
+    '@docusaurus/theme-live-codeblock',
     "docusaurus-theme-openapi-docs",
     '@docusaurus/theme-mermaid',
     [
