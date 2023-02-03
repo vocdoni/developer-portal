@@ -607,6 +607,21 @@ paths:
               schema:
                 $ref: "#/components/schemas/CountResponse"
   /elections:
+    get:
+      summary: "List elections"
+      description: |-
+        Get a list of elections summaries.
+      operationId: electionsList
+      tags:
+        - Elections
+      responses:
+        "200":
+          description: "It return a list of organizations id"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ElectionSummaryArray"
+
     post:
       summary: "Create an election"
       description: |-
@@ -682,6 +697,24 @@ paths:
                     $ref: "#/components/schemas/ElectionId"
                   metadataURL:
                     $ref: "#/components/schemas/IpfsUri"
+
+  /elections/page/{page}:
+    get:
+      summary: "Paginated elections list"
+      description: |-
+        See [elections list](elections-list)
+      operationId: electionsListPaginated
+      tags:
+        - Elections
+      parameters:
+        - $ref: "#/components/parameters/paginatorParameter"
+      responses:
+        "200":
+          description: "It return a list of organizations id"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ElectionSummaryArray"
 
   ####################################################
   ## /accounts/                                      ##
@@ -768,11 +801,12 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/EntityElectionsResponse"
+
   /accounts/{accountId}/elections/:
     get:
       summary: "List account elections"
       description: "If no page is defined, will assume page 0"
-      operationId: electionsByOrganizationPaginated
+      operationId: electionsByOrganization
       tags:
         - Accounts
       parameters:
@@ -788,7 +822,7 @@ paths:
     get:
       summary: "List paginated account elections"
       description: "If no page is defined, will assume page 0"
-      operationId: electionsByOrganization
+      operationId: electionsByOrganizationPaginated
       tags:
         - Accounts
       parameters:
@@ -816,6 +850,43 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/CountResponse'
+  /accounts/{accountId}/transfers/:
+    get:
+      summary: "Get account transfers"
+      description: |-
+        Get account token transfers. A transfer is a token transference from one account to other (excepting the burn 
+        address).
+      operationId: accountTransfers
+      tags:
+        - Accounts
+      parameters:
+        - $ref: "#/components/parameters/accountIdParameter"
+      responses:
+        "200":
+          description: "Return account data"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AccountTransfersResponse'
+
+  /accounts/{accountId}/transfers/page/{page}:
+    get:
+      summary: "Get account transfers"
+      description: |-
+        See [account transfers](account-transfers)
+      operationId: accountTransfersPaginated
+      tags:
+        - Accounts
+      parameters:
+        - $ref: "#/components/parameters/accountIdParameter"
+        - $ref: "#/components/parameters/paginatorParameter"
+      responses:
+        "200":
+          description: "Return account data"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AccountTransfersResponse'
   /accounts/treasurer:
     get:
       summary: "Treasurer address"
@@ -1735,6 +1806,27 @@ components:
       description: >
         Election status enum
       example: "active"
+    ElectionSummaryArray:
+      type: array
+      items:
+        $ref: "#/components/schemas/ElectionSummary"
+    ElectionSummary:
+      type: object
+      properties:
+        electionId:
+          $ref: "#/components/schemas/ElectionId"
+        status:
+          $ref: "#/components/schemas/ElectionStatusInfo"
+        startDate:
+          $ref: "#/components/schemas/TimeStampCustom"
+        endDate:
+          $ref: "#/components/schemas/TimeStampCustom"
+        voteCount:
+          type: number
+          example: 300
+        finalResults:
+          type: boolean
+          example: false
     ElectionId:
       type: string
       example: "0xcfc47afa95bc60bc32ef4ff214df79ea8f53881640094d0ce63817bf6e867845"
@@ -2032,6 +2124,23 @@ components:
           type: integer
           format: int32
           example: 38
+    AccountTransfersResponse:
+      type: "object"
+      properties:
+        amount:
+          type: integer
+          format: int32
+          example: 1
+        from:
+          $ref: "#/components/schemas/AccountId"
+        height:
+          $ref: "#/components/schemas/BlockHeight"
+        txHash:
+          $ref: "#/components/schemas/TransactionHash"
+        timestamp:
+          $ref: "#/components/schemas/TimeStampCustom"
+        to:
+          $ref: "#/components/schemas/AccountId"
     AccountSubmitResponse:
       type: "object"
       properties:
