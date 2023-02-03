@@ -84,6 +84,17 @@ const config = {
             hideable: true,
           },
         },
+        algolia: {
+          appId: 'V06M4VRZLG',
+          apiKey: '7eae56e530bd72bed3903f5810ce57b9',
+          indexName: 'developer-vocdoni',
+          contextualSearch: true, // It ensures that search results are relevant to the current language and version.
+          searchPagePath: 'search', //path for search page that enabled by default (`false` to disable it)
+          replaceSearchResultPathname: {
+            from: '/docs/', // or as RegExp: /\/docs\//
+            to: '/',
+          },
+        },
         announcementBar: {
           id: 'wip_bar',
           content:
@@ -263,18 +274,6 @@ const config = {
         },
       };
     },
-    // [ "@easyops-cn/docusaurus-search-local",
-    //   /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
-    //   {
-    //     // `hashed` is recommended as long-term-cache of index file is possible.
-    //     hashed: true,
-    //     indexBlog: false,
-    //     searchResultLimits: 1,
-    //     searchBarPosition: "right"
-    //
-    //   }
-    // ],
-
     // [
     //   "@docusaurus/plugin-pwa",
     //   {
@@ -308,17 +307,6 @@ const config = {
   themes: [
     "docusaurus-theme-openapi-docs",
     '@docusaurus/theme-mermaid',
-    [
-        "@easyops-cn/docusaurus-search-local",
-        /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
-        {
-          // `hashed` is recommended as long-term-cache of index file is possible.
-          hashed: true,
-          indexBlog: false,
-          searchBarPosition: "right",
-          docsRouteBasePath: "/"
-        }
-    ]
   ],
   stylesheets: [
     {
