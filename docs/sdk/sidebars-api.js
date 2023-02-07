@@ -7,6 +7,7 @@ module.exports = {
         "sdk/AccountAPI",
         "sdk/CensusAPI",
         "sdk/ChainAPI",
+        "sdk/CspAPI",
         "sdk/ElectionAPI",
         "sdk/FaucetAPI",
         "sdk/FileAPI",
@@ -19,6 +20,7 @@ module.exports = {
         "sdk/VoteCore",
         "sdk/Account",
         "sdk/Census",
+        "sdk/CspCensus",
         "sdk/OffchainCensus",
         "sdk/PlainCensus",
         "sdk/PublishedCensus",
@@ -26,6 +28,7 @@ module.exports = {
         "sdk/Election",
         "sdk/PublishedElection",
         "sdk/UnpublishedElection",
+        "sdk/CspVote",
         "sdk/Vote",
         "sdk/Asymmetric",
         "sdk/Signing"
@@ -36,9 +39,11 @@ module.exports = {
       "label": "Typedef",
       "items": [
         "sdk/AccountData",
-        "sdk/CensusProof",
+        "sdk/OffchainCensusProof",
+        "sdk/CspCensusProof",
         "sdk/FaucetPackage",
         "sdk/FaucetOptions",
+        "sdk/TxWaitOptions",
         "sdk/ClientOptions"
       ]
     },
