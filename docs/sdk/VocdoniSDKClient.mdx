@@ -156,7 +156,8 @@ A convenience method to wait for a transaction to be executed. It will<br />loop
 |PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
 |:---:|:---:|:---:|:---:|:---:|
 |tx|string|||Transaction to wait for|
-|wait|number|✔️|1000|The delay between tries|
+|wait|number|✔️||The delay in milliseconds between tries|
+|attempts|attempts|✔️||The attempts to try before failing|
 
 ### fetchProof {#fetchProof}
 
@@ -166,7 +167,7 @@ A convenience method to wait for a transaction to be executed. It will<br />loop
 
 Fetches proof that an address is part of the specified census.
 
-**Returns**: Promise&lt;[CensusProof](CensusProof)&gt;
+**Returns**: Promise&lt;[OffchainCensusProof](OffchainCensusProof)&gt;
 
 |PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
 |:---:|:---:|:---:|:---:|:---:|
@@ -182,7 +183,7 @@ Fetches proof that an address is part of the specified census.
 
 Fetches proof that an address is part of the specified census.
 
-**Returns**: Promise&lt;[CensusProof](CensusProof)&gt;
+**Returns**: Promise&lt;[OffchainCensusProof](OffchainCensusProof)&gt;
 
 |PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
 |:---:|:---:|:---:|:---:|:---:|
@@ -384,5 +385,5 @@ Submits a vote to the current instance election id.
 
 |PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
 |:---:|:---:|:---:|:---:|:---:|
-|vote|[Vote](Vote)|||The vote (or votes) to be sent.|
+|vote|[Vote](Vote) \| [CspVote](CspVote)|||The vote (or votes) to be sent.|
 

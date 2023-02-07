@@ -1,0 +1,81 @@
+---
+custom_edit_url: null
+---
+
+```ts
+class CspAPI
+```
+
+<div>
+
+</div>
+
+<div className="container">
+  <div className="row mb-2"><div className="col col--12"><strong>Methods</strong></div></div>
+  <div className="row"><div className="col col--12"><a href="#info">info</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#step">step</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#sign">sign</a><span className="badge badge--info margin-left--sm">static</span></div></div>
+</div>
+
+## constructor
+```ts
+new CspAPI()
+```
+
+<div>
+
+</div>
+
+Cannot be constructed.
+
+## Methods
+### info {#info}
+
+<div>
+  <span className="badge badge--info">static</span>
+</div>
+
+CSP info
+
+**Returns**: Promise&lt;ICspInfoResponse&gt;
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|url|string|||CSP endpoint URL|
+
+### step {#step}
+
+<div>
+  <span className="badge badge--info">static</span>
+</div>
+
+CSP step
+
+**Returns**: Promise&lt;(ICspIntermediateStepResponse\|ICspFinalStepResponse)&gt;
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|url|string|||CSP endpoint URL|
+|electionId|string|||The election identifier|
+|signatureType|string|||The type of the signature|
+|authType|string|||The type of the auth method|
+|stepNr|number|||The step number|
+|data|Array&lt;any&gt;|||The auth data|
+|authToken|string|✔️||The auth token from the previous step|
+
+### sign {#sign}
+
+<div>
+  <span className="badge badge--info">static</span>
+</div>
+
+CSP sign
+
+**Returns**: Promise&lt;ICspSignResponse&gt;
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|url|string|||CSP endpoint URL|
+|electionId|string|||The election identifier|
+|signatureType|string|||The type of the signature|
+|payload|string|||The payload from the user|
+|token|string|||The token from the last step|
+
