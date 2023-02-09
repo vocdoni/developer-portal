@@ -529,21 +529,7 @@ paths:
           content:
             application/json:
               schema:
-                type: object
-                properties:
-                  election:
-                    type: object
-                    properties:
-                      publicKeys:
-                        type: array
-                        items:
-                          type: string
-                          example: "Pub key"
-                      privateKeys:
-                        type: array
-                        items:
-                          type: string
-                          example: "Priv key"
+                $ref: "#/components/schemas/ElectionKeysResponse"
   /elections/{electionId}/scrutiny:
     get:
       summary: "Election scrutiny"
@@ -2033,6 +2019,84 @@ components:
           $ref: "#/components/schemas/LangString"
         title:
           $ref: "#/components/schemas/LangString"
+    ElectionKeysResponse:
+      type: object
+      properties:
+        electionId:
+          $ref: "#/components/schemas/ElectionId"
+        status:
+          $ref: "#/components/schemas/ElectionStatusFilter"
+        startDate:
+          $ref: "#/components/schemas/TimeStampCustom"
+        endDate:
+          $ref: "#/components/schemas/TimeStampCustom"
+        voteCount:
+          type: number
+          example: 0
+        finalResults:
+          type: boolean
+          example: false
+        electionCount:
+          type: number
+          example: 0
+        metadataURL:
+          $ref: "#/components/schemas/IpfsUri"
+        creationTime:
+          $ref: "#/components/schemas/TimeStamp"
+        voteMode:
+          type: object
+          properties:
+            serial:
+              type: boolean
+              example: false
+            anonymous:
+              type: boolean
+              example: false
+            encryptedVotes:
+              type: boolean
+              example: false
+            uniqueValues:
+              type: boolean
+              example: false
+            costFromWeight:
+              type: boolean
+              example: false
+        electionMode:
+          type: object
+          properties:
+            autoStart:
+              type: boolean
+              example: false
+            interruptible:
+              type: boolean
+              example: false
+            dynamicCensus:
+              type: boolean
+              example: false
+            encryptedMetaData:
+              type: boolean
+              example: false
+            preRegister:
+              type: boolean
+              example: false
+        tallyMode:
+          type: object
+          properties:
+            maxCount:
+                type: number
+                example: 0
+            maxValue:
+                type: number
+                example: 0
+            maxVoteOverwrites:
+                type: number
+                example: 0
+            maxTotalCost:
+                type: number
+                example: 0
+            costExponent:
+                type: number
+                example: 0
     ElectionScrutinizeResponse:
       type: object
       properties:
