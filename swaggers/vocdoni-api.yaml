@@ -527,7 +527,6 @@ paths:
         "200":
           description: "Return list of keys"
           content:
-            # todo(kon): check this object is correct and add examples
             application/json:
               schema:
                 type: object
@@ -545,6 +544,31 @@ paths:
                         items:
                           type: string
                           example: "Priv key"
+  /elections/{electionId}/scrutiny:
+    get:
+      summary: "Election scrutiny"
+      description: |-
+        Returns a given election consensus results and useful information about the results.
+
+
+        This method can be used by anyone, but it is also used by Chainlink for fetching Vochain results and store it
+        to the Results contract on an EVM network.
+
+
+        For discovering more about the on-chain results, please refer to
+        [chainlink-tally](https://github.com/vocdoni/chainlink-tally#chainlink-tally) repository.
+      operationId: electionScrutiny
+      tags:
+        - Elections
+      parameters:
+        - $ref: "#/components/parameters/electionIdParameter"
+      responses:
+        "200":
+          description: "Return election consensus results"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ElectionScrutinizeResponse"
   /elections/{electionId}/votes:
     get:
       summary: "List election votes"
@@ -1974,6 +1998,9 @@ components:
               type: integer
               format: int32
               example: 10000
+    AbiEncoded:
+      type: string
+      example: "0xc5d2460186f712c22036657397736cf4be8d59b29f70c03609b802000000000000000000000000000000000012c220366573977..."
     AnyUri:
       oneOf:
         - $ref: "#/components/schemas/IpfsUri"
@@ -2006,6 +2033,27 @@ components:
           $ref: "#/components/schemas/LangString"
         title:
           $ref: "#/components/schemas/LangString"
+    ElectionScrutinizeResponse:
+      type: object
+      properties:
+        abiEncoded:
+          $ref: "#/components/schemas/AbiEncoded"
+        censusRoot:
+          $ref: "#/components/schemas/MerkleRoot"
+        electionID:
+          $ref: "#/components/schemas/ElectionId"
+        organizationId:
+          $ref: "#/components/schemas/AccountId"
+        results:
+          type: array
+          items:
+            type: array
+            items:
+              type: string
+            example:
+              - 2520
+              - 2480
+              - 0
     TransactionReferenceObject:
       type: object
       properties:
