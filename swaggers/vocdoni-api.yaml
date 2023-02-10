@@ -737,8 +737,9 @@ paths:
         Get account information by its address or public key.
         
         
-        The `infoURI` parameter contain where account metadata is uploaded (like avatar, name...). At the same time, it 
-        return a metadata object, which contain usefull metadata living on the Vocchain. 
+        The `infoURI` parameter contain where account metadata is uploaded (like avatar, name...). It return also an 
+        already parsed "metadata" object from this infoUri. 
+        
         
         The `meta` object inside the `metadata` property is left to the user to add random information about the account.
       operationId: accountByAddress
@@ -1630,9 +1631,60 @@ components:
     BlockInfo:
       type: object
       properties:
+        data:
+          type: object
+          properties:
+            txs:
+              type: array
+              items:
+                $ref: "#/components/schemas/TransactionHash"
+        evidence:
+          type: object
+          properties:
+            evidence:
+              type: array
+              items:
+                type: string
+                example: ""
         header:
           type: object
           properties:
+            appHash:
+              type: string
+              example: "05AC01E023D1ACFCB5C1CC23D2BC848EDC2BA381087207E9296B77A82C601530"
+            chainId:
+              type: string
+              example: "vocdoni-development-71"
+            consensusHash:
+              type: string
+              example: "9C51FE2637CF9460E108B5008DDEE1D25ECBC8C77926296836786D39C64686E4"
+            dataHash:
+              type: string
+              example: "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+            evidenceHash:
+              type: string
+              example: "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+            height:
+              $ref: "#/components/schemas/BlockHeight"
+            lastBlockId:
+              $ref: "#/components/schemas/BlockInfoBlockId"
+            lastCommitHash:
+              type: string
+              example: "04BCC46D061A39722A836E24690B9995FBD952FF5554D3DAC9CC4759813A66C5"
+            lastResultsHash:
+              type: string
+              example: "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+            nextValidatorsHash:
+              type: string
+              example: "E28E7EFDF1EAD64EE3349052D6A1D8547EF0F482B4E467AB4B1250B9E5ED7F86"
+            proposerAddress:
+              type: string
+              example: "5C69093136E0CB84E5CFA8E958DADB33C0D0CCCF"
+            time:
+              $ref: "#/components/schemas/TimeStampCustom"
+            validatorsHash:
+              type: string
+              example: "E28E7EFDF1EAD64EE3349052D6A1D8547EF0F482B4E467AB4B1250B9E5ED7F86"
             version:
               type: object
               properties:
@@ -1642,72 +1694,21 @@ components:
                 app:
                   type: integer
                   example: 0
-            chainId:
-              type: string
-              example: "vocdoni-development-71"
-            height:
-              $ref: "#/components/schemas/BlockHeight"
-            time:
-              $ref: "#/components/schemas/TimeStampCustom"
-            lastBlockId:
+        lastCommit:
+          type: object
+          properties:
+            blockId:
               $ref: "#/components/schemas/BlockInfoBlockId"
-            lastCommitHash:
-              type: string
-              example: "04BCC46D061A39722A836E24690B9995FBD952FF5554D3DAC9CC4759813A66C5"
-            dataHash:
-              type: string
-              example: "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
-            validatorsHash:
-              type: string
-              example: "E28E7EFDF1EAD64EE3349052D6A1D8547EF0F482B4E467AB4B1250B9E5ED7F86"
-            nextValidatorsHash:
-              type: string
-              example: "E28E7EFDF1EAD64EE3349052D6A1D8547EF0F482B4E467AB4B1250B9E5ED7F86"
-            consensusHash:
-              type: string
-              example: "9C51FE2637CF9460E108B5008DDEE1D25ECBC8C77926296836786D39C64686E4"
-            appHash:
-              type: string
-              example: "05AC01E023D1ACFCB5C1CC23D2BC848EDC2BA381087207E9296B77A82C601530"
-            lastResultsHash:
-              type: string
-              example: "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
-            evidenceHash:
-              type: string
-              example: "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
-            proposerAddress:
-              type: string
-              example: "5C69093136E0CB84E5CFA8E958DADB33C0D0CCCF"
-            data:
-              type: object
-              properties:
-                txs:
-                  type: array
-                  items:
-                    $ref: "#/components/schemas/TransactionHash"
-            evidence:
-              type: object
-              properties:
-                evidence:
-                  type: array
-                  items:
-                    type: string
-                    example: ""
-            lastCommit:
-              type: object
-              properties:
-                height:
-                  type: integer
-                  example: 122
-                round:
-                  type: integer
-                  example: 0
-                blockId:
-                  $ref: "#/components/schemas/BlockInfoBlockId"
-                signatures:
-                  type: array
-                  items:
-                    $ref: "#/components/schemas/BlockInfoSignatures"
+            height:
+              type: integer
+              example: 122
+            round:
+              type: integer
+              example: 0
+            signatures:
+              type: array
+              items:
+                $ref: "#/components/schemas/BlockInfoSignatures"
     BlockHeight:
       type: integer
       format: int32
