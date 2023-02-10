@@ -534,7 +534,8 @@ paths:
     get:
       summary: "Election scrutiny"
       description: |-
-        Returns a given election consensus results and useful information about the results.
+        Returns a given election consensus results and useful information about the results. Results represented with
+        BigInt strings.
 
 
         This method can be used by anyone, but it is also used by Chainlink for fetching Vochain results and store it
@@ -734,7 +735,12 @@ paths:
       summary: "Get account information"
       description: |-
         Get account information by its address or public key.
-        Return the `infoURI` parameter where to find account metadata (like avatar, name...)
+        
+        
+        The `infoURI` parameter contain where account metadata is uploaded (like avatar, name...). At the same time, it 
+        return a metadata object, which contain usefull metadata living on the Vocchain. 
+        
+        The `meta` object inside the `metadata` property is left to the user to add random information about the account.
       operationId: accountByAddress
       tags:
         - Accounts
@@ -881,7 +887,7 @@ paths:
 
   /accounts/{accountId}/transfers/page/{page}:
     get:
-      summary: "Get account transfers"
+      summary: "Get paginated account transfers"
       description: |-
         See [account transfers](account-transfers)
       operationId: accountTransfersPaginated
@@ -2115,9 +2121,9 @@ components:
             items:
               type: string
             example:
-              - 2520
-              - 2480
-              - 0
+              - "2520"
+              - "2480"
+              - "0"
     TransactionReferenceObject:
       type: object
       properties:
@@ -2223,19 +2229,46 @@ components:
         address:
           type: string
           example: "e0c941dd44ff4c43fc4683088b846ddb3234d169"
+        nonce:
+          type: string
+          example: 186
         balance:
           type: integer
           format: int32
           example: 9568
-        nonce:
-          type: string
-          example: 186
-        infoURI:
-          $ref: "#/components/schemas/IpfsUri"
-        processIndex:
+        electionIndex:
           type: integer
           format: int32
           example: 38
+        infoURI:
+          $ref: "#/components/schemas/IpfsUri"
+        metadata:
+          type: object
+          properties:
+            version:
+              type: string
+              example: '1.0'
+            name:
+              $ref: "#/components/schemas/LangString"
+            description:
+              $ref: "#/components/schemas/LangString"
+            newsFeed:
+              $ref: "#/components/schemas/LangString"
+            media:
+              $ref: "#/components/schemas/AccountMedia"
+            meta:
+              type: object
+
+    AccountMedia:
+      type: object
+      properties:
+        avatar:
+          $ref: "#/components/schemas/IpfsUri"
+        header:
+          $ref: "#/components/schemas/IpfsUri"
+        logo:
+          $ref: "#/components/schemas/IpfsUri"
+
     AccountTransfersResponse:
       type: "object"
       properties:
@@ -2280,13 +2313,10 @@ components:
     EntityElectionsResponse:
       type: object
       properties:
-        # todo(kon): re-check this when the backend work
-        organizationId:
-          $ref: "#/components/schemas/AccountId"
         elections:
           type: array
           items:
-            $ref: "#/components/schemas/ElectionInfo"
+            $ref: "#/components/schemas/ElectionSummary"
     OrganizationsListResponse:
       type: object
       properties:
