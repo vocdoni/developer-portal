@@ -12,7 +12,7 @@ class ChainAPI
 
 <div className="container">
   <div className="row mb-2"><div className="col col--12"><strong>Methods</strong></div></div>
-  <div className="row"><div className="col col--12"><a href="#info">info</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#txInfo">txInfo</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#submitTx">submitTx</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#organizationCount">organizationCount</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#organizationList">organizationList</a><span className="badge badge--info margin-left--sm">static</span></div></div>
+  <div className="row"><div className="col col--12"><a href="#info">info</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#txInfo">txInfo</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#submitTx">submitTx</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#organizationCount">organizationCount</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#organizationList">organizationList</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#blockByHeight">blockByHeight</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#validatorsList">validatorsList</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#blockByHash">blockByHash</a><span className="badge badge--info margin-left--sm">static</span></div></div>
 </div>
 
 ## constructor
@@ -99,4 +99,48 @@ Returns the list of organizations by page
 |:---:|:---:|:---:|:---:|:---:|
 |url|string|||API endpoint URL|
 |page|number|✔️|0|The page number|
+
+### blockByHeight {#blockByHeight}
+
+<div>
+  <span className="badge badge--info">static</span>
+</div>
+
+Get block information by height
+
+**Returns**: Promise&lt;IChainBlockInfoResponse&gt;
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|url|string|||API endpoint URL|
+|height|number|||block height|
+
+### validatorsList {#validatorsList}
+
+<div>
+  <span className="badge badge--info">static</span>
+</div>
+
+Returns the list of validators
+
+**Returns**: Promise&lt;IChainOrganizationListResponse&gt;
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|url|string|||API endpoint URL|
+
+### blockByHash {#blockByHash}
+
+<div>
+  <span className="badge badge--info">static</span>
+</div>
+
+Get block information by hash
+
+**Returns**: Promise&lt;IChainBlockInfoResponse&gt;
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|url|string|||API endpoint URL|
+|hash|string|||block hash|
 

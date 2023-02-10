@@ -12,7 +12,7 @@ class VoteAPI
 
 <div className="container">
   <div className="row mb-2"><div className="col col--12"><strong>Methods</strong></div></div>
-  <div className="row"><div className="col col--12"><a href="#submit">submit</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#info">info</a><span className="badge badge--info margin-left--sm">static</span></div></div>
+  <div className="row"><div className="col col--12"><a href="#submit">submit</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#info">info</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#verify">verify</a><span className="badge badge--info margin-left--sm">static</span></div></div>
 </div>
 
 ## constructor
@@ -55,5 +55,22 @@ Vote info
 |PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
 |:---:|:---:|:---:|:---:|:---:|
 |url|string|||API endpoint URL|
+|voteId|string|||The identifier of the vote|
+
+### verify {#verify}
+
+<div>
+  <span className="badge badge--info">static</span>
+</div>
+
+Verify vote. A vote exists in a process.
+
+**Returns**: Promise&lt;boolean&gt;
+- Return true if response has status 200
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|url|string|||API endpoint URL|
+|processId|string|||The process identifier|
 |voteId|string|||The identifier of the vote|
 

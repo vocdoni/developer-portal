@@ -12,7 +12,7 @@ class AccountAPI
 
 <div className="container">
   <div className="row mb-2"><div className="col col--12"><strong>Methods</strong></div></div>
-  <div className="row"><div className="col col--12"><a href="#info">info</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#setInfo">setInfo</a><span className="badge badge--info margin-left--sm">static</span></div></div>
+  <div className="row"><div className="col col--12"><a href="#info">info</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#setInfo">setInfo</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#transfersList">transfersList</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#electionsList">electionsList</a><span className="badge badge--info margin-left--sm">static</span></div></div>
 </div>
 
 ## constructor
@@ -57,4 +57,36 @@ Sets Account information
 |url|string|||API endpoint URL|
 |payload|string|||The set information info raw payload to be submitted to the chain|
 |metadata|string|||The base64 encoded metadata JSON object|
+
+### transfersList {#transfersList}
+
+<div>
+  <span className="badge badge--info">static</span>
+</div>
+
+Returns paginated list of transfers for a specific account
+
+**Returns**: Promise&lt;IAccountTransfersResponse&gt;
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|url|string|||API endpoint URL|
+|accountId|string|||accountId to get transfers|
+|page|number|✔️|0|The page number|
+
+### electionsList {#electionsList}
+
+<div>
+  <span className="badge badge--info">static</span>
+</div>
+
+Returns paginated list of elections for a specific account
+
+**Returns**: Promise&lt;IAccountElectionsResponse&gt;
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|url|string|||API endpoint URL|
+|accountId|string|||accountId to get elections|
+|page|number|✔️|0|The page number|
 
