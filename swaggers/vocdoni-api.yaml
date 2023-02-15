@@ -1449,7 +1449,8 @@ paths:
         - Votes
       summary: "Get vote"
       description:  >-
-        Get the content of an existing Vote. 
+        Get the content of an existing Vote. If is an encrypted election it return the `encryptionKeys` indexes and the 
+        package will be codified.
         
         
         The Vote is identified by its `voteId`, also called `nullifier`. The `nullifier` is deterministic and its hash 
@@ -2398,9 +2399,14 @@ components:
               type: array
               items:
                 type: integer
+              nullable: true
               example: [ 1, 2 ]
+              description: "Sent only for encrypted elections (no results until the end)"
             txHash:
               $ref: "#/components/schemas/TransactionHash"
+            package:
+              type: string
+              example: "{\"nonce\":\"a34ac6a34cfd9de2\",\"votes\":[38]}"
             voteId:
               $ref: "#/components/schemas/VoteId"
             voterId:
@@ -2418,6 +2424,9 @@ components:
               type: number
               format: int32
               example: 0
+            date:
+              $ref: "#/components/schemas/TimeStampCustom"
+              description: "Date when the vote was emitted"
     CensusTypeWalletRequest:
       description: "Used on wallet operations"
       type: object
