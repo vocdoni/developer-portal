@@ -2395,7 +2395,7 @@ components:
         envelope:
           type: object
           properties:
-            encryptionKeyIndexes:
+            encryptionKeys:
               type: array
               items:
                 type: integer
