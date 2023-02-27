@@ -1753,10 +1753,32 @@ components:
             - 11000 // 1h
             - 11100 // 6h
             - 11100 // 24h
+        electionCount:
+          type: integer
+          example: 208
+        genesisTime:
+          type: string
+          format: date-time
+          $ref: "#/components/schemas/TimeStampCustom"
         height:
           $ref: "#/components/schemas/BlockHeight"
+        syncing:
+          type: boolean
+          example: false
         blockTimestamp:
           $ref: "#/components/schemas/TimeStampCustom"
+        transactionCount:
+          type: integer
+          example: 1800
+        organizationCount:
+          type: integer
+          example: 4
+        validatorCount:
+          type: integer
+          example: 4
+        voteCount:
+          type: integer
+          example: 843
     CreateElection:
       type: "object"
       required:
