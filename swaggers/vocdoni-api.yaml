@@ -2407,6 +2407,7 @@ components:
             package:
               type: string
               example: "{\"nonce\":\"a34ac6a34cfd9de2\",\"votes\":[38]}"
+              description: "For encrypted elections this will be codified"
             voteId:
               $ref: "#/components/schemas/VoteId"
             voterId:
