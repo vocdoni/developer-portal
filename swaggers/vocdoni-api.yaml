@@ -214,6 +214,8 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/TransactionReferenceObject"
+        "204":
+          $ref: "#/components/responses/NoContent"
   /chain/transactions/reference/index/{index}:
     get:
       summary: "Transaction by index"
@@ -241,6 +243,8 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/TransactionReferenceObject"
+        "204":
+          $ref: "#/components/responses/NoContent"
   /chain/transactions/{blockHeight}/{txIndex}:
     get:
       summary: "Transaction by block height and index"
@@ -281,6 +285,8 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/TxInfoResponse'
+        "204":
+          $ref: "#/components/responses/NoContent"
 
   ####################################################
   ## /chain/organizations                            ##
@@ -513,6 +519,8 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/ElectionInfo"
+        "404":
+          $ref: "#/components/responses/NotFound"
 
   /elections/{electionId}/keys:
     get:
@@ -530,6 +538,8 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/ElectionKeysResponse"
+        "404":
+          $ref: "#/components/responses/NotFound"
   /elections/{electionId}/scrutiny:
     get:
       summary: "Election scrutiny"
@@ -556,6 +566,8 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/ElectionScrutinizeResponse"
+        "404":
+          $ref: "#/components/responses/NotFound"
   /elections/{electionId}/votes:
     get:
       summary: "List election votes"
@@ -580,6 +592,8 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/VoteListResponse"
+        "404":
+          $ref: "#/components/responses/NotFound"
   /elections/{electionId}/votes/page/{page}:
     get:
       summary: "Paginated election votes list"
@@ -1484,8 +1498,8 @@ paths:
                 $ref: '#/components/schemas/VoteEnvelopeResponse'
         '400':
           description: Invalid nullifier supplied
-        '404':
-          description: Vote not found
+        "404":
+          $ref: "#/components/responses/NotFound"
         '500':
           description: Internal server error
   /votes:
@@ -1535,6 +1549,8 @@ paths:
       responses:
         '200':
           description: Successful operation
+        "404":
+          $ref: "#/components/responses/NotFound"
 components:
   parameters:
     electionStatusParameter:
@@ -2466,6 +2482,15 @@ components:
   responses:
     UnauthorizedError:
       description: Access token is missing or invalid
+    NotFound:
+      description: "The specified resource was not found"
+    NoContent:
+      description: |-
+        This message will be returned only if the asset being queried cannot be found but no other errors have occurred. 
+        This response is commonly used to prevent Javascript errors that may arise when a client is waiting for a 
+        transaction to be published. During this waiting period, the client can repeatedly query the endpoint until a 
+        successful response with a status code of 200 is received, thereby avoiding any errors that may occur due to the 
+        transaction not being published yet.
   securitySchemes:
     bearerAuth: # arbitrary name for the security scheme
       type: http
