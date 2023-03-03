@@ -12,7 +12,7 @@ class ChainAPI
 
 <div className="container">
   <div className="row mb-2"><div className="col col--12"><strong>Methods</strong></div></div>
-  <div className="row"><div className="col col--12"><a href="#info">info</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#txInfo">txInfo</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#submitTx">submitTx</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#organizationCount">organizationCount</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#organizationList">organizationList</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#blockByHeight">blockByHeight</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#validatorsList">validatorsList</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#blockByHash">blockByHash</a><span className="badge badge--info margin-left--sm">static</span></div></div>
+  <div className="row"><div className="col col--12"><a href="#info">info</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#txInfo">txInfo</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#submitTx">submitTx</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#txList">txList</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#organizationCount">organizationCount</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#organizationList">organizationList</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#blockByHeight">blockByHeight</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#validatorsList">validatorsList</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#blockByHash">blockByHash</a><span className="badge badge--info margin-left--sm">static</span></div></div>
 </div>
 
 ## constructor
@@ -70,6 +70,21 @@ Submits a transaction to the blockchain
 |:---:|:---:|:---:|:---:|:---:|
 |url|string|||API endpoint URL|
 |payload|string|||The transaction data payload|
+
+### txList {#txList}
+
+<div>
+  <span className="badge badge--info">static</span>
+</div>
+
+Returns the list of transactions by page
+
+**Returns**: Promise&lt;IChainTxListResponse&gt;
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|url|string|||url API endpoint URL|
+|page|number|✔️|0|page The page number|
 
 ### organizationCount {#organizationCount}
 
