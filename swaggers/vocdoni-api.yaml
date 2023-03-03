@@ -1841,9 +1841,12 @@ components:
         Election status enum
       example: "active"
     ElectionSummaryArray:
-      type: array
-      items:
-        $ref: "#/components/schemas/ElectionSummary"
+      type: object
+      properties:
+        elections:
+          type: array
+          items:
+            $ref: "#/components/schemas/ElectionSummary"
     ElectionSummary:
       type: object
       properties:
@@ -2160,9 +2163,12 @@ components:
         transactionType:
           $ref: "#/components/schemas/TransactionType"
     TransactionList:
-      type: array
-      items:
-        $ref: "#/components/schemas/TransactionReferenceObject"
+      type: object
+      properties:
+        transactions:
+          type: array
+          items:
+            $ref: "#/components/schemas/TransactionReferenceObject"
     TransactionSubmit:
       type: "object"
       properties:
@@ -2392,7 +2398,7 @@ components:
       # todo: implement more tx types!
       oneOf:
         - $ref: "#/components/schemas/TxVote"
-    VoteListResponse:
+    VoteSummary:
       type: object
       properties:
         voteId:
@@ -2405,6 +2411,13 @@ components:
           $ref: "#/components/schemas/BlockHeight"
         transactionIndex:
           $ref: "#/components/schemas/TxIndex"
+    VoteListResponse:
+      type: object
+      properties:
+        votes:
+          type: array
+          items:
+            $ref: "#/components/schemas/VoteSummary"
     VoteEnvelopeResponse:
       type: object
       properties:
