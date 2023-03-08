@@ -14,7 +14,7 @@ Represents a published census
 
 ## constructor
 ```ts
-new PublishedCensus(censusId, censusURI, type)
+new PublishedCensus(censusId, censusURI, type, size, weight)
 ```
 
 <div>
@@ -28,4 +28,6 @@ Constructs a published census
 |censusId|string|||The id of the census|
 |censusURI|string|||The URI of the census|
 |type|CensusType|||The type of the census|
+|size|number|✔️||The size of the census|
+|weight|BigInt|✔️||The weight of the census|
 

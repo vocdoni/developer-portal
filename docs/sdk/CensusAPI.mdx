@@ -12,7 +12,7 @@ class CensusAPI
 
 <div className="container">
   <div className="row mb-2"><div className="col col--12"><strong>Methods</strong></div></div>
-  <div className="row"><div className="col col--12"><a href="#create">create</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#add">add</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#publish">publish</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#proof">proof</a><span className="badge badge--info margin-left--sm">static</span></div></div>
+  <div className="row"><div className="col col--12"><a href="#create">create</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#add">add</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#publish">publish</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#proof">proof</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#size">size</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#weight">weight</a><span className="badge badge--info margin-left--sm">static</span></div></div>
 </div>
 
 ## constructor
@@ -93,4 +93,34 @@ Checks if the specified address is in the specified census
 |url|string|||API endpoint URL|
 |censusId|string|||The census ID of which we want the proof from|
 |key|string|||The address to be checked|
+
+### size {#size}
+
+<div>
+  <span className="badge badge--info">static</span>
+</div>
+
+Returns the size of a given census
+
+**Returns**: Promise&lt;ICensusSizeResponse&gt;
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|url|string|||API endpoint URL|
+|censusId|string|||The census ID of which we want the proof from|
+
+### weight {#weight}
+
+<div>
+  <span className="badge badge--info">static</span>
+</div>
+
+Returns the weight of a given census
+
+**Returns**: Promise&lt;ICensusWeightResponse&gt;
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|url|string|||API endpoint URL|
+|censusId|string|||The census ID of which we want the proof from|
 
