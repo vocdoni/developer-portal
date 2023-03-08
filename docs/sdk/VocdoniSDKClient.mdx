@@ -14,7 +14,7 @@ Main Vocdoni client object. It's a wrapper for all the methods in api, core<br /
 
 <div className="container">
   <div className="row mb-2"><div className="col col--12"><strong>Methods</strong></div></div>
-  <div className="row"><div className="col col--12"><a href="#generateWalletFromData">generateWalletFromData</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#setElectionId">setElectionId</a><br/><a href="#fetchChainId">fetchChainId</a><br/><a href="#fetchAccountInfo">fetchAccountInfo</a><br/><a href="#calculateCID">calculateCID</a><br/><a href="#fetchFaucetPayload">fetchFaucetPayload</a><br/><a href="#parseFaucetPackage">parseFaucetPackage</a><br/><a href="#fetchAccountToken">fetchAccountToken</a><br/><a href="#fetchElection">fetchElection</a><br/><a href="#waitForTransaction">waitForTransaction</a><br/><a href="#fetchProof">fetchProof</a><br/><a href="#fetchProofForWallet">fetchProofForWallet</a><br/><a href="#setAccountInfo">setAccountInfo</a><br/><a href="#createAccount">createAccount</a><br/><a href="#collectFaucetTokens">collectFaucetTokens</a><br/><a href="#createCensus">createCensus</a><br/><a href="#createElection">createElection</a><br/><a href="#endElection">endElection</a><br/><a href="#pauseElection">pauseElection</a><br/><a href="#cancelElection">cancelElection</a><br/><a href="#continueElection">continueElection</a><br/><a href="#changeElectionStatus">changeElectionStatus</a><br/><a href="#isInCensus">isInCensus</a><br/><a href="#hasAlreadyVoted">hasAlreadyVoted</a><br/><a href="#isAbleToVote">isAbleToVote</a><br/><a href="#votesLeftCount">votesLeftCount</a><br/><a href="#submitVote">submitVote</a></div></div>
+  <div className="row"><div className="col col--12"><a href="#generateWalletFromData">generateWalletFromData</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#setElectionId">setElectionId</a><br/><a href="#fetchChainId">fetchChainId</a><br/><a href="#fetchAccountInfo">fetchAccountInfo</a><br/><a href="#calculateCID">calculateCID</a><br/><a href="#fetchFaucetPayload">fetchFaucetPayload</a><br/><a href="#parseFaucetPackage">parseFaucetPackage</a><br/><a href="#fetchAccountToken">fetchAccountToken</a><br/><a href="#fetchElection">fetchElection</a><br/><a href="#waitForTransaction">waitForTransaction</a><br/><a href="#fetchProof">fetchProof</a><br/><a href="#fetchProofForWallet">fetchProofForWallet</a><br/><a href="#setAccountInfo">setAccountInfo</a><br/><a href="#createAccount">createAccount</a><br/><a href="#collectFaucetTokens">collectFaucetTokens</a><br/><a href="#createCensus">createCensus</a><br/><a href="#fetchCensusInfo">fetchCensusInfo</a><br/><a href="#createElection">createElection</a><br/><a href="#endElection">endElection</a><br/><a href="#pauseElection">pauseElection</a><br/><a href="#cancelElection">cancelElection</a><br/><a href="#continueElection">continueElection</a><br/><a href="#changeElectionStatus">changeElectionStatus</a><br/><a href="#isInCensus">isInCensus</a><br/><a href="#hasAlreadyVoted">hasAlreadyVoted</a><br/><a href="#isAbleToVote">isAbleToVote</a><br/><a href="#votesLeftCount">votesLeftCount</a><br/><a href="#submitVote">submitVote</a></div></div>
 </div>
 
 ## constructor
@@ -63,7 +63,7 @@ Sets an election id. Required by other methods like submitVote or createElection
 ### fetchChainId {#fetchChainId}
 
 <div>
-  <span className="badge badge--success">async</span>
+
 </div>
 
 Fetches blockchain information if needed and returns the chain id.
@@ -83,7 +83,7 @@ Fetches account information.
 ### calculateCID {#calculateCID}
 
 <div>
-  <span className="badge badge--success">async</span>
+
 </div>
 
 Fetches the CID expected for the specified data content.
@@ -98,7 +98,7 @@ Fetches the CID expected for the specified data content.
 ### fetchFaucetPayload {#fetchFaucetPayload}
 
 <div>
-  <span className="badge badge--success">async</span>
+
 </div>
 
 Fetches a faucet payload. Only for development.
@@ -122,7 +122,7 @@ Parses a faucet package.
 ### fetchAccountToken {#fetchAccountToken}
 
 <div>
-  <span className="badge badge--success">async</span>
+
 </div>
 
 Fetches the specific account token auth and sets it to the current instance.
@@ -146,7 +146,7 @@ Fetches info about an election.
 ### waitForTransaction {#waitForTransaction}
 
 <div>
-  <span className="badge badge--success">async</span>
+
 </div>
 
 A convenience method to wait for a transaction to be executed. It will<br />loop trying to get the transaction information, and will retry every time<br />it fails.
@@ -178,7 +178,7 @@ Fetches proof that an address is part of the specified census.
 ### fetchProofForWallet {#fetchProofForWallet}
 
 <div>
-  <span className="badge badge--success">async</span>
+
 </div>
 
 Fetches proof that an address is part of the specified census.
@@ -207,7 +207,7 @@ Sets account information.
 ### createAccount {#createAccount}
 
 <div>
-  <span className="badge badge--success">async</span>
+
 </div>
 
 Registers an account against vochain, so it can create new elections.
@@ -221,7 +221,7 @@ Registers an account against vochain, so it can create new elections.
 ### collectFaucetTokens {#collectFaucetTokens}
 
 <div>
-  <span className="badge badge--success">async</span>
+
 </div>
 
 Calls the faucet to get new tokens. Only under development.
@@ -232,7 +232,7 @@ Calls the faucet to get new tokens. Only under development.
 ### createCensus {#createCensus}
 
 <div>
-  <span className="badge badge--success">async</span>
+
 </div>
 
 Publishes the given census.
@@ -242,6 +242,20 @@ Publishes the given census.
 |PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
 |:---:|:---:|:---:|:---:|:---:|
 |census|[PlainCensus](PlainCensus) \| [WeightedCensus](WeightedCensus)|||The census to be published.|
+
+### fetchCensusInfo {#fetchCensusInfo}
+
+<div>
+
+</div>
+
+Fetches the information of a given census.
+
+**Returns**: Promise&lt;{size: number, weight: BigInt}&gt;
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|censusId|string||||
 
 ### createElection {#createElection}
 
@@ -261,7 +275,7 @@ Creates a new voting election.
 ### endElection {#endElection}
 
 <div>
-  <span className="badge badge--success">async</span>
+
 </div>
 
 Ends an election.
@@ -275,7 +289,7 @@ Ends an election.
 ### pauseElection {#pauseElection}
 
 <div>
-  <span className="badge badge--success">async</span>
+
 </div>
 
 Pauses an election.
@@ -289,7 +303,7 @@ Pauses an election.
 ### cancelElection {#cancelElection}
 
 <div>
-  <span className="badge badge--success">async</span>
+
 </div>
 
 Cancels an election.
@@ -303,7 +317,7 @@ Cancels an election.
 ### continueElection {#continueElection}
 
 <div>
-  <span className="badge badge--success">async</span>
+
 </div>
 
 Continues an election.
@@ -317,7 +331,7 @@ Continues an election.
 ### changeElectionStatus {#changeElectionStatus}
 
 <div>
-  <span className="badge badge--success">async</span>
+
 </div>
 
 Changes the status of an election.
@@ -347,7 +361,7 @@ Checks if the user is in census.
 ### hasAlreadyVoted {#hasAlreadyVoted}
 
 <div>
-  <span className="badge badge--success">async</span>
+
 </div>
 
 Checks if the user has already voted
@@ -361,7 +375,7 @@ Checks if the user has already voted
 ### isAbleToVote {#isAbleToVote}
 
 <div>
-  <span className="badge badge--success">async</span>
+
 </div>
 
 Checks if the user is able to vote
