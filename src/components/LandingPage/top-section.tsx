@@ -20,14 +20,14 @@ export default function TopSection(): JSX.Element {
         <>
             <MainSubsection>
                 <MainTitle>
-                    Create digital voting <br />applications <br />quickly and easily.
+                    Develop secure & private digital voting apps with few lines of code
                 </MainTitle>
                 <Paragraph>
-                    The Developer Portal contains everything you need to start integrating the Vocdoni Protocol,
-                    including the API and SDK,  as well as extensive documentation about the protocol design.
+                    Designed for developers, abstracting the complexities involved in secure and private voting protocols.
+                    Create AGMs, elections and proposals with ease, multiple election types, check voter eligibility and much more!
                 </Paragraph>
                 <Paragraph>
-                    For more help...
+                    Try it out!
                 </Paragraph>
                 <div>
                     <CTA>Get Started</CTA>

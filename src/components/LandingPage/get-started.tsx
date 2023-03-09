@@ -4,23 +4,53 @@ import TypewriterCodeBlock from "../TypewriterCodeBlock";
 import styled from 'styled-components';
 import React, {useState} from "react";
 
-
-const codeBlockString = `
-curl -X POST -H "Authorization: Bearer <superadmin-key>" https://server/v1/admin/accounts
-{ "cspUrlPrefix": "my-csp-url-prefix", "cspPubKey": "hexBytes", "name": "My integrator account", "email": "admin@account.net" }
-{ "id": "1234567890", "apiKey": "ksjdhfksjdh..." // The integrator (secret) key to use the API }
-`
-
-const codeBlockString2 = `
-const election = new Election({
-  title: 'Election title',
-  description: 'Election description',
+const electionsCodeBlock = `const election = new Election({
+  title: 'My awesome Election!'
+  description: 'Voting was never so easy!',
   header: 'https://source.unsplash.com/random',
   streamUri:'https://source.unsplash.com/random',
   endDate: new Date().getTime() + 10000000,
   census,
+  electionType: {
+    secretUntilTheEnd: false, 
+    anonymous: false,
+  },
 });
 `;
+const accountsCodeBlock = ` const account = await client.createAccount({
+      account: new Account({
+        languages: ['es'],
+        name: {
+          ca: 'Associació comunal',
+          default: 'Comunal association',
+        },
+        description: 'Our association for residents on the town',
+        feed: 'feed',
+        avatar: 'avatar',
+        header: 'header',
+        logo: 'logo',
+      }),
+    });
+`
+
+const codeBlockCensus = `const census = new PlainCensus()
+// accepts any ethereum-alike addresses
+census.add(address)
+census.add('0x0000000000000000000000000000000000000000')
+const userWallet = VocdoniSDKClient.generateWalletFromData(
+    ['user1', 
+    // is the sha256 of 'test'
+    '9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08'
+]);
+`
+
+const voteCodeBlock = `(async () => {
+  client.setElectionId(id)
+  // votes "Yes" and "Adult (17-60 yo)"
+  const vote = new Vote([0, 2]);
+  const voteId = await client.submitVote(vote)
+})();
+`
 
 interface ITopics {
     btnText: string
@@ -32,44 +62,36 @@ interface ITopics {
 
 const topics: ITopics[] = [
     {
-        btnText: "Account",
-        bodyTitle: "API Key",
-        body: "Create an account to start integrating. An account can have multiple entities and a billing plan, where " +
-            "proposals and voters are consumed on a monthly quota. Accounts also have an secret API key, to manage entities",
+        btnText: "Elections",
+        bodyTitle: "Easily create variety of Elections",
+        body: "With just a few simple steps, it is very easy to set up everything, from basic surveys to complex voting " +
+            "systems, with single vote, weighted vote or anonymous, just with a simple configuration flag.",
         href: "category/vocdoni-api",
-        code: codeBlockString,
+        code: electionsCodeBlock,
     },
     {
-        btnText: "Entity",
-        bodyTitle: "Entity blahblah",
-        body: "Create an account to start integrating. An account can have multiple entities and a billing plan, where " +
-            "proposals and voters are consumed on a monthly quota. Accounts also have an secret API key, to manage entities",
+        btnText: "Accounts",
+        bodyTitle: "Create an account associated to your organization",
+        body: "Create an account to be used for your organization with multiple customization attributes. This " +
+            "information will be stored and can be used to brand a specific organization election.",
         href: "category/vocdoni-api",
-        code: codeBlockString2,
+        code: accountsCodeBlock,
     },
     {
         btnText: "Census",
-        bodyTitle: "Census blahblah",
-        body: "Create an account to start integrating. An account can have multiple entities and a billing plan, where " +
-            "proposals and voters are consumed on a monthly quota. Accounts also have an secret API key, to manage entities",
+        bodyTitle: "The Census store an election voters addresses",
+        body: "Use existing ERC-20 token as address or create a new one deterministically for each participant. Use " +
+            "anonymous voting capabilities to maintain the election participants anonymous.",
         href: "category/vocdoni-api",
-        code: codeBlockString,
-    },
-    {
-        btnText: "Processes",
-        bodyTitle: "Processes blahblah",
-        body: "Create an account to start integrating. An account can have multiple entities and a billing plan, where " +
-            "proposals and voters are consumed on a monthly quota. Accounts also have an secret API key, to manage entities",
-        href: "category/vocdoni-api",
-        code: codeBlockString2,
+        code: codeBlockCensus,
     },
     {
         btnText: "Votes",
-        bodyTitle: "Votes blahblah",
-        body: "Create an account to start integrating. An account can have multiple entities and a billing plan, where " +
-            "proposals and voters are consumed on a monthly quota. Accounts also have an secret API key, to manage entities",
+        bodyTitle: "Vote easier as ever!",
+        body: "Implement the voting action was never so easy! You can also use vote overwritte to let an account to vote " +
+            "multiple times, verify the vote and much more.",
         href: "category/vocdoni-api",
-        code: codeBlockString,
+        code: voteCodeBlock,
     }
 ];
 
@@ -85,7 +107,7 @@ export default function GetStarted(): JSX.Element {
                 <FakeWindow className={'h-72'}>
                     <TypewriterCodeBlock
                         timeout={1}
-                        language={'bash'}
+                        language={'ts'}
                         className={'text-sm'}>
                         {selected.code}
                     </TypewriterCodeBlock>

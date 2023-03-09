@@ -12,49 +12,49 @@ interface ICard {
 
 const cards: ICard[] = [
     {
-        title: "GETTING STARTED",
-        body: "Deploy an enterprise-ready instance of Hasura in minutes using your container platform of choice.",
-        href: "blah",
-        linkText: "See Hasura Enterprise"
+        title: "SDK",
+        body: "Check the docs for registering an account, creating a voting process, fetch election info, voting to a process and more! ",
+        href: "sdk#prerequisites",
+        linkText: "Review documentation"
     },
     {
-        title: "GETTING STARTED",
-        body: "Deploy an enterprise-ready instance of Hasura in minutes using your container platform of choice.",
-        href: "blah",
-        linkText: "See Hasura Enterprise"
+        title: "DEMO",
+        body: "A live preview for testing the SDK, connect your wallet and start creating an election in less than 10 sec.",
+        href: "https://vocdoni.github.io/vocdoni-sdk/",
+        linkText: "Try it out!"
     },
     {
-        title: "GETTING STARTED",
-        body: "Deploy an enterprise-ready instance of Hasura in minutes using your container platform of choice.",
-        href: "blah",
-        linkText: "See Hasura Enterprise"
+        title: "EXAMPLES",
+        body: "Review examples on how to implement Vocdoni SDK into your react applications.",
+        href: "https://github.com/vocdoni/vocdoni-sdk/tree/main/examples/cra",
+        linkText: "See all examples"
     },
-    {
-        title: "GETTING STARTED",
-        body: "Deploy an enterprise-ready instance of Hasura in minutes using your container platform of choice.",
-        href: "blah",
-        linkText: "See Hasura Enterprise"
-    },
-    {
-        title: "GETTING STARTED",
-        body: "Deploy an enterprise-ready instance of Hasura in minutes using your container platform of choice.",
-        href: "blah",
-        linkText: "See Hasura Enterprise"
-    },
-    {
-        title: "GETTING STARTED",
-        body: "Deploy an enterprise-ready instance of Hasura in minutes using your container platform of choice.",
-        href: "https://link.to",
-        linkText: "See Hasura Enterprise"
-    },
+    // {
+    //     title: "GETTING STARTED",
+    //     body: "Deploy an enterprise-ready instance of Hasura in minutes using your container platform of choice.",
+    //     href: "blah",
+    //     linkText: "See Hasura Enterprise"
+    // },
+    // {
+    //     title: "GETTING STARTED",
+    //     body: "Deploy an enterprise-ready instance of Hasura in minutes using your container platform of choice.",
+    //     href: "blah",
+    //     linkText: "See Hasura Enterprise"
+    // },
+    // {
+    //     title: "GETTING STARTED",
+    //     body: "Deploy an enterprise-ready instance of Hasura in minutes using your container platform of choice.",
+    //     href: "https://link.to",
+    //     linkText: "See Hasura Enterprise"
+    // },
 ]
 
 
-const Card = ({title = '', body='', linkText = '', href = '', n }: { n: number } & ICard) => {
+const Card = ({title = '', body='', linkText = '', href = '' }: ICard) => {
     return (
         <CardBox>
             <a href={href}>
-                <CardTitle>{n}{title}</CardTitle>
+                <CardTitle>{title}</CardTitle>
             </a>
             <CardBody>{body}</CardBody>
             <CardLinkWrapper>
@@ -75,7 +75,6 @@ export default function MultiCards(): JSX.Element {
                 {cards.map((card, i) => (
                     <Card
                         key={i}
-                        n={i}
                         title={card.title}
                         body={card.body}
                         linkText={card.linkText}
@@ -88,7 +87,7 @@ export default function MultiCards(): JSX.Element {
 }
 
 const MainWrapper = styled.div.attrs({
-    className: 'flex flex-col'
+    className: 'flex flex-col gap-20'
 })``;
 
 const Title = styled.h1`
