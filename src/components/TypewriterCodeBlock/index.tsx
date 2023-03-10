@@ -1,5 +1,6 @@
 import React, {useState, useEffect, useRef} from 'react';
 import CodeBlock from '@theme/CodeBlock';
+import styled from "styled-components";
 
 const TypewriterCodeBlock = (
     { language = '', title = '', timeout = 50, className = '', children }
@@ -34,14 +35,21 @@ const TypewriterCodeBlock = (
     }, [children]);
 
     return (
-        <CodeBlock
+        <CustomCodeBlock
             className={className}
             language={language}
             title={title}
+
         >
             {code}
-        </CodeBlock>
+        </CustomCodeBlock>
     );
 };
+
+const CustomCodeBlock = styled(CodeBlock)`
+  & code {
+    padding-top: 0.65rem;
+  }
+`
 
 export default TypewriterCodeBlock;

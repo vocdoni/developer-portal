@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import React, {useState} from "react";
 
 const electionsCodeBlock = `const election = new Election({
-  title: 'My awesome Election!'
+  title: 'My awesome Election!',
   description: 'Voting was never so easy!',
   header: 'https://source.unsplash.com/random',
   streamUri:'https://source.unsplash.com/random',
@@ -37,10 +37,11 @@ const codeBlockCensus = `const census = new PlainCensus()
 // accepts any ethereum-alike addresses
 census.add(address)
 census.add('0x0000000000000000000000000000000000000000')
-const userWallet = VocdoniSDKClient.generateWalletFromData(
-    ['user1', 
-    // is the sha256 of 'test'
-    '9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08'
+const userWallet = 
+    VocdoniSDKClient.generateWalletFromData(
+        ['user1', 
+        // is the sha256 of 'test'
+        '9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08'
 ]);
 `
 
@@ -138,8 +139,7 @@ export default function GetStarted(): JSX.Element {
 
 
 const MainSubsection = styled.div.attrs({
-    className: 'place-content-center w-full mb-8 ' +
-        'md:mx-4'
+    className: 'place-content-center w-full mb-8 md:mx-4 flex-1'
 })`
   max-width: 500px;
 `;
@@ -180,12 +180,11 @@ const TopicsButton = styled.button`
   color: #FFFFFF;
   text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
   border-radius: 50px;
-  
+
   ${props => props.selected ? `
      background: linear-gradient(90deg, rgba(0, 221, 179, 0.8) 0%, #0044FF 100%);
-     border: 1px solid rgba(255, 255, 255, 0.5);
-     box-shadow: inset 0px 2px 2px rgba(255, 255, 255, 0.25);` 
-    : `background: rgba(255, 255, 255, 0.1);
+     box-shadow: inset 0px 2px 2px rgba(255, 255, 255, 0.25);`
+          : `background: rgba(255, 255, 255, 0.1);
       border: 1px solid rgba(255, 255, 255, 0.25);
       backdrop-filter: blur(8px);
       color: rgba(0, 0, 0, 0.5);`}
