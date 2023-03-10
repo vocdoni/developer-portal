@@ -4,8 +4,7 @@ import TypewriterCodeBlock from "../TypewriterCodeBlock";
 import styled from 'styled-components';
 import React from "react";
 
-const codeBlockString = `
-const election = new Election({
+const codeBlockString = `const election = new Election({
   title: 'Election title',
   description: 'Election description',
   header: 'https://source.unsplash.com/random',

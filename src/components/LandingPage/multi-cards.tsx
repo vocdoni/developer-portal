@@ -53,10 +53,12 @@ const cards: ICard[] = [
 const Card = ({title = '', body='', linkText = '', href = '' }: ICard) => {
     return (
         <CardBox>
-            <a href={href}>
-                <CardTitle>{title}</CardTitle>
-            </a>
-            <CardBody>{body}</CardBody>
+            <span>
+                <a href={href}>
+                    <CardTitle>{title}</CardTitle>
+                </a>
+                <CardBody>{body}</CardBody>
+            </span>
             <CardLinkWrapper>
                 <CardLink href={href}>
                     {linkText}
@@ -102,7 +104,7 @@ const CardsWrapper = styled.div.attrs({
 })``;
 
 const CardBox = styled.div.attrs({
-    className: 'max-w-sm p-5 bg-white shadow-md'
+    className: 'max-w-sm p-5 bg-white shadow-md flex flex-col justify-between'
 })`
   transition: background .4s ease-in;
 
@@ -131,7 +133,7 @@ const CardLink = styled.a.attrs({
   font-weight: 700;
   font-size: 16px;
   line-height: 125%;
-  
+
 `;
 
 const CardLinkWrapper  = styled.div.attrs({

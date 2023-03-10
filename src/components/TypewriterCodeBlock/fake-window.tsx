@@ -22,7 +22,7 @@ const Window = styled.div.attrs({className: "rounded drop-shadow-lg"})`
   background-color: #282A36;
 `;
 
-const WindowControls = styled.div.attrs({className: "pl-5 py-1"})`
+const WindowControls = styled.div.attrs({className: "pl-5 py-2"})`
 `;
 
 const WindowContent = styled.div.attrs({className: ""})`
