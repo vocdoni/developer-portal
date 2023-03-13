@@ -89,7 +89,7 @@ export default function MultiCards(): JSX.Element {
 }
 
 const MainWrapper = styled.div.attrs({
-    className: 'flex flex-col gap-20'
+    className: 'flex flex-col lg:gap-20'
 })``;
 
 const Title = styled.h1`

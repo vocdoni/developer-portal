@@ -64,8 +64,8 @@ const Page = styled.div.attrs({})`
 `;
 
 const Section = styled.div.attrs({
-    className: 'flex flex-wrap w-auto sm:flex-column px-4 py-4    ' +
-        'md:pb-24 md:h-screen md:place-content-center md:place-items-center md:min-h-screen',
+    className: 'flex flex-wrap w-auto sm:flex-column px-4 py-4  place-content-center place-items-center' +
+        'lg:pb-24 lg:h-screen lg:place-content-center lg:place-items-center lg:min-h-screen',
 })``;
 
 const GlobalStyle = createGlobalStyle`
