@@ -34,7 +34,7 @@ export default function TopSection(): JSX.Element {
                 </div>
             </MainSubsection>
             <MainSubsection>
-                <FakeWindow className={'h-72'}>
+                <FakeWindow className={'h-72 mt-5'}>
                     <TypewriterCodeBlock
                         timeout={1}
                         language={'typescript'}
@@ -49,8 +49,7 @@ export default function TopSection(): JSX.Element {
 
 
 const MainSubsection = styled.div.attrs({
-    className: 'place-content-center w-full mb-8 ' +
-        'md:mb-0'
+    className: 'lg:place-content-center w-full mb-8 md:mb-0'
 })`
   max-width: 500px;
 `;

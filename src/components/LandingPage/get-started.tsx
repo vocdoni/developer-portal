@@ -99,12 +99,12 @@ export default function GetStarted(): JSX.Element {
     const [selected, setSelected] = useState<ITopics>(topics[0])
 
     return (
-        <>
+        <MainSect>
             <MainSubsection>
                 <MainTitle>
                     Easy way to get started
                 </MainTitle>
-                <FakeWindow className={'h-72 max-w-'}>
+                <FakeWindow className={'h-72 max-lg:hidden'}>
                     <TypewriterCodeBlock
                         timeout={1}
                         language={'ts'}
@@ -132,27 +132,26 @@ export default function GetStarted(): JSX.Element {
                 </Body>
                 <DocsButton href={selected.href}>Docs <BsArrowUpRight /></DocsButton>
             </MainSubsection>
-        </>
+        </MainSect>
     )
 };
 
+const MainSect = styled.div.attrs({
+    className: 'flex flex-col lg:flex-row'
+})``;
 
 const MainSubsection = styled.div.attrs({
-    className: 'place-content-center w-full mb-8 md:mx-4 flex-1'
+    className: 'place-content-center lg:w-full lg:mb-8 md:mx-4 lg:flex-1'
 })`
   max-width: 500px;
 `;
 
-const MainTitle = styled.h1`
-  font-size: 38px;
-  line-height: 125%;
-  color: #000000;
-  font-weight: bold;
-  padding-bottom: 30px;
-`;
+const MainTitle = styled.h1.attrs({
+    className: "text-4xl leading-125 text-black font-bold pb-30"
+})``;
 
 const Body = styled.div.attrs({
-    className: 'flex flex-col gap-4 h-48'
+    className: 'flex flex-col gap-4 lg:h-48'
 })``;
 
 const BodyTitle = styled.div`
