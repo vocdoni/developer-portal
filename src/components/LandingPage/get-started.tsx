@@ -36,7 +36,6 @@ const accountsCodeBlock = ` const account = await client.createAccount({
 const codeBlockCensus = `const census = new PlainCensus()
 // accepts any ethereum-alike addresses
 census.add(address)
-census.add('0x0000000000000000000000000000000000000000')
 const userWallet = 
     VocdoniSDKClient.generateWalletFromData(
         ['user1', 
@@ -105,7 +104,7 @@ export default function GetStarted(): JSX.Element {
                 <MainTitle>
                     Easy way to get started
                 </MainTitle>
-                <FakeWindow className={'h-72'}>
+                <FakeWindow className={'h-72 max-w-'}>
                     <TypewriterCodeBlock
                         timeout={1}
                         language={'ts'}
@@ -115,7 +114,7 @@ export default function GetStarted(): JSX.Element {
                 </FakeWindow>
             </MainSubsection>
             <MainSubsection>
-                <ButtonsWrapper>
+                <ButtonsWrapper >
                     {topics.map((t, i) => {
                         return (
                             <TopicsButton
@@ -153,7 +152,7 @@ const MainTitle = styled.h1`
 `;
 
 const Body = styled.div.attrs({
-    className: 'flex flex-col gap-4'
+    className: 'flex flex-col gap-4 h-48'
 })``;
 
 const BodyTitle = styled.div`
