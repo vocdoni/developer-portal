@@ -50,7 +50,7 @@ const FooterSection = ({title, links}: ISections) => {
             <h4>{title}</h4>
             <div>
                 {links.map((l, i) => (
-                    <><LinkWrapper href={l.href}>{l.title}</LinkWrapper><br/></>
+                    <span key={i}><LinkWrapper href={l.href}>{l.title}</LinkWrapper><br/></span>
                 ))}
             </div>
         </FooterSectionWrapper>
@@ -65,7 +65,7 @@ export const FooterColumns = () => {
                 <PoweredByAragon  height="93px" width="130px" />
             </FooterSectionWrapperLogos>
             {footerColumns.map((s, i) => (
-                <FooterSection title={s.title} links={s.links} />
+                <FooterSection key={i} title={s.title} links={s.links} />
             ))}
         </FooterColumnsWrapper>
     )

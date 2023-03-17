@@ -118,6 +118,7 @@ export default function GetStarted(): JSX.Element {
                     {topics.map((t, i) => {
                         return (
                             <TopicsButton
+                                key={i}
                                 selected={t.btnText === selected.btnText}
                                 onClick={() => setSelected(topics.find(item => item.btnText === t.btnText))}
                             >{t.btnText}</TopicsButton>
