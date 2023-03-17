@@ -1,5 +1,4 @@
 import React from 'react';
-import Layout from '@theme/Layout';
 import styled, { createGlobalStyle } from 'styled-components';
 import TopSection from "../components/LandingPage/top-section";
 import MultiCards from "../components/LandingPage/multi-cards";
@@ -9,34 +8,37 @@ import '../css/navbar.css';
 
 import LandingVector from '@site/static/img/landing/landing-vector.svg'
 import Bottom from "../components/LandingPage/bottom";
+import Layout from "@theme/Layout";
 
 
 export default function Home(): JSX.Element {
     return (
         <>
             <GlobalStyle />
-            <Layout>
-                <VectorWrapper>
-                    <LandingVector  />
-                </VectorWrapper>
-                <Page>
-                    <Section>
-                        <TopSection />
-                    </Section>
-                    <Section>
-                        <MultiCards />
-                    </Section>
-                    <Section>
-                        <GetStarted />
-                    </Section>
-                    {/*<Section>*/}
-                    {/*    <Blog />*/}
-                    {/*</Section>*/}
-                    <Section>
-                        <Bottom />
-                    </Section>
-                </Page>
-            </Layout>
+            <CustomNavbar>
+                <Layout>
+                    <VectorWrapper>
+                        <LandingVector  />
+                    </VectorWrapper>
+                    <Page>
+                        <Section>
+                            <TopSection />
+                        </Section>
+                        <Section>
+                            <MultiCards />
+                        </Section>
+                        <Section>
+                            <GetStarted />
+                        </Section>
+                        {/*<Section>*/}
+                        {/*    <Blog />*/}
+                        {/*</Section>*/}
+                        <Section>
+                            <Bottom />
+                        </Section>
+                    </Page>
+                </Layout>
+            </CustomNavbar>
         </>
     )
 }
@@ -71,5 +73,11 @@ const GlobalStyle = createGlobalStyle`
   }
   body {
     //background: var(--voc-landing-background-gradient);
+  }
+`
+
+const CustomNavbar = styled.span`
+  & .navbar {
+    background: var(--voc-navbar-landing-background-gradient);
   }
 `
