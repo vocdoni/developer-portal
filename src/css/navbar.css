@@ -1,5 +1,6 @@
 .navbar {
-    background: rgba(255, 255, 255, 0.25);
+    /*background: rgba(255, 255, 255, 0.25);*/
+    background: var(--voc-landing-background-gradient);
 }
 .navbar__link {
     font-weight: var(--ifm-font-weight-bold);
