@@ -20,7 +20,6 @@ export default function Home(): JSX.Element {
                     <LandingVector  />
                 </VectorWrapper>
                 <Page>
-                    <NavbarBg />
                     <Section>
                         <TopSection />
                     </Section>
@@ -60,11 +59,10 @@ const VectorWrapper = styled.div`
 const Page = styled.div.attrs({})`
   opacity: 0.7;
   background: var(--voc-landing-background-gradient);
-
 `;
 
 const Section = styled.div.attrs({
-    className: 'flex flex-wrap w-auto sm:flex-column px-4 py-4  place-content-center place-items-center' +
+    className: 'flex flex-wrap w-auto sm:flex-column px-4 py-4 ' +
         'lg:pb-24 lg:h-screen lg:place-content-center lg:place-items-center lg:min-h-screen',
 })``;
 
@@ -73,12 +71,5 @@ const GlobalStyle = createGlobalStyle`
   }
   body {
     //background: var(--voc-landing-background-gradient);
-
   }
-`
-const NavbarBg = styled.div.attrs({})`
-  height: var(--ifm-navbar-height);
-  background: var(--voc-landing-background-gradient);
-  position: relative;
-  top: calc(-1 * var(--ifm-navbar-height));
 `
