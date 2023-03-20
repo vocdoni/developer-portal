@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import React from "react";
 import { BsArrowUpRight } from "react-icons/bs";
-
+import { SectionTitle } from "./common";
 
 interface ICard {
     title: string
@@ -72,7 +72,7 @@ const Card = ({title = '', body='', linkText = '', href = '' }: ICard) => {
 export default function MultiCards(): JSX.Element {
     return (
         <MainWrapper>
-            <Title>Create and integrate<br/> applications quickly and easily.</Title>
+            <SectionTitle>Create and integrate<br/> applications quickly and easily.</SectionTitle>
             <CardsWrapper>
                 {cards.map((card, i) => (
                     <Card
@@ -89,15 +89,8 @@ export default function MultiCards(): JSX.Element {
 }
 
 const MainWrapper = styled.div.attrs({
-    className: 'flex flex-col lg:gap-20'
+    className: 'flex flex-col lg:gap-12'
 })``;
-
-const Title = styled.h1`
-  font-size: 36px;
-  line-height: 125%;
-  color: #000000;
-  font-weight: bold;
-`;
 
 const CardsWrapper = styled.div.attrs({
     className: 'grid md:grid-cols-3 gap-2'

@@ -36,7 +36,7 @@
   --feedback-component-button-size: 3rem;
 
   --voc-landing-background-gradient: linear-gradient(90deg,rgba(231,255,0,0) -0.01%, #00DDB3 100%);
-  --voc-navbar-landing-background-gradient: linear-gradient(90deg, rgba(231, 255, 0, 0) -0.01%, #00DDB3 100%), rgba(255, 255, 255, 0.25);
+  --voc-navbar-landing-background-gradient: linear-gradient(90deg, rgba(231, 255, 0, 0) -0.01%, #00DDB3 200%), rgba(255, 255, 255, 0.25);
 
   --ifm-navbar-shadow: rgba(255, 255, 255, 0.5) 0px 1px 1px 0px;
   --ifm-navbar-search-input-background-color: transparent;

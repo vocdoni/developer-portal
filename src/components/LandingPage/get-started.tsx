@@ -3,33 +3,30 @@ import {FakeWindow} from "../TypewriterCodeBlock/fake-window";
 import TypewriterCodeBlock from "../TypewriterCodeBlock";
 import styled from 'styled-components';
 import React, {useState} from "react";
+import {Paragraph, SectionTitle} from "./common";
 
 const electionsCodeBlock = `const election = new Election({
-  title: 'My awesome Election!',
-  description: 'Voting was never so easy!',
-  header: 'https://source.unsplash.com/random',
-  streamUri:'https://source.unsplash.com/random',
-  endDate: new Date().getTime() + 10000000,
-  census,
-  electionType: {
-    secretUntilTheEnd: false, 
-    anonymous: false,
-  },
+    title: 'My awesome Election!',
+    description: 'Voting was never so easy!',
+    header: 'https://source.unsplash.com/random',
+    endDate: new Date().getTime() + 10000000,
+    census,
+    electionType: {
+        secretUntilTheEnd: false,
+        anonymous: true
+    }
 });
 `;
-const accountsCodeBlock = ` const account = await client.createAccount({
-      account: new Account({
-        languages: ['es'],
+const accountsCodeBlock = `const account = await client.createAccount({
+    account: new Account({
+        languages: ['en', 'ca'],
         name: {
-          ca: 'Associació comunal',
-          default: 'Comunal association',
+          ca: 'Associació civil',
+          default: 'Civil association',
         },
-        description: 'Our association for residents on the town',
-        feed: 'feed',
         avatar: 'avatar',
         header: 'header',
-        logo: 'logo',
-      }),
+        }),
     });
 `
 
@@ -39,16 +36,17 @@ census.add(address)
 const userWallet = 
     VocdoniSDKClient.generateWalletFromData(
         ['user1', 
-        // is the sha256 of 'test'
-        '9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08'
-]);
+        'sha256OfSomething']
+    );
 `
 
 const voteCodeBlock = `(async () => {
-  client.setElectionId(id)
-  // votes "Yes" and "Adult (17-60 yo)"
-  const vote = new Vote([0, 2]);
-  const voteId = await client.submitVote(vote)
+    client.setElectionId(id)
+    // votes "Yes" and "Adult (17-60 yo)"
+    const vote = new Vote([0, 2]);
+    const voteId = await client.submitVote(vote)
+    const votesLeft = await client.votesLeftCount();
+    console.log(votesLeft) // number of times the user can submit his vote
 })();
 `
 
@@ -66,7 +64,7 @@ const topics: ITopics[] = [
         bodyTitle: "Easily create variety of Elections",
         body: "With just a few simple steps, it is very easy to set up everything, from basic surveys to complex voting " +
             "systems, with single vote, weighted vote or anonymous, just with a simple configuration flag.",
-        href: "category/vocdoni-api",
+        href: "/sdk#creating-a-voting-process",
         code: electionsCodeBlock,
     },
     {
@@ -74,7 +72,7 @@ const topics: ITopics[] = [
         bodyTitle: "Create an account associated to your organization",
         body: "Create an account to be used for your organization with multiple customization attributes. This " +
             "information will be stored and can be used to brand a specific organization election.",
-        href: "category/vocdoni-api",
+        href: "/sdk#registering-account",
         code: accountsCodeBlock,
     },
     {
@@ -82,7 +80,7 @@ const topics: ITopics[] = [
         bodyTitle: "The Census store an election voters addresses",
         body: "Use existing ERC-20 token as address or create a new one deterministically for each participant. Use " +
             "anonymous voting capabilities to maintain the election participants anonymous.",
-        href: "category/vocdoni-api",
+        href: "/sdk#creating-a-voting-process",
         code: codeBlockCensus,
     },
     {
@@ -90,7 +88,7 @@ const topics: ITopics[] = [
         bodyTitle: "Vote easier as ever!",
         body: "Implement the voting action was never so easy! You can also use vote overwritte to let an account to vote " +
             "multiple times, verify the vote and much more.",
-        href: "category/vocdoni-api",
+        href: "/sdk#voting-to-a-process",
         code: voteCodeBlock,
     }
 ];
@@ -101,10 +99,10 @@ export default function GetStarted(): JSX.Element {
     return (
         <MainSect>
             <MainSubsection>
-                <MainTitle>
+                <SectionTitle>
                     Easy way to get started
-                </MainTitle>
-                <FakeWindow className={'h-72 max-lg:hidden'}>
+                </SectionTitle>
+                <FakeWindow className={'h-72 w-[480px] max-lg:hidden min-w-[480px] absolute'}>
                     <TypewriterCodeBlock
                         timeout={1}
                         language={'ts'}
@@ -138,18 +136,13 @@ export default function GetStarted(): JSX.Element {
 };
 
 const MainSect = styled.div.attrs({
-    className: 'flex flex-col lg:flex-row'
+    className: 'flex flex-col lg:flex-row justify-start'
 })``;
 
 const MainSubsection = styled.div.attrs({
-    className: 'place-content-center lg:w-full lg:mb-8 md:mx-4 lg:flex-1'
-})`
-  max-width: 500px;
-`;
-
-const MainTitle = styled.h1.attrs({
-    className: "text-4xl leading-125 text-black font-bold pb-30"
+    className: 'max-w-lg place-content-center lg:w-full lg:mb-8 md:mx-4 lg:flex-1'
 })``;
+
 
 const Body = styled.div.attrs({
     className: 'flex flex-col gap-4 lg:h-48'
@@ -161,15 +154,8 @@ const BodyTitle = styled.div`
   line-height: 115%;
 `;
 
-const Paragraph = styled.p`
-  font-size: 16px;
-  line-height: 24px;
-  text-align: left;
-  padding-right: 6rem;
-`;
-
 const ButtonsWrapper = styled.div.attrs({
-    className: 'flex flex-wrap md:justify-between my-6 gap-4 md:gap-1'
+    className: 'flex flex-wrap md:justify-between mt-4 md:mt-16 mb-6 gap-4 md:gap-1'
 })``;
 
 const TopicsButton = styled.button`
