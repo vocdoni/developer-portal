@@ -5,15 +5,16 @@ import Scalable from '@site/static/img/landing/scalable.svg'
 import Verificable from '@site/static/img/landing/verificable.svg'
 import OpenSource from '@site/static/img/landing/open_source.svg'
 import Anonymous from '@site/static/img/landing/anonymous.svg'
+import {Paragraph, SectionTitle} from "./common";
 
 
 export default function Bottom(): JSX.Element {
     return (
         <>
             <MainSubsection>
-                <MainTitle>
+                <SectionTitle>
                     A first generation voting protocol
-                </MainTitle>
+                </SectionTitle>
                 <Paragraph>
                     A completely anonymous voting system that guarantees the availability of the data and a censorship
                     resistant of the data and a communication protocol resistant to censorship.
@@ -44,20 +45,6 @@ const MainSubsection = styled.div.attrs({
   max-width: 500px;
 `;
 
-const MainTitle = styled.h1`
-  font-size: 38px;
-  line-height: 125%;
-  color: #000000;
-  font-weight: bold;
-`;
-
-
-const Paragraph = styled.p`
-  font-size: 16px;
-  line-height: 24px;
-  text-align: left;
-  padding-right: 6rem;
-`
 
 const ImageWrapper = styled.div.attrs({
     className: 'pb-10'

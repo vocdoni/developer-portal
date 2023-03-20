@@ -47,7 +47,6 @@ const VectorWrapper = styled.div`
   width: 100%;
   position: absolute;
   z-index: -1;
-  height: 3000px;
   object-fit: contain;
 
   & > img {
@@ -65,7 +64,7 @@ const Page = styled.div.attrs({})`
 
 const Section = styled.div.attrs({
     className: 'flex flex-wrap w-auto sm:flex-column px-4 py-4 ' +
-        'lg:pb-24 lg:h-screen lg:place-content-center lg:place-items-center lg:min-h-screen',
+        'md:place-content-center md:place-items-center lg:pb-24 lg:h-screen lg:min-h-screen',
 })``;
 
 const GlobalStyle = createGlobalStyle`

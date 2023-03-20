@@ -3,14 +3,18 @@ import {FakeWindow} from "../TypewriterCodeBlock/fake-window";
 import TypewriterCodeBlock from "../TypewriterCodeBlock";
 import styled from 'styled-components';
 import React from "react";
+import {Paragraph} from "./common";
 
 const codeBlockString = `const election = new Election({
-  title: 'Election title',
-  description: 'Election description',
-  header: 'https://source.unsplash.com/random',
-  streamUri:'https://source.unsplash.com/random',
-  endDate: new Date().getTime() + 10000000,
-  census,
+    title: 'My awesome Election!',
+    description: 'Voting was never so easy!',
+    header: 'https://source.unsplash.com/random',
+    endDate: new Date().getTime() + 10000000,
+    census,
+    electionType: {
+        secretUntilTheEnd: false,
+        anonymous: true
+    }
 });
 `
 
@@ -60,13 +64,6 @@ const MainTitle = styled.h1`
   color: #000000;
   font-weight: bold;
 `;
-
-const Paragraph = styled.p`
-  font-size: 16px;
-  line-height: 24px;
-  text-align: left;
-  padding-right: 6rem;
-`
 
 const CTA = styled.button`
   padding: 12px 16px;
