@@ -1924,32 +1924,21 @@ components:
       properties:
         electionId:
           $ref: "#/components/schemas/ElectionId"
-        type:
-          type: string
-          example:
-            - "anonymous open single" # todo(kon): each one of this values have an alternative. Check if this is final format of type
-            - "poll encrypted serial"
+        organizationId:
+          $ref: "#/components/schemas/AccountId"
         status:
           $ref: "#/components/schemas/ElectionStatusInfo"
         startDate:
           $ref: "#/components/schemas/TimeStamp"
         endDate:
           $ref: "#/components/schemas/TimeStamp"
-        creationTime:
-          $ref: "#/components/schemas/TimeStamp"
         voteCount:
           type: integer
           format: int32
           example: 61
-        electionCount:
-          type: integer
-          format: int32
-          example: 0
         finalResults:
           type: boolean
           example: false
-        metadataURL:
-          $ref: "#/components/schemas/IpfsUri"
         result:
           type: array
           items:
@@ -1976,6 +1965,10 @@ components:
             censusURL:
               type: string
               example: ""
+        metadataURL:
+          $ref: "#/components/schemas/IpfsUri"
+        creationTime:
+          $ref: "#/components/schemas/TimeStamp"
         voteMode:
           type: object
           properties:
@@ -2035,6 +2028,48 @@ components:
               type: integer
               format: int32
               example: 10000
+        metadata:
+          $ref: "#/components/schemas/ElectionMetadata"
+    ElectionMetadata:
+      type: object
+      properties:
+        title:
+          $ref: "#/components/schemas/LangString"
+        version:
+          type: string
+          example: "1.1"
+        description:
+          $ref: "#/components/schemas/LangString"
+        media:
+          type: object
+          properties:
+            header:
+              $ref: "#/components/schemas/HttpsUri"
+            streamUri:
+              $ref: "#/components/schemas/HttpsUri"
+        meta:
+          type: object
+          description: "Any object that the user want to add"
+        question:
+          type: object
+          properties:
+            choices:
+              type: array
+              items:
+                $ref: '#/components/schemas/ChoiceMetadata'
+            description:
+              $ref: "#/components/schemas/LangString"
+            title:
+              $ref: "#/components/schemas/LangString"
+        results:
+          type: object
+          properties:
+            aggregation:
+              type: string
+              example: "discrete-counting"
+            display:
+              type: string
+              example: "multiple-question"
     AbiEncoded:
       type: string
       example: "0xc5d2460186f712c22036657397736cf4be8d59b29f70c03609b802000000000000000000000000000000000012c220366573977..."
@@ -2306,7 +2341,6 @@ components:
               $ref: "#/components/schemas/AccountMedia"
             meta:
               type: object
-
     AccountMedia:
       type: object
       properties:
@@ -2316,7 +2350,6 @@ components:
           $ref: "#/components/schemas/IpfsUri"
         logo:
           $ref: "#/components/schemas/IpfsUri"
-
     AccountTransfersResponse:
       type: "object"
       properties:
