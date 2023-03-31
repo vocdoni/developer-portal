@@ -344,6 +344,37 @@ paths:
               schema:
                 $ref: "#/components/schemas/OrganizationsListResponse"
 
+  /chain/organizations/filter/page/{page}:
+    post:
+      summary: "Filtered organizations list"
+      description: |-
+        Filter organization by its id: 
+        
+        ```json
+        {
+          "organizationId": "hexString",
+        }
+        ```
+        
+        See [list organizations](organizations-list)
+      operationId: organizationListFiltered
+      tags:
+        - Chain
+      parameters:
+        - $ref: "#/components/parameters/paginatorParameter"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/OrganizationFilterRequest"
+      responses:
+        "200":
+          description: "It return a list of organizations id"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/OrganizationsListResponse"
+
   ####################################################
   ## /chain/blocks                                  ##
   ####################################################
@@ -2470,6 +2501,13 @@ components:
           type: array
           items:
             $ref: "#/components/schemas/ElectionSummary"
+    OrganizationFilterRequest:
+      type: object
+      properties:
+        organizationId:
+          type: string
+          description: Full organization Id
+          example: "5f33f8d8"
     OrganizationsListResponse:
       type: object
       properties:
