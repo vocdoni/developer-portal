@@ -503,7 +503,7 @@ paths:
           If the number of votes exceeds this limit, the vote transaction will fail (overwrite votes does not count).
         
           See `MaxCensusSize` attribute on the VocdoniSDK  to add the maximum census size to a single election. Will 
-          throw an error if is superior than the alllowed on the Vochain: `Max census size for the election is greater 
+          throw an error if is superior than the allowed on the Vochain: `Max census size for the election is greater 
           than allowed size`.
       operationId: info
       tags:
@@ -749,6 +749,42 @@ paths:
         - Elections
       parameters:
         - $ref: "#/components/parameters/paginatorParameter"
+      responses:
+        "200":
+          description: "It return a list of organizations id"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ElectionSummaryArray"
+
+  /elections/filter/page/{page}:
+    post:
+      summary: "Filtered elections list"
+      description: |-
+        Return a filtered elections list, the available filters have to be sent on the request body. Available are: 
+        
+        ```json
+        {
+          "organizationId": "hexString",
+          "electionId": "hexString",
+          "withResults": false,
+          "status": "READY",
+        }
+        ```
+        
+        `electionId` can be partial. 
+        
+        See [elections list](elections-list)
+      operationId: electionsFiltered
+      tags:
+        - Elections
+      parameters:
+        - $ref: "#/components/parameters/paginatorParameter"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ElectionFilterRequest"
       responses:
         "200":
           description: "It return a list of organizations id"
@@ -1575,7 +1611,7 @@ components:
       description: "Status of the election"
       required: true
       schema:
-        $ref: '#/components/schemas/ElectionStatusFilter'
+        $ref: '#/components/schemas/ElectionStatus'
     accountIdParameter:
       name: accountId
       in: path
@@ -1875,12 +1911,12 @@ components:
           type: integer
           format: int32
           example: 1
-    ElectionStatusFilter:
+    ElectionStatus:
       type: string
-      enum: [ ready, ended, canceled, paused, results ]
+      enum: [ READY, ENDED, CANCELED, PAUSED, RESULTS ]
       description: >
         Election status enum
-      example: "active"
+      example: "READY"
     ElectionSummaryArray:
       type: object
       properties:
@@ -1928,6 +1964,23 @@ components:
         anonymous:
           type: boolean
           example: false
+    ElectionFilterRequest:
+      type: object
+      properties:
+        organizationId:
+          type: string
+          description: Full organization Id
+          example: "5f33f8d8"
+        electionId:
+          type: string
+          description: Partial election ID in hex format
+          example: "a2b7"
+        withResults:
+          type: boolean
+          description: Can be used for quering only those processes that already have results (open process or finished with revealed keys).
+          example: false
+        status:
+          $ref: "#/components/schemas/ElectionStatus"
     # it differs from ElectionStatus that is used as filter parameter
     ElectionStatusInfo:
       type: string
@@ -2130,7 +2183,7 @@ components:
         electionId:
           $ref: "#/components/schemas/ElectionId"
         status:
-          $ref: "#/components/schemas/ElectionStatusFilter"
+          $ref: "#/components/schemas/ElectionStatus"
         startDate:
           $ref: "#/components/schemas/TimeStampCustom"
         endDate:
