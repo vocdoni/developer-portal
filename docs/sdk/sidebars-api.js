@@ -5,6 +5,7 @@ module.exports = {
       "label": "Class",
       "items": [
         "sdk/AccountAPI",
+        "sdk/API",
         "sdk/CensusAPI",
         "sdk/ChainAPI",
         "sdk/CspAPI",
