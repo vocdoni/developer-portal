@@ -11,13 +11,13 @@ export const FooterOfFooter = () => {
             <div>
                 Copyright © {currentYear} Vocdoni, Inc. All rights reserved.
             </div>
-            <div>
-                Terms of Use & Privacy Polity
-            </div>
+            {/*<div>*/}
+            {/*    Terms of Use & Privacy Polity*/}
+            {/*</div>*/}
             <IconsWrapper>
-                <RiDiscordFill size={"1.75em"} />
-                <RiTwitterFill size={"1.75em"} />
-                <RiLinkedinBoxFill size={"1.75em"} />
+                <RiDiscordFill href={"https://t.co/1JrIv5eVPF"} size={"1.75em"} />
+                <RiTwitterFill href={"https://twitter.com/vocdoni"} size={"1.75em"} />
+                {/*<RiLinkedinBoxFill href={} size={"1.75em"} />*/}
             </IconsWrapper>
         </FFWrapper>
     )
