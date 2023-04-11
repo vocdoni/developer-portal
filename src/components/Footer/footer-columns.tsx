@@ -16,17 +16,17 @@ const footerColumns: ISections[] = [
     {
         title: 'Company',
         links: [
-            { title: 'About', href:"#"},
-            { title: 'How we work', href:"#"},
-            { title: 'Blog', href:"#"},
+            { title: 'About', href:"https://docs.vocdoni.io/about-us/vision.html"},
+            { title: 'How we work', href:"https://docs.vocdoni.io/about-us/how-we-work.html"},
+            { title: 'Blog', href:"https://blog.aragon.org/vocdoni/"},
         ]
     },
     {
         title: 'Developer',
         links: [
-            { title: 'Developer Portal', href:"#"},
-            { title: 'Vocdoni API', href:"#"},
-            { title: 'Vocdoni APP', href:"#"},
+            { title: 'Developer Portal', href:"https://developer.vocdoni.io/"},
+            { title: 'Vocdoni API', href:"https://vocdoni.io/api"},
+            { title: 'Vocdoni APP', href:"https://vocdoni.app/"},
         ]
     },
     {
@@ -44,13 +44,26 @@ const footerColumns: ISections[] = [
     },
 ]
 
+const Soon = ({children} : {children:string}) => {
+    return (
+        <LinkSoon>
+            <div>{children}</div>
+            <SoonBadge>Soon</SoonBadge>
+
+        </LinkSoon>
+    )
+}
+
 const FooterSection = ({title, links}: ISections) => {
     return (
         <FooterSectionWrapper>
             <h4>{title}</h4>
             <div>
                 {links.map((l, i) => (
-                    <span key={i}><LinkWrapper href={l.href}>{l.title}</LinkWrapper><br/></span>
+                    <div key={i}>
+                        {l.soon ? <Soon>{l.title}</Soon>: <LinkWrapper href={l.href}>{l.title}</LinkWrapper>}
+                        <br/>
+                    </div>
                 ))}
             </div>
         </FooterSectionWrapper>
@@ -90,5 +103,15 @@ const FooterColumnsWrapper = styled.div.attrs({
 const LinkWrapper = styled.a.attrs({
     className:
         'text-sm text-black'
+})``
+
+const LinkSoon = styled.div.attrs({
+    className:
+        'text-sm text-gray-600 cursor-wait flex'
+})``
+
+const SoonBadge = styled.div.attrs({
+    className:
+        '-mt-1 ml-1 text-gray-600 text-xs'
 })``
 
