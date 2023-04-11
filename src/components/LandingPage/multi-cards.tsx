@@ -29,24 +29,6 @@ const cards: ICard[] = [
         href: "https://github.com/vocdoni/vocdoni-sdk/tree/main/examples/cra",
         linkText: "See all examples"
     },
-    // {
-    //     title: "GETTING STARTED",
-    //     body: "Deploy an enterprise-ready instance of Hasura in minutes using your container platform of choice.",
-    //     href: "blah",
-    //     linkText: "See Hasura Enterprise"
-    // },
-    // {
-    //     title: "GETTING STARTED",
-    //     body: "Deploy an enterprise-ready instance of Hasura in minutes using your container platform of choice.",
-    //     href: "blah",
-    //     linkText: "See Hasura Enterprise"
-    // },
-    // {
-    //     title: "GETTING STARTED",
-    //     body: "Deploy an enterprise-ready instance of Hasura in minutes using your container platform of choice.",
-    //     href: "https://link.to",
-    //     linkText: "See Hasura Enterprise"
-    // },
 ]
 
 
