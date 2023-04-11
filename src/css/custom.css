@@ -148,6 +148,7 @@ li {
   }
 }
 
+
 /* Center navbar items */
 .navbar__inner {
   margin: 0 auto;
@@ -155,6 +156,12 @@ li {
 
 .navbar__item svg{
   display: inline;
+}
+
+@media (min-width: 768px) {
+  .navbar__inner {
+    padding: 0 2.5rem;
+  }
 }
 
 a {
