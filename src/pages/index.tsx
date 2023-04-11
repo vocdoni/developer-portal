@@ -3,7 +3,6 @@ import styled, { createGlobalStyle } from 'styled-components';
 import TopSection from "../components/LandingPage/top-section";
 import MultiCards from "../components/LandingPage/multi-cards";
 import GetStarted from "../components/LandingPage/get-started";
-import Blog from "../components/LandingPage/blog";
 import '../css/navbar.css';
 
 import LandingVector from '@site/static/img/landing/landing-vector.svg'
@@ -14,7 +13,6 @@ import Layout from "@theme/Layout";
 export default function Home(): JSX.Element {
     return (
         <>
-            <GlobalStyle />
             <CustomNavbar>
                 <Layout>
                     <VectorWrapper>
@@ -30,9 +28,6 @@ export default function Home(): JSX.Element {
                         <Section>
                             <GetStarted />
                         </Section>
-                        {/*<Section>*/}
-                        {/*    <Blog />*/}
-                        {/*</Section>*/}
                         <Section>
                             <Bottom />
                         </Section>
@@ -66,14 +61,6 @@ const Section = styled.div.attrs({
     className: 'flex flex-wrap w-auto sm:flex-column px-4 py-4 ' +
         'md:place-content-center md:place-items-center lg:pb-24 lg:h-screen lg:min-h-screen',
 })``;
-
-const GlobalStyle = createGlobalStyle`
-  #__docusaurus {
-  }
-  body {
-    //background: var(--voc-landing-background-gradient);
-  }
-`
 
 const CustomNavbar = styled.span`
   & .navbar {
