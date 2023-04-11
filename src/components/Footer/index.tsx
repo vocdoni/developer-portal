@@ -20,5 +20,5 @@ const Hr = styled.div.attrs({
 
 const FooterWrapper = styled.div.attrs({
     className:
-        'bg-white'
+        'bg-white md:px-10'
 })``
