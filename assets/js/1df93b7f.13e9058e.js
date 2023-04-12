@@ -83,7 +83,7 @@
 `,ve=a.ZP.div.attrs({})`
   opacity: 0.7;
   background: var(--voc-landing-background-gradient);
-`,de=a.ZP.div.attrs({className:"flex flex-wrap w-auto sm:flex-column px-4 py-4 md:place-content-center md:place-items-center lg:pb-24 lg:h-screen lg:min-h-screen"})``,ue=a.ZP.span`
+`,de=a.ZP.div.attrs({className:"flex flex-wrap w-auto sm:flex-column px-4 py-4 md:place-content-center md:place-items-center lg:pb-24 lg:h-5/6"})``,ue=a.ZP.span`
   & .navbar {
     background: var(--voc-navbar-landing-background-gradient);
   }
