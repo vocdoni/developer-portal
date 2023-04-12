@@ -2068,6 +2068,9 @@ components:
             censusURL:
               type: string
               example: ""
+            maxCensusSize:
+              type: number
+              example: 3
         metadataURL:
           $ref: "#/components/schemas/IpfsUri"
         creationTime:
