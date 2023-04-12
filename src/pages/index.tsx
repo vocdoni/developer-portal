@@ -59,7 +59,7 @@ const Page = styled.div.attrs({})`
 
 const Section = styled.div.attrs({
     className: 'flex flex-wrap w-auto sm:flex-column px-4 py-4 ' +
-        'md:place-content-center md:place-items-center lg:pb-24 lg:h-screen lg:min-h-screen',
+        'md:place-content-center md:place-items-center lg:pb-24 lg:h-5/6'
 })``;
 
 const CustomNavbar = styled.span`
