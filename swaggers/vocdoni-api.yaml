@@ -33,6 +33,9 @@ info:
     
     - [**Votes**](votes): All the information related to the vote issued by a participant in a vote, you can check the validity of 
     the vote, consult your information and send a vote.
+    
+    
+    Backend error messages list are defined here: https://github.com/vocdoni/vocdoni-node/blob/master/api/errors.go
 servers:
   - url: https://api-dev.vocdoni.net/v2/
 tags:
