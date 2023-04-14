@@ -194,12 +194,6 @@ census.add('0x0000000000000000000000000000000000000000')
 })();
 ~~~
 
-Note you can also use compressed public keys when adding them to the census:
-
-~~~ts
-census.add(computePublicKey(Wallet.createRandom().publicKey, true));
-~~~
-
 After you got all the addresses for your census, you may as well create the
 process instance:
 
@@ -435,6 +429,16 @@ option (or options) being voted:
 ~~~
 
 ### Other SDK functionalities
+
+#### Generate a random Wallet
+
+You can use the `generateRandomWallet` function to generate a random Wallet and assign it to the client.
+This function returns the private key of the Wallet.
+
+~~~ts
+const privateKey = client.generateRandomWallet();
+console.log(privateKey) // the private key of the wallet
+~~~
 
 #### Generate deterministic Wallet from data
 
