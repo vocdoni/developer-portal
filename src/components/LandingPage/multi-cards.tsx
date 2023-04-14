@@ -53,25 +53,44 @@ const Card = ({title = '', body='', linkText = '', href = '' }: ICard) => {
 
 export default function MultiCards(): JSX.Element {
     return (
-        <MainWrapper>
-            <SectionTitle>Create and integrate<br/> applications quickly and easily.</SectionTitle>
-            <CardsWrapper>
-                {cards.map((card, i) => (
-                    <Card
-                        key={i}
-                        title={card.title}
-                        body={card.body}
-                        linkText={card.linkText}
-                        href={card.href}
-                    />
-                ))}
-            </CardsWrapper>
-        </MainWrapper>
+        <>
+            <TitleWrapper>
+                <MainSubsection>
+                    <SectionTitle>Create and integrate<br/> applications quickly and easily.</SectionTitle>
+                </MainSubsection>
+                {/*todo(kon): this is used to align the title on under the other ones. To find a better solution*/}
+                <MainSubsection>
+                </MainSubsection>
+            </TitleWrapper>
+            <MainWrapper>
+                <CardsWrapper>
+                    {cards.map((card, i) => (
+                        <Card
+                            key={i}
+                            title={card.title}
+                            body={card.body}
+                            linkText={card.linkText}
+                            href={card.href}
+                        />
+                    ))}
+                </CardsWrapper>
+            </MainWrapper>
+        </>
     )
 }
 
 const MainWrapper = styled.div.attrs({
     className: 'flex flex-col lg:gap-12'
+})``;
+
+const MainSubsection = styled.div.attrs({
+    className: 'max-w-lg place-content-center lg:w-full lg:mb-8 md:mx-4 lg:flex-1 lg:whitespace-nowrap lg:w-[500px]'
+})`
+  //width: 500px;
+`;
+
+const TitleWrapper = styled.div.attrs({
+    className: 'flex flex-col lg:flex-row justify-start'
 })``;
 
 const CardsWrapper = styled.div.attrs({
