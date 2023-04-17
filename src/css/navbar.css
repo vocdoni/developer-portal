@@ -1,5 +1,5 @@
 .navbar {
-    background: rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255);
 }
 .navbar__link {
     font-weight: var(--ifm-font-weight-bold);
@@ -17,4 +17,20 @@
 .navbar kbd {
     border: 1px solid var(--ifm-navbar-search-input-color);
     box-shadow: inset 0 -1px 0 var(--ifm-navbar-search-input-color);
+}
+
+
+/* Center navbar items */
+.navbar__inner {
+    margin: 0 auto;
+}
+
+.navbar__item svg{
+    display: inline;
+}
+
+@media (min-width: 768px) {
+    .navbar__inner {
+        padding: 0 2.5rem;
+    }
 }
