@@ -30,12 +30,10 @@ const sidebars = {
       type: "category",
       label: "Vocdoni",
       link: {
-        type: "generated-index",
-        title: "Vocdoni API",
-        description:
-          "The Vocdoni API (API) would be the main entry point for using the underlying Vocdoni Open Stack.",
-        slug: "/category/vocdoni-api",
+        type: "doc",
+        id: 'vocdoni-api/vocdoni-api',
       },
+      collapsed: false,
       items: require("./docs/vocdoni-api/sidebar.js"),
     },
   ],

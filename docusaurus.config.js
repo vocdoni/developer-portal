@@ -120,7 +120,7 @@ const config = {
             {
               position: "left",
               label: "API",
-              to: "/category/vocdoni-api",
+              to: "/vocdoni-api/vocdoni-api",
               className: "plausible-event-name=Header+API",
             },
             {
