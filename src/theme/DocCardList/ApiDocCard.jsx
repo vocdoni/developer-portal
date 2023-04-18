@@ -4,7 +4,7 @@ import clsx from "clsx";
 import {useDocById} from "@docusaurus/theme-common/internal";
 import styles from "./styles.module.css";
 import React from "react";
-
+import ReactMarkdown from 'react-markdown';
 
 function CardContainer({href, children}) {
     return (
@@ -16,7 +16,7 @@ function CardContainer({href, children}) {
     );
 }
 
-export const ApiDocCard = ({item}: {item: any}) =>{
+export const ApiDocCard = ({item}) =>{
     const { description } = useDocById(item.docId ?? undefined);
     return(
         <CardContainer href={item.href}>
@@ -24,13 +24,15 @@ export const ApiDocCard = ({item}: {item: any}) =>{
                 <a
                     className={'menu__link'}
                     style={{paddingLeft: 0, backgroundColor: "transparent"}}
-                >{item.label}</a>
+                >{item.label}</div>
                 {description && (
-                    <p
-                        className={clsx('text--truncate', styles.cardDescription)}
-                        title={description}>
-                        {description}
-                    </p>
+                        <ReactMarkdown
+                            className={clsx('text--truncate', styles.cardDescription)}
+                            components={{
+                                p: ({node, ...props}) => <p className={'text--truncate'} {...props} />
+                            }}
+                        >
+                            {description}</ReactMarkdown>
                 )}
             </div>
         </CardContainer>)
