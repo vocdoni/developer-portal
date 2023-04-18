@@ -1,6 +1,5 @@
 import Link from "@docusaurus/Link";
 import clsx from "clsx";
-// @ts-ignore
 import {useDocById} from "@docusaurus/theme-common/internal";
 import styles from "./styles.module.css";
 import React from "react";
@@ -20,8 +19,8 @@ export const ApiDocCard = ({item}) =>{
     const { description } = useDocById(item.docId ?? undefined);
     return(
         <CardContainer href={item.href}>
-            <div className={`${item.className}`}>
-                <a
+            <div className={`${item.className}`} style={{minHeight: "90px"}}>
+                <div
                     className={'menu__link'}
                     style={{paddingLeft: 0, backgroundColor: "transparent"}}
                 >{item.label}</div>
