@@ -52,6 +52,7 @@ module.exports = {
       "type": "category",
       "label": "Global",
       "items": [
+        "sdk/ProcessResult",
         "sdk/IElectionParameters",
         "sdk/AccountMetadata",
         "sdk/ElectionMetadata",
