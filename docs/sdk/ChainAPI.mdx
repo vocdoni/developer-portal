@@ -12,7 +12,7 @@ class ChainAPI
 
 <div className="container">
   <div className="row mb-2"><div className="col col--12"><strong>Methods</strong></div></div>
-  <div className="row"><div className="col col--12"><a href="#info">info</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#txInfo">txInfo</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#submitTx">submitTx</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#txList">txList</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#organizationCount">organizationCount</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#organizationList">organizationList</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#blockByHeight">blockByHeight</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#validatorsList">validatorsList</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#blockByHash">blockByHash</a><span className="badge badge--info margin-left--sm">static</span></div></div>
+  <div className="row"><div className="col col--12"><a href="#info">info</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#txInfo">txInfo</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#txInfoByBlock">txInfoByBlock</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#submitTx">submitTx</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#txList">txList</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#organizationCount">organizationCount</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#organizationList">organizationList</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#blockByHeight">blockByHeight</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#validatorsList">validatorsList</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#blockByHash">blockByHash</a><span className="badge badge--info margin-left--sm">static</span></div></div>
 </div>
 
 ## constructor
@@ -49,12 +49,28 @@ Fetches info about the blockchain status.
 
 Fetches information about a transaction from the blockchain.
 
-**Returns**: Promise&lt;IChainGetTransactionReferenceResponse&gt;
+**Returns**: Promise&lt;IChainTxReference&gt;
 
 |PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
 |:---:|:---:|:---:|:---:|:---:|
 |url|string|||API endpoint URL|
 |txHash|string|||The transaction hash which we want to retrieve the info from|
+
+### txInfoByBlock {#txInfoByBlock}
+
+<div>
+  <span className="badge badge--info">static</span>
+</div>
+
+Fetches information about a transaction by its containing block an index on the block.
+
+**Returns**: Promise&lt;Tx&gt;
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|url|string|||API endpoint URL|
+|blockHeight|string|||Block with the containing transaction|
+|txIndex|string|||Index on the block|
 
 ### submitTx {#submitTx}
 
