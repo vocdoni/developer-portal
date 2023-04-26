@@ -159,29 +159,14 @@ paths:
                     example: 1
                   hash:
                     $ref: "#/components/schemas/TransactionHash"
-    get:
-      summary: "List transactions"
-      description: |-
-        Get paginated list of transactions. To get transaction information use 
-        [/chain/transaction/{blockHeight}/{txIndex}](transaction-by-block-index). Where transactionIndex is the index of
-        the transaction on the containing block.
-      operationId: transactionsList
-      tags:
-        - Chain
-      responses:
-        "200":
-          description: "It return a list of transaction reference"
-          content:
-            application/json:
-              schema:
-                $ref: "#/components/schemas/TransactionList"
   /chain/transactions/page/{page}:
     get:
       summary: "Paginated transactions list"
-      description: |-
-        Get paginated list of transactions. To get transaction information use 
-        [/chain/transaction/{blockHeight}/{txIndex}](transaction-by-block-index). Where transactionIndex is the index of
-        the transaction on the containing block.
+      description: |- 
+        Get paginated list of transactions reference. 
+        
+        To get full transaction information use  [/chain/transaction/{blockHeight}/{txIndex}](transaction-by-block-index). 
+        Where transactionIndex is the index of the transaction on the containing block.
       operationId: transactionsListPaginated
       tags:
         - Chain
