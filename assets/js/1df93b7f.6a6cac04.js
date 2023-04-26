@@ -7,14 +7,14 @@
   & code {
     padding-top: 0.65rem;
   }
-`,v=e=>{let{language:t="",title:n="",timeout:a=50,className:c="",children:r}=e;const[s,i]=(0,l.useState)(""),o=(0,l.useRef)(r);return(0,l.useEffect)((()=>{if(a>0){let e=0;const t=()=>{0===e?(i(r.charAt(e)),e++,setTimeout(t,a)):e<r.length&&o.current===r&&(i((t=>t+r.charAt(e))),e++,setTimeout(t,a))};t()}else i(r);o.current=r}),[r]),l.createElement(m,{className:c,language:t,title:n},s)},d=a.ZP.p.attrs({className:"text-base leading-6 text-left md:pr-24 pr-0"})``,u=a.ZP.h1.attrs({className:"text-4xl leading-125 text-black font-bold lg:pb-12"})``;function p(){return l.createElement(l.Fragment,null,l.createElement(g,null,l.createElement(f,null,"Develop secure & private digital voting apps with few lines of code"),l.createElement(d,null,"Designed for developers, abstracting the complexities involved in secure and private voting protocols. Create AGMs, elections and proposals with ease, multiple election types, check voter eligibility and much more!"),l.createElement(d,null,"Try it out!"),l.createElement("div",null,l.createElement(b,null,"Get Started"),l.createElement(Z,{href:"https://chat.vocdoni.io/"},l.createElement(c.KpZ,null)," chat.vocdoni.io "))),l.createElement(g,null,l.createElement(r,{className:"h-72 mt-5"},l.createElement(v,{timeout:1,language:"typescript",className:"text-sm"},"const election = new Election({\n    title: 'My awesome Election!',\n    description: 'Voting was never so easy!',\n    header: 'https://source.unsplash.com/random',\n    endDate: new Date().getTime() + 10000000,\n    census,\n    electionType: {\n        secretUntilTheEnd: false,\n        anonymous: true\n    }\n});\n"))))}const g=a.ZP.div.attrs({className:"lg:place-content-center w-full mb-8 md:mb-0 md:mt-10"})`
+`,v=e=>{let{language:t="",title:n="",timeout:a=50,className:c="",children:r}=e;const[s,i]=(0,l.useState)(""),o=(0,l.useRef)(r);return(0,l.useEffect)((()=>{if(a>0){let e=0;const t=()=>{0===e?(i(r.charAt(e)),e++,setTimeout(t,a)):e<r.length&&o.current===r&&(i((t=>t+r.charAt(e))),e++,setTimeout(t,a))};t()}else i(r);o.current=r}),[r]),l.createElement(m,{className:c,language:t,title:n},s)},d=a.ZP.p.attrs({className:"text-base leading-6 text-left md:pr-24 pr-0"})``,u=a.ZP.h1.attrs({className:"text-4xl leading-125 text-black font-bold lg:pb-12"})``;function p(){return l.createElement(l.Fragment,null,l.createElement(g,null,l.createElement(f,null,"Develop secure & private digital voting apps with few lines of code"),l.createElement(d,null,"Designed for developers, abstracting the complexities involved in secure and private voting protocols. Create AGMs, elections and proposals with ease, multiple election types, check voter eligibility and much more!"),l.createElement(d,null,"Try it out!"),l.createElement("div",null,l.createElement(b,{href:"/sdk"},"Get Started"),l.createElement(Z,{href:"https://chat.vocdoni.io/"},l.createElement(c.KpZ,null)," chat.vocdoni.io "))),l.createElement(g,null,l.createElement(r,{className:"h-72 mt-5"},l.createElement(v,{timeout:1,language:"typescript",className:"text-sm"},"const election = new Election({\n    title: 'My awesome Election!',\n    description: 'Voting was never so easy!',\n    header: 'https://source.unsplash.com/random',\n    endDate: new Date().getTime() + 10000000,\n    census,\n    electionType: {\n        secretUntilTheEnd: false,\n        anonymous: true\n    }\n});\n"))))}const g=a.ZP.div.attrs({className:"lg:place-content-center w-full mb-8 md:mb-0 md:mt-10"})`
   max-width: 500px;
 `,f=a.ZP.h1`
   font-size: 38px;
   line-height: 125%;
   color: #000000;
   font-weight: bold;
-`,b=a.ZP.button`
+`,b=a.ZP.a`
   padding: 12px 16px;
   gap: 8px;
 
@@ -22,6 +22,7 @@
   background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(142,0,255,0.25) 40%, rgba(0,221,179,0.85) 100%);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   backdrop-filter: blur(8px);
+  color: rgb(28, 30, 33);
 
   /* Note: backdrop-filter has minimal browser support */
   border-radius: 8px;
