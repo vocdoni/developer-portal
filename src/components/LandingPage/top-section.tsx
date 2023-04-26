@@ -33,7 +33,7 @@ export default function TopSection(): JSX.Element {
                     Try it out!
                 </Paragraph>
                 <div>
-                    <CTA>Get Started</CTA>
+                    <CTA href="/sdk">Get Started</CTA>
                     <DiscordLink href={"https://chat.vocdoni.io/"}><BsDiscord /> chat.vocdoni.io </DiscordLink>
                 </div>
             </MainSubsection>
@@ -65,7 +65,7 @@ const MainTitle = styled.h1`
   font-weight: bold;
 `;
 
-const CTA = styled.button`
+const CTA = styled.a`
   padding: 12px 16px;
   gap: 8px;
 
@@ -73,6 +73,7 @@ const CTA = styled.button`
   background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(142,0,255,0.25) 40%, rgba(0,221,179,0.85) 100%);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   backdrop-filter: blur(8px);
+  color: rgb(28, 30, 33);
 
   /* Note: backdrop-filter has minimal browser support */
   border-radius: 8px;
