@@ -133,12 +133,6 @@ const config = {
                   className: "plausible-event-name=Header+API",
                 },
                 {
-                  type: "doc",
-                  docId: "vochain/run-a-node",
-                  label: "Vochain",
-                  // className: "plausible-event-name=Header+API",
-                },
-                {
                   label: "API",
                   to: "/vocdoni-api/vocdoni-api",
                   className: "plausible-event-name=Header+API",
