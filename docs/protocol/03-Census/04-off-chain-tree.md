@@ -59,10 +59,10 @@ Vocdoni stores a hash of public keys instead of public keys themselves to provid
 
 ### Creating & publishing the census
 
-Any organization which does not wish to use the [on-chain census mechanism](02-on-chain.md) is required to generate and publish a census Merkle Tree in order to host a voting process on the [Voting Blockchain](services/vochain.md). The method for managing and filtering users and generating the Merkle Tree, however, is up to integrators of the Voting Protocol. For users of [Vocdoni.app](https://vocdoni.app), this is handled automatically by the client layer. The census module is further documented on the [census integration](../../integration/census/general.md) page.
+Any organization which does not wish to use the [on-chain census mechanism](on-chain) is required to generate and publish a census Merkle Tree in order to host a voting process on the Voting Blockchain. The method for managing and filtering users and generating the Merkle Tree, however, is up to integrators of the Voting Protocol. The census module is further documented on the census integration page.
 
 ### Accessing the census
 
-The Gateways deployed by Vocdoni and third parties constantly monitor the [Process Smart Contract](smart-contracts/process.md). Upon identifying a new process, they will fetch and import that process' Census Merkle Tree. At this point, users can use any available Gateway to check whether they are eligible for voting and then fetch their Merkle Proof (this as well may be handled by the client implementation)
+The Gateways deployed by Vocdoni and third parties constantly monitor the Process Smart Contract. Upon identifying a new process, they will fetch and import that process' Census Merkle Tree. At this point, users can use any available Gateway to check whether they are eligible for voting and then fetch their Merkle Proof (this as well may be handled by the client implementation)
 
 Users with a valid Merkle Proof can efficiently show that their key belongs to a large census by providing a very small fraction of the whole tree.
