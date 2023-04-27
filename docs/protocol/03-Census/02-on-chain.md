@@ -2,7 +2,7 @@
 
 There are two types of census origins: Those who depend on a list of public keys maintained off-chain and those dependent on the status of the Ethereum blockchain at a given point in time.
 
-The second case, referred to as an on-chain census, enables the weighted set of eligible voters for a process to be derived from the token holder balances for some ERC-20 Ethereum token. This is possible through the use of [Ethereum Storage Proofs](../smart-contracts/storage-proofs.md).
+The second case, referred to as an on-chain census, enables the weighted set of eligible voters for a process to be derived from the token holder balances for some ERC-20 Ethereum token. This is possible through the use of Ethereum Storage Proofs.
 
 ### ERC-20 Token Storage Proofs
 
