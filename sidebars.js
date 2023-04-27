@@ -24,6 +24,10 @@ const sidebars = {
       collapsed: false,
       items: require("./docs/sdk/sidebars-api").api
     },
+    {
+      type: 'doc',
+      id:  'sdk/changelog',
+    },
   ],
   vocdoniApi: [
     {
