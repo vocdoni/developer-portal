@@ -1,6 +1,6 @@
 # Process Data Schemes
 
-As stated before, governance processes span across the [Process Smart Contract](/architecture/smart-contracts/process), the [Vochain](/architecture/services/vochain) and distributed file storage, providing the human readable metadata. 
+As stated before, governance processes span across the Process Smart Contract, the Vochain and distributed file storage, providing the human readable metadata. 
 
 Along the different stages of a governance process, the following data schemes are used:
 
@@ -8,13 +8,12 @@ Along the different stages of a governance process, the following data schemes a
 - [Vote Envelope](#vote-envelope)
 - [Vote Package](#vote-package)
 - [Results](#results)
-<!-- - [Support multi-layer vote encryption](#support-multi-layer-vote-encryption) -->
 
 ## Process Metadata
 
 The creation of this data structure is critical. Multiple checks should be in place to ensure that the data is coherent (well formatted, all relevant locales present, etc).
 
-The Process Metadata defines the human readable information and should not be confused with the [Process Parameters](/architecture/smart-contracts/process.html#contract-structs) in the Smart Contract, which define how the process should behave.
+The Process Metadata defines the human readable information and should not be confused with the Process Parameters in the Smart Contract, which define how the process should behave.
 
 The metadata of a process is represented as follows:
 
@@ -68,7 +67,7 @@ The metadata of a process is represented as follows:
 }
 ```
 
-The `results` fields are informational only. Regardless of the chosen `aggregation` or `display`, the scrutiny is the same for all cases. However, these fields help the UI components to interpret and display the results according to the [ballot protocol](/architecture/data-schemes/ballot-protocol)
+The `results` fields are informational only. Regardless of the chosen `aggregation` or `display`, the scrutiny is the same for all cases. However, these fields help the UI components to interpret and display the results according to the [ballot protocol](/protocol/ballot)
 
 ## Vote Envelope
 
@@ -161,7 +160,7 @@ Contains the actual votes and is part of the Vote Envelope.
 
 ## Results
 
-Requests to the Results API will return an Array of number arrays, following the [Ballot Protocol](/architecture/data-schemes/ballot-protocol). They will contain a bi-dimensional array of integers, aggregating the values currently stored on the Vochain.
+Requests to the Results API will return an Array of number arrays, following the [Ballot Protocol](protocol/ballot). They will contain a bi-dimensional array of integers, aggregating the values currently stored on the Vochain.
 
 The interpretation of these values is left to the Client apps, and is determined by the `results.aggregation` and `results.display` fields of the Process Metadata, listed above.
 

@@ -10,9 +10,9 @@ The metadata of an entity provides human readable content, featuring names, desc
 
 ## JSON schema
 
-To fetch the metadata of an entity, client applications are expected to fetch the value of the [ENS Text Record](/architecture/smart-contracts/entity-resolver.html#text-record-storage) `vnd.vocdoni.meta`, which contains a [Content URI](/architecture/protocol/data-origins.html#content-uri).
+To fetch the metadata of an entity, client applications are expected to fetch the value of the ENS Text Record `vnd.vocdoni.meta`, which contains a Content URI.
 
-The [Content URI](/architecture/protocol/data-origins.html#content-uri) is expected to point to a JSON file, conforming to the following schema:
+The Content URI is expected to point to a JSON file, conforming to the following schema:
 
 ```json
 {
@@ -52,11 +52,6 @@ The [Content URI](/architecture/protocol/data-origins.html#content-uri) is expec
   "censusServiceManagedEntities": [ <EntityReference>, ... ]  // Unused, subject to revision
 }
 ```
-
-**Sequence diagrams:**
-
-- [Set Entity metadata](/architecture/sequence-diagrams.html#set-entity-metadata)
-- [Entity subscription](/architecture/sequence-diagrams.html#entity-subscription)
 
 
 #### Register
@@ -105,7 +100,7 @@ The body of the POST request submitted to `url` will contain a JSON body like:
 ̣}
 ```
 
-As this all happens through [Gateway requests](/architecture/protocol/json-api.html#authentication), `signature` is computed from the stringified JSON of `request`, where its keys are sorted alphabetically.
+As this all happens through Gateway requests, `signature` is computed from the stringified JSON of `request`, where its keys are sorted alphabetically.
 
 The response from the backend should look like like:
 
