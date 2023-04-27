@@ -26,6 +26,6 @@ Technical details for off-chain CSP census can be found at [Off-Chain CSP Census
 
 ## Off-Chain Tree Based Census (Merkle Tree)
 
-An off-chain tree census allows organizations to centrally manage the set of members who can vote on any given process. Organizations can generate the Census Merkle Tree itself with the help of the [Census Service](../services/census-service.md), but they are responsible for manually generating a list of voters. [Vocdoni.app](https://vocdoni.app) currently provides a CSV-based census mechanism.
+An off-chain tree census allows organizations to centrally manage the set of members who can vote on any given process. Organizations can generate the Census Merkle Tree itself with the help of the Census Service, but they are responsible for manually generating a list of voters. [Vocdoni.app](https://vocdoni.app) currently provides a CSV-based census mechanism.
 
 Technical details for off-chain tree census can be found at [Off-Chain Tree Census](off-chain-tree).
