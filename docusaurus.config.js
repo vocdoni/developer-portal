@@ -4,6 +4,8 @@
 const lightCodeTheme = require("prism-react-renderer/themes/dracula");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const { DOCUSAURUS_VERSION } = require("@docusaurus/utils");
+const math = require('remark-math');
+const katex = require('rehype-katex');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -39,6 +41,8 @@ const config = {
           sidebarPath: require.resolve("./sidebars.js"),
           docLayoutComponent: "@theme/DocPage",
           docItemComponent: "@theme/ApiItem", // Derived from docusaurus-theme-openapi
+          remarkPlugins: [math],
+          rehypePlugins: [katex],
         },
         blog: false,
         theme: {
@@ -327,6 +331,13 @@ const config = {
     {
       href: "https://use.fontawesome.com/releases/v5.11.0/css/all.css",
       type: "text/css",
+    },
+    {
+      href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
+      type: 'text/css',
+      integrity:
+          'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
+      crossorigin: 'anonymous',
     },
   ],
 };
