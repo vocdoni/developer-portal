@@ -24,9 +24,9 @@ const config = {
   },
 
   scripts: [
-      {
-        src: 'https://plsbl-proxy.vocdoni.net/js/script.tagged-events.outbound-links.js', defer: true, 'data-domain': 'developer.vocdoni.io', 'api-host': 'https://plsbl-proxy.vocdoni.net'
-      }
+    {
+      src: 'https://plsbl-proxy.vocdoni.net/js/script.tagged-events.outbound-links.js', defer: true, 'data-domain': 'developer.vocdoni.io', 'api-host': 'https://plsbl-proxy.vocdoni.net'
+    }
   ],
 
   presets: [
@@ -114,25 +114,41 @@ const config = {
               type: "doc",
               docId: "get-started/intro",
               position: "left",
-              label: "Intro",
+              label: "Get Started",
               className: "plausible-event-name=Header+Introduction",
             },
             {
-              position: "left",
-              label: "API",
-              to: "/vocdoni-api/vocdoni-api",
-              className: "plausible-event-name=Header+API",
-            },
-            {
-              type: 'doc',
-              docId: 'sdk/sdk',
+              type: 'dropdown',
+              label: 'Reference',
               position: 'left',
-              label: 'SDK',
-              className: "plausible-event-name=Header+SDK",
+              items: [
+                {
+                  type: "doc",
+                  docId: "protocol/overview",
+                  label: "Protocol",
+                  className: "plausible-event-name=Header+API",
+                },
+                {
+                  type: "doc",
+                  docId: "vochain/run-a-node",
+                  label: "Vochain",
+                  // className: "plausible-event-name=Header+API",
+                },
+                {
+                  label: "API",
+                  to: "/vocdoni-api/vocdoni-api",
+                  className: "plausible-event-name=Header+API",
+                },
+                {
+                  type: 'doc',
+                  docId: 'sdk/sdk',
+                  label: 'SDK',
+                  className: "plausible-event-name=Header+SDK",
+                },
+              ]
             },
             {
               href: "https://dev.explorer.vote",
-              docId: 'sdk/sdk',
               position: 'left',
               label: 'Explorer',
             },
@@ -257,7 +273,7 @@ const config = {
             },
             // template: "api.mustache", // Customize API MDX with mustache template
             downloadUrl:
-              "https://raw.githubusercontent.com/vocdoni/developer-portal/main/swaggers/vocdoni-api.yaml",
+                "https://raw.githubusercontent.com/vocdoni/developer-portal/main/swaggers/vocdoni-api.yaml",
           },
         },
       }
