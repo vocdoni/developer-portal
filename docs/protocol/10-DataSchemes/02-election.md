@@ -1,21 +1,21 @@
-# Process Data Schemes
+# Election Data Schemes
 
-As stated before, governance processes span across the Process Smart Contract, the Vochain and distributed file storage, providing the human readable metadata. 
+As stated before, governance elections span across the Election Smart Contract, the Vochain and distributed file storage, providing the human readable metadata. 
 
-Along the different stages of a governance process, the following data schemes are used:
+Along the different stages of a governance election, the following data schemes are used:
 
-- [Process metadata](#process-metadata)
+- [Election metadata](#election-metadata)
 - [Vote Envelope](#vote-envelope)
 - [Vote Package](#vote-package)
 - [Results](#results)
 
-## Process Metadata
+## Election Metadata
 
 The creation of this data structure is critical. Multiple checks should be in place to ensure that the data is coherent (well formatted, all relevant locales present, etc).
 
-The Process Metadata defines the human readable information and should not be confused with the Process Parameters in the Smart Contract, which define how the process should behave.
+The Election Metadata defines the human readable information and should not be confused with the Election Parameters in the Smart Contract, which define how the election should behave.
 
-The metadata of a process is represented as follows:
+The metadata of a election is represented as follows:
 
 ```json
 {
@@ -71,7 +71,7 @@ The `results` fields are informational only. Regardless of the chosen `aggregati
 
 ## Vote Envelope
 
-The Vote Envelope contains a (possibly encrypted) Vote Package and provides details to prove that the incoming vote is valid. Some fields may be optional depending on the process `mode` and `envelopeType`.
+The Vote Envelope contains a (possibly encrypted) Vote Package and provides details to prove that the incoming vote is valid. Some fields may be optional depending on the election `mode` and `envelopeType`.
 
 ##### When `envelopeType.ANONYMOUS` is enabled
 
@@ -82,10 +82,10 @@ An anonymous Vote Envelope features the proccess ID, the ZK Proof, a nonce to pr
 
 ```json
 {
-    "processId": "0x1234567890...",  // The process for which the vote is casted
+    "electionId": "0x1234567890...",  // The election for which the vote is casted
     "proof": "0x1234...",  // ZK Proof
     "nonce": "1234567890",  // Unique number per vote attempt, so that replay attacks can't reuse this payload
-    "nullifier": "0x1234...",   // Hash of the private key + processId
+    "nullifier": "0x1234...",   // Hash of the private key + electionId
     "encryptionKeyIndexes": [0, 1, 2, 3, 4],  // (optional) On encrypted votes, contains the (sorted) indexes of the keys used to encrypt
     "votePackage": "base64-vote-package"  // base64(jsonString) or base64( encrypt(jsonString) )
 }
@@ -93,13 +93,13 @@ An anonymous Vote Envelope features the proccess ID, the ZK Proof, a nonce to pr
 
 The `nullifier` uniquely identifies the vote in the blockchain and it is computed as follows: 
 
-`nullifier = keccak256(bytes(hex(addr(signature))) + bytes(hex(processId)))`
+`nullifier = keccak256(bytes(hex(addr(signature))) + bytes(hex(electionId)))`
 
 -->
 
 ##### When `envelopeType.ANONYMOUS` is disabled
 
-A signed (non-anonymous) Vote Envelope features the process ID, the Census Merkle Proof of the user, a nonce to prevent replay attacks, the index of the encryption keys used, a Base64 representation of the Vote Package and the user's signature.
+A signed (non-anonymous) Vote Envelope features the election ID, the Census Merkle Proof of the user, a nonce to prevent replay attacks, the index of the encryption keys used, a Base64 representation of the Vote Package and the user's signature.
 
 In order to guarantee 100% reproduceability of the signature, the Vote Envelope is encoded as a Protobuf model and serialized into a byte array. This byte array is then signed and both fields are sent via a `SignedTx` model to a Gateway. 
 
@@ -108,10 +108,10 @@ In order to guarantee 100% reproduceability of the signature, the Vote Envelope 
 
 message VoteEnvelope {
         bytes nonce = 1;  // Unique number per vote attempt, so that replay attacks can't reuse this payload
-        bytes processId = 2;  // The process for which the vote is cast
+        bytes electionId = 2;  // The election for which the vote is cast
         Proof proof = 3;  // One of ProofGraviton, ProofIden3, ProofEthereumStorage, ProofEthereumAccount, or ProofCA
         bytes votePackage = 4;   // JSON string of the Vote Package, encoded as bytes. It may be encrypted.
-        bytes nullifier = 5;  // Hash of the private key + processId (optional, depending on the type)
+        bytes nullifier = 5;  // Hash of the private key + electionId (optional, depending on the type)
 
         repeated uint32 encryptionKeyIndexes = 6; // On encrypted votes, contains the (sorted) indexes of the keys used to encrypt
 }
@@ -162,6 +162,6 @@ Contains the actual votes and is part of the Vote Envelope.
 
 Requests to the Results API will return an Array of number arrays, following the [Ballot Protocol](protocol/ballot). They will contain a bi-dimensional array of integers, aggregating the values currently stored on the Vochain.
 
-The interpretation of these values is left to the Client apps, and is determined by the `results.aggregation` and `results.display` fields of the Process Metadata, listed above.
+The interpretation of these values is left to the Client apps, and is determined by the `results.aggregation` and `results.display` fields of the Election Metadata, listed above.
 
 
