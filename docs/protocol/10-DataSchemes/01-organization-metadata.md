@@ -1,16 +1,12 @@
-# Entity Metadata
+# Organization Metadata
 
-The metadata of an entity is represented as a [JSON file](#json-schema) that conforms to a specific schema. This data is typically retrieved using a P2P storage system like IPFS.
+The metadata of an organization is represented as a [JSON file](#json-schema) that conforms to a specific schema. This data is typically retrieved using a P2P storage system like IPFS.
 
-The metadata of an entity provides human readable content, featuring names, descriptions, images, the list of available processes and more.
-
-- [Entity Metadata](#entity-metadata)
-  - [JSON schema](#json-schema)
-      - [Register](#register)
+The metadata of an organization provides human readable content, featuring names, descriptions, images, the list of available processes and more.
 
 ## JSON schema
 
-To fetch the metadata of an entity, client applications are expected to fetch the value of the ENS Text Record `vnd.vocdoni.meta`, which contains a Content URI.
+To fetch the metadata of an organization, client applications are expected to fetch the value of the ENS Text Record `vnd.vocdoni.meta`, which contains a Content URI.
 
 The Content URI is expected to point to a JSON file, conforming to the following schema:
 
@@ -43,13 +39,13 @@ The Content URI is expected to point to a JSON file, conforming to the following
   
   "actions": [ <ActionSchema>, ... ], // Unused, subject to revision
 
-  "bootEntities": [ <EntityReference>, ... ],  // Unused, subject to revision
+  "bootEntities": [ <OrganizationReference>, ... ],  // Unused, subject to revision
 
-  "fallbackBootNodeEntities": [ <EntityReference>, ... ],  // Unused, subject to revision
+  "fallbackBootNodeEntities": [ <OrganizationReference>, ... ],  // Unused, subject to revision
   
-  "trustedEntities": [ <EntityReference>, ... ],  // Unused, subject to revision
+  "trustedEntities": [ <OrganizationReference>, ... ],  // Unused, subject to revision
   
-  "censusServiceManagedEntities": [ <EntityReference>, ... ]  // Unused, subject to revision
+  "censusServiceManagedEntities": [ <OrganizationReference>, ... ]  // Unused, subject to revision
 }
 ```
 
@@ -88,7 +84,7 @@ The body of the POST request submitted to `url` will contain a JSON body like:
   "request": {
     "method": "register",
     "actionKey": "sign-up",
-    "entityId": "0xaabbccdd...",
+    "organizationId": "0xaabbccdd...",
     "firstName": "John",
     "lastName:": "Snow",
     "dateOfBirth": "2020-02-19T10:09:19.738Z",
