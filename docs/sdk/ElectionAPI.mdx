@@ -121,5 +121,5 @@ Return list of all elections in the chain
 |organizationId|string|✔️|{}|Search by partial organizationId|
 |electionId|string|||Search by partial electionId|
 |withResults|boolean|||Return elections with results or live results|
-|status|APIElectionStatus|||Search by election status|
+|status|Exclude&lt;AllElectionStatus, (ElectionStatus.ONGOING\|ElectionStatus.UPCOMING)&gt;|||Search by election status|
 
