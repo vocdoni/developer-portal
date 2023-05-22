@@ -139,6 +139,7 @@ style Creation fill:#EBAE9A,stroke:#333,stroke-width:2px
 Creation -.-> Ready
 Creation-.->Paused
 Ready <--> Paused
+Paused-->Ended
 Ready-->Ended
 Ready-->Canceled
 Ended-->Results
@@ -178,12 +179,9 @@ Results are represented as a matrix of numbers such as `[ [1,2], [0,1] ]` which 
 + for the first question, the first option received 1 vote and the second option 2 votes
 + for the second question, the first option received 0 votes and the second option 1 vote
 
-Currently, the results computation is not part of the blockchain state logic, due to its potential resources cost (especially for large elections). To mitigate this issue, we introduced a special set of nodes called `Oracles` that are responsible for computing the results offchain and sending the digested results via an on-chain transaction.
+The computation of results is intricately woven into the fabric of blockchain logic. In this setup, each node within the network independently calculates the results and subsequently commits to the prevailing state. Should a node incorrectly evaluate the election results, it risks alienating itself from the network consensus, thereby impairing its continued participation.
 
-The Gateway nodes will also compute the results locally, so the end user can either trust the Gateway to which they are connected or use the list of Oracles. 
-
-Verifiability is guaranteed, since every end user may fetch the list of votes of an election from the blockchain state and reproduce the tally locally.
-
+Moreover, the system ensures absolute verifiability. Every end user possesses the capability to retrieve the comprehensive list of votes related to a specific election from the blockchain state, facilitating local replication of the tally. This accessibility further solidifies the credibility of the election results, fostering trust within the network.
 
 ### 2.6 Transactions and fees
 
@@ -194,23 +192,21 @@ Transactions may have a fee that the sender needs to cover from its own balance.
 The following list shows the transactions:
 
 #### Organization accounts
-+ CreateAccount
-+ SendTokens
-+ CollectFaucet
-+ NewProcess
-+ SetProcessStatus
-+ SetAccountInfoURI
-+ SetProcessCensus
-+ SetProcessQuestionIndex
-+ AddDelegateForAccount
-+ DelDelegateForAccount
++ CreateAccount: create a new account in the blockchain, identified by an Ethereum compatible address
++ SendTokens: send tokens from to another account of the blockchain
++ CollectFaucet: collect a faucet code, provided and signed by an existing account
++ NewProcess: create a new election
++ SetProcessStatus: set the election status (see election lifecycle)
++ SetAccountInfoURI: set the external info URI for the account (containing account metadata)
++ SetProcessCensus: update the election census (only if dynamic census is enabled)
++ AddDelegateForAccount: add a delegate to the account
++ DelDelegateForAccount: delete a delegate from the account
 
 #### Election participants
-+ Vote
++ Vote: cast a vote to an existing election
 
-#### Oracles
-+ RegisterKey
-+ SetProcessResults
+#### Validators
++ RegisterKey: register a new encryption key for the election
 
 
 # More information
