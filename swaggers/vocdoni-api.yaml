@@ -524,6 +524,9 @@ paths:
           See `MaxCensusSize` attribute on the VocdoniSDK  to add the maximum census size to a single election. Will 
           throw an error if is superior than the allowed on the Vochain: `Max census size for the election is greater 
           than allowed size`.
+        
+        `networkCapacity`  indicates how many votes per block is the blockchain supposed to achieve. As bigger the 
+         capacity as cheaper the elections.
       operationId: info
       tags:
         - Chain
@@ -811,6 +814,35 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/ElectionSummaryArray"
+
+
+  /elections/price:
+    get:
+      summary: "Calculate election price"
+      description: |-
+        Election Price API endpoint for calculating the price of an election.
+
+        It takes a JSON object with the 5 election parameters that are required for calculating the price.
+      operationId: electionPrice
+      tags:
+        - Elections
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ElectionPriceRequest"
+      responses:
+        "200":
+          description: "It return a list of organizations id"
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  price:
+                    type: number
+                    format: int32
+                    example: 61
 
   ####################################################
   ## /accounts/                                      ##
@@ -1850,6 +1882,10 @@ components:
         validatorCount:
           type: integer
           example: 4
+        networkCapacity:
+          type: number
+          format: int64
+          example: 2000
         voteCount:
           type: integer
           example: 843
@@ -2499,6 +2535,27 @@ components:
           type: string
           description: Full organization Id
           example: "5f33f8d8"
+    ElectionPriceRequest:
+      type: object
+      properties:
+        maxCensusSize:
+          type: number
+          format: int32
+          example: 5000
+        electionBlocks:
+          type: number
+          format: int32
+          example: 158
+        encryptedVotes:
+          type: boolean
+          example: false
+        anonymousVotes:
+          type: boolean
+          example: false
+        maxVoteOverwrite:
+          type: number
+          format: int32
+          example: 1
     OrganizationsListResponse:
       type: object
       properties:
