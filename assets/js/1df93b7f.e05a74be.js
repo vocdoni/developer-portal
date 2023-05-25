@@ -76,12 +76,12 @@
   position: absolute;
   z-index: -1;
   object-fit: contain;
+  height: 2500px;
 
-  & > img {
-    left: 24.69%;
-    right: -8.06%;
-    bottom: 55.48%;
-    top: 0%;
+  & > svg {
+    position: absolute;
+    right: 0;
+    top: 0;
   }
 `,ue=a.ZP.div.attrs({})`
   opacity: 0.7;
