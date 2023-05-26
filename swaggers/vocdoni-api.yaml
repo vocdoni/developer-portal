@@ -2610,9 +2610,14 @@ components:
                     - +PGgANm072y2kmljHhGUZ7cLL3KOXGhyMYOvG3bGE7JNfheglqg+C1iDGUrFO0V9DbhNwsTngYePTcJE3/fT68TmteKgnQ2FWiXIuGrXK+0tvYdCnHzgZ2KFY8qiaJrdNY2kzC2ggMEQaBJLXMy8cKDZs7tjfBN30rUdT5cq6PIjxhIMCO2AgKC193R4QX6e1SQd29VxDKfHbjou9eerWmoDnUsYBy/T6ICAgKAlLBgMqhnYyoP4jeYLcdEEO2A0/rPRjMwBA/b13r7L4KDSNz/51bOu0hO2RFyj4TpdI669J57c5Cx4/0YwSMqjUYCAgICA
                     - 658gXcgKKPPIVy8XiNBECfdA7BmMbyB7EhTDfhmW97D7iolKlUUTTisOwE0=
     TxInfoResponse:
-      # todo: implement more tx types!
-      oneOf:
-        - $ref: "#/components/schemas/TxVote"
+      type: object
+      properties:
+        tx:
+          # todo: implement more tx types!
+          oneOf:
+            - $ref: "#/components/schemas/TxVote"
+        txInfo:
+          $ref: "#/components/schemas/TransactionReferenceObject"
     VoteSummary:
       type: object
       properties:
