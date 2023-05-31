@@ -59,6 +59,7 @@ module.exports = {
         "sdk/checkValidAccountMetadata",
         "sdk/checkValidElectionMetadata",
         "sdk/getHex",
+        "sdk/areEqualHexStrings",
         "sdk/allSettled",
         "sdk/promiseAny"
       ]
