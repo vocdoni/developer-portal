@@ -295,6 +295,23 @@ After a few seconds of creating it, you should be able to check it on
 [our explorer][vochain explorer] (or the [dev one][dev vochain explorer] if
 you're using the development environment).
 
+### Other election types
+
+#### Quadratic voting
+
+Here is a [full working example][quadratic voting example] of how to create a quadratic voting election.
+More information can be found in the [documentation][quadratic voting documentation].
+
+#### Approval voting
+
+Here is a [full working example][approval voting example] of how to create an approval voting election.
+More information can be found in the [documentation][approval voting documentation].
+
+#### Ranked voting
+
+Here is a [full working example][ranked voting example] of how to create a ranked voting election.
+More information can be found in the [documentation][ranked voting documentation].
+
 ### Fetching election info
 
 You can always access a election information and metadata using `fetchElection`:
@@ -551,6 +568,12 @@ This SDK is licensed under the [GNU Affero General Public License v3.0][license]
 [examples]: https://github.com/vocdoni/vocdoni-sdk/blob/main/examples
 [example-cra]: https://github.com/vocdoni/vocdoni-sdk/blob/main/examples/cra
 [example-esm]: https://github.com/vocdoni/vocdoni-sdk/blob/main/examples/esm
+[quadratic voting example]: https://github.com/vocdoni/vocdoni-sdk/blob/main/examples/typescript/src/quadratic.ts
+[quadratic voting documentation]: https://developer.vocdoni.io/protocol/ballot#quadratic-voting
+[approval voting example]: https://github.com/vocdoni/vocdoni-sdk/blob/main/examples/typescript/src/approval.ts
+[approval voting documentation]: https://developer.vocdoni.io/protocol/ballot#multiquestion
+[ranked voting example]: https://github.com/vocdoni/vocdoni-sdk/blob/main/examples/typescript/src/ranked.ts
+[ranked voting documentation]: https://developer.vocdoni.io/protocol/ballot#linear-weighted-choice
 [license]: https://github.com/vocdoni/vocdoni-sdk/blob/main/LICENSE
 [devportal]: https://developer.vocdoni.io/sdk
 [builddocs]: https://github.com/vocdoni/vocdoni-sdk/blob/main/docs/README.md
