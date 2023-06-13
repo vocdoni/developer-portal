@@ -817,7 +817,7 @@ paths:
 
 
   /elections/price:
-    get:
+    post:
       summary: "Calculate election price"
       description: |-
         Election Price API endpoint for calculating the price of an election.
@@ -2237,84 +2237,24 @@ components:
           $ref: "#/components/schemas/LangString"
         title:
           $ref: "#/components/schemas/LangString"
+    ElectionKeyArray:
+      type: array
+      items:
+        type: object
+        properties:
+          index:
+            type: number
+            example: 1
+          key:
+            type: string
+            example: e2e9e94fd2922c61e2535e10a6f760e3e8694d994b398aa4f8e24b6a1a222422
     ElectionKeysResponse:
       type: object
       properties:
-        electionId:
-          $ref: "#/components/schemas/ElectionId"
-        status:
-          $ref: "#/components/schemas/ElectionStatus"
-        startDate:
-          $ref: "#/components/schemas/TimeStampCustom"
-        endDate:
-          $ref: "#/components/schemas/TimeStampCustom"
-        voteCount:
-          type: number
-          example: 0
-        finalResults:
-          type: boolean
-          example: false
-        electionCount:
-          type: number
-          example: 0
-        metadataURL:
-          $ref: "#/components/schemas/IpfsUri"
-        creationTime:
-          $ref: "#/components/schemas/TimeStamp"
-        voteMode:
-          type: object
-          properties:
-            serial:
-              type: boolean
-              example: false
-            anonymous:
-              type: boolean
-              example: false
-            encryptedVotes:
-              type: boolean
-              example: false
-            uniqueValues:
-              type: boolean
-              example: false
-            costFromWeight:
-              type: boolean
-              example: false
-        electionMode:
-          type: object
-          properties:
-            autoStart:
-              type: boolean
-              example: false
-            interruptible:
-              type: boolean
-              example: false
-            dynamicCensus:
-              type: boolean
-              example: false
-            encryptedMetaData:
-              type: boolean
-              example: false
-            preRegister:
-              type: boolean
-              example: false
-        tallyMode:
-          type: object
-          properties:
-            maxCount:
-                type: number
-                example: 0
-            maxValue:
-                type: number
-                example: 0
-            maxVoteOverwrites:
-                type: number
-                example: 0
-            maxTotalCost:
-                type: number
-                example: 0
-            costExponent:
-                type: number
-                example: 0
+        publicKeys:
+          $ref: "#/components/schemas/ElectionKeyArray"
+        privateKeys:
+          $ref: "#/components/schemas/ElectionKeyArray"
     ElectionScrutinizeResponse:
       type: object
       properties:
