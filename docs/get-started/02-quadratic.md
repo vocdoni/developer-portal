@@ -69,14 +69,42 @@ Therefore, to cast a vote, you can use the following method:
 client.submitVote(new Vote([2, 3]));
 ```
 
-This approach calculates the cost of each vote based on the costExponent, for example, allocating 2 credits for option 0 
-and 3 credits for option 1:
+This approach calculates the cost of each vote based on the costExponent, for example, allocating 2 votes for option 0 
+will consume 4 credits (2^2 = 4 credits) and 3 votes for option 1 will consume 9 credits (3^2 = 9 credits), with a 
+total of 13 (4 + 9) credits spent:
+
+The formula (in this case) is like:
 
 ```
+Votes | Credits
+1² = 1
 2² = 4
 3² = 9
-Total 13 credits spent
+4² = 16
 ```
 
 ## Results interpretation
 
+Let's imagine a scenario where we have 10 voters and each of them casts the same vote `[2, 3]`.
+
+The election results are presented as a bi-dimensional array:
+
+```
+[ 
+    [ '20' ], [ '30' ] 
+]
+```
+
+The first array position `[ '20' ]` and the second `[ '30' ]` represent the sum of votes cast for option one and option 
+two, respectively. In this instance, each voter assigned two votes to option one and three votes to option two.
+
+Given that there are 10 voters and each voted the same way, the sum of all the votes is as follows:
+
+- For option one `([ '20' ])`: Each of the 10 voters gave two votes, leading to a total of 20 votes.
+- For option two `([ '30' ])`: Each voter gave three votes, leading to a total of 30 votes.
+
+Remember, this interpretation assumes that all voters have used the same voting pattern. The results may vary 
+considerably when each voter assigns their votes differently based on their own preferences. Moreover, under the 
+quadratic voting system, while it is possible to cast more votes for a preferred option, it also becomes exponentially 
+more costly to do so, providing a self-balancing mechanism that aims to accurately reflect the strength of voters 
+preferences.
