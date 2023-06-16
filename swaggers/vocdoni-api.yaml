@@ -387,6 +387,28 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/BlockInfo"
+  /chain/blocks/{height}/transactions/page/{page}:
+    get:
+      summary: "Block transactions"
+      description: "Get transactions registered on a block"
+      operationId: blockTransactions
+      tags:
+        - Chain
+      parameters:
+        - name: height
+          in: path
+          description: "Block height"
+          required: true
+          schema:
+            $ref: '#/components/schemas/BlockHeight'
+        - $ref: "#/components/parameters/paginatorParameter"
+      responses:
+        "200":
+          description: "Full block information"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/BlockInfo"
 
   /chain/blocks/hash/{hash}:
     get:
@@ -1788,6 +1810,17 @@ components:
         signature:
           type: string
           example: "R/bPxbDLcsKBqDS31Ibbse1lw2f61IpgrPqTuwRskH9AELTwIJ0dGiJ3jL29NWILu5kR0LDv+/83zkQLqNuiCA=="
+    BlockTransactions:
+      type: object
+      properties:
+        blockNumber:
+          type: number
+          example: 52200,
+        transactionCount:
+          type: number
+          example: 100,
+        transactions:
+          $ref: "#/components/schemas/TransactionList"
     BlockInfo:
       type: object
       properties:
