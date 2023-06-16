@@ -537,6 +537,21 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/ChainInfo"
+  /chain/info/electionPriceFactors:
+    get:
+      summary: "Election price factors"
+      description: |-
+        Give information about the election price factors in order to create predictions about the cost of the elections
+      operationId: electionPriceFactors
+      tags:
+        - Chain
+      responses:
+        "200":
+          description: "Price factors"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/PriceFactors"
   ####################################################
   ## /elections/                                     ##
   ####################################################
@@ -1841,6 +1856,39 @@ components:
     Base64String:
       type: string
       example: "<Base64 string>"
+    PriceFactors:
+      type: object
+      properties:
+        basePrice:
+          type: number
+          example: 5
+        capacity:
+          type: number
+          example: 2000
+        factors:
+          type: object
+          properties:
+            k1:
+              type: number
+              example: 0.002,
+            k2:
+              type: number
+              example: 0.0005,
+            k3:
+              type: number
+              example: 0.005,
+            k4:
+              type: number
+              example: 10,
+            k5:
+              type: number
+              example: 3,
+            k6:
+              type: number
+              example: 0.0008,
+            k7:
+              type: number
+              example: 200
     ChainInfo:
       type: object
       properties:
