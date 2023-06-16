@@ -451,6 +451,31 @@ paths:
                   height:
                     $ref: '#/components/schemas/BlockHeight'
 
+  /chain/blockToDate/{height}:
+    get:
+      summary: "Estimate date by block height"
+      description: "Estimates date by a given block height."
+      operationId: dateFromBlock
+      tags:
+        - Chain
+      parameters:
+        - name: height
+          in: path
+          description: "Block height"
+          required: true
+          schema:
+            $ref: '#/components/schemas/BlockHeight'
+      responses:
+        "200":
+          description: "It return estimated date"
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  height:
+                    $ref: '#/components/schemas/TimeStampCustom'
+
   /chain/validators:
     get:
       summary: "Get Validators"
