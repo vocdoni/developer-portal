@@ -312,6 +312,30 @@ More information can be found in the [documentation][approval voting documentati
 Here is a [full working example][ranked voting example] of how to create a ranked voting election.
 More information can be found in the [documentation][ranked voting documentation].
 
+### Other election functionalities
+
+#### Estimate election cost
+
+This is a fast function (most times will resolve automatically) which allows to estimate a election price in tokens:
+
+~~~ts
+(async () => {
+  const price = await client.estimateElectionCost(election) // Should be an UnpublishedElection
+  console.log(price) // shows the estimation price
+})();
+~~~
+
+#### Calculate the real election cost
+
+This function returns the exact election price in tokens:
+
+~~~ts
+(async () => {
+  const price = await client.calculateElectionCost(election) // Should be an UnpublishedElection
+  console.log(price) // shows the real price
+})();
+~~~
+
 ### Fetching election info
 
 You can always access a election information and metadata using `fetchElection`:
@@ -502,8 +526,7 @@ The complete flow is shown here:
 const client = new VocdoniSDKClient({
   env: EnvOptions.DEV,
   wallet: signer, // the signer used (Metamask, Walletconnect)
-  electionId: '934234...', // The election identifier
-  csp_url: CSP_URL // The CSP url defined when creating an election
+  electionId: '934234...', // The election identifier (has to be a CSP configured election)
 })
 
 // Auth steps for the CSP (can vary of the type of the CSP)
