@@ -33,6 +33,7 @@ module.exports = {
         "sdk/PublishedCensus",
         "sdk/WeightedCensus",
         "sdk/Election",
+        "sdk/InvalidElection",
         "sdk/PublishedElection",
         "sdk/UnpublishedElection",
         "sdk/CspVote",

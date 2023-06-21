@@ -12,7 +12,7 @@ class ChainAPI
 
 <div className="container">
   <div className="row mb-2"><div className="col col--12"><strong>Methods</strong></div></div>
-  <div className="row"><div className="col col--12"><a href="#info">info</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#txInfo">txInfo</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#txInfoByBlock">txInfoByBlock</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#submitTx">submitTx</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#txList">txList</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#organizationCount">organizationCount</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#organizationList">organizationList</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#blockByHeight">blockByHeight</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#validatorsList">validatorsList</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#blockByHash">blockByHash</a><span className="badge badge--info margin-left--sm">static</span></div></div>
+  <div className="row"><div className="col col--12"><a href="#info">info</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#costs">costs</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#txInfo">txInfo</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#txInfoByBlock">txInfoByBlock</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#submitTx">submitTx</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#txList">txList</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#organizationCount">organizationCount</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#organizationList">organizationList</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#blockByHeight">blockByHeight</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#validatorsList">validatorsList</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#blockByHash">blockByHash</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#blockTransactions">blockTransactions</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#dateToBlock">dateToBlock</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#blockToDate">blockToDate</a><span className="badge badge--info margin-left--sm">static</span></div></div>
 </div>
 
 ## constructor
@@ -36,6 +36,20 @@ Cannot be constructed.
 Fetches info about the blockchain status.
 
 **Returns**: Promise&lt;IChainGetInfoResponse&gt;
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|url|string|||API endpoint URL|
+
+### costs {#costs}
+
+<div>
+  <span className="badge badge--info">static</span>
+</div>
+
+Fetches info about the blockchain costs.
+
+**Returns**: Promise&lt;IChainGetCostsResponse&gt;
 
 |PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
 |:---:|:---:|:---:|:---:|:---:|
@@ -175,4 +189,50 @@ Get block information by hash
 |:---:|:---:|:---:|:---:|:---:|
 |url|string|||API endpoint URL|
 |hash|string|||block hash|
+
+### blockTransactions {#blockTransactions}
+
+<div>
+  <span className="badge badge--info">static</span>
+</div>
+
+Get paginated list of transactions registered on specific block
+
+**Returns**: Promise&lt;IBlockTransactionsResponse&gt;
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|url|string|||API endpoint URL|
+|height|number|||block height|
+|page|number|✔️|0|the page number|
+
+### dateToBlock {#dateToBlock}
+
+<div>
+  <span className="badge badge--info">static</span>
+</div>
+
+By a given date give the estimate block for the current Vochain.
+
+**Returns**: Promise&lt;IDateToBlockResponse&gt;
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|url|string|||API URL|
+|timeStamp|number|||unix format timestamp|
+
+### blockToDate {#blockToDate}
+
+<div>
+  <span className="badge badge--info">static</span>
+</div>
+
+Return approximate date by a given block height.
+
+**Returns**: Promise&lt;IBlockToDateResponse&gt;
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|url|string|||API URL|
+|height|number|||block height to calculate approximate timestamp|
 

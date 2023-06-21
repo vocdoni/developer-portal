@@ -12,7 +12,7 @@ class ElectionAPI
 
 <div className="container">
   <div className="row mb-2"><div className="col col--12"><strong>Methods</strong></div></div>
-  <div className="row"><div className="col col--12"><a href="#info">info</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#keys">keys</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#create">create</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#votesCount">votesCount</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#votesList">votesList</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#electionsList">electionsList</a><span className="badge badge--info margin-left--sm">static</span></div></div>
+  <div className="row"><div className="col col--12"><a href="#info">info</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#keys">keys</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#create">create</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#votesCount">votesCount</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#votesList">votesList</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#electionsList">electionsList</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#price">price</a><span className="badge badge--info margin-left--sm">static</span></div></div>
 </div>
 
 ## constructor
@@ -50,7 +50,7 @@ Fetches info about the specified process.
 
 Fetches the encryption keys from the specified process.
 
-**Returns**: Promise&lt;Array&lt;IEncryptionPublicKey&gt;&gt;
+**Returns**: Promise&lt;IElectionKeysResponse&gt;
 
 |PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
 |:---:|:---:|:---:|:---:|:---:|
@@ -122,4 +122,23 @@ Return list of all elections in the chain
 |electionId|string|||Search by partial electionId|
 |withResults|boolean|||Return elections with results or live results|
 |status|Exclude&lt;AllElectionStatus, (ElectionStatus.ONGOING\|ElectionStatus.UPCOMING)&gt;|||Search by election status|
+
+### price {#price}
+
+<div>
+  <span className="badge badge--info">static</span>
+</div>
+
+Calculates the election price.
+
+**Returns**: Promise&lt;IElectionCalculatePriceResponse&gt;
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|url|string|||API endpoint URL|
+|maxCensusSize|number||||
+|electionBlocks|number||||
+|encryptedVotes|boolean||||
+|anonymousVotes|boolean||||
+|maxVoteOverwrite|number||||
 
