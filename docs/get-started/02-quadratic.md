@@ -103,8 +103,7 @@ Given that there are 10 voters and each voted the same way, the sum of all the v
 - For option one `([ '20' ])`: Each of the 10 voters gave two votes, leading to a total of 20 votes.
 - For option two `([ '30' ])`: Each voter gave three votes, leading to a total of 30 votes.
 
-Remember, this interpretation assumes that all voters have used the same voting pattern. The results may vary 
-considerably when each voter assigns their votes differently based on their own preferences. Moreover, under the 
+Remember, this interpretation assumes that all voters have used the same voting pattern. Moreover, under the 
 quadratic voting system, while it is possible to cast more votes for a preferred option, it also becomes exponentially 
 more costly to do so, providing a self-balancing mechanism that aims to accurately reflect the strength of voters 
 preferences.
