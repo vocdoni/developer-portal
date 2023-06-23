@@ -3,6 +3,7 @@ import Playground from '@theme/Playground';
 import ReactLiveScope from '@theme/ReactLiveScope';
 import CodeBlock from '@theme-init/CodeBlock';
 import { ChakraProvider, extendTheme } from '@chakra-ui/react'
+import { ClientProvider } from '@vocdoni/chakra-components'
 import { theme } from '@vocdoni/chakra-components';
 
 const withLiveEditor = (Component) => {
@@ -11,7 +12,9 @@ const withLiveEditor = (Component) => {
             // @ts-expect-error: we have deliberately widened the type of language prop
             return (
                 <ChakraProvider theme={extendTheme(theme)} resetCSS={false}>
-                    <Playground scope={ReactLiveScope} {...props} />
+                    <ClientProvider env='stg'>
+                        <Playground scope={ReactLiveScope} {...props} />
+                    </ClientProvider>
                 </ChakraProvider>
             )
         }
