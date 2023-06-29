@@ -6,7 +6,6 @@ cypress/screenshots
 # Dist
 
 dist
-lib
 lib-next
 
 # Dependencies
