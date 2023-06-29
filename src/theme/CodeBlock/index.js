@@ -3,8 +3,9 @@ import Playground from '@theme/Playground';
 import ReactLiveScope from '@theme/ReactLiveScope';
 import CodeBlock from '@theme-init/CodeBlock';
 import { ChakraProvider, extendTheme } from '@chakra-ui/react'
-import { ClientProvider } from '@vocdoni/chakra-components'
+import {ClientProvider, ElectionProvider, OrganizationProvider} from '@vocdoni/chakra-components'
 import { theme } from '@vocdoni/chakra-components';
+import {mockedElection, mockedOrganization} from "../../lib/provider-mocks";
 
 const withLiveEditor = (Component) => {
     function WrappedComponent(props) {
@@ -13,7 +14,11 @@ const withLiveEditor = (Component) => {
             return (
                 <ChakraProvider theme={extendTheme(theme)} resetCSS={false}>
                     <ClientProvider env='stg'>
-                        <Playground scope={ReactLiveScope} {...props} />
+                        <OrganizationProvider organization={mockedOrganization}>
+                            <ElectionProvider election={mockedElection}>
+                                <Playground scope={ReactLiveScope} {...props} />
+                            </ElectionProvider>
+                        </OrganizationProvider>
                     </ClientProvider>
                 </ChakraProvider>
             )
