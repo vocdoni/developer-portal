@@ -143,6 +143,12 @@ const config = {
                   label: 'SDK',
                   className: "plausible-event-name=Header+SDK",
                 },
+                {
+                  type: 'doc',
+                  docId: 'ui-components/Intro',
+                  label: 'Ui Components',
+                  className: "plausible-event-name=Header+UICOMPONENTS",
+                },
               ]
             },
             {
