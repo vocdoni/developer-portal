@@ -67,6 +67,7 @@ module.exports = {
         "sdk/checkValidElectionMetadata",
         "sdk/getHex",
         "sdk/areEqualHexStrings",
+        "sdk/formatUnits",
         "sdk/allSettled",
         "sdk/promiseAny"
       ]
