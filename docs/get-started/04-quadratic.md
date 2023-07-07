@@ -13,7 +13,7 @@ preferences rather than just a simple majority rule.
 See:
 
 - [Complete example](https://github.com/vocdoni/vocdoni-sdk/blob/main/examples/typescript/src/quadratic.ts)
-- [Ballot protocol implementation](https://developer.vocdoni.io/protocol/ballot#quadratic-voting)
+- [Ballot protocol implementation](/protocol/ballot#quadratic-voting)
 
 ## Setting up the election
 
