@@ -23,4 +23,4 @@ jobs:
         run: yarn install --frozen-lockfile
 
       - name: Build the Portal and generate the API docs
-        run: yarn build
+        run: yarn re-gen && yarn build
