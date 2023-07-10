@@ -32,17 +32,6 @@ paths:
         description: 'Transaction payload and metadata object encoded using base64 '
         required: true
       summary: Set account
-  /accounts/sik:
-    post:
-      responses:
-        '200':
-          content:
-            '*/*':
-              schema:
-                $ref: '#/components/schemas/api.SikSet'
-          description: OK
-      description: Updates the Secret Identity Key of an Address
-      summary: Updates the Secret Identity Key of an Address
   /accounts/treasurer:
     get:
       responses:
@@ -1843,15 +1832,6 @@ components:
           $ref: '#/components/schemas/api.LanguageString'
         title:
           $ref: '#/components/schemas/api.LanguageString'
-      type: object
-    api.SikSet:
-      properties:
-        txHash:
-          type: string
-        txPayload:
-          items:
-            type: integer
-          type: array
       type: object
     api.TallyMode:
       properties:
