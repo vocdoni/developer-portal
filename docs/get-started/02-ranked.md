@@ -51,11 +51,11 @@ voter's rating for that choice. The length of this array should match the total 
 
 With the vote array `[2, 3, 0, 1, 4]`, it means:
 
-- Choice `0` is ranked as the `2nd` option
-- Choice `1` is ranked as the `3rd` option
-- Choice `2` is ranked as the `1st` option
-- Choice `3` is ranked as the `2nd` option
-- Choice `4` is ranked as the `5th` option
+- Choice `1` is ranked as the `3nd` option
+- Choice `2` is ranked as the `4rd` option
+- Choice `3` is ranked as the `1st` option
+- Choice `4` is ranked as the `2nd` option
+- Choice `5` is ranked as the `5th` option
 
 ## Results interpretation
 
