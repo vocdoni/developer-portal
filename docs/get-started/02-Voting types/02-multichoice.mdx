@@ -1,0 +1,119 @@
+# Multi Choice
+
+TODO
+
+An election with a single choice result, is a voting system where each voter is typically allowed to cast only one vote
+for their preferred option. Is the simplest allowed voting system. Let's see how to set up the SDK to use this kind of
+voting system.
+
+The single choice voting supports one or multiple questions.
+
+See:
+
+- [Ballot protocol implementation](/protocol/ballot#single-choice)
+
+## Setting up the election
+
+For this type of election it can be created with default parameters:
+
+```ts
+const election = Election.from({
+  census,
+  title: 'Do you like chocolate?',
+  description: 'A simple survey to check how many people likes chocolate',
+})
+```
+
+Once the election is created but not published, you have to add questions, where every choice has a unique value:
+
+```ts
+election.addQuestion('Do you like chocolate without milk?', 'This is the description', [
+  {
+    title: 'Yes',
+    value: 0,
+  },
+  {
+    title: 'No',
+    value: 1,
+  },
+]).addQuestion('Do you like chocolate with milk', 'This is the description', [
+  {
+    title: 'Yes',
+    value: 0,
+  },
+  {
+    title: 'No',
+    value: 1,
+  },
+  {
+    title: 'Not  always',
+    value: 2,
+  },
+])
+```
+
+:::info About choices values
+
+Note that the values of the questions are **incremental** and the first value **must** be 0
+
+:::
+
+:::tip Supports multiple questions
+
+This election type supports multiple questions
+
+:::
+
+:::caution Not all elections type supports multiple questions!
+
+This kind of election support multiple questions, but **not all the election types support this yet**! Check the
+docs to see if the election you are creating supports multiple question.
+
+:::
+
+If you want to limit the maximum number of questions or values an election can have, you can play with `maxCount` and
+`maxValue` parameters of the `voteOpts`:
+
+```ts
+const election_opts: IVoteType = {
+    maxCount: 2, // Represents the max number of questions
+    maxValue: 3, // Represents the max number of choices for a given question.
+}
+const election = Election.from({
+  census,
+  election_opts,
+  //...
+})
+````
+
+## Casting a vote
+
+A vote can be cast using the method below:
+
+```ts
+client.submitVote(new Vote([0, 2]));
+```
+
+Every position on the vote array represents a question, and the value is the corresponding selected choice. On this case
+we are selecting the first choice for the first question and the third choice for the second.
+
+
+## Results interpretation
+
+Consider a scenario where 10 voters cast identical votes, i.e., `[0, 2]`.
+
+The election results would be represented as a two-dimensional array:
+
+```
+ [
+   [ '10', '0', '0' ],
+   [ '0', '0', '10' ]
+ ]
+```
+
+Every inner array represents the results for a question, and every position of the inner array represents the votes that
+a choice has received.
+
+On the above example, question one has two choices and the second three. However, results array for the first question
+are three because the `maxValue` for all questions is the same (in this case, 3, the `maxValue` of the question with
+more choices).
