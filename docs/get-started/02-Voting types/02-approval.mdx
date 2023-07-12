@@ -1,3 +1,5 @@
+import MultiQuesNotSupportedAdmotion from "@site/src/components/admotions/multi-quest-not-supported";
+
 #  Approval Voting (Multiple Choice)
 
 An election with Approval voting is a voting system where voters are allowed to indicate their support for multiple 
@@ -32,8 +34,7 @@ const election_opts: IVoteType = {
 In this election type, a voter can cast a vote for option, hence `maxValue` must be set to `1`. Also, the `maxTotalCost` 
 is used to define the maximum number of selectable choices.
 
-- **Note**: The current Vocdoni implementation restricts ranked elections to a single question. Hence, `maxCount` refers 
-to the number of choices available for this unique question.
+<MultiQuesNotSupportedAdmotion />
 
 ## Casting a vote
 

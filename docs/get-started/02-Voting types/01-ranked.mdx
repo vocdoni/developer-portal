@@ -1,3 +1,5 @@
+import MultiQuesNotSupportedAdmotion from "@site/src/components/admotions/multi-quest-not-supported";
+
 # Ranked Voting
 
 Ranked voting, also known as preferential voting or ranked-choice voting (RCV), is an electoral system where voters rank 
@@ -34,8 +36,7 @@ const election_opts: IVoteType = {
 
 This configuration could, for example, to allows voters to rank their top 5 preferred blockchains: "Bitcoin:0, Ethereum:1, Monero:2, Zcash:3, Polkadot:4"
 
-- **Note**: The current Vocdoni implementation restricts ranked elections to a single question. Hence, `maxCount` refers 
-to the number of choices available for this unique question.
+<MultiQuesNotSupportedAdmotion />
 
 ## Casting a vote
 
