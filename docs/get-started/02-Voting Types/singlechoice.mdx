@@ -5,9 +5,14 @@ sidebar_position: 2
 
 # Single Choice Voting
 
-An election with a single choice result, is a voting system where each voter is typically allowed to cast only one vote
-for their preferred option. Is the simplest allowed voting system. Let's see how to set up the SDK to use this kind of
-voting system.
+An election with a single-choice result, also known as First-past-the-post voting (FPTP or FPP) or informally called
+choose-one voting, is a voting system where each voter is typically allowed to cast only one vote for their preferred
+option or candidate. The option or candidate with the most votes wins the election.
+
+This voting system is considered one of the simplest, as a single-choice election involves selecting a single winner,
+and voters can mark only one option from the list of choices or candidates. However, despite its widespread use and
+simplicity, it has some drawbacks. Since it operates on a "winner-take-all" principle, it can lead to disproportionate
+outcomes (the candidate/option with the most votes secures victory, even if their margin of victory is slim).
 
 :::info
 
@@ -104,6 +109,22 @@ client.submitVote(new Vote([0, 2]));
 Each position in the vote array corresponds to a question, and the value is the associated selected choice. In this
 instance, we select the first choice for the first question and the third choice for the second.
 
+:::info Single question vote
+
+For single question is same philosophy, you could configure the election as:
+
+```ts
+// If you want to restrict the election creation
+// ...
+    maxCount: 1, // Only one question
+    maxValue: 3, // That accepts three choices
+// ...
+// And finally casting the vote
+client.submitVote(new Vote([0, 2])); // Voting the third option
+```
+
+:::
+
 ## Results interpretation
 
 Consider a scenario where 10 voters cast identical votes, i.e., `[0, 2]`.
@@ -126,3 +147,15 @@ choice has accumulated.
 In the example above, the first question offers two options, and the second presents three. However, the results array
 for the first question contains three elements, as the `maxValue` for all questions is the same (in this case, 3, the
 `maxValue` of the question with the most options).
+
+:::info Single question results interpretation
+
+Not so different, the results array will look like:
+
+```
+[ [ '0', '0', '10' ] ]
+```
+
+For the only one question, 10 voters select the third option
+
+:::

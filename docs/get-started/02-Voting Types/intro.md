@@ -17,7 +17,7 @@ voting system is the only one that **supports multiple questions**.
 - [Ranked voting](ranked), also known as preferential voting, is an electoral system where voters rank candidates in order of preference
 - [Approval voting](approval), or multiple choice, here the voters are allowed to indicate their support for multiple 
 candidates or options.
-- [Weighted voting](weighted). each voter is assigned a specific weight or value that reflects their relative influence or 
+- [Weighted voting](weighted), each voter is assigned a specific weight or value that reflects their relative influence or 
 importance in the decision-making process.
 - [Quadratic voting](quadratic), voters can cast multiple votes for issues they prioritize, but the cost of casting 
 additional votes on the same issue rises exponentially.

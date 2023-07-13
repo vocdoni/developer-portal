@@ -22,14 +22,17 @@ See:
 The process creation anb use of the ballot protocol is the same as on any other Election, the key difference is the
 use of a `WeightedCensus` instead of a `PlainCensus`.
 
-Note that Contrary to quadratic voting, the `costFromWeight` attribute in the vote type needs to be set to false or
-left undefined in this context.
+:::tip Where can I use a WeightedCensus?
 
-Essentially, you can use the SDK for any vote type except quadratic voting (which already uses the weighted census
-but for different objectives).
+Essentially, you can use the `WeightedCensus` for any vote type except quadratic voting.
 
-The votes are stored on the blockchain like any other voting process. When the results are retrieved from the API,
-the indexer applies the weight to every vote, and this reflects in the results matrix.
+Note that `quadratic voting` already uses a `WeightedCensus` but for other purposes. On a `quadratic election` the
+weighted census are used to set the available credits for every voter when the option `costFromWeight` is set to `true`.
+
+:::
+
+The votes are stored on the blockchain with its weight like any other voting process. When the results are retrieved
+from the API, the indexer applies the weight to every vote, and this reflects in the results matrix.
 
 ### Creating a `WeightedCensus`
 
