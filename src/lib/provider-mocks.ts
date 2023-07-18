@@ -76,7 +76,7 @@ const rawElection: IElectionInfoResponse = {
     tallyMode: {
         maxCount: 1,
         maxValue: 2,
-        maxVoteOverwrites: 1,
+        maxVoteOverwrites: 0,
         maxTotalCost: 2,
         costExponent: 10000
     },
@@ -106,7 +106,7 @@ const rawElection: IElectionInfoResponse = {
                             default: "No"
                         },
                         value: 1
-                    }
+                    },
                 ],
                 description: {
                     default: "Test question 1 description"
@@ -148,6 +148,13 @@ export const mockedElection: PublishedElection = PublishedElection.build({
     header: rawElection.metadata.media.header,
     questions: rawElection.metadata.questions,
     startDate: rawElection.startDate,
-    voteType: rawElection.voteMode
+    voteType: rawElection.voteMode,
+    electionType:{
+        autoStart: rawElection.electionMode.autoStart,
+        interruptible: rawElection.electionMode.interruptible,
+        dynamicCensus: rawElection.electionMode.dynamicCensus,
+        secretUntilTheEnd: rawElection.voteMode.encryptedVotes,
+        anonymous:  rawElection.voteMode.anonymous,
+    }
 })
 
