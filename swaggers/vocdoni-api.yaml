@@ -5,7 +5,7 @@ info:
   title: Vocdoni API
   version: 2.0.0
 servers:
-  - url: 'https:/api-dev.vocdoni.net/v2/'
+  - url: 'https:/debug.api-dev.vocdoni.net/v2/'
 paths:
   /accounts:
     post:
@@ -2248,7 +2248,7 @@ components:
           description: >-
             root hash of all results from the txs from the previous block
 
-            see `deterministicResponseDeliverTx` to understand which parts of a tx is hashed into here
+            see `deterministicExecTxResult` to understand which parts of a tx is hashed into here
           items:
             type: integer
           type: array
