@@ -12,7 +12,7 @@ class ChainAPI
 
 <div className="container">
   <div className="row mb-2"><div className="col col--12"><strong>Methods</strong></div></div>
-  <div className="row"><div className="col col--12"><a href="#info">info</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#costs">costs</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#txInfo">txInfo</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#txInfoByBlock">txInfoByBlock</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#submitTx">submitTx</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#txList">txList</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#organizationCount">organizationCount</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#organizationList">organizationList</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#blockByHeight">blockByHeight</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#validatorsList">validatorsList</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#blockByHash">blockByHash</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#blockTransactions">blockTransactions</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#dateToBlock">dateToBlock</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#blockToDate">blockToDate</a><span className="badge badge--info margin-left--sm">static</span></div></div>
+  <div className="row"><div className="col col--12"><a href="#info">info</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#costs">costs</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#circuits">circuits</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#circuit">circuit</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#txInfo">txInfo</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#txInfoByBlock">txInfoByBlock</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#submitTx">submitTx</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#txList">txList</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#organizationCount">organizationCount</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#organizationList">organizationList</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#blockByHeight">blockByHeight</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#validatorsList">validatorsList</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#blockByHash">blockByHash</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#blockTransactions">blockTransactions</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#dateToBlock">dateToBlock</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#blockToDate">blockToDate</a><span className="badge badge--info margin-left--sm">static</span></div></div>
 </div>
 
 ## constructor
@@ -54,6 +54,34 @@ Fetches info about the blockchain costs.
 |PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
 |:---:|:---:|:---:|:---:|:---:|
 |url|string|||API endpoint URL|
+
+### circuits {#circuits}
+
+<div>
+  <span className="badge badge--info">static</span>
+</div>
+
+Fetches info about the blockchain anonymous circuits.
+
+**Returns**: Promise&lt;IChainGetCircuitResponse&gt;
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|url|string|||API endpoint URL|
+
+### circuit {#circuit}
+
+<div>
+  <span className="badge badge--info">static</span>
+</div>
+
+Fetches a circuit.
+
+**Returns**: Promise&lt;Uint8Array&gt;
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|url|string|||Circuit URL|
 
 ### txInfo {#txInfo}
 
