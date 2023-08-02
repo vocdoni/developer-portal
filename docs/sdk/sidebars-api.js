@@ -44,6 +44,13 @@ module.exports = {
     },
     {
       "type": "category",
+      "label": "Constant",
+      "items": [
+        "sdk/dotobject"
+      ]
+    },
+    {
+      "type": "category",
       "label": "Typedef",
       "items": [
         "sdk/AccountData",
