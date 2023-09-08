@@ -32,7 +32,7 @@ const election_opts: IVoteType = {
 
 - The actual Vocdoni implementation only allow quadratic elections with only one question. For that, the `maxCount` 
 refers to the choices length for this unique question.  
-- `costExponent` define the exponent for quadratic voting calculation. In the context of quadratic voting, this valueis 
+- `costExponent` define the exponent for quadratic voting calculation. In the context of quadratic voting, this value is 
 usually set to 2. This exponent determines the cost of a vote. For example, if a voter assigns 2 credits to an option, 
 the cost of that vote would be 2^2 = 4. Look at SDK docs for more info.
 
