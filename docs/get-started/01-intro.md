@@ -236,8 +236,8 @@ const election = Election.from({
   voteType: {
     uniqueChoices: false, // if the choices are unique when voting
     maxVoteOverwrites: 0, // number of times a vote can be overwritten
-    costFromWeight: false, // for cuadrating voting
-    costExponent: 10000, // for cuadrating voting
+    costFromWeight: false, // for quadratic voting
+    costExponent: 10000, // for quadratic voting
   }
 })
 ~~~
@@ -316,7 +316,7 @@ More information can be found in the [documentation][ranked voting documentation
 
 #### Estimate election cost
 
-This is a fast function (most times will resolve automatically) which allows to estimate a election price in tokens:
+This is a fast function (most times will resolve automatically) which allows to estimate an election price in tokens:
 
 ~~~ts
 (async () => {
@@ -338,7 +338,7 @@ This function returns the exact election price in tokens:
 
 ### Fetching election info
 
-You can always access a election information and metadata using `fetchElection`:
+You can always access an election information and metadata using `fetchElection`:
 
 ~~~ts
 (async () => {
@@ -503,7 +503,7 @@ console.log(userWallet) // address is 0x8AF1b3EDB817b5854e3311d583905a3421F49829
 The SDK comes with an implementation of the common handler API of a CSP which is explained
 [here](https://github.com/vocdoni/blind-csp#api).
 
-For creating a CSP based election, a `CspCensus` has to be set to the election. This census need the
+For creating a CSP based election, a `CspCensus` has to be set to the election. This census needs the
 CSP public key (`CSP_PUBKEY` in the example) and the CSP Url (`CSP_URL` in the example). 
 
 ~~~ts
