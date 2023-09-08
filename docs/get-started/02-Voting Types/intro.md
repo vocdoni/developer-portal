@@ -33,7 +33,7 @@ The results are stored on the Vochain as a bi-dimensional array. Essentially, th
 transforms a unidimensional array (a vote, e.g., `[1,4]`) into a bi-dimensional array of results (e.g., `[[2,5]]`).
 
 The interpretation of results is done on the user side, which receives the results from the SDK. The SDK provides 
-metadata about the election to facilitate understanding of the results. More details on interpreting results can be found , 
+metadata about the election to facilitate understanding of the results. More details on interpreting results can be found, 
 [here](/protocol/ballot#vocdoni-results-interpretation).
 
 Here's a simple example to demonstrate how the result array can be interpreted in different ways, depending on the 
