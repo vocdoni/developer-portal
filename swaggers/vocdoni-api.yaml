@@ -32,7 +32,7 @@ paths:
         description: 'Transaction payload and metadata object encoded using base64 '
         required: true
       summary: Set account
-  /accounts/treasurer:
+  /accounts/count:
     get:
       responses:
         '200':
@@ -40,15 +40,96 @@ paths:
             application/json:
               schema:
                 properties:
-                  address:
-                    type: string
+                  count:
+                    type: integer
+                type: object
+          description: OK
+      tags:
+        - Accounts
+      description: Returns the count of total number of existing accounts
+      summary: Total number of accounts
+  '/accounts/page/{page}':
+    get:
+      parameters:
+        - description: Paginator page
+          in: path
+          name: page
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  accounts:
+                    items:
+                      $ref: '#/components/schemas/indexertypes.Account'
+                    type: array
                 type: object
           description: OK
       tags:
         - Accounts
       description: >-
-        Get treasurer address. The treasurer is a new authority entity identified by its Ethereum address and is the only one that can Mint new tokens.
-      summary: Get treasurer address
+        Returns information (address, balance and nonce) of the existing accounts
+      summary: List of the existing accounts
+  '/accounts/{accountID}/fees/page/{page}':
+    get:
+      parameters:
+        - description: Specific accountID
+          in: path
+          name: accountID
+          required: true
+          schema:
+            type: string
+        - description: Paginator page
+          in: path
+          name: page
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  fees:
+                    items:
+                      $ref: '#/components/schemas/indexertypes.TokenFeeMeta'
+                    type: array
+                type: object
+          description: OK
+      tags:
+        - Accounts
+      description: >-
+        Returns the token fees for an account. A spending is an amount of tokens burnt from one account for executing transactions.
+      summary: List account token fees
+  '/accounts/{accountID}/transfers/count':
+    get:
+      parameters:
+        - description: Specific accountID
+          in: path
+          name: accountID
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  count:
+                    type: integer
+                type: object
+          description: Number of transaction sent and received for the account
+      tags:
+        - Accounts
+      description: >-
+        Returns the count of total number of sent and received transactions for an account. A transaction is a token transfer from one account to another existing account
+      summary: Total number of sent and received transactions
   '/accounts/{accountID}/transfers/page/{page}':
     get:
       parameters:
@@ -71,16 +152,14 @@ paths:
               schema:
                 properties:
                   transfers:
-                    items:
-                      $ref: '#/components/schemas/indexertypes.TokenTransferMeta'
-                    type: array
+                    $ref: '#/components/schemas/indexertypes.TokenTransfersAccount'
                 type: object
           description: OK
       tags:
         - Accounts
       description: >-
         Returns the token transfers for an account. A transfer is a token transference from one account to other (excepting the burn address).
-      summary: List account transfers
+      summary: List account received and sent token transfers
   '/accounts/{address}':
     get:
       parameters:
@@ -201,6 +280,62 @@ paths:
         - Accounts
       description: List the elections of an organization by status
       summary: List organization elections by status
+  '/censuses/export/{ipfs}':
+    get:
+      parameters:
+        - description: Export to IPFS. Blank to return the JSON file
+          in: path
+          name: ipfs
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  valid:
+                    type: boolean
+                type: object
+          description: OK
+      tags:
+        - Censuses
+      description: >-
+        Export the whole census database to a JSON file. Requires Admin Bearer token.
+      summary: Export census database
+  '/censuses/import/{ipfscid}':
+    post:
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  valid:
+                    type: boolean
+                type: object
+          description: OK
+      tags:
+        - Censuses
+      description: Import the whole census database from a JSON file.
+      summary: Import census database
+  /censuses/list/:
+    get:
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  valid:
+                    type: boolean
+                type: object
+          description: OK
+      tags:
+        - Censuses
+      description: List all census references. Requires Admin Bearer token.
+      summary: List all census references
   '/censuses/{censusID}':
     delete:
       parameters:
@@ -460,7 +595,7 @@ paths:
           description: 'Census type "weighted", "zkweighted", "csp'
       tags:
         - Censuses
-      description: Get the type of a census
+      description: Get the census type
       summary: Get type of census
   '/censuses/{censusID}/verify':
     post:
@@ -652,6 +787,96 @@ paths:
         - Chain
       description: Returns the estimated block height for the timestamp provided
       summary: Estimate date to block
+  '/chain/fees/page/{page}':
+    get:
+      parameters:
+        - description: Paginator page
+          in: path
+          name: page
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  fees:
+                    items:
+                      $ref: '#/components/schemas/indexertypes.TokenFeeMeta'
+                    type: array
+                type: object
+          description: OK
+      tags:
+        - Accounts
+      description: >-
+        Returns the token fees list ordered by date. A spending is an amount of tokens burnt from one account for executing transactions.
+      summary: List all token fees
+  '/chain/fees/reference/{reference}/page/{page}':
+    get:
+      parameters:
+        - description: Reference filter
+          in: path
+          name: reference
+          required: true
+          schema:
+            type: string
+        - description: Paginator page
+          in: path
+          name: page
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  fees:
+                    items:
+                      $ref: '#/components/schemas/indexertypes.TokenFeeMeta'
+                    type: array
+                type: object
+          description: OK
+      tags:
+        - Accounts
+      description: >-
+        Returns the token fees list filtered by reference and ordered by date. A spending is an amount of tokens burnt from one account for executing transactions.
+      summary: List all token fees by reference
+  '/chain/fees/type/{type}/page/{page}':
+    get:
+      parameters:
+        - description: Type filter
+          in: path
+          name: type
+          required: true
+          schema:
+            type: string
+        - description: Paginator page
+          in: path
+          name: page
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  fees:
+                    items:
+                      $ref: '#/components/schemas/indexertypes.TokenFeeMeta'
+                    type: array
+                type: object
+          description: OK
+      tags:
+        - Accounts
+      description: >-
+        Returns the token fees list filtered by type and ordered by date. A spending is an amount of tokens burnt from one account for executing transactions.
+      summary: List all token fees by type
   /chain/info:
     get:
       responses:
@@ -694,7 +919,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/circuit.ZkCircuitConfig'
+                $ref: '#/components/schemas/circuit.Config'
           description: OK
       tags:
         - Chain
@@ -1042,6 +1267,29 @@ paths:
           Filtered by partial organizationID, partial processID, process status and with results available or not
         required: true
       summary: List elections (filtered)
+  /elections/id:
+    post:
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  electionID:
+                    type: string
+                type: object
+          description: OK
+      tags:
+        - Elections
+      description: nextElectionIDHandler
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/api.NextElectionID'
+        description: 'OrganizationID, CensusOrigin and EnvelopeType'
+        required: true
+      summary: Get next election ID
   '/elections/page/{page}':
     get:
       parameters:
@@ -1409,7 +1657,7 @@ paths:
       tags:
         - Wallet
       description: >-
-        Add a new account to the local store. It return a token used to manage this account on the future.
+        Add a new account to the local store. It returns a token used to manage this account on the future.
       summary: Add account
   /wallet/bootstrap:
     get:
@@ -1591,8 +1839,8 @@ components:
         chainId:
           example: azeno
           type: string
-        cicuitConfigurationTag:
-          example: dev
+        circuitVersion:
+          example: v1.0.0
           type: string
         electionCount:
           example: 120
@@ -1637,6 +1885,8 @@ components:
       properties:
         census:
           $ref: '#/components/schemas/api.ElectionCensus'
+        chainId:
+          type: string
         creationTime:
           type: string
         electionId:
@@ -1646,6 +1896,8 @@ components:
         endDate:
           type: string
         finalResults:
+          type: boolean
+        fromArchive:
           type: boolean
         manuallyEnded:
           type: boolean
@@ -1722,6 +1974,8 @@ components:
           type: string
         streamUri:
           type: string
+        tempSIKs:
+          type: boolean
         title:
           $ref: '#/components/schemas/api.LanguageString'
         voteType:
@@ -1809,11 +2063,15 @@ components:
       type: object
     api.ElectionSummary:
       properties:
+        chainId:
+          type: string
         electionId:
           type: string
         endDate:
           type: string
         finalResults:
+          type: boolean
+        fromArchive:
           type: boolean
         manuallyEnded:
           type: boolean
@@ -1852,13 +2110,14 @@ components:
       type: object
     api.GenericTransactionWithInfo:
       properties:
+        signature:
+          type: string
         tx:
           oneOf:
             - $ref: "#/components/schemas/models.Tx_Vote"
             - $ref: "#/components/schemas/models.Tx_Admin"
             - $ref: "#/components/schemas/models.Tx_SetProcess"
             - $ref: "#/components/schemas/models.Tx_RegisterKey"
-            - $ref: "#/components/schemas/models.Tx_MintTokens"
             - $ref: "#/components/schemas/models.Tx_SendTokens"
             - $ref: "#/components/schemas/models.Tx_SetTransactionCosts"
             - $ref: "#/components/schemas/models.Tx_SetAccount"
@@ -1870,6 +2129,26 @@ components:
     api.LanguageString:
       additionalProperties:
         type: string
+      type: object
+    api.NextElectionID:
+      properties:
+        censusOrigin:
+          type: integer
+        envelopeType:
+          properties:
+            anonymous:
+              type: boolean
+            costFromWeight:
+              type: boolean
+            encryptedVotes:
+              type: boolean
+            serial:
+              type: boolean
+            uniqueValues:
+              type: boolean
+          type: object
+        organizationId:
+          type: string
       type: object
     api.OrganizationList:
       properties:
@@ -1939,12 +2218,22 @@ components:
       properties:
         address:
           type: string
+        joinHeight:
+          type: integer
         name:
           type: string
         power:
           type: integer
+        proposals:
+          type: integer
         pubKey:
           type: string
+        score:
+          type: integer
+        validatorAddress:
+          type: string
+        votes:
+          type: integer
       type: object
     api.ValidatorList:
       properties:
@@ -2051,6 +2340,8 @@ components:
       type: object
     censusdb.CensusDump:
       properties:
+        censusID:
+          type: string
         data:
           items:
             type: integer
@@ -2062,13 +2353,17 @@ components:
             it could be different according to the election (and census) type.
           type: integer
         rootHash:
-          items:
-            type: integer
-          type: array
+          type: string
+        size:
+          type: integer
+        token:
+          type: string
         type:
           $ref: '#/components/schemas/models.Census_Type'
+        uri:
+          type: string
       type: object
-    circuit.ZkCircuitConfig:
+    circuit.Config:
       properties:
         circuitPath:
           description: |-
@@ -2082,6 +2377,11 @@ components:
 
             current circuit configuration artifacts has
           type: integer
+        publicSignals:
+          additionalProperties:
+            type: integer
+          description: PublicSignals indicates the index of each public signal
+          type: object
         uri:
           description: URI defines the URI from where to download the files
           type: string
@@ -2093,6 +2393,9 @@ components:
         vKeyHash:
           description: >-
             VerificationKeyHash contains the expected hash for the file filenameVK
+          type: string
+        version:
+          description: Version of the published circuit
           type: string
         wasmFilename:
           description: >-
@@ -2189,6 +2492,8 @@ components:
         Tx_SendTokens:
           type: integer
         Tx_SetAccountInfoURI:
+          type: integer
+        Tx_SetAccountValidator:
           type: integer
         Tx_SetProcessCensus:
           type: integer
@@ -2344,6 +2649,34 @@ components:
         total:
           type: integer
       type: object
+    indexertypes.Account:
+      properties:
+        address:
+          items:
+            type: integer
+          type: array
+        balance:
+          type: integer
+        nonce:
+          type: integer
+      type: object
+    indexertypes.TokenFeeMeta:
+      properties:
+        cost:
+          type: integer
+        from:
+          items:
+            type: integer
+          type: array
+        height:
+          type: integer
+        reference:
+          type: string
+        timestamp:
+          type: string
+        txType:
+          type: string
+      type: object
     indexertypes.TokenTransferMeta:
       properties:
         amount:
@@ -2363,6 +2696,17 @@ components:
         txHash:
           items:
             type: integer
+          type: array
+      type: object
+    indexertypes.TokenTransfersAccount:
+      properties:
+        received:
+          items:
+            $ref: '#/components/schemas/indexertypes.TokenTransferMeta'
+          type: array
+        sent:
+          items:
+            $ref: '#/components/schemas/indexertypes.TokenTransferMeta'
           type: array
       type: object
     indexertypes.Transaction:
@@ -2459,8 +2803,6 @@ components:
         - 3
         - 4
         - 5
-        - 1001
-        - 1002
       type: integer
       x-enum-varnames:
         - Census_UNKNOWN
@@ -2469,8 +2811,6 @@ components:
         - Census_ETHEREUMSTORAGE
         - Census_ETHEREUMACCOUNT
         - Census_CA
-        - Census_GRAVITON
-        - Census_IDEN3
     models.CollectFaucetTx:
       properties:
         faucetPackage:
@@ -2503,19 +2843,6 @@ components:
           items:
             type: integer
           type: array
-      type: object
-    models.MintTokensTx:
-      properties:
-        nonce:
-          type: integer
-        to:
-          items:
-            type: integer
-          type: array
-        txtype:
-          $ref: '#/components/schemas/models.TxType'
-        value:
-          type: integer
       type: object
     models.NewProcessTx:
       properties:
@@ -2704,7 +3031,7 @@ components:
     models.Proof:
       properties:
         payload:
-          description: "Types that are assignable to Payload:\n\n\t*Proof_Graviton\n\t*Proof_Iden3\n\t*Proof_EthereumStorage\n\t*Proof_EthereumAccount\n\t*Proof_Ca\n\t*Proof_Arbo\n\t*Proof_ZkSnark\n\t*Proof_MinimeStorage"
+          description: "Types that are assignable to Payload:\n\n\t*Proof_EthereumStorage\n\t*Proof_EthereumAccount\n\t*Proof_Ca\n\t*Proof_Arbo\n\t*Proof_ZkSnark\n\t*Proof_MinimeStorage"
       type: object
     models.QuestionResult:
       properties:
@@ -2776,8 +3103,14 @@ components:
           $ref: '#/components/schemas/models.FaucetPackage'
         infoURI:
           type: string
+        name:
+          type: string
         nonce:
           type: integer
+        publicKey:
+          items:
+            type: integer
+          type: array
         txtype:
           $ref: '#/components/schemas/models.TxType'
       type: object
@@ -2902,9 +3235,7 @@ components:
         - 11
         - 12
         - 13
-        - 14
         - 15
-        - 16
         - 17
         - 18
         - 19
@@ -2915,6 +3246,7 @@ components:
         - 24
         - 25
         - 26
+        - 27
       type: integer
       x-enum-varnames:
         - TxType_TX_UNKNOWN
@@ -2931,9 +3263,7 @@ components:
         - TxType_VOTE
         - TxType_SET_PROCESS_RESULTS
         - TxType_REGISTER_VOTER_KEY
-        - TxType_MINT_TOKENS
         - TxType_SEND_TOKENS
-        - TxType_SET_TRANSACTION_COSTS
         - TxType_SET_ACCOUNT_INFO_URI
         - TxType_ADD_DELEGATE_FOR_ACCOUNT
         - TxType_DEL_DELEGATE_FOR_ACCOUNT
@@ -2944,6 +3274,7 @@ components:
         - TxType_SET_ACCOUNT_SIK
         - TxType_DEL_ACCOUNT_SIK
         - TxType_REGISTER_SIK
+        - TxType_SET_ACCOUNT_VALIDATOR
     models.Tx_Admin:
       properties:
         admin:
@@ -2953,11 +3284,6 @@ components:
       properties:
         collectFaucet:
           $ref: '#/components/schemas/models.CollectFaucetTx'
-      type: object
-    models.Tx_MintTokens:
-      properties:
-        mintTokens:
-          $ref: '#/components/schemas/models.MintTokensTx'
       type: object
     models.Tx_NewProcess:
       properties:
