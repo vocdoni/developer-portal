@@ -174,7 +174,30 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/api.Account'
+                $ref: '#/components/schemas/api.AccountMetadata'
+          description: OK
+      tags:
+        - Accounts
+      description: >-
+        Get account information by its address or public key. The `infoURI` parameter contain where account metadata is uploaded (like avatar, name...). It return also an already parsed "metadata" object from this infoUri.
+
+        The `meta` object inside the `metadata` property is left to the user to add random information about the account.
+      summary: Get account
+  '/accounts/{address}/metadata':
+    get:
+      parameters:
+        - description: Account address
+          in: path
+          name: address
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/api.AccountMetadata'
           description: OK
       tags:
         - Accounts
@@ -787,6 +810,19 @@ paths:
         - Chain
       description: Returns the estimated block height for the timestamp provided
       summary: Estimate date to block
+  /chain/export/indexer:
+    get:
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: string
+          description: OK
+      tags:
+        - Indexer
+      description: Exports the indexer SQL database in raw format
+      summary: Exports the indexer database
   '/chain/fees/page/{page}':
     get:
       parameters:
@@ -1783,7 +1819,7 @@ components:
     api.Block:
       properties:
         data:
-          $ref: '#/components/schemas/github_com_cometbft_cometbft_types.Data'
+          $ref: '#/components/schemas/types.Data'
         evidence:
           $ref: '#/components/schemas/types.EvidenceData'
         hash:
@@ -1791,7 +1827,7 @@ components:
         header:
           $ref: '#/components/schemas/github_com_cometbft_cometbft_types.Header'
         last_commit:
-          $ref: '#/components/schemas/github_com_cometbft_cometbft_types.Commit'
+          $ref: '#/components/schemas/types.Commit'
       type: object
     api.CensusParticipant:
       properties:
@@ -2010,10 +2046,10 @@ components:
           items:
             $ref: '#/components/schemas/api.Question'
           type: array
-        results:
-          $ref: '#/components/schemas/api.ElectionResultsDetails'
         title:
           $ref: '#/components/schemas/api.LanguageString'
+        type:
+          $ref: '#/components/schemas/api.ElectionProperties'
         version:
           type: string
       type: object
@@ -2029,6 +2065,12 @@ components:
           type: boolean
         preRegister:
           type: boolean
+      type: object
+    api.ElectionProperties:
+      properties:
+        name:
+          type: string
+        properties: {}
       type: object
     api.ElectionResults:
       properties:
@@ -2052,13 +2094,6 @@ components:
         sourceContractAddress:
           description: >-
             SourceContractAddress is the address of the smart contract containing the census
-          type: string
-      type: object
-    api.ElectionResultsDetails:
-      properties:
-        aggregation:
-          type: string
-        display:
           type: string
       type: object
     api.ElectionSummary:
@@ -2435,6 +2470,8 @@ components:
           type: boolean
         electionBlocks:
           type: integer
+        electionDuration:
+          type: integer
         encryptedVotes:
           type: boolean
         maxCensusSize:
@@ -2504,77 +2541,6 @@ components:
         Tx_SetSik:
           type: integer
       type: object
-    github_com_cometbft_cometbft_types.BlockID:
-      properties:
-        hash:
-          items:
-            type: integer
-          type: array
-        parts:
-          $ref: >-
-            #/components/schemas/github_com_cometbft_cometbft_types.PartSetHeader
-      type: object
-    github_com_cometbft_cometbft_types.BlockIDFlag:
-      enum:
-        - 1
-        - 2
-        - 3
-      type: integer
-      x-enum-varnames:
-        - BlockIDFlagAbsent
-        - BlockIDFlagCommit
-        - BlockIDFlagNil
-    github_com_cometbft_cometbft_types.Commit:
-      properties:
-        block_id:
-          $ref: '#/components/schemas/github_com_cometbft_cometbft_types.BlockID'
-        height:
-          description: >-
-            NOTE: The signatures are in order of address to preserve the bonded
-
-            ValidatorSet order.
-
-            Any peer with a block can gossip signatures by index with a peer without
-
-            recalculating the active ValidatorSet.
-          type: integer
-        round:
-          type: integer
-        signatures:
-          items:
-            $ref: '#/components/schemas/github_com_cometbft_cometbft_types.CommitSig'
-          type: array
-      type: object
-    github_com_cometbft_cometbft_types.CommitSig:
-      properties:
-        block_id_flag:
-          $ref: '#/components/schemas/github_com_cometbft_cometbft_types.BlockIDFlag'
-        signature:
-          items:
-            type: integer
-          type: array
-        timestamp:
-          type: string
-        validator_address:
-          items:
-            type: integer
-          type: array
-      type: object
-    github_com_cometbft_cometbft_types.Data:
-      properties:
-        txs:
-          description: >-
-            Txs that will be applied by state @ block.Height+1.
-
-            NOTE: not all txs here are valid.  We're just agreeing on the order first.
-
-            This means that block.AppHash does not include these txs.
-          items:
-            items:
-              type: integer
-            type: array
-          type: array
-      type: object
     github_com_cometbft_cometbft_types.Header:
       properties:
         app_hash:
@@ -2603,7 +2569,7 @@ components:
           type: integer
         last_block_id:
           allOf:
-            - $ref: '#/components/schemas/github_com_cometbft_cometbft_types.BlockID'
+            - $ref: '#/components/schemas/types.BlockID'
           description: prev block info
         last_commit_hash:
           description: hashes of block data
@@ -2614,7 +2580,7 @@ components:
           description: >-
             root hash of all results from the txs from the previous block
 
-            see `deterministicExecTxResult` to understand which parts of a tx is hashed into here
+            see `DeterministicExecTxResult` to understand which parts of a tx is hashed into here
           items:
             type: integer
           type: array
@@ -2637,17 +2603,8 @@ components:
           type: array
         version:
           allOf:
-            - $ref: '#/components/schemas/version.Consensus'
+            - $ref: '#/components/schemas/v1.Consensus'
           description: basic block info
-      type: object
-    github_com_cometbft_cometbft_types.PartSetHeader:
-      properties:
-        hash:
-          items:
-            type: integer
-          type: array
-        total:
-          type: integer
       type: object
     indexertypes.Account:
       properties:
@@ -2784,6 +2741,7 @@ components:
         - 13
         - 14
         - 15
+        - 16
       type: integer
       x-enum-varnames:
         - CensusOrigin_CENSUS_UNKNOWN
@@ -2795,6 +2753,7 @@ components:
         - CensusOrigin_ERC1155
         - CensusOrigin_ERC777
         - CensusOrigin_MINI_ME
+        - CensusOrigin_FARCASTER_FRAME
     models.Census_Type:
       enum:
         - 0
@@ -2803,6 +2762,7 @@ components:
         - 3
         - 4
         - 5
+        - 6
       type: integer
       x-enum-varnames:
         - Census_UNKNOWN
@@ -2811,6 +2771,7 @@ components:
         - Census_ETHEREUMSTORAGE
         - Census_ETHEREUMACCOUNT
         - Census_CA
+        - Census_FARCASTER_FRAME
     models.CollectFaucetTx:
       properties:
         faucetPackage:
@@ -2869,6 +2830,9 @@ components:
         censusURI:
           description: CensusURI where to find the census
           type: string
+        duration:
+          description: The duration of the process in seconds
+          type: integer
         encryptionPrivateKeys:
           description: EncryptionPrivateKeys are the keys required to decrypt the votes
           items:
@@ -2962,6 +2926,9 @@ components:
           description: >-
             StartBlock represents the tendermint block where the process goes from scheduled to active
           type: integer
+        startTime:
+          description: The unix timestamp of the start of the process
+          type: integer
         status:
           $ref: '#/components/schemas/models.ProcessStatus'
         tempSIKs:
@@ -3031,7 +2998,7 @@ components:
     models.Proof:
       properties:
         payload:
-          description: "Types that are assignable to Payload:\n\n\t*Proof_EthereumStorage\n\t*Proof_EthereumAccount\n\t*Proof_Ca\n\t*Proof_Arbo\n\t*Proof_ZkSnark\n\t*Proof_MinimeStorage"
+          description: "Types that are assignable to Payload:\n\n\t*Proof_EthereumStorage\n\t*Proof_EthereumAccount\n\t*Proof_Ca\n\t*Proof_Arbo\n\t*Proof_ZkSnark\n\t*Proof_MinimeStorage\n\t*Proof_FarcasterFrame"
       type: object
     models.QuestionResult:
       properties:
@@ -3133,6 +3100,8 @@ components:
           type: array
         censusURI:
           type: string
+        duration:
+          type: integer
         nonce:
           type: integer
         processId:
@@ -3247,6 +3216,7 @@ components:
         - 25
         - 26
         - 27
+        - 28
       type: integer
       x-enum-varnames:
         - TxType_TX_UNKNOWN
@@ -3275,6 +3245,7 @@ components:
         - TxType_DEL_ACCOUNT_SIK
         - TxType_REGISTER_SIK
         - TxType_SET_ACCOUNT_VALIDATOR
+        - TxType_SET_PROCESS_DURATION
     models.Tx_Admin:
       properties:
         admin:
@@ -3362,13 +3333,92 @@ components:
       type: object
     types.BigInt:
       type: object
+    types.BlockID:
+      properties:
+        hash:
+          items:
+            type: integer
+          type: array
+        parts:
+          $ref: '#/components/schemas/types.PartSetHeader'
+      type: object
+    types.BlockIDFlag:
+      enum:
+        - 1
+        - 2
+        - 3
+      type: integer
+      x-enum-varnames:
+        - BlockIDFlagAbsent
+        - BlockIDFlagCommit
+        - BlockIDFlagNil
+    types.Commit:
+      properties:
+        block_id:
+          $ref: '#/components/schemas/types.BlockID'
+        height:
+          description: >-
+            NOTE: The signatures are in order of address to preserve the bonded
+
+            ValidatorSet order.
+
+            Any peer with a block can gossip signatures by index with a peer without
+
+            recalculating the active ValidatorSet.
+          type: integer
+        round:
+          type: integer
+        signatures:
+          items:
+            $ref: '#/components/schemas/types.CommitSig'
+          type: array
+      type: object
+    types.CommitSig:
+      properties:
+        block_id_flag:
+          $ref: '#/components/schemas/types.BlockIDFlag'
+        signature:
+          items:
+            type: integer
+          type: array
+        timestamp:
+          type: string
+        validator_address:
+          items:
+            type: integer
+          type: array
+      type: object
+    types.Data:
+      properties:
+        txs:
+          description: >-
+            Txs that will be applied by state @ block.Height+1.
+
+            NOTE: not all txs here are valid.  We're just agreeing on the order first.
+
+            This means that block.AppHash does not include these txs.
+          items:
+            items:
+              type: integer
+            type: array
+          type: array
+      type: object
     types.EvidenceData:
       properties:
         evidence:
           items: {}
           type: array
       type: object
-    version.Consensus:
+    types.PartSetHeader:
+      properties:
+        hash:
+          items:
+            type: integer
+          type: array
+        total:
+          type: integer
+      type: object
+    v1.Consensus:
       properties:
         app:
           type: integer
