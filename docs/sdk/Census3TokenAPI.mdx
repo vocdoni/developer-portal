@@ -12,7 +12,7 @@ class Census3TokenAPI
 
 <div className="container">
   <div className="row mb-2"><div className="col col--12"><strong>Methods</strong></div></div>
-  <div className="row"><div className="col col--12"><a href="#list">list</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#types">types</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#token">token</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#create">create</a><span className="badge badge--info margin-left--sm">static</span></div></div>
+  <div className="row"><div className="col col--12"><a href="#list">list</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#types">types</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#token">token</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#holder">holder</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#create">create</a><span className="badge badge--info margin-left--sm">static</span></div></div>
 </div>
 
 ## constructor
@@ -35,11 +35,12 @@ Cannot be constructed.
 
 Fetches list of already added tokens
 
-**Returns**: Promise&lt;ICensus3TokenListResponse&gt;
+**Returns**: Promise&lt;ICensus3TokenListResponsePaginated&gt;
 
 |PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
 |:---:|:---:|:---:|:---:|:---:|
 |url|string|||API endpoint URL|
+|pagination|Census3Pagination|✔️||Pagination options|
 
 ### types {#types}
 
@@ -63,12 +64,33 @@ Fetches list of tokens types
 
 Fetch the full token information
 
-**Returns**: Promise&lt;ICensus3Token&gt;
+**Returns**: Promise&lt;Census3Token&gt;
 
 |PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
 |:---:|:---:|:---:|:---:|:---:|
 |url|string|||API endpoint URL|
-|id|string|||The id of the token|
+|tokenId|string|||The identifier of the token|
+|chainId|number|||The chain identifier of the token|
+|externalId|string|✔️||The identifier used by external provider|
+
+### holder {#holder}
+
+<div>
+  <span className="badge badge--info">static</span>
+</div>
+
+Returns if the holder ID is already registered in the database as a holder of the token ID and chain ID provided.
+
+**Returns**: Promise&lt;ICensus3TokenHolderResponse&gt;
+- The balance of holder
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|url|string|||API endpoint URL|
+|tokenId|string|||The identifier of the token|
+|chainId|number|||The chain identifier of the token|
+|holderId|string|||The identifier of the holder|
+|externalId|string|✔️||The identifier used by external provider|
 
 ### create {#create}
 
@@ -76,7 +98,7 @@ Fetch the full token information
   <span className="badge badge--info">static</span>
 </div>
 
-Triggers a new scan for the provided token, starting from the defined block.
+Triggers a new scan for the provided token.
 
 **Returns**: Promise&lt;IFileCIDResponse&gt;
 - promised IFileCIDResponse
@@ -86,6 +108,7 @@ Triggers a new scan for the provided token, starting from the defined block.
 |url|string|||API endpoint URL|
 |id|string|||The token address|
 |type|string|||The type of the token|
-|startBlock|number|||The start block|
-|tag|Array&lt;string&gt;|✔️||The tags assigned for the token|
+|chainId|number|||The chain id of the token|
+|tags|Array&lt;string&gt;|✔️||The tags assigned for the token|
+|externalId|string|✔️||The identifier used by external provider|
 

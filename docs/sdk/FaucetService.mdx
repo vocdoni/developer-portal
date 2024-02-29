@@ -1,0 +1,63 @@
+---
+custom_edit_url: null
+---
+
+```ts
+class FaucetService
+```
+
+<div>
+
+</div>
+
+<div className="container">
+  <div className="row mb-2"><div className="col col--12"><strong>Methods</strong></div></div>
+  <div className="row"><div className="col col--12"><a href="#fetchPayload">fetchPayload</a><br/><a href="#parseFaucetPackage">parseFaucetPackage</a></div></div>
+</div>
+
+## constructor
+```ts
+new FaucetService(params)
+```
+
+<div>
+
+</div>
+
+Instantiate the chain service.
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|params|Partial&lt;FaucetServiceParameters&gt;|||The service parameters|
+
+## Methods
+
+### fetchPayload {#fetchPayload}
+
+<div>
+
+</div>
+
+Fetches a faucet payload. Only for development.
+
+**Returns**: Promise&lt;{string}&gt;
+- The encoded faucet package
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|address|string|||The address where to send the tokens|
+
+### parseFaucetPackage {#parseFaucetPackage}
+
+<div>
+
+</div>
+
+Parses a faucet package.
+
+**Returns**: [FaucetPackage](FaucetPackage)
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|faucetPackage|string||||
+
