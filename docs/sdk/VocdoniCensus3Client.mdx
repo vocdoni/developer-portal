@@ -12,7 +12,7 @@ class VocdoniCensus3Client
 
 <div className="container">
   <div className="row mb-2"><div className="col col--12"><strong>Methods</strong></div></div>
-  <div className="row"><div className="col col--12"><a href="#getSupportedTokens">getSupportedTokens</a><br/><a href="#getSupportedTypes">getSupportedTypes</a><br/><a href="#getToken">getToken</a><br/><a href="#createToken">createToken</a><br/><a href="#getStrategiesList">getStrategiesList</a><br/><a href="#getStrategies">getStrategies</a><br/><a href="#getStrategy">getStrategy</a><br/><a href="#createStrategy">createStrategy</a><br/><a href="#getCensusesList">getCensusesList</a><br/><a href="#getCensuses">getCensuses</a><br/><a href="#getCensus">getCensus</a><br/><a href="#createCensus">createCensus</a><br/><a href="#createTokenCensus">createTokenCensus</a></div></div>
+  <div className="row"><div className="col col--12"><a href="#getSupportedTokens">getSupportedTokens</a><br/><a href="#getSupportedChains">getSupportedChains</a><br/><a href="#getSupportedTypes">getSupportedTypes</a><br/><a href="#getSupportedOperators">getSupportedOperators</a><br/><a href="#getToken">getToken</a><br/><a href="#isHolderInToken">isHolderInToken</a><br/><a href="#tokenHolderBalance">tokenHolderBalance</a><br/><a href="#createToken">createToken</a><br/><a href="#getStrategies">getStrategies</a><br/><a href="#getStrategyHolders">getStrategyHolders</a><br/><a href="#getStrategiesByToken">getStrategiesByToken</a><br/><a href="#getStrategy">getStrategy</a><br/><a href="#getStrategyEstimation">getStrategyEstimation</a><br/><a href="#createStrategy">createStrategy</a><br/><a href="#importStrategy">importStrategy</a><br/><a href="#validatePredicate">validatePredicate</a><br/><a href="#getCensuses">getCensuses</a><br/><a href="#getCensus">getCensus</a><br/><a href="#createCensus">createCensus</a><br/><a href="#createTokenCensus">createTokenCensus</a></div></div>
 </div>
 
 ## constructor
@@ -38,10 +38,21 @@ Instantiate new VocdoniCensus3 client.<br /><br />To instantiate the client just
 
 </div>
 
-Returns a list of summarized tokens supported by the service
+Returns a list of summary tokens supported by the service
 
 **Returns**: Promise&lt;Array&lt;TokenSummary&gt;&gt;
 - Token summary list
+
+### getSupportedChains {#getSupportedChains}
+
+<div>
+
+</div>
+
+Returns a list of supported chain identifiers
+
+**Returns**: Promise&lt;Array&lt;SupportedChain&gt;&gt;
+- Supported chain list
 
 ### getSupportedTypes {#getSupportedTypes}
 
@@ -53,6 +64,17 @@ Returns a list of supported tokens type
 
 **Returns**: Promise&lt;Array&lt;string&gt;&gt;
 - Supported tokens type list
+
+### getSupportedOperators {#getSupportedOperators}
+
+<div>
+
+</div>
+
+Returns a list of supported strategies operators
+
+**Returns**: Promise&lt;Array&lt;SupportedOperator&gt;&gt;
+- Supported strategies operators list
 
 ### getToken {#getToken}
 
@@ -68,6 +90,44 @@ Returns the full token information based on the id (address)
 |PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
 |:---:|:---:|:---:|:---:|:---:|
 |id|string|||The id (address) of the token|
+|chainId|number|||The id of the chain|
+|externalId|string|✔️||The identifier used by external provider|
+
+### isHolderInToken {#isHolderInToken}
+
+<div>
+
+</div>
+
+Returns if the holder ID is already registered in the database as a holder of the token.
+
+**Returns**: Promise&lt;boolean&gt;
+- If the holder is in the token
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|tokenId|string|||The id (address) of the token|
+|chainId|number|||The id of the chain|
+|holderId|string|||The identifier of the holder|
+|externalId|string|✔️||The identifier used by external provider|
+
+### tokenHolderBalance {#tokenHolderBalance}
+
+<div>
+
+</div>
+
+Returns the balance of the holder based on the token and chain
+
+**Returns**: Promise&lt;bigint&gt;
+- The balance of the holder
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|tokenId|string|||The id (address) of the token|
+|chainId|number|||The id of the chain|
+|holderId|string|||The identifier of the holder|
+|externalId|string|✔️||The identifier used by external provider|
 
 ### createToken {#createToken}
 
@@ -83,23 +143,9 @@ Creates a new token to be tracked in the service
 |:---:|:---:|:---:|:---:|:---:|
 |address|string|||The address of the token|
 |type|string|||The type of the token|
+|chainId|number|✔️|1|The chain id of the token|
+|externalId|string|✔️|""|The identifier used by external provider|
 |tags|string|✔️|[]|The tag list to associate the token with|
-|startBlock|string|✔️|0|The start block where to start scanning|
-
-### getStrategiesList {#getStrategiesList}
-
-<div>
-
-</div>
-
-Returns the strategies identifiers list
-
-**Returns**: Promise&lt;Array&lt;number&gt;&gt;
-- The list of strategies identifiers
-
-|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
-|:---:|:---:|:---:|:---:|:---:|
-|options|{page?: number, token?: string}|✔️|||
 
 ### getStrategies {#getStrategies}
 
@@ -107,14 +153,43 @@ Returns the strategies identifiers list
 
 </div>
 
-Returns the strategies list
+Returns the strategies
 
-**Returns**: Promise&lt;Array&lt;Strategy&gt;&gt;
+**Returns**: Promise&lt;Array&lt;Census3Strategy&gt;&gt;
+- The list of strategies
+
+### getStrategyHolders {#getStrategyHolders}
+
+<div>
+
+</div>
+
+Returns the strategy holders
+
+**Returns**: Promise&lt;StrategyHolders&gt;
+- The list strategy holders
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|id|number|||The id of the strategy|
+|pagination|Census3Pagination|✔️|{pageSize: -1}|Pagination options|
+
+### getStrategiesByToken {#getStrategiesByToken}
+
+<div>
+
+</div>
+
+Returns the strategies from the given token
+
+**Returns**: Promise&lt;Array&lt;Census3Strategy&gt;&gt;
 - The list of strategies
 
 |PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
 |:---:|:---:|:---:|:---:|:---:|
-|options|{page?: number, token?: string}|✔️|||
+|id|string|||The id (address) of the token|
+|chainId|number|||The id of the chain|
+|externalId|string|✔️||The identifier used by external provider|
 
 ### getStrategy {#getStrategy}
 
@@ -131,6 +206,22 @@ Returns the information of the strategy based on the id
 |:---:|:---:|:---:|:---:|:---:|
 |id|number|||The id of the strategy|
 
+### getStrategyEstimation {#getStrategyEstimation}
+
+<div>
+
+</div>
+
+Returns the estimation of size and time (in milliseconds) to create the census generated for the provided strategy
+
+**Returns**: Promise&lt;Strategy&gt;
+- The strategy estimation
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|id|number|||The id of the strategy|
+|anonymous|boolean|✔️|false|If the estimation should be done for anonymous census|
+
 ### createStrategy {#createStrategy}
 
 <div>
@@ -144,23 +235,39 @@ Creates a new strategy based on the given tokens and predicate
 
 |PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
 |:---:|:---:|:---:|:---:|:---:|
-|tokens|Array&lt;{id: string, name: string, minBalance: string, method: string}&gt;||||
-|strategy|string|||The strategy predicate|
+|alias|string|||The alias of the strategy|
+|predicate|string|||The predicate of the strategy|
+|tokens|{[key: string]: StrategyToken}|||The token list for the strategy|
 
-### getCensusesList {#getCensusesList}
+### importStrategy {#importStrategy}
 
 <div>
 
 </div>
 
-Returns the census3 censuses identifiers list
+Imports a strategy from IPFS from the given cid.
 
-**Returns**: Promise&lt;Array&lt;number&gt;&gt;
-- The list of census3 censuses identifiers
+**Returns**: Promise&lt;Strategy&gt;
+- The strategy information
 
 |PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
 |:---:|:---:|:---:|:---:|:---:|
-|options|{strategyId?: number}|✔️|||
+|cid|number|||The IPFS cid of the strategy to import|
+
+### validatePredicate {#validatePredicate}
+
+<div>
+
+</div>
+
+Validates a predicate
+
+**Returns**: Promise&lt;ParsedPredicate&gt;
+- The parsed predicate
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|predicate|string|||The predicate of the strategy|
 
 ### getCensuses {#getCensuses}
 
@@ -168,14 +275,14 @@ Returns the census3 censuses identifiers list
 
 </div>
 
-Returns the census3 censuses list
+Returns the census3 censuses
 
-**Returns**: Promise&lt;Array&lt;Census3Census&gt;&gt;
+**Returns**: Promise&lt;Array&lt;number&gt;&gt;
 - The list of census3 censuses
 
 |PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
 |:---:|:---:|:---:|:---:|:---:|
-|options|{strategyId?: number}|✔️|||
+|strategyId|string|||The strategy identifier|
 
 ### getCensus {#getCensus}
 
@@ -200,13 +307,13 @@ Returns the census3 census based on the given identifier
 
 Creates the census based on the given strategy
 
-**Returns**: Promise&lt;number&gt;
-- The id of the census
+**Returns**: Promise&lt;Census3Census&gt;
+- The census information
 
 |PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
 |:---:|:---:|:---:|:---:|:---:|
 |strategyId|number|||The id of the strategy|
-|blockNumber|number|✔️||The block number|
+|anonymous|boolean|✔️|false|If the census has to be anonymous|
 
 ### createTokenCensus {#createTokenCensus}
 
@@ -214,7 +321,7 @@ Creates the census based on the given strategy
   <span className="badge badge--success">async</span>
 </div>
 
-Returns the actual census based on the given token
+Returns the actual census based on the given token using the default strategy set
 
 **Returns**: Promise&lt;[TokenCensus](TokenCensus)&gt;
 - The token census
@@ -222,4 +329,7 @@ Returns the actual census based on the given token
 |PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
 |:---:|:---:|:---:|:---:|:---:|
 |address|string|||The address of the token|
+|chainId|number|||The id of the chain|
+|anonymous|boolean|✔️|false|If the census has to be anonymous|
+|externalId|string|✔️||The identifier used by external provider|
 

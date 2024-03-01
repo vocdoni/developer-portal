@@ -12,7 +12,7 @@ class AccountAPI
 
 <div className="container">
   <div className="row mb-2"><div className="col col--12"><strong>Methods</strong></div></div>
-  <div className="row"><div className="col col--12"><a href="#info">info</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#setInfo">setInfo</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#transfersList">transfersList</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#electionsList">electionsList</a><span className="badge badge--info margin-left--sm">static</span></div></div>
+  <div className="row"><div className="col col--12"><a href="#list">list</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#count">count</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#info">info</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#metadata">metadata</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#setInfo">setInfo</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#transfersList">transfersList</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#transfersCount">transfersCount</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#electionsList">electionsList</a><span className="badge badge--info margin-left--sm">static</span></div></div>
 </div>
 
 ## constructor
@@ -27,6 +27,35 @@ new AccountAPI()
 Cannot be constructed.
 
 ## Methods
+### list {#list}
+
+<div>
+  <span className="badge badge--info">static</span>
+</div>
+
+Returns paginated list of accounts
+
+**Returns**: Promise&lt;IAccountsListResponse&gt;
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|url|string|||API endpoint URL|
+|page|number|✔️|0|The page number|
+
+### count {#count}
+
+<div>
+  <span className="badge badge--info">static</span>
+</div>
+
+Returns the number of accounts
+
+**Returns**: Promise&lt;IAccountsCountResponse&gt;
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|url|string|||API endpoint URL|
+
 ### info {#info}
 
 <div>
@@ -40,7 +69,22 @@ Fetches an Account information
 |PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
 |:---:|:---:|:---:|:---:|:---:|
 |url|string|||API endpoint URL|
-|address|string|||The one we want the info from|
+|accountId|string|||The account we want the info from|
+
+### metadata {#metadata}
+
+<div>
+  <span className="badge badge--info">static</span>
+</div>
+
+Fetches the account metadata
+
+**Returns**: Promise&lt;[AccountMetadata](AccountMetadata)&gt;
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|url|string|||API endpoint URL|
+|accountId|string|||The account we want the info from|
 
 ### setInfo {#setInfo}
 
@@ -73,6 +117,21 @@ Returns paginated list of transfers for a specific account
 |url|string|||API endpoint URL|
 |accountId|string|||accountId to get transfers|
 |page|number|✔️|0|The page number|
+
+### transfersCount {#transfersCount}
+
+<div>
+  <span className="badge badge--info">static</span>
+</div>
+
+Returns the account's transfers count
+
+**Returns**: Promise&lt;IAccountTransfersCountResponse&gt;
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|url|string|||API endpoint URL|
+|accountId|string|||accountId to get the transfers count|
 
 ### electionsList {#electionsList}
 

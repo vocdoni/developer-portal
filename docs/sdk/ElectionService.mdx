@@ -1,0 +1,155 @@
+---
+custom_edit_url: null
+---
+
+```ts
+class ElectionService
+```
+
+<div>
+
+</div>
+
+<div className="container">
+  <div className="row mb-2"><div className="col col--12"><strong>Methods</strong></div></div>
+  <div className="row"><div className="col col--12"><a href="#fetchElection">fetchElection</a><br/><a href="#create">create</a><br/><a href="#nextElectionId">nextElectionId</a><br/><a href="#getElectionSalt">getElectionSalt</a><br/><a href="#getNumericElectionId">getNumericElectionId</a><br/><a href="#keys">keys</a><br/><a href="#estimateElectionCost">estimateElectionCost</a><br/><a href="#calculateElectionCost">calculateElectionCost</a></div></div>
+</div>
+
+## constructor
+```ts
+new ElectionService(params)
+```
+
+<div>
+
+</div>
+
+Instantiate the election service.
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|params|Partial&lt;ElectionServiceParameters&gt;|||The service parameters|
+
+## Methods
+
+### fetchElection {#fetchElection}
+
+<div>
+  <span className="badge badge--success">async</span>
+</div>
+
+Fetches info about an election.
+
+**Returns**: Promise&lt;[UnpublishedElection](UnpublishedElection)&gt;
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|electionId|string|||The id of the election|
+
+### create {#create}
+
+<div>
+
+</div>
+
+Creates a new election.
+
+**Returns**: Promise&lt;ElectionCreatedInformation&gt;
+- The created election information
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|payload|string|||The set information info raw payload to be submitted to the chain|
+|metadata|string|||The base64 encoded metadata JSON object|
+
+### nextElectionId {#nextElectionId}
+
+<div>
+
+</div>
+
+Returns the next election id.
+
+**Returns**: Promise&lt;string&gt;
+- The next election identifier
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|address|string|||The address of the account|
+|election|[UnpublishedElection](UnpublishedElection)|||The unpublished election|
+
+### getElectionSalt {#getElectionSalt}
+
+<div>
+
+</div>
+
+Returns an election salt for address
+
+**Returns**: Promise&lt;string&gt;
+- The election salt
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|address|string|||The address of the account|
+|electionCount|number|||The election count|
+
+### getNumericElectionId {#getNumericElectionId}
+
+<div>
+
+</div>
+
+Returns a numeric election identifier
+
+**Returns**: number
+- The numeric identifier
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|electionId|string|||The identifier of the election|
+
+### keys {#keys}
+
+<div>
+
+</div>
+
+Fetches the encryption keys from the specified process.
+
+**Returns**: Promise&lt;ElectionKeys&gt;
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|electionId|string|||The identifier of the election|
+
+### estimateElectionCost {#estimateElectionCost}
+
+<div>
+
+</div>
+
+Estimates the election cost
+
+**Returns**: Promise&lt;number&gt;
+- The cost in tokens.
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|election|[UnpublishedElection](UnpublishedElection)||||
+
+### calculateElectionCost {#calculateElectionCost}
+
+<div>
+
+</div>
+
+Calculate the election cost
+
+**Returns**: Promise&lt;number&gt;
+- The cost in tokens.
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|election|[UnpublishedElection](UnpublishedElection)||||
+

@@ -14,7 +14,7 @@ Main Vocdoni client object. It's a wrapper for all the methods in api, core<br /
 
 <div className="container">
   <div className="row mb-2"><div className="col col--12"><strong>Methods</strong></div></div>
-  <div className="row"><div className="col col--12"><a href="#generateWalletFromData">generateWalletFromData</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#setElectionId">setElectionId</a><br/><a href="#fetchChainId">fetchChainId</a><br/><a href="#fetchChainCosts">fetchChainCosts</a><br/><a href="#checkCircuitsHashes">checkCircuitsHashes</a><br/><a href="#setCircuits">setCircuits</a><br/><a href="#fetchCircuits">fetchCircuits</a><br/><a href="#fetchAccountInfo">fetchAccountInfo</a><br/><a href="#calculateCID">calculateCID</a><br/><a href="#fetchFaucetPayload">fetchFaucetPayload</a><br/><a href="#parseFaucetPackage">parseFaucetPackage</a><br/><a href="#fetchAccountToken">fetchAccountToken</a><br/><a href="#fetchElection">fetchElection</a><br/><a href="#waitForTransaction">waitForTransaction</a><br/><a href="#fetchProof">fetchProof</a><br/><a href="#fetchProofForWallet">fetchProofForWallet</a><br/><a href="#createAccountInfo">createAccountInfo</a><br/><a href="#updateAccountInfo">updateAccountInfo</a><br/><a href="#setAccountInfo">setAccountInfo</a><br/><a href="#createAccount">createAccount</a><br/><a href="#collectFaucetTokens">collectFaucetTokens</a><br/><a href="#createCensus">createCensus</a><br/><a href="#fetchCensusInfo">fetchCensusInfo</a><br/><a href="#createElection">createElection</a><br/><a href="#endElection">endElection</a><br/><a href="#pauseElection">pauseElection</a><br/><a href="#cancelElection">cancelElection</a><br/><a href="#continueElection">continueElection</a><br/><a href="#changeElectionStatus">changeElectionStatus</a><br/><a href="#changeElectionCensus">changeElectionCensus</a><br/><a href="#isInCensus">isInCensus</a><br/><a href="#hasAlreadyVoted">hasAlreadyVoted</a><br/><a href="#isAbleToVote">isAbleToVote</a><br/><a href="#votesLeftCount">votesLeftCount</a><br/><a href="#submitVote">submitVote</a><br/><a href="#generateRandomWallet">generateRandomWallet</a><br/><a href="#estimateElectionCost">estimateElectionCost</a><br/><a href="#calculateElectionCost">calculateElectionCost</a></div></div>
+  <div className="row"><div className="col col--12"><a href="#generateWalletFromData">generateWalletFromData</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#setElectionId">setElectionId</a><br/><a href="#fetchAccountInfo">fetchAccountInfo</a><br/><a href="#fetchAccount">fetchAccount</a><br/><a href="#fetchElection">fetchElection</a><br/><a href="#fetchProofForWallet">fetchProofForWallet</a><br/><a href="#calcZKProofForWallet">calcZKProofForWallet</a><br/><a href="#createAccountInfo">createAccountInfo</a><br/><a href="#updateAccountInfo">updateAccountInfo</a><br/><a href="#setAccountInfo">setAccountInfo</a><br/><a href="#createAccount">createAccount</a><br/><a href="#sendTokens">sendTokens</a><br/><a href="#collectFaucetTokens">collectFaucetTokens</a><br/><a href="#createElection">createElection</a><br/><a href="#createElectionSteps">createElectionSteps</a><br/><a href="#endElection">endElection</a><br/><a href="#pauseElection">pauseElection</a><br/><a href="#cancelElection">cancelElection</a><br/><a href="#continueElection">continueElection</a><br/><a href="#changeElectionStatus">changeElectionStatus</a><br/><a href="#changeElectionCensus">changeElectionCensus</a><br/><a href="#isInCensus">isInCensus</a><br/><a href="#hasAlreadyVoted">hasAlreadyVoted</a><br/><a href="#isAbleToVote">isAbleToVote</a><br/><a href="#votesLeftCount">votesLeftCount</a><br/><a href="#submitVote">submitVote</a><br/><a href="#submitVoteSteps">submitVoteSteps</a><br/><a href="#generateRandomWallet">generateRandomWallet</a><br/><a href="#fetchProof">fetchProof</a><br/><a href="#createCensus">createCensus</a><br/><a href="#fetchCensusInfo">fetchCensusInfo</a><br/><a href="#fetchCircuits">fetchCircuits</a><br/><a href="#setCircuits">setCircuits</a><br/><a href="#fetchChainCosts">fetchChainCosts</a><br/><a href="#fetchChainId">fetchChainId</a><br/><a href="#estimateElectionCost">estimateElectionCost</a><br/><a href="#calculateElectionCost">calculateElectionCost</a><br/><a href="#calculateCID">calculateCID</a><br/><a href="#fetchFaucetPayload">fetchFaucetPayload</a><br/><a href="#parseFaucetPackage">parseFaucetPackage</a><br/><a href="#waitForTransaction">waitForTransaction</a></div></div>
 </div>
 
 ## constructor
@@ -60,65 +60,6 @@ Sets an election id. Required by other methods like submitVote or createElection
 |:---:|:---:|:---:|:---:|:---:|
 |electionId|string|||Election id string|
 
-### fetchChainId {#fetchChainId}
-
-<div>
-
-</div>
-
-Fetches blockchain information if needed and returns the chain id.
-
-**Returns**: Promise&lt;string&gt;
-
-### fetchChainCosts {#fetchChainCosts}
-
-<div>
-
-</div>
-
-Fetches blockchain costs information if needed.
-
-**Returns**: Promise&lt;ChainCosts&gt;
-
-### checkCircuitsHashes {#checkCircuitsHashes}
-
-<div>
-
-</div>
-
-Checks circuit hashes
-
-**Returns**: ChainCircuits
-- The checked circuit parameters
-
-### setCircuits {#setCircuits}
-
-<div>
-
-</div>
-
-Sets circuits for anonymous voting
-
-**Returns**: Promise&lt;ChainCircuits&gt;
-
-|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
-|:---:|:---:|:---:|:---:|:---:|
-|circuits|ChainCircuits|||Custom circuits|
-
-### fetchCircuits {#fetchCircuits}
-
-<div>
-
-</div>
-
-Fetches circuits for anonymous voting
-
-**Returns**: Promise&lt;ChainCircuits&gt;
-
-|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
-|:---:|:---:|:---:|:---:|:---:|
-|circuits|Omit&lt;ChainCircuits, ('zKeyData'\|'vKeyData'\|'wasmData')&gt;|✔️||Additional options for custom circuits|
-
 ### fetchAccountInfo {#fetchAccountInfo}
 
 <div>
@@ -127,60 +68,25 @@ Fetches circuits for anonymous voting
 
 Fetches account information.
 
-**Returns**: Promise&lt;[AccountData](AccountData)&gt;
+**Returns**: Promise&lt;(AccountData\|ArchivedAccountData)&gt;
 
 |PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
 |:---:|:---:|:---:|:---:|:---:|
 |address|string|✔️||The account address to fetch the information|
 
-### calculateCID {#calculateCID}
+### fetchAccount {#fetchAccount}
 
 <div>
-
+  <span className="badge badge--success">async</span>
 </div>
 
-Fetches the CID expected for the specified data content.
+Fetches account.
 
-**Returns**: Promise&lt;string&gt;
-- Resulting CID
+**Returns**: Promise&lt;[AccountData](AccountData)&gt;
 
 |PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
 |:---:|:---:|:---:|:---:|:---:|
-|data|string|||The data of which we want the CID of|
-
-### fetchFaucetPayload {#fetchFaucetPayload}
-
-<div>
-
-</div>
-
-Fetches a faucet payload. Only for development.
-
-**Returns**: Promise&lt;{string}&gt;
-
-### parseFaucetPackage {#parseFaucetPackage}
-
-<div>
-
-</div>
-
-Parses a faucet package.
-
-**Returns**: [FaucetPackage](FaucetPackage)
-
-|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
-|:---:|:---:|:---:|:---:|:---:|
-|faucetPackage|string||||
-
-### fetchAccountToken {#fetchAccountToken}
-
-<div>
-
-</div>
-
-Fetches the specific account token auth and sets it to the current instance.
-
-**Returns**: Promise&lt;void&gt;
+|address|string|✔️||The account address to fetch the information|
 
 ### fetchElection {#fetchElection}
 
@@ -190,43 +96,11 @@ Fetches the specific account token auth and sets it to the current instance.
 
 Fetches info about an election.
 
-**Returns**: Promise&lt;[UnpublishedElection](UnpublishedElection)&gt;
+**Returns**: Promise&lt;(PublishedElection\|ArchivedElection)&gt;
 
 |PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
 |:---:|:---:|:---:|:---:|:---:|
 |electionId|string|✔️||The id of the election|
-
-### waitForTransaction {#waitForTransaction}
-
-<div>
-
-</div>
-
-A convenience method to wait for a transaction to be executed. It will<br />loop trying to get the transaction information, and will retry every time<br />it fails.
-
-**Returns**: Promise&lt;void&gt;
-
-|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
-|:---:|:---:|:---:|:---:|:---:|
-|tx|string|||Transaction to wait for|
-|wait|number|✔️||The delay in milliseconds between tries|
-|attempts|attempts|✔️||The attempts to try before failing|
-
-### fetchProof {#fetchProof}
-
-<div>
-  <span className="badge badge--success">async</span>
-</div>
-
-Fetches proof that an address is part of the specified census.
-
-**Returns**: Promise&lt;[OffchainCensusProof](OffchainCensusProof)&gt;
-
-|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
-|:---:|:---:|:---:|:---:|:---:|
-|censusId|string|||Census we want to check the address against|
-|key|string|||The address to be found|
-|type|CensusProofType|||Type of census|
 
 ### fetchProofForWallet {#fetchProofForWallet}
 
@@ -236,12 +110,30 @@ Fetches proof that an address is part of the specified census.
 
 Fetches proof that an address is part of the specified census.
 
-**Returns**: Promise&lt;[OffchainCensusProof](OffchainCensusProof)&gt;
+**Returns**: Promise&lt;[CensusProof](CensusProof)&gt;
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|censusId|string||||
+|wallet|Wallet \| Signer||||
+
+### calcZKProofForWallet {#calcZKProofForWallet}
+
+<div>
+  <span className="badge badge--success">async</span>
+</div>
+
+Calculates ZK proof from given wallet.
+
+**Returns**: Promise&lt;ZkProof&gt;
 
 |PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
 |:---:|:---:|:---:|:---:|:---:|
 |election|[PublishedElection](PublishedElection)||||
 |wallet|Wallet \| Signer||||
+|signature|string||||
+|votePackage|Buffer||||
+|password|string|✔️|"0"||
 
 ### createAccountInfo {#createAccountInfo}
 
@@ -283,7 +175,7 @@ Updates an account with information
 
 |PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
 |:---:|:---:|:---:|:---:|:---:|
-|promAccountData|Promise&lt;{tx: Uint8Array, metadata: string}&gt;||||
+|promAccountData|Promise&lt;{tx: Uint8Array, metadata: string, message: string}&gt;||||
 
 ### createAccount {#createAccount}
 
@@ -299,6 +191,20 @@ Registers an account against vochain, so it can create new elections.
 |:---:|:---:|:---:|:---:|:---:|
 |options|Object|✔️||Additional<br />options, like extra information of the account, or the faucet package string|
 
+### sendTokens {#sendTokens}
+
+<div>
+
+</div>
+
+Send tokens from one account to another.
+
+**Returns**: Promise&lt;void&gt;
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|options|SendTokensOptions|||Options for send tokens|
+
 ### collectFaucetTokens {#collectFaucetTokens}
 
 <div>
@@ -310,33 +216,9 @@ Calls the faucet to get new tokens. Only under development.
 **Returns**: Promise&lt;[AccountData](AccountData)&gt;
 - Account data information updated with new balance
 
-### createCensus {#createCensus}
-
-<div>
-
-</div>
-
-Publishes the given census.
-
-**Returns**: Promise&lt;void&gt;
-
 |PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
 |:---:|:---:|:---:|:---:|:---:|
-|census|[PlainCensus](PlainCensus) \| [WeightedCensus](WeightedCensus)|||The census to be published.|
-
-### fetchCensusInfo {#fetchCensusInfo}
-
-<div>
-
-</div>
-
-Fetches the information of a given census.
-
-**Returns**: Promise&lt;{size: number, weight: bigint}&gt;
-
-|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
-|:---:|:---:|:---:|:---:|:---:|
-|censusId|string||||
+|faucetPackage|string|✔️||The faucet package|
 
 ### createElection {#createElection}
 
@@ -348,6 +230,21 @@ Creates a new voting election.
 
 **Returns**: Promise&lt;string&gt;
 - Resulting election id.
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|election|[UnpublishedElection](UnpublishedElection)|||The election object to be created.|
+
+### createElectionSteps {#createElectionSteps}
+
+<div>
+  <span className="badge badge--success">async</span>
+</div>
+
+Creates a new voting election by steps with async returns.
+
+**Returns**: AsyncGenerator&lt;ElectionCreationStepValue&gt;
+- The async step returns.
 
 |PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
 |:---:|:---:|:---:|:---:|:---:|
@@ -452,13 +349,12 @@ Checks if the user is in census.
 
 |PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
 |:---:|:---:|:---:|:---:|:---:|
-|electionId|string|✔️||The id of the election|
-|key|Object|✔️||The key in the census to check|
+|options|HasAlreadyVotedOptions|✔️||Options for is in census|
 
 ### hasAlreadyVoted {#hasAlreadyVoted}
 
 <div>
-
+  <span className="badge badge--success">async</span>
 </div>
 
 Checks if the user has already voted
@@ -468,7 +364,7 @@ Checks if the user has already voted
 
 |PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
 |:---:|:---:|:---:|:---:|:---:|
-|electionId|string|✔️||The id of the election|
+|options|HasAlreadyVotedOptions|✔️||Options for has already voted|
 
 ### isAbleToVote {#isAbleToVote}
 
@@ -482,7 +378,7 @@ Checks if the user is able to vote
 
 |PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
 |:---:|:---:|:---:|:---:|:---:|
-|electionId|string|✔️||The id of the election|
+|options|IsAbleToVoteOptions|✔️||Options for is able to vote|
 
 ### votesLeftCount {#votesLeftCount}
 
@@ -496,7 +392,7 @@ Checks how many times a user can submit their vote
 
 |PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
 |:---:|:---:|:---:|:---:|:---:|
-|electionId|string|✔️||The id of the election|
+|options|VotesLeftCountOptions|✔️||Options for votes left count|
 
 ### submitVote {#submitVote}
 
@@ -504,14 +400,29 @@ Checks how many times a user can submit their vote
   <span className="badge badge--success">async</span>
 </div>
 
-Submits a vote to the current instance election id.
+Submits a vote.
 
 **Returns**: Promise&lt;string&gt;
 - Vote confirmation id.
 
 |PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
 |:---:|:---:|:---:|:---:|:---:|
-|vote|[Vote](Vote) \| [CspVote](CspVote)|||The vote (or votes) to be sent.|
+|vote|[Vote](Vote) \| [CspVote](CspVote) \| [AnonymousVote](AnonymousVote)|||The vote (or votes) to be sent.|
+
+### submitVoteSteps {#submitVoteSteps}
+
+<div>
+  <span className="badge badge--success">async</span>
+</div>
+
+Submits a vote by steps.
+
+**Returns**: Promise&lt;string&gt;
+- Vote confirmation id.
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|vote|[Vote](Vote) \| [CspVote](CspVote) \| [AnonymousVote](AnonymousVote)|||The vote (or votes) to be sent.|
 
 ### generateRandomWallet {#generateRandomWallet}
 
@@ -523,6 +434,97 @@ Assigns a random Wallet to the client and returns its private key.
 
 **Returns**: string
 - The private key.
+
+### fetchProof {#fetchProof}
+
+<div>
+  <span className="badge badge--success">async</span>
+</div>
+
+Fetches proof that an address is part of the specified census.
+
+**Returns**: Promise&lt;[CensusProof](CensusProof)&gt;
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|censusId|string|||Census we want to check the address against|
+|key|string|||The address to be found|
+
+### createCensus {#createCensus}
+
+<div>
+
+</div>
+
+Publishes the given census.
+
+**Returns**: Promise&lt;void&gt;
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|census|[PlainCensus](PlainCensus) \| [WeightedCensus](WeightedCensus)|||The census to be published.|
+
+### fetchCensusInfo {#fetchCensusInfo}
+
+<div>
+
+</div>
+
+Fetches the information of a given census.
+
+**Returns**: Promise&lt;{size: number, weight: bigint}&gt;
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|censusId|string||||
+
+### fetchCircuits {#fetchCircuits}
+
+<div>
+
+</div>
+
+Fetches circuits for anonymous voting
+
+**Returns**: Promise&lt;ChainCircuits&gt;
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|circuits|Omit&lt;ChainCircuits, ('zKeyData'\|'vKeyData'\|'wasmData')&gt;|✔️||Additional options for custom circuits|
+
+### setCircuits {#setCircuits}
+
+<div>
+
+</div>
+
+Sets circuits for anonymous voting
+
+**Returns**: Promise&lt;ChainCircuits&gt;
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|circuits|ChainCircuits|||Custom circuits|
+
+### fetchChainCosts {#fetchChainCosts}
+
+<div>
+
+</div>
+
+Fetches blockchain costs information if needed.
+
+**Returns**: Promise&lt;ChainCosts&gt;
+
+### fetchChainId {#fetchChainId}
+
+<div>
+
+</div>
+
+Fetches blockchain information if needed and returns the chain id.
+
+**Returns**: Promise&lt;string&gt;
 
 ### estimateElectionCost {#estimateElectionCost}
 
@@ -553,4 +555,59 @@ Calculate the election cost
 |PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
 |:---:|:---:|:---:|:---:|:---:|
 |election|[UnpublishedElection](UnpublishedElection)||||
+
+### calculateCID {#calculateCID}
+
+<div>
+
+</div>
+
+Fetches the CID expected for the specified data content.
+
+**Returns**: Promise&lt;string&gt;
+- Resulting CID
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|data|string|||The data of which we want the CID of|
+
+### fetchFaucetPayload {#fetchFaucetPayload}
+
+<div>
+
+</div>
+
+Fetches a faucet payload. Only for development.
+
+**Returns**: Promise&lt;{string}&gt;
+
+### parseFaucetPackage {#parseFaucetPackage}
+
+<div>
+
+</div>
+
+Parses a faucet package.
+
+**Returns**: [FaucetPackage](FaucetPackage)
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|faucetPackage|string|||The encoded faucet package|
+
+### waitForTransaction {#waitForTransaction}
+
+<div>
+
+</div>
+
+A convenience method to wait for a transaction to be executed. It will<br />loop trying to get the transaction information, and will retry every time<br />it fails.
+
+**Returns**: Promise&lt;void&gt;
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|tx|string|||Transaction to wait for|
+|wait|number|✔️||The delay in milliseconds between tries|
+|attempts|attempts|✔️||The attempts to try before failing|
 

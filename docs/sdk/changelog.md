@@ -5,7 +5,230 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [0.7.5] - 2024-02-15
+
+### Added
+
+- Added support for getting token holder balance in Census3 using `tokenHolderBalance`.
+- Added support for getting token holders based on strategy using `getStrategyHolders`.
+
+### Fixed
+
+- Fixed `CensusOrigin` when election is using CSP census and anonymous.
+- Fixed bad generation of `dist` bundles in previous version.
+
+## [0.7.4] - 2024-02-06
+
+### Added
+
+- Added new `CspProofType` type when voting in a CSP based election to choose the encryption type.
+
+## [0.7.3] - 2024-01-23
+
+### Added
+
+- Added new `ApprovalElection` election type for creating approval elections easily.
+
+### Fixed
+
+- Fixed `costExponent` to 1.
+- Fixed error when election has no metadata.
+- Fixed error with questions results for elections with no new type metadata.
+
+## [0.7.2] - 2024-01-17
+
+### Added
+
+- Added new `MultiChoiceElection` election type for creating multi-choice elections easily.
+- Added new `BudgetElection` election type for creating budget elections easily.
+
+### Fixed
+
+- Results in published elections are now correctly returned for each type of election.
+
+## [0.7.1] - 2024-01-11
+
+### Changed
+
+- Supported tokens from Census3 using `getSupportedTokens()` returns now a token summary.
+- Census3 `getStrategyEstimation` accepts `anonymous` flag and returns `accuracy` for anonymous censuses.
+
+### Fixed
+
+- Removed `nullifier` from vote package.
+- Returning census from type `CspCensus` when election is for CSP.
+
+### Added
+
+- Added `ArchivedAccountData` for dealing with archived accounts and new `fetchAccount` function in client.
+- Added `ErrFaucetAlreadyFunded` for faucet limit requests.
+- Added `ErrElectionFinished` for doing actions when election is finished.
+- Added `submitVoteSteps` for voting using async generator steps.
+
+## [0.7.0] - 2023-12-13
+
+### Changed
+
+- Changed sha256 library from `@ethersproject/sha2` to `js-sha256` for web workers.
+- Using API endpoint for estimating blocks from dates when creating an election.
+- [**BREAKING**] Census3 `getStrategySize` function changed to `getStrategyEstimation` giving estimated time and size for the given strategy.
+
+## [0.6.1] - 2023-11-29
+
+### Added
+
+- New anonymous function `hasRegisteredSIK` for checking if a user has registered a SIK.
+
+### Fixed
+
+- Removed outliers from block times for avoiding block estimation issues.
+
+## [0.6.0] - 2023-11-28
+
+### Added
+
+- New election service functions `nextElectionId` and `getElectionSalt`.
+
+### Changed
+
+- [**BREAKING**] Refactored options for `isInCensus`, `hasAlreadyVoted`, `isAbleToVote` and `votesLeftCount`.
+- [**BREAKING**] New options for `AnonymousVote` which enable to add the user's signature.
+- [**BREAKING**] New internal anonymous flow when signature is given by the consumer.
+
+## [0.5.3] - 2023-11-28
+
+### Added
+
+- New account methods supported for listing, counting and checking account transfers in `AccountAPI`.
+
+### Fixed
+
+- Archived elections without census URI are now accepted.
+
+### Changed
+
+- Faucet options don't require `token_limit` anymore.
+
+## [0.5.2] - 2023-11-16
+
+### Fixed
+
+- Anonymous vote packages are no longer signed.
+
+## [0.5.1] - 2023-11-15
+
+### Fixed
+
+- Missing exported election type `ArchivedElection`.
+- Faucet errors correctly shown with message.
+
+## [0.5.0] - 2023-11-14
+
+### Changed
+
+- [**BREAKING**] New full integration for Census3 v2, using tokens, strategies and censuses.
+
+## [0.4.3] - 2023-11-09
+
+### Added
+
+- Support for archived elections with new election type `ArchivedElection` and with new census with type `ArchivedCensus`.
+
+## [0.4.2] - 2023-11-06
+
+### Changed
+
+- Removed faucet path from default URLs.
+- Updated `@vocdoni/proto` dependency to `1.15.4`.
+
+### Added
+
+- Import, export and delete census functionality in census service.
+- Added new election parameter `temporarySecretIdentity` for deleting temporary SIKs once election is finished.
+
+### Fixed
+
+- Fixed `ffjavascript` dependency to `0.2.59`.
+
+## [0.4.1] - 2023-10-24
+
+### Changed
+
+- Modified `dev`, `stg` and `prod` default URLs for all services.
+- Upgraded to new faucet.
+
+## [0.4.0] - 2023-10-10
+
+### Changed
+
+- [**BREAKING**] New signatures for chain transactions.
+
+## [0.3.2] - 2023-10-10
+
+### Added
+
+- Added support for uploading big censuses in chunks.
+
+### Fixed
+
+- Added `assert` as embedded in rollup configuration.
+
+## [0.3.1] - 2023-09-20
+
+### Added
+
+- New `createElectionSteps` function in client for using async generators and control creation flow.
+- New `sendTokens` function in client for transferring tokens between accounts.
+
+### Changed
+
+- New user-friendly text for SIK payload signing.
+
+### Fixed
+
+- Added `ethers` as embedded in rollup configuration for `circomlibjs` dependencies.
+
+## [0.3.0] - 2023-09-13
+
+### Fixed
+
+- Ensuring proof `value` handled as hex for anonymous circuits inputs.
+
+### Changed
+
+- [**BREAKING**] Removed some (probably not used) client properties for future refactor.
+- Added services as mid-layer between pure SDK client and API wrappers.
+
+### Added
+
+- Census3 supported chains information.
+
+## [0.2.0] - 2023-09-04
+
+### Fixed
+
+- `dotobject` helper returns null when key is not found.
+
+### Changed
+
+- `collectFaucetTokens` function accepts raw faucet package payload.
+
+### Added
+
+- Census3 error typings.
+- [**BREAKING**] Census3 anonymous censuses.
+
+## [0.1.1] - 2023-08-14
+
+### Fixed
+
+- Added missing dependency `readable-stream`.
+
+## [0.1.0] - 2023-08-11
+
+### Added
+
+- [**BREAKING**] Anonymous integration
 
 ### Fixed
 
@@ -227,6 +450,27 @@ which extend from the abstract `Election` class.
 
 - First unstable version of the SDK for testing purposes
 
+[0.7.4]: https://github.com/vocdoni/vocdoni-sdk/releases/tag/v0.7.4
+[0.7.3]: https://github.com/vocdoni/vocdoni-sdk/releases/tag/v0.7.3
+[0.7.2]: https://github.com/vocdoni/vocdoni-sdk/releases/tag/v0.7.2
+[0.7.1]: https://github.com/vocdoni/vocdoni-sdk/releases/tag/v0.7.1
+[0.7.0]: https://github.com/vocdoni/vocdoni-sdk/releases/tag/v0.7.0
+[0.6.1]: https://github.com/vocdoni/vocdoni-sdk/releases/tag/v0.6.1
+[0.6.0]: https://github.com/vocdoni/vocdoni-sdk/releases/tag/v0.6.0
+[0.5.3]: https://github.com/vocdoni/vocdoni-sdk/releases/tag/v0.5.3
+[0.5.2]: https://github.com/vocdoni/vocdoni-sdk/releases/tag/v0.5.2
+[0.5.1]: https://github.com/vocdoni/vocdoni-sdk/releases/tag/v0.5.1
+[0.5.0]: https://github.com/vocdoni/vocdoni-sdk/releases/tag/v0.5.0
+[0.4.3]: https://github.com/vocdoni/vocdoni-sdk/releases/tag/v0.4.3
+[0.4.2]: https://github.com/vocdoni/vocdoni-sdk/releases/tag/v0.4.2
+[0.4.1]: https://github.com/vocdoni/vocdoni-sdk/releases/tag/v0.4.1
+[0.4.0]: https://github.com/vocdoni/vocdoni-sdk/releases/tag/v0.4.0
+[0.3.2]: https://github.com/vocdoni/vocdoni-sdk/releases/tag/v0.3.2
+[0.3.1]: https://github.com/vocdoni/vocdoni-sdk/releases/tag/v0.3.1
+[0.3.0]: https://github.com/vocdoni/vocdoni-sdk/releases/tag/v0.3.0
+[0.2.0]: https://github.com/vocdoni/vocdoni-sdk/releases/tag/v0.2.0
+[0.1.1]: https://github.com/vocdoni/vocdoni-sdk/releases/tag/v0.1.1
+[0.1.0]: https://github.com/vocdoni/vocdoni-sdk/releases/tag/v0.1.0
 [0.0.18]: https://github.com/vocdoni/vocdoni-sdk/releases/tag/v0.0.18
 [0.0.17]: https://github.com/vocdoni/vocdoni-sdk/releases/tag/v0.0.17
 [0.0.16]: https://github.com/vocdoni/vocdoni-sdk/releases/tag/v0.0.16

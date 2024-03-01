@@ -3,7 +3,7 @@ custom_edit_url: null
 ---
 
 ```ts
-class FaucetAPI
+class Census3ServiceAPI
 ```
 
 <div>
@@ -12,12 +12,12 @@ class FaucetAPI
 
 <div className="container">
   <div className="row mb-2"><div className="col col--12"><strong>Methods</strong></div></div>
-  <div className="row"><div className="col col--12"><a href="#collect">collect</a><span className="badge badge--info margin-left--sm">static</span></div></div>
+  <div className="row"><div className="col col--12"><a href="#info">info</a><span className="badge badge--info margin-left--sm">static</span></div></div>
 </div>
 
 ## constructor
 ```ts
-new FaucetAPI()
+new Census3ServiceAPI()
 ```
 
 <div>
@@ -27,18 +27,17 @@ new FaucetAPI()
 Cannot be constructed.
 
 ## Methods
-### collect {#collect}
+### info {#info}
 
 <div>
   <span className="badge badge--info">static</span>
 </div>
 
-Calls the collect tokens method.
+Fetches supported chains from the service
 
-**Returns**: Promise&lt;IFaucetCollectResponse&gt;
+**Returns**: Promise&lt;ICensus3ServiceInfoResponse&gt;
 
 |PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
 |:---:|:---:|:---:|:---:|:---:|
 |url|string|||API endpoint URL|
-|address|string|||Address to send the tokens to|
 
