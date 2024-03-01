@@ -12,7 +12,7 @@ class CensusAPI
 
 <div className="container">
   <div className="row mb-2"><div className="col col--12"><strong>Methods</strong></div></div>
-  <div className="row"><div className="col col--12"><a href="#create">create</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#add">add</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#publish">publish</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#proof">proof</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#size">size</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#weight">weight</a><span className="badge badge--info margin-left--sm">static</span></div></div>
+  <div className="row"><div className="col col--12"><a href="#create">create</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#add">add</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#publish">publish</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#proof">proof</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#export">export</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#import">import</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#delete">delete</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#size">size</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#weight">weight</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#type">type</a><span className="badge badge--info margin-left--sm">static</span></div></div>
 </div>
 
 ## constructor
@@ -94,6 +94,60 @@ Checks if the specified address is in the specified census
 |censusId|string|||The census ID of which we want the proof from|
 |key|string|||The address to be checked|
 
+### export {#export}
+
+<div>
+  <span className="badge badge--info">static</span>
+</div>
+
+Exports the given census identifier
+
+**Returns**: Promise&lt;ICensusExportResponse&gt;
+- on success
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|url|string|||API endpoint URL|
+|authToken|string|||Authentication token|
+|censusId|string|||The census ID we want to export|
+
+### import {#import}
+
+<div>
+  <span className="badge badge--info">static</span>
+</div>
+
+Imports data into the given census identifier
+
+**Returns**: Promise&lt;void&gt;
+- on success
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|url|string|||API endpoint URL|
+|authToken|string|||Authentication token|
+|censusId|string|||The census ID we want to export|
+|type|number|||The type of the census|
+|rootHash|string|||The root hash of the census|
+|data|string|||The census data to be imported|
+
+### delete {#delete}
+
+<div>
+  <span className="badge badge--info">static</span>
+</div>
+
+Deletes the given census
+
+**Returns**: Promise&lt;void&gt;
+- on success
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|url|string|||API endpoint URL|
+|authToken|string|||Authentication token|
+|censusId|string|||The census ID we want to export|
+
 ### size {#size}
 
 <div>
@@ -107,7 +161,7 @@ Returns the size of a given census
 |PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
 |:---:|:---:|:---:|:---:|:---:|
 |url|string|||API endpoint URL|
-|censusId|string|||The census ID of which we want the proof from|
+|censusId|string|||The census ID|
 
 ### weight {#weight}
 
@@ -122,5 +176,20 @@ Returns the weight of a given census
 |PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
 |:---:|:---:|:---:|:---:|:---:|
 |url|string|||API endpoint URL|
-|censusId|string|||The census ID of which we want the proof from|
+|censusId|string|||The census ID|
+
+### type {#type}
+
+<div>
+  <span className="badge badge--info">static</span>
+</div>
+
+Returns the type of given census
+
+**Returns**: Promise&lt;ICensusTypeResponse&gt;
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|url|string|||API endpoint URL|
+|censusId|string|||The census ID|
 

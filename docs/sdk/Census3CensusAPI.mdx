@@ -12,7 +12,7 @@ class Census3CensusAPI
 
 <div className="container">
   <div className="row mb-2"><div className="col col--12"><strong>Methods</strong></div></div>
-  <div className="row"><div className="col col--12"><a href="#list">list</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#census">census</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#create">create</a><span className="badge badge--info margin-left--sm">static</span></div></div>
+  <div className="row"><div className="col col--12"><a href="#list">list</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#census">census</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#queue">queue</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#create">create</a><span className="badge badge--info margin-left--sm">static</span></div></div>
 </div>
 
 ## constructor
@@ -57,20 +57,35 @@ Returns the information of the census
 |url|string|||API endpoint URL|
 |id|number|||The identifier of the census|
 
+### queue {#queue}
+
+<div>
+  <span className="badge badge--info">static</span>
+</div>
+
+Returns the information of the census queue
+
+**Returns**: Promise&lt;ICensus3CensusQueueResponse&gt;
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|url|string|||API endpoint URL|
+|id|string|||The identifier of the census queue|
+
 ### create {#create}
 
 <div>
   <span className="badge badge--info">static</span>
 </div>
 
-Requests the creation of a new census with the strategy provided for the blockNumber.
+Requests the creation of a new census with the strategy provided.
 
-**Returns**: Promise&lt;ICensus3CensusCreateResponse&gt;
-- promised ICensus3CensusCreateResponse
+**Returns**: Promise&lt;ICensus3QueueResponse&gt;
+- The queue identifier
 
 |PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
 |:---:|:---:|:---:|:---:|:---:|
 |url|string|||API endpoint URL|
 |strategyId|number|||The strategy identifier|
-|blockNumber|number|✔️||The number of the block|
+|anonymous|boolean|✔️|false|If the census has to be anonymous|
 

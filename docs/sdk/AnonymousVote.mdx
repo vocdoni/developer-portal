@@ -3,7 +3,7 @@ custom_edit_url: null
 ---
 
 ```ts
-class CspVote
+class AnonymousVote
 ```
 
 <div>
@@ -12,7 +12,7 @@ class CspVote
 
 ## constructor
 ```ts
-new CspVote(votes, signature, proof_type)
+new AnonymousVote(votes, signature, password)
 ```
 
 <div>
@@ -24,6 +24,6 @@ Constructs a csp vote
 |PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
 |:---:|:---:|:---:|:---:|:---:|
 |votes|Array&lt;number \| TSBigIntKeyword&gt;|||The list of votes values|
-|signature|string|||The CSP signature|
-|proof_type|CspProofType|✔️||The CSP proof type|
+|signature|string|✔️||The signature of the payload|
+|password|string|✔️|"0"|The password of the anonymous vote|
 

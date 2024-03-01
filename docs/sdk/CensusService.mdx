@@ -1,0 +1,158 @@
+---
+custom_edit_url: null
+---
+
+```ts
+class CensusService
+```
+
+<div>
+
+</div>
+
+<div className="container">
+  <div className="row mb-2"><div className="col col--12"><strong>Methods</strong></div></div>
+  <div className="row"><div className="col col--12"><a href="#get">get</a><br/><a href="#delete">delete</a><br/><a href="#fetchProof">fetchProof</a><br/><a href="#publish">publish</a><br/><a href="#export">export</a><br/><a href="#import">import</a><br/><a href="#createCensus">createCensus</a><br/><a href="#createCensusParallel">createCensusParallel</a><br/><a href="#fetchAccountToken">fetchAccountToken</a></div></div>
+</div>
+
+## constructor
+```ts
+new CensusService(params)
+```
+
+<div>
+
+</div>
+
+Instantiate the census service.
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|params|Partial&lt;CensusServiceParameters&gt;|||The service parameters|
+
+## Methods
+
+### get {#get}
+
+<div>
+
+</div>
+
+Fetches the information of a given census.
+
+**Returns**: Promise&lt;{size: number, weight: bigint, type: CensusType}&gt;
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|censusId|string||||
+
+### delete {#delete}
+
+<div>
+
+</div>
+
+Deletes the given census.
+
+**Returns**: Promise&lt;void&gt;
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|censusId|string||||
+
+### fetchProof {#fetchProof}
+
+<div>
+  <span className="badge badge--success">async</span>
+</div>
+
+Fetches proof that an address is part of the specified census.
+
+**Returns**: Promise&lt;[CensusProof](CensusProof)&gt;
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|censusId|string|||Census we want to check the address against|
+|key|string|||The address to be found|
+
+### publish {#publish}
+
+<div>
+
+</div>
+
+Publishes the given census identifier.
+
+**Returns**: Promise&lt;ICensusPublishResponse&gt;
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|censusId|string|||The census identifier|
+
+### export {#export}
+
+<div>
+
+</div>
+
+Exports the given census identifier.
+
+**Returns**: Promise&lt;[CensusImportExport](CensusImportExport)&gt;
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|censusId|string|||The census identifier|
+
+### import {#import}
+
+<div>
+
+</div>
+
+Imports data into the given census identifier.
+
+**Returns**: Promise&lt;ICensusImportResponse&gt;
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|censusId|string|||The census identifier|
+|data|[CensusImportExport](CensusImportExport)|||The census data|
+
+### createCensus {#createCensus}
+
+<div>
+
+</div>
+
+Publishes the given census.
+
+**Returns**: Promise&lt;void&gt;
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|census|[PlainCensus](PlainCensus) \| [WeightedCensus](WeightedCensus)|||The census to be published.|
+
+### createCensusParallel {#createCensusParallel}
+
+<div>
+
+</div>
+
+Publishes the given census.
+
+**Returns**: Promise&lt;void&gt;
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|census|[PlainCensus](PlainCensus) \| [WeightedCensus](WeightedCensus)|||The census to be published.|
+
+### fetchAccountToken {#fetchAccountToken}
+
+<div>
+
+</div>
+
+Fetches the specific account token auth and sets it to the current instance.
+
+**Returns**: Promise&lt;void&gt;
+

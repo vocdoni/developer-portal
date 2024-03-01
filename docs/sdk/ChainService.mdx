@@ -1,0 +1,115 @@
+---
+custom_edit_url: null
+---
+
+```ts
+class ChainService
+```
+
+<div>
+
+</div>
+
+<div className="container">
+  <div className="row mb-2"><div className="col col--12"><strong>Methods</strong></div></div>
+  <div className="row"><div className="col col--12"><a href="#fetchChainData">fetchChainData</a><br/><a href="#fetchChainCosts">fetchChainCosts</a><br/><a href="#submitTx">submitTx</a><br/><a href="#txInfo">txInfo</a><br/><a href="#dateToBlock">dateToBlock</a><br/><a href="#waitForTransaction">waitForTransaction</a></div></div>
+</div>
+
+## constructor
+```ts
+new ChainService(params)
+```
+
+<div>
+
+</div>
+
+Instantiate the chain service.
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|params|Partial&lt;ChainServiceParameters&gt;|||The service parameters|
+
+## Methods
+
+### fetchChainData {#fetchChainData}
+
+<div>
+
+</div>
+
+Fetches blockchain information if needed.
+
+**Returns**: Promise&lt;ChainData&gt;
+
+### fetchChainCosts {#fetchChainCosts}
+
+<div>
+
+</div>
+
+Fetches blockchain costs information if needed.
+
+**Returns**: Promise&lt;ChainCosts&gt;
+
+### submitTx {#submitTx}
+
+<div>
+
+</div>
+
+Submits a transaction to the blockchain
+
+**Returns**: Promise&lt;string&gt;
+- The transaction hash
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|payload|string|||The transaction data payload|
+
+### txInfo {#txInfo}
+
+<div>
+
+</div>
+
+Fetches information about a transaction from the blockchain.
+
+**Returns**: Promise&lt;ChainTx&gt;
+- The chain transaction
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|txHash|string|||The transaction hash which we want to retrieve the info from|
+
+### dateToBlock {#dateToBlock}
+
+<div>
+
+</div>
+
+Returns the block number for a given date.
+
+**Returns**: Promise&lt;number&gt;
+- The block number
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|date|Date|||The date which we want to retrieve the block number from|
+
+### waitForTransaction {#waitForTransaction}
+
+<div>
+
+</div>
+
+A convenience method to wait for a transaction to be executed. It will<br />loop trying to get the transaction information, and will retry every time<br />it fails.
+
+**Returns**: Promise&lt;void&gt;
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|tx|string|||Transaction to wait for|
+|wait|number|✔️||The delay in milliseconds between tries|
+|attempts|attempts|✔️||The attempts to try before failing|
+

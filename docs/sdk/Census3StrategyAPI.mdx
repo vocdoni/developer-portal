@@ -12,7 +12,7 @@ class Census3StrategyAPI
 
 <div className="container">
   <div className="row mb-2"><div className="col col--12"><strong>Methods</strong></div></div>
-  <div className="row"><div className="col col--12"><a href="#list">list</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#strategy">strategy</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#create">create</a><span className="badge badge--info margin-left--sm">static</span></div></div>
+  <div className="row"><div className="col col--12"><a href="#list">list</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#holders">holders</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#listByToken">listByToken</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#strategy">strategy</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#estimation">estimation</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#estimationQueue">estimationQueue</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#importQueue">importQueue</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#import">import</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#create">create</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#validatePredicate">validatePredicate</a><span className="badge badge--info margin-left--sm">static</span><br/><a href="#operators">operators</a><span className="badge badge--info margin-left--sm">static</span></div></div>
 </div>
 
 ## constructor
@@ -35,13 +35,45 @@ Cannot be constructed.
 
 Fetches list of strategies
 
+**Returns**: Promise&lt;ICensus3StrategiesListResponsePaginated&gt;
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|url|string|||API endpoint URL|
+|pagination|Census3Pagination|✔️||Pagination options|
+
+### holders {#holders}
+
+<div>
+  <span className="badge badge--info">static</span>
+</div>
+
+Fetches list of holders by strategy
+
+**Returns**: Promise&lt;ICensus3StrategyHoldersResponsePaginated&gt;
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|url|string|||API endpoint URL|
+|id|number|||The identifier of the strategy|
+|pagination|Census3Pagination|✔️||Pagination options|
+
+### listByToken {#listByToken}
+
+<div>
+  <span className="badge badge--info">static</span>
+</div>
+
+Fetches list of strategies based on given token
+
 **Returns**: Promise&lt;ICensus3StrategiesListResponse&gt;
 
 |PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
 |:---:|:---:|:---:|:---:|:---:|
 |url|string|||API endpoint URL|
-|page|number|✔️|0|The page number|
-|token|string|✔️||The token id or address|
+|tokenId|string|||The identifier of the token|
+|chainId|number|||The chain identifier of the token|
+|externalId|string|✔️||The identifier used by external provider|
 
 ### strategy {#strategy}
 
@@ -51,12 +83,76 @@ Fetches list of strategies
 
 Returns the information of the strategy
 
-**Returns**: Promise&lt;ICensus3StrategyResponse&gt;
+**Returns**: Promise&lt;Census3Strategy&gt;
 
 |PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
 |:---:|:---:|:---:|:---:|:---:|
 |url|string|||API endpoint URL|
 |id|number|||The identifier of the strategy|
+
+### estimation {#estimation}
+
+<div>
+  <span className="badge badge--info">static</span>
+</div>
+
+Returns the estimation of size and time (in milliseconds) to create the census generated for the provided strategy
+
+**Returns**: Promise&lt;ICensus3QueueResponse&gt;
+- The queue identifier
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|url|string|||API endpoint URL|
+|id|number|||The identifier of the strategy|
+|anonymous|boolean|✔️|false|If the estimation should be done for anonymous census|
+
+### estimationQueue {#estimationQueue}
+
+<div>
+  <span className="badge badge--info">static</span>
+</div>
+
+Returns the information of the strategy estimation queue
+
+**Returns**: Promise&lt;ICensus3StrategyEstimationQueueResponse&gt;
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|url|string|||API endpoint URL|
+|strategyId|number|||The identifier of the strategy|
+|queueId|string|||The identifier of the strategy estimation queue|
+
+### importQueue {#importQueue}
+
+<div>
+  <span className="badge badge--info">static</span>
+</div>
+
+Returns the information of the strategy import queue
+
+**Returns**: Promise&lt;ICensus3StrategyImportQueueResponse&gt;
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|url|string|||API endpoint URL|
+|queueId|string|||The identifier of the strategy import queue|
+
+### import {#import}
+
+<div>
+  <span className="badge badge--info">static</span>
+</div>
+
+Imports a strategy from IPFS from the given cid.
+
+**Returns**: Promise&lt;ICensus3QueueResponse&gt;
+- The queue identifier
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|url|string|||API endpoint URL|
+|cid|string|||The cid of the IPFS where the strategy is stored|
 
 ### create {#create}
 
@@ -67,11 +163,42 @@ Returns the information of the strategy
 Creates a new strategy based on the given token strategies and predicate.
 
 **Returns**: Promise&lt;ICensus3StrategyCreateResponse&gt;
-- promised ICensus3StrategyCreateResponse
+- The identifier of the created strategy
 
 |PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
 |:---:|:---:|:---:|:---:|:---:|
 |url|string|||API endpoint URL|
-|tokens|Array&lt;ICensus3StrategyToken&gt;|||The token list with strategies|
-|strategy|string|||The stringified strategy (predicate)|
+|alias|string|||The alias of the strategy|
+|predicate|string|||The predicate of the strategy|
+|tokens|{[key: string]: Census3CreateStrategyToken}|||The token list for the strategy|
+
+### validatePredicate {#validatePredicate}
+
+<div>
+  <span className="badge badge--info">static</span>
+</div>
+
+Validates a predicate.
+
+**Returns**: Promise&lt;ICensus3ValidatePredicateResponse&gt;
+- Parsed version of the predicate
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|url|string|||API endpoint URL|
+|predicate|string|||The predicate of the strategy|
+
+### operators {#operators}
+
+<div>
+  <span className="badge badge--info">static</span>
+</div>
+
+Returns the list of supported operators to build strategy predicates.
+
+**Returns**: Promise&lt;ICensus3StrategiesOperatorsResponse&gt;
+
+|PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
+|:---:|:---:|:---:|:---:|:---:|
+|url|string|||API endpoint URL|
 

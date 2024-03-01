@@ -3,32 +3,31 @@ custom_edit_url: null
 ---
 
 ```ts
-class TokenCensus
+class ArchivedCensus
 ```
 
 <div>
 
 </div>
 
-Represents a census3 census
+Represents an archived census
 
 ## constructor
 ```ts
-new TokenCensus(censusId, censusURI, anonymous, token, size, weight)
+new ArchivedCensus(censusId, censusURI, type, size, weight)
 ```
 
 <div>
 
 </div>
 
-Constructs a census3 census
+Constructs an archived census
 
 |PARAMETER|TYPE|OPTIONAL|DEFAULT|DESCRIPTION|
 |:---:|:---:|:---:|:---:|:---:|
 |censusId|string|||The id of the census|
-|censusURI|string|||The URI of the census|
-|anonymous|boolean|||If the census is anonymous|
-|token|Token|||The token of the census|
+|censusURI|string|✔️||The URI of the census|
+|type|CensusType|✔️||The type of the census|
 |size|number|✔️||The size of the census|
 |weight|TSBigIntKeyword|✔️||The weight of the census|
 
