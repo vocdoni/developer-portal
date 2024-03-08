@@ -33,7 +33,7 @@ export default function TopSection(): JSX.Element {
                     Try it out!
                 </Paragraph>
                 <div>
-                    <CTA href="/sdk">Get Started</CTA>
+                    <CTA href="/intro">Get Started</CTA>
                     <DiscordLink href={"https://chat.vocdoni.io/"}><BsDiscord /> chat.vocdoni.io </DiscordLink>
                 </div>
             </MainSubsection>

@@ -96,7 +96,8 @@ const config = {
       ],
       docs: {
         sidebar: {
-          hideable: true
+          hideable: true,
+          autoCollapseCategories: true
         }
       },
       algolia: {
@@ -118,68 +119,63 @@ const config = {
         textColor: '#091E42',
         isCloseable: false
       },
-      // navbar: {
-      //   title: "",
-      //   logo: {
-      //     alt: "Vocdoni logo",
-      //     src: "img/navbar-logo.svg",
-      //   },
-      //   items: [
-      //     {
-      //       type: "doc",
-      //       docId: "get-started/intro",
-      //       position: "left",
-      //       label: "Get Started",
-      //       className: "plausible-event-name=Header+Introduction",
-      //     },
-      //     {
-      //       type: 'dropdown',
-      //       label: 'Reference',
-      //       position: 'left',
-      //       items: [
-      //         {
-      //           type: "doc",
-      //           docId: "protocol/overview",
-      //           label: "Protocol",
-      //           className: "plausible-event-name=Header+API",
-      //         },
-      //         {
-      //           label: "API",
-      //           to: "/vocdoni-api/vocdoni-api",
-      //           className: "plausible-event-name=Header+API",
-      //         },
-      //         {
-      //           type: 'doc',
-      //           docId: 'sdk/sdk',
-      //           label: 'SDK',
-      //           className: "plausible-event-name=Header+SDK",
-      //         },
-      //         {
-      //           type: 'doc',
-      //           docId: 'ui-components/Intro',
-      //           label: 'Ui Components',
-      //           className: "plausible-event-name=Header+UICOMPONENTS",
-      //         },
-      //       ]
-      //     },
-      //     {
-      //       href: "https://dev.explorer.vote",
-      //       position: 'left',
-      //       label: 'Explorer',
-      //     },
-      //     {
-      //       href: "https://blog.vocdoni.io",
-      //       position: "left",
-      //       "label": "Blog",
-      //     },
-      //     {
-      //       href: "https://github.com/vocdoni",
-      //       position: "right",
-      //       className: "header-github-link",
-      //       "aria-label": "GitHub repository",
-      //     },
-      //   ],
-      // },
+      navbar: {
+        title: '',
+        logo: {
+          alt: 'Vocdoni logo',
+          src: 'img/navbar-logo.svg'
+        },
+        items: [
+          {
+            type: 'doc',
+            docId: 'intro',
+            position: 'left',
+            label: 'Get Started',
+            className: 'plausible-event-name=Header+Introduction'
+          },
+          {
+            type: 'dropdown',
+            label: 'Reference',
+            position: 'left',
+            items: [
+              {
+                type: 'doc',
+                docId: 'sdk/sdk',
+                label: 'SDK',
+                className: 'plausible-event-name=Header+SDK'
+              },
+              {
+                type: 'doc',
+                docId: 'ui-components/ui-components',
+                label: 'UI Components',
+                className: 'plausible-event-name=Header+UICOMPONENTS'
+              },
+              {
+                type: 'doc',
+                docId: 'protocol/protocol',
+                label: 'Protocol',
+                className: 'plausible-event-name=Header+API'
+              }
+            ]
+          },
+          {
+            href: 'https://dev.explorer.vote',
+            position: 'left',
+            label: 'Explorer'
+          },
+          {
+            href: 'https://blog.vocdoni.io',
+            position: 'left',
+            label: 'Blog'
+          },
+          {
+            href: 'https://github.com/vocdoni',
+            position: 'right',
+            className: 'header-github-link',
+            'aria-label': 'GitHub repository'
+          }
+        ]
+      },
       footer: {
         style: 'dark',
         links: [
@@ -281,7 +277,7 @@ const config = {
         config: {
           vocdoni: {
             specPath: 'swaggers/vocdoni-api.yaml',
-            outputDir: 'docs/protocol/vocdoni-api',
+            outputDir: 'docs/vocdoni-api',
             sidebarOptions: {
               groupPathsBy: 'tag',
               categoryLinkSource: 'tag'

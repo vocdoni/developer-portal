@@ -26,7 +26,7 @@ const cards: ICard[] = [
     {
         title: "EXAMPLES",
         body: "Review examples on how to implement Vocdoni SDK into your react applications.",
-        href: "https://github.com/vocdoni/vocdoni-sdk/tree/main/examples/cra",
+        href: "https://github.com/vocdoni/vocdoni-sdk/tree/main/examples",
         linkText: "See all examples"
     },
 ]
