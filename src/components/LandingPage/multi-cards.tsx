@@ -14,7 +14,7 @@ const cards: ICard[] = [
     {
         title: "SDK",
         body: "Check the docs for registering an account, creating a voting process, fetch election info, voting to a process and more! ",
-        href: "sdk#prerequisites",
+        href: "sdk",
         linkText: "Review documentation"
     },
     {
