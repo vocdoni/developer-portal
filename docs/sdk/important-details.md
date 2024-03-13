@@ -153,29 +153,29 @@ const voteId = await client.submitVote(vote);
 
 ### On-chain Census
 
+An on-chain census is one whose voters are defined by holding tokens on the Ethereum blockchain. Currently the following token types are supported:
+- ERC20
+- ERC721
+- ERC777
+- POAP
+- Gitcoin Passport Score
+- Gitcoin Passport Shields (coming soon)
+- ERC1155 (coming soon)
+
+This census type is supported by our [Census3](https://github.com/vocdoni/census3) service which serves as a bridge between Ethereum and clients. 
+
+<!-- TODO flesh out the on-chain census section -->
 
 
 ## Election Types
 
-#### Quadratic voting
+The Vocdoni [Ballot Protocol](/prococol/ballot) provides a flexible way to define many types of election. Check out [Voting Types](/sdk/voting-types) for an overview of the possibilities, including ranked-choice, quadratic, weighted, and approval voting.
 
-Here is a [full working example][quadratic voting example] of how to create a quadratic voting election.
-More information can be found in the [documentation][quadratic voting documentation].
-
-#### Approval voting
-
-Here is a [full working example][approval voting example] of how to create an approval voting election.
-More information can be found in the [documentation][approval voting documentation].
-
-#### Ranked voting
-
-Here is a [full working example][ranked voting example] of how to create a ranked voting election.
-More information can be found in the [documentation][ranked voting documentation].
 
 ## Election Status
 
-See the [Election lifecycle states][election-lifecycle-states] details for more information
-about the election status and the possible status changes once the election is created.
+Depending on your use case, you may need to pause, cancel, or otherwise pay attention to the state of an election.
+[Election lifecycle states][/protocol#Election lifecycle states] details all of the possible statuses an election can have once it has been published to the blockchain.
 
 #### Pause
 
@@ -217,58 +217,18 @@ about the election status and the possible status changes once the election is c
 })();
 ~~~
 
-## Voting
-
-#### Check if a user is in census
-
-~~~ts
-(async () => {
-  const isInCensus = await client.isInCensus();
-  console.log(isInCensus) // true or false
-})();
-~~~
-
-#### Check if a user has already voted
-
-~~~ts
-(async () => {
-  const hasAlreadyVoted = await client.hasAlreadyVoted();
-  console.log(hasAlreadyVoted) // returns the vote identifier or null
-})();
-~~~
-
-#### Get how many times the user can submit a vote (vote rewrite)
-
-~~~ts
-(async () => {
-  const votesLeft = await client.votesLeftCount();
-  console.log(votesLeft) // number of times the user can submit his vote
-})();
-~~~
-
-#### Check if a user is able to vote
-
-~~~ts
-(async () => {
-  const isAbleToVote = await client.isAbleToVote();
-  console.log(isAbleToVote) // true or false
-})();
-~~~
-
-#### Vote
-
-To vote a process you only need two things: the process id to vote to, and the
-option (or options) being voted:
-
-~~~ts
-(async () => {
-  client.setElectionId(id)
-  // votes "Yes" and "Adult (17-60 yo)"
-  const vote = new Vote([0, 2]);
-  const voteId = await client.submitVote(vote)
-})();
-~~~
 ## Environment
+
+#### Production
+
+This is the environment for any production use cases. This environment is slightly more complicated to use, as it requires the manual use of [Vocdoni Tokens](/sdk/important-details#vocdoni-tokens)
+
+~~~ts
+const client = new VocdoniSDKClient({
+  env: EnvOptions.PROD, // mandatory, can be 'dev', 'stg', or 'prod'
+  wallet: signer, // optional, the signer used (Metamask, Walletconnect)
+})
+~~~
 
 #### Staging
 
@@ -278,19 +238,22 @@ the `stg` one.
 
 ~~~ts
 const client = new VocdoniSDKClient({
-  env: EnvOptions.STG, // mandatory, can be 'dev' or 'stg'
+  env: EnvOptions.STG, // mandatory, can be 'dev', 'stg', or 'prod'
   wallet: signer, // optional, the signer used (Metamask, Walletconnect)
 })
 ~~~
 
 #### Development
 
+This environment is for development testing and is subject to breaking changes and downtime.
+
 ~~~ts
 const client = new VocdoniSDKClient({
-  env: EnvOptions.DEV, // mandatory, can be 'dev' or 'stg'
+  env: EnvOptions.DEV, // mandatory, can be 'dev', 'stg', or 'prod'
   wallet: signer, // optional, the signer used (Metamask, Walletconnect)
 })
 ~~~
+
 
 ## Other SDK functionalities
 
@@ -306,12 +269,12 @@ console.log(privateKey) // the private key of the wallet
 
 #### Generate deterministic Wallet from data
 
-For some cases where the voters don't have an owned Wallet, we can generate a deterministic
+For some cases where the voters don't have custody over an existing Wallet, we can generate a deterministic
 Wallet based on arbitrary data, like, for example, the user and hash password from a custom CRM.
 
 Here is an example where a Wallet is generated using the username and the hash of the password
 which we would use to identify the user in our platform. This Wallet can then be used for the
-census and for voting purposes.
+census and for voting purposes. This enables users to keep the same private key without having to store it in their browser or application.
 
 ~~~ts
 // 9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08 is the sha256 of 'test'
