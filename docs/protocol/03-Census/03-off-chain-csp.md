@@ -39,4 +39,6 @@ $PubKey2 = PubKeyRoot + ProcessId$<br/>
 
 Following this derivation, $PubKey2$ becomes the election public key. Thus, there is no way the CSP can share claims before the ProcessId is known and there is no way to reuse a CSP signature for a different election process.
 
+The SDK comes with an implementation of the common handler API of a CSP which is explained [here](https://github.com/vocdoni/blind-csp#api).
+
 ![csp voting diagram](csp-voting.png)
