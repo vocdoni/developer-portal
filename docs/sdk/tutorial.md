@@ -38,7 +38,7 @@ The following are the main steps we need to implement:
 
 ## Client
 
-The first step will be connecting to a Vocdoni [Gateway](/protocol/overview#gateway) Node. We can do this easily with the [VocdoniSDKClient](/sdk/reference/VocdoniSDKClient). 
+The first step will be connecting to a Vocdoni [Gateway](/protocol/overview#gateway) Node. We can do this easily with the [VocdoniSDKClient](/sdk/reference/VocdoniSDKClient). The client allows us to access all of the Vocdoni API calls.
 
 In order to create a client, we need a `wallet`, an envelope that holds a cryptographic key and enables our client to sign transactions for the blockchain. We'll be generating a random wallet with the [ethers](https://github.com/ethers-io/ethers.js) signer.
 
@@ -62,7 +62,9 @@ export const getDefaultClient = () => {
 
 Now that we have a client connected to the `STG` environment, we need to register its wallet to the blockchain with [createAccount()](/sdk/reference/VocdoniSDKClient#createAccount). Parameters here are optional, but let's define a name and description.
 
-> An `Account` can represent an organization hosting a voting process. There are many [parameters](link-todo) we can optionally add, like `logo` or even arbitrary `meta`. This can all be displayed on a custom frontend implementation. Using `createAccount()` on an account that already exists will fetch the account info from the blockchain.
+:::tip 
+An `Account` can represent an organization hosting a voting process. There are many [parameters](link-todo) we can optionally add, like `logo` or even arbitrary `meta`. This can all be displayed on a custom frontend implementation. Using `createAccount()` on an account that already exists will fetch the account info from the blockchain.
+:::
 
 **src/account.ts**
 ~~~ts
@@ -145,7 +147,9 @@ export const createElection = (census: PlainCensus): UnpublishedElection => {
 
 Once our election is defined, it has to be officially created on the blockchain with [`client.CreateElection()`](/sdk/reference/VocdoniSDKClient#createElection). This will also provide us with a unique `electionID`. We want to use [`client.SetElectionID()`](/sdk/reference/VocdoniSDKClient#setElectionID) so that the client knows which voting process to submit votes to. 
 
-> Now that we have the `electionId`, we can also print out a link to view our voting process on the Vocdoni blockchain [explorer](https://stg.explorer.vote)! The explorer unlocks the universal verifiability of Vocdoni's protocol- even for this small example, the results of this election are verifiable by any observer and cannot be altered. 
+:::info 
+Now that we have the `electionId`, we can also print out a link to view our voting process on the Vocdoni blockchain [explorer](https://stg.explorer.vote)! The explorer unlocks the universal verifiability of Vocdoni's protocol- even for this small example, the results of this election are verifiable by any observer and cannot be altered. 
+:::
 
 **src/election.ts**
 ~~~ts
@@ -183,7 +187,9 @@ With the election published, it's time to vote. We can use each of the wallets t
 
 The we create the vote itself. A [Vote](/sdk/reference/Vote) is simply a list of values whose form depends on the type and number of questions in the election.
 
-> For more info on vote types, see our section on the [Ballot Protocol](link-todo)
+:::tip 
+For more info on vote types, see our section on the [Ballot Protocol](link-todo)
+:::
 
 Then we can simply call `client.submitVote()`, and the SDK handles the creation, signing, and submission of the vote package. It returns a `voteId` which can be used to ensure the vote was correctly counted. 
 
@@ -210,7 +216,10 @@ export const castVotes = (electionId: string, voters: Wallet[]) => {
 
 All that's left is checking the results of this election! `client.fetchElection()` returns an object with a simple array of results values- it's up to you to decide how to display them. 
 
-> Note that the results are available immediately because this election was configured with `secretUntilTheEnd=false`
+:::tip 
+Note that the results are available immediately because this election was configured with `secretUntilTheEnd=false`
+:::
+
 
 **src/vote.ts**
 ~~~ts

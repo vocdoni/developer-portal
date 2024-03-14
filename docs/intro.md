@@ -8,8 +8,9 @@ The [Software Development Kit](/sdk) is a wrapper for the API and provides devel
 
 The [UI Components](/ui-components) library provides various basic React components for Vocdoni elections.
 
-> Looking to **integrate digital voting into your web application?** Start with the [SDK Tutorial](/sdk#tutorial)
-
+:::tip Looking to integrate digital voting into your web application?
+Start with the [SDK Tutorial](/sdk#tutorial)
+:::
 
 ## Live preview
 
@@ -19,5 +20,6 @@ These components all come together in our [live demo](https://vocdoni.github.io/
 ![Live preview](https://raw.githubusercontent.com/vocdoni/vocdoni-sdk/main/docs/images/cra.png)
 
 This demo requires [Metamask](https://metamask.io/download/) (or Walletconnect) to sign transactions. Metamask is a browser extension that holds custody of private keys and cryptocurrencies, but it is simple to install and use, and you need no prior knowledge of this technology. 
-> **No balance is needed**. Metamask is used to sign the transactions that create elections and cast votes. Testing tokens are automatically sent once the account is created. No value is used or exchanged.
-
+:::info No balance is needed 
+Metamask is used to sign the transactions that create elections and cast votes. Testing tokens are automatically sent once the account is created. No value is used or exchanged.
+:::
