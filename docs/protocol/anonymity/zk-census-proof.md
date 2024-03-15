@@ -8,7 +8,7 @@ This document is divided in two sections:
 
 The census proof (also called franchise proof) enables user privacy and allows for fully anonymous voting.
 
-The starting point is a [Merkle Proof](/protocol/Census/census-overview), which efficiently proves that a voter's *zkCensusKey* belongs to a Merkle Tree (census). However, using this proof alone would allow the organizer of a process to correlate each vote envelope with its voter's the *zkCensusKey* on the database, so votes wouldn't be secret.
+The starting point is a [Merkle Proof][off-chain-census], which efficiently proves that a voter's *zkCensusKey* belongs to a Merkle Tree (census). However, using this proof alone would allow the organizer of a process to correlate each vote envelope with its voter's the *zkCensusKey* on the database, so votes wouldn't be secret.
 
 To this end, Vocdoni achieves voting anonymity by the use of ZK-Snarks.
 
@@ -95,11 +95,11 @@ Vochain->>Vochain: 13. verify zkSNARK proof, accept the vote
 0. Circom [circuit](https://github.com/vocdoni/zk-franchise-proof-circuit) is compiled & **Trusted Setup** generated
 1. *[O+V]* Create new voting process (newProcessTx) & define the **CensusOrigin**
     - The **CensusOrigin** could be for example:	
-        - Using **csv file**: Generate MerkleTree from a `csv` data file, where the **CensusOrigin** determines the verification of the MerkleProof of that MerkleTree (check [flow-for-csv-votations section](#flow-for-csv-votations) for more details)
-        - Using **Ethereum storage proofs**: The MerkleTree is the root of the EthereumTree at a certain block, and the **CensusOrigin** determines the verification of the MerkleProof of that Ethereum MerkleTree (check [flow-for-ethereumstorageproofs-votations section](#flow-for-ethereumstorageproofs-votations) for more details)
+        - Using **csv file**: Generate MerkleTree from a `csv` data file, where the **CensusOrigin** determines the verification of the MerkleProof of that MerkleTree (check the [csv voting section][csv-voting] for more details)
+        - Using **Ethereum storage proofs**: The MerkleTree is the root of the EthereumTree at a certain block, and the **CensusOrigin** determines the verification of the MerkleProof of that Ethereum MerkleTree (check [ethereum storage proof section][eth-storage-proof] for more details)
 2. *[U]* Generate CensusRegisterProof, more details:
-    - [flow for csv votations](#flow-for-csv-votations)
-    - [flow for ethereumstorageproofs votations](#flow-for-ethereumstorageproofs-votations)
+    - [flow for csv voting][csv-voting]
+    - [flow for ethereum storage proof voting][eth-storage-proof]
 3. *[U]* Generate **zkCensusKey** (used as leaf key)
     - User's *zkCensusKey*: `zkCensusKey = Hash(userSecret)`
     - This is the key that will be added into the *CensusTree*
@@ -120,7 +120,7 @@ Vochain->>Vochain: 13. verify zkSNARK proof, accept the vote
 9. *[U+G]* **Get ProvingKey & WitnessCalc**
     - *Proving Key & Witness Calc* depend on the circuit being used
 10. *[U]* **Generate zkInputs**
-    - check the [zkInputs generation](#zkInputs-generation) section for more details
+    - check the [zkInputs generation][zk-inputs] section for more details
 11. *[U]* **Generate zkSNARK proof**
     - using: *zkInputs + Proving Key + Witness Calculator*
 12. *[U]* **Cast the vote** with zkSNARK proof
@@ -179,7 +179,7 @@ The organization could also directly register *Users'* secret keys to the Vochai
 This use case would set the flag `preRegister=false` and the `CensusOrigin` would be `OFF_CHAIN_TREE` or `OFF_CHAIN_TREE_WEIGHTED` with the `CensusRoot` determined by the Organization.
 :::
 
-#### Flow for EthereumStorageProofs votations
+#### Flow for Ethereum Storage Proof voting
 ```mermaid
 %%{init: {'theme':'forest'}}%%
 
@@ -254,8 +254,9 @@ Origin of each zkInput parameter:
 	  - This is due the design of the *MerkleTree* defines a tree in which the deep of the tree (from the root to the leafs) will depend on each leaf and its neighbors. More details can be found in the [*MerkleTree* spec](https://docs.iden3.io/publications/pdfs/Merkle-Tree.pdf).
         - In order to input those siblings into the circuit, the `nLevels` of the circuit is fixed, so the length of *siblings* needs to be fixed also.
         - So, the len(siblings) will depend on the *zkCircuit* being used, specifically from the `nLevels` parameter of the circuit
-        - The logic needed to be implemented in the User side can be found [here (go) lines 67-70](https://github.com/vocdoni/zk-franchise-proof-circuit/blob/feature/go-code-inputs-generation/test/go-inputs-generator/census_test.go#L67), and [here (js) line 23](https://github.com/vocdoni/zk-franchise-proof-circuit/blob/feature/go-code-inputs-generation/src/franchise.js#L33):
-            - `while (siblings.length < this.levels) siblings.push(BigInt(0));`
+        <!-- - TODO explain how to implement this on the user-side -->
+        <!-- - The logic needed to be implemented in the User side can be found [here (go) lines 67-70](https://github.com/vocdoni/zk-franchise-proof-circuit/blob/feature/go-code-inputs-generation/test/go-inputs-generator/census_test.go#L67), and [here (js) line 23](https://github.com/vocdoni/zk-franchise-proof-circuit/blob/feature/go-code-inputs-generation/src/franchise.js#L33):
+            - `while (siblings.length < this.levels) siblings.push(BigInt(0));` -->
 - *index*: determined by the Vochain when adding the *User*'s *zkCensusKey* into the *CensusTree*
 - *secretKey*: generated by the *User*
 - *voteHash*: hashed value of the *User* vote, composed by two big integers.
@@ -290,7 +291,7 @@ Format: `CIRCUITNAME_PARAMETER1_PARAMETER2`
 
 List of current types:
 - `ZKCENSUSPROOF_NLEVELS`
-    - Circuit name: [`ZKCENSUSPROOF`](https://github.com/vocdoni/zk-franchise-proof-circuit/blob/master/circuits/census.circom)
+    - Circuit name: [`ZKCENSUSPROOF`](https://github.com/vocdoni/zk-franchise-proof-circuit/blob/master/circuit/census.circom)
     - Parameters: `nLevels`
     - Example:
         - `ZKCENSUSPROOF_100`
@@ -335,3 +336,9 @@ zkInputs of this alternative scheme:
 - *commitKey*: given by the *KeyKeeper*
     - the length of this array is determined by the `nMiners` parameter of the circuit
     - `poseidon.Hash(relayerPublicKey)`
+
+
+[off-chain-census]: /protocol/census/off-chain-tree
+[csv-voting]: #flow-for-csv-voting
+[eth-storage-proof]: #flow-for-ethereum-storage-proof-voting
+[zk-inputs]: #zkinputs-generation

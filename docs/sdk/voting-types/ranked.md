@@ -3,8 +3,6 @@ sidebar_position: 3
 slug: ranked
 ---
 
-import MultiQuesNotSupportedAdmotion from "@site/src/components/admotions/multi-quest-not-supported";
-
 # Ranked Voting
 
 Ranked voting, also known as preferential voting or ranked-choice voting (RCV), is an electoral system where voters rank 
@@ -22,7 +20,7 @@ For example: Sort your 5 favorite blockchains: Bitcoin, Ethereum, Monero, Zcash,
 See:
 
 - [Complete example](https://github.com/vocdoni/vocdoni-sdk/blob/main/examples/typescript/src/ranked.ts)
-- [Ballot protocol implementation](/protocol/ballot#linear-weighted-choice)
+- [Ballot protocol implementation][protocol-ranked]
 
 ## Setting up the election
 
@@ -41,7 +39,9 @@ const election_opts: IVoteType = {
 
 This configuration could, for example, allow voters to rank their top 5 preferred blockchains: "Bitcoin:0, Ethereum:1, Monero:2, Zcash:3, Polkadot:4"
 
-<MultiQuesNotSupportedAdmotion />
+:::danger Multiple questions not supported
+**This election type not support multiple questions**: the current Vocdoni implementation restricts this kind of elections to a single question. To create an election with multiple questions check [multi question election][multi-question]
+:::
 
 ## Casting a vote
 
@@ -92,3 +92,7 @@ ranking:
 - Choice `4` (Polkadot) was selected as the `5th` option by all 10 voters
 
 Remember, this interpretation assumes that all voters have used the same voting pattern.
+
+
+[protocol-ranked]: /protocol/ballot-protocol#linear-weighted-choice
+[multi-question]: /protocol/ballot-protocol#multiquestion

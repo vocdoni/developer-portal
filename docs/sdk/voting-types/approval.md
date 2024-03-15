@@ -3,7 +3,6 @@ sidebar_position: 4
 slug: approval
 ---
 
-import MultiQuesNotSupportedAdmotion from "@site/src/components/admotions/multi-quest-not-supported";
 
 #  Approval Voting (Multiple Choice)
 
@@ -20,7 +19,7 @@ For example: select your two favourite colors from a list of 4.
 See:
 
 - [Complete example](https://github.com/vocdoni/vocdoni-sdk/blob/main/examples/typescript/src/approval.ts)
-- [Ballot protocol implementation](/protocol/ballot#multiple-choice)
+- [Ballot protocol implementation][protocol-approval]
 
 ## Setting up the election
 
@@ -39,7 +38,9 @@ const election_opts: IVoteType = {
 In this election type, a voter can cast a vote for option, hence `maxValue` must be set to `1`. Also, the `maxTotalCost` 
 is used to define the maximum number of selectable choices.
 
-<MultiQuesNotSupportedAdmotion />
+:::danger Multiple questions not supported
+**This election type not support multiple questions**: the current Vocdoni implementation restricts this kind of elections to a single question. To create an election with multiple questions check [multi question election][multi-question]
+:::
 
 ## Casting a vote
 
@@ -78,3 +79,6 @@ ten users did not select the choice, whereas `[0, 10]` means that ten users vote
 - For choice `3`, all 10 voters assigned it `1` point.
 
 Remember, this interpretation assumes that all voters have used the same voting pattern.
+
+[protocol-approval]: /protocol/ballot-protocol#multiple-choice
+[multi-question]: /protocol/ballot-protocol#multiquestion

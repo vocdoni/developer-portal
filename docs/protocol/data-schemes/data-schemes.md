@@ -1,6 +1,6 @@
 # Data Schemes
 
-When it comes to voting processes, there are two main types of data storage at the protocol-level: protocol-level data stored ***on the [Vochain](/protocol#11-the-blockchain)*** and readable metadata like election descriptions stored on ***[IPFS](/protocol#13-distributed-storage)***. 
+When it comes to voting processes, there are two main types of data storage at the protocol-level: protocol-level data stored **on the [Vochain](/protocol#11-the-blockchain)** and readable metadata like election descriptions stored on **[IPFS](/protocol#13-distributed-storage)**. 
 
 ## Protocol Data
 

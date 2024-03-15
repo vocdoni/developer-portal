@@ -34,7 +34,7 @@ A signed (non-anonymous) Vote Envelope features the election ID, the Census Merk
 
 In order to guarantee 100% reproduceability of the signature, the Vote Envelope is encoded as a Protobuf model and serialized into a byte array. This byte array is then signed and both fields are sent via a `SignedTx` model to a Gateway. 
 
-```proto
+```protobuf
 // Protobuf models
 
 message VoteEnvelope {
@@ -91,8 +91,11 @@ Contains the actual votes and is part of the Vote Envelope.
 
 ## Results
 
-Requests to the Results API will return an Array of number arrays, following the [Ballot Protocol](protocol/ballot). They will contain a bi-dimensional array of integers, aggregating the values currently stored on the Vochain.
+Requests to the Results API will return an Array of number arrays, following the [Ballot Protocol][ballot-protocol]. They will contain a bi-dimensional array of integers, aggregating the values currently stored on the Vochain.
 
 The interpretation of these values is left to the Client apps, and is determined by the `results.aggregation` and `results.display` fields of the Election Metadata, listed above.
 
 
+
+
+[ballot-protocol]: /protocol/ballot-protocol

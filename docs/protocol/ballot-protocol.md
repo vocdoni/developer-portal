@@ -13,9 +13,9 @@ A ballot is represented as an array (or list) of natural numbers. Each position 
 
 Results are accumulated in a two-dimension array of natural numbers (a matrix). Each row of this matrix corresponds to a ballot field, and each column corresponds to one of the possible values for that field. Any number in the results matrix is simply a count of the votes for the value represented at that index.
 
-_A more thorough introduction is available on [our blog](https://blog.aragon.org/vocdoni-ballot-protocol/)._
+_A more thorough introduction is available on [our blog][blog-ballot-protocol]._
 
-![https://blog.aragon.org/content/images/2021/04/process-generic-1-1.png](https://blog.aragon.org/content/images/2021/04/process-generic-1-1.png)
+![https://blog.vocdoni.io/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fpapyrus_images%2F47fc7647a24d815d609ad569c4456e39.png&w=1920&q=75](https://blog.vocdoni.io/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fpapyrus_images%2F47fc7647a24d815d609ad569c4456e39.png&w=1920&q=75)
 
 The protocol is composed by a set of numeric and boolean variables that restrict the format of the ballot. They are defined in the Process Parameters.
 
@@ -41,7 +41,7 @@ The exponent that will be used to compute the "cost" of the field values.
 - 10000 => 1.0000
 - 65535 => 6.5535
 
-![https://blog.aragon.org/content/images/2021/04/ballot-variables-1.png](https://blog.aragon.org/content/images/2021/04/ballot-variables-1.png)
+![https://blog.vocdoni.io/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fpapyrus_images%2Fb8d920f2d64cf347ff2f47f7e34a3340.png&w=1920&q=75](https://blog.vocdoni.io/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fpapyrus_images%2Fb8d920f2d64cf347ff2f47f7e34a3340.png&w=1920&q=75)
 
 ---
 
@@ -296,7 +296,7 @@ option3: 3 votes
 
 This interpretation suits any case with extended features, such as multiple choice, quadratic voting, linear-weighted, etc. This is because it is able to weigh multiple possible values for a single field.
 
-![https://blog.aragon.org/content/images/2021/04/results-generic-index-1.png](https://blog.aragon.org/content/images/2021/04/results-generic-index-1.png)
+![https://blog.vocdoni.io/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fpapyrus_images%2F345a07aee1ddf6a6aad51db7e58fd399.png&w=1920&q=75](https://blog.vocdoni.io/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fpapyrus_images%2F345a07aee1ddf6a6aad51db7e58fd399.png&w=1920&q=75)
 
 ### Multi question
 
@@ -311,6 +311,9 @@ field2: candidate0: 1 vote, candidate1: 1 vote, candidate 2: 1 vote
 
 As this format can only accept binary (yes/no) input for each option, it is only available for use with a basic set of features (multi-question, single-choice)
 
-![https://blog.aragon.org/content/images/2021/04/results-generic-discrete-1.png](https://blog.aragon.org/content/images/2021/04/results-generic-discrete-1.png)
+![https://blog.vocdoni.io/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fpapyrus_images%2F97e8bca257a9b118b86ee3dd31165107.png&w=1920&q=75](https://blog.vocdoni.io/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fpapyrus_images%2F97e8bca257a9b118b86ee3dd31165107.png&w=1920&q=75)
 
 
+
+
+[blog-ballot-protocol]: https://blog.vocdoni.io/vocdoni-ballot-protocol/

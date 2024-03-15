@@ -1,6 +1,6 @@
 # Vocdoni SDK 
 
-The Vocdoni SDK is a convenient way to interact with the Vocdoni Protocol through the [API](/vocdoni-api), allowing anyone to create, manage and participate in voting processes and collective decision-making. The SDK is the primary mode by which developers should interface with Vocdoni - if you think the SDK is missing functionality you need, please [get in touch][chat]. 
+The Vocdoni SDK is a convenient way to interact with the Vocdoni Protocol through the [API][vocdoni-api], allowing anyone to create, manage and participate in voting processes and collective decision-making. The SDK is the primary mode by which developers should interface with Vocdoni - if you think the SDK is missing functionality you need, please [get in touch][chat]. 
 
 ### Start by following along with the [SDK tutorial][tutorial]
 
@@ -50,5 +50,7 @@ This SDK is licensed under the [GNU Affero General Public License v3.0][license]
 [builddocs]: https://github.com/vocdoni/vocdoni-sdk/blob/main/docs/README.md
 [chat]: https://chat.vocdoni.io
 [esm-gif]: https://raw.githubusercontent.com/vocdoni/vocdoni-sdk/main/examples/esm/esm.gif
-[reference]: /sdk/reference
+[reference]: /sdk/reference/modules
 [tutorial]: /sdk/tutorial
+[vocdoni-api]: /vocdoni-api/vocdoni-api
+[license]: https://github.com/vocdoni/vocdoni-sdk/blob/main/LICENSE

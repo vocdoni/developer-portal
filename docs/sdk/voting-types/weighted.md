@@ -5,17 +5,12 @@ slug: weighted
 
 # Weighted voting
 
-Weighted voting is a voting system where each voter is assigned a specific weight or value that reflects their relative 
-influence or importance in the decision-making process.
+Weighted voting is a voting system where each voter is assigned a specific weight or value that reflects their relative influence or importance in the decision-making process.
 
-When votes are cast, the value of each individual’s vote is multiplied by their assigned weight, resulting in a weighted 
-score. The sum of all the weighted scores determines the outcome of the vote. This system allows for a more nuanced 
+When votes are cast, the value of each individual’s vote is multiplied by their assigned weight, resulting in a weighted score. The sum of all the weighted scores determines the outcome of the vote. This system allows for a more nuanced 
 representation of voting power and can reflect the hierarchical structure or distribution of authority within the 
 organization.
 
-See:
-
-- [Complete example](https://github.com/vocdoni/vocdoni-sdk/blob/main/examples/typescript/src/weighted.ts)
 
 ## Setting up the election
 

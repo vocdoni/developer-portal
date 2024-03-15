@@ -310,15 +310,15 @@ v3.0][license].
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 [chakra getting started]: https://chakra-ui.com/getting-started
-[license]: ./LICENSE
+[license]: https://github.com/vocdoni/ui-components/blob/main/LICENSE
 [theming]: #theming
 [theming components]: #theming-components
 [chakra theming]: https://chakra-ui.com/docs/styled-system/customize-theme#customizing-component-styles
 [advanced theming]: https://chakra-ui.com/docs/styled-system/advanced-theming
 [multipart components]: https://chakra-ui.com/docs/styled-system/component-style#styling-multipart-components
 [questions]: #questions
-[theme path]: ./src/theme
+[theme path]: https://github.com/vocdoni/ui-components/tree/7e2f161be654b287ebc82d553c316164e20c8fd3/templates/chakra/src/theme
 [chakra template]: ../../templates/chakra/src/theme
 [css props]: #styling-via-props
-[sdk environments]: https://github.com/vocdoni/vocdoni-sdk#environment
-[translations file]: ./src/i18n/translations.ts
+[sdk environments]: /sdk/integration-details#environment
+[translations file]: https://github.com/vocdoni/ui-components/blob/7e2f161be654b287ebc82d553c316164e20c8fd3/packages/react-providers/src/i18n/localize.tsx

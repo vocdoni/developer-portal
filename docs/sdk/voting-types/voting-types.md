@@ -5,22 +5,22 @@ how it operates.
 
 ## Election types
 
-The [Vocdoni Ballot protocol](/protocol/ballot) in its current implementation accommodates multiple **elections types**:
+The [Vocdoni Ballot protocol][ballot-protocol] in its current implementation accommodates multiple **elections types**:
 
-- [Single choice](single-choice), each voter is typically allowed to cast only one vote for their preferred option. This
+- [Single choice][single-choice], each voter is typically allowed to cast only one vote for their preferred option. This
 voting system is the only one that **supports multiple questions**. 
-- [Ranked voting](ranked), also known as preferential voting, is an electoral system where voters rank candidates in order of preference
-- [Approval voting](approval), or multiple choice, here the voters are allowed to indicate their support for multiple 
+- [Ranked voting][ranked], also known as preferential voting, is an electoral system where voters rank candidates in order of preference
+- [Approval voting][approval], or multiple choice, here the voters are allowed to indicate their support for multiple 
 candidates or options.
-- [Weighted voting](weighted), each voter is assigned a specific weight or value that reflects their relative influence or 
+- [Weighted voting][weighted], each voter is assigned a specific weight or value that reflects their relative influence or 
 importance in the decision-making process.
-- [Quadratic voting](quadratic), voters can cast multiple votes for issues they prioritize, but the cost of casting 
+- [Quadratic voting][quadratic], voters can cast multiple votes for issues they prioritize, but the cost of casting 
 additional votes on the same issue rises exponentially.
 
 The configuration of these election types happens at the time of election creation using the SDK. Refer to the respective 
 documentation for the parameter requirements for each election type.
 
-A comprehensive explanation of the parameters used in the ballot protocol can be found [here](/protocol/ballot).
+A comprehensive explanation of the parameters used in the ballot protocol can be found [here][ballot-protocol].
 
 ## Results interpretation
 
@@ -29,7 +29,7 @@ transforms a unidimensional array (a vote, e.g., `[1,4]`) into a bi-dimensional 
 
 The interpretation of results is done on the user side, which receives the results from the SDK. The SDK provides 
 metadata about the election to facilitate understanding of the results. More details on interpreting results can be found, 
-[here](/protocol/ballot#vocdoni-results-interpretation).
+[here][results-interpretation].
 
 Here's a simple example to demonstrate how the result array can be interpreted in different ways, depending on the 
 election type:
@@ -79,3 +79,12 @@ by the vocdoni-node indexer, which calculates the weights for you.
 The weights of each vote are stored in the envelope, which is saved on the Vochain.
 
 :::
+
+
+[ballot-protocol]: /protocol/ballot-protocol
+[results-interpretation]: /protocol/ballot#vocdoni-results-interpretation
+[single-choice]: voting-types/single-choice
+[ranked]: voting-types/ranked
+[approval]: voting-types/approval
+[weighted]: voting-types/weighted
+[quadratic]: voting-types/quadratic

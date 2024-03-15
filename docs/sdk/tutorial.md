@@ -2,11 +2,12 @@
 
 This tutorial will show you how to get your environment set up, start using the SDK, and create and vote in an election. We will be using typescript.
 
-The code for this tutorial is available [here](link-todo). 
+<!-- TODO add example link once it is merged -->
+<!-- The code for this tutorial is available [here](link-todo).  -->
 
 ### Prerequisites
 
-You'll need a working [nodejs] environment, but other than that, you're
+You'll need a working [nodejs](https://nodejs.org) environment, but other than that, you're
 free to use any package manager (either npm, yarn, pnpm...). Let's start by creating a project and adding the SDK:
 
 ~~~bash
@@ -38,11 +39,11 @@ The following are the main steps we need to implement:
 
 ## Client
 
-The first step will be connecting to a Vocdoni [Gateway](/protocol/overview#gateway) Node. We can do this easily with the [VocdoniSDKClient](/sdk/reference/VocdoniSDKClient). The client allows us to access all of the Vocdoni API calls.
+The first step will be connecting to a Vocdoni [Gateway][gateway] Node. We can do this easily with the [VocdoniSDKClient][vocdoniSDKClient]. The client allows us to access all of the Vocdoni API calls.
 
 In order to create a client, we need a `wallet`, an envelope that holds a cryptographic key and enables our client to sign transactions for the blockchain. We'll be generating a random wallet with the [ethers](https://github.com/ethers-io/ethers.js) signer.
 
-We also need to define which Vocdoni [network](link-todo) we will connect to. Staging is the **recommended** environment for most testing use cases, since the `dev` environment is more subject to blockchain resets and downtimes than the `stg` one.
+We also need to define which Vocdoni [environment][environment] we will connect to. Staging is the **recommended** environment for most testing use cases, since the `dev` environment is more subject to blockchain resets and downtimes than the `stg` one.
 
 <!-- TODO explain usage of the faucet -->
 
@@ -60,10 +61,10 @@ export const getDefaultClient = () => {
 };
 ~~~
 
-Now that we have a client connected to the `STG` environment, we need to register its wallet to the blockchain with [createAccount()](/sdk/reference/VocdoniSDKClient#createAccount). Parameters here are optional, but let's define a name and description.
+Now that we have a client connected to the `STG` environment, we need to register its wallet to the blockchain with [createAccount()](/sdk/reference/classes/VocdoniSDKClient#createaccount). Parameters here are optional, but let's define a name and description.
 
 :::tip 
-An `Account` can represent an organization hosting a voting process. There are many [parameters](link-todo) we can optionally add, like `logo` or even arbitrary `meta`. This can all be displayed on a custom frontend implementation. Using `createAccount()` on an account that already exists will fetch the account info from the blockchain.
+An `Account` can represent an organization hosting a voting process. There are many [parameters](/protocol/data-schemes/organization) we can optionally add, like `logo` or even arbitrary `meta`. This can all be displayed on a custom frontend implementation. Using `createAccount()` on an account that already exists will fetch the account info from the blockchain.
 :::
 
 **src/account.ts**
@@ -87,7 +88,7 @@ export const createAccount = (client: VocdoniSDKClient) => {
 
 ## Census
 
-With our client created and registered to the Vochain, the next step is to create a [census](/sdk/reference/Census) of voters. The protocol enables many [types of census](/protocol/03-Census). For our purposes it's easiest to use a [plain census](/sdk/reference/PlainCensus), the simplest form of [offchain census](/sdk/reference/OffchainCensus).
+With our client created and registered to the Vochain, the next step is to create a [census](/sdk/reference/classes/census) of voters. The protocol enables many [types of census][protocol-census]. For our purposes it's easiest to use a [plain census][plaincensus], the simplest form of [offchain census][offchain-census].
 
 We can create a random wallet to represent each voter just like we did for the client, and then we can register each voter's address to the census. The voter wallets have to be saved in order to sign their individual votes.
 
@@ -110,7 +111,7 @@ export async function createCensus () {
 
 ## Election
 
-Creating a basic election is easy with [Election.from()](/sdk/reference/Election#from). We just need to specify the title and description, a header photo, an end date, and the census we created earlier. We can specify some `electionType` options, but this is not necessary as our election is using the default options. 
+Creating a basic election is easy with [Election.from()][election-from]. We just need to specify the title and description, a header photo, an end date, and the census we created earlier. We can specify some `electionType` options, but this is not necessary as our election is using the default options. 
 
 **src/election.ts**
 ~~~ts
@@ -125,7 +126,7 @@ export const createElection = (census: PlainCensus): UnpublishedElection => {
   ...
 ~~~
   
- Questions can be added to an election with [addQuestion](sdk/reference/ElectionAPI). This is a single-choice (binary) election with only one question. 
+ Questions can be added to an election with [addQuestion][addQuestion]. This is a single-choice (binary) election with only one question. 
 
 **src/election.ts**
 ~~~ts
@@ -145,10 +146,10 @@ export const createElection = (census: PlainCensus): UnpublishedElection => {
 }
 ~~~
 
-Once our election is defined, it has to be officially created on the blockchain with [`client.CreateElection()`](/sdk/reference/VocdoniSDKClient#createElection). This will also provide us with a unique `electionID`. We want to use [`client.SetElectionID()`](/sdk/reference/VocdoniSDKClient#setElectionID) so that the client knows which voting process to submit votes to. 
+Once our election is defined, it has to be officially created on the blockchain with [`client.CreateElection()`][createElection]. This will also provide us with a unique `electionID`. We want to use [`client.SetElectionID()`][setElectionID] so that the client knows which voting process to submit votes to. 
 
 :::info 
-Now that we have the `electionId`, we can also print out a link to view our voting process on the Vocdoni blockchain [explorer](https://stg.explorer.vote)! The explorer unlocks the universal verifiability of Vocdoni's protocol- even for this small example, the results of this election are verifiable by any observer and cannot be altered. 
+Now that we have the `electionId`, we can also print out a link to view our voting process on the Vocdoni blockchain [explorer][explorer]! The explorer unlocks the universal verifiability of Vocdoni's protocol- even for this small example, the results of this election are verifiable by any observer and cannot be altered. 
 :::
 
 **src/election.ts**
@@ -166,7 +167,7 @@ const waitForElectionReady = (client: VocdoniSDKClient, electionId: string): Pro
 ~~~
 
 
-Publishing an election registers a transaction to the blockchain. This means we have to wait for the next block to process in order to ensure the transaction was successful. Here we use [client.fetchElection()](/sdk/reference/VocdoniSDKClient#fetchElection) to fetch the election info from the blockchain, given our `electionId`. This allows us to wait until the election status is `ONGOING`, which means the election has been successfully published and has begun.
+Publishing an election registers a transaction to the blockchain. This means we have to wait for the next block to process in order to ensure the transaction was successful. Here we use [client.fetchElection()][fetchElection] to fetch the election info from the blockchain, given our `electionId`. This allows us to wait until the election status is `ONGOING`, which means the election has been successfully published and has begun.
 
 **src/election.ts**
 ~~~ts
@@ -185,13 +186,13 @@ export const publishElection = (client: VocdoniSDKClient, election: UnpublishedE
 
 With the election published, it's time to vote. We can use each of the wallets that we saved earlier to cast a unique vote for that imaginary voter. We do this by first setting `client.wallet = voter`, telling the client which wallet to use for bundling and submitting this vote. 
 
-The we create the vote itself. A [Vote](/sdk/reference/Vote) is simply a list of values whose form depends on the type and number of questions in the election.
+The we create the vote itself. A [Vote][vote] is simply a list of values whose form depends on the type and number of questions in the election.
 
 :::tip 
-For more info on vote types, see our section on the [Ballot Protocol](link-todo)
+For more info on vote types, see our section on the [Ballot Protocol][ballot-protocol]
 :::
 
-Then we can simply call `client.submitVote()`, and the SDK handles the creation, signing, and submission of the vote package. It returns a `voteId` which can be used to ensure the vote was correctly counted. 
+Then we can simply call [`client.submitVote()`][submitVote], and the SDK handles the creation, signing, and submission of the vote package. It returns a `voteId` which can be used to ensure the vote was correctly counted. 
 
 **src/vote.ts**
 ~~~ts
@@ -214,7 +215,7 @@ export const castVotes = (electionId: string, voters: Wallet[]) => {
 
 ## Results
 
-All that's left is checking the results of this election! `client.fetchElection()` returns an object with a simple array of results values- it's up to you to decide how to display them. 
+All that's left is checking the results of this election! [`client.fetchElection()`][fetchElection] returns an object with a simple array of results values- it's up to you to decide how to display them. 
 
 :::tip 
 Note that the results are available immediately because this election was configured with `secretUntilTheEnd=false`
@@ -321,6 +322,24 @@ Option 2: 3
 ✨  Done in 45.08s.
 ~~~
 
-You can even check out the [election I created](https://stg.explorer.vote/processes/show/#/4ae20a8eb4ca2cc603e5fbc541ceba3fb8425f869394ac6241c6020000000000) on the blockchain explorer. 
+You can even check out the [election I created](https://stg.explorer.vote/processes/show/#/4ae20a8eb4ca73b3e1ff1602c6ece34f9b75aa86f5f90b41a209020000000000) on the blockchain explorer. 
 
-Now that you've created a basic example with the SDK, you can integrate this functionality into your own applications. For more details, check out the [reference documentation](/sdk/reference) and the more extensive [examples](link-todo)
+Now that you've created a basic example with the SDK, you can integrate this functionality into your own applications. For more details, check out the [reference documentation][reference] and the more extensive [examples][examples]
+
+[gateway]: /protocol#12-gateways
+[vocdoniSDKClient]: /sdk/reference/classes/VocdoniSDKClient
+[environment]: /sdk/integration-details#environment
+[election-from]: /sdk/reference/classes/Election#from
+[plaincensus]: /sdk/reference/classes/plaincensus
+[protocol-census]: /protocol/census
+[offchain-census]: /sdk/reference/classes/offchaincensus
+[addQuestion]: /sdk/reference/classes/UnpublishedElection#addquestion
+[explorer]: https://stg.explorer.vote
+[createElection]: /sdk/reference/classes/VocdoniSDKClient#createelection
+[setElectionID]: /sdk/reference/classes/VocdoniSDKClient#setelectionid
+[fetchElection]: /sdk/reference/classes/VocdoniSDKClient#fetchelection
+[vote]: /sdk/reference/classes/vote
+[submitVote]: /sdk/reference/classes/VocdoniSDKClient#submitvote
+[reference]: /sdk/reference/modules
+[examples]: https://github.com/vocdoni/vocdoni-sdk/blob/main/examples
+[ballot-protocol]: /protocol/ballot-protocol

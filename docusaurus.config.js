@@ -6,6 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula')
 const {DOCUSAURUS_VERSION} = require('@docusaurus/utils')
 const math = require('remark-math')
 const katex = require('rehype-katex')
+const {Prism} = require('prism-react-renderer')
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -224,7 +225,7 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
-        additionalLanguages: ['ruby', 'csharp', 'php']
+        additionalLanguages: ['ruby', 'csharp', 'php', 'protobuf']
       },
       languageTabs: [
         {

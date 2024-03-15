@@ -8,13 +8,13 @@ We perceive voting as a collective signaling mechanism "to give voice", that can
 
 ### 1.1 The blockchain
 
-The Vocdoni blockchain is named **Vochain**. It is a Byzantine fault-tolerant network based on [Tendermint](https://tendermint.com/) that executes the Vocdoni Protocol logic represented as a state machine. Its main purpose is to register votes in a decentralized and verifiable format. Currently, the network can process more than 30K votes per minute while using no more than the resources found on commodity computers.
+The Vocdoni blockchain is named **Vochain**. It is a Byzantine fault-tolerant network based on [Tendermint][tendermint] that executes the Vocdoni Protocol logic represented as a state machine. Its main purpose is to register votes in a decentralized and verifiable format. Currently, the network can process more than 30K votes per minute while using no more than the resources found on commodity computers.
 
 The Vocdoni blockchain requires a native token (VOC) to execute management transactions (i.e creating elections), but not for casting votes. Therefore, the voters can participate in governance processes in a free and gasless manner.
 
 Vochain is currently based on Proof-of-Authority consensus. However, we are already working towards transitioning to Proof-of-Stake in 2023. Until then, the tokens are free and can be obtained by anyone by using our faucet service.
 
-The current vocdoni-node code can be found [in our github repository](https://github.com/vocdoni/vocdoni-node/tree/master/vochain).
+The current vocdoni-node code can be found [in our github repository][vochain-github].
 
 ### 1.2 Gateways
 
@@ -25,7 +25,7 @@ Internally, the Gateways act as a standard blockchain full node, but also as ind
 
 ### 1.3 Distributed storage
 
-Vocdoni currently relies on the [InterPlanetary File System (IPFS)](https://www.ipfs.tech/) for storing auxiliary information. In a voting process, this includes information such as texts (questions, descriptions, and options), complementary images, as well as census. This data does not need to be permanent in order to ensure the voting guarantees, and is expensive to keep it around, so it is published to IPFS until it can be discarded.
+Vocdoni currently relies on the [InterPlanetary File System (IPFS)][ipfs] for storing auxiliary information. In a voting process, this includes information such as texts (questions, descriptions, and options), complementary images, as well as census. This data does not need to be permanent in order to ensure the voting guarantees, and is expensive to keep it around, so it is published to IPFS until it can be discarded.
 
 We have designed the Vocdoni primitives in a modular fashion, which allows us to incorporate more data layers in the future, such as Ethersphere Swarm, DAT, STORj or Filecoin.
 
@@ -61,7 +61,7 @@ The current implementation of our Vocdoni API/SDK only provides the weighted mer
 
 #### Weighted merkle tree census
 
-The census itself is represented as a binary [Merkle Tree](https://en.wikipedia.org/wiki/Merkle_tree), where the keys of the tree contain the (hashed) public keys or addresses of all eligible voters and the leafs (values) represent the voting weight.
+The census itself is represented as a binary [Merkle Tree][wiki-merkle-tree], where the keys of the tree contain the (hashed) public keys or addresses of all eligible voters and the leafs (values) represent the voting weight.
 
 ```mermaid
 graph TD;
@@ -113,7 +113,7 @@ The following election options can be configured:
 + **Lifecycle:** initial state, start, and end blocks.
 + **Election mode:** how should the process behave.
 + **Vote mode:** the kind of ballots expected from voters.
-+ **Tally mode:** how should the results be computed as defined by the Vocdoni Ballot protocol. Details and examples can be found [here](https://blog.aragon.org/vocdoni-ballot-protocol).
++ **Tally mode:** how should the results be computed as defined by the [Vocdoni Ballot protocol][ballot-protocol]. Details and examples can be found [here][blog-ballot-protocol].
 
 #### Election lifecycle states
 
@@ -163,11 +163,11 @@ zk-SNARK proofs are a convenient method to prove something to a third-party veri
 
 The goal of the Vocdoni zk-SNARK circuit is to prove that a voter (identified by a public key) is part of a Census (a Merkle Tree composed of such public keys) without revealing the identity (public key) of that voter. This circuit produces a unique and deterministic identifier (nullifier) that can be processed by a public ledger/blockchain to distinguish whether the voter has previously submitted a vote.
 
-*Note: while zk-SNARK voting is enabled in the protocol and available at [https://vocdoni.app](https://vocdoni.app), it is not yet implemented as part of the current SDK.*
+*Note: while zk-SNARK voting is enabled in the protocol and available at [https://vocdoni.app][app], it is not yet implemented as part of the current SDK.*
 
 ### 2.5 Results
 
-The results are computed by a set of rules configured by the election owner and following the [Vocdoni ballot protocol](https://blog.aragon.org/vocdoni-ballot-protocol), which allows for almost any type of voting such as Range or Quadratic.
+The results are computed by a set of rules configured by the election owner and following the [Vocdoni ballot protocol][ballot-protocol], which allows for almost any type of voting such as Range or Quadratic.
 
 Results are represented as a matrix of numbers such as `[ [1,2], [0,1] ]` which can be interpreted as:
 
@@ -206,6 +206,16 @@ The following list shows the transactions:
 
 # More information
 
-+ [paper (not yet published) about Vocdoni](https://law.mit.edu/pub/remotevotingintheageofcryptography/release/1)
-+ [oficial vocdoni docs (outdated)](https://docs.vocdoni.io)
-+ [vocdoni blog](https://blog.vocdoni.io)
++ [MIT Law Report paper about Vocdoni][mit-paper]
++ [Vocdoni blog][blog]
+
+
+[tendermint]: https://tendermint.com/
+[vochain-github]: https://github.com/vocdoni/vocdoni-node/tree/master/vochain
+[ipfs]: https://www.ipfs.tech/
+[ballot-protocol]: /protocol/ballot-protocol
+[wiki-merkle-tree]: https://en.wikipedia.org/wiki/Merkle_tree
+[blog-ballot-protocol]: https://blog.vocdoni.io/vocdoni-ballot-protocol
+[app]: https://vocdoni.app
+[mit-paper]: https://law.mit.edu/pub/remotevotingintheageofcryptography/release/1
+[blog]: https://blog.vocdoni.io

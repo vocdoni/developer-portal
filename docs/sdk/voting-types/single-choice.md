@@ -22,7 +22,7 @@ This voting system supports **one** or **multiple questions**.
 
 See:
 
-- [Ballot protocol implementation](/protocol/ballot#single-choice)
+- [Ballot protocol implementation][protocol-single-choice]
 
 ## Setting up the election
 
@@ -159,3 +159,5 @@ Not so different, the results array will look like:
 For the only one question, 10 voters select the third option
 
 :::
+
+[protocol-single-choice]: /protocol/ballot-protocol#single-choice

@@ -13,7 +13,7 @@ preferences rather than just a simple majority rule.
 See:
 
 - [Complete example](https://github.com/vocdoni/vocdoni-sdk/blob/main/examples/typescript/src/quadratic.ts)
-- [Ballot protocol implementation](https://developer.vocdoni.io/protocol/ballot#quadratic-voting)
+- [Ballot protocol implementation][protocol-quadratic]
 
 ## Setting up the election
 
@@ -60,7 +60,7 @@ Using this method will enable the possibility to give different number of credit
 
 ## Casting a vote
 
-As of now, the [protocol](https://docs.vocdoni.io/architecture/data-schemes/ballot-protocol.html#vocdoni-results-interpretation) 
+As of now, the [protocol][results-interpretation] 
 for quadratic elections only supports single question elections with discrete values. 
 
 Therefore, to cast a vote, you can use the following method:
@@ -107,3 +107,6 @@ Remember, this interpretation assumes that all voters have used the same voting 
 quadratic voting system, while it is possible to cast more votes for a preferred option, it also becomes exponentially 
 more costly to do so, providing a self-balancing mechanism that aims to accurately reflect the strength of voters 
 preferences.
+
+[protocol-quadratic]: /protocol/ballot-protocol#quadratic-voting
+[results-interpretation]: /protocol/ballot-protocol#vocdoni-results-interpretation
