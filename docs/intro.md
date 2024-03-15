@@ -17,7 +17,7 @@ Start with the [SDK Tutorial][tutorial]
 These components all come together in our [live demo][sdk-demo]. You can explore a basic Vocdoni implementation by creating some fake voters and starting a simple, single-question election. You will be able to cast a vote for each fake voter and see the results. 
 
 
-![Live preview](https://raw.githubusercontent.com/vocdoni/vocdoni-sdk/main/docs/images/cra.png)
+![Live preview](/img/cra.png)
 
 This demo requires [Metamask][metamask] (or Walletconnect) to sign transactions. Metamask is a browser extension that holds custody of private keys and cryptocurrencies, but it is simple to install and use, and you need no prior knowledge of this technology. 
 :::info No balance is needed 
