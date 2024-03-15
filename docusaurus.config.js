@@ -41,7 +41,7 @@ const config = {
       ({
         docs: {
           routeBasePath: '/',
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarItemsGenerator: require('./sidebar.js'),
           docLayoutComponent: '@theme/DocPage',
           docItemComponent: '@theme/ApiItem', // Derived from docusaurus-theme-openapi
           remarkPlugins: [math],
@@ -140,19 +140,19 @@ const config = {
             items: [
               {
                 type: 'doc',
-                docId: 'sdk/sdk',
+                docId: 'sdk/index',
                 label: 'SDK',
                 className: 'plausible-event-name=Header+SDK'
               },
               {
                 type: 'doc',
-                docId: 'ui-components/ui-components',
+                docId: 'ui-components/index',
                 label: 'UI Components',
                 className: 'plausible-event-name=Header+UICOMPONENTS'
               },
               {
                 type: 'doc',
-                docId: 'protocol/protocol',
+                docId: 'protocol/index',
                 label: 'Protocol',
                 className: 'plausible-event-name=Header+API'
               }
