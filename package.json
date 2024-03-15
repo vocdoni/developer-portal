@@ -28,7 +28,9 @@
     "clean-all-versioned": "docusaurus clean-api-docs all && docusaurus clean-api-docs:version petstore_versioned:all",
     "re-gen": "yarn clean-all && yarn gen-all",
     "re-gen-versioned": "yarn clean-all-versioned && yarn gen-all-versioned",
-    "gen-post": "grep -L \"mdx-code-block\" docs/vocdoni-api/** | xargs sed -i -e '/^\\(<\\)/i````mdx-code-block' -e '/^\\(<\\)/a````'"
+    "gen-post": "if [ \"$(uname)\" = \"Darwin\" ]; then npm run gen-post:Darwin; else npm run gen-post:Linux; fi",
+    "gen-post:Darwin": "grep -L \"mdx-code-block\" docs/vocdoni-api/** | xargs -I {} sed -i '' -e $'/^\\(<\\)/i\\\n````mdx-code-block\n' -e $'/^\\(<\\)/a\\\n````' {}",
+    "gen-post:Linux": "grep -L \"mdx-code-block\" docs/vocdoni-api/** | xargs sed -i -e '/^\\(<\\)/i````mdx-code-block' -e '/^\\(<\\)/a````'"
   },
   "dependencies": {
     "@aragon/ui-components": "0.1.3",

@@ -18,7 +18,7 @@ const footerColumns: ISections[] = [
         links: [
             { title: 'About', href:"https://docs.vocdoni.io/about-us/vision.html"},
             { title: 'How we work', href:"https://docs.vocdoni.io/about-us/how-we-work.html"},
-            { title: 'Blog', href:"https://blog.aragon.org/vocdoni/"},
+            { title: 'Blog', href:"https://blog.vocdoni.io/vocdoni/"},
         ]
     },
     {
