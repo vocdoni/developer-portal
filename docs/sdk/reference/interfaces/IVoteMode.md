@@ -1,0 +1,73 @@
+[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / IVoteMode
+
+# Interface: IVoteMode
+
+## Table of contents
+
+### Properties
+
+- [anonymous](IVoteMode.md#anonymous)
+- [costFromWeight](IVoteMode.md#costfromweight)
+- [encryptedVotes](IVoteMode.md#encryptedvotes)
+- [serial](IVoteMode.md#serial)
+- [uniqueValues](IVoteMode.md#uniquevalues)
+
+## Properties
+
+### anonymous
+
+• **anonymous**: `boolean`
+
+If the vote is anonymous
+
+#### Defined in
+
+[api/election.ts:53](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/election.ts#L53)
+
+___
+
+### costFromWeight
+
+• **costFromWeight**: `boolean`
+
+Cost from weight of the election
+
+#### Defined in
+
+[api/election.ts:68](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/election.ts#L68)
+
+___
+
+### encryptedVotes
+
+• **encryptedVotes**: `boolean`
+
+If the vote is encrypted
+
+#### Defined in
+
+[api/election.ts:58](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/election.ts#L58)
+
+___
+
+### serial
+
+• **serial**: `boolean`
+
+If the vote is serial
+
+#### Defined in
+
+[api/election.ts:48](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/election.ts#L48)
+
+___
+
+### uniqueValues
+
+• **uniqueValues**: `boolean`
+
+If the vote values are unique
+
+#### Defined in
+
+[api/election.ts:63](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/election.ts#L63)
