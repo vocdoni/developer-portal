@@ -88,7 +88,7 @@ export const createAccount = (client: VocdoniSDKClient) => {
 
 ## Census
 
-With our client created and registered to the Vochain, the next step is to create a [census](/sdk/reference/classes/census) of voters. The protocol enables many [types of census][protocol-census]. For our purposes it's easiest to use a [plain census][plaincensus], the simplest form of [offchain census][offchain-census].
+With our client created and registered to the Vochain, the next step is to create a [census](/sdk/reference/classes/census) of voters. The protocol enables many [types of census][protocol-census] and you can see how to implement each of them [here](/sdk/integration-details/census-types). For our purposes it's easiest to use a [plain census][plaincensus], the simplest form of [off-chain tree census](/sdk/integration-details/census-types/off-chain-tree).
 
 We can create a random wallet to represent each voter just like we did for the client, and then we can register each voter's address to the census. The voter wallets have to be saved in order to sign their individual votes.
 
