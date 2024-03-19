@@ -30,10 +30,60 @@ function addAPI (items) {
   return items
 }
 
+function toTitleCase (str) {
+  return str.charAt(0).toUpperCase() + str.substr(1).toLowerCase()
+}
+
+function modifySDKReference (items) {
+  for (var index1 in items) {
+    if (
+      items[index1].type == 'category' &&
+      items[index1].label == 'Vocdoni SDK'
+    ) {
+      const SDKCategory = items[index1]
+      for (var index2 in SDKCategory.items) {
+        if (
+          SDKCategory.items[index2]?.type == 'category' &&
+          SDKCategory.items[index2]?.label == 'reference'
+        ) {
+          // Modify reference category title
+          referenceCategory = {
+            ...SDKCategory.items[index2],
+            label: 'Reference'
+          }
+          // Move Changelog to the last item
+          if (referenceCategory.items[0].id === 'sdk/reference/changelog') {
+            changelogItem = referenceCategory.items[0]
+            referenceCategory.items = referenceCategory.items.slice(1)
+            referenceCategory.items.push(changelogItem)
+          }
+          for (var index3 in referenceCategory?.items) {
+            // Capitalize category labels
+            if (referenceCategory.items[index3].label != null) {
+              referenceCategory.items[index3].label = toTitleCase(
+                referenceCategory.items[index3].label
+              )
+            }
+            // Capitalize modules label
+            if (
+              referenceCategory.items[index3].id === 'sdk/reference/modules'
+            ) {
+              referenceCategory.items[index3].label = 'Modules'
+            }
+          }
+          SDKCategory.items[index2] = referenceCategory
+        }
+        items[index1] = SDKCategory
+      }
+    }
+  }
+  return items
+}
+
 module.exports = async function sidebarItemsGenerator ({
   defaultSidebarItemsGenerator,
   ...args
 }) {
   const sidebarItems = await defaultSidebarItemsGenerator(args)
-  return addAPI(skipAPI(sidebarItems))
+  return modifySDKReference(addAPI(skipAPI(sidebarItems)))
 }
