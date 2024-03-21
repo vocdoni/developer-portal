@@ -18,9 +18,9 @@ The census type is selected from the SDK by using a [`census`][census-class] of 
 A weighted census is one where some voters' votes have more power than others, set by a `weight` value. `PlainCensus` is described by a `WEIGHTED` `CensusType` because it technically is a weighted census, with every weight set to `1`.
 :::
 
-[on-chain]: /protocol/census#on-chain-based-census-ethereum-erc-20
-[off-chain]: /protocol/census#off-chain-tree-based-census-merkle-tree
-[csp]: /protocol/census#off-chain-csp-based-census-credential-service-provider
+[on-chain]: /sdk/integration-details/census-types/on-chain
+[off-chain]: /sdk/integration-details/census-types/off-chain-tree
+[csp]: /sdk/integration-details/census-types/off-chain-csp
 [census]: /protocol/census
 [census-class]: /sdk/reference/classes/Census
 [census-class-hierarchy]: /sdk/reference/classes/Census#hierarchy

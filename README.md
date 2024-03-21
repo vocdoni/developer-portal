@@ -53,12 +53,14 @@ This creates a temporary documentation folder `temp_docs`.
 Then you can replace the SDK documentation folder in your developer portal directory:
 
 ~~~bash
+# Set the vocdoni sdk folder path
+export VOCDONI_SDK_PATH=....
 # Delete existing SDK docs folder
 rm -rf ./docs/sdk/reference
 # Copy the new docs to the SDK folder
-cp -R  VOCDONI_SDK_PATH/docs/temp_docs/ ./docs/sdk/reference
+cp -R  $VOCDONI_SDK_PATH/docs/temp_docs/ ./docs/sdk/reference
 # Remove the now redundant docs folder in vocdoni-sdk
-rm -rf VOCDONI_SDK_PATH/docs/temp_docs
+rm -rf $VOCDONI_SDK_PATH/docs/temp_docs
 # Clean-up the generated links to the readme file
 # Note this command was run on MacOS, the sed command may need to be tweaked on a linux system
 find ./docs/sdk/reference -type f | xargs sed -i '' -r 's/\[\@vocdoni\/sdk\]\((\.\.\/)*README\.md\)/\[\@vocdoni\/sdk\]\(\/sdk\)/g'

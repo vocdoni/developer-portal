@@ -324,7 +324,7 @@ Option 2: 3
 
 You can even check out the [election I created](https://stg.explorer.vote/processes/show/#/4ae20a8eb4ca73b3e1ff1602c6ece34f9b75aa86f5f90b41a209020000000000) on the blockchain explorer. 
 
-Now that you've created a basic example with the SDK, you can integrate this functionality into your own applications. For more details, check out the [reference documentation][reference] and the more extensive [examples][examples]
+Now that you've created a basic example with the SDK, you can integrate this functionality into your own applications. For more details, check out the [integration details](/sdk/integration-details) section and the more extensive [examples][examples]
 
 [gateway]: /protocol#12-gateways
 [vocdoniSDKClient]: /sdk/reference/classes/VocdoniSDKClient
@@ -340,6 +340,5 @@ Now that you've created a basic example with the SDK, you can integrate this fun
 [fetchElection]: /sdk/reference/classes/VocdoniSDKClient#fetchelection
 [vote]: /sdk/reference/classes/vote
 [submitVote]: /sdk/reference/classes/VocdoniSDKClient#submitvote
-[reference]: /sdk/reference/modules
 [examples]: https://github.com/vocdoni/vocdoni-sdk/blob/main/examples
 [ballot-protocol]: /protocol/ballot-protocol
