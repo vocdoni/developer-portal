@@ -18,4 +18,4 @@ List of election summaries
 
 #### Defined in
 
-[api/election.ts:359](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/election.ts#L359)
+[api/election.ts:359](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/election.ts#L359)

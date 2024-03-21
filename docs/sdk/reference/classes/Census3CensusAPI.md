@@ -42,7 +42,7 @@ Census3API.constructor
 
 #### Defined in
 
-[api/census3/census.ts:91](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/census3/census.ts#L91)
+[api/census3/census.ts:91](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/census3/census.ts#L91)
 
 ## Methods
 
@@ -65,7 +65,7 @@ Returns the information of the census
 
 #### Defined in
 
-[api/census3/census.ts:116](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/census3/census.ts#L116)
+[api/census3/census.ts:116](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/census3/census.ts#L116)
 
 ___
 
@@ -91,7 +91,7 @@ The queue identifier
 
 #### Defined in
 
-[api/census3/census.ts:145](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/census3/census.ts#L145)
+[api/census3/census.ts:145](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/census3/census.ts#L145)
 
 ___
 
@@ -115,7 +115,7 @@ Census3API.isApiError
 
 #### Defined in
 
-[api/census3/api.ts:101](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/census3/api.ts#L101)
+[api/census3/api.ts:101](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/census3/api.ts#L101)
 
 ___
 
@@ -140,7 +140,7 @@ Census3API.isUndefinedError
 
 #### Defined in
 
-[api/api.ts:64](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/api.ts#L64)
+[api/api.ts:64](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/api.ts#L64)
 
 ___
 
@@ -163,7 +163,7 @@ Fetches list of census based on given strategy
 
 #### Defined in
 
-[api/census3/census.ts:102](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/census3/census.ts#L102)
+[api/census3/census.ts:102](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/census3/census.ts#L102)
 
 ___
 
@@ -186,7 +186,7 @@ Returns the information of the census queue
 
 #### Defined in
 
-[api/census3/census.ts:130](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/census3/census.ts#L130)
+[api/census3/census.ts:130](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/census3/census.ts#L130)
 
 ___
 
@@ -210,4 +210,4 @@ Census3API.serializePagination
 
 #### Defined in
 
-[api/census3/api.ts:92](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/census3/api.ts#L92)
+[api/census3/api.ts:92](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/census3/api.ts#L92)

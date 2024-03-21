@@ -53,7 +53,7 @@ Instantiate the election service.
 
 #### Defined in
 
-[services/account.ts:45](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/account.ts#L45)
+[services/account.ts:45](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/account.ts#L45)
 
 ## Properties
 
@@ -67,7 +67,7 @@ AccountServiceProperties.chainService
 
 #### Defined in
 
-[services/account.ts:38](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/account.ts#L38)
+[services/account.ts:38](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/account.ts#L38)
 
 ___
 
@@ -81,7 +81,7 @@ ___
 
 #### Defined in
 
-[services/service.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/service.ts#L6)
+[services/service.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/service.ts#L6)
 
 ## Methods
 
@@ -103,7 +103,7 @@ Fetches account information.
 
 #### Defined in
 
-[services/account.ts:56](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/account.ts#L56)
+[services/account.ts:56](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/account.ts#L56)
 
 ___
 
@@ -128,7 +128,7 @@ The transaction hash
 
 #### Defined in
 
-[services/account.ts:96](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/account.ts#L96)
+[services/account.ts:96](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/account.ts#L96)
 
 ___
 
@@ -150,4 +150,4 @@ ___
 
 #### Defined in
 
-[services/account.ts:101](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/account.ts#L101)
+[services/account.ts:101](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/account.ts#L101)

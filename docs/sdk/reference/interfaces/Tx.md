@@ -17,7 +17,7 @@
 
 #### Defined in
 
-[api/chain/transactions.ts:4](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain/transactions.ts#L4)
+[api/chain/transactions.ts:4](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain/transactions.ts#L4)
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 #### Defined in
 
-[api/chain/transactions.ts:53](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain/transactions.ts#L53)
+[api/chain/transactions.ts:53](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain/transactions.ts#L53)

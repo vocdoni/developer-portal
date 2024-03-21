@@ -19,7 +19,7 @@ The description of the operator
 
 #### Defined in
 
-[api/census3/strategy.ts:223](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/census3/strategy.ts#L223)
+[api/census3/strategy.ts:223](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/census3/strategy.ts#L223)
 
 ___
 
@@ -31,4 +31,4 @@ The tag of the operator
 
 #### Defined in
 
-[api/census3/strategy.ts:228](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/census3/strategy.ts#L228)
+[api/census3/strategy.ts:228](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/census3/strategy.ts#L228)

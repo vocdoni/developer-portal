@@ -25,7 +25,7 @@ The identifier of the census
 
 #### Defined in
 
-[api/census3/census.ts:22](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/census3/census.ts#L22)
+[api/census3/census.ts:22](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/census3/census.ts#L22)
 
 ___
 
@@ -37,7 +37,7 @@ The accuracy for an anonymous census
 
 #### Defined in
 
-[api/census3/census.ts:57](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/census3/census.ts#L57)
+[api/census3/census.ts:57](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/census3/census.ts#L57)
 
 ___
 
@@ -49,7 +49,7 @@ If the census is anonymous or not
 
 #### Defined in
 
-[api/census3/census.ts:52](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/census3/census.ts#L52)
+[api/census3/census.ts:52](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/census3/census.ts#L52)
 
 ___
 
@@ -61,7 +61,7 @@ The root of the census
 
 #### Defined in
 
-[api/census3/census.ts:32](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/census3/census.ts#L32)
+[api/census3/census.ts:32](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/census3/census.ts#L32)
 
 ___
 
@@ -73,7 +73,7 @@ The size of the census (number of token holders)
 
 #### Defined in
 
-[api/census3/census.ts:42](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/census3/census.ts#L42)
+[api/census3/census.ts:42](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/census3/census.ts#L42)
 
 ___
 
@@ -85,7 +85,7 @@ The identifier of the strategy of the built census
 
 #### Defined in
 
-[api/census3/census.ts:27](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/census3/census.ts#L27)
+[api/census3/census.ts:27](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/census3/census.ts#L27)
 
 ___
 
@@ -97,7 +97,7 @@ The URI of the census
 
 #### Defined in
 
-[api/census3/census.ts:37](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/census3/census.ts#L37)
+[api/census3/census.ts:37](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/census3/census.ts#L37)
 
 ___
 
@@ -109,4 +109,4 @@ The weight of the census (weight of all token holders)
 
 #### Defined in
 
-[api/census3/census.ts:47](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/census3/census.ts#L47)
+[api/census3/census.ts:47](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/census3/census.ts#L47)

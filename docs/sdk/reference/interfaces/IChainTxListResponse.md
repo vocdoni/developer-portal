@@ -18,4 +18,4 @@ List of transactions reference
 
 #### Defined in
 
-[api/chain.ts:234](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain.ts#L234)
+[api/chain.ts:234](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L234)

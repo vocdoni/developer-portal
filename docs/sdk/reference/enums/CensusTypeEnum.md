@@ -24,7 +24,7 @@
 
 #### Defined in
 
-[api/election.ts:150](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/election.ts#L150)
+[api/election.ts:150](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/election.ts#L150)
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 #### Defined in
 
-[api/election.ts:156](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/election.ts#L156)
+[api/election.ts:156](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/election.ts#L156)
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 #### Defined in
 
-[api/election.ts:154](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/election.ts#L154)
+[api/election.ts:154](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/election.ts#L154)
 
 ___
 
@@ -54,7 +54,7 @@ ___
 
 #### Defined in
 
-[api/election.ts:155](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/election.ts#L155)
+[api/election.ts:155](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/election.ts#L155)
 
 ___
 
@@ -64,7 +64,7 @@ ___
 
 #### Defined in
 
-[api/election.ts:157](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/election.ts#L157)
+[api/election.ts:157](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/election.ts#L157)
 
 ___
 
@@ -74,7 +74,7 @@ ___
 
 #### Defined in
 
-[api/election.ts:158](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/election.ts#L158)
+[api/election.ts:158](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/election.ts#L158)
 
 ___
 
@@ -84,7 +84,7 @@ ___
 
 #### Defined in
 
-[api/election.ts:153](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/election.ts#L153)
+[api/election.ts:153](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/election.ts#L153)
 
 ___
 
@@ -94,7 +94,7 @@ ___
 
 #### Defined in
 
-[api/election.ts:151](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/election.ts#L151)
+[api/election.ts:151](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/election.ts#L151)
 
 ___
 
@@ -104,4 +104,4 @@ ___
 
 #### Defined in
 
-[api/election.ts:152](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/election.ts#L152)
+[api/election.ts:152](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/election.ts#L152)

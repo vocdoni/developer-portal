@@ -20,7 +20,7 @@ If the queue has been done
 
 #### Defined in
 
-[api/census3/strategy.ts:148](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/census3/strategy.ts#L148)
+[api/census3/strategy.ts:148](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/census3/strategy.ts#L148)
 
 ___
 
@@ -39,7 +39,7 @@ The error of the queue
 
 #### Defined in
 
-[api/census3/strategy.ts:153](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/census3/strategy.ts#L153)
+[api/census3/strategy.ts:153](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/census3/strategy.ts#L153)
 
 ___
 
@@ -51,4 +51,4 @@ The imported strategy
 
 #### Defined in
 
-[api/census3/strategy.ts:168](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/census3/strategy.ts#L168)
+[api/census3/strategy.ts:168](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/census3/strategy.ts#L168)

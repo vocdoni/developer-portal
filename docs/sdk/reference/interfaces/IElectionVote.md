@@ -22,7 +22,7 @@ Block containing the vote transaction
 
 #### Defined in
 
-[api/election.ts:303](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/election.ts#L303)
+[api/election.ts:303](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/election.ts#L303)
 
 ___
 
@@ -34,7 +34,7 @@ Transaction number on the block
 
 #### Defined in
 
-[api/election.ts:308](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/election.ts#L308)
+[api/election.ts:308](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/election.ts#L308)
 
 ___
 
@@ -46,7 +46,7 @@ Containing transaction hash
 
 #### Defined in
 
-[api/election.ts:288](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/election.ts#L288)
+[api/election.ts:288](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/election.ts#L288)
 
 ___
 
@@ -58,7 +58,7 @@ Vote unique identifier also known as vote nullifier
 
 #### Defined in
 
-[api/election.ts:293](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/election.ts#L293)
+[api/election.ts:293](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/election.ts#L293)
 
 ___
 
@@ -70,4 +70,4 @@ Account that emit the vote
 
 #### Defined in
 
-[api/election.ts:298](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/election.ts#L298)
+[api/election.ts:298](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/election.ts#L298)

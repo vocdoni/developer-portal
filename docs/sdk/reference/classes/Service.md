@@ -52,7 +52,7 @@ Cannot be constructed.
 
 #### Defined in
 
-[services/service.ts:10](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/service.ts#L10)
+[services/service.ts:10](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/service.ts#L10)
 
 ## Properties
 
@@ -66,4 +66,4 @@ Cannot be constructed.
 
 #### Defined in
 
-[services/service.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/service.ts#L6)
+[services/service.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/service.ts#L6)

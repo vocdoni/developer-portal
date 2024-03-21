@@ -43,7 +43,7 @@ Census3API.constructor
 
 #### Defined in
 
-[api/census3/token.ts:138](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/census3/token.ts#L138)
+[api/census3/token.ts:138](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/census3/token.ts#L138)
 
 ## Methods
 
@@ -72,7 +72,7 @@ promised IFileCIDResponse
 
 #### Defined in
 
-[api/census3/token.ts:229](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/census3/token.ts#L229)
+[api/census3/token.ts:229](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/census3/token.ts#L229)
 
 ___
 
@@ -100,7 +100,7 @@ The balance of holder
 
 #### Defined in
 
-[api/census3/token.ts:199](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/census3/token.ts#L199)
+[api/census3/token.ts:199](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/census3/token.ts#L199)
 
 ___
 
@@ -124,7 +124,7 @@ Census3API.isApiError
 
 #### Defined in
 
-[api/census3/api.ts:101](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/census3/api.ts#L101)
+[api/census3/api.ts:101](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/census3/api.ts#L101)
 
 ___
 
@@ -149,7 +149,7 @@ Census3API.isUndefinedError
 
 #### Defined in
 
-[api/api.ts:64](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/api.ts#L64)
+[api/api.ts:64](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/api.ts#L64)
 
 ___
 
@@ -172,7 +172,7 @@ Fetches list of already added tokens
 
 #### Defined in
 
-[api/census3/token.ts:149](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/census3/token.ts#L149)
+[api/census3/token.ts:149](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/census3/token.ts#L149)
 
 ___
 
@@ -196,7 +196,7 @@ Census3API.serializePagination
 
 #### Defined in
 
-[api/census3/api.ts:92](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/census3/api.ts#L92)
+[api/census3/api.ts:92](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/census3/api.ts#L92)
 
 ___
 
@@ -221,7 +221,7 @@ Fetch the full token information
 
 #### Defined in
 
-[api/census3/token.ts:178](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/census3/token.ts#L178)
+[api/census3/token.ts:178](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/census3/token.ts#L178)
 
 ___
 
@@ -243,4 +243,4 @@ Fetches list of tokens types
 
 #### Defined in
 
-[api/census3/token.ts:162](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/census3/token.ts#L162)
+[api/census3/token.ts:162](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/census3/token.ts#L162)

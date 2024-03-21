@@ -54,7 +54,7 @@ Instantiate the election service.
 
 #### Defined in
 
-[services/vote.ts:45](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/vote.ts#L45)
+[services/vote.ts:45](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/vote.ts#L45)
 
 ## Properties
 
@@ -68,7 +68,7 @@ VoteServiceProperties.chainService
 
 #### Defined in
 
-[services/vote.ts:38](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/vote.ts#L38)
+[services/vote.ts:38](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/vote.ts#L38)
 
 ___
 
@@ -82,7 +82,7 @@ ___
 
 #### Defined in
 
-[services/service.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/service.ts#L6)
+[services/service.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/service.ts#L6)
 
 ## Methods
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-[services/vote.ts:58](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/vote.ts#L58)
+[services/vote.ts:58](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/vote.ts#L58)
 
 ___
 
@@ -124,7 +124,7 @@ Get the vote information
 
 #### Defined in
 
-[services/vote.ts:69](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/vote.ts#L69)
+[services/vote.ts:69](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/vote.ts#L69)
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-[services/vote.ts:50](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/vote.ts#L50)
+[services/vote.ts:50](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/vote.ts#L50)
 
 ___
 
@@ -168,4 +168,4 @@ Submit the vote to the chain
 
 #### Defined in
 
-[services/vote.ts:81](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/vote.ts#L81)
+[services/vote.ts:81](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/vote.ts#L81)
