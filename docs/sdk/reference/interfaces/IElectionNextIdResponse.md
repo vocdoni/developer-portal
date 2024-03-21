@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / IElectionNextIdResponse
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / IElectionNextIdResponse
 
 # Interface: IElectionNextIdResponse
 
@@ -6,7 +6,7 @@
 
 ### Properties
 
-- [electionID](IElectionNextIdResponse.md#electionid)
+- [electionID](IElectionNextIdResponse#electionid)
 
 ## Properties
 

@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / WalletAPI
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / WalletAPI
 
 # Class: WalletAPI
 
@@ -12,25 +12,25 @@
 
 ### Constructors
 
-- [constructor](WalletAPI.md#constructor)
+- [constructor](WalletAPI#constructor)
 
 ### Methods
 
-- [add](WalletAPI.md#add)
-- [isApiError](WalletAPI.md#isapierror)
-- [isUndefinedError](WalletAPI.md#isundefinederror)
+- [add](WalletAPI#add)
+- [isApiError](WalletAPI#isapierror)
+- [isUndefinedError](WalletAPI#isundefinederror)
 
 ## Constructors
 
 ### constructor
 
-• **new WalletAPI**(): [`WalletAPI`](WalletAPI.md)
+• **new WalletAPI**(): [`WalletAPI`](WalletAPI)
 
 Cannot be constructed.
 
 #### Returns
 
-[`WalletAPI`](WalletAPI.md)
+[`WalletAPI`](WalletAPI)
 
 #### Overrides
 

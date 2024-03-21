@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / IChainValidatorsListResponse
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / IChainValidatorsListResponse
 
 # Interface: IChainValidatorsListResponse
 
@@ -6,13 +6,13 @@
 
 ### Properties
 
-- [validators](IChainValidatorsListResponse.md#validators)
+- [validators](IChainValidatorsListResponse#validators)
 
 ## Properties
 
 ### validators
 
-• **validators**: [`IChainValidator`](IChainValidator.md)[]
+• **validators**: [`IChainValidator`](IChainValidator)[]
 
 The list of validators
 

@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / CensusType
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / CensusType
 
 # Enumeration: CensusType
 
@@ -6,10 +6,10 @@
 
 ### Enumeration Members
 
-- [ANONYMOUS](CensusType.md#anonymous)
-- [CSP](CensusType.md#csp)
-- [UNKNOWN](CensusType.md#unknown)
-- [WEIGHTED](CensusType.md#weighted)
+- [ANONYMOUS](CensusType#anonymous)
+- [CSP](CensusType#csp)
+- [UNKNOWN](CensusType#unknown)
+- [WEIGHTED](CensusType#weighted)
 
 ## Enumeration Members
 

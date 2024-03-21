@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / CspProofType
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / CspProofType
 
 # Enumeration: CspProofType
 
@@ -6,7 +6,7 @@
 
 ### Enumeration Members
 
-- [ECDSA](CspProofType.md#ecdsa)
+- [ECDSA](CspProofType#ecdsa)
 - [ECDSA\_BLIND](CspProofType.md#ecdsa_blind)
 - [ECDSA\_BLIND\_PIDSALTED](CspProofType.md#ecdsa_blind_pidsalted)
 - [ECDSA\_PIDSALTED](CspProofType.md#ecdsa_pidsalted)

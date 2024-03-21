@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / IChainTxListResponse
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / IChainTxListResponse
 
 # Interface: IChainTxListResponse
 
@@ -6,13 +6,13 @@
 
 ### Properties
 
-- [transactions](IChainTxListResponse.md#transactions)
+- [transactions](IChainTxListResponse#transactions)
 
 ## Properties
 
 ### transactions
 
-• **transactions**: [`IChainTxReference`](IChainTxReference.md)[]
+• **transactions**: [`IChainTxReference`](IChainTxReference)[]
 
 List of transactions reference
 

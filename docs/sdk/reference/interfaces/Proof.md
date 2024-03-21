@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / Proof
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / Proof
 
 # Interface: Proof
 
@@ -6,7 +6,7 @@
 
 ### Properties
 
-- [payload](Proof.md#payload)
+- [payload](Proof#payload)
 
 ## Properties
 

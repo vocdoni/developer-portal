@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / Account
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / Account
 
 # Class: Account
 
@@ -8,7 +8,7 @@ Represents an account
 
 ### Constructors
 
-- [constructor](Account.md#constructor)
+- [constructor](Account#constructor)
 
 ### Properties
 
@@ -23,25 +23,25 @@ Represents an account
 
 ### Accessors
 
-- [avatar](Account.md#avatar)
-- [description](Account.md#description)
-- [feed](Account.md#feed)
-- [header](Account.md#header)
-- [languages](Account.md#languages)
-- [logo](Account.md#logo)
-- [meta](Account.md#meta)
-- [name](Account.md#name)
+- [avatar](Account#avatar)
+- [description](Account#description)
+- [feed](Account#feed)
+- [header](Account#header)
+- [languages](Account#languages)
+- [logo](Account#logo)
+- [meta](Account#meta)
+- [name](Account#name)
 
 ### Methods
 
-- [generateMetadata](Account.md#generatemetadata)
-- [build](Account.md#build)
+- [generateMetadata](Account#generatemetadata)
+- [build](Account#build)
 
 ## Constructors
 
 ### constructor
 
-• **new Account**(`params?`): [`Account`](Account.md)
+• **new Account**(`params?`): [`Account`](Account)
 
 Constructs an account
 
@@ -49,11 +49,11 @@ Constructs an account
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `params?` | [`IAccount`](../interfaces/IAccount.md) | Account parameters |
+| `params?` | [`IAccount`](../interfaces/IAccount) | Account parameters |
 
 #### Returns
 
-[`Account`](Account.md)
+[`Account`](Account)
 
 #### Defined in
 
@@ -383,11 +383,11 @@ ___
 
 ### generateMetadata
 
-▸ **generateMetadata**(): [`AccountMetadata`](../interfaces/AccountMetadata.md)
+▸ **generateMetadata**(): [`AccountMetadata`](../interfaces/AccountMetadata)
 
 #### Returns
 
-[`AccountMetadata`](../interfaces/AccountMetadata.md)
+[`AccountMetadata`](../interfaces/AccountMetadata)
 
 #### Defined in
 
@@ -397,7 +397,7 @@ ___
 
 ### build
 
-▸ **build**(`params`): [`Account`](Account.md)
+▸ **build**(`params`): [`Account`](Account)
 
 Returns an account object
 
@@ -405,11 +405,11 @@ Returns an account object
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `params` | [`IAccount`](../interfaces/IAccount.md) | Account parameters |
+| `params` | [`IAccount`](../interfaces/IAccount) | Account parameters |
 
 #### Returns
 
-[`Account`](Account.md)
+[`Account`](Account)
 
 #### Defined in
 

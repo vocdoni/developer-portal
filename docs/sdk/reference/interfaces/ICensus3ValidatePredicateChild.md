@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / ICensus3ValidatePredicateChild
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / ICensus3ValidatePredicateChild
 
 # Interface: ICensus3ValidatePredicateChild
 
@@ -6,8 +6,8 @@
 
 ### Properties
 
-- [operator](ICensus3ValidatePredicateChild.md#operator)
-- [tokens](ICensus3ValidatePredicateChild.md#tokens)
+- [operator](ICensus3ValidatePredicateChild#operator)
+- [tokens](ICensus3ValidatePredicateChild#tokens)
 
 ## Properties
 
@@ -25,7 +25,7 @@ ___
 
 ### tokens
 
-• **tokens**: ([`ICensus3ValidatePredicateToken`](ICensus3ValidatePredicateToken.md) \| [`ICensus3ValidatePredicateChild`](ICensus3ValidatePredicateChild.md))[]
+• **tokens**: ([`ICensus3ValidatePredicateToken`](ICensus3ValidatePredicateToken.md) \| [`ICensus3ValidatePredicateChild`](ICensus3ValidatePredicateChild))[]
 
 The list of tokens of the predicate
 

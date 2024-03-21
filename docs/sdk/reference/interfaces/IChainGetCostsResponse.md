@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / IChainGetCostsResponse
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / IChainGetCostsResponse
 
 # Interface: IChainGetCostsResponse
 
@@ -6,9 +6,9 @@
 
 ### Properties
 
-- [basePrice](IChainGetCostsResponse.md#baseprice)
-- [capacity](IChainGetCostsResponse.md#capacity)
-- [factors](IChainGetCostsResponse.md#factors)
+- [basePrice](IChainGetCostsResponse#baseprice)
+- [capacity](IChainGetCostsResponse#capacity)
+- [factors](IChainGetCostsResponse#factors)
 
 ## Properties
 

@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / SetAccountTx
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / SetAccountTx
 
 # Interface: SetAccountTx
 
@@ -6,12 +6,12 @@
 
 ### Properties
 
-- [account](SetAccountTx.md#account)
-- [delegates](SetAccountTx.md#delegates)
-- [faucetPackage](SetAccountTx.md#faucetpackage)
-- [infoURI](SetAccountTx.md#infouri)
-- [nonce](SetAccountTx.md#nonce)
-- [txtype](SetAccountTx.md#txtype)
+- [account](SetAccountTx#account)
+- [delegates](SetAccountTx#delegates)
+- [faucetPackage](SetAccountTx#faucetpackage)
+- [infoURI](SetAccountTx#infouri)
+- [nonce](SetAccountTx#nonce)
+- [txtype](SetAccountTx#txtype)
 
 ## Properties
 
@@ -67,7 +67,7 @@ ___
 
 ### txtype
 
-• **txtype**: [`TxType`](../enums/TxType.md)
+• **txtype**: [`TxType`](../enums/TxType)
 
 #### Defined in
 

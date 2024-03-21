@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / ElectionCreationSteps
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / ElectionCreationSteps
 
 # Enumeration: ElectionCreationSteps
 
@@ -7,8 +7,8 @@
 ### Enumeration Members
 
 - [CENSUS\_CREATED](ElectionCreationSteps.md#census_created)
-- [CREATING](ElectionCreationSteps.md#creating)
-- [DONE](ElectionCreationSteps.md#done)
+- [CREATING](ElectionCreationSteps#creating)
+- [DONE](ElectionCreationSteps#done)
 - [GENERATE\_TX](ElectionCreationSteps.md#generate_tx)
 - [GET\_ACCOUNT\_DATA](ElectionCreationSteps.md#get_account_data)
 - [GET\_CHAIN\_DATA](ElectionCreationSteps.md#get_chain_data)

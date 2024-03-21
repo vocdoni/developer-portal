@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / ElectionResultsTypeNames
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / ElectionResultsTypeNames
 
 # Enumeration: ElectionResultsTypeNames
 
@@ -6,8 +6,8 @@
 
 ### Enumeration Members
 
-- [APPROVAL](ElectionResultsTypeNames.md#approval)
-- [BUDGET](ElectionResultsTypeNames.md#budget)
+- [APPROVAL](ElectionResultsTypeNames#approval)
+- [BUDGET](ElectionResultsTypeNames#budget)
 - [MULTIPLE\_CHOICE](ElectionResultsTypeNames.md#multiple_choice)
 - [SINGLE\_CHOICE\_MULTIQUESTION](ElectionResultsTypeNames.md#single_choice_multiquestion)
 

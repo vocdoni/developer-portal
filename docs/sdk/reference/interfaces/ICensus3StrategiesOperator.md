@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / ICensus3StrategiesOperator
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / ICensus3StrategiesOperator
 
 # Interface: ICensus3StrategiesOperator
 
@@ -6,8 +6,8 @@
 
 ### Properties
 
-- [description](ICensus3StrategiesOperator.md#description)
-- [tag](ICensus3StrategiesOperator.md#tag)
+- [description](ICensus3StrategiesOperator#description)
+- [tag](ICensus3StrategiesOperator#tag)
 
 ## Properties
 

@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / VoteEnvelope
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / VoteEnvelope
 
 # Interface: VoteEnvelope
 
@@ -6,12 +6,12 @@
 
 ### Properties
 
-- [encryptionKeyIndexes](VoteEnvelope.md#encryptionkeyindexes)
-- [nonce](VoteEnvelope.md#nonce)
-- [nullifier](VoteEnvelope.md#nullifier)
-- [processId](VoteEnvelope.md#processid)
-- [proof](VoteEnvelope.md#proof)
-- [votePackage](VoteEnvelope.md#votepackage)
+- [encryptionKeyIndexes](VoteEnvelope#encryptionkeyindexes)
+- [nonce](VoteEnvelope#nonce)
+- [nullifier](VoteEnvelope#nullifier)
+- [processId](VoteEnvelope#processid)
+- [proof](VoteEnvelope#proof)
+- [votePackage](VoteEnvelope#votepackage)
 
 ## Properties
 
@@ -65,7 +65,7 @@ ___
 
 ### proof
 
-• **proof**: [`Proof`](Proof.md)
+• **proof**: [`Proof`](Proof)
 
 Franchise proof
 

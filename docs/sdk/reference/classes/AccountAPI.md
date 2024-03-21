@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / AccountAPI
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / AccountAPI
 
 # Class: AccountAPI
 
@@ -12,32 +12,32 @@
 
 ### Constructors
 
-- [constructor](AccountAPI.md#constructor)
+- [constructor](AccountAPI#constructor)
 
 ### Methods
 
-- [count](AccountAPI.md#count)
-- [electionsList](AccountAPI.md#electionslist)
-- [info](AccountAPI.md#info)
-- [isApiError](AccountAPI.md#isapierror)
-- [isUndefinedError](AccountAPI.md#isundefinederror)
-- [list](AccountAPI.md#list)
-- [metadata](AccountAPI.md#metadata)
-- [setInfo](AccountAPI.md#setinfo)
-- [transfersCount](AccountAPI.md#transferscount)
-- [transfersList](AccountAPI.md#transferslist)
+- [count](AccountAPI#count)
+- [electionsList](AccountAPI#electionslist)
+- [info](AccountAPI#info)
+- [isApiError](AccountAPI#isapierror)
+- [isUndefinedError](AccountAPI#isundefinederror)
+- [list](AccountAPI#list)
+- [metadata](AccountAPI#metadata)
+- [setInfo](AccountAPI#setinfo)
+- [transfersCount](AccountAPI#transferscount)
+- [transfersList](AccountAPI#transferslist)
 
 ## Constructors
 
 ### constructor
 
-• **new AccountAPI**(): [`AccountAPI`](AccountAPI.md)
+• **new AccountAPI**(): [`AccountAPI`](AccountAPI)
 
 Cannot be constructed.
 
 #### Returns
 
-[`AccountAPI`](AccountAPI.md)
+[`AccountAPI`](AccountAPI)
 
 #### Overrides
 
@@ -51,7 +51,7 @@ API.constructor
 
 ### count
 
-▸ **count**(`url`): `Promise`\<[`IAccountsCountResponse`](../interfaces/IAccountsCountResponse.md)\>
+▸ **count**(`url`): `Promise`\<[`IAccountsCountResponse`](../interfaces/IAccountsCountResponse)\>
 
 Returns the number of accounts
 
@@ -63,7 +63,7 @@ Returns the number of accounts
 
 #### Returns
 
-`Promise`\<[`IAccountsCountResponse`](../interfaces/IAccountsCountResponse.md)\>
+`Promise`\<[`IAccountsCountResponse`](../interfaces/IAccountsCountResponse)\>
 
 #### Defined in
 
@@ -73,7 +73,7 @@ ___
 
 ### electionsList
 
-▸ **electionsList**(`url`, `accountId`, `page?`): `Promise`\<[`IElectionListResponse`](../interfaces/IElectionListResponse.md)\>
+▸ **electionsList**(`url`, `accountId`, `page?`): `Promise`\<[`IElectionListResponse`](../interfaces/IElectionListResponse)\>
 
 Returns paginated list of elections for a specific account
 
@@ -87,7 +87,7 @@ Returns paginated list of elections for a specific account
 
 #### Returns
 
-`Promise`\<[`IElectionListResponse`](../interfaces/IElectionListResponse.md)\>
+`Promise`\<[`IElectionListResponse`](../interfaces/IElectionListResponse)\>
 
 #### Defined in
 
@@ -169,7 +169,7 @@ ___
 
 ### list
 
-▸ **list**(`url`, `page?`): `Promise`\<[`IAccountsListResponse`](../interfaces/IAccountsListResponse.md)\>
+▸ **list**(`url`, `page?`): `Promise`\<[`IAccountsListResponse`](../interfaces/IAccountsListResponse)\>
 
 Returns paginated list of accounts
 
@@ -182,7 +182,7 @@ Returns paginated list of accounts
 
 #### Returns
 
-`Promise`\<[`IAccountsListResponse`](../interfaces/IAccountsListResponse.md)\>
+`Promise`\<[`IAccountsListResponse`](../interfaces/IAccountsListResponse)\>
 
 #### Defined in
 
@@ -192,7 +192,7 @@ ___
 
 ### metadata
 
-▸ **metadata**(`url`, `accountId`): `Promise`\<[`AccountMetadata`](../interfaces/AccountMetadata.md)\>
+▸ **metadata**(`url`, `accountId`): `Promise`\<[`AccountMetadata`](../interfaces/AccountMetadata)\>
 
 Fetches the account metadata
 
@@ -205,7 +205,7 @@ Fetches the account metadata
 
 #### Returns
 
-`Promise`\<[`AccountMetadata`](../interfaces/AccountMetadata.md)\>
+`Promise`\<[`AccountMetadata`](../interfaces/AccountMetadata)\>
 
 #### Defined in
 
@@ -239,7 +239,7 @@ ___
 
 ### transfersCount
 
-▸ **transfersCount**(`url`, `accountId`): `Promise`\<[`IAccountTransfersCountResponse`](../interfaces/IAccountTransfersCountResponse.md)\>
+▸ **transfersCount**(`url`, `accountId`): `Promise`\<[`IAccountTransfersCountResponse`](../interfaces/IAccountTransfersCountResponse)\>
 
 Returns the account's transfers count
 
@@ -252,7 +252,7 @@ Returns the account's transfers count
 
 #### Returns
 
-`Promise`\<[`IAccountTransfersCountResponse`](../interfaces/IAccountTransfersCountResponse.md)\>
+`Promise`\<[`IAccountTransfersCountResponse`](../interfaces/IAccountTransfersCountResponse)\>
 
 #### Defined in
 

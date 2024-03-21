@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / IBlockTransactionsResponse
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / IBlockTransactionsResponse
 
 # Interface: IBlockTransactionsResponse
 
@@ -6,9 +6,9 @@
 
 ### Properties
 
-- [blockNumber](IBlockTransactionsResponse.md#blocknumber)
-- [transactionCount](IBlockTransactionsResponse.md#transactioncount)
-- [transactions](IBlockTransactionsResponse.md#transactions)
+- [blockNumber](IBlockTransactionsResponse#blocknumber)
+- [transactionCount](IBlockTransactionsResponse#transactioncount)
+- [transactions](IBlockTransactionsResponse#transactions)
 
 ## Properties
 
@@ -34,7 +34,7 @@ ___
 
 ### transactions
 
-• **transactions**: [`IChainTxReference`](IChainTxReference.md)[]
+• **transactions**: [`IChainTxReference`](IChainTxReference)[]
 
 #### Defined in
 

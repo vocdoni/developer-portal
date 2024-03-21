@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / CspVote
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / CspVote
 
 # Class: CspVote
 
@@ -6,7 +6,7 @@ Represents a vote
 
 ## Hierarchy
 
-- [`Vote`](Vote.md)
+- [`Vote`](Vote)
 
   ↳ **`CspVote`**
 
@@ -14,7 +14,7 @@ Represents a vote
 
 ### Constructors
 
-- [constructor](CspVote.md#constructor)
+- [constructor](CspVote#constructor)
 
 ### Properties
 
@@ -24,14 +24,14 @@ Represents a vote
 ### Accessors
 
 - [proof\_type](CspVote.md#proof_type)
-- [signature](CspVote.md#signature)
-- [votes](CspVote.md#votes)
+- [signature](CspVote#signature)
+- [votes](CspVote#votes)
 
 ## Constructors
 
 ### constructor
 
-• **new CspVote**(`votes`, `signature`, `proof_type?`): [`CspVote`](CspVote.md)
+• **new CspVote**(`votes`, `signature`, `proof_type?`): [`CspVote`](CspVote)
 
 Constructs a csp vote
 
@@ -41,15 +41,15 @@ Constructs a csp vote
 | :------ | :------ | :------ |
 | `votes` | (`number` \| `bigint`)[] | The list of votes values |
 | `signature` | `string` | The CSP signature |
-| `proof_type?` | [`CspProofType`](../enums/CspProofType.md) | The CSP proof type |
+| `proof_type?` | [`CspProofType`](../enums/CspProofType) | The CSP proof type |
 
 #### Returns
 
-[`CspVote`](CspVote.md)
+[`CspVote`](CspVote)
 
 #### Overrides
 
-[Vote](Vote.md).[constructor](Vote.md#constructor)
+[Vote](Vote.md).[constructor](Vote#constructor)
 
 #### Defined in
 
@@ -59,7 +59,7 @@ Constructs a csp vote
 
 ### \_proof\_type
 
-• `Private` **\_proof\_type**: [`CspProofType`](../enums/CspProofType.md)
+• `Private` **\_proof\_type**: [`CspProofType`](../enums/CspProofType)
 
 #### Defined in
 
@@ -79,11 +79,11 @@ ___
 
 ### proof\_type
 
-• `get` **proof_type**(): [`CspProofType`](../enums/CspProofType.md)
+• `get` **proof_type**(): [`CspProofType`](../enums/CspProofType)
 
 #### Returns
 
-[`CspProofType`](../enums/CspProofType.md)
+[`CspProofType`](../enums/CspProofType)
 
 #### Defined in
 
@@ -95,7 +95,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `value` | [`CspProofType`](../enums/CspProofType.md) |
+| `value` | [`CspProofType`](../enums/CspProofType) |
 
 #### Returns
 

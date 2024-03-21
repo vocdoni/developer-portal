@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / AdminTx
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / AdminTx
 
 # Interface: AdminTx
 
@@ -6,15 +6,15 @@
 
 ### Properties
 
-- [address](AdminTx.md#address)
-- [encryptionPrivateKey](AdminTx.md#encryptionprivatekey)
-- [encryptionPublicKey](AdminTx.md#encryptionpublickey)
-- [keyIndex](AdminTx.md#keyindex)
-- [nonce](AdminTx.md#nonce)
-- [power](AdminTx.md#power)
-- [processId](AdminTx.md#processid)
-- [publicKey](AdminTx.md#publickey)
-- [txtype](AdminTx.md#txtype)
+- [address](AdminTx#address)
+- [encryptionPrivateKey](AdminTx#encryptionprivatekey)
+- [encryptionPublicKey](AdminTx#encryptionpublickey)
+- [keyIndex](AdminTx#keyindex)
+- [nonce](AdminTx#nonce)
+- [power](AdminTx#power)
+- [processId](AdminTx#processid)
+- [publicKey](AdminTx#publickey)
+- [txtype](AdminTx#txtype)
 
 ## Properties
 
@@ -100,7 +100,7 @@ ___
 
 ### txtype
 
-• **txtype**: [`TxType`](../enums/TxType.md)
+• **txtype**: [`TxType`](../enums/TxType)
 
 #### Defined in
 

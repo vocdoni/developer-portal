@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / IChainGetCircuitResponse
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / IChainGetCircuitResponse
 
 # Interface: IChainGetCircuitResponse
 
@@ -6,15 +6,15 @@
 
 ### Properties
 
-- [circuitPath](IChainGetCircuitResponse.md#circuitpath)
-- [levels](IChainGetCircuitResponse.md#levels)
-- [uri](IChainGetCircuitResponse.md#uri)
-- [vKeyFilename](IChainGetCircuitResponse.md#vkeyfilename)
-- [vKeyHash](IChainGetCircuitResponse.md#vkeyhash)
-- [wasmFilename](IChainGetCircuitResponse.md#wasmfilename)
-- [wasmHash](IChainGetCircuitResponse.md#wasmhash)
-- [zKeyFilename](IChainGetCircuitResponse.md#zkeyfilename)
-- [zKeyHash](IChainGetCircuitResponse.md#zkeyhash)
+- [circuitPath](IChainGetCircuitResponse#circuitpath)
+- [levels](IChainGetCircuitResponse#levels)
+- [uri](IChainGetCircuitResponse#uri)
+- [vKeyFilename](IChainGetCircuitResponse#vkeyfilename)
+- [vKeyHash](IChainGetCircuitResponse#vkeyhash)
+- [wasmFilename](IChainGetCircuitResponse#wasmfilename)
+- [wasmHash](IChainGetCircuitResponse#wasmhash)
+- [zKeyFilename](IChainGetCircuitResponse#zkeyfilename)
+- [zKeyHash](IChainGetCircuitResponse#zkeyhash)
 
 ## Properties
 

@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / IElectionVote
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / IElectionVote
 
 # Interface: IElectionVote
 
@@ -6,11 +6,11 @@
 
 ### Properties
 
-- [blockHeight](IElectionVote.md#blockheight)
-- [transactionIndex](IElectionVote.md#transactionindex)
-- [txHash](IElectionVote.md#txhash)
-- [voteID](IElectionVote.md#voteid)
-- [voterID](IElectionVote.md#voterid)
+- [blockHeight](IElectionVote#blockheight)
+- [transactionIndex](IElectionVote#transactionindex)
+- [txHash](IElectionVote#txhash)
+- [voteID](IElectionVote#voteid)
+- [voterID](IElectionVote#voterid)
 
 ## Properties
 

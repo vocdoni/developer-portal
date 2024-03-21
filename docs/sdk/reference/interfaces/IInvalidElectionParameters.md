@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / IInvalidElectionParameters
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / IInvalidElectionParameters
 
 # Interface: IInvalidElectionParameters
 
@@ -6,7 +6,7 @@
 
 ### Properties
 
-- [id](IInvalidElectionParameters.md#id)
+- [id](IInvalidElectionParameters#id)
 
 ## Properties
 

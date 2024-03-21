@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / CensusOrigin
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / CensusOrigin
 
 # Enumeration: CensusOrigin
 
@@ -7,15 +7,15 @@
 ### Enumeration Members
 
 - [CENSUS\_UNKNOWN](CensusOrigin.md#census_unknown)
-- [ERC1155](CensusOrigin.md#erc1155)
-- [ERC20](CensusOrigin.md#erc20)
-- [ERC721](CensusOrigin.md#erc721)
-- [ERC777](CensusOrigin.md#erc777)
+- [ERC1155](CensusOrigin#erc1155)
+- [ERC20](CensusOrigin#erc20)
+- [ERC721](CensusOrigin#erc721)
+- [ERC777](CensusOrigin#erc777)
 - [MINI\_ME](CensusOrigin.md#mini_me)
 - [OFF\_CHAIN\_CA](CensusOrigin.md#off_chain_ca)
 - [OFF\_CHAIN\_TREE](CensusOrigin.md#off_chain_tree)
 - [OFF\_CHAIN\_TREE\_WEIGHTED](CensusOrigin.md#off_chain_tree_weighted)
-- [UNRECOGNIZED](CensusOrigin.md#unrecognized)
+- [UNRECOGNIZED](CensusOrigin#unrecognized)
 
 ## Enumeration Members
 

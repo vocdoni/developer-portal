@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / InvalidElection
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / InvalidElection
 
 # Class: InvalidElection
 
@@ -8,7 +8,7 @@ Represents an invalid election
 
 ### Constructors
 
-- [constructor](InvalidElection.md#constructor)
+- [constructor](InvalidElection#constructor)
 
 ### Properties
 
@@ -16,14 +16,14 @@ Represents an invalid election
 
 ### Accessors
 
-- [id](InvalidElection.md#id)
-- [isValid](InvalidElection.md#isvalid)
+- [id](InvalidElection#id)
+- [isValid](InvalidElection#isvalid)
 
 ## Constructors
 
 ### constructor
 
-• **new InvalidElection**(`params`): [`InvalidElection`](InvalidElection.md)
+• **new InvalidElection**(`params`): [`InvalidElection`](InvalidElection)
 
 Constructs an invalid election
 
@@ -31,11 +31,11 @@ Constructs an invalid election
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `params` | [`IInvalidElectionParameters`](../interfaces/IInvalidElectionParameters.md) | Election parameters |
+| `params` | [`IInvalidElectionParameters`](../interfaces/IInvalidElectionParameters) | Election parameters |
 
 #### Returns
 
-[`InvalidElection`](InvalidElection.md)
+[`InvalidElection`](InvalidElection)
 
 #### Defined in
 

@@ -1,10 +1,10 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / ICensus3StrategiesListResponsePaginated
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / ICensus3StrategiesListResponsePaginated
 
 # Interface: ICensus3StrategiesListResponsePaginated
 
 ## Hierarchy
 
-- [`ICensus3StrategiesListResponse`](ICensus3StrategiesListResponse.md)
+- [`ICensus3StrategiesListResponse`](ICensus3StrategiesListResponse)
 
   ↳ **`ICensus3StrategiesListResponsePaginated`**
 
@@ -12,8 +12,8 @@
 
 ### Properties
 
-- [pagination](ICensus3StrategiesListResponsePaginated.md#pagination)
-- [strategies](ICensus3StrategiesListResponsePaginated.md#strategies)
+- [pagination](ICensus3StrategiesListResponsePaginated#pagination)
+- [strategies](ICensus3StrategiesListResponsePaginated#strategies)
 
 ## Properties
 
@@ -31,13 +31,13 @@ ___
 
 ### strategies
 
-• **strategies**: [`Census3Strategy`](../modules.md#census3strategy)[]
+• **strategies**: [`Census3Strategy`](../modules#census3strategy)[]
 
 The list of the strategies identifiers
 
 #### Inherited from
 
-[ICensus3StrategiesListResponse](ICensus3StrategiesListResponse.md).[strategies](ICensus3StrategiesListResponse.md#strategies)
+[ICensus3StrategiesListResponse](ICensus3StrategiesListResponse.md).[strategies](ICensus3StrategiesListResponse#strategies)
 
 #### Defined in
 

@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / Census3TokenAPI
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / Census3TokenAPI
 
 # Class: Census3TokenAPI
 
@@ -12,30 +12,30 @@
 
 ### Constructors
 
-- [constructor](Census3TokenAPI.md#constructor)
+- [constructor](Census3TokenAPI#constructor)
 
 ### Methods
 
-- [create](Census3TokenAPI.md#create)
-- [holder](Census3TokenAPI.md#holder)
-- [isApiError](Census3TokenAPI.md#isapierror)
-- [isUndefinedError](Census3TokenAPI.md#isundefinederror)
-- [list](Census3TokenAPI.md#list)
-- [serializePagination](Census3TokenAPI.md#serializepagination)
-- [token](Census3TokenAPI.md#token)
-- [types](Census3TokenAPI.md#types)
+- [create](Census3TokenAPI#create)
+- [holder](Census3TokenAPI#holder)
+- [isApiError](Census3TokenAPI#isapierror)
+- [isUndefinedError](Census3TokenAPI#isundefinederror)
+- [list](Census3TokenAPI#list)
+- [serializePagination](Census3TokenAPI#serializepagination)
+- [token](Census3TokenAPI#token)
+- [types](Census3TokenAPI#types)
 
 ## Constructors
 
 ### constructor
 
-• **new Census3TokenAPI**(): [`Census3TokenAPI`](Census3TokenAPI.md)
+• **new Census3TokenAPI**(): [`Census3TokenAPI`](Census3TokenAPI)
 
 Cannot be constructed.
 
 #### Returns
 
-[`Census3TokenAPI`](Census3TokenAPI.md)
+[`Census3TokenAPI`](Census3TokenAPI)
 
 #### Overrides
 
@@ -78,7 +78,7 @@ ___
 
 ### holder
 
-▸ **holder**(`url`, `tokenId`, `chainId`, `holderId`, `externalId?`): `Promise`\<[`ICensus3TokenHolderResponse`](../interfaces/ICensus3TokenHolderResponse.md)\>
+▸ **holder**(`url`, `tokenId`, `chainId`, `holderId`, `externalId?`): `Promise`\<[`ICensus3TokenHolderResponse`](../interfaces/ICensus3TokenHolderResponse)\>
 
 Returns if the holder ID is already registered in the database as a holder of the token ID and chain ID provided.
 
@@ -94,7 +94,7 @@ Returns if the holder ID is already registered in the database as a holder of th
 
 #### Returns
 
-`Promise`\<[`ICensus3TokenHolderResponse`](../interfaces/ICensus3TokenHolderResponse.md)\>
+`Promise`\<[`ICensus3TokenHolderResponse`](../interfaces/ICensus3TokenHolderResponse)\>
 
 The balance of holder
 
@@ -155,7 +155,7 @@ ___
 
 ### list
 
-▸ **list**(`url`, `pagination?`): `Promise`\<[`ICensus3TokenListResponsePaginated`](../interfaces/ICensus3TokenListResponsePaginated.md)\>
+▸ **list**(`url`, `pagination?`): `Promise`\<[`ICensus3TokenListResponsePaginated`](../interfaces/ICensus3TokenListResponsePaginated)\>
 
 Fetches list of already added tokens
 
@@ -168,7 +168,7 @@ Fetches list of already added tokens
 
 #### Returns
 
-`Promise`\<[`ICensus3TokenListResponsePaginated`](../interfaces/ICensus3TokenListResponsePaginated.md)\>
+`Promise`\<[`ICensus3TokenListResponsePaginated`](../interfaces/ICensus3TokenListResponsePaginated)\>
 
 #### Defined in
 
@@ -202,7 +202,7 @@ ___
 
 ### token
 
-▸ **token**(`url`, `tokenId`, `chainId`, `externalId?`): `Promise`\<[`Census3Token`](../modules.md#census3token)\>
+▸ **token**(`url`, `tokenId`, `chainId`, `externalId?`): `Promise`\<[`Census3Token`](../modules#census3token)\>
 
 Fetch the full token information
 
@@ -217,7 +217,7 @@ Fetch the full token information
 
 #### Returns
 
-`Promise`\<[`Census3Token`](../modules.md#census3token)\>
+`Promise`\<[`Census3Token`](../modules#census3token)\>
 
 #### Defined in
 
@@ -227,7 +227,7 @@ ___
 
 ### types
 
-▸ **types**(`url`): `Promise`\<[`ICensus3TokenTypesResponse`](../interfaces/ICensus3TokenTypesResponse.md)\>
+▸ **types**(`url`): `Promise`\<[`ICensus3TokenTypesResponse`](../interfaces/ICensus3TokenTypesResponse)\>
 
 Fetches list of tokens types
 
@@ -239,7 +239,7 @@ Fetches list of tokens types
 
 #### Returns
 
-`Promise`\<[`ICensus3TokenTypesResponse`](../interfaces/ICensus3TokenTypesResponse.md)\>
+`Promise`\<[`ICensus3TokenTypesResponse`](../interfaces/ICensus3TokenTypesResponse)\>
 
 #### Defined in
 

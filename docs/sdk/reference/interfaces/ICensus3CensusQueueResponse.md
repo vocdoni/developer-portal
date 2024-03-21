@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / ICensus3CensusQueueResponse
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / ICensus3CensusQueueResponse
 
 # Interface: ICensus3CensusQueueResponse
 
@@ -6,15 +6,15 @@
 
 ### Properties
 
-- [census](ICensus3CensusQueueResponse.md#census)
-- [done](ICensus3CensusQueueResponse.md#done)
-- [error](ICensus3CensusQueueResponse.md#error)
+- [census](ICensus3CensusQueueResponse#census)
+- [done](ICensus3CensusQueueResponse#done)
+- [error](ICensus3CensusQueueResponse#error)
 
 ## Properties
 
 ### census
 
-• **census**: [`ICensus3CensusResponse`](ICensus3CensusResponse.md)
+• **census**: [`ICensus3CensusResponse`](ICensus3CensusResponse)
 
 The census
 

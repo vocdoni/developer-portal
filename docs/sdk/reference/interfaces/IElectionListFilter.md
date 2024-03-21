@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / IElectionListFilter
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / IElectionListFilter
 
 # Interface: IElectionListFilter
 
@@ -6,10 +6,10 @@
 
 ### Properties
 
-- [electionId](IElectionListFilter.md#electionid)
-- [organizationId](IElectionListFilter.md#organizationid)
-- [status](IElectionListFilter.md#status)
-- [withResults](IElectionListFilter.md#withresults)
+- [electionId](IElectionListFilter#electionid)
+- [organizationId](IElectionListFilter#organizationid)
+- [status](IElectionListFilter#status)
+- [withResults](IElectionListFilter#withresults)
 
 ## Properties
 
@@ -35,7 +35,7 @@ ___
 
 ### status
 
-• `Optional` **status**: [`PROCESS_UNKNOWN`](../enums/ElectionStatus.md#process_unknown) \| [`ENDED`](../enums/ElectionStatus.md#ended) \| [`CANCELED`](../enums/ElectionStatus.md#canceled) \| [`PAUSED`](../enums/ElectionStatus.md#paused) \| [`RESULTS`](../enums/ElectionStatus.md#results) \| [`READY`](../enums/ElectionStatusReady.md#ready)
+• `Optional` **status**: [`PROCESS_UNKNOWN`](../enums/ElectionStatus.md#process_unknown) \| [`ENDED`](../enums/ElectionStatus.md#ended) \| [`CANCELED`](../enums/ElectionStatus.md#canceled) \| [`PAUSED`](../enums/ElectionStatus.md#paused) \| [`RESULTS`](../enums/ElectionStatus.md#results) \| [`READY`](../enums/ElectionStatusReady#ready)
 
 #### Defined in
 

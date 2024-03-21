@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / Service
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / Service
 
 # Class: Service
 
@@ -6,49 +6,49 @@
 
 - **`Service`**
 
-  ↳ [`AccountService`](AccountService.md)
+  ↳ [`AccountService`](AccountService)
 
-  ↳ [`CensusService`](CensusService.md)
+  ↳ [`CensusService`](CensusService)
 
-  ↳ [`ChainService`](ChainService.md)
+  ↳ [`ChainService`](ChainService)
 
-  ↳ [`CspService`](CspService.md)
+  ↳ [`CspService`](CspService)
 
-  ↳ [`ElectionService`](ElectionService.md)
+  ↳ [`ElectionService`](ElectionService)
 
-  ↳ [`FaucetService`](FaucetService.md)
+  ↳ [`FaucetService`](FaucetService)
 
-  ↳ [`FileService`](FileService.md)
+  ↳ [`FileService`](FileService)
 
-  ↳ [`AnonymousService`](AnonymousService.md)
+  ↳ [`AnonymousService`](AnonymousService)
 
-  ↳ [`VoteService`](VoteService.md)
+  ↳ [`VoteService`](VoteService)
 
 ## Implements
 
-- [`ServiceProperties`](../interfaces/ServiceProperties.md)
+- [`ServiceProperties`](../interfaces/ServiceProperties)
 
 ## Table of contents
 
 ### Constructors
 
-- [constructor](Service.md#constructor)
+- [constructor](Service#constructor)
 
 ### Properties
 
-- [url](Service.md#url)
+- [url](Service#url)
 
 ## Constructors
 
 ### constructor
 
-• **new Service**(): [`Service`](Service.md)
+• **new Service**(): [`Service`](Service)
 
 Cannot be constructed.
 
 #### Returns
 
-[`Service`](Service.md)
+[`Service`](Service)
 
 #### Defined in
 
@@ -62,7 +62,7 @@ Cannot be constructed.
 
 #### Implementation of
 
-[ServiceProperties](../interfaces/ServiceProperties.md).[url](../interfaces/ServiceProperties.md#url)
+[ServiceProperties](../interfaces/ServiceProperties.md).[url](../interfaces/ServiceProperties#url)
 
 #### Defined in
 

@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / VoteAPI
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / VoteAPI
 
 # Class: VoteAPI
 
@@ -12,27 +12,27 @@
 
 ### Constructors
 
-- [constructor](VoteAPI.md#constructor)
+- [constructor](VoteAPI#constructor)
 
 ### Methods
 
-- [info](VoteAPI.md#info)
-- [isApiError](VoteAPI.md#isapierror)
-- [isUndefinedError](VoteAPI.md#isundefinederror)
-- [submit](VoteAPI.md#submit)
-- [verify](VoteAPI.md#verify)
+- [info](VoteAPI#info)
+- [isApiError](VoteAPI#isapierror)
+- [isUndefinedError](VoteAPI#isundefinederror)
+- [submit](VoteAPI#submit)
+- [verify](VoteAPI#verify)
 
 ## Constructors
 
 ### constructor
 
-• **new VoteAPI**(): [`VoteAPI`](VoteAPI.md)
+• **new VoteAPI**(): [`VoteAPI`](VoteAPI)
 
 Cannot be constructed.
 
 #### Returns
 
-[`VoteAPI`](VoteAPI.md)
+[`VoteAPI`](VoteAPI)
 
 #### Overrides
 
@@ -46,7 +46,7 @@ API.constructor
 
 ### info
 
-▸ **info**(`url`, `voteId`): `Promise`\<[`IVoteInfoResponse`](../interfaces/IVoteInfoResponse.md)\>
+▸ **info**(`url`, `voteId`): `Promise`\<[`IVoteInfoResponse`](../interfaces/IVoteInfoResponse)\>
 
 Vote info
 
@@ -59,7 +59,7 @@ Vote info
 
 #### Returns
 
-`Promise`\<[`IVoteInfoResponse`](../interfaces/IVoteInfoResponse.md)\>
+`Promise`\<[`IVoteInfoResponse`](../interfaces/IVoteInfoResponse)\>
 
 #### Defined in
 
@@ -118,7 +118,7 @@ ___
 
 ### submit
 
-▸ **submit**(`url`, `payload`): `Promise`\<[`IVoteSubmitResponse`](../interfaces/IVoteSubmitResponse.md)\>
+▸ **submit**(`url`, `payload`): `Promise`\<[`IVoteSubmitResponse`](../interfaces/IVoteSubmitResponse)\>
 
 Voting
 
@@ -131,7 +131,7 @@ Voting
 
 #### Returns
 
-`Promise`\<[`IVoteSubmitResponse`](../interfaces/IVoteSubmitResponse.md)\>
+`Promise`\<[`IVoteSubmitResponse`](../interfaces/IVoteSubmitResponse)\>
 
 #### Defined in
 

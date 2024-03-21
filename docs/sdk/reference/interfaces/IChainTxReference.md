@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / IChainTxReference
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / IChainTxReference
 
 # Interface: IChainTxReference
 
@@ -6,11 +6,11 @@
 
 ### Properties
 
-- [blockHeight](IChainTxReference.md#blockheight)
-- [transactionHash](IChainTxReference.md#transactionhash)
-- [transactionIndex](IChainTxReference.md#transactionindex)
-- [transactionNumber](IChainTxReference.md#transactionnumber)
-- [transactionType](IChainTxReference.md#transactiontype)
+- [blockHeight](IChainTxReference#blockheight)
+- [transactionHash](IChainTxReference#transactionhash)
+- [transactionIndex](IChainTxReference#transactionindex)
+- [transactionNumber](IChainTxReference#transactionnumber)
+- [transactionType](IChainTxReference#transactiontype)
 
 ## Properties
 
@@ -64,7 +64,7 @@ ___
 
 ### transactionType
 
-• **transactionType**: [`TransactionType`](../enums/TransactionType.md)
+• **transactionType**: [`TransactionType`](../enums/TransactionType)
 
 The type of the transaction.
 

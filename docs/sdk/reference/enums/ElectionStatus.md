@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / ElectionStatus
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / ElectionStatus
 
 # Enumeration: ElectionStatus
 
@@ -6,13 +6,13 @@
 
 ### Enumeration Members
 
-- [CANCELED](ElectionStatus.md#canceled)
-- [ENDED](ElectionStatus.md#ended)
-- [ONGOING](ElectionStatus.md#ongoing)
-- [PAUSED](ElectionStatus.md#paused)
+- [CANCELED](ElectionStatus#canceled)
+- [ENDED](ElectionStatus#ended)
+- [ONGOING](ElectionStatus#ongoing)
+- [PAUSED](ElectionStatus#paused)
 - [PROCESS\_UNKNOWN](ElectionStatus.md#process_unknown)
-- [RESULTS](ElectionStatus.md#results)
-- [UPCOMING](ElectionStatus.md#upcoming)
+- [RESULTS](ElectionStatus#results)
+- [UPCOMING](ElectionStatus#upcoming)
 
 ## Enumeration Members
 

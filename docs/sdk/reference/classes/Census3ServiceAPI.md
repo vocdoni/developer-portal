@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / Census3ServiceAPI
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / Census3ServiceAPI
 
 # Class: Census3ServiceAPI
 
@@ -12,26 +12,26 @@
 
 ### Constructors
 
-- [constructor](Census3ServiceAPI.md#constructor)
+- [constructor](Census3ServiceAPI#constructor)
 
 ### Methods
 
-- [info](Census3ServiceAPI.md#info)
-- [isApiError](Census3ServiceAPI.md#isapierror)
-- [isUndefinedError](Census3ServiceAPI.md#isundefinederror)
-- [serializePagination](Census3ServiceAPI.md#serializepagination)
+- [info](Census3ServiceAPI#info)
+- [isApiError](Census3ServiceAPI#isapierror)
+- [isUndefinedError](Census3ServiceAPI#isundefinederror)
+- [serializePagination](Census3ServiceAPI#serializepagination)
 
 ## Constructors
 
 ### constructor
 
-• **new Census3ServiceAPI**(): [`Census3ServiceAPI`](Census3ServiceAPI.md)
+• **new Census3ServiceAPI**(): [`Census3ServiceAPI`](Census3ServiceAPI)
 
 Cannot be constructed.
 
 #### Returns
 
-[`Census3ServiceAPI`](Census3ServiceAPI.md)
+[`Census3ServiceAPI`](Census3ServiceAPI)
 
 #### Overrides
 
@@ -45,7 +45,7 @@ Census3API.constructor
 
 ### info
 
-▸ **info**(`url`): `Promise`\<[`ICensus3ServiceInfoResponse`](../interfaces/ICensus3ServiceInfoResponse.md)\>
+▸ **info**(`url`): `Promise`\<[`ICensus3ServiceInfoResponse`](../interfaces/ICensus3ServiceInfoResponse)\>
 
 Fetches supported chains from the service
 
@@ -57,7 +57,7 @@ Fetches supported chains from the service
 
 #### Returns
 
-`Promise`\<[`ICensus3ServiceInfoResponse`](../interfaces/ICensus3ServiceInfoResponse.md)\>
+`Promise`\<[`ICensus3ServiceInfoResponse`](../interfaces/ICensus3ServiceInfoResponse)\>
 
 #### Defined in
 

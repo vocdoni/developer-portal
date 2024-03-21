@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / ICensus3ServiceInfoResponse
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / ICensus3ServiceInfoResponse
 
 # Interface: ICensus3ServiceInfoResponse
 
@@ -6,13 +6,13 @@
 
 ### Properties
 
-- [supportedChains](ICensus3ServiceInfoResponse.md#supportedchains)
+- [supportedChains](ICensus3ServiceInfoResponse#supportedchains)
 
 ## Properties
 
 ### supportedChains
 
-• **supportedChains**: [`ICensus3SupportedChain`](ICensus3SupportedChain.md)[]
+• **supportedChains**: [`ICensus3SupportedChain`](ICensus3SupportedChain)[]
 
 The list of supported chains
 

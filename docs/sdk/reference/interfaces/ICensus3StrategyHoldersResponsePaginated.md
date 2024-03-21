@@ -1,10 +1,10 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / ICensus3StrategyHoldersResponsePaginated
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / ICensus3StrategyHoldersResponsePaginated
 
 # Interface: ICensus3StrategyHoldersResponsePaginated
 
 ## Hierarchy
 
-- [`ICensus3StrategyHoldersResponse`](ICensus3StrategyHoldersResponse.md)
+- [`ICensus3StrategyHoldersResponse`](ICensus3StrategyHoldersResponse)
 
   ↳ **`ICensus3StrategyHoldersResponsePaginated`**
 
@@ -12,8 +12,8 @@
 
 ### Properties
 
-- [holders](ICensus3StrategyHoldersResponsePaginated.md#holders)
-- [pagination](ICensus3StrategyHoldersResponsePaginated.md#pagination)
+- [holders](ICensus3StrategyHoldersResponsePaginated#holders)
+- [pagination](ICensus3StrategyHoldersResponsePaginated#pagination)
 
 ## Properties
 
@@ -29,7 +29,7 @@ The list of the strategy holders
 
 #### Inherited from
 
-[ICensus3StrategyHoldersResponse](ICensus3StrategyHoldersResponse.md).[holders](ICensus3StrategyHoldersResponse.md#holders)
+[ICensus3StrategyHoldersResponse](ICensus3StrategyHoldersResponse.md).[holders](ICensus3StrategyHoldersResponse#holders)
 
 #### Defined in
 

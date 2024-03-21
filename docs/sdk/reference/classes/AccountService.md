@@ -1,10 +1,10 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / AccountService
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / AccountService
 
 # Class: AccountService
 
 ## Hierarchy
 
-- [`Service`](Service.md)
+- [`Service`](Service)
 
   ↳ **`AccountService`**
 
@@ -16,24 +16,24 @@
 
 ### Constructors
 
-- [constructor](AccountService.md#constructor)
+- [constructor](AccountService#constructor)
 
 ### Properties
 
-- [chainService](AccountService.md#chainservice)
-- [url](AccountService.md#url)
+- [chainService](AccountService#chainservice)
+- [url](AccountService#url)
 
 ### Methods
 
-- [fetchAccountInfo](AccountService.md#fetchaccountinfo)
-- [setInfo](AccountService.md#setinfo)
-- [signTransaction](AccountService.md#signtransaction)
+- [fetchAccountInfo](AccountService#fetchaccountinfo)
+- [setInfo](AccountService#setinfo)
+- [signTransaction](AccountService#signtransaction)
 
 ## Constructors
 
 ### constructor
 
-• **new AccountService**(`params`): [`AccountService`](AccountService.md)
+• **new AccountService**(`params`): [`AccountService`](AccountService)
 
 Instantiate the election service.
 
@@ -45,11 +45,11 @@ Instantiate the election service.
 
 #### Returns
 
-[`AccountService`](AccountService.md)
+[`AccountService`](AccountService)
 
 #### Overrides
 
-[Service](Service.md).[constructor](Service.md#constructor)
+[Service](Service.md).[constructor](Service#constructor)
 
 #### Defined in
 
@@ -59,7 +59,7 @@ Instantiate the election service.
 
 ### chainService
 
-• **chainService**: [`ChainService`](ChainService.md)
+• **chainService**: [`ChainService`](ChainService)
 
 #### Implementation of
 
@@ -77,7 +77,7 @@ ___
 
 #### Inherited from
 
-[Service](Service.md).[url](Service.md#url)
+[Service](Service.md).[url](Service#url)
 
 #### Defined in
 
@@ -87,7 +87,7 @@ ___
 
 ### fetchAccountInfo
 
-▸ **fetchAccountInfo**(`address`): `Promise`\<[`AccountData`](../modules.md#accountdata) \| [`ArchivedAccountData`](../modules.md#archivedaccountdata)\>
+▸ **fetchAccountInfo**(`address`): `Promise`\<[`AccountData`](../modules.md#accountdata) \| [`ArchivedAccountData`](../modules#archivedaccountdata)\>
 
 Fetches account information.
 
@@ -99,7 +99,7 @@ Fetches account information.
 
 #### Returns
 
-`Promise`\<[`AccountData`](../modules.md#accountdata) \| [`ArchivedAccountData`](../modules.md#archivedaccountdata)\>
+`Promise`\<[`AccountData`](../modules.md#accountdata) \| [`ArchivedAccountData`](../modules#archivedaccountdata)\>
 
 #### Defined in
 

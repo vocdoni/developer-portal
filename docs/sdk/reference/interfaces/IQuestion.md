@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / IQuestion
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / IQuestion
 
 # Interface: IQuestion
 
@@ -6,16 +6,16 @@
 
 ### Properties
 
-- [choices](IQuestion.md#choices)
-- [description](IQuestion.md#description)
-- [numAbstains](IQuestion.md#numabstains)
-- [title](IQuestion.md#title)
+- [choices](IQuestion#choices)
+- [description](IQuestion#description)
+- [numAbstains](IQuestion#numabstains)
+- [title](IQuestion#title)
 
 ## Properties
 
 ### choices
 
-• **choices**: [`IChoice`](IChoice.md)[]
+• **choices**: [`IChoice`](IChoice)[]
 
 #### Defined in
 

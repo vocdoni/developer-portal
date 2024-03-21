@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / IElectionType
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / IElectionType
 
 # Interface: IElectionType
 
@@ -6,11 +6,11 @@
 
 ### Properties
 
-- [anonymous](IElectionType.md#anonymous)
-- [autoStart](IElectionType.md#autostart)
-- [dynamicCensus](IElectionType.md#dynamiccensus)
-- [interruptible](IElectionType.md#interruptible)
-- [secretUntilTheEnd](IElectionType.md#secretuntiltheend)
+- [anonymous](IElectionType#anonymous)
+- [autoStart](IElectionType#autostart)
+- [dynamicCensus](IElectionType#dynamiccensus)
+- [interruptible](IElectionType#interruptible)
+- [secretUntilTheEnd](IElectionType#secretuntiltheend)
 
 ## Properties
 

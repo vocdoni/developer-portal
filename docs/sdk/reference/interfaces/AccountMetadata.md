@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / AccountMetadata
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / AccountMetadata
 
 # Interface: AccountMetadata
 
@@ -9,13 +9,13 @@ More info: https://vocdoni.io/docs/#/architecture/components/entity?id=meta
 
 ### Properties
 
-- [description](AccountMetadata.md#description)
-- [languages](AccountMetadata.md#languages)
-- [media](AccountMetadata.md#media)
-- [meta](AccountMetadata.md#meta)
-- [name](AccountMetadata.md#name)
-- [newsFeed](AccountMetadata.md#newsfeed)
-- [version](AccountMetadata.md#version)
+- [description](AccountMetadata#description)
+- [languages](AccountMetadata#languages)
+- [media](AccountMetadata#media)
+- [meta](AccountMetadata#meta)
+- [name](AccountMetadata#name)
+- [newsFeed](AccountMetadata#newsfeed)
+- [version](AccountMetadata#version)
 
 ## Properties
 

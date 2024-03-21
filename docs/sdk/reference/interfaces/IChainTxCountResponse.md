@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / IChainTxCountResponse
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / IChainTxCountResponse
 
 # Interface: IChainTxCountResponse
 
@@ -6,7 +6,7 @@
 
 ### Properties
 
-- [count](IChainTxCountResponse.md#count)
+- [count](IChainTxCountResponse#count)
 
 ## Properties
 

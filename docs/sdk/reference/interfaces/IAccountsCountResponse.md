@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / IAccountsCountResponse
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / IAccountsCountResponse
 
 # Interface: IAccountsCountResponse
 
@@ -6,7 +6,7 @@
 
 ### Properties
 
-- [count](IAccountsCountResponse.md#count)
+- [count](IAccountsCountResponse#count)
 
 ## Properties
 

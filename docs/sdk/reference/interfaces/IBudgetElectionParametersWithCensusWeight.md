@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / IBudgetElectionParametersWithCensusWeight
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / IBudgetElectionParametersWithCensusWeight
 
 # Interface: IBudgetElectionParametersWithCensusWeight
 
@@ -6,7 +6,7 @@ Define election parameters.
 
 ## Hierarchy
 
-- [`IBudgetElectionParametersInfo`](IBudgetElectionParametersInfo.md)
+- [`IBudgetElectionParametersInfo`](IBudgetElectionParametersInfo)
 
   ↳ **`IBudgetElectionParametersWithCensusWeight`**
 
@@ -14,23 +14,23 @@ Define election parameters.
 
 ### Properties
 
-- [addSDKVersion](IBudgetElectionParametersWithCensusWeight.md#addsdkversion)
-- [census](IBudgetElectionParametersWithCensusWeight.md#census)
-- [description](IBudgetElectionParametersWithCensusWeight.md#description)
-- [electionType](IBudgetElectionParametersWithCensusWeight.md#electiontype)
-- [endDate](IBudgetElectionParametersWithCensusWeight.md#enddate)
-- [forceFullBudget](IBudgetElectionParametersWithCensusWeight.md#forcefullbudget)
-- [header](IBudgetElectionParametersWithCensusWeight.md#header)
-- [maxCensusSize](IBudgetElectionParametersWithCensusWeight.md#maxcensussize)
-- [meta](IBudgetElectionParametersWithCensusWeight.md#meta)
-- [minStep](IBudgetElectionParametersWithCensusWeight.md#minstep)
-- [questions](IBudgetElectionParametersWithCensusWeight.md#questions)
-- [startDate](IBudgetElectionParametersWithCensusWeight.md#startdate)
-- [streamUri](IBudgetElectionParametersWithCensusWeight.md#streamuri)
-- [temporarySecretIdentity](IBudgetElectionParametersWithCensusWeight.md#temporarysecretidentity)
-- [title](IBudgetElectionParametersWithCensusWeight.md#title)
-- [useCensusWeightAsBudget](IBudgetElectionParametersWithCensusWeight.md#usecensusweightasbudget)
-- [voteType](IBudgetElectionParametersWithCensusWeight.md#votetype)
+- [addSDKVersion](IBudgetElectionParametersWithCensusWeight#addsdkversion)
+- [census](IBudgetElectionParametersWithCensusWeight#census)
+- [description](IBudgetElectionParametersWithCensusWeight#description)
+- [electionType](IBudgetElectionParametersWithCensusWeight#electiontype)
+- [endDate](IBudgetElectionParametersWithCensusWeight#enddate)
+- [forceFullBudget](IBudgetElectionParametersWithCensusWeight#forcefullbudget)
+- [header](IBudgetElectionParametersWithCensusWeight#header)
+- [maxCensusSize](IBudgetElectionParametersWithCensusWeight#maxcensussize)
+- [meta](IBudgetElectionParametersWithCensusWeight#meta)
+- [minStep](IBudgetElectionParametersWithCensusWeight#minstep)
+- [questions](IBudgetElectionParametersWithCensusWeight#questions)
+- [startDate](IBudgetElectionParametersWithCensusWeight#startdate)
+- [streamUri](IBudgetElectionParametersWithCensusWeight#streamuri)
+- [temporarySecretIdentity](IBudgetElectionParametersWithCensusWeight#temporarysecretidentity)
+- [title](IBudgetElectionParametersWithCensusWeight#title)
+- [useCensusWeightAsBudget](IBudgetElectionParametersWithCensusWeight#usecensusweightasbudget)
+- [voteType](IBudgetElectionParametersWithCensusWeight#votetype)
 
 ## Properties
 
@@ -42,7 +42,7 @@ Used to add the SDK version to the election metadata
 
 #### Inherited from
 
-[IBudgetElectionParametersInfo](IBudgetElectionParametersInfo.md).[addSDKVersion](IBudgetElectionParametersInfo.md#addsdkversion)
+[IBudgetElectionParametersInfo](IBudgetElectionParametersInfo.md).[addSDKVersion](IBudgetElectionParametersInfo#addsdkversion)
 
 #### Defined in
 
@@ -52,11 +52,11 @@ ___
 
 ### census
 
-• **census**: [`Census`](../classes/Census.md)
+• **census**: [`Census`](../classes/Census)
 
 #### Inherited from
 
-[IBudgetElectionParametersInfo](IBudgetElectionParametersInfo.md).[census](IBudgetElectionParametersInfo.md#census)
+[IBudgetElectionParametersInfo](IBudgetElectionParametersInfo.md).[census](IBudgetElectionParametersInfo#census)
 
 #### Defined in
 
@@ -72,7 +72,7 @@ Election description
 
 #### Inherited from
 
-[IBudgetElectionParametersInfo](IBudgetElectionParametersInfo.md).[description](IBudgetElectionParametersInfo.md#description)
+[IBudgetElectionParametersInfo](IBudgetElectionParametersInfo.md).[description](IBudgetElectionParametersInfo#description)
 
 #### Defined in
 
@@ -82,11 +82,11 @@ ___
 
 ### electionType
 
-• `Optional` **electionType**: [`IElectionType`](IElectionType.md)
+• `Optional` **electionType**: [`IElectionType`](IElectionType)
 
 #### Inherited from
 
-[IBudgetElectionParametersInfo](IBudgetElectionParametersInfo.md).[electionType](IBudgetElectionParametersInfo.md#electiontype)
+[IBudgetElectionParametersInfo](IBudgetElectionParametersInfo.md).[electionType](IBudgetElectionParametersInfo#electiontype)
 
 #### Defined in
 
@@ -100,7 +100,7 @@ ___
 
 #### Inherited from
 
-[IBudgetElectionParametersInfo](IBudgetElectionParametersInfo.md).[endDate](IBudgetElectionParametersInfo.md#enddate)
+[IBudgetElectionParametersInfo](IBudgetElectionParametersInfo.md).[endDate](IBudgetElectionParametersInfo#enddate)
 
 #### Defined in
 
@@ -114,7 +114,7 @@ ___
 
 #### Inherited from
 
-[IBudgetElectionParametersInfo](IBudgetElectionParametersInfo.md).[forceFullBudget](IBudgetElectionParametersInfo.md#forcefullbudget)
+[IBudgetElectionParametersInfo](IBudgetElectionParametersInfo.md).[forceFullBudget](IBudgetElectionParametersInfo#forcefullbudget)
 
 #### Defined in
 
@@ -130,7 +130,7 @@ Election header image url.
 
 #### Inherited from
 
-[IBudgetElectionParametersInfo](IBudgetElectionParametersInfo.md).[header](IBudgetElectionParametersInfo.md#header)
+[IBudgetElectionParametersInfo](IBudgetElectionParametersInfo.md).[header](IBudgetElectionParametersInfo#header)
 
 #### Defined in
 
@@ -154,7 +154,7 @@ size` error.
 
 #### Inherited from
 
-[IBudgetElectionParametersInfo](IBudgetElectionParametersInfo.md).[maxCensusSize](IBudgetElectionParametersInfo.md#maxcensussize)
+[IBudgetElectionParametersInfo](IBudgetElectionParametersInfo.md).[maxCensusSize](IBudgetElectionParametersInfo#maxcensussize)
 
 #### Defined in
 
@@ -170,7 +170,7 @@ Metadata (anything added by the election creator)
 
 #### Inherited from
 
-[IBudgetElectionParametersInfo](IBudgetElectionParametersInfo.md).[meta](IBudgetElectionParametersInfo.md#meta)
+[IBudgetElectionParametersInfo](IBudgetElectionParametersInfo.md).[meta](IBudgetElectionParametersInfo#meta)
 
 #### Defined in
 
@@ -184,7 +184,7 @@ ___
 
 #### Inherited from
 
-[IBudgetElectionParametersInfo](IBudgetElectionParametersInfo.md).[minStep](IBudgetElectionParametersInfo.md#minstep)
+[IBudgetElectionParametersInfo](IBudgetElectionParametersInfo.md).[minStep](IBudgetElectionParametersInfo#minstep)
 
 #### Defined in
 
@@ -194,11 +194,11 @@ ___
 
 ### questions
 
-• `Optional` **questions**: [`IQuestion`](IQuestion.md)[]
+• `Optional` **questions**: [`IQuestion`](IQuestion)[]
 
 #### Inherited from
 
-[IBudgetElectionParametersInfo](IBudgetElectionParametersInfo.md).[questions](IBudgetElectionParametersInfo.md#questions)
+[IBudgetElectionParametersInfo](IBudgetElectionParametersInfo.md).[questions](IBudgetElectionParametersInfo#questions)
 
 #### Defined in
 
@@ -212,7 +212,7 @@ ___
 
 #### Inherited from
 
-[IBudgetElectionParametersInfo](IBudgetElectionParametersInfo.md).[startDate](IBudgetElectionParametersInfo.md#startdate)
+[IBudgetElectionParametersInfo](IBudgetElectionParametersInfo.md).[startDate](IBudgetElectionParametersInfo#startdate)
 
 #### Defined in
 
@@ -228,7 +228,7 @@ Election stream Uri (ex: a video url)
 
 #### Inherited from
 
-[IBudgetElectionParametersInfo](IBudgetElectionParametersInfo.md).[streamUri](IBudgetElectionParametersInfo.md#streamuri)
+[IBudgetElectionParametersInfo](IBudgetElectionParametersInfo.md).[streamUri](IBudgetElectionParametersInfo#streamuri)
 
 #### Defined in
 
@@ -244,7 +244,7 @@ Is used to remove the secret identities of the voters once the process is done.
 
 #### Inherited from
 
-[IBudgetElectionParametersInfo](IBudgetElectionParametersInfo.md).[temporarySecretIdentity](IBudgetElectionParametersInfo.md#temporarysecretidentity)
+[IBudgetElectionParametersInfo](IBudgetElectionParametersInfo.md).[temporarySecretIdentity](IBudgetElectionParametersInfo#temporarysecretidentity)
 
 #### Defined in
 
@@ -260,7 +260,7 @@ Election title
 
 #### Inherited from
 
-[IBudgetElectionParametersInfo](IBudgetElectionParametersInfo.md).[title](IBudgetElectionParametersInfo.md#title)
+[IBudgetElectionParametersInfo](IBudgetElectionParametersInfo.md).[title](IBudgetElectionParametersInfo#title)
 
 #### Defined in
 
@@ -280,11 +280,11 @@ ___
 
 ### voteType
 
-• `Optional` **voteType**: [`IVoteType`](IVoteType.md)
+• `Optional` **voteType**: [`IVoteType`](IVoteType)
 
 #### Inherited from
 
-[IBudgetElectionParametersInfo](IBudgetElectionParametersInfo.md).[voteType](IBudgetElectionParametersInfo.md#votetype)
+[IBudgetElectionParametersInfo](IBudgetElectionParametersInfo.md).[voteType](IBudgetElectionParametersInfo#votetype)
 
 #### Defined in
 

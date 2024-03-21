@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / IChoice
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / IChoice
 
 # Interface: IChoice
 
@@ -6,10 +6,10 @@
 
 ### Properties
 
-- [answer](IChoice.md#answer)
-- [results](IChoice.md#results)
-- [title](IChoice.md#title)
-- [value](IChoice.md#value)
+- [answer](IChoice#answer)
+- [results](IChoice#results)
+- [title](IChoice#title)
+- [value](IChoice#value)
 
 ## Properties
 

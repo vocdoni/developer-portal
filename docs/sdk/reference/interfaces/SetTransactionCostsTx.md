@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / SetTransactionCostsTx
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / SetTransactionCostsTx
 
 # Interface: SetTransactionCostsTx
 
@@ -6,9 +6,9 @@
 
 ### Properties
 
-- [nonce](SetTransactionCostsTx.md#nonce)
-- [txtype](SetTransactionCostsTx.md#txtype)
-- [value](SetTransactionCostsTx.md#value)
+- [nonce](SetTransactionCostsTx#nonce)
+- [txtype](SetTransactionCostsTx#txtype)
+- [value](SetTransactionCostsTx#value)
 
 ## Properties
 
@@ -24,7 +24,7 @@ ___
 
 ### txtype
 
-• **txtype**: [`TxType`](../enums/TxType.md)
+• **txtype**: [`TxType`](../enums/TxType)
 
 #### Defined in
 

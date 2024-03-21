@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / ICensusExportResponse
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / ICensusExportResponse
 
 # Interface: ICensusExportResponse
 
@@ -6,10 +6,10 @@
 
 ### Properties
 
-- [data](ICensusExportResponse.md#data)
-- [maxLevels](ICensusExportResponse.md#maxlevels)
-- [rootHash](ICensusExportResponse.md#roothash)
-- [type](ICensusExportResponse.md#type)
+- [data](ICensusExportResponse#data)
+- [maxLevels](ICensusExportResponse#maxlevels)
+- [rootHash](ICensusExportResponse#roothash)
+- [type](ICensusExportResponse#type)
 
 ## Properties
 

@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / IEncryptionKey
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / IEncryptionKey
 
 # Interface: IEncryptionKey
 
@@ -6,8 +6,8 @@
 
 ### Properties
 
-- [index](IEncryptionKey.md#index)
-- [key](IEncryptionKey.md#key)
+- [index](IEncryptionKey#index)
+- [key](IEncryptionKey#key)
 
 ## Properties
 

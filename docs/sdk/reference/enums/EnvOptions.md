@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / EnvOptions
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / EnvOptions
 
 # Enumeration: EnvOptions
 
@@ -6,9 +6,9 @@
 
 ### Enumeration Members
 
-- [DEV](EnvOptions.md#dev)
-- [PROD](EnvOptions.md#prod)
-- [STG](EnvOptions.md#stg)
+- [DEV](EnvOptions#dev)
+- [PROD](EnvOptions#prod)
+- [STG](EnvOptions#stg)
 
 ## Enumeration Members
 

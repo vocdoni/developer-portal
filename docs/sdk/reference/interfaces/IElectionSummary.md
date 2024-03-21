@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / IElectionSummary
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / IElectionSummary
 
 # Interface: IElectionSummary
 
@@ -6,13 +6,13 @@
 
 ### Properties
 
-- [electionId](IElectionSummary.md#electionid)
-- [endDate](IElectionSummary.md#enddate)
-- [finalResults](IElectionSummary.md#finalresults)
-- [organizationId](IElectionSummary.md#organizationid)
-- [startDate](IElectionSummary.md#startdate)
-- [status](IElectionSummary.md#status)
-- [voteCount](IElectionSummary.md#votecount)
+- [electionId](IElectionSummary#electionid)
+- [endDate](IElectionSummary#enddate)
+- [finalResults](IElectionSummary#finalresults)
+- [organizationId](IElectionSummary#organizationid)
+- [startDate](IElectionSummary#startdate)
+- [status](IElectionSummary#status)
+- [voteCount](IElectionSummary#votecount)
 
 ## Properties
 
@@ -78,7 +78,7 @@ ___
 
 ### status
 
-• **status**: [`PROCESS_UNKNOWN`](../enums/ElectionStatus.md#process_unknown) \| [`ENDED`](../enums/ElectionStatus.md#ended) \| [`CANCELED`](../enums/ElectionStatus.md#canceled) \| [`PAUSED`](../enums/ElectionStatus.md#paused) \| [`RESULTS`](../enums/ElectionStatus.md#results) \| [`READY`](../enums/ElectionStatusReady.md#ready)
+• **status**: [`PROCESS_UNKNOWN`](../enums/ElectionStatus.md#process_unknown) \| [`ENDED`](../enums/ElectionStatus.md#ended) \| [`CANCELED`](../enums/ElectionStatus.md#canceled) \| [`PAUSED`](../enums/ElectionStatus.md#paused) \| [`RESULTS`](../enums/ElectionStatus.md#results) \| [`READY`](../enums/ElectionStatusReady#ready)
 
 The status of the election
 

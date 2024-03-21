@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / IChainValidator
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / IChainValidator
 
 # Interface: IChainValidator
 
@@ -6,10 +6,10 @@
 
 ### Properties
 
-- [address](IChainValidator.md#address)
-- [name](IChainValidator.md#name)
-- [power](IChainValidator.md#power)
-- [pubKey](IChainValidator.md#pubkey)
+- [address](IChainValidator#address)
+- [name](IChainValidator#name)
+- [power](IChainValidator#power)
+- [pubKey](IChainValidator#pubkey)
 
 ## Properties
 

@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / ICensus3StrategiesOperatorsResponse
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / ICensus3StrategiesOperatorsResponse
 
 # Interface: ICensus3StrategiesOperatorsResponse
 
@@ -6,13 +6,13 @@
 
 ### Properties
 
-- [operators](ICensus3StrategiesOperatorsResponse.md#operators)
+- [operators](ICensus3StrategiesOperatorsResponse#operators)
 
 ## Properties
 
 ### operators
 
-• **operators**: [`ICensus3StrategiesOperator`](ICensus3StrategiesOperator.md)[]
+• **operators**: [`ICensus3StrategiesOperator`](ICensus3StrategiesOperator)[]
 
 The list of supported operators
 

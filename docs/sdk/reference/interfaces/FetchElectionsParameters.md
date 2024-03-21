@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / FetchElectionsParameters
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / FetchElectionsParameters
 
 # Interface: FetchElectionsParameters
 
@@ -6,8 +6,8 @@
 
 ### Properties
 
-- [account](FetchElectionsParameters.md#account)
-- [page](FetchElectionsParameters.md#page)
+- [account](FetchElectionsParameters#account)
+- [page](FetchElectionsParameters#page)
 
 ## Properties
 

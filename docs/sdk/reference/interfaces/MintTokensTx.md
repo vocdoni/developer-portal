@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / MintTokensTx
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / MintTokensTx
 
 # Interface: MintTokensTx
 
@@ -6,10 +6,10 @@
 
 ### Properties
 
-- [nonce](MintTokensTx.md#nonce)
-- [to](MintTokensTx.md#to)
-- [txtype](MintTokensTx.md#txtype)
-- [value](MintTokensTx.md#value)
+- [nonce](MintTokensTx#nonce)
+- [to](MintTokensTx#to)
+- [txtype](MintTokensTx#txtype)
+- [value](MintTokensTx#value)
 
 ## Properties
 
@@ -35,7 +35,7 @@ ___
 
 ### txtype
 
-• **txtype**: [`TxType`](../enums/TxType.md)
+• **txtype**: [`TxType`](../enums/TxType)
 
 #### Defined in
 

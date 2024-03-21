@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / IElectionCreateResponse
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / IElectionCreateResponse
 
 # Interface: IElectionCreateResponse
 
@@ -6,9 +6,9 @@
 
 ### Properties
 
-- [electionID](IElectionCreateResponse.md#electionid)
-- [metadataURL](IElectionCreateResponse.md#metadataurl)
-- [txHash](IElectionCreateResponse.md#txhash)
+- [electionID](IElectionCreateResponse#electionid)
+- [metadataURL](IElectionCreateResponse#metadataurl)
+- [txHash](IElectionCreateResponse#txhash)
 
 ## Properties
 

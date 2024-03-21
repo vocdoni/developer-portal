@@ -1,10 +1,10 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / FaucetService
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / FaucetService
 
 # Class: FaucetService
 
 ## Hierarchy
 
-- [`Service`](Service.md)
+- [`Service`](Service)
 
   ↳ **`FaucetService`**
 
@@ -16,23 +16,23 @@
 
 ### Constructors
 
-- [constructor](FaucetService.md#constructor)
+- [constructor](FaucetService#constructor)
 
 ### Properties
 
 - [token\_limit](FaucetService.md#token_limit)
-- [url](FaucetService.md#url)
+- [url](FaucetService#url)
 
 ### Methods
 
-- [fetchPayload](FaucetService.md#fetchpayload)
-- [parseFaucetPackage](FaucetService.md#parsefaucetpackage)
+- [fetchPayload](FaucetService#fetchpayload)
+- [parseFaucetPackage](FaucetService#parsefaucetpackage)
 
 ## Constructors
 
 ### constructor
 
-• **new FaucetService**(`params`): [`FaucetService`](FaucetService.md)
+• **new FaucetService**(`params`): [`FaucetService`](FaucetService)
 
 Instantiate the chain service.
 
@@ -44,11 +44,11 @@ Instantiate the chain service.
 
 #### Returns
 
-[`FaucetService`](FaucetService.md)
+[`FaucetService`](FaucetService)
 
 #### Overrides
 
-[Service](Service.md).[constructor](Service.md#constructor)
+[Service](Service.md).[constructor](Service#constructor)
 
 #### Defined in
 
@@ -76,7 +76,7 @@ ___
 
 #### Inherited from
 
-[Service](Service.md).[url](Service.md#url)
+[Service](Service.md).[url](Service#url)
 
 #### Defined in
 
@@ -110,7 +110,7 @@ ___
 
 ### parseFaucetPackage
 
-▸ **parseFaucetPackage**(`faucetPackage`): [`FaucetPackage`](../modules.md#faucetpackage)
+▸ **parseFaucetPackage**(`faucetPackage`): [`FaucetPackage`](../modules#faucetpackage)
 
 Parses a faucet package.
 
@@ -122,7 +122,7 @@ Parses a faucet package.
 
 #### Returns
 
-[`FaucetPackage`](../modules.md#faucetpackage)
+[`FaucetPackage`](../modules#faucetpackage)
 
 #### Defined in
 

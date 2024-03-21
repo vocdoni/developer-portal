@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / IAccountsListResponse
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / IAccountsListResponse
 
 # Interface: IAccountsListResponse
 
@@ -6,13 +6,13 @@
 
 ### Properties
 
-- [accounts](IAccountsListResponse.md#accounts)
+- [accounts](IAccountsListResponse#accounts)
 
 ## Properties
 
 ### accounts
 
-• **accounts**: [`IAccountSummary`](../modules.md#iaccountsummary)[]
+• **accounts**: [`IAccountSummary`](../modules#iaccountsummary)[]
 
 List of accounts
 

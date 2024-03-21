@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / ElectionStatusReady
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / ElectionStatusReady
 
 # Enumeration: ElectionStatusReady
 
@@ -6,7 +6,7 @@
 
 ### Enumeration Members
 
-- [READY](ElectionStatusReady.md#ready)
+- [READY](ElectionStatusReady#ready)
 
 ## Enumeration Members
 

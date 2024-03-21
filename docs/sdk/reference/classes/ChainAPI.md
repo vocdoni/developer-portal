@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / ChainAPI
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / ChainAPI
 
 # Class: ChainAPI
 
@@ -12,40 +12,40 @@
 
 ### Constructors
 
-- [constructor](ChainAPI.md#constructor)
+- [constructor](ChainAPI#constructor)
 
 ### Methods
 
-- [blockByHash](ChainAPI.md#blockbyhash)
-- [blockByHeight](ChainAPI.md#blockbyheight)
-- [blockToDate](ChainAPI.md#blocktodate)
-- [blockTransactions](ChainAPI.md#blocktransactions)
-- [circuit](ChainAPI.md#circuit)
-- [circuits](ChainAPI.md#circuits)
-- [costs](ChainAPI.md#costs)
-- [dateToBlock](ChainAPI.md#datetoblock)
-- [info](ChainAPI.md#info)
-- [isApiError](ChainAPI.md#isapierror)
-- [isUndefinedError](ChainAPI.md#isundefinederror)
-- [organizationCount](ChainAPI.md#organizationcount)
-- [organizationList](ChainAPI.md#organizationlist)
-- [submitTx](ChainAPI.md#submittx)
-- [txInfo](ChainAPI.md#txinfo)
-- [txInfoByBlock](ChainAPI.md#txinfobyblock)
-- [txList](ChainAPI.md#txlist)
-- [validatorsList](ChainAPI.md#validatorslist)
+- [blockByHash](ChainAPI#blockbyhash)
+- [blockByHeight](ChainAPI#blockbyheight)
+- [blockToDate](ChainAPI#blocktodate)
+- [blockTransactions](ChainAPI#blocktransactions)
+- [circuit](ChainAPI#circuit)
+- [circuits](ChainAPI#circuits)
+- [costs](ChainAPI#costs)
+- [dateToBlock](ChainAPI#datetoblock)
+- [info](ChainAPI#info)
+- [isApiError](ChainAPI#isapierror)
+- [isUndefinedError](ChainAPI#isundefinederror)
+- [organizationCount](ChainAPI#organizationcount)
+- [organizationList](ChainAPI#organizationlist)
+- [submitTx](ChainAPI#submittx)
+- [txInfo](ChainAPI#txinfo)
+- [txInfoByBlock](ChainAPI#txinfobyblock)
+- [txList](ChainAPI#txlist)
+- [validatorsList](ChainAPI#validatorslist)
 
 ## Constructors
 
 ### constructor
 
-• **new ChainAPI**(): [`ChainAPI`](ChainAPI.md)
+• **new ChainAPI**(): [`ChainAPI`](ChainAPI)
 
 Cannot be constructed.
 
 #### Returns
 
-[`ChainAPI`](ChainAPI.md)
+[`ChainAPI`](ChainAPI)
 
 #### Overrides
 
@@ -59,7 +59,7 @@ API.constructor
 
 ### blockByHash
 
-▸ **blockByHash**(`url`, `hash`): `Promise`\<[`IChainBlockInfoResponse`](../interfaces/IChainBlockInfoResponse.md)\>
+▸ **blockByHash**(`url`, `hash`): `Promise`\<[`IChainBlockInfoResponse`](../interfaces/IChainBlockInfoResponse)\>
 
 Get block information by hash
 
@@ -72,7 +72,7 @@ Get block information by hash
 
 #### Returns
 
-`Promise`\<[`IChainBlockInfoResponse`](../interfaces/IChainBlockInfoResponse.md)\>
+`Promise`\<[`IChainBlockInfoResponse`](../interfaces/IChainBlockInfoResponse)\>
 
 #### Defined in
 
@@ -82,7 +82,7 @@ ___
 
 ### blockByHeight
 
-▸ **blockByHeight**(`url`, `height`): `Promise`\<[`IChainBlockInfoResponse`](../interfaces/IChainBlockInfoResponse.md)\>
+▸ **blockByHeight**(`url`, `height`): `Promise`\<[`IChainBlockInfoResponse`](../interfaces/IChainBlockInfoResponse)\>
 
 Get block information by height
 
@@ -95,7 +95,7 @@ Get block information by height
 
 #### Returns
 
-`Promise`\<[`IChainBlockInfoResponse`](../interfaces/IChainBlockInfoResponse.md)\>
+`Promise`\<[`IChainBlockInfoResponse`](../interfaces/IChainBlockInfoResponse)\>
 
 #### Defined in
 
@@ -128,7 +128,7 @@ ___
 
 ### blockTransactions
 
-▸ **blockTransactions**(`url`, `height`, `page?`): `Promise`\<[`IBlockTransactionsResponse`](../interfaces/IBlockTransactionsResponse.md)\>
+▸ **blockTransactions**(`url`, `height`, `page?`): `Promise`\<[`IBlockTransactionsResponse`](../interfaces/IBlockTransactionsResponse)\>
 
 Get paginated list of transactions registered on specific block
 
@@ -142,7 +142,7 @@ Get paginated list of transactions registered on specific block
 
 #### Returns
 
-`Promise`\<[`IBlockTransactionsResponse`](../interfaces/IBlockTransactionsResponse.md)\>
+`Promise`\<[`IBlockTransactionsResponse`](../interfaces/IBlockTransactionsResponse)\>
 
 #### Defined in
 
@@ -174,7 +174,7 @@ ___
 
 ### circuits
 
-▸ **circuits**(`url`): `Promise`\<[`IChainGetCircuitResponse`](../interfaces/IChainGetCircuitResponse.md)\>
+▸ **circuits**(`url`): `Promise`\<[`IChainGetCircuitResponse`](../interfaces/IChainGetCircuitResponse)\>
 
 Fetches info about the blockchain anonymous circuits.
 
@@ -186,7 +186,7 @@ Fetches info about the blockchain anonymous circuits.
 
 #### Returns
 
-`Promise`\<[`IChainGetCircuitResponse`](../interfaces/IChainGetCircuitResponse.md)\>
+`Promise`\<[`IChainGetCircuitResponse`](../interfaces/IChainGetCircuitResponse)\>
 
 #### Defined in
 
@@ -196,7 +196,7 @@ ___
 
 ### costs
 
-▸ **costs**(`url`): `Promise`\<[`IChainGetCostsResponse`](../interfaces/IChainGetCostsResponse.md)\>
+▸ **costs**(`url`): `Promise`\<[`IChainGetCostsResponse`](../interfaces/IChainGetCostsResponse)\>
 
 Fetches info about the blockchain costs.
 
@@ -208,7 +208,7 @@ Fetches info about the blockchain costs.
 
 #### Returns
 
-`Promise`\<[`IChainGetCostsResponse`](../interfaces/IChainGetCostsResponse.md)\>
+`Promise`\<[`IChainGetCostsResponse`](../interfaces/IChainGetCostsResponse)\>
 
 #### Defined in
 
@@ -241,7 +241,7 @@ ___
 
 ### info
 
-▸ **info**(`url`): `Promise`\<[`IChainGetInfoResponse`](../interfaces/IChainGetInfoResponse.md)\>
+▸ **info**(`url`): `Promise`\<[`IChainGetInfoResponse`](../interfaces/IChainGetInfoResponse)\>
 
 Fetches info about the blockchain status.
 
@@ -253,7 +253,7 @@ Fetches info about the blockchain status.
 
 #### Returns
 
-`Promise`\<[`IChainGetInfoResponse`](../interfaces/IChainGetInfoResponse.md)\>
+`Promise`\<[`IChainGetInfoResponse`](../interfaces/IChainGetInfoResponse)\>
 
 #### Defined in
 
@@ -312,7 +312,7 @@ ___
 
 ### organizationCount
 
-▸ **organizationCount**(`url`): `Promise`\<[`IChainOrganizationCountResponse`](../interfaces/IChainOrganizationCountResponse.md)\>
+▸ **organizationCount**(`url`): `Promise`\<[`IChainOrganizationCountResponse`](../interfaces/IChainOrganizationCountResponse)\>
 
 Returns the number of organizations
 
@@ -324,7 +324,7 @@ Returns the number of organizations
 
 #### Returns
 
-`Promise`\<[`IChainOrganizationCountResponse`](../interfaces/IChainOrganizationCountResponse.md)\>
+`Promise`\<[`IChainOrganizationCountResponse`](../interfaces/IChainOrganizationCountResponse)\>
 
 #### Defined in
 
@@ -334,7 +334,7 @@ ___
 
 ### organizationList
 
-▸ **organizationList**(`url`, `page?`, `organizationId?`): `Promise`\<[`IChainOrganizationListResponse`](../interfaces/IChainOrganizationListResponse.md)\>
+▸ **organizationList**(`url`, `page?`, `organizationId?`): `Promise`\<[`IChainOrganizationListResponse`](../interfaces/IChainOrganizationListResponse)\>
 
 Returns the list of organizations by page
 
@@ -348,7 +348,7 @@ Returns the list of organizations by page
 
 #### Returns
 
-`Promise`\<[`IChainOrganizationListResponse`](../interfaces/IChainOrganizationListResponse.md)\>
+`Promise`\<[`IChainOrganizationListResponse`](../interfaces/IChainOrganizationListResponse)\>
 
 #### Defined in
 
@@ -358,7 +358,7 @@ ___
 
 ### submitTx
 
-▸ **submitTx**(`url`, `payload`): `Promise`\<[`IChainSubmitTxResponse`](../interfaces/IChainSubmitTxResponse.md)\>
+▸ **submitTx**(`url`, `payload`): `Promise`\<[`IChainSubmitTxResponse`](../interfaces/IChainSubmitTxResponse)\>
 
 Submits a transaction to the blockchain
 
@@ -371,7 +371,7 @@ Submits a transaction to the blockchain
 
 #### Returns
 
-`Promise`\<[`IChainSubmitTxResponse`](../interfaces/IChainSubmitTxResponse.md)\>
+`Promise`\<[`IChainSubmitTxResponse`](../interfaces/IChainSubmitTxResponse)\>
 
 #### Defined in
 
@@ -381,7 +381,7 @@ ___
 
 ### txInfo
 
-▸ **txInfo**(`url`, `txHash`): `Promise`\<[`IChainTxReference`](../interfaces/IChainTxReference.md)\>
+▸ **txInfo**(`url`, `txHash`): `Promise`\<[`IChainTxReference`](../interfaces/IChainTxReference)\>
 
 Fetches information about a transaction from the blockchain.
 
@@ -394,7 +394,7 @@ Fetches information about a transaction from the blockchain.
 
 #### Returns
 
-`Promise`\<[`IChainTxReference`](../interfaces/IChainTxReference.md)\>
+`Promise`\<[`IChainTxReference`](../interfaces/IChainTxReference)\>
 
 #### Defined in
 
@@ -404,7 +404,7 @@ ___
 
 ### txInfoByBlock
 
-▸ **txInfoByBlock**(`url`, `blockHeight`, `txIndex`): `Promise`\<[`Tx`](../interfaces/Tx.md)\>
+▸ **txInfoByBlock**(`url`, `blockHeight`, `txIndex`): `Promise`\<[`Tx`](../interfaces/Tx)\>
 
 Fetches information about a transaction by its containing block an index on the block.
 
@@ -418,7 +418,7 @@ Fetches information about a transaction by its containing block an index on the 
 
 #### Returns
 
-`Promise`\<[`Tx`](../interfaces/Tx.md)\>
+`Promise`\<[`Tx`](../interfaces/Tx)\>
 
 #### Defined in
 
@@ -428,7 +428,7 @@ ___
 
 ### txList
 
-▸ **txList**(`url`, `page?`): `Promise`\<[`IChainTxListResponse`](../interfaces/IChainTxListResponse.md)\>
+▸ **txList**(`url`, `page?`): `Promise`\<[`IChainTxListResponse`](../interfaces/IChainTxListResponse)\>
 
 Returns the list of transactions by page
 
@@ -441,7 +441,7 @@ Returns the list of transactions by page
 
 #### Returns
 
-`Promise`\<[`IChainTxListResponse`](../interfaces/IChainTxListResponse.md)\>
+`Promise`\<[`IChainTxListResponse`](../interfaces/IChainTxListResponse)\>
 
 #### Defined in
 
@@ -451,7 +451,7 @@ ___
 
 ### validatorsList
 
-▸ **validatorsList**(`url`): `Promise`\<[`IChainValidatorsListResponse`](../interfaces/IChainValidatorsListResponse.md)\>
+▸ **validatorsList**(`url`): `Promise`\<[`IChainValidatorsListResponse`](../interfaces/IChainValidatorsListResponse)\>
 
 Returns the list of validators
 
@@ -463,7 +463,7 @@ Returns the list of validators
 
 #### Returns
 
-`Promise`\<[`IChainValidatorsListResponse`](../interfaces/IChainValidatorsListResponse.md)\>
+`Promise`\<[`IChainValidatorsListResponse`](../interfaces/IChainValidatorsListResponse)\>
 
 #### Defined in
 

@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / IVoteInfoResponse
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / IVoteInfoResponse
 
 # Interface: IVoteInfoResponse
 
@@ -6,16 +6,16 @@
 
 ### Properties
 
-- [blockHeight](IVoteInfoResponse.md#blockheight)
-- [date](IVoteInfoResponse.md#date)
-- [electionID](IVoteInfoResponse.md#electionid)
-- [encryptionKeys](IVoteInfoResponse.md#encryptionkeys)
-- [overwriteCount](IVoteInfoResponse.md#overwritecount)
-- [package](IVoteInfoResponse.md#package)
-- [transactionIndex](IVoteInfoResponse.md#transactionindex)
-- [txHash](IVoteInfoResponse.md#txhash)
-- [voteID](IVoteInfoResponse.md#voteid)
-- [weight](IVoteInfoResponse.md#weight)
+- [blockHeight](IVoteInfoResponse#blockheight)
+- [date](IVoteInfoResponse#date)
+- [electionID](IVoteInfoResponse#electionid)
+- [encryptionKeys](IVoteInfoResponse#encryptionkeys)
+- [overwriteCount](IVoteInfoResponse#overwritecount)
+- [package](IVoteInfoResponse#package)
+- [transactionIndex](IVoteInfoResponse#transactionindex)
+- [txHash](IVoteInfoResponse#txhash)
+- [voteID](IVoteInfoResponse#voteid)
+- [weight](IVoteInfoResponse#weight)
 
 ## Properties
 

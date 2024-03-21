@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / PublishedElection
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / PublishedElection
 
 # Class: PublishedElection
 
@@ -6,17 +6,17 @@ Represents a published election
 
 ## Hierarchy
 
-- [`Election`](Election.md)
+- [`Election`](Election)
 
   ↳ **`PublishedElection`**
 
-  ↳↳ [`ArchivedElection`](ArchivedElection.md)
+  ↳↳ [`ArchivedElection`](ArchivedElection)
 
 ## Table of contents
 
 ### Constructors
 
-- [constructor](PublishedElection.md#constructor)
+- [constructor](PublishedElection#constructor)
 
 ### Properties
 
@@ -50,49 +50,49 @@ Represents a published election
 
 ### Accessors
 
-- [addSDKVersion](PublishedElection.md#addsdkversion)
-- [census](PublishedElection.md#census)
-- [chainId](PublishedElection.md#chainid)
-- [creationTime](PublishedElection.md#creationtime)
-- [description](PublishedElection.md#description)
-- [electionType](PublishedElection.md#electiontype)
-- [endDate](PublishedElection.md#enddate)
-- [finalResults](PublishedElection.md#finalresults)
-- [fromArchive](PublishedElection.md#fromarchive)
-- [header](PublishedElection.md#header)
-- [id](PublishedElection.md#id)
-- [isValid](PublishedElection.md#isvalid)
-- [manuallyEnded](PublishedElection.md#manuallyended)
-- [maxCensusSize](PublishedElection.md#maxcensussize)
-- [meta](PublishedElection.md#meta)
-- [metadataURL](PublishedElection.md#metadataurl)
-- [organizationId](PublishedElection.md#organizationid)
-- [questions](PublishedElection.md#questions)
-- [raw](PublishedElection.md#raw)
-- [results](PublishedElection.md#results)
-- [resultsType](PublishedElection.md#resultstype)
-- [startDate](PublishedElection.md#startdate)
-- [status](PublishedElection.md#status)
-- [streamUri](PublishedElection.md#streamuri)
-- [temporarySecretIdentity](PublishedElection.md#temporarysecretidentity)
-- [title](PublishedElection.md#title)
-- [voteCount](PublishedElection.md#votecount)
-- [voteType](PublishedElection.md#votetype)
+- [addSDKVersion](PublishedElection#addsdkversion)
+- [census](PublishedElection#census)
+- [chainId](PublishedElection#chainid)
+- [creationTime](PublishedElection#creationtime)
+- [description](PublishedElection#description)
+- [electionType](PublishedElection#electiontype)
+- [endDate](PublishedElection#enddate)
+- [finalResults](PublishedElection#finalresults)
+- [fromArchive](PublishedElection#fromarchive)
+- [header](PublishedElection#header)
+- [id](PublishedElection#id)
+- [isValid](PublishedElection#isvalid)
+- [manuallyEnded](PublishedElection#manuallyended)
+- [maxCensusSize](PublishedElection#maxcensussize)
+- [meta](PublishedElection#meta)
+- [metadataURL](PublishedElection#metadataurl)
+- [organizationId](PublishedElection#organizationid)
+- [questions](PublishedElection#questions)
+- [raw](PublishedElection#raw)
+- [results](PublishedElection#results)
+- [resultsType](PublishedElection#resultstype)
+- [startDate](PublishedElection#startdate)
+- [status](PublishedElection#status)
+- [streamUri](PublishedElection#streamuri)
+- [temporarySecretIdentity](PublishedElection#temporarysecretidentity)
+- [title](PublishedElection#title)
+- [voteCount](PublishedElection#votecount)
+- [voteType](PublishedElection#votetype)
 
 ### Methods
 
-- [checkVote](PublishedElection.md#checkvote)
-- [get](PublishedElection.md#get)
-- [build](PublishedElection.md#build)
+- [checkVote](PublishedElection#checkvote)
+- [get](PublishedElection#get)
+- [build](PublishedElection#build)
 - [checkVote](PublishedElection.md#checkvote-1)
-- [from](PublishedElection.md#from)
-- [getStatus](PublishedElection.md#getstatus)
+- [from](PublishedElection#from)
+- [getStatus](PublishedElection#getstatus)
 
 ## Constructors
 
 ### constructor
 
-• **new PublishedElection**(`params`): [`PublishedElection`](PublishedElection.md)
+• **new PublishedElection**(`params`): [`PublishedElection`](PublishedElection)
 
 Constructs a published election
 
@@ -100,15 +100,15 @@ Constructs a published election
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `params` | [`IPublishedElectionParameters`](../interfaces/IPublishedElectionParameters.md) | Election parameters |
+| `params` | [`IPublishedElectionParameters`](../interfaces/IPublishedElectionParameters) | Election parameters |
 
 #### Returns
 
-[`PublishedElection`](PublishedElection.md)
+[`PublishedElection`](PublishedElection)
 
 #### Overrides
 
-[Election](Election.md).[constructor](Election.md#constructor)
+[Election](Election.md).[constructor](Election#constructor)
 
 #### Defined in
 
@@ -122,7 +122,7 @@ Constructs a published election
 
 #### Inherited from
 
-[Election](Election.md).[_addSDKVersion](Election.md#_addsdkversion)
+[Election](Election).[_addSDKVersion](Election.md#_addsdkversion)
 
 #### Defined in
 
@@ -132,11 +132,11 @@ ___
 
 ### \_census
 
-• `Protected` **\_census**: [`Census`](Census.md)
+• `Protected` **\_census**: [`Census`](Census)
 
 #### Inherited from
 
-[Election](Election.md).[_census](Election.md#_census)
+[Election](Election).[_census](Election.md#_census)
 
 #### Defined in
 
@@ -170,7 +170,7 @@ ___
 
 #### Inherited from
 
-[Election](Election.md).[_description](Election.md#_description)
+[Election](Election).[_description](Election.md#_description)
 
 #### Defined in
 
@@ -180,11 +180,11 @@ ___
 
 ### \_electionType
 
-• `Protected` **\_electionType**: [`IElectionType`](../interfaces/IElectionType.md)
+• `Protected` **\_electionType**: [`IElectionType`](../interfaces/IElectionType)
 
 #### Inherited from
 
-[Election](Election.md).[_electionType](Election.md#_electiontype)
+[Election](Election).[_electionType](Election.md#_electiontype)
 
 #### Defined in
 
@@ -198,7 +198,7 @@ ___
 
 #### Inherited from
 
-[Election](Election.md).[_endDate](Election.md#_enddate)
+[Election](Election).[_endDate](Election.md#_enddate)
 
 #### Defined in
 
@@ -232,7 +232,7 @@ ___
 
 #### Inherited from
 
-[Election](Election.md).[_header](Election.md#_header)
+[Election](Election).[_header](Election.md#_header)
 
 #### Defined in
 
@@ -266,7 +266,7 @@ ___
 
 #### Inherited from
 
-[Election](Election.md).[_maxCensusSize](Election.md#_maxcensussize)
+[Election](Election).[_maxCensusSize](Election.md#_maxcensussize)
 
 #### Defined in
 
@@ -280,7 +280,7 @@ ___
 
 #### Inherited from
 
-[Election](Election.md).[_meta](Election.md#_meta)
+[Election](Election).[_meta](Election.md#_meta)
 
 #### Defined in
 
@@ -310,11 +310,11 @@ ___
 
 ### \_questions
 
-• `Protected` **\_questions**: [`IQuestion`](../interfaces/IQuestion.md)[]
+• `Protected` **\_questions**: [`IQuestion`](../interfaces/IQuestion)[]
 
 #### Inherited from
 
-[Election](Election.md).[_questions](Election.md#_questions)
+[Election](Election).[_questions](Election.md#_questions)
 
 #### Defined in
 
@@ -344,7 +344,7 @@ ___
 
 ### \_resultsType
 
-• `Private` `Readonly` **\_resultsType**: [`ElectionResultsType`](../modules.md#electionresultstype)
+• `Private` `Readonly` **\_resultsType**: [`ElectionResultsType`](../modules#electionresultstype)
 
 #### Defined in
 
@@ -358,7 +358,7 @@ ___
 
 #### Inherited from
 
-[Election](Election.md).[_startDate](Election.md#_startdate)
+[Election](Election).[_startDate](Election.md#_startdate)
 
 #### Defined in
 
@@ -368,7 +368,7 @@ ___
 
 ### \_status
 
-• `Private` `Readonly` **\_status**: [`ElectionStatus`](../enums/ElectionStatus.md)
+• `Private` `Readonly` **\_status**: [`ElectionStatus`](../enums/ElectionStatus)
 
 #### Defined in
 
@@ -382,7 +382,7 @@ ___
 
 #### Inherited from
 
-[Election](Election.md).[_streamUri](Election.md#_streamuri)
+[Election](Election).[_streamUri](Election.md#_streamuri)
 
 #### Defined in
 
@@ -396,7 +396,7 @@ ___
 
 #### Inherited from
 
-[Election](Election.md).[_temporarySecretIdentity](Election.md#_temporarysecretidentity)
+[Election](Election).[_temporarySecretIdentity](Election.md#_temporarysecretidentity)
 
 #### Defined in
 
@@ -410,7 +410,7 @@ ___
 
 #### Inherited from
 
-[Election](Election.md).[_title](Election.md#_title)
+[Election](Election).[_title](Election.md#_title)
 
 #### Defined in
 
@@ -430,11 +430,11 @@ ___
 
 ### \_voteType
 
-• `Protected` **\_voteType**: [`IVoteType`](../interfaces/IVoteType.md)
+• `Protected` **\_voteType**: [`IVoteType`](../interfaces/IVoteType)
 
 #### Inherited from
 
-[Election](Election.md).[_voteType](Election.md#_votetype)
+[Election](Election).[_voteType](Election.md#_votetype)
 
 #### Defined in
 
@@ -462,11 +462,11 @@ ___
 
 ### census
 
-• `get` **census**(): [`PublishedCensus`](PublishedCensus.md)
+• `get` **census**(): [`PublishedCensus`](PublishedCensus)
 
 #### Returns
 
-[`PublishedCensus`](PublishedCensus.md)
+[`PublishedCensus`](PublishedCensus)
 
 #### Overrides
 
@@ -526,11 +526,11 @@ ___
 
 ### electionType
 
-• `get` **electionType**(): [`IElectionType`](../interfaces/IElectionType.md)
+• `get` **electionType**(): [`IElectionType`](../interfaces/IElectionType)
 
 #### Returns
 
-[`IElectionType`](../interfaces/IElectionType.md)
+[`IElectionType`](../interfaces/IElectionType)
 
 #### Overrides
 
@@ -714,11 +714,11 @@ ___
 
 ### questions
 
-• `get` **questions**(): [`IQuestion`](../interfaces/IQuestion.md)[]
+• `get` **questions**(): [`IQuestion`](../interfaces/IQuestion)[]
 
 #### Returns
 
-[`IQuestion`](../interfaces/IQuestion.md)[]
+[`IQuestion`](../interfaces/IQuestion)[]
 
 #### Overrides
 
@@ -760,11 +760,11 @@ ___
 
 ### resultsType
 
-• `get` **resultsType**(): [`ElectionResultsType`](../modules.md#electionresultstype)
+• `get` **resultsType**(): [`ElectionResultsType`](../modules#electionresultstype)
 
 #### Returns
 
-[`ElectionResultsType`](../modules.md#electionresultstype)
+[`ElectionResultsType`](../modules#electionresultstype)
 
 #### Defined in
 
@@ -792,11 +792,11 @@ ___
 
 ### status
 
-• `get` **status**(): [`ElectionStatus`](../enums/ElectionStatus.md)
+• `get` **status**(): [`ElectionStatus`](../enums/ElectionStatus)
 
 #### Returns
 
-[`ElectionStatus`](../enums/ElectionStatus.md)
+[`ElectionStatus`](../enums/ElectionStatus)
 
 #### Defined in
 
@@ -874,11 +874,11 @@ ___
 
 ### voteType
 
-• `get` **voteType**(): [`IVoteType`](../interfaces/IVoteType.md)
+• `get` **voteType**(): [`IVoteType`](../interfaces/IVoteType)
 
 #### Returns
 
-[`IVoteType`](../interfaces/IVoteType.md)
+[`IVoteType`](../interfaces/IVoteType)
 
 #### Overrides
 
@@ -898,7 +898,7 @@ Election.voteType
 
 | Name | Type |
 | :------ | :------ |
-| `vote` | [`Vote`](Vote.md) |
+| `vote` | [`Vote`](Vote) |
 
 #### Returns
 
@@ -926,7 +926,7 @@ ___
 
 #### Inherited from
 
-[Election](Election.md).[get](Election.md#get)
+[Election](Election.md).[get](Election#get)
 
 #### Defined in
 
@@ -936,7 +936,7 @@ ___
 
 ### build
 
-▸ **build**(`params`): [`PublishedElection`](PublishedElection.md)
+▸ **build**(`params`): [`PublishedElection`](PublishedElection)
 
 Returns a published election object
 
@@ -944,11 +944,11 @@ Returns a published election object
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `params` | [`IPublishedElectionParameters`](../interfaces/IPublishedElectionParameters.md) | Published election parameters |
+| `params` | [`IPublishedElectionParameters`](../interfaces/IPublishedElectionParameters) | Published election parameters |
 
 #### Returns
 
-[`PublishedElection`](PublishedElection.md)
+[`PublishedElection`](PublishedElection)
 
 #### Defined in
 
@@ -964,8 +964,8 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `vote` | [`Vote`](Vote.md) |
-| `voteType` | [`IVoteType`](../interfaces/IVoteType.md) |
+| `vote` | [`Vote`](Vote) |
+| `voteType` | [`IVoteType`](../interfaces/IVoteType) |
 
 #### Returns
 
@@ -979,7 +979,7 @@ ___
 
 ### from
 
-▸ **from**(`params`): [`UnpublishedElection`](UnpublishedElection.md)
+▸ **from**(`params`): [`UnpublishedElection`](UnpublishedElection)
 
 Returns an unpublished election object
 
@@ -987,15 +987,15 @@ Returns an unpublished election object
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `params` | [`IElectionParameters`](../interfaces/IElectionParameters.md) | Unpublished Election parameters |
+| `params` | [`IElectionParameters`](../interfaces/IElectionParameters) | Unpublished Election parameters |
 
 #### Returns
 
-[`UnpublishedElection`](UnpublishedElection.md)
+[`UnpublishedElection`](UnpublishedElection)
 
 #### Inherited from
 
-[Election](Election.md).[from](Election.md#from)
+[Election](Election.md).[from](Election#from)
 
 #### Defined in
 
@@ -1005,18 +1005,18 @@ ___
 
 ### getStatus
 
-▸ **getStatus**(`status`, `startDate`): [`ElectionStatus`](../enums/ElectionStatus.md)
+▸ **getStatus**(`status`, `startDate`): [`ElectionStatus`](../enums/ElectionStatus)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `status` | [`AllElectionStatus`](../modules.md#allelectionstatus) |
+| `status` | [`AllElectionStatus`](../modules#allelectionstatus) |
 | `startDate` | `Date` |
 
 #### Returns
 
-[`ElectionStatus`](../enums/ElectionStatus.md)
+[`ElectionStatus`](../enums/ElectionStatus)
 
 #### Defined in
 

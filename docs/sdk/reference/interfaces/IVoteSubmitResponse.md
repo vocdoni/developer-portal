@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / IVoteSubmitResponse
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / IVoteSubmitResponse
 
 # Interface: IVoteSubmitResponse
 
@@ -6,8 +6,8 @@
 
 ### Properties
 
-- [txHash](IVoteSubmitResponse.md#txhash)
-- [voteID](IVoteSubmitResponse.md#voteid)
+- [txHash](IVoteSubmitResponse#txhash)
+- [voteID](IVoteSubmitResponse#voteid)
 
 ## Properties
 

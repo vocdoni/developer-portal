@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / ICensus3StrategyEstimationQueueResponse
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / ICensus3StrategyEstimationQueueResponse
 
 # Interface: ICensus3StrategyEstimationQueueResponse
 
@@ -6,9 +6,9 @@
 
 ### Properties
 
-- [done](ICensus3StrategyEstimationQueueResponse.md#done)
-- [error](ICensus3StrategyEstimationQueueResponse.md#error)
-- [estimation](ICensus3StrategyEstimationQueueResponse.md#estimation)
+- [done](ICensus3StrategyEstimationQueueResponse#done)
+- [error](ICensus3StrategyEstimationQueueResponse#error)
+- [estimation](ICensus3StrategyEstimationQueueResponse#estimation)
 
 ## Properties
 

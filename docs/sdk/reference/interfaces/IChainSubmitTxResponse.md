@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / IChainSubmitTxResponse
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / IChainSubmitTxResponse
 
 # Interface: IChainSubmitTxResponse
 
@@ -6,9 +6,9 @@
 
 ### Properties
 
-- [code](IChainSubmitTxResponse.md#code)
-- [hash](IChainSubmitTxResponse.md#hash)
-- [response](IChainSubmitTxResponse.md#response)
+- [code](IChainSubmitTxResponse#code)
+- [hash](IChainSubmitTxResponse#hash)
+- [response](IChainSubmitTxResponse#response)
 
 ## Properties
 

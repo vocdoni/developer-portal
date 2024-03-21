@@ -1,16 +1,16 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / ServiceProperties
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / ServiceProperties
 
 # Interface: ServiceProperties
 
 ## Implemented by
 
-- [`Service`](../classes/Service.md)
+- [`Service`](../classes/Service)
 
 ## Table of contents
 
 ### Properties
 
-- [url](ServiceProperties.md#url)
+- [url](ServiceProperties#url)
 
 ## Properties
 

@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / ICensus3StrategyToken
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / ICensus3StrategyToken
 
 # Interface: ICensus3StrategyToken
 
@@ -6,10 +6,10 @@
 
 ### Properties
 
-- [id](ICensus3StrategyToken.md#id)
-- [method](ICensus3StrategyToken.md#method)
-- [minBalance](ICensus3StrategyToken.md#minbalance)
-- [name](ICensus3StrategyToken.md#name)
+- [id](ICensus3StrategyToken#id)
+- [method](ICensus3StrategyToken#method)
+- [minBalance](ICensus3StrategyToken#minbalance)
+- [name](ICensus3StrategyToken#name)
 
 ## Properties
 

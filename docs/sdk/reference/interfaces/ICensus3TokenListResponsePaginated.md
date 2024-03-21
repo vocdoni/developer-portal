@@ -1,10 +1,10 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / ICensus3TokenListResponsePaginated
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / ICensus3TokenListResponsePaginated
 
 # Interface: ICensus3TokenListResponsePaginated
 
 ## Hierarchy
 
-- [`ICensus3TokenListResponse`](ICensus3TokenListResponse.md)
+- [`ICensus3TokenListResponse`](ICensus3TokenListResponse)
 
   ↳ **`ICensus3TokenListResponsePaginated`**
 
@@ -12,8 +12,8 @@
 
 ### Properties
 
-- [pagination](ICensus3TokenListResponsePaginated.md#pagination)
-- [tokens](ICensus3TokenListResponsePaginated.md#tokens)
+- [pagination](ICensus3TokenListResponsePaginated#pagination)
+- [tokens](ICensus3TokenListResponsePaginated#tokens)
 
 ## Properties
 
@@ -31,13 +31,13 @@ ___
 
 ### tokens
 
-• **tokens**: [`Census3SummaryToken`](../modules.md#census3summarytoken)[]
+• **tokens**: [`Census3SummaryToken`](../modules#census3summarytoken)[]
 
 The list of the tokens
 
 #### Inherited from
 
-[ICensus3TokenListResponse](ICensus3TokenListResponse.md).[tokens](ICensus3TokenListResponse.md#tokens)
+[ICensus3TokenListResponse](ICensus3TokenListResponse.md).[tokens](ICensus3TokenListResponse#tokens)
 
 #### Defined in
 

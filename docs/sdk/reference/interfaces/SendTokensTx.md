@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / SendTokensTx
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / SendTokensTx
 
 # Interface: SendTokensTx
 
@@ -6,11 +6,11 @@
 
 ### Properties
 
-- [from](SendTokensTx.md#from)
-- [nonce](SendTokensTx.md#nonce)
-- [to](SendTokensTx.md#to)
-- [txtype](SendTokensTx.md#txtype)
-- [value](SendTokensTx.md#value)
+- [from](SendTokensTx#from)
+- [nonce](SendTokensTx#nonce)
+- [to](SendTokensTx#to)
+- [txtype](SendTokensTx#txtype)
+- [value](SendTokensTx#value)
 
 ## Properties
 
@@ -46,7 +46,7 @@ ___
 
 ### txtype
 
-• **txtype**: [`TxType`](../enums/TxType.md)
+• **txtype**: [`TxType`](../enums/TxType)
 
 #### Defined in
 

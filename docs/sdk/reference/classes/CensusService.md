@@ -1,10 +1,10 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / CensusService
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / CensusService
 
 # Class: CensusService
 
 ## Hierarchy
 
-- [`Service`](Service.md)
+- [`Service`](Service)
 
   ↳ **`CensusService`**
 
@@ -16,34 +16,34 @@
 
 ### Constructors
 
-- [constructor](CensusService.md#constructor)
+- [constructor](CensusService#constructor)
 
 ### Properties
 
-- [auth](CensusService.md#auth)
+- [auth](CensusService#auth)
 - [chunk\_size](CensusService.md#chunk_size)
-- [url](CensusService.md#url)
+- [url](CensusService#url)
 
 ### Methods
 
-- [add](CensusService.md#add)
-- [addParallel](CensusService.md#addparallel)
-- [create](CensusService.md#create)
-- [createCensus](CensusService.md#createcensus)
-- [createCensusParallel](CensusService.md#createcensusparallel)
-- [delete](CensusService.md#delete)
-- [export](CensusService.md#export)
-- [fetchAccountToken](CensusService.md#fetchaccounttoken)
-- [fetchProof](CensusService.md#fetchproof)
-- [get](CensusService.md#get)
-- [import](CensusService.md#import)
-- [publish](CensusService.md#publish)
+- [add](CensusService#add)
+- [addParallel](CensusService#addparallel)
+- [create](CensusService#create)
+- [createCensus](CensusService#createcensus)
+- [createCensusParallel](CensusService#createcensusparallel)
+- [delete](CensusService#delete)
+- [export](CensusService#export)
+- [fetchAccountToken](CensusService#fetchaccounttoken)
+- [fetchProof](CensusService#fetchproof)
+- [get](CensusService#get)
+- [import](CensusService#import)
+- [publish](CensusService#publish)
 
 ## Constructors
 
 ### constructor
 
-• **new CensusService**(`params`): [`CensusService`](CensusService.md)
+• **new CensusService**(`params`): [`CensusService`](CensusService)
 
 Instantiate the census service.
 
@@ -55,11 +55,11 @@ Instantiate the census service.
 
 #### Returns
 
-[`CensusService`](CensusService.md)
+[`CensusService`](CensusService)
 
 #### Overrides
 
-[Service](Service.md).[constructor](Service.md#constructor)
+[Service](Service.md).[constructor](Service#constructor)
 
 #### Defined in
 
@@ -101,7 +101,7 @@ ___
 
 #### Inherited from
 
-[Service](Service.md).[url](Service.md#url)
+[Service](Service.md).[url](Service#url)
 
 #### Defined in
 
@@ -118,7 +118,7 @@ ___
 | Name | Type |
 | :------ | :------ |
 | `censusId` | `string` |
-| `participants` | [`ICensusParticipant`](../interfaces/ICensusParticipant.md)[] |
+| `participants` | [`ICensusParticipant`](../interfaces/ICensusParticipant)[] |
 
 #### Returns
 
@@ -139,7 +139,7 @@ ___
 | Name | Type |
 | :------ | :------ |
 | `censusId` | `string` |
-| `participants` | [`ICensusParticipant`](../interfaces/ICensusParticipant.md)[] |
+| `participants` | [`ICensusParticipant`](../interfaces/ICensusParticipant)[] |
 
 #### Returns
 
@@ -159,7 +159,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `censusType` | [`CensusType`](../enums/CensusType.md) |
+| `censusType` | [`CensusType`](../enums/CensusType) |
 
 #### Returns
 
@@ -181,7 +181,7 @@ Publishes the given census.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `census` | [`PlainCensus`](PlainCensus.md) \| [`WeightedCensus`](WeightedCensus.md) | The census to be published. |
+| `census` | [`PlainCensus`](PlainCensus.md) \| [`WeightedCensus`](WeightedCensus) | The census to be published. |
 
 #### Returns
 
@@ -203,7 +203,7 @@ Publishes the given census.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `census` | [`PlainCensus`](PlainCensus.md) \| [`WeightedCensus`](WeightedCensus.md) | The census to be published. |
+| `census` | [`PlainCensus`](PlainCensus.md) \| [`WeightedCensus`](WeightedCensus) | The census to be published. |
 
 #### Returns
 
@@ -239,7 +239,7 @@ ___
 
 ### export
 
-▸ **export**(`censusId`): `Promise`\<[`CensusImportExport`](../modules.md#censusimportexport)\>
+▸ **export**(`censusId`): `Promise`\<[`CensusImportExport`](../modules#censusimportexport)\>
 
 Exports the given census identifier.
 
@@ -251,7 +251,7 @@ Exports the given census identifier.
 
 #### Returns
 
-`Promise`\<[`CensusImportExport`](../modules.md#censusimportexport)\>
+`Promise`\<[`CensusImportExport`](../modules#censusimportexport)\>
 
 #### Defined in
 
@@ -277,7 +277,7 @@ ___
 
 ### fetchProof
 
-▸ **fetchProof**(`censusId`, `key`): `Promise`\<[`CensusProof`](../modules.md#censusproof)\>
+▸ **fetchProof**(`censusId`, `key`): `Promise`\<[`CensusProof`](../modules#censusproof)\>
 
 Fetches proof that an address is part of the specified census.
 
@@ -290,7 +290,7 @@ Fetches proof that an address is part of the specified census.
 
 #### Returns
 
-`Promise`\<[`CensusProof`](../modules.md#censusproof)\>
+`Promise`\<[`CensusProof`](../modules#censusproof)\>
 
 #### Defined in
 
@@ -300,7 +300,7 @@ ___
 
 ### get
 
-▸ **get**(`censusId`): `Promise`\<\{ `size`: `number` ; `type`: [`CensusType`](../enums/CensusType.md) ; `weight`: `bigint`  }\>
+▸ **get**(`censusId`): `Promise`\<\{ `size`: `number` ; `type`: [`CensusType`](../enums/CensusType) ; `weight`: `bigint`  }\>
 
 Fetches the information of a given census.
 
@@ -312,7 +312,7 @@ Fetches the information of a given census.
 
 #### Returns
 
-`Promise`\<\{ `size`: `number` ; `type`: [`CensusType`](../enums/CensusType.md) ; `weight`: `bigint`  }\>
+`Promise`\<\{ `size`: `number` ; `type`: [`CensusType`](../enums/CensusType) ; `weight`: `bigint`  }\>
 
 #### Defined in
 
@@ -322,7 +322,7 @@ ___
 
 ### import
 
-▸ **import**(`censusId`, `data`): `Promise`\<[`ICensusImportResponse`](../interfaces/ICensusImportResponse.md)\>
+▸ **import**(`censusId`, `data`): `Promise`\<[`ICensusImportResponse`](../interfaces/ICensusImportResponse)\>
 
 Imports data into the given census identifier.
 
@@ -331,11 +331,11 @@ Imports data into the given census identifier.
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `censusId` | `string` | The census identifier |
-| `data` | [`CensusImportExport`](../modules.md#censusimportexport) | The census data |
+| `data` | [`CensusImportExport`](../modules#censusimportexport) | The census data |
 
 #### Returns
 
-`Promise`\<[`ICensusImportResponse`](../interfaces/ICensusImportResponse.md)\>
+`Promise`\<[`ICensusImportResponse`](../interfaces/ICensusImportResponse)\>
 
 #### Defined in
 
@@ -345,7 +345,7 @@ ___
 
 ### publish
 
-▸ **publish**(`censusId`): `Promise`\<[`ICensusPublishResponse`](../interfaces/ICensusPublishResponse.md)\>
+▸ **publish**(`censusId`): `Promise`\<[`ICensusPublishResponse`](../interfaces/ICensusPublishResponse)\>
 
 Publishes the given census identifier.
 
@@ -357,7 +357,7 @@ Publishes the given census identifier.
 
 #### Returns
 
-`Promise`\<[`ICensusPublishResponse`](../interfaces/ICensusPublishResponse.md)\>
+`Promise`\<[`ICensusPublishResponse`](../interfaces/ICensusPublishResponse)\>
 
 #### Defined in
 

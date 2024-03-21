@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / Process
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / Process
 
 # Interface: Process
 
@@ -6,37 +6,37 @@
 
 ### Properties
 
-- [blockCount](Process.md#blockcount)
-- [censusOrigin](Process.md#censusorigin)
-- [censusRoot](Process.md#censusroot)
-- [censusURI](Process.md#censusuri)
-- [encryptionPrivateKeys](Process.md#encryptionprivatekeys)
-- [encryptionPublicKeys](Process.md#encryptionpublickeys)
-- [entityId](Process.md#entityid)
-- [envelopeType](Process.md#envelopetype)
-- [ethIndexSlot](Process.md#ethindexslot)
-- [keyIndex](Process.md#keyindex)
-- [maxCensusSize](Process.md#maxcensussize)
-- [metadata](Process.md#metadata)
-- [mode](Process.md#mode)
-- [namespace](Process.md#namespace)
-- [nullifiersRoot](Process.md#nullifiersroot)
-- [owner](Process.md#owner)
-- [paramsSignature](Process.md#paramssignature)
-- [processId](Process.md#processid)
-- [questionCount](Process.md#questioncount)
-- [questionIndex](Process.md#questionindex)
-- [results](Process.md#results)
-- [resultsSignatures](Process.md#resultssignatures)
-- [rollingCensusRoot](Process.md#rollingcensusroot)
-- [rollingCensusSize](Process.md#rollingcensussize)
-- [sourceBlockHeight](Process.md#sourceblockheight)
-- [sourceNetworkContractAddr](Process.md#sourcenetworkcontractaddr)
-- [sourceNetworkId](Process.md#sourcenetworkid)
-- [startBlock](Process.md#startblock)
-- [status](Process.md#status)
-- [tokenDecimals](Process.md#tokendecimals)
-- [voteOptions](Process.md#voteoptions)
+- [blockCount](Process#blockcount)
+- [censusOrigin](Process#censusorigin)
+- [censusRoot](Process#censusroot)
+- [censusURI](Process#censusuri)
+- [encryptionPrivateKeys](Process#encryptionprivatekeys)
+- [encryptionPublicKeys](Process#encryptionpublickeys)
+- [entityId](Process#entityid)
+- [envelopeType](Process#envelopetype)
+- [ethIndexSlot](Process#ethindexslot)
+- [keyIndex](Process#keyindex)
+- [maxCensusSize](Process#maxcensussize)
+- [metadata](Process#metadata)
+- [mode](Process#mode)
+- [namespace](Process#namespace)
+- [nullifiersRoot](Process#nullifiersroot)
+- [owner](Process#owner)
+- [paramsSignature](Process#paramssignature)
+- [processId](Process#processid)
+- [questionCount](Process#questioncount)
+- [questionIndex](Process#questionindex)
+- [results](Process#results)
+- [resultsSignatures](Process#resultssignatures)
+- [rollingCensusRoot](Process#rollingcensusroot)
+- [rollingCensusSize](Process#rollingcensussize)
+- [sourceBlockHeight](Process#sourceblockheight)
+- [sourceNetworkContractAddr](Process#sourcenetworkcontractaddr)
+- [sourceNetworkId](Process#sourcenetworkid)
+- [startBlock](Process#startblock)
+- [status](Process#status)
+- [tokenDecimals](Process#tokendecimals)
+- [voteOptions](Process#voteoptions)
 
 ## Properties
 
@@ -54,7 +54,7 @@ ___
 
 ### censusOrigin
 
-• **censusOrigin**: [`CensusOrigin`](../enums/CensusOrigin.md)
+• **censusOrigin**: [`CensusOrigin`](../enums/CensusOrigin)
 
 #### Defined in
 

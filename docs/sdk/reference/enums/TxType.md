@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / TxType
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / TxType
 
 # Enumeration: TxType
 
@@ -29,8 +29,8 @@
 - [SET\_PROCESS\_STATUS](TxType.md#set_process_status)
 - [SET\_TRANSACTION\_COSTS](TxType.md#set_transaction_costs)
 - [TX\_UNKNOWN](TxType.md#tx_unknown)
-- [UNRECOGNIZED](TxType.md#unrecognized)
-- [VOTE](TxType.md#vote)
+- [UNRECOGNIZED](TxType#unrecognized)
+- [VOTE](TxType#vote)
 
 ## Enumeration Members
 

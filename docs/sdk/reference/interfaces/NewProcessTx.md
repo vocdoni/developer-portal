@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / NewProcessTx
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / NewProcessTx
 
 # Interface: NewProcessTx
 
@@ -6,9 +6,9 @@
 
 ### Properties
 
-- [nonce](NewProcessTx.md#nonce)
-- [process](NewProcessTx.md#process)
-- [txtype](NewProcessTx.md#txtype)
+- [nonce](NewProcessTx#nonce)
+- [process](NewProcessTx#process)
+- [txtype](NewProcessTx#txtype)
 
 ## Properties
 
@@ -24,7 +24,7 @@ ___
 
 ### process
 
-• **process**: [`Process`](Process.md)
+• **process**: [`Process`](Process)
 
 #### Defined in
 
@@ -34,7 +34,7 @@ ___
 
 ### txtype
 
-• **txtype**: [`TxType`](../enums/TxType.md)
+• **txtype**: [`TxType`](../enums/TxType)
 
 #### Defined in
 

@@ -1,10 +1,10 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / ChainService
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / ChainService
 
 # Class: ChainService
 
 ## Hierarchy
 
-- [`Service`](Service.md)
+- [`Service`](Service)
 
   ↳ **`ChainService`**
 
@@ -16,29 +16,29 @@
 
 ### Constructors
 
-- [constructor](ChainService.md#constructor)
+- [constructor](ChainService#constructor)
 
 ### Properties
 
-- [chainCosts](ChainService.md#chaincosts)
-- [chainData](ChainService.md#chaindata)
-- [txWait](ChainService.md#txwait)
-- [url](ChainService.md#url)
+- [chainCosts](ChainService#chaincosts)
+- [chainData](ChainService#chaindata)
+- [txWait](ChainService#txwait)
+- [url](ChainService#url)
 
 ### Methods
 
-- [dateToBlock](ChainService.md#datetoblock)
-- [fetchChainCosts](ChainService.md#fetchchaincosts)
-- [fetchChainData](ChainService.md#fetchchaindata)
-- [submitTx](ChainService.md#submittx)
-- [txInfo](ChainService.md#txinfo)
-- [waitForTransaction](ChainService.md#waitfortransaction)
+- [dateToBlock](ChainService#datetoblock)
+- [fetchChainCosts](ChainService#fetchchaincosts)
+- [fetchChainData](ChainService#fetchchaindata)
+- [submitTx](ChainService#submittx)
+- [txInfo](ChainService#txinfo)
+- [waitForTransaction](ChainService#waitfortransaction)
 
 ## Constructors
 
 ### constructor
 
-• **new ChainService**(`params`): [`ChainService`](ChainService.md)
+• **new ChainService**(`params`): [`ChainService`](ChainService)
 
 Instantiate the chain service.
 
@@ -50,11 +50,11 @@ Instantiate the chain service.
 
 #### Returns
 
-[`ChainService`](ChainService.md)
+[`ChainService`](ChainService)
 
 #### Overrides
 
-[Service](Service.md).[constructor](Service.md#constructor)
+[Service](Service.md).[constructor](Service#constructor)
 
 #### Defined in
 
@@ -64,7 +64,7 @@ Instantiate the chain service.
 
 ### chainCosts
 
-• **chainCosts**: [`IChainGetCostsResponse`](../interfaces/IChainGetCostsResponse.md)
+• **chainCosts**: [`IChainGetCostsResponse`](../interfaces/IChainGetCostsResponse)
 
 #### Implementation of
 
@@ -78,7 +78,7 @@ ___
 
 ### chainData
 
-• **chainData**: [`ChainData`](../modules.md#chaindata)
+• **chainData**: [`ChainData`](../modules#chaindata)
 
 #### Implementation of
 
@@ -92,7 +92,7 @@ ___
 
 ### txWait
 
-• **txWait**: [`TxWaitOptions`](../modules.md#txwaitoptions)
+• **txWait**: [`TxWaitOptions`](../modules#txwaitoptions)
 
 #### Implementation of
 
@@ -110,7 +110,7 @@ ___
 
 #### Inherited from
 
-[Service](Service.md).[url](Service.md#url)
+[Service](Service.md).[url](Service#url)
 
 #### Defined in
 
@@ -144,13 +144,13 @@ ___
 
 ### fetchChainCosts
 
-▸ **fetchChainCosts**(): `Promise`\<[`IChainGetCostsResponse`](../interfaces/IChainGetCostsResponse.md)\>
+▸ **fetchChainCosts**(): `Promise`\<[`IChainGetCostsResponse`](../interfaces/IChainGetCostsResponse)\>
 
 Fetches blockchain costs information if needed.
 
 #### Returns
 
-`Promise`\<[`IChainGetCostsResponse`](../interfaces/IChainGetCostsResponse.md)\>
+`Promise`\<[`IChainGetCostsResponse`](../interfaces/IChainGetCostsResponse)\>
 
 #### Defined in
 
@@ -160,13 +160,13 @@ ___
 
 ### fetchChainData
 
-▸ **fetchChainData**(): `Promise`\<[`ChainData`](../modules.md#chaindata)\>
+▸ **fetchChainData**(): `Promise`\<[`ChainData`](../modules#chaindata)\>
 
 Fetches blockchain information if needed.
 
 #### Returns
 
-`Promise`\<[`ChainData`](../modules.md#chaindata)\>
+`Promise`\<[`ChainData`](../modules#chaindata)\>
 
 #### Defined in
 
@@ -200,7 +200,7 @@ ___
 
 ### txInfo
 
-▸ **txInfo**(`txHash`): `Promise`\<[`IChainTxReference`](../interfaces/IChainTxReference.md)\>
+▸ **txInfo**(`txHash`): `Promise`\<[`IChainTxReference`](../interfaces/IChainTxReference)\>
 
 Fetches information about a transaction from the blockchain.
 
@@ -212,7 +212,7 @@ Fetches information about a transaction from the blockchain.
 
 #### Returns
 
-`Promise`\<[`IChainTxReference`](../interfaces/IChainTxReference.md)\>
+`Promise`\<[`IChainTxReference`](../interfaces/IChainTxReference)\>
 
 The chain transaction
 

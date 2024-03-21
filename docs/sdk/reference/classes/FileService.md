@@ -1,10 +1,10 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / FileService
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / FileService
 
 # Class: FileService
 
 ## Hierarchy
 
-- [`Service`](Service.md)
+- [`Service`](Service)
 
   ↳ **`FileService`**
 
@@ -16,21 +16,21 @@
 
 ### Constructors
 
-- [constructor](FileService.md#constructor)
+- [constructor](FileService#constructor)
 
 ### Properties
 
-- [url](FileService.md#url)
+- [url](FileService#url)
 
 ### Methods
 
-- [calculateCID](FileService.md#calculatecid)
+- [calculateCID](FileService#calculatecid)
 
 ## Constructors
 
 ### constructor
 
-• **new FileService**(`params`): [`FileService`](FileService.md)
+• **new FileService**(`params`): [`FileService`](FileService)
 
 Instantiate the election service.
 
@@ -42,11 +42,11 @@ Instantiate the election service.
 
 #### Returns
 
-[`FileService`](FileService.md)
+[`FileService`](FileService)
 
 #### Overrides
 
-[Service](Service.md).[constructor](Service.md#constructor)
+[Service](Service.md).[constructor](Service#constructor)
 
 #### Defined in
 
@@ -60,7 +60,7 @@ Instantiate the election service.
 
 #### Inherited from
 
-[Service](Service.md).[url](Service.md#url)
+[Service](Service.md).[url](Service#url)
 
 #### Defined in
 

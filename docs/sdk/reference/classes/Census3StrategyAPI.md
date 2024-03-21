@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / Census3StrategyAPI
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / Census3StrategyAPI
 
 # Class: Census3StrategyAPI
 
@@ -12,36 +12,36 @@
 
 ### Constructors
 
-- [constructor](Census3StrategyAPI.md#constructor)
+- [constructor](Census3StrategyAPI#constructor)
 
 ### Methods
 
-- [create](Census3StrategyAPI.md#create)
-- [estimation](Census3StrategyAPI.md#estimation)
-- [estimationQueue](Census3StrategyAPI.md#estimationqueue)
-- [holders](Census3StrategyAPI.md#holders)
-- [import](Census3StrategyAPI.md#import)
-- [importQueue](Census3StrategyAPI.md#importqueue)
-- [isApiError](Census3StrategyAPI.md#isapierror)
-- [isUndefinedError](Census3StrategyAPI.md#isundefinederror)
-- [list](Census3StrategyAPI.md#list)
-- [listByToken](Census3StrategyAPI.md#listbytoken)
-- [operators](Census3StrategyAPI.md#operators)
-- [serializePagination](Census3StrategyAPI.md#serializepagination)
-- [strategy](Census3StrategyAPI.md#strategy)
-- [validatePredicate](Census3StrategyAPI.md#validatepredicate)
+- [create](Census3StrategyAPI#create)
+- [estimation](Census3StrategyAPI#estimation)
+- [estimationQueue](Census3StrategyAPI#estimationqueue)
+- [holders](Census3StrategyAPI#holders)
+- [import](Census3StrategyAPI#import)
+- [importQueue](Census3StrategyAPI#importqueue)
+- [isApiError](Census3StrategyAPI#isapierror)
+- [isUndefinedError](Census3StrategyAPI#isundefinederror)
+- [list](Census3StrategyAPI#list)
+- [listByToken](Census3StrategyAPI#listbytoken)
+- [operators](Census3StrategyAPI#operators)
+- [serializePagination](Census3StrategyAPI#serializepagination)
+- [strategy](Census3StrategyAPI#strategy)
+- [validatePredicate](Census3StrategyAPI#validatepredicate)
 
 ## Constructors
 
 ### constructor
 
-• **new Census3StrategyAPI**(): [`Census3StrategyAPI`](Census3StrategyAPI.md)
+• **new Census3StrategyAPI**(): [`Census3StrategyAPI`](Census3StrategyAPI)
 
 Cannot be constructed.
 
 #### Returns
 
-[`Census3StrategyAPI`](Census3StrategyAPI.md)
+[`Census3StrategyAPI`](Census3StrategyAPI)
 
 #### Overrides
 
@@ -55,7 +55,7 @@ Census3API.constructor
 
 ### create
 
-▸ **create**(`url`, `alias`, `predicate`, `tokens`): `Promise`\<[`ICensus3StrategyCreateResponse`](../interfaces/ICensus3StrategyCreateResponse.md)\>
+▸ **create**(`url`, `alias`, `predicate`, `tokens`): `Promise`\<[`ICensus3StrategyCreateResponse`](../interfaces/ICensus3StrategyCreateResponse)\>
 
 Creates a new strategy based on the given token strategies and predicate.
 
@@ -70,7 +70,7 @@ Creates a new strategy based on the given token strategies and predicate.
 
 #### Returns
 
-`Promise`\<[`ICensus3StrategyCreateResponse`](../interfaces/ICensus3StrategyCreateResponse.md)\>
+`Promise`\<[`ICensus3StrategyCreateResponse`](../interfaces/ICensus3StrategyCreateResponse)\>
 
 The identifier of the created strategy
 
@@ -108,7 +108,7 @@ ___
 
 ### estimationQueue
 
-▸ **estimationQueue**(`url`, `strategyId`, `queueId`): `Promise`\<[`ICensus3StrategyEstimationQueueResponse`](../interfaces/ICensus3StrategyEstimationQueueResponse.md)\>
+▸ **estimationQueue**(`url`, `strategyId`, `queueId`): `Promise`\<[`ICensus3StrategyEstimationQueueResponse`](../interfaces/ICensus3StrategyEstimationQueueResponse)\>
 
 Returns the information of the strategy estimation queue
 
@@ -122,7 +122,7 @@ Returns the information of the strategy estimation queue
 
 #### Returns
 
-`Promise`\<[`ICensus3StrategyEstimationQueueResponse`](../interfaces/ICensus3StrategyEstimationQueueResponse.md)\>
+`Promise`\<[`ICensus3StrategyEstimationQueueResponse`](../interfaces/ICensus3StrategyEstimationQueueResponse)\>
 
 #### Defined in
 
@@ -132,7 +132,7 @@ ___
 
 ### holders
 
-▸ **holders**(`url`, `id`, `pagination?`): `Promise`\<[`ICensus3StrategyHoldersResponsePaginated`](../interfaces/ICensus3StrategyHoldersResponsePaginated.md)\>
+▸ **holders**(`url`, `id`, `pagination?`): `Promise`\<[`ICensus3StrategyHoldersResponsePaginated`](../interfaces/ICensus3StrategyHoldersResponsePaginated)\>
 
 Fetches list of holders by strategy
 
@@ -146,7 +146,7 @@ Fetches list of holders by strategy
 
 #### Returns
 
-`Promise`\<[`ICensus3StrategyHoldersResponsePaginated`](../interfaces/ICensus3StrategyHoldersResponsePaginated.md)\>
+`Promise`\<[`ICensus3StrategyHoldersResponsePaginated`](../interfaces/ICensus3StrategyHoldersResponsePaginated)\>
 
 #### Defined in
 
@@ -181,7 +181,7 @@ ___
 
 ### importQueue
 
-▸ **importQueue**(`url`, `queueId`): `Promise`\<[`ICensus3StrategyImportQueueResponse`](../interfaces/ICensus3StrategyImportQueueResponse.md)\>
+▸ **importQueue**(`url`, `queueId`): `Promise`\<[`ICensus3StrategyImportQueueResponse`](../interfaces/ICensus3StrategyImportQueueResponse)\>
 
 Returns the information of the strategy import queue
 
@@ -194,7 +194,7 @@ Returns the information of the strategy import queue
 
 #### Returns
 
-`Promise`\<[`ICensus3StrategyImportQueueResponse`](../interfaces/ICensus3StrategyImportQueueResponse.md)\>
+`Promise`\<[`ICensus3StrategyImportQueueResponse`](../interfaces/ICensus3StrategyImportQueueResponse)\>
 
 #### Defined in
 
@@ -253,7 +253,7 @@ ___
 
 ### list
 
-▸ **list**(`url`, `pagination?`): `Promise`\<[`ICensus3StrategiesListResponsePaginated`](../interfaces/ICensus3StrategiesListResponsePaginated.md)\>
+▸ **list**(`url`, `pagination?`): `Promise`\<[`ICensus3StrategiesListResponsePaginated`](../interfaces/ICensus3StrategiesListResponsePaginated)\>
 
 Fetches list of strategies
 
@@ -266,7 +266,7 @@ Fetches list of strategies
 
 #### Returns
 
-`Promise`\<[`ICensus3StrategiesListResponsePaginated`](../interfaces/ICensus3StrategiesListResponsePaginated.md)\>
+`Promise`\<[`ICensus3StrategiesListResponsePaginated`](../interfaces/ICensus3StrategiesListResponsePaginated)\>
 
 #### Defined in
 
@@ -276,7 +276,7 @@ ___
 
 ### listByToken
 
-▸ **listByToken**(`url`, `tokenId`, `chainId`, `externalId?`): `Promise`\<[`ICensus3StrategiesListResponse`](../interfaces/ICensus3StrategiesListResponse.md)\>
+▸ **listByToken**(`url`, `tokenId`, `chainId`, `externalId?`): `Promise`\<[`ICensus3StrategiesListResponse`](../interfaces/ICensus3StrategiesListResponse)\>
 
 Fetches list of strategies based on given token
 
@@ -291,7 +291,7 @@ Fetches list of strategies based on given token
 
 #### Returns
 
-`Promise`\<[`ICensus3StrategiesListResponse`](../interfaces/ICensus3StrategiesListResponse.md)\>
+`Promise`\<[`ICensus3StrategiesListResponse`](../interfaces/ICensus3StrategiesListResponse)\>
 
 #### Defined in
 
@@ -301,7 +301,7 @@ ___
 
 ### operators
 
-▸ **operators**(`url`): `Promise`\<[`ICensus3StrategiesOperatorsResponse`](../interfaces/ICensus3StrategiesOperatorsResponse.md)\>
+▸ **operators**(`url`): `Promise`\<[`ICensus3StrategiesOperatorsResponse`](../interfaces/ICensus3StrategiesOperatorsResponse)\>
 
 Returns the list of supported operators to build strategy predicates.
 
@@ -313,7 +313,7 @@ Returns the list of supported operators to build strategy predicates.
 
 #### Returns
 
-`Promise`\<[`ICensus3StrategiesOperatorsResponse`](../interfaces/ICensus3StrategiesOperatorsResponse.md)\>
+`Promise`\<[`ICensus3StrategiesOperatorsResponse`](../interfaces/ICensus3StrategiesOperatorsResponse)\>
 
 #### Defined in
 
@@ -347,7 +347,7 @@ ___
 
 ### strategy
 
-▸ **strategy**(`url`, `id`): `Promise`\<[`Census3Strategy`](../modules.md#census3strategy)\>
+▸ **strategy**(`url`, `id`): `Promise`\<[`Census3Strategy`](../modules#census3strategy)\>
 
 Returns the information of the strategy
 
@@ -360,7 +360,7 @@ Returns the information of the strategy
 
 #### Returns
 
-`Promise`\<[`Census3Strategy`](../modules.md#census3strategy)\>
+`Promise`\<[`Census3Strategy`](../modules#census3strategy)\>
 
 #### Defined in
 
@@ -370,7 +370,7 @@ ___
 
 ### validatePredicate
 
-▸ **validatePredicate**(`url`, `predicate`): `Promise`\<[`ICensus3ValidatePredicateResponse`](../interfaces/ICensus3ValidatePredicateResponse.md)\>
+▸ **validatePredicate**(`url`, `predicate`): `Promise`\<[`ICensus3ValidatePredicateResponse`](../interfaces/ICensus3ValidatePredicateResponse)\>
 
 Validates a predicate.
 
@@ -383,7 +383,7 @@ Validates a predicate.
 
 #### Returns
 
-`Promise`\<[`ICensus3ValidatePredicateResponse`](../interfaces/ICensus3ValidatePredicateResponse.md)\>
+`Promise`\<[`ICensus3ValidatePredicateResponse`](../interfaces/ICensus3ValidatePredicateResponse)\>
 
 Parsed version of the predicate
 

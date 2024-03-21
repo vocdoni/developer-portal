@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / IVoteType
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / IVoteType
 
 # Interface: IVoteType
 
@@ -6,13 +6,13 @@
 
 ### Properties
 
-- [costExponent](IVoteType.md#costexponent)
-- [costFromWeight](IVoteType.md#costfromweight)
-- [maxCount](IVoteType.md#maxcount)
-- [maxTotalCost](IVoteType.md#maxtotalcost)
-- [maxValue](IVoteType.md#maxvalue)
-- [maxVoteOverwrites](IVoteType.md#maxvoteoverwrites)
-- [uniqueChoices](IVoteType.md#uniquechoices)
+- [costExponent](IVoteType#costexponent)
+- [costFromWeight](IVoteType#costfromweight)
+- [maxCount](IVoteType#maxcount)
+- [maxTotalCost](IVoteType#maxtotalcost)
+- [maxValue](IVoteType#maxvalue)
+- [maxVoteOverwrites](IVoteType#maxvoteoverwrites)
+- [uniqueChoices](IVoteType#uniquechoices)
 
 ## Properties
 

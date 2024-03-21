@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / IAccountTransfersCountResponse
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / IAccountTransfersCountResponse
 
 # Interface: IAccountTransfersCountResponse
 
@@ -6,7 +6,7 @@
 
 ### Properties
 
-- [count](IAccountTransfersCountResponse.md#count)
+- [count](IAccountTransfersCountResponse#count)
 
 ## Properties
 

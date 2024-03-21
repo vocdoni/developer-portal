@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / ICensusParticipant
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / ICensusParticipant
 
 # Interface: ICensusParticipant
 
@@ -6,8 +6,8 @@
 
 ### Properties
 
-- [key](ICensusParticipant.md#key)
-- [weight](ICensusParticipant.md#weight)
+- [key](ICensusParticipant#key)
+- [weight](ICensusParticipant#weight)
 
 ## Properties
 

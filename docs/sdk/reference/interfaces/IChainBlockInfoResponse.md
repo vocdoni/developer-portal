@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / IChainBlockInfoResponse
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / IChainBlockInfoResponse
 
 # Interface: IChainBlockInfoResponse
 
@@ -6,11 +6,11 @@
 
 ### Properties
 
-- [data](IChainBlockInfoResponse.md#data)
-- [evidence](IChainBlockInfoResponse.md#evidence)
-- [hash](IChainBlockInfoResponse.md#hash)
-- [header](IChainBlockInfoResponse.md#header)
-- [lastCommit](IChainBlockInfoResponse.md#lastcommit)
+- [data](IChainBlockInfoResponse#data)
+- [evidence](IChainBlockInfoResponse#evidence)
+- [hash](IChainBlockInfoResponse#hash)
+- [header](IChainBlockInfoResponse#header)
+- [lastCommit](IChainBlockInfoResponse#lastcommit)
 
 ## Properties
 

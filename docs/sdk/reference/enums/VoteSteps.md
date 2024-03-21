@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / VoteSteps
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / VoteSteps
 
 # Enumeration: VoteSteps
 
@@ -7,7 +7,7 @@
 ### Enumeration Members
 
 - [CALC\_ZK\_PROOF](VoteSteps.md#calc_zk_proof)
-- [DONE](VoteSteps.md#done)
+- [DONE](VoteSteps#done)
 - [GENERATE\_TX](VoteSteps.md#generate_tx)
 - [GET\_ELECTION](VoteSteps.md#get_election)
 - [GET\_PROOF](VoteSteps.md#get_proof)

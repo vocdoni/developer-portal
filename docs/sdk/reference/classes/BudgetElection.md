@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / BudgetElection
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / BudgetElection
 
 # Class: BudgetElection
 
@@ -6,7 +6,7 @@ Represents a budget election
 
 ## Hierarchy
 
-- [`UnpublishedElection`](UnpublishedElection.md)
+- [`UnpublishedElection`](UnpublishedElection)
 
   ↳ **`BudgetElection`**
 
@@ -14,7 +14,7 @@ Represents a budget election
 
 ### Constructors
 
-- [constructor](BudgetElection.md#constructor)
+- [constructor](BudgetElection#constructor)
 
 ### Properties
 
@@ -37,43 +37,43 @@ Represents a budget election
 
 ### Accessors
 
-- [addSDKVersion](BudgetElection.md#addsdkversion)
-- [census](BudgetElection.md#census)
-- [description](BudgetElection.md#description)
-- [duration](BudgetElection.md#duration)
-- [electionType](BudgetElection.md#electiontype)
-- [endDate](BudgetElection.md#enddate)
-- [forceFullBudget](BudgetElection.md#forcefullbudget)
-- [header](BudgetElection.md#header)
-- [maxBudget](BudgetElection.md#maxbudget)
-- [maxCensusSize](BudgetElection.md#maxcensussize)
-- [meta](BudgetElection.md#meta)
-- [minStep](BudgetElection.md#minstep)
-- [questions](BudgetElection.md#questions)
-- [startDate](BudgetElection.md#startdate)
-- [streamUri](BudgetElection.md#streamuri)
-- [temporarySecretIdentity](BudgetElection.md#temporarysecretidentity)
-- [title](BudgetElection.md#title)
-- [useCensusWeightAsBudget](BudgetElection.md#usecensusweightasbudget)
-- [voteType](BudgetElection.md#votetype)
+- [addSDKVersion](BudgetElection#addsdkversion)
+- [census](BudgetElection#census)
+- [description](BudgetElection#description)
+- [duration](BudgetElection#duration)
+- [electionType](BudgetElection#electiontype)
+- [endDate](BudgetElection#enddate)
+- [forceFullBudget](BudgetElection#forcefullbudget)
+- [header](BudgetElection#header)
+- [maxBudget](BudgetElection#maxbudget)
+- [maxCensusSize](BudgetElection#maxcensussize)
+- [meta](BudgetElection#meta)
+- [minStep](BudgetElection#minstep)
+- [questions](BudgetElection#questions)
+- [startDate](BudgetElection#startdate)
+- [streamUri](BudgetElection#streamuri)
+- [temporarySecretIdentity](BudgetElection#temporarysecretidentity)
+- [title](BudgetElection#title)
+- [useCensusWeightAsBudget](BudgetElection#usecensusweightasbudget)
+- [voteType](BudgetElection#votetype)
 
 ### Methods
 
-- [addQuestion](BudgetElection.md#addquestion)
-- [generateEnvelopeType](BudgetElection.md#generateenvelopetype)
-- [generateMetadata](BudgetElection.md#generatemetadata)
-- [generateMode](BudgetElection.md#generatemode)
-- [generateVoteOptions](BudgetElection.md#generatevoteoptions)
-- [get](BudgetElection.md#get)
-- [removeQuestion](BudgetElection.md#removequestion)
-- [checkVote](BudgetElection.md#checkvote)
-- [from](BudgetElection.md#from)
+- [addQuestion](BudgetElection#addquestion)
+- [generateEnvelopeType](BudgetElection#generateenvelopetype)
+- [generateMetadata](BudgetElection#generatemetadata)
+- [generateMode](BudgetElection#generatemode)
+- [generateVoteOptions](BudgetElection#generatevoteoptions)
+- [get](BudgetElection#get)
+- [removeQuestion](BudgetElection#removequestion)
+- [checkVote](BudgetElection#checkvote)
+- [from](BudgetElection#from)
 
 ## Constructors
 
 ### constructor
 
-• **new BudgetElection**(`params`): [`BudgetElection`](BudgetElection.md)
+• **new BudgetElection**(`params`): [`BudgetElection`](BudgetElection)
 
 Constructs a budget election
 
@@ -81,15 +81,15 @@ Constructs a budget election
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `params` | [`IBudgetElectionParameters`](../modules.md#ibudgetelectionparameters) | Budget election parameters |
+| `params` | [`IBudgetElectionParameters`](../modules#ibudgetelectionparameters) | Budget election parameters |
 
 #### Returns
 
-[`BudgetElection`](BudgetElection.md)
+[`BudgetElection`](BudgetElection)
 
 #### Overrides
 
-[UnpublishedElection](UnpublishedElection.md).[constructor](UnpublishedElection.md#constructor)
+[UnpublishedElection](UnpublishedElection.md).[constructor](UnpublishedElection#constructor)
 
 #### Defined in
 
@@ -103,7 +103,7 @@ Constructs a budget election
 
 #### Inherited from
 
-[UnpublishedElection](UnpublishedElection.md).[_addSDKVersion](UnpublishedElection.md#_addsdkversion)
+[UnpublishedElection](UnpublishedElection).[_addSDKVersion](UnpublishedElection.md#_addsdkversion)
 
 #### Defined in
 
@@ -113,11 +113,11 @@ ___
 
 ### \_census
 
-• `Protected` **\_census**: [`Census`](Census.md)
+• `Protected` **\_census**: [`Census`](Census)
 
 #### Inherited from
 
-[UnpublishedElection](UnpublishedElection.md).[_census](UnpublishedElection.md#_census)
+[UnpublishedElection](UnpublishedElection).[_census](UnpublishedElection.md#_census)
 
 #### Defined in
 
@@ -131,7 +131,7 @@ ___
 
 #### Inherited from
 
-[UnpublishedElection](UnpublishedElection.md).[_description](UnpublishedElection.md#_description)
+[UnpublishedElection](UnpublishedElection).[_description](UnpublishedElection.md#_description)
 
 #### Defined in
 
@@ -141,11 +141,11 @@ ___
 
 ### \_electionType
 
-• `Protected` **\_electionType**: [`IElectionType`](../interfaces/IElectionType.md)
+• `Protected` **\_electionType**: [`IElectionType`](../interfaces/IElectionType)
 
 #### Inherited from
 
-[UnpublishedElection](UnpublishedElection.md).[_electionType](UnpublishedElection.md#_electiontype)
+[UnpublishedElection](UnpublishedElection).[_electionType](UnpublishedElection.md#_electiontype)
 
 #### Defined in
 
@@ -159,7 +159,7 @@ ___
 
 #### Inherited from
 
-[UnpublishedElection](UnpublishedElection.md).[_endDate](UnpublishedElection.md#_enddate)
+[UnpublishedElection](UnpublishedElection).[_endDate](UnpublishedElection.md#_enddate)
 
 #### Defined in
 
@@ -183,7 +183,7 @@ ___
 
 #### Inherited from
 
-[UnpublishedElection](UnpublishedElection.md).[_header](UnpublishedElection.md#_header)
+[UnpublishedElection](UnpublishedElection).[_header](UnpublishedElection.md#_header)
 
 #### Defined in
 
@@ -197,7 +197,7 @@ ___
 
 #### Inherited from
 
-[UnpublishedElection](UnpublishedElection.md).[_maxCensusSize](UnpublishedElection.md#_maxcensussize)
+[UnpublishedElection](UnpublishedElection).[_maxCensusSize](UnpublishedElection.md#_maxcensussize)
 
 #### Defined in
 
@@ -211,7 +211,7 @@ ___
 
 #### Inherited from
 
-[UnpublishedElection](UnpublishedElection.md).[_meta](UnpublishedElection.md#_meta)
+[UnpublishedElection](UnpublishedElection).[_meta](UnpublishedElection.md#_meta)
 
 #### Defined in
 
@@ -231,11 +231,11 @@ ___
 
 ### \_questions
 
-• `Protected` **\_questions**: [`IQuestion`](../interfaces/IQuestion.md)[]
+• `Protected` **\_questions**: [`IQuestion`](../interfaces/IQuestion)[]
 
 #### Inherited from
 
-[UnpublishedElection](UnpublishedElection.md).[_questions](UnpublishedElection.md#_questions)
+[UnpublishedElection](UnpublishedElection).[_questions](UnpublishedElection.md#_questions)
 
 #### Defined in
 
@@ -249,7 +249,7 @@ ___
 
 #### Inherited from
 
-[UnpublishedElection](UnpublishedElection.md).[_startDate](UnpublishedElection.md#_startdate)
+[UnpublishedElection](UnpublishedElection).[_startDate](UnpublishedElection.md#_startdate)
 
 #### Defined in
 
@@ -263,7 +263,7 @@ ___
 
 #### Inherited from
 
-[UnpublishedElection](UnpublishedElection.md).[_streamUri](UnpublishedElection.md#_streamuri)
+[UnpublishedElection](UnpublishedElection).[_streamUri](UnpublishedElection.md#_streamuri)
 
 #### Defined in
 
@@ -277,7 +277,7 @@ ___
 
 #### Inherited from
 
-[UnpublishedElection](UnpublishedElection.md).[_temporarySecretIdentity](UnpublishedElection.md#_temporarysecretidentity)
+[UnpublishedElection](UnpublishedElection).[_temporarySecretIdentity](UnpublishedElection.md#_temporarysecretidentity)
 
 #### Defined in
 
@@ -291,7 +291,7 @@ ___
 
 #### Inherited from
 
-[UnpublishedElection](UnpublishedElection.md).[_title](UnpublishedElection.md#_title)
+[UnpublishedElection](UnpublishedElection).[_title](UnpublishedElection.md#_title)
 
 #### Defined in
 
@@ -301,11 +301,11 @@ ___
 
 ### \_voteType
 
-• `Protected` **\_voteType**: [`IVoteType`](../interfaces/IVoteType.md)
+• `Protected` **\_voteType**: [`IVoteType`](../interfaces/IVoteType)
 
 #### Inherited from
 
-[UnpublishedElection](UnpublishedElection.md).[_voteType](UnpublishedElection.md#_votetype)
+[UnpublishedElection](UnpublishedElection).[_voteType](UnpublishedElection.md#_votetype)
 
 #### Defined in
 
@@ -353,11 +353,11 @@ ___
 
 ### census
 
-• `get` **census**(): [`Census`](Census.md)
+• `get` **census**(): [`Census`](Census)
 
 #### Returns
 
-[`Census`](Census.md)
+[`Census`](Census)
 
 #### Inherited from
 
@@ -373,7 +373,7 @@ UnpublishedElection.census
 
 | Name | Type |
 | :------ | :------ |
-| `value` | [`Census`](Census.md) |
+| `value` | [`Census`](Census) |
 
 #### Returns
 
@@ -447,11 +447,11 @@ ___
 
 ### electionType
 
-• `get` **electionType**(): [`IElectionType`](../interfaces/IElectionType.md)
+• `get` **electionType**(): [`IElectionType`](../interfaces/IElectionType)
 
 #### Returns
 
-[`IElectionType`](../interfaces/IElectionType.md)
+[`IElectionType`](../interfaces/IElectionType)
 
 #### Inherited from
 
@@ -467,7 +467,7 @@ UnpublishedElection.electionType
 
 | Name | Type |
 | :------ | :------ |
-| `value` | [`IElectionType`](../interfaces/IElectionType.md) |
+| `value` | [`IElectionType`](../interfaces/IElectionType) |
 
 #### Returns
 
@@ -727,11 +727,11 @@ ___
 
 ### questions
 
-• `get` **questions**(): [`IQuestion`](../interfaces/IQuestion.md)[]
+• `get` **questions**(): [`IQuestion`](../interfaces/IQuestion)[]
 
 #### Returns
 
-[`IQuestion`](../interfaces/IQuestion.md)[]
+[`IQuestion`](../interfaces/IQuestion)[]
 
 #### Inherited from
 
@@ -747,7 +747,7 @@ UnpublishedElection.questions
 
 | Name | Type |
 | :------ | :------ |
-| `value` | [`IQuestion`](../interfaces/IQuestion.md)[] |
+| `value` | [`IQuestion`](../interfaces/IQuestion)[] |
 
 #### Returns
 
@@ -947,11 +947,11 @@ ___
 
 ### voteType
 
-• `get` **voteType**(): [`IVoteType`](../interfaces/IVoteType.md)
+• `get` **voteType**(): [`IVoteType`](../interfaces/IVoteType)
 
 #### Returns
 
-[`IVoteType`](../interfaces/IVoteType.md)
+[`IVoteType`](../interfaces/IVoteType)
 
 #### Inherited from
 
@@ -967,7 +967,7 @@ UnpublishedElection.voteType
 
 | Name | Type |
 | :------ | :------ |
-| `value` | [`IVoteType`](../interfaces/IVoteType.md) |
+| `value` | [`IVoteType`](../interfaces/IVoteType) |
 
 #### Returns
 
@@ -985,7 +985,7 @@ UnpublishedElection.voteType
 
 ### addQuestion
 
-▸ **addQuestion**(`title`, `description`, `choices`): [`UnpublishedElection`](UnpublishedElection.md)
+▸ **addQuestion**(`title`, `description`, `choices`): [`UnpublishedElection`](UnpublishedElection)
 
 #### Parameters
 
@@ -997,11 +997,11 @@ UnpublishedElection.voteType
 
 #### Returns
 
-[`UnpublishedElection`](UnpublishedElection.md)
+[`UnpublishedElection`](UnpublishedElection)
 
 #### Overrides
 
-[UnpublishedElection](UnpublishedElection.md).[addQuestion](UnpublishedElection.md#addquestion)
+[UnpublishedElection](UnpublishedElection.md).[addQuestion](UnpublishedElection#addquestion)
 
 #### Defined in
 
@@ -1019,7 +1019,7 @@ ___
 
 #### Overrides
 
-[UnpublishedElection](UnpublishedElection.md).[generateEnvelopeType](UnpublishedElection.md#generateenvelopetype)
+[UnpublishedElection](UnpublishedElection.md).[generateEnvelopeType](UnpublishedElection#generateenvelopetype)
 
 #### Defined in
 
@@ -1029,15 +1029,15 @@ ___
 
 ### generateMetadata
 
-▸ **generateMetadata**(): [`ElectionMetadata`](../interfaces/ElectionMetadata.md)
+▸ **generateMetadata**(): [`ElectionMetadata`](../interfaces/ElectionMetadata)
 
 #### Returns
 
-[`ElectionMetadata`](../interfaces/ElectionMetadata.md)
+[`ElectionMetadata`](../interfaces/ElectionMetadata)
 
 #### Overrides
 
-[UnpublishedElection](UnpublishedElection.md).[generateMetadata](UnpublishedElection.md#generatemetadata)
+[UnpublishedElection](UnpublishedElection.md).[generateMetadata](UnpublishedElection#generatemetadata)
 
 #### Defined in
 
@@ -1055,7 +1055,7 @@ ___
 
 #### Inherited from
 
-[UnpublishedElection](UnpublishedElection.md).[generateMode](UnpublishedElection.md#generatemode)
+[UnpublishedElection](UnpublishedElection.md).[generateMode](UnpublishedElection#generatemode)
 
 #### Defined in
 
@@ -1073,7 +1073,7 @@ ___
 
 #### Overrides
 
-[UnpublishedElection](UnpublishedElection.md).[generateVoteOptions](UnpublishedElection.md#generatevoteoptions)
+[UnpublishedElection](UnpublishedElection.md).[generateVoteOptions](UnpublishedElection#generatevoteoptions)
 
 #### Defined in
 
@@ -1097,7 +1097,7 @@ ___
 
 #### Inherited from
 
-[UnpublishedElection](UnpublishedElection.md).[get](UnpublishedElection.md#get)
+[UnpublishedElection](UnpublishedElection.md).[get](UnpublishedElection#get)
 
 #### Defined in
 
@@ -1107,7 +1107,7 @@ ___
 
 ### removeQuestion
 
-▸ **removeQuestion**(`questionNumber`): [`UnpublishedElection`](UnpublishedElection.md)
+▸ **removeQuestion**(`questionNumber`): [`UnpublishedElection`](UnpublishedElection)
 
 #### Parameters
 
@@ -1117,11 +1117,11 @@ ___
 
 #### Returns
 
-[`UnpublishedElection`](UnpublishedElection.md)
+[`UnpublishedElection`](UnpublishedElection)
 
 #### Inherited from
 
-[UnpublishedElection](UnpublishedElection.md).[removeQuestion](UnpublishedElection.md#removequestion)
+[UnpublishedElection](UnpublishedElection.md).[removeQuestion](UnpublishedElection#removequestion)
 
 #### Defined in
 
@@ -1137,9 +1137,9 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `vote` | [`Vote`](Vote.md) |
-| `resultsType` | [`ElectionResultsType`](../modules.md#electionresultstype) |
-| `voteType` | [`IVoteType`](../interfaces/IVoteType.md) |
+| `vote` | [`Vote`](Vote) |
+| `resultsType` | [`ElectionResultsType`](../modules#electionresultstype) |
+| `voteType` | [`IVoteType`](../interfaces/IVoteType) |
 
 #### Returns
 
@@ -1153,7 +1153,7 @@ ___
 
 ### from
 
-▸ **from**(`params`): [`BudgetElection`](BudgetElection.md)
+▸ **from**(`params`): [`BudgetElection`](BudgetElection)
 
 Returns an unpublished election object
 
@@ -1161,15 +1161,15 @@ Returns an unpublished election object
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `params` | [`IBudgetElectionParameters`](../modules.md#ibudgetelectionparameters) | Unpublished Election parameters |
+| `params` | [`IBudgetElectionParameters`](../modules#ibudgetelectionparameters) | Unpublished Election parameters |
 
 #### Returns
 
-[`BudgetElection`](BudgetElection.md)
+[`BudgetElection`](BudgetElection)
 
 #### Overrides
 
-[UnpublishedElection](UnpublishedElection.md).[from](UnpublishedElection.md#from)
+[UnpublishedElection](UnpublishedElection.md).[from](UnpublishedElection#from)
 
 #### Defined in
 

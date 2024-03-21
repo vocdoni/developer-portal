@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / RegisterKeyTx
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / RegisterKeyTx
 
 # Interface: RegisterKeyTx
 
@@ -6,11 +6,11 @@
 
 ### Properties
 
-- [newKey](RegisterKeyTx.md#newkey)
-- [nonce](RegisterKeyTx.md#nonce)
-- [processId](RegisterKeyTx.md#processid)
-- [proof](RegisterKeyTx.md#proof)
-- [weight](RegisterKeyTx.md#weight)
+- [newKey](RegisterKeyTx#newkey)
+- [nonce](RegisterKeyTx#nonce)
+- [processId](RegisterKeyTx#processid)
+- [proof](RegisterKeyTx#proof)
+- [weight](RegisterKeyTx#weight)
 
 ## Properties
 
@@ -52,7 +52,7 @@ ___
 
 ### proof
 
-• **proof**: [`Proof`](Proof.md)
+• **proof**: [`Proof`](Proof)
 
 Franchise proof
 

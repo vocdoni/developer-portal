@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / ICensus
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / ICensus
 
 # Interface: ICensus
 
@@ -6,17 +6,17 @@
 
 ### Properties
 
-- [censusOrigin](ICensus.md#censusorigin)
-- [censusRoot](ICensus.md#censusroot)
-- [censusURL](ICensus.md#censusurl)
-- [maxCensusSize](ICensus.md#maxcensussize)
-- [postRegisterCensusRoot](ICensus.md#postregistercensusroot)
+- [censusOrigin](ICensus#censusorigin)
+- [censusRoot](ICensus#censusroot)
+- [censusURL](ICensus#censusurl)
+- [maxCensusSize](ICensus#maxcensussize)
+- [postRegisterCensusRoot](ICensus#postregistercensusroot)
 
 ## Properties
 
 ### censusOrigin
 
-• **censusOrigin**: [`CensusTypeEnum`](../enums/CensusTypeEnum.md)
+• **censusOrigin**: [`CensusTypeEnum`](../enums/CensusTypeEnum)
 
 The type of the census
 

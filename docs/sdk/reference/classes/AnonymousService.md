@@ -1,10 +1,10 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / AnonymousService
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / AnonymousService
 
 # Class: AnonymousService
 
 ## Hierarchy
 
-- [`Service`](Service.md)
+- [`Service`](Service)
 
   ↳ **`AnonymousService`**
 
@@ -16,39 +16,39 @@
 
 ### Constructors
 
-- [constructor](AnonymousService.md#constructor)
+- [constructor](AnonymousService#constructor)
 
 ### Properties
 
-- [chainCircuits](AnonymousService.md#chaincircuits)
-- [url](AnonymousService.md#url)
+- [chainCircuits](AnonymousService#chaincircuits)
+- [url](AnonymousService#url)
 - [arbo\_utils](AnonymousService.md#arbo_utils)
 - [ff\_utils](AnonymousService.md#ff_utils)
 - [hex\_utils](AnonymousService.md#hex_utils)
 
 ### Methods
 
-- [checkCircuitsHashes](AnonymousService.md#checkcircuitshashes)
-- [fetchAccountSIK](AnonymousService.md#fetchaccountsik)
-- [fetchCircuits](AnonymousService.md#fetchcircuits)
-- [fetchZKProof](AnonymousService.md#fetchzkproof)
-- [generateZkProof](AnonymousService.md#generatezkproof)
-- [hasRegisteredSIK](AnonymousService.md#hasregisteredsik)
-- [setCircuits](AnonymousService.md#setcircuits)
-- [signSIKPayload](AnonymousService.md#signsikpayload)
-- [calcCircuitInputs](AnonymousService.md#calccircuitinputs)
-- [calcNullifier](AnonymousService.md#calcnullifier)
-- [calcSik](AnonymousService.md#calcsik)
-- [calcVoteId](AnonymousService.md#calcvoteid)
-- [generateGroth16Proof](AnonymousService.md#generategroth16proof)
-- [prepareCircuitInputs](AnonymousService.md#preparecircuitinputs)
-- [signatureToVocdoniSikSignature](AnonymousService.md#signaturetovocdonisiksignature)
+- [checkCircuitsHashes](AnonymousService#checkcircuitshashes)
+- [fetchAccountSIK](AnonymousService#fetchaccountsik)
+- [fetchCircuits](AnonymousService#fetchcircuits)
+- [fetchZKProof](AnonymousService#fetchzkproof)
+- [generateZkProof](AnonymousService#generatezkproof)
+- [hasRegisteredSIK](AnonymousService#hasregisteredsik)
+- [setCircuits](AnonymousService#setcircuits)
+- [signSIKPayload](AnonymousService#signsikpayload)
+- [calcCircuitInputs](AnonymousService#calccircuitinputs)
+- [calcNullifier](AnonymousService#calcnullifier)
+- [calcSik](AnonymousService#calcsik)
+- [calcVoteId](AnonymousService#calcvoteid)
+- [generateGroth16Proof](AnonymousService#generategroth16proof)
+- [prepareCircuitInputs](AnonymousService#preparecircuitinputs)
+- [signatureToVocdoniSikSignature](AnonymousService#signaturetovocdonisiksignature)
 
 ## Constructors
 
 ### constructor
 
-• **new AnonymousService**(`params`): [`AnonymousService`](AnonymousService.md)
+• **new AnonymousService**(`params`): [`AnonymousService`](AnonymousService)
 
 Instantiate the anonymous service.
 
@@ -60,11 +60,11 @@ Instantiate the anonymous service.
 
 #### Returns
 
-[`AnonymousService`](AnonymousService.md)
+[`AnonymousService`](AnonymousService)
 
 #### Overrides
 
-[Service](Service.md).[constructor](Service.md#constructor)
+[Service](Service.md).[constructor](Service#constructor)
 
 #### Defined in
 
@@ -74,7 +74,7 @@ Instantiate the anonymous service.
 
 ### chainCircuits
 
-• **chainCircuits**: [`ChainCircuits`](../modules.md#chaincircuits)
+• **chainCircuits**: [`ChainCircuits`](../modules#chaincircuits)
 
 #### Implementation of
 
@@ -92,7 +92,7 @@ ___
 
 #### Inherited from
 
-[Service](Service.md).[url](Service.md#url)
+[Service](Service.md).[url](Service#url)
 
 #### Defined in
 
@@ -156,13 +156,13 @@ ___
 
 ### checkCircuitsHashes
 
-▸ **checkCircuitsHashes**(): [`ChainCircuits`](../modules.md#chaincircuits)
+▸ **checkCircuitsHashes**(): [`ChainCircuits`](../modules#chaincircuits)
 
 Checks circuit hashes
 
 #### Returns
 
-[`ChainCircuits`](../modules.md#chaincircuits)
+[`ChainCircuits`](../modules#chaincircuits)
 
 The checked circuit parameters
 
@@ -194,7 +194,7 @@ ___
 
 ### fetchCircuits
 
-▸ **fetchCircuits**(`circuits?`): `Promise`\<[`ChainCircuits`](../modules.md#chaincircuits)\>
+▸ **fetchCircuits**(`circuits?`): `Promise`\<[`ChainCircuits`](../modules#chaincircuits)\>
 
 Fetches circuits for anonymous voting
 
@@ -202,11 +202,11 @@ Fetches circuits for anonymous voting
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `circuits?` | `Omit`\<[`ChainCircuits`](../modules.md#chaincircuits), ``"zKeyData"`` \| ``"vKeyData"`` \| ``"wasmData"``\> | Additional options for custom circuits |
+| `circuits?` | `Omit`\<[`ChainCircuits`](../modules#chaincircuits), ``"zKeyData"`` \| ``"vKeyData"`` \| ``"wasmData"``\> | Additional options for custom circuits |
 
 #### Returns
 
-`Promise`\<[`ChainCircuits`](../modules.md#chaincircuits)\>
+`Promise`\<[`ChainCircuits`](../modules#chaincircuits)\>
 
 #### Defined in
 
@@ -236,17 +236,17 @@ ___
 
 ### generateZkProof
 
-▸ **generateZkProof**(`inputs`): `Promise`\<[`ZkProof`](../modules.md#zkproof)\>
+▸ **generateZkProof**(`inputs`): `Promise`\<[`ZkProof`](../modules#zkproof)\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `inputs` | [`CircuitInputs`](../interfaces/CircuitInputs.md) |
+| `inputs` | [`CircuitInputs`](../interfaces/CircuitInputs) |
 
 #### Returns
 
-`Promise`\<[`ZkProof`](../modules.md#zkproof)\>
+`Promise`\<[`ZkProof`](../modules#zkproof)\>
 
 #### Defined in
 
@@ -278,7 +278,7 @@ ___
 
 ### setCircuits
 
-▸ **setCircuits**(`circuits`): [`ChainCircuits`](../modules.md#chaincircuits)
+▸ **setCircuits**(`circuits`): [`ChainCircuits`](../modules#chaincircuits)
 
 Sets circuits for anonymous voting
 
@@ -286,11 +286,11 @@ Sets circuits for anonymous voting
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `circuits` | [`ChainCircuits`](../modules.md#chaincircuits) | Custom circuits |
+| `circuits` | [`ChainCircuits`](../modules#chaincircuits) | Custom circuits |
 
 #### Returns
 
-[`ChainCircuits`](../modules.md#chaincircuits)
+[`ChainCircuits`](../modules#chaincircuits)
 
 #### Defined in
 
@@ -408,19 +408,19 @@ ___
 
 ### generateGroth16Proof
 
-▸ **generateGroth16Proof**(`inputs`, `circuitPath`, `provingKey`): `Promise`\<[`ZkProof`](../modules.md#zkproof)\>
+▸ **generateGroth16Proof**(`inputs`, `circuitPath`, `provingKey`): `Promise`\<[`ZkProof`](../modules#zkproof)\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `inputs` | [`CircuitInputs`](../interfaces/CircuitInputs.md) |
+| `inputs` | [`CircuitInputs`](../interfaces/CircuitInputs) |
 | `circuitPath` | `Uint8Array` |
 | `provingKey` | `Uint8Array` |
 
 #### Returns
 
-`Promise`\<[`ZkProof`](../modules.md#zkproof)\>
+`Promise`\<[`ZkProof`](../modules#zkproof)\>
 
 #### Defined in
 
@@ -430,7 +430,7 @@ ___
 
 ### prepareCircuitInputs
 
-▸ **prepareCircuitInputs**(`electionId`, `address`, `password`, `signature`, `voteWeight`, `availableWeight`, `sikRoot`, `sikSiblings`, `censusRoot`, `censusSiblings`, `votePackage`): `Promise`\<[`CircuitInputs`](../interfaces/CircuitInputs.md)\>
+▸ **prepareCircuitInputs**(`electionId`, `address`, `password`, `signature`, `voteWeight`, `availableWeight`, `sikRoot`, `sikSiblings`, `censusRoot`, `censusSiblings`, `votePackage`): `Promise`\<[`CircuitInputs`](../interfaces/CircuitInputs)\>
 
 #### Parameters
 
@@ -450,7 +450,7 @@ ___
 
 #### Returns
 
-`Promise`\<[`CircuitInputs`](../interfaces/CircuitInputs.md)\>
+`Promise`\<[`CircuitInputs`](../interfaces/CircuitInputs)\>
 
 #### Defined in
 

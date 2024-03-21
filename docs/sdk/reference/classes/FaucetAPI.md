@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / FaucetAPI
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / FaucetAPI
 
 # Class: FaucetAPI
 
@@ -12,25 +12,25 @@
 
 ### Constructors
 
-- [constructor](FaucetAPI.md#constructor)
+- [constructor](FaucetAPI#constructor)
 
 ### Methods
 
-- [collect](FaucetAPI.md#collect)
-- [isApiError](FaucetAPI.md#isapierror)
-- [isUndefinedError](FaucetAPI.md#isundefinederror)
+- [collect](FaucetAPI#collect)
+- [isApiError](FaucetAPI#isapierror)
+- [isUndefinedError](FaucetAPI#isundefinederror)
 
 ## Constructors
 
 ### constructor
 
-• **new FaucetAPI**(): [`FaucetAPI`](FaucetAPI.md)
+• **new FaucetAPI**(): [`FaucetAPI`](FaucetAPI)
 
 Cannot be constructed.
 
 #### Returns
 
-[`FaucetAPI`](FaucetAPI.md)
+[`FaucetAPI`](FaucetAPI)
 
 #### Overrides
 

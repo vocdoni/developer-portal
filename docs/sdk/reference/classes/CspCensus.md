@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / CspCensus
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / CspCensus
 
 # Class: CspCensus
 
@@ -6,7 +6,7 @@ Represents a published census
 
 ## Hierarchy
 
-- [`Census`](Census.md)
+- [`Census`](Census)
 
   ↳ **`CspCensus`**
 
@@ -14,7 +14,7 @@ Represents a published census
 
 ### Constructors
 
-- [constructor](CspCensus.md#constructor)
+- [constructor](CspCensus#constructor)
 
 ### Properties
 
@@ -24,22 +24,22 @@ Represents a published census
 
 ### Accessors
 
-- [censusId](CspCensus.md#censusid)
-- [censusURI](CspCensus.md#censusuri)
-- [isPublished](CspCensus.md#ispublished)
-- [size](CspCensus.md#size)
-- [type](CspCensus.md#type)
-- [weight](CspCensus.md#weight)
+- [censusId](CspCensus#censusid)
+- [censusURI](CspCensus#censusuri)
+- [isPublished](CspCensus#ispublished)
+- [size](CspCensus#size)
+- [type](CspCensus#type)
+- [weight](CspCensus#weight)
 
 ### Methods
 
-- [censusTypeFromCensusOrigin](CspCensus.md#censustypefromcensusorigin)
+- [censusTypeFromCensusOrigin](CspCensus#censustypefromcensusorigin)
 
 ## Constructors
 
 ### constructor
 
-• **new CspCensus**(`publicKey`, `cspURI`): [`CspCensus`](CspCensus.md)
+• **new CspCensus**(`publicKey`, `cspURI`): [`CspCensus`](CspCensus)
 
 Constructs a CSP census
 
@@ -52,11 +52,11 @@ Constructs a CSP census
 
 #### Returns
 
-[`CspCensus`](CspCensus.md)
+[`CspCensus`](CspCensus)
 
 #### Overrides
 
-[Census](Census.md).[constructor](Census.md#constructor)
+[Census](Census.md).[constructor](Census#constructor)
 
 #### Defined in
 
@@ -70,7 +70,7 @@ Constructs a CSP census
 
 #### Inherited from
 
-[Census](Census.md).[_censusId](Census.md#_censusid)
+[Census](Census).[_censusId](Census.md#_censusid)
 
 #### Defined in
 
@@ -84,7 +84,7 @@ ___
 
 #### Inherited from
 
-[Census](Census.md).[_censusURI](Census.md#_censusuri)
+[Census](Census).[_censusURI](Census.md#_censusuri)
 
 #### Defined in
 
@@ -94,11 +94,11 @@ ___
 
 ### \_type
 
-• `Protected` **\_type**: [`CensusType`](../enums/CensusType.md)
+• `Protected` **\_type**: [`CensusType`](../enums/CensusType)
 
 #### Inherited from
 
-[Census](Census.md).[_type](Census.md#_type)
+[Census](Census).[_type](Census.md#_type)
 
 #### Defined in
 
@@ -240,11 +240,11 @@ ___
 
 ### type
 
-• `get` **type**(): [`CensusType`](../enums/CensusType.md)
+• `get` **type**(): [`CensusType`](../enums/CensusType)
 
 #### Returns
 
-[`CensusType`](../enums/CensusType.md)
+[`CensusType`](../enums/CensusType)
 
 #### Inherited from
 
@@ -260,7 +260,7 @@ Census.type
 
 | Name | Type |
 | :------ | :------ |
-| `value` | [`CensusType`](../enums/CensusType.md) |
+| `value` | [`CensusType`](../enums/CensusType) |
 
 #### Returns
 
@@ -316,7 +316,7 @@ Census.weight
 
 ### censusTypeFromCensusOrigin
 
-▸ **censusTypeFromCensusOrigin**(`censusOrigin`, `anonymous?`): [`CensusType`](../enums/CensusType.md)
+▸ **censusTypeFromCensusOrigin**(`censusOrigin`, `anonymous?`): [`CensusType`](../enums/CensusType)
 
 #### Parameters
 
@@ -327,11 +327,11 @@ Census.weight
 
 #### Returns
 
-[`CensusType`](../enums/CensusType.md)
+[`CensusType`](../enums/CensusType)
 
 #### Inherited from
 
-[Census](Census.md).[censusTypeFromCensusOrigin](Census.md#censustypefromcensusorigin)
+[Census](Census.md).[censusTypeFromCensusOrigin](Census#censustypefromcensusorigin)
 
 #### Defined in
 

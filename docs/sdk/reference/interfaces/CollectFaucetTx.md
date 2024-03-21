@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / CollectFaucetTx
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / CollectFaucetTx
 
 # Interface: CollectFaucetTx
 
@@ -6,9 +6,9 @@
 
 ### Properties
 
-- [faucetPackage](CollectFaucetTx.md#faucetpackage)
-- [nonce](CollectFaucetTx.md#nonce)
-- [txType](CollectFaucetTx.md#txtype)
+- [faucetPackage](CollectFaucetTx#faucetpackage)
+- [nonce](CollectFaucetTx#nonce)
+- [txType](CollectFaucetTx#txtype)
 
 ## Properties
 
@@ -34,7 +34,7 @@ ___
 
 ### txType
 
-• **txType**: [`TxType`](../enums/TxType.md)
+• **txType**: [`TxType`](../enums/TxType)
 
 #### Defined in
 

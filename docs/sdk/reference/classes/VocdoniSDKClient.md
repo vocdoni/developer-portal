@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / VocdoniSDKClient
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / VocdoniSDKClient
 
 # Class: VocdoniSDKClient
 
@@ -10,82 +10,82 @@ point.
 
 ### Constructors
 
-- [constructor](VocdoniSDKClient.md#constructor)
+- [constructor](VocdoniSDKClient#constructor)
 
 ### Properties
 
-- [accountData](VocdoniSDKClient.md#accountdata)
-- [accountService](VocdoniSDKClient.md#accountservice)
-- [anonymousService](VocdoniSDKClient.md#anonymousservice)
-- [censusService](VocdoniSDKClient.md#censusservice)
-- [chainService](VocdoniSDKClient.md#chainservice)
-- [cspService](VocdoniSDKClient.md#cspservice)
-- [election](VocdoniSDKClient.md#election)
-- [electionId](VocdoniSDKClient.md#electionid)
-- [electionService](VocdoniSDKClient.md#electionservice)
-- [explorerUrl](VocdoniSDKClient.md#explorerurl)
-- [faucetService](VocdoniSDKClient.md#faucetservice)
-- [fileService](VocdoniSDKClient.md#fileservice)
-- [url](VocdoniSDKClient.md#url)
-- [voteService](VocdoniSDKClient.md#voteservice)
-- [wallet](VocdoniSDKClient.md#wallet)
+- [accountData](VocdoniSDKClient#accountdata)
+- [accountService](VocdoniSDKClient#accountservice)
+- [anonymousService](VocdoniSDKClient#anonymousservice)
+- [censusService](VocdoniSDKClient#censusservice)
+- [chainService](VocdoniSDKClient#chainservice)
+- [cspService](VocdoniSDKClient#cspservice)
+- [election](VocdoniSDKClient#election)
+- [electionId](VocdoniSDKClient#electionid)
+- [electionService](VocdoniSDKClient#electionservice)
+- [explorerUrl](VocdoniSDKClient#explorerurl)
+- [faucetService](VocdoniSDKClient#faucetservice)
+- [fileService](VocdoniSDKClient#fileservice)
+- [url](VocdoniSDKClient#url)
+- [voteService](VocdoniSDKClient#voteservice)
+- [wallet](VocdoniSDKClient#wallet)
 
 ### Methods
 
-- [calcZKProofForWallet](VocdoniSDKClient.md#calczkproofforwallet)
-- [calculateCID](VocdoniSDKClient.md#calculatecid)
-- [calculateElectionCost](VocdoniSDKClient.md#calculateelectioncost)
-- [cancelElection](VocdoniSDKClient.md#cancelelection)
-- [changeElectionCensus](VocdoniSDKClient.md#changeelectioncensus)
-- [changeElectionStatus](VocdoniSDKClient.md#changeelectionstatus)
-- [collectFaucetTokens](VocdoniSDKClient.md#collectfaucettokens)
-- [continueElection](VocdoniSDKClient.md#continueelection)
-- [createAccount](VocdoniSDKClient.md#createaccount)
-- [createAccountInfo](VocdoniSDKClient.md#createaccountinfo)
-- [createCensus](VocdoniSDKClient.md#createcensus)
-- [createElection](VocdoniSDKClient.md#createelection)
-- [createElectionSteps](VocdoniSDKClient.md#createelectionsteps)
-- [cspInfo](VocdoniSDKClient.md#cspinfo)
-- [cspSign](VocdoniSDKClient.md#cspsign)
-- [cspStep](VocdoniSDKClient.md#cspstep)
-- [cspUrl](VocdoniSDKClient.md#cspurl)
-- [cspVote](VocdoniSDKClient.md#cspvote)
-- [endElection](VocdoniSDKClient.md#endelection)
-- [estimateElectionCost](VocdoniSDKClient.md#estimateelectioncost)
-- [fetchAccount](VocdoniSDKClient.md#fetchaccount)
-- [fetchAccountInfo](VocdoniSDKClient.md#fetchaccountinfo)
-- [fetchCensusInfo](VocdoniSDKClient.md#fetchcensusinfo)
-- [fetchChainCosts](VocdoniSDKClient.md#fetchchaincosts)
-- [fetchChainId](VocdoniSDKClient.md#fetchchainid)
-- [fetchCircuits](VocdoniSDKClient.md#fetchcircuits)
-- [fetchElection](VocdoniSDKClient.md#fetchelection)
-- [fetchElections](VocdoniSDKClient.md#fetchelections)
-- [fetchFaucetPayload](VocdoniSDKClient.md#fetchfaucetpayload)
-- [fetchProof](VocdoniSDKClient.md#fetchproof)
-- [fetchProofForWallet](VocdoniSDKClient.md#fetchproofforwallet)
-- [generateRandomWallet](VocdoniSDKClient.md#generaterandomwallet)
-- [hasAlreadyVoted](VocdoniSDKClient.md#hasalreadyvoted)
-- [isAbleToVote](VocdoniSDKClient.md#isabletovote)
-- [isInCensus](VocdoniSDKClient.md#isincensus)
-- [parseFaucetPackage](VocdoniSDKClient.md#parsefaucetpackage)
-- [pauseElection](VocdoniSDKClient.md#pauseelection)
-- [sendTokens](VocdoniSDKClient.md#sendtokens)
-- [setAccountInfo](VocdoniSDKClient.md#setaccountinfo)
-- [setAccountSIK](VocdoniSDKClient.md#setaccountsik)
-- [setCircuits](VocdoniSDKClient.md#setcircuits)
-- [setElectionId](VocdoniSDKClient.md#setelectionid)
-- [submitVote](VocdoniSDKClient.md#submitvote)
-- [submitVoteSteps](VocdoniSDKClient.md#submitvotesteps)
-- [updateAccountInfo](VocdoniSDKClient.md#updateaccountinfo)
-- [votesLeftCount](VocdoniSDKClient.md#votesleftcount)
-- [waitForTransaction](VocdoniSDKClient.md#waitfortransaction)
-- [generateWalletFromData](VocdoniSDKClient.md#generatewalletfromdata)
+- [calcZKProofForWallet](VocdoniSDKClient#calczkproofforwallet)
+- [calculateCID](VocdoniSDKClient#calculatecid)
+- [calculateElectionCost](VocdoniSDKClient#calculateelectioncost)
+- [cancelElection](VocdoniSDKClient#cancelelection)
+- [changeElectionCensus](VocdoniSDKClient#changeelectioncensus)
+- [changeElectionStatus](VocdoniSDKClient#changeelectionstatus)
+- [collectFaucetTokens](VocdoniSDKClient#collectfaucettokens)
+- [continueElection](VocdoniSDKClient#continueelection)
+- [createAccount](VocdoniSDKClient#createaccount)
+- [createAccountInfo](VocdoniSDKClient#createaccountinfo)
+- [createCensus](VocdoniSDKClient#createcensus)
+- [createElection](VocdoniSDKClient#createelection)
+- [createElectionSteps](VocdoniSDKClient#createelectionsteps)
+- [cspInfo](VocdoniSDKClient#cspinfo)
+- [cspSign](VocdoniSDKClient#cspsign)
+- [cspStep](VocdoniSDKClient#cspstep)
+- [cspUrl](VocdoniSDKClient#cspurl)
+- [cspVote](VocdoniSDKClient#cspvote)
+- [endElection](VocdoniSDKClient#endelection)
+- [estimateElectionCost](VocdoniSDKClient#estimateelectioncost)
+- [fetchAccount](VocdoniSDKClient#fetchaccount)
+- [fetchAccountInfo](VocdoniSDKClient#fetchaccountinfo)
+- [fetchCensusInfo](VocdoniSDKClient#fetchcensusinfo)
+- [fetchChainCosts](VocdoniSDKClient#fetchchaincosts)
+- [fetchChainId](VocdoniSDKClient#fetchchainid)
+- [fetchCircuits](VocdoniSDKClient#fetchcircuits)
+- [fetchElection](VocdoniSDKClient#fetchelection)
+- [fetchElections](VocdoniSDKClient#fetchelections)
+- [fetchFaucetPayload](VocdoniSDKClient#fetchfaucetpayload)
+- [fetchProof](VocdoniSDKClient#fetchproof)
+- [fetchProofForWallet](VocdoniSDKClient#fetchproofforwallet)
+- [generateRandomWallet](VocdoniSDKClient#generaterandomwallet)
+- [hasAlreadyVoted](VocdoniSDKClient#hasalreadyvoted)
+- [isAbleToVote](VocdoniSDKClient#isabletovote)
+- [isInCensus](VocdoniSDKClient#isincensus)
+- [parseFaucetPackage](VocdoniSDKClient#parsefaucetpackage)
+- [pauseElection](VocdoniSDKClient#pauseelection)
+- [sendTokens](VocdoniSDKClient#sendtokens)
+- [setAccountInfo](VocdoniSDKClient#setaccountinfo)
+- [setAccountSIK](VocdoniSDKClient#setaccountsik)
+- [setCircuits](VocdoniSDKClient#setcircuits)
+- [setElectionId](VocdoniSDKClient#setelectionid)
+- [submitVote](VocdoniSDKClient#submitvote)
+- [submitVoteSteps](VocdoniSDKClient#submitvotesteps)
+- [updateAccountInfo](VocdoniSDKClient#updateaccountinfo)
+- [votesLeftCount](VocdoniSDKClient#votesleftcount)
+- [waitForTransaction](VocdoniSDKClient#waitfortransaction)
+- [generateWalletFromData](VocdoniSDKClient#generatewalletfromdata)
 
 ## Constructors
 
 ### constructor
 
-• **new VocdoniSDKClient**(`opts`): [`VocdoniSDKClient`](VocdoniSDKClient.md)
+• **new VocdoniSDKClient**(`opts`): [`VocdoniSDKClient`](VocdoniSDKClient)
 
 Instantiate new VocdoniSDK client.
 
@@ -97,11 +97,11 @@ To instantiate the client just pass the `ClientOptions` you want or empty object
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `opts` | [`ClientOptions`](../modules.md#clientoptions) | optional arguments |
+| `opts` | [`ClientOptions`](../modules#clientoptions) | optional arguments |
 
 #### Returns
 
-[`VocdoniSDKClient`](VocdoniSDKClient.md)
+[`VocdoniSDKClient`](VocdoniSDKClient)
 
 #### Defined in
 
@@ -111,7 +111,7 @@ To instantiate the client just pass the `ClientOptions` you want or empty object
 
 ### accountData
 
-• `Private` **accountData**: [`AccountData`](../modules.md#accountdata) \| [`ArchivedAccountData`](../modules.md#archivedaccountdata) = `null`
+• `Private` **accountData**: [`AccountData`](../modules.md#accountdata) \| [`ArchivedAccountData`](../modules#archivedaccountdata) = `null`
 
 #### Defined in
 
@@ -121,7 +121,7 @@ ___
 
 ### accountService
 
-• **accountService**: [`AccountService`](AccountService.md)
+• **accountService**: [`AccountService`](AccountService)
 
 #### Defined in
 
@@ -131,7 +131,7 @@ ___
 
 ### anonymousService
 
-• **anonymousService**: [`AnonymousService`](AnonymousService.md)
+• **anonymousService**: [`AnonymousService`](AnonymousService)
 
 #### Defined in
 
@@ -141,7 +141,7 @@ ___
 
 ### censusService
 
-• **censusService**: [`CensusService`](CensusService.md)
+• **censusService**: [`CensusService`](CensusService)
 
 #### Defined in
 
@@ -151,7 +151,7 @@ ___
 
 ### chainService
 
-• **chainService**: [`ChainService`](ChainService.md)
+• **chainService**: [`ChainService`](ChainService)
 
 #### Defined in
 
@@ -161,7 +161,7 @@ ___
 
 ### cspService
 
-• **cspService**: [`CspService`](CspService.md)
+• **cspService**: [`CspService`](CspService)
 
 #### Defined in
 
@@ -171,7 +171,7 @@ ___
 
 ### election
 
-• `Private` **election**: [`PublishedElection`](PublishedElection.md) \| [`UnpublishedElection`](UnpublishedElection.md) = `null`
+• `Private` **election**: [`PublishedElection`](PublishedElection.md) \| [`UnpublishedElection`](UnpublishedElection) = `null`
 
 #### Defined in
 
@@ -191,7 +191,7 @@ ___
 
 ### electionService
 
-• **electionService**: [`ElectionService`](ElectionService.md)
+• **electionService**: [`ElectionService`](ElectionService)
 
 #### Defined in
 
@@ -211,7 +211,7 @@ ___
 
 ### faucetService
 
-• **faucetService**: [`FaucetService`](FaucetService.md)
+• **faucetService**: [`FaucetService`](FaucetService)
 
 #### Defined in
 
@@ -221,7 +221,7 @@ ___
 
 ### fileService
 
-• **fileService**: [`FileService`](FileService.md)
+• **fileService**: [`FileService`](FileService)
 
 #### Defined in
 
@@ -241,7 +241,7 @@ ___
 
 ### voteService
 
-• **voteService**: [`VoteService`](VoteService.md)
+• **voteService**: [`VoteService`](VoteService)
 
 #### Defined in
 
@@ -261,7 +261,7 @@ ___
 
 ### calcZKProofForWallet
 
-▸ **calcZKProofForWallet**(`election`, `wallet`, `signature`, `votePackage`, `password?`): `Promise`\<[`ZkProof`](../modules.md#zkproof)\>
+▸ **calcZKProofForWallet**(`election`, `wallet`, `signature`, `votePackage`, `password?`): `Promise`\<[`ZkProof`](../modules#zkproof)\>
 
 Calculates ZK proof from given wallet.
 
@@ -269,7 +269,7 @@ Calculates ZK proof from given wallet.
 
 | Name | Type | Default value |
 | :------ | :------ | :------ |
-| `election` | [`PublishedElection`](PublishedElection.md) | `undefined` |
+| `election` | [`PublishedElection`](PublishedElection) | `undefined` |
 | `wallet` | `Wallet` \| `Signer` | `undefined` |
 | `signature` | `string` | `undefined` |
 | `votePackage` | `Buffer` | `undefined` |
@@ -277,7 +277,7 @@ Calculates ZK proof from given wallet.
 
 #### Returns
 
-`Promise`\<[`ZkProof`](../modules.md#zkproof)\>
+`Promise`\<[`ZkProof`](../modules#zkproof)\>
 
 #### Defined in
 
@@ -319,7 +319,7 @@ Calculate the election cost
 
 | Name | Type |
 | :------ | :------ |
-| `election` | [`UnpublishedElection`](UnpublishedElection.md) |
+| `election` | [`UnpublishedElection`](UnpublishedElection) |
 
 #### Returns
 
@@ -390,7 +390,7 @@ Changes the status of an election.
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `electionId` | `string` | The id of the election |
-| `newStatus` | [`AllElectionStatus`](../modules.md#allelectionstatus) | The new status |
+| `newStatus` | [`AllElectionStatus`](../modules#allelectionstatus) | The new status |
 
 #### Returns
 
@@ -404,7 +404,7 @@ ___
 
 ### collectFaucetTokens
 
-▸ **collectFaucetTokens**(`faucetPackage?`): `Promise`\<[`AccountData`](../modules.md#accountdata)\>
+▸ **collectFaucetTokens**(`faucetPackage?`): `Promise`\<[`AccountData`](../modules#accountdata)\>
 
 Calls the faucet to get new tokens. Only under development.
 
@@ -416,7 +416,7 @@ Calls the faucet to get new tokens. Only under development.
 
 #### Returns
 
-`Promise`\<[`AccountData`](../modules.md#accountdata)\>
+`Promise`\<[`AccountData`](../modules#accountdata)\>
 
 Account data information updated with new balance
 
@@ -450,7 +450,7 @@ ___
 
 ### createAccount
 
-▸ **createAccount**(`options?`): `Promise`\<[`AccountData`](../modules.md#accountdata)\>
+▸ **createAccount**(`options?`): `Promise`\<[`AccountData`](../modules#accountdata)\>
 
 Registers an account against vochain, so it can create new elections.
 
@@ -459,14 +459,14 @@ Registers an account against vochain, so it can create new elections.
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `options?` | `Object` | Additional options, like extra information of the account, or the faucet package string |
-| `options.account?` | [`Account`](Account.md) | - |
+| `options.account?` | [`Account`](Account) | - |
 | `options.faucetPackage?` | `string` | - |
 | `options.password?` | `string` | - |
 | `options.sik?` | `boolean` | - |
 
 #### Returns
 
-`Promise`\<[`AccountData`](../modules.md#accountdata)\>
+`Promise`\<[`AccountData`](../modules#accountdata)\>
 
 #### Defined in
 
@@ -476,7 +476,7 @@ ___
 
 ### createAccountInfo
 
-▸ **createAccountInfo**(`options`): `Promise`\<[`AccountData`](../modules.md#accountdata)\>
+▸ **createAccountInfo**(`options`): `Promise`\<[`AccountData`](../modules#accountdata)\>
 
 Creates an account with information.
 
@@ -485,14 +485,14 @@ Creates an account with information.
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `options` | `Object` | Additional options, like extra information of the account, or the faucet package string. |
-| `options.account` | [`Account`](Account.md) | - |
+| `options.account` | [`Account`](Account) | - |
 | `options.faucetPackage?` | `string` | - |
 | `options.password?` | `string` | - |
 | `options.signedSikPayload?` | `string` | - |
 
 #### Returns
 
-`Promise`\<[`AccountData`](../modules.md#accountdata)\>
+`Promise`\<[`AccountData`](../modules#accountdata)\>
 
 #### Defined in
 
@@ -510,7 +510,7 @@ Publishes the given census.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `census` | [`PlainCensus`](PlainCensus.md) \| [`WeightedCensus`](WeightedCensus.md) | The census to be published. |
+| `census` | [`PlainCensus`](PlainCensus.md) \| [`WeightedCensus`](WeightedCensus) | The census to be published. |
 
 #### Returns
 
@@ -532,7 +532,7 @@ Creates a new voting election.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `election` | [`UnpublishedElection`](UnpublishedElection.md) | The election object to be created. |
+| `election` | [`UnpublishedElection`](UnpublishedElection) | The election object to be created. |
 
 #### Returns
 
@@ -548,7 +548,7 @@ ___
 
 ### createElectionSteps
 
-▸ **createElectionSteps**(`election`): `AsyncGenerator`\<[`ElectionCreationStepValue`](../modules.md#electioncreationstepvalue), `any`, `unknown`\>
+▸ **createElectionSteps**(`election`): `AsyncGenerator`\<[`ElectionCreationStepValue`](../modules#electioncreationstepvalue), `any`, `unknown`\>
 
 Creates a new voting election by steps with async returns.
 
@@ -556,11 +556,11 @@ Creates a new voting election by steps with async returns.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `election` | [`UnpublishedElection`](UnpublishedElection.md) | The election object to be created. |
+| `election` | [`UnpublishedElection`](UnpublishedElection) | The election object to be created. |
 
 #### Returns
 
-`AsyncGenerator`\<[`ElectionCreationStepValue`](../modules.md#electioncreationstepvalue), `any`, `unknown`\>
+`AsyncGenerator`\<[`ElectionCreationStepValue`](../modules#electioncreationstepvalue), `any`, `unknown`\>
 
 The async step returns.
 
@@ -643,19 +643,19 @@ ___
 
 ### cspVote
 
-▸ **cspVote**(`vote`, `signature`, `proof_type?`): [`CspVote`](CspVote.md)
+▸ **cspVote**(`vote`, `signature`, `proof_type?`): [`CspVote`](CspVote)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `vote` | [`Vote`](Vote.md) |
+| `vote` | [`Vote`](Vote) |
 | `signature` | `string` |
-| `proof_type?` | [`CspProofType`](../enums/CspProofType.md) |
+| `proof_type?` | [`CspProofType`](../enums/CspProofType) |
 
 #### Returns
 
-[`CspVote`](CspVote.md)
+[`CspVote`](CspVote)
 
 #### Defined in
 
@@ -695,7 +695,7 @@ Estimates the election cost
 
 | Name | Type |
 | :------ | :------ |
-| `election` | [`UnpublishedElection`](UnpublishedElection.md) |
+| `election` | [`UnpublishedElection`](UnpublishedElection) |
 
 #### Returns
 
@@ -711,7 +711,7 @@ ___
 
 ### fetchAccount
 
-▸ **fetchAccount**(`address?`): `Promise`\<[`AccountData`](../modules.md#accountdata)\>
+▸ **fetchAccount**(`address?`): `Promise`\<[`AccountData`](../modules#accountdata)\>
 
 Fetches account.
 
@@ -723,7 +723,7 @@ Fetches account.
 
 #### Returns
 
-`Promise`\<[`AccountData`](../modules.md#accountdata)\>
+`Promise`\<[`AccountData`](../modules#accountdata)\>
 
 #### Defined in
 
@@ -733,7 +733,7 @@ ___
 
 ### fetchAccountInfo
 
-▸ **fetchAccountInfo**(`address?`): `Promise`\<[`AccountData`](../modules.md#accountdata) \| [`ArchivedAccountData`](../modules.md#archivedaccountdata)\>
+▸ **fetchAccountInfo**(`address?`): `Promise`\<[`AccountData`](../modules.md#accountdata) \| [`ArchivedAccountData`](../modules#archivedaccountdata)\>
 
 Fetches account information.
 
@@ -745,7 +745,7 @@ Fetches account information.
 
 #### Returns
 
-`Promise`\<[`AccountData`](../modules.md#accountdata) \| [`ArchivedAccountData`](../modules.md#archivedaccountdata)\>
+`Promise`\<[`AccountData`](../modules.md#accountdata) \| [`ArchivedAccountData`](../modules#archivedaccountdata)\>
 
 #### Defined in
 
@@ -755,7 +755,7 @@ ___
 
 ### fetchCensusInfo
 
-▸ **fetchCensusInfo**(`censusId`): `Promise`\<\{ `size`: `number` ; `type`: [`CensusType`](../enums/CensusType.md) ; `weight`: `bigint`  }\>
+▸ **fetchCensusInfo**(`censusId`): `Promise`\<\{ `size`: `number` ; `type`: [`CensusType`](../enums/CensusType) ; `weight`: `bigint`  }\>
 
 Fetches the information of a given census.
 
@@ -767,7 +767,7 @@ Fetches the information of a given census.
 
 #### Returns
 
-`Promise`\<\{ `size`: `number` ; `type`: [`CensusType`](../enums/CensusType.md) ; `weight`: `bigint`  }\>
+`Promise`\<\{ `size`: `number` ; `type`: [`CensusType`](../enums/CensusType) ; `weight`: `bigint`  }\>
 
 #### Defined in
 
@@ -777,13 +777,13 @@ ___
 
 ### fetchChainCosts
 
-▸ **fetchChainCosts**(): `Promise`\<[`IChainGetCostsResponse`](../interfaces/IChainGetCostsResponse.md)\>
+▸ **fetchChainCosts**(): `Promise`\<[`IChainGetCostsResponse`](../interfaces/IChainGetCostsResponse)\>
 
 Fetches blockchain costs information if needed.
 
 #### Returns
 
-`Promise`\<[`IChainGetCostsResponse`](../interfaces/IChainGetCostsResponse.md)\>
+`Promise`\<[`IChainGetCostsResponse`](../interfaces/IChainGetCostsResponse)\>
 
 #### Defined in
 
@@ -809,7 +809,7 @@ ___
 
 ### fetchCircuits
 
-▸ **fetchCircuits**(`circuits?`): `Promise`\<[`ChainCircuits`](../modules.md#chaincircuits)\>
+▸ **fetchCircuits**(`circuits?`): `Promise`\<[`ChainCircuits`](../modules#chaincircuits)\>
 
 Fetches circuits for anonymous voting
 
@@ -817,11 +817,11 @@ Fetches circuits for anonymous voting
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `circuits?` | `Omit`\<[`ChainCircuits`](../modules.md#chaincircuits), ``"zKeyData"`` \| ``"vKeyData"`` \| ``"wasmData"``\> | Additional options for custom circuits |
+| `circuits?` | `Omit`\<[`ChainCircuits`](../modules#chaincircuits), ``"zKeyData"`` \| ``"vKeyData"`` \| ``"wasmData"``\> | Additional options for custom circuits |
 
 #### Returns
 
-`Promise`\<[`ChainCircuits`](../modules.md#chaincircuits)\>
+`Promise`\<[`ChainCircuits`](../modules#chaincircuits)\>
 
 #### Defined in
 
@@ -831,7 +831,7 @@ ___
 
 ### fetchElection
 
-▸ **fetchElection**(`electionId?`): `Promise`\<[`PublishedElection`](PublishedElection.md) \| [`ArchivedElection`](ArchivedElection.md)\>
+▸ **fetchElection**(`electionId?`): `Promise`\<[`PublishedElection`](PublishedElection.md) \| [`ArchivedElection`](ArchivedElection)\>
 
 Fetches info about an election.
 
@@ -843,7 +843,7 @@ Fetches info about an election.
 
 #### Returns
 
-`Promise`\<[`PublishedElection`](PublishedElection.md) \| [`ArchivedElection`](ArchivedElection.md)\>
+`Promise`\<[`PublishedElection`](PublishedElection.md) \| [`ArchivedElection`](ArchivedElection)\>
 
 #### Defined in
 
@@ -853,7 +853,7 @@ ___
 
 ### fetchElections
 
-▸ **fetchElections**(`account?`, `page?`): `Promise`\<([`PublishedElection`](PublishedElection.md) \| [`ArchivedElection`](ArchivedElection.md) \| [`InvalidElection`](InvalidElection.md))[]\>
+▸ **fetchElections**(`account?`, `page?`): `Promise`\<([`PublishedElection`](PublishedElection.md) \| [`ArchivedElection`](ArchivedElection.md) \| [`InvalidElection`](InvalidElection))[]\>
 
 #### Parameters
 
@@ -864,7 +864,7 @@ ___
 
 #### Returns
 
-`Promise`\<([`PublishedElection`](PublishedElection.md) \| [`ArchivedElection`](ArchivedElection.md) \| [`InvalidElection`](InvalidElection.md))[]\>
+`Promise`\<([`PublishedElection`](PublishedElection.md) \| [`ArchivedElection`](ArchivedElection.md) \| [`InvalidElection`](InvalidElection))[]\>
 
 #### Defined in
 
@@ -890,7 +890,7 @@ ___
 
 ### fetchProof
 
-▸ **fetchProof**(`censusId`, `key`): `Promise`\<[`CensusProof`](../modules.md#censusproof)\>
+▸ **fetchProof**(`censusId`, `key`): `Promise`\<[`CensusProof`](../modules#censusproof)\>
 
 Fetches proof that an address is part of the specified census.
 
@@ -903,7 +903,7 @@ Fetches proof that an address is part of the specified census.
 
 #### Returns
 
-`Promise`\<[`CensusProof`](../modules.md#censusproof)\>
+`Promise`\<[`CensusProof`](../modules#censusproof)\>
 
 #### Defined in
 
@@ -913,7 +913,7 @@ ___
 
 ### fetchProofForWallet
 
-▸ **fetchProofForWallet**(`censusId`, `wallet`): `Promise`\<[`CensusProof`](../modules.md#censusproof)\>
+▸ **fetchProofForWallet**(`censusId`, `wallet`): `Promise`\<[`CensusProof`](../modules#censusproof)\>
 
 Fetches proof that an address is part of the specified census.
 
@@ -926,7 +926,7 @@ Fetches proof that an address is part of the specified census.
 
 #### Returns
 
-`Promise`\<[`CensusProof`](../modules.md#censusproof)\>
+`Promise`\<[`CensusProof`](../modules#censusproof)\>
 
 #### Defined in
 
@@ -962,7 +962,7 @@ Checks if the user has already voted
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `options?` | `Partial`\<[`WalletOption`](../modules.md#walletoption) & [`ElectionIdOption`](../modules.md#electionidoption) & [`VoteIdOption`](../modules.md#voteidoption)\> | Options for has already voted |
+| `options?` | `Partial`\<[`WalletOption`](../modules.md#walletoption) & [`ElectionIdOption`](../modules.md#electionidoption) & [`VoteIdOption`](../modules#voteidoption)\> | Options for has already voted |
 
 #### Returns
 
@@ -986,7 +986,7 @@ Checks if the user is able to vote
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `options?` | `Partial`\<[`WalletOption`](../modules.md#walletoption) & [`ElectionIdOption`](../modules.md#electionidoption) & [`VoteIdOption`](../modules.md#voteidoption)\> | Options for is able to vote |
+| `options?` | `Partial`\<[`WalletOption`](../modules.md#walletoption) & [`ElectionIdOption`](../modules.md#electionidoption) & [`VoteIdOption`](../modules#voteidoption)\> | Options for is able to vote |
 
 #### Returns
 
@@ -1008,7 +1008,7 @@ Checks if the user is in census.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `options?` | `Partial`\<[`WalletOption`](../modules.md#walletoption) & [`ElectionIdOption`](../modules.md#electionidoption)\> | Options for is in census |
+| `options?` | `Partial`\<[`WalletOption`](../modules.md#walletoption) & [`ElectionIdOption`](../modules#electionidoption)\> | Options for is in census |
 
 #### Returns
 
@@ -1022,7 +1022,7 @@ ___
 
 ### parseFaucetPackage
 
-▸ **parseFaucetPackage**(`faucetPackage`): [`FaucetPackage`](../modules.md#faucetpackage)
+▸ **parseFaucetPackage**(`faucetPackage`): [`FaucetPackage`](../modules#faucetpackage)
 
 Parses a faucet package.
 
@@ -1034,7 +1034,7 @@ Parses a faucet package.
 
 #### Returns
 
-[`FaucetPackage`](../modules.md#faucetpackage)
+[`FaucetPackage`](../modules#faucetpackage)
 
 #### Defined in
 
@@ -1074,7 +1074,7 @@ Send tokens from one account to another.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `options` | [`SendTokensOptions`](../modules.md#sendtokensoptions) | Options for send tokens |
+| `options` | [`SendTokensOptions`](../modules#sendtokensoptions) | Options for send tokens |
 
 #### Returns
 
@@ -1088,7 +1088,7 @@ ___
 
 ### setAccountInfo
 
-▸ **setAccountInfo**(`promAccountData`): `Promise`\<[`AccountData`](../modules.md#accountdata)\>
+▸ **setAccountInfo**(`promAccountData`): `Promise`\<[`AccountData`](../modules#accountdata)\>
 
 Updates an account with information
 
@@ -1100,7 +1100,7 @@ Updates an account with information
 
 #### Returns
 
-`Promise`\<[`AccountData`](../modules.md#accountdata)\>
+`Promise`\<[`AccountData`](../modules#accountdata)\>
 
 #### Defined in
 
@@ -1119,7 +1119,7 @@ ___
 | `electionId` | `string` |
 | `signature` | `string` |
 | `password` | `string` |
-| `censusProof` | [`CensusProof`](../modules.md#censusproof) |
+| `censusProof` | [`CensusProof`](../modules#censusproof) |
 | `wallet` | `Wallet` \| `Signer` |
 
 #### Returns
@@ -1134,7 +1134,7 @@ ___
 
 ### setCircuits
 
-▸ **setCircuits**(`circuits`): [`ChainCircuits`](../modules.md#chaincircuits)
+▸ **setCircuits**(`circuits`): [`ChainCircuits`](../modules#chaincircuits)
 
 Sets circuits for anonymous voting
 
@@ -1142,11 +1142,11 @@ Sets circuits for anonymous voting
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `circuits` | [`ChainCircuits`](../modules.md#chaincircuits) | Custom circuits |
+| `circuits` | [`ChainCircuits`](../modules#chaincircuits) | Custom circuits |
 
 #### Returns
 
-[`ChainCircuits`](../modules.md#chaincircuits)
+[`ChainCircuits`](../modules#chaincircuits)
 
 #### Defined in
 
@@ -1186,7 +1186,7 @@ Submits a vote.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `vote` | [`Vote`](Vote.md) \| [`AnonymousVote`](AnonymousVote.md) \| [`CspVote`](CspVote.md) | The vote (or votes) to be sent. |
+| `vote` | [`Vote`](Vote.md) \| [`AnonymousVote`](AnonymousVote.md) \| [`CspVote`](CspVote) | The vote (or votes) to be sent. |
 
 #### Returns
 
@@ -1202,7 +1202,7 @@ ___
 
 ### submitVoteSteps
 
-▸ **submitVoteSteps**(`vote`): `AsyncGenerator`\<[`VoteStepValue`](../modules.md#votestepvalue), `any`, `unknown`\>
+▸ **submitVoteSteps**(`vote`): `AsyncGenerator`\<[`VoteStepValue`](../modules#votestepvalue), `any`, `unknown`\>
 
 Submits a vote by steps.
 
@@ -1210,11 +1210,11 @@ Submits a vote by steps.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `vote` | [`Vote`](Vote.md) \| [`AnonymousVote`](AnonymousVote.md) \| [`CspVote`](CspVote.md) | The vote (or votes) to be sent. |
+| `vote` | [`Vote`](Vote.md) \| [`AnonymousVote`](AnonymousVote.md) \| [`CspVote`](CspVote) | The vote (or votes) to be sent. |
 
 #### Returns
 
-`AsyncGenerator`\<[`VoteStepValue`](../modules.md#votestepvalue), `any`, `unknown`\>
+`AsyncGenerator`\<[`VoteStepValue`](../modules#votestepvalue), `any`, `unknown`\>
 
 Vote confirmation id.
 
@@ -1226,7 +1226,7 @@ ___
 
 ### updateAccountInfo
 
-▸ **updateAccountInfo**(`account`): `Promise`\<[`AccountData`](../modules.md#accountdata)\>
+▸ **updateAccountInfo**(`account`): `Promise`\<[`AccountData`](../modules#accountdata)\>
 
 Updates an account with information
 
@@ -1234,11 +1234,11 @@ Updates an account with information
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `account` | [`Account`](Account.md) | Account data. |
+| `account` | [`Account`](Account) | Account data. |
 
 #### Returns
 
-`Promise`\<[`AccountData`](../modules.md#accountdata)\>
+`Promise`\<[`AccountData`](../modules#accountdata)\>
 
 #### Defined in
 
@@ -1256,7 +1256,7 @@ Checks how many times a user can submit their vote
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `options?` | `Partial`\<[`WalletOption`](../modules.md#walletoption) & [`ElectionIdOption`](../modules.md#electionidoption) & [`VoteIdOption`](../modules.md#voteidoption)\> | Options for votes left count |
+| `options?` | `Partial`\<[`WalletOption`](../modules.md#walletoption) & [`ElectionIdOption`](../modules.md#electionidoption) & [`VoteIdOption`](../modules#voteidoption)\> | Options for votes left count |
 
 #### Returns
 

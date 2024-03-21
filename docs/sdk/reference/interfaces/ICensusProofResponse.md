@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / ICensusProofResponse
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / ICensusProofResponse
 
 # Interface: ICensusProofResponse
 
@@ -6,12 +6,12 @@
 
 ### Properties
 
-- [censusProof](ICensusProofResponse.md#censusproof)
-- [censusRoot](ICensusProofResponse.md#censusroot)
-- [censusSiblings](ICensusProofResponse.md#censussiblings)
-- [type](ICensusProofResponse.md#type)
-- [value](ICensusProofResponse.md#value)
-- [weight](ICensusProofResponse.md#weight)
+- [censusProof](ICensusProofResponse#censusproof)
+- [censusRoot](ICensusProofResponse#censusroot)
+- [censusSiblings](ICensusProofResponse#censussiblings)
+- [type](ICensusProofResponse#type)
+- [value](ICensusProofResponse#value)
+- [weight](ICensusProofResponse#weight)
 
 ## Properties
 
@@ -53,7 +53,7 @@ ___
 
 ### type
 
-• **type**: [`CensusType`](../enums/CensusType.md)
+• **type**: [`CensusType`](../enums/CensusType)
 
 The type of the census
 

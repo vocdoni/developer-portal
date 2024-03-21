@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / ICensus3TokenTypesResponse
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / ICensus3TokenTypesResponse
 
 # Interface: ICensus3TokenTypesResponse
 
@@ -6,7 +6,7 @@
 
 ### Properties
 
-- [supportedTypes](ICensus3TokenTypesResponse.md#supportedtypes)
+- [supportedTypes](ICensus3TokenTypesResponse#supportedtypes)
 
 ## Properties
 

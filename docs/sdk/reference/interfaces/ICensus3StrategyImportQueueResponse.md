@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / ICensus3StrategyImportQueueResponse
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / ICensus3StrategyImportQueueResponse
 
 # Interface: ICensus3StrategyImportQueueResponse
 
@@ -6,9 +6,9 @@
 
 ### Properties
 
-- [done](ICensus3StrategyImportQueueResponse.md#done)
-- [error](ICensus3StrategyImportQueueResponse.md#error)
-- [strategy](ICensus3StrategyImportQueueResponse.md#strategy)
+- [done](ICensus3StrategyImportQueueResponse#done)
+- [error](ICensus3StrategyImportQueueResponse#error)
+- [strategy](ICensus3StrategyImportQueueResponse#strategy)
 
 ## Properties
 
@@ -45,7 +45,7 @@ ___
 
 ### strategy
 
-• **strategy**: [`Census3Strategy`](../modules.md#census3strategy)
+• **strategy**: [`Census3Strategy`](../modules#census3strategy)
 
 The imported strategy
 

@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / ICensus3SupportedChain
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / ICensus3SupportedChain
 
 # Interface: ICensus3SupportedChain
 
@@ -6,9 +6,9 @@
 
 ### Properties
 
-- [chainID](ICensus3SupportedChain.md#chainid)
-- [name](ICensus3SupportedChain.md#name)
-- [shortName](ICensus3SupportedChain.md#shortname)
+- [chainID](ICensus3SupportedChain#chainid)
+- [name](ICensus3SupportedChain#name)
+- [shortName](ICensus3SupportedChain#shortname)
 
 ## Properties
 

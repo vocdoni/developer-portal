@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / CircuitInputs
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / CircuitInputs
 
 # Interface: CircuitInputs
 
@@ -6,18 +6,18 @@
 
 ### Properties
 
-- [address](CircuitInputs.md#address)
-- [availableWeight](CircuitInputs.md#availableweight)
-- [censusRoot](CircuitInputs.md#censusroot)
-- [censusSiblings](CircuitInputs.md#censussiblings)
-- [electionId](CircuitInputs.md#electionid)
-- [nullifier](CircuitInputs.md#nullifier)
-- [password](CircuitInputs.md#password)
-- [signature](CircuitInputs.md#signature)
-- [sikRoot](CircuitInputs.md#sikroot)
-- [sikSiblings](CircuitInputs.md#siksiblings)
-- [voteHash](CircuitInputs.md#votehash)
-- [voteWeight](CircuitInputs.md#voteweight)
+- [address](CircuitInputs#address)
+- [availableWeight](CircuitInputs#availableweight)
+- [censusRoot](CircuitInputs#censusroot)
+- [censusSiblings](CircuitInputs#censussiblings)
+- [electionId](CircuitInputs#electionid)
+- [nullifier](CircuitInputs#nullifier)
+- [password](CircuitInputs#password)
+- [signature](CircuitInputs#signature)
+- [sikRoot](CircuitInputs#sikroot)
+- [sikSiblings](CircuitInputs#siksiblings)
+- [voteHash](CircuitInputs#votehash)
+- [voteWeight](CircuitInputs#voteweight)
 
 ## Properties
 

@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / IElectionMode
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / IElectionMode
 
 # Interface: IElectionMode
 
@@ -6,11 +6,11 @@
 
 ### Properties
 
-- [autoStart](IElectionMode.md#autostart)
-- [dynamicCensus](IElectionMode.md#dynamiccensus)
-- [encryptedMetaData](IElectionMode.md#encryptedmetadata)
-- [interruptible](IElectionMode.md#interruptible)
-- [preRegister](IElectionMode.md#preregister)
+- [autoStart](IElectionMode#autostart)
+- [dynamicCensus](IElectionMode#dynamiccensus)
+- [encryptedMetaData](IElectionMode#encryptedmetadata)
+- [interruptible](IElectionMode#interruptible)
+- [preRegister](IElectionMode#preregister)
 
 ## Properties
 

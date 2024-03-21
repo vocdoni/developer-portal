@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / Vote
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / Vote
 
 # Class: Vote
 
@@ -8,15 +8,15 @@ Represents a vote
 
 - **`Vote`**
 
-  ↳ [`AnonymousVote`](AnonymousVote.md)
+  ↳ [`AnonymousVote`](AnonymousVote)
 
-  ↳ [`CspVote`](CspVote.md)
+  ↳ [`CspVote`](CspVote)
 
 ## Table of contents
 
 ### Constructors
 
-- [constructor](Vote.md#constructor)
+- [constructor](Vote#constructor)
 
 ### Properties
 
@@ -24,13 +24,13 @@ Represents a vote
 
 ### Accessors
 
-- [votes](Vote.md#votes)
+- [votes](Vote#votes)
 
 ## Constructors
 
 ### constructor
 
-• **new Vote**(`votes`): [`Vote`](Vote.md)
+• **new Vote**(`votes`): [`Vote`](Vote)
 
 Constructs a vote
 
@@ -42,7 +42,7 @@ Constructs a vote
 
 #### Returns
 
-[`Vote`](Vote.md)
+[`Vote`](Vote)
 
 #### Defined in
 

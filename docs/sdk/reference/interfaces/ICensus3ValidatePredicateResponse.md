@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / ICensus3ValidatePredicateResponse
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / ICensus3ValidatePredicateResponse
 
 # Interface: ICensus3ValidatePredicateResponse
 
@@ -6,7 +6,7 @@
 
 ### Properties
 
-- [result](ICensus3ValidatePredicateResponse.md#result)
+- [result](ICensus3ValidatePredicateResponse#result)
 
 ## Properties
 
@@ -20,7 +20,7 @@ The parsed version of the predicate
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `childs` | [`ICensus3ValidatePredicateChild`](ICensus3ValidatePredicateChild.md) | The childs of the predicate |
+| `childs` | [`ICensus3ValidatePredicateChild`](ICensus3ValidatePredicateChild) | The childs of the predicate |
 
 #### Defined in
 

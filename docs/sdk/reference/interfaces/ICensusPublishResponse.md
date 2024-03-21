@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / ICensusPublishResponse
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / ICensusPublishResponse
 
 # Interface: ICensusPublishResponse
 
@@ -6,8 +6,8 @@
 
 ### Properties
 
-- [censusID](ICensusPublishResponse.md#censusid)
-- [uri](ICensusPublishResponse.md#uri)
+- [censusID](ICensusPublishResponse#censusid)
+- [uri](ICensusPublishResponse#uri)
 
 ## Properties
 

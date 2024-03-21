@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / IChainOrganizationListResponse
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / IChainOrganizationListResponse
 
 # Interface: IChainOrganizationListResponse
 
@@ -6,13 +6,13 @@
 
 ### Properties
 
-- [organizations](IChainOrganizationListResponse.md#organizations)
+- [organizations](IChainOrganizationListResponse#organizations)
 
 ## Properties
 
 ### organizations
 
-• **organizations**: [`IChainOrganizationResponse`](IChainOrganizationResponse.md)[]
+• **organizations**: [`IChainOrganizationResponse`](IChainOrganizationResponse)[]
 
 The list of organizations
 

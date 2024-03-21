@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / IMultiChoiceElectionParameters
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / IMultiChoiceElectionParameters
 
 # Interface: IMultiChoiceElectionParameters
 
@@ -6,7 +6,7 @@ Define election parameters.
 
 ## Hierarchy
 
-- [`IElectionParameters`](IElectionParameters.md)
+- [`IElectionParameters`](IElectionParameters)
 
   ↳ **`IMultiChoiceElectionParameters`**
 
@@ -14,23 +14,23 @@ Define election parameters.
 
 ### Properties
 
-- [addSDKVersion](IMultiChoiceElectionParameters.md#addsdkversion)
-- [canAbstain](IMultiChoiceElectionParameters.md#canabstain)
-- [canRepeatChoices](IMultiChoiceElectionParameters.md#canrepeatchoices)
-- [census](IMultiChoiceElectionParameters.md#census)
-- [description](IMultiChoiceElectionParameters.md#description)
-- [electionType](IMultiChoiceElectionParameters.md#electiontype)
-- [endDate](IMultiChoiceElectionParameters.md#enddate)
-- [header](IMultiChoiceElectionParameters.md#header)
-- [maxCensusSize](IMultiChoiceElectionParameters.md#maxcensussize)
-- [maxNumberOfChoices](IMultiChoiceElectionParameters.md#maxnumberofchoices)
-- [meta](IMultiChoiceElectionParameters.md#meta)
-- [questions](IMultiChoiceElectionParameters.md#questions)
-- [startDate](IMultiChoiceElectionParameters.md#startdate)
-- [streamUri](IMultiChoiceElectionParameters.md#streamuri)
-- [temporarySecretIdentity](IMultiChoiceElectionParameters.md#temporarysecretidentity)
-- [title](IMultiChoiceElectionParameters.md#title)
-- [voteType](IMultiChoiceElectionParameters.md#votetype)
+- [addSDKVersion](IMultiChoiceElectionParameters#addsdkversion)
+- [canAbstain](IMultiChoiceElectionParameters#canabstain)
+- [canRepeatChoices](IMultiChoiceElectionParameters#canrepeatchoices)
+- [census](IMultiChoiceElectionParameters#census)
+- [description](IMultiChoiceElectionParameters#description)
+- [electionType](IMultiChoiceElectionParameters#electiontype)
+- [endDate](IMultiChoiceElectionParameters#enddate)
+- [header](IMultiChoiceElectionParameters#header)
+- [maxCensusSize](IMultiChoiceElectionParameters#maxcensussize)
+- [maxNumberOfChoices](IMultiChoiceElectionParameters#maxnumberofchoices)
+- [meta](IMultiChoiceElectionParameters#meta)
+- [questions](IMultiChoiceElectionParameters#questions)
+- [startDate](IMultiChoiceElectionParameters#startdate)
+- [streamUri](IMultiChoiceElectionParameters#streamuri)
+- [temporarySecretIdentity](IMultiChoiceElectionParameters#temporarysecretidentity)
+- [title](IMultiChoiceElectionParameters#title)
+- [voteType](IMultiChoiceElectionParameters#votetype)
 
 ## Properties
 
@@ -42,7 +42,7 @@ Used to add the SDK version to the election metadata
 
 #### Inherited from
 
-[IElectionParameters](IElectionParameters.md).[addSDKVersion](IElectionParameters.md#addsdkversion)
+[IElectionParameters](IElectionParameters.md).[addSDKVersion](IElectionParameters#addsdkversion)
 
 #### Defined in
 
@@ -72,11 +72,11 @@ ___
 
 ### census
 
-• **census**: [`Census`](../classes/Census.md)
+• **census**: [`Census`](../classes/Census)
 
 #### Inherited from
 
-[IElectionParameters](IElectionParameters.md).[census](IElectionParameters.md#census)
+[IElectionParameters](IElectionParameters.md).[census](IElectionParameters#census)
 
 #### Defined in
 
@@ -92,7 +92,7 @@ Election description
 
 #### Inherited from
 
-[IElectionParameters](IElectionParameters.md).[description](IElectionParameters.md#description)
+[IElectionParameters](IElectionParameters.md).[description](IElectionParameters#description)
 
 #### Defined in
 
@@ -102,11 +102,11 @@ ___
 
 ### electionType
 
-• `Optional` **electionType**: [`IElectionType`](IElectionType.md)
+• `Optional` **electionType**: [`IElectionType`](IElectionType)
 
 #### Inherited from
 
-[IElectionParameters](IElectionParameters.md).[electionType](IElectionParameters.md#electiontype)
+[IElectionParameters](IElectionParameters.md).[electionType](IElectionParameters#electiontype)
 
 #### Defined in
 
@@ -120,7 +120,7 @@ ___
 
 #### Inherited from
 
-[IElectionParameters](IElectionParameters.md).[endDate](IElectionParameters.md#enddate)
+[IElectionParameters](IElectionParameters.md).[endDate](IElectionParameters#enddate)
 
 #### Defined in
 
@@ -136,7 +136,7 @@ Election header image url.
 
 #### Inherited from
 
-[IElectionParameters](IElectionParameters.md).[header](IElectionParameters.md#header)
+[IElectionParameters](IElectionParameters.md).[header](IElectionParameters#header)
 
 #### Defined in
 
@@ -160,7 +160,7 @@ size` error.
 
 #### Inherited from
 
-[IElectionParameters](IElectionParameters.md).[maxCensusSize](IElectionParameters.md#maxcensussize)
+[IElectionParameters](IElectionParameters.md).[maxCensusSize](IElectionParameters#maxcensussize)
 
 #### Defined in
 
@@ -186,7 +186,7 @@ Metadata (anything added by the election creator)
 
 #### Inherited from
 
-[IElectionParameters](IElectionParameters.md).[meta](IElectionParameters.md#meta)
+[IElectionParameters](IElectionParameters.md).[meta](IElectionParameters#meta)
 
 #### Defined in
 
@@ -196,11 +196,11 @@ ___
 
 ### questions
 
-• `Optional` **questions**: [`IQuestion`](IQuestion.md)[]
+• `Optional` **questions**: [`IQuestion`](IQuestion)[]
 
 #### Inherited from
 
-[IElectionParameters](IElectionParameters.md).[questions](IElectionParameters.md#questions)
+[IElectionParameters](IElectionParameters.md).[questions](IElectionParameters#questions)
 
 #### Defined in
 
@@ -214,7 +214,7 @@ ___
 
 #### Inherited from
 
-[IElectionParameters](IElectionParameters.md).[startDate](IElectionParameters.md#startdate)
+[IElectionParameters](IElectionParameters.md).[startDate](IElectionParameters#startdate)
 
 #### Defined in
 
@@ -230,7 +230,7 @@ Election stream Uri (ex: a video url)
 
 #### Inherited from
 
-[IElectionParameters](IElectionParameters.md).[streamUri](IElectionParameters.md#streamuri)
+[IElectionParameters](IElectionParameters.md).[streamUri](IElectionParameters#streamuri)
 
 #### Defined in
 
@@ -246,7 +246,7 @@ Is used to remove the secret identities of the voters once the process is done.
 
 #### Inherited from
 
-[IElectionParameters](IElectionParameters.md).[temporarySecretIdentity](IElectionParameters.md#temporarysecretidentity)
+[IElectionParameters](IElectionParameters.md).[temporarySecretIdentity](IElectionParameters#temporarysecretidentity)
 
 #### Defined in
 
@@ -262,7 +262,7 @@ Election title
 
 #### Inherited from
 
-[IElectionParameters](IElectionParameters.md).[title](IElectionParameters.md#title)
+[IElectionParameters](IElectionParameters.md).[title](IElectionParameters#title)
 
 #### Defined in
 
@@ -272,11 +272,11 @@ ___
 
 ### voteType
 
-• `Optional` **voteType**: [`IVoteType`](IVoteType.md)
+• `Optional` **voteType**: [`IVoteType`](IVoteType)
 
 #### Inherited from
 
-[IElectionParameters](IElectionParameters.md).[voteType](IElectionParameters.md#votetype)
+[IElectionParameters](IElectionParameters.md).[voteType](IElectionParameters#votetype)
 
 #### Defined in
 

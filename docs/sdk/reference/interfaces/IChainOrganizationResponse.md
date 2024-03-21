@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / IChainOrganizationResponse
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / IChainOrganizationResponse
 
 # Interface: IChainOrganizationResponse
 
@@ -6,8 +6,8 @@
 
 ### Properties
 
-- [electionCount](IChainOrganizationResponse.md#electioncount)
-- [organizationID](IChainOrganizationResponse.md#organizationid)
+- [electionCount](IChainOrganizationResponse#electioncount)
+- [organizationID](IChainOrganizationResponse#organizationid)
 
 ## Properties
 

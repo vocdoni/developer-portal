@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / IElectionInfoResponse
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / IElectionInfoResponse
 
 # Interface: IElectionInfoResponse
 
@@ -6,30 +6,30 @@
 
 ### Properties
 
-- [census](IElectionInfoResponse.md#census)
-- [chainId](IElectionInfoResponse.md#chainid)
-- [creationTime](IElectionInfoResponse.md#creationtime)
-- [electionId](IElectionInfoResponse.md#electionid)
-- [electionMode](IElectionInfoResponse.md#electionmode)
-- [endDate](IElectionInfoResponse.md#enddate)
-- [finalResults](IElectionInfoResponse.md#finalresults)
-- [fromArchive](IElectionInfoResponse.md#fromarchive)
-- [manuallyEnded](IElectionInfoResponse.md#manuallyended)
-- [metadata](IElectionInfoResponse.md#metadata)
-- [metadataURL](IElectionInfoResponse.md#metadataurl)
-- [organizationId](IElectionInfoResponse.md#organizationid)
-- [result](IElectionInfoResponse.md#result)
-- [startDate](IElectionInfoResponse.md#startdate)
-- [status](IElectionInfoResponse.md#status)
-- [tallyMode](IElectionInfoResponse.md#tallymode)
-- [voteCount](IElectionInfoResponse.md#votecount)
-- [voteMode](IElectionInfoResponse.md#votemode)
+- [census](IElectionInfoResponse#census)
+- [chainId](IElectionInfoResponse#chainid)
+- [creationTime](IElectionInfoResponse#creationtime)
+- [electionId](IElectionInfoResponse#electionid)
+- [electionMode](IElectionInfoResponse#electionmode)
+- [endDate](IElectionInfoResponse#enddate)
+- [finalResults](IElectionInfoResponse#finalresults)
+- [fromArchive](IElectionInfoResponse#fromarchive)
+- [manuallyEnded](IElectionInfoResponse#manuallyended)
+- [metadata](IElectionInfoResponse#metadata)
+- [metadataURL](IElectionInfoResponse#metadataurl)
+- [organizationId](IElectionInfoResponse#organizationid)
+- [result](IElectionInfoResponse#result)
+- [startDate](IElectionInfoResponse#startdate)
+- [status](IElectionInfoResponse#status)
+- [tallyMode](IElectionInfoResponse#tallymode)
+- [voteCount](IElectionInfoResponse#votecount)
+- [voteMode](IElectionInfoResponse#votemode)
 
 ## Properties
 
 ### census
 
-• **census**: [`ICensus`](ICensus.md)
+• **census**: [`ICensus`](ICensus)
 
 The census of the election
 
@@ -77,7 +77,7 @@ ___
 
 ### electionMode
 
-• **electionMode**: [`IElectionMode`](IElectionMode.md)
+• **electionMode**: [`IElectionMode`](IElectionMode)
 
 The election mode of the election
 
@@ -137,7 +137,7 @@ ___
 
 ### metadata
 
-• **metadata**: [`ElectionMetadata`](ElectionMetadata.md)
+• **metadata**: [`ElectionMetadata`](ElectionMetadata)
 
 The metadata of the election
 
@@ -197,7 +197,7 @@ ___
 
 ### status
 
-• **status**: [`PROCESS_UNKNOWN`](../enums/ElectionStatus.md#process_unknown) \| [`ENDED`](../enums/ElectionStatus.md#ended) \| [`CANCELED`](../enums/ElectionStatus.md#canceled) \| [`PAUSED`](../enums/ElectionStatus.md#paused) \| [`RESULTS`](../enums/ElectionStatus.md#results) \| [`READY`](../enums/ElectionStatusReady.md#ready)
+• **status**: [`PROCESS_UNKNOWN`](../enums/ElectionStatus.md#process_unknown) \| [`ENDED`](../enums/ElectionStatus.md#ended) \| [`CANCELED`](../enums/ElectionStatus.md#canceled) \| [`PAUSED`](../enums/ElectionStatus.md#paused) \| [`RESULTS`](../enums/ElectionStatus.md#results) \| [`READY`](../enums/ElectionStatusReady#ready)
 
 The status of the election
 
@@ -209,7 +209,7 @@ ___
 
 ### tallyMode
 
-• **tallyMode**: [`ITallyMode`](ITallyMode.md)
+• **tallyMode**: [`ITallyMode`](ITallyMode)
 
 The tally mode of the vote
 
@@ -233,7 +233,7 @@ ___
 
 ### voteMode
 
-• **voteMode**: [`IVoteMode`](IVoteMode.md)
+• **voteMode**: [`IVoteMode`](IVoteMode)
 
 The voting mode of the election
 

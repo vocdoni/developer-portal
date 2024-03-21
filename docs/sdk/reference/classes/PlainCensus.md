@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / PlainCensus
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / PlainCensus
 
 # Class: PlainCensus
 
@@ -6,7 +6,7 @@ Represents a plain census
 
 ## Hierarchy
 
-- [`OffchainCensus`](OffchainCensus.md)
+- [`OffchainCensus`](OffchainCensus)
 
   ↳ **`PlainCensus`**
 
@@ -14,7 +14,7 @@ Represents a plain census
 
 ### Constructors
 
-- [constructor](PlainCensus.md#constructor)
+- [constructor](PlainCensus#constructor)
 
 ### Properties
 
@@ -24,38 +24,38 @@ Represents a plain census
 
 ### Accessors
 
-- [censusId](PlainCensus.md#censusid)
-- [censusURI](PlainCensus.md#censusuri)
-- [isPublished](PlainCensus.md#ispublished)
-- [participants](PlainCensus.md#participants)
-- [size](PlainCensus.md#size)
-- [type](PlainCensus.md#type)
-- [weight](PlainCensus.md#weight)
+- [censusId](PlainCensus#censusid)
+- [censusURI](PlainCensus#censusuri)
+- [isPublished](PlainCensus#ispublished)
+- [participants](PlainCensus#participants)
+- [size](PlainCensus#size)
+- [type](PlainCensus#type)
+- [weight](PlainCensus#weight)
 
 ### Methods
 
-- [add](PlainCensus.md#add)
-- [addParticipants](PlainCensus.md#addparticipants)
-- [checkParticipant](PlainCensus.md#checkparticipant)
-- [remove](PlainCensus.md#remove)
-- [removeParticipant](PlainCensus.md#removeparticipant)
-- [censusTypeFromCensusOrigin](PlainCensus.md#censustypefromcensusorigin)
+- [add](PlainCensus#add)
+- [addParticipants](PlainCensus#addparticipants)
+- [checkParticipant](PlainCensus#checkparticipant)
+- [remove](PlainCensus#remove)
+- [removeParticipant](PlainCensus#removeparticipant)
+- [censusTypeFromCensusOrigin](PlainCensus#censustypefromcensusorigin)
 
 ## Constructors
 
 ### constructor
 
-• **new PlainCensus**(): [`PlainCensus`](PlainCensus.md)
+• **new PlainCensus**(): [`PlainCensus`](PlainCensus)
 
 Constructs a plain census
 
 #### Returns
 
-[`PlainCensus`](PlainCensus.md)
+[`PlainCensus`](PlainCensus)
 
 #### Overrides
 
-[OffchainCensus](OffchainCensus.md).[constructor](OffchainCensus.md#constructor)
+[OffchainCensus](OffchainCensus.md).[constructor](OffchainCensus#constructor)
 
 #### Defined in
 
@@ -69,7 +69,7 @@ Constructs a plain census
 
 #### Inherited from
 
-[OffchainCensus](OffchainCensus.md).[_censusId](OffchainCensus.md#_censusid)
+[OffchainCensus](OffchainCensus).[_censusId](OffchainCensus.md#_censusid)
 
 #### Defined in
 
@@ -83,7 +83,7 @@ ___
 
 #### Inherited from
 
-[OffchainCensus](OffchainCensus.md).[_censusURI](OffchainCensus.md#_censusuri)
+[OffchainCensus](OffchainCensus).[_censusURI](OffchainCensus.md#_censusuri)
 
 #### Defined in
 
@@ -93,11 +93,11 @@ ___
 
 ### \_type
 
-• `Protected` **\_type**: [`CensusType`](../enums/CensusType.md)
+• `Protected` **\_type**: [`CensusType`](../enums/CensusType)
 
 #### Inherited from
 
-[OffchainCensus](OffchainCensus.md).[_type](OffchainCensus.md#_type)
+[OffchainCensus](OffchainCensus).[_type](OffchainCensus.md#_type)
 
 #### Defined in
 
@@ -201,11 +201,11 @@ ___
 
 ### participants
 
-• `get` **participants**(): [`ICensusParticipant`](../interfaces/ICensusParticipant.md)[]
+• `get` **participants**(): [`ICensusParticipant`](../interfaces/ICensusParticipant)[]
 
 #### Returns
 
-[`ICensusParticipant`](../interfaces/ICensusParticipant.md)[]
+[`ICensusParticipant`](../interfaces/ICensusParticipant)[]
 
 #### Inherited from
 
@@ -221,7 +221,7 @@ OffchainCensus.participants
 
 | Name | Type |
 | :------ | :------ |
-| `value` | [`ICensusParticipant`](../interfaces/ICensusParticipant.md)[] |
+| `value` | [`ICensusParticipant`](../interfaces/ICensusParticipant)[] |
 
 #### Returns
 
@@ -277,11 +277,11 @@ ___
 
 ### type
 
-• `get` **type**(): [`CensusType`](../enums/CensusType.md)
+• `get` **type**(): [`CensusType`](../enums/CensusType)
 
 #### Returns
 
-[`CensusType`](../enums/CensusType.md)
+[`CensusType`](../enums/CensusType)
 
 #### Inherited from
 
@@ -297,7 +297,7 @@ OffchainCensus.type
 
 | Name | Type |
 | :------ | :------ |
-| `value` | [`CensusType`](../enums/CensusType.md) |
+| `value` | [`CensusType`](../enums/CensusType) |
 
 #### Returns
 
@@ -379,7 +379,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `participants` | [`ICensusParticipant`](../interfaces/ICensusParticipant.md) \| [`ICensusParticipant`](../interfaces/ICensusParticipant.md)[] |
+| `participants` | [`ICensusParticipant`](../interfaces/ICensusParticipant.md) \| [`ICensusParticipant`](../interfaces/ICensusParticipant)[] |
 
 #### Returns
 
@@ -387,7 +387,7 @@ ___
 
 #### Inherited from
 
-[OffchainCensus](OffchainCensus.md).[addParticipants](OffchainCensus.md#addparticipants)
+[OffchainCensus](OffchainCensus.md).[addParticipants](OffchainCensus#addparticipants)
 
 #### Defined in
 
@@ -397,21 +397,21 @@ ___
 
 ### checkParticipant
 
-▸ **checkParticipant**(`participant`): [`ICensusParticipant`](../interfaces/ICensusParticipant.md)
+▸ **checkParticipant**(`participant`): [`ICensusParticipant`](../interfaces/ICensusParticipant)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `participant` | [`ICensusParticipant`](../interfaces/ICensusParticipant.md) |
+| `participant` | [`ICensusParticipant`](../interfaces/ICensusParticipant) |
 
 #### Returns
 
-[`ICensusParticipant`](../interfaces/ICensusParticipant.md)
+[`ICensusParticipant`](../interfaces/ICensusParticipant)
 
 #### Inherited from
 
-[OffchainCensus](OffchainCensus.md).[checkParticipant](OffchainCensus.md#checkparticipant)
+[OffchainCensus](OffchainCensus.md).[checkParticipant](OffchainCensus#checkparticipant)
 
 #### Defined in
 
@@ -455,7 +455,7 @@ ___
 
 #### Inherited from
 
-[OffchainCensus](OffchainCensus.md).[removeParticipant](OffchainCensus.md#removeparticipant)
+[OffchainCensus](OffchainCensus.md).[removeParticipant](OffchainCensus#removeparticipant)
 
 #### Defined in
 
@@ -465,7 +465,7 @@ ___
 
 ### censusTypeFromCensusOrigin
 
-▸ **censusTypeFromCensusOrigin**(`censusOrigin`, `anonymous?`): [`CensusType`](../enums/CensusType.md)
+▸ **censusTypeFromCensusOrigin**(`censusOrigin`, `anonymous?`): [`CensusType`](../enums/CensusType)
 
 #### Parameters
 
@@ -476,11 +476,11 @@ ___
 
 #### Returns
 
-[`CensusType`](../enums/CensusType.md)
+[`CensusType`](../enums/CensusType)
 
 #### Inherited from
 
-[OffchainCensus](OffchainCensus.md).[censusTypeFromCensusOrigin](OffchainCensus.md#censustypefromcensusorigin)
+[OffchainCensus](OffchainCensus.md).[censusTypeFromCensusOrigin](OffchainCensus#censustypefromcensusorigin)
 
 #### Defined in
 

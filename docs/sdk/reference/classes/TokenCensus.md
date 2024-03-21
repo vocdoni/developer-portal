@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / TokenCensus
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / TokenCensus
 
 # Class: TokenCensus
 
@@ -6,7 +6,7 @@ Represents a census3 census
 
 ## Hierarchy
 
-- [`PublishedCensus`](PublishedCensus.md)
+- [`PublishedCensus`](PublishedCensus)
 
   ↳ **`TokenCensus`**
 
@@ -14,7 +14,7 @@ Represents a census3 census
 
 ### Constructors
 
-- [constructor](TokenCensus.md#constructor)
+- [constructor](TokenCensus#constructor)
 
 ### Properties
 
@@ -25,23 +25,23 @@ Represents a census3 census
 
 ### Accessors
 
-- [censusId](TokenCensus.md#censusid)
-- [censusURI](TokenCensus.md#censusuri)
-- [isPublished](TokenCensus.md#ispublished)
-- [size](TokenCensus.md#size)
-- [token](TokenCensus.md#token)
-- [type](TokenCensus.md#type)
-- [weight](TokenCensus.md#weight)
+- [censusId](TokenCensus#censusid)
+- [censusURI](TokenCensus#censusuri)
+- [isPublished](TokenCensus#ispublished)
+- [size](TokenCensus#size)
+- [token](TokenCensus#token)
+- [type](TokenCensus#type)
+- [weight](TokenCensus#weight)
 
 ### Methods
 
-- [censusTypeFromCensusOrigin](TokenCensus.md#censustypefromcensusorigin)
+- [censusTypeFromCensusOrigin](TokenCensus#censustypefromcensusorigin)
 
 ## Constructors
 
 ### constructor
 
-• **new TokenCensus**(`censusId`, `censusURI`, `anonymous`, `token`, `size?`, `weight?`): [`TokenCensus`](TokenCensus.md)
+• **new TokenCensus**(`censusId`, `censusURI`, `anonymous`, `token`, `size?`, `weight?`): [`TokenCensus`](TokenCensus)
 
 Constructs a census3 census
 
@@ -52,17 +52,17 @@ Constructs a census3 census
 | `censusId` | `string` | The id of the census |
 | `censusURI` | `string` | The URI of the census |
 | `anonymous` | `boolean` | If the census is anonymous |
-| `token` | [`Token`](../modules.md#token) | The token of the census |
+| `token` | [`Token`](../modules#token) | The token of the census |
 | `size?` | `number` | The size of the census |
 | `weight?` | `bigint` | The weight of the census |
 
 #### Returns
 
-[`TokenCensus`](TokenCensus.md)
+[`TokenCensus`](TokenCensus)
 
 #### Overrides
 
-[PublishedCensus](PublishedCensus.md).[constructor](PublishedCensus.md#constructor)
+[PublishedCensus](PublishedCensus.md).[constructor](PublishedCensus#constructor)
 
 #### Defined in
 
@@ -76,7 +76,7 @@ Constructs a census3 census
 
 #### Inherited from
 
-[PublishedCensus](PublishedCensus.md).[_censusId](PublishedCensus.md#_censusid)
+[PublishedCensus](PublishedCensus).[_censusId](PublishedCensus.md#_censusid)
 
 #### Defined in
 
@@ -90,7 +90,7 @@ ___
 
 #### Inherited from
 
-[PublishedCensus](PublishedCensus.md).[_censusURI](PublishedCensus.md#_censusuri)
+[PublishedCensus](PublishedCensus).[_censusURI](PublishedCensus.md#_censusuri)
 
 #### Defined in
 
@@ -100,7 +100,7 @@ ___
 
 ### \_token
 
-• `Private` **\_token**: [`Token`](../modules.md#token)
+• `Private` **\_token**: [`Token`](../modules#token)
 
 #### Defined in
 
@@ -110,11 +110,11 @@ ___
 
 ### \_type
 
-• `Protected` **\_type**: [`CensusType`](../enums/CensusType.md)
+• `Protected` **\_type**: [`CensusType`](../enums/CensusType)
 
 #### Inherited from
 
-[PublishedCensus](PublishedCensus.md).[_type](PublishedCensus.md#_type)
+[PublishedCensus](PublishedCensus).[_type](PublishedCensus.md#_type)
 
 #### Defined in
 
@@ -256,11 +256,11 @@ ___
 
 ### token
 
-• `get` **token**(): [`Token`](../modules.md#token)
+• `get` **token**(): [`Token`](../modules#token)
 
 #### Returns
 
-[`Token`](../modules.md#token)
+[`Token`](../modules#token)
 
 #### Defined in
 
@@ -272,7 +272,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `value` | [`Token`](../modules.md#token) |
+| `value` | [`Token`](../modules#token) |
 
 #### Returns
 
@@ -286,11 +286,11 @@ ___
 
 ### type
 
-• `get` **type**(): [`CensusType`](../enums/CensusType.md)
+• `get` **type**(): [`CensusType`](../enums/CensusType)
 
 #### Returns
 
-[`CensusType`](../enums/CensusType.md)
+[`CensusType`](../enums/CensusType)
 
 #### Inherited from
 
@@ -306,7 +306,7 @@ PublishedCensus.type
 
 | Name | Type |
 | :------ | :------ |
-| `value` | [`CensusType`](../enums/CensusType.md) |
+| `value` | [`CensusType`](../enums/CensusType) |
 
 #### Returns
 
@@ -362,7 +362,7 @@ PublishedCensus.weight
 
 ### censusTypeFromCensusOrigin
 
-▸ **censusTypeFromCensusOrigin**(`censusOrigin`, `anonymous?`): [`CensusType`](../enums/CensusType.md)
+▸ **censusTypeFromCensusOrigin**(`censusOrigin`, `anonymous?`): [`CensusType`](../enums/CensusType)
 
 #### Parameters
 
@@ -373,11 +373,11 @@ PublishedCensus.weight
 
 #### Returns
 
-[`CensusType`](../enums/CensusType.md)
+[`CensusType`](../enums/CensusType)
 
 #### Inherited from
 
-[PublishedCensus](PublishedCensus.md).[censusTypeFromCensusOrigin](PublishedCensus.md#censustypefromcensusorigin)
+[PublishedCensus](PublishedCensus.md).[censusTypeFromCensusOrigin](PublishedCensus#censustypefromcensusorigin)
 
 #### Defined in
 

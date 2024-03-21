@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / ElectionMetadata
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / ElectionMetadata
 
 # Interface: ElectionMetadata
 
@@ -9,13 +9,13 @@ More info: https://vocdoni.io/docs/#/architecture/components/process?id=process-
 
 ### Properties
 
-- [description](ElectionMetadata.md#description)
-- [media](ElectionMetadata.md#media)
-- [meta](ElectionMetadata.md#meta)
-- [questions](ElectionMetadata.md#questions)
-- [title](ElectionMetadata.md#title)
-- [type](ElectionMetadata.md#type)
-- [version](ElectionMetadata.md#version)
+- [description](ElectionMetadata#description)
+- [media](ElectionMetadata#media)
+- [meta](ElectionMetadata#meta)
+- [questions](ElectionMetadata#questions)
+- [title](ElectionMetadata#title)
+- [type](ElectionMetadata#type)
+- [version](ElectionMetadata#version)
 
 ## Properties
 
@@ -64,7 +64,7 @@ ___
 
 ### questions
 
-• **questions**: [`IQuestion`](IQuestion.md)[]
+• **questions**: [`IQuestion`](IQuestion)[]
 
 #### Defined in
 
@@ -84,7 +84,7 @@ ___
 
 ### type
 
-• **type**: [`ElectionResultsType`](../modules.md#electionresultstype)
+• **type**: [`ElectionResultsType`](../modules#electionresultstype)
 
 #### Defined in
 

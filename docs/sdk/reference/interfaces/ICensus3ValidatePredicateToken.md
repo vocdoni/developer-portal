@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / ICensus3ValidatePredicateToken
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / ICensus3ValidatePredicateToken
 
 # Interface: ICensus3ValidatePredicateToken
 
@@ -6,7 +6,7 @@
 
 ### Properties
 
-- [literal](ICensus3ValidatePredicateToken.md#literal)
+- [literal](ICensus3ValidatePredicateToken#literal)
 
 ## Properties
 

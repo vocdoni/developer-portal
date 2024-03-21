@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / IElectionKeysResponse
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / IElectionKeysResponse
 
 # Interface: IElectionKeysResponse
 
@@ -6,14 +6,14 @@
 
 ### Properties
 
-- [privateKeys](IElectionKeysResponse.md#privatekeys)
-- [publicKeys](IElectionKeysResponse.md#publickeys)
+- [privateKeys](IElectionKeysResponse#privatekeys)
+- [publicKeys](IElectionKeysResponse#publickeys)
 
 ## Properties
 
 ### privateKeys
 
-• **privateKeys**: [`IEncryptionKey`](IEncryptionKey.md)[]
+• **privateKeys**: [`IEncryptionKey`](IEncryptionKey)[]
 
 #### Defined in
 
@@ -23,7 +23,7 @@ ___
 
 ### publicKeys
 
-• **publicKeys**: [`IEncryptionKey`](IEncryptionKey.md)[]
+• **publicKeys**: [`IEncryptionKey`](IEncryptionKey)[]
 
 #### Defined in
 

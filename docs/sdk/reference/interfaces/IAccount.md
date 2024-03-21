@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / IAccount
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / IAccount
 
 # Interface: IAccount
 
@@ -6,14 +6,14 @@
 
 ### Properties
 
-- [avatar](IAccount.md#avatar)
-- [description](IAccount.md#description)
-- [feed](IAccount.md#feed)
-- [header](IAccount.md#header)
-- [languages](IAccount.md#languages)
-- [logo](IAccount.md#logo)
-- [meta](IAccount.md#meta)
-- [name](IAccount.md#name)
+- [avatar](IAccount#avatar)
+- [description](IAccount#description)
+- [feed](IAccount#feed)
+- [header](IAccount#header)
+- [languages](IAccount#languages)
+- [logo](IAccount#logo)
+- [meta](IAccount#meta)
+- [name](IAccount#name)
 
 ## Properties
 

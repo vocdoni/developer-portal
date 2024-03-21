@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / IChainGetInfoResponse
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / IChainGetInfoResponse
 
 # Interface: IChainGetInfoResponse
 
@@ -6,19 +6,19 @@
 
 ### Properties
 
-- [blockTime](IChainGetInfoResponse.md#blocktime)
-- [blockTimestamp](IChainGetInfoResponse.md#blocktimestamp)
-- [chainId](IChainGetInfoResponse.md#chainid)
-- [circuitConfigurationTag](IChainGetInfoResponse.md#circuitconfigurationtag)
-- [electionCount](IChainGetInfoResponse.md#electioncount)
-- [genesisTime](IChainGetInfoResponse.md#genesistime)
-- [height](IChainGetInfoResponse.md#height)
-- [maxCensusSize](IChainGetInfoResponse.md#maxcensussize)
-- [organizationCount](IChainGetInfoResponse.md#organizationcount)
-- [syncing](IChainGetInfoResponse.md#syncing)
-- [transactionCount](IChainGetInfoResponse.md#transactioncount)
-- [validatorCount](IChainGetInfoResponse.md#validatorcount)
-- [voteCount](IChainGetInfoResponse.md#votecount)
+- [blockTime](IChainGetInfoResponse#blocktime)
+- [blockTimestamp](IChainGetInfoResponse#blocktimestamp)
+- [chainId](IChainGetInfoResponse#chainid)
+- [circuitConfigurationTag](IChainGetInfoResponse#circuitconfigurationtag)
+- [electionCount](IChainGetInfoResponse#electioncount)
+- [genesisTime](IChainGetInfoResponse#genesistime)
+- [height](IChainGetInfoResponse#height)
+- [maxCensusSize](IChainGetInfoResponse#maxcensussize)
+- [organizationCount](IChainGetInfoResponse#organizationcount)
+- [syncing](IChainGetInfoResponse#syncing)
+- [transactionCount](IChainGetInfoResponse#transactioncount)
+- [validatorCount](IChainGetInfoResponse#validatorcount)
+- [voteCount](IChainGetInfoResponse#votecount)
 
 ## Properties
 

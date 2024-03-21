@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / ITallyMode
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / ITallyMode
 
 # Interface: ITallyMode
 
@@ -6,11 +6,11 @@
 
 ### Properties
 
-- [costExponent](ITallyMode.md#costexponent)
-- [maxCount](ITallyMode.md#maxcount)
-- [maxTotalCost](ITallyMode.md#maxtotalcost)
-- [maxValue](ITallyMode.md#maxvalue)
-- [maxVoteOverwrites](ITallyMode.md#maxvoteoverwrites)
+- [costExponent](ITallyMode#costexponent)
+- [maxCount](ITallyMode#maxcount)
+- [maxTotalCost](ITallyMode#maxtotalcost)
+- [maxValue](ITallyMode#maxvalue)
+- [maxVoteOverwrites](ITallyMode#maxvoteoverwrites)
 
 ## Properties
 

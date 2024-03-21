@@ -1,10 +1,10 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / VoteService
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / VoteService
 
 # Class: VoteService
 
 ## Hierarchy
 
-- [`Service`](Service.md)
+- [`Service`](Service)
 
   ↳ **`VoteService`**
 
@@ -16,25 +16,25 @@
 
 ### Constructors
 
-- [constructor](VoteService.md#constructor)
+- [constructor](VoteService#constructor)
 
 ### Properties
 
-- [chainService](VoteService.md#chainservice)
-- [url](VoteService.md#url)
+- [chainService](VoteService#chainservice)
+- [url](VoteService#url)
 
 ### Methods
 
-- [encodeTransaction](VoteService.md#encodetransaction)
-- [info](VoteService.md#info)
-- [signTransaction](VoteService.md#signtransaction)
-- [vote](VoteService.md#vote)
+- [encodeTransaction](VoteService#encodetransaction)
+- [info](VoteService#info)
+- [signTransaction](VoteService#signtransaction)
+- [vote](VoteService#vote)
 
 ## Constructors
 
 ### constructor
 
-• **new VoteService**(`params`): [`VoteService`](VoteService.md)
+• **new VoteService**(`params`): [`VoteService`](VoteService)
 
 Instantiate the election service.
 
@@ -46,11 +46,11 @@ Instantiate the election service.
 
 #### Returns
 
-[`VoteService`](VoteService.md)
+[`VoteService`](VoteService)
 
 #### Overrides
 
-[Service](Service.md).[constructor](Service.md#constructor)
+[Service](Service.md).[constructor](Service#constructor)
 
 #### Defined in
 
@@ -60,7 +60,7 @@ Instantiate the election service.
 
 ### chainService
 
-• **chainService**: [`ChainService`](ChainService.md)
+• **chainService**: [`ChainService`](ChainService)
 
 #### Implementation of
 
@@ -78,7 +78,7 @@ ___
 
 #### Inherited from
 
-[Service](Service.md).[url](Service.md#url)
+[Service](Service.md).[url](Service#url)
 
 #### Defined in
 
@@ -108,7 +108,7 @@ ___
 
 ### info
 
-▸ **info**(`voteId`): `Promise`\<[`IVoteInfoResponse`](../interfaces/IVoteInfoResponse.md)\>
+▸ **info**(`voteId`): `Promise`\<[`IVoteInfoResponse`](../interfaces/IVoteInfoResponse)\>
 
 Get the vote information
 
@@ -120,7 +120,7 @@ Get the vote information
 
 #### Returns
 
-`Promise`\<[`IVoteInfoResponse`](../interfaces/IVoteInfoResponse.md)\>
+`Promise`\<[`IVoteInfoResponse`](../interfaces/IVoteInfoResponse)\>
 
 #### Defined in
 
@@ -152,7 +152,7 @@ ___
 
 ### vote
 
-▸ **vote**(`payload`): `Promise`\<[`IVoteSubmitResponse`](../interfaces/IVoteSubmitResponse.md)\>
+▸ **vote**(`payload`): `Promise`\<[`IVoteSubmitResponse`](../interfaces/IVoteSubmitResponse)\>
 
 Submit the vote to the chain
 
@@ -164,7 +164,7 @@ Submit the vote to the chain
 
 #### Returns
 
-`Promise`\<[`IVoteSubmitResponse`](../interfaces/IVoteSubmitResponse.md)\>
+`Promise`\<[`IVoteSubmitResponse`](../interfaces/IVoteSubmitResponse)\>
 
 #### Defined in
 

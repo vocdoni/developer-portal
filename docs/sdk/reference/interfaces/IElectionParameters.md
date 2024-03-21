@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / IElectionParameters
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / IElectionParameters
 
 # Interface: IElectionParameters
 
@@ -8,32 +8,32 @@ Define election parameters.
 
 - **`IElectionParameters`**
 
-  ↳ [`IPublishedElectionParameters`](IPublishedElectionParameters.md)
+  ↳ [`IPublishedElectionParameters`](IPublishedElectionParameters)
 
-  ↳ [`IMultiChoiceElectionParameters`](IMultiChoiceElectionParameters.md)
+  ↳ [`IMultiChoiceElectionParameters`](IMultiChoiceElectionParameters)
 
-  ↳ [`IBudgetElectionParametersInfo`](IBudgetElectionParametersInfo.md)
+  ↳ [`IBudgetElectionParametersInfo`](IBudgetElectionParametersInfo)
 
-  ↳ [`IApprovalElectionParameters`](IApprovalElectionParameters.md)
+  ↳ [`IApprovalElectionParameters`](IApprovalElectionParameters)
 
 ## Table of contents
 
 ### Properties
 
-- [addSDKVersion](IElectionParameters.md#addsdkversion)
-- [census](IElectionParameters.md#census)
-- [description](IElectionParameters.md#description)
-- [electionType](IElectionParameters.md#electiontype)
-- [endDate](IElectionParameters.md#enddate)
-- [header](IElectionParameters.md#header)
-- [maxCensusSize](IElectionParameters.md#maxcensussize)
-- [meta](IElectionParameters.md#meta)
-- [questions](IElectionParameters.md#questions)
-- [startDate](IElectionParameters.md#startdate)
-- [streamUri](IElectionParameters.md#streamuri)
-- [temporarySecretIdentity](IElectionParameters.md#temporarysecretidentity)
-- [title](IElectionParameters.md#title)
-- [voteType](IElectionParameters.md#votetype)
+- [addSDKVersion](IElectionParameters#addsdkversion)
+- [census](IElectionParameters#census)
+- [description](IElectionParameters#description)
+- [electionType](IElectionParameters#electiontype)
+- [endDate](IElectionParameters#enddate)
+- [header](IElectionParameters#header)
+- [maxCensusSize](IElectionParameters#maxcensussize)
+- [meta](IElectionParameters#meta)
+- [questions](IElectionParameters#questions)
+- [startDate](IElectionParameters#startdate)
+- [streamUri](IElectionParameters#streamuri)
+- [temporarySecretIdentity](IElectionParameters#temporarysecretidentity)
+- [title](IElectionParameters#title)
+- [voteType](IElectionParameters#votetype)
 
 ## Properties
 
@@ -51,7 +51,7 @@ ___
 
 ### census
 
-• **census**: [`Census`](../classes/Census.md)
+• **census**: [`Census`](../classes/Census)
 
 #### Defined in
 
@@ -73,7 +73,7 @@ ___
 
 ### electionType
 
-• `Optional` **electionType**: [`IElectionType`](IElectionType.md)
+• `Optional` **electionType**: [`IElectionType`](IElectionType)
 
 #### Defined in
 
@@ -137,7 +137,7 @@ ___
 
 ### questions
 
-• `Optional` **questions**: [`IQuestion`](IQuestion.md)[]
+• `Optional` **questions**: [`IQuestion`](IQuestion)[]
 
 #### Defined in
 
@@ -193,7 +193,7 @@ ___
 
 ### voteType
 
-• `Optional` **voteType**: [`IVoteType`](IVoteType.md)
+• `Optional` **voteType**: [`IVoteType`](IVoteType)
 
 #### Defined in
 

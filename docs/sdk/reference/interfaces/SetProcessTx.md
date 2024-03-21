@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / SetProcessTx
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / SetProcessTx
 
 # Interface: SetProcessTx
 
@@ -6,15 +6,15 @@
 
 ### Properties
 
-- [censusRoot](SetProcessTx.md#censusroot)
-- [censusURI](SetProcessTx.md#censusuri)
-- [nonce](SetProcessTx.md#nonce)
-- [processId](SetProcessTx.md#processid)
-- [proof](SetProcessTx.md#proof)
-- [questionIndex](SetProcessTx.md#questionindex)
-- [results](SetProcessTx.md#results)
-- [status](SetProcessTx.md#status)
-- [txtype](SetProcessTx.md#txtype)
+- [censusRoot](SetProcessTx#censusroot)
+- [censusURI](SetProcessTx#censusuri)
+- [nonce](SetProcessTx#nonce)
+- [processId](SetProcessTx#processid)
+- [proof](SetProcessTx#proof)
+- [questionIndex](SetProcessTx#questionindex)
+- [results](SetProcessTx#results)
+- [status](SetProcessTx#status)
+- [txtype](SetProcessTx#txtype)
 
 ## Properties
 
@@ -60,7 +60,7 @@ ___
 
 ### proof
 
-• `Optional` **proof**: [`Proof`](Proof.md)
+• `Optional` **proof**: [`Proof`](Proof)
 
 #### Defined in
 
@@ -100,7 +100,7 @@ ___
 
 ### txtype
 
-• **txtype**: [`TxType`](../enums/TxType.md)
+• **txtype**: [`TxType`](../enums/TxType)
 
 #### Defined in
 

@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / FileAPI
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / FileAPI
 
 # Class: FileAPI
 
@@ -12,25 +12,25 @@
 
 ### Constructors
 
-- [constructor](FileAPI.md#constructor)
+- [constructor](FileAPI#constructor)
 
 ### Methods
 
-- [cid](FileAPI.md#cid)
-- [isApiError](FileAPI.md#isapierror)
-- [isUndefinedError](FileAPI.md#isundefinederror)
+- [cid](FileAPI#cid)
+- [isApiError](FileAPI#isapierror)
+- [isUndefinedError](FileAPI#isundefinederror)
 
 ## Constructors
 
 ### constructor
 
-• **new FileAPI**(): [`FileAPI`](FileAPI.md)
+• **new FileAPI**(): [`FileAPI`](FileAPI)
 
 Cannot be constructed.
 
 #### Returns
 
-[`FileAPI`](FileAPI.md)
+[`FileAPI`](FileAPI)
 
 #### Overrides
 

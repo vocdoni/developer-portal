@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / CensusAPI
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / CensusAPI
 
 # Class: CensusAPI
 
@@ -12,34 +12,34 @@
 
 ### Constructors
 
-- [constructor](CensusAPI.md#constructor)
+- [constructor](CensusAPI#constructor)
 
 ### Methods
 
-- [add](CensusAPI.md#add)
-- [create](CensusAPI.md#create)
-- [delete](CensusAPI.md#delete)
-- [export](CensusAPI.md#export)
-- [import](CensusAPI.md#import)
-- [isApiError](CensusAPI.md#isapierror)
-- [isUndefinedError](CensusAPI.md#isundefinederror)
-- [proof](CensusAPI.md#proof)
-- [publish](CensusAPI.md#publish)
-- [size](CensusAPI.md#size)
-- [type](CensusAPI.md#type)
-- [weight](CensusAPI.md#weight)
+- [add](CensusAPI#add)
+- [create](CensusAPI#create)
+- [delete](CensusAPI#delete)
+- [export](CensusAPI#export)
+- [import](CensusAPI#import)
+- [isApiError](CensusAPI#isapierror)
+- [isUndefinedError](CensusAPI#isundefinederror)
+- [proof](CensusAPI#proof)
+- [publish](CensusAPI#publish)
+- [size](CensusAPI#size)
+- [type](CensusAPI#type)
+- [weight](CensusAPI#weight)
 
 ## Constructors
 
 ### constructor
 
-• **new CensusAPI**(): [`CensusAPI`](CensusAPI.md)
+• **new CensusAPI**(): [`CensusAPI`](CensusAPI)
 
 Cannot be constructed.
 
 #### Returns
 
-[`CensusAPI`](CensusAPI.md)
+[`CensusAPI`](CensusAPI)
 
 #### Overrides
 
@@ -88,7 +88,7 @@ Create's a new census in the API.
 | :------ | :------ | :------ |
 | `url` | `string` | API endpoint URL |
 | `authToken` | `string` | Authentication token |
-| `type` | [`CensusType`](../enums/CensusType.md) | Type of census to be created |
+| `type` | [`CensusType`](../enums/CensusType) | Type of census to be created |
 
 #### Returns
 
@@ -128,7 +128,7 @@ ___
 
 ### export
 
-▸ **export**(`url`, `authToken`, `censusId`): `Promise`\<[`ICensusExportResponse`](../interfaces/ICensusExportResponse.md)\>
+▸ **export**(`url`, `authToken`, `censusId`): `Promise`\<[`ICensusExportResponse`](../interfaces/ICensusExportResponse)\>
 
 Exports the given census identifier
 
@@ -142,7 +142,7 @@ Exports the given census identifier
 
 #### Returns
 
-`Promise`\<[`ICensusExportResponse`](../interfaces/ICensusExportResponse.md)\>
+`Promise`\<[`ICensusExportResponse`](../interfaces/ICensusExportResponse)\>
 
 on success
 
@@ -154,7 +154,7 @@ ___
 
 ### import
 
-▸ **import**(`url`, `authToken`, `censusId`, `type`, `rootHash`, `data`): `Promise`\<[`ICensusImportResponse`](../interfaces/ICensusImportResponse.md)\>
+▸ **import**(`url`, `authToken`, `censusId`, `type`, `rootHash`, `data`): `Promise`\<[`ICensusImportResponse`](../interfaces/ICensusImportResponse)\>
 
 Imports data into the given census identifier
 
@@ -171,7 +171,7 @@ Imports data into the given census identifier
 
 #### Returns
 
-`Promise`\<[`ICensusImportResponse`](../interfaces/ICensusImportResponse.md)\>
+`Promise`\<[`ICensusImportResponse`](../interfaces/ICensusImportResponse)\>
 
 on success
 
@@ -232,7 +232,7 @@ ___
 
 ### proof
 
-▸ **proof**(`url`, `censusId`, `key`): `Promise`\<[`ICensusProofResponse`](../interfaces/ICensusProofResponse.md)\>
+▸ **proof**(`url`, `censusId`, `key`): `Promise`\<[`ICensusProofResponse`](../interfaces/ICensusProofResponse)\>
 
 Checks if the specified address is in the specified census
 
@@ -246,7 +246,7 @@ Checks if the specified address is in the specified census
 
 #### Returns
 
-`Promise`\<[`ICensusProofResponse`](../interfaces/ICensusProofResponse.md)\>
+`Promise`\<[`ICensusProofResponse`](../interfaces/ICensusProofResponse)\>
 
 on success
 
@@ -258,7 +258,7 @@ ___
 
 ### publish
 
-▸ **publish**(`url`, `authToken`, `censusId`): `Promise`\<[`ICensusPublishResponse`](../interfaces/ICensusPublishResponse.md)\>
+▸ **publish**(`url`, `authToken`, `censusId`): `Promise`\<[`ICensusPublishResponse`](../interfaces/ICensusPublishResponse)\>
 
 Publishes the census, so it can be used in processes
 
@@ -272,7 +272,7 @@ Publishes the census, so it can be used in processes
 
 #### Returns
 
-`Promise`\<[`ICensusPublishResponse`](../interfaces/ICensusPublishResponse.md)\>
+`Promise`\<[`ICensusPublishResponse`](../interfaces/ICensusPublishResponse)\>
 
 on success
 

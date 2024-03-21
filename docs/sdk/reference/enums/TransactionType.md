@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / TransactionType
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / TransactionType
 
 # Enumeration: TransactionType
 

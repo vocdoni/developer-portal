@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / ICensus3TokenHolderResponse
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / ICensus3TokenHolderResponse
 
 # Interface: ICensus3TokenHolderResponse
 
@@ -6,7 +6,7 @@
 
 ### Properties
 
-- [balance](ICensus3TokenHolderResponse.md#balance)
+- [balance](ICensus3TokenHolderResponse#balance)
 
 ## Properties
 

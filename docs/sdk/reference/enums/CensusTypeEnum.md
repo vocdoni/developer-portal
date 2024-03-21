@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / CensusTypeEnum
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / CensusTypeEnum
 
 # Enumeration: CensusTypeEnum
 
@@ -7,10 +7,10 @@
 ### Enumeration Members
 
 - [CENSUS\_UNKNOWN](CensusTypeEnum.md#census_unknown)
-- [ERC1155](CensusTypeEnum.md#erc1155)
-- [ERC20](CensusTypeEnum.md#erc20)
-- [ERC721](CensusTypeEnum.md#erc721)
-- [ERC777](CensusTypeEnum.md#erc777)
+- [ERC1155](CensusTypeEnum#erc1155)
+- [ERC20](CensusTypeEnum#erc20)
+- [ERC721](CensusTypeEnum#erc721)
+- [ERC777](CensusTypeEnum#erc777)
 - [MINI\_ME](CensusTypeEnum.md#mini_me)
 - [OFF\_CHAIN\_CA](CensusTypeEnum.md#off_chain_ca)
 - [OFF\_CHAIN\_TREE](CensusTypeEnum.md#off_chain_tree)

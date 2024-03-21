@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / MultiChoiceElection
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / MultiChoiceElection
 
 # Class: MultiChoiceElection
 
@@ -6,7 +6,7 @@ Represents a multi choice election
 
 ## Hierarchy
 
-- [`UnpublishedElection`](UnpublishedElection.md)
+- [`UnpublishedElection`](UnpublishedElection)
 
   ↳ **`MultiChoiceElection`**
 
@@ -14,7 +14,7 @@ Represents a multi choice election
 
 ### Constructors
 
-- [constructor](MultiChoiceElection.md#constructor)
+- [constructor](MultiChoiceElection#constructor)
 
 ### Properties
 
@@ -36,42 +36,42 @@ Represents a multi choice election
 
 ### Accessors
 
-- [addSDKVersion](MultiChoiceElection.md#addsdkversion)
-- [canAbstain](MultiChoiceElection.md#canabstain)
-- [canRepeatChoices](MultiChoiceElection.md#canrepeatchoices)
-- [census](MultiChoiceElection.md#census)
-- [description](MultiChoiceElection.md#description)
-- [duration](MultiChoiceElection.md#duration)
-- [electionType](MultiChoiceElection.md#electiontype)
-- [endDate](MultiChoiceElection.md#enddate)
-- [header](MultiChoiceElection.md#header)
-- [maxCensusSize](MultiChoiceElection.md#maxcensussize)
-- [maxNumberOfChoices](MultiChoiceElection.md#maxnumberofchoices)
-- [meta](MultiChoiceElection.md#meta)
-- [questions](MultiChoiceElection.md#questions)
-- [startDate](MultiChoiceElection.md#startdate)
-- [streamUri](MultiChoiceElection.md#streamuri)
-- [temporarySecretIdentity](MultiChoiceElection.md#temporarysecretidentity)
-- [title](MultiChoiceElection.md#title)
-- [voteType](MultiChoiceElection.md#votetype)
+- [addSDKVersion](MultiChoiceElection#addsdkversion)
+- [canAbstain](MultiChoiceElection#canabstain)
+- [canRepeatChoices](MultiChoiceElection#canrepeatchoices)
+- [census](MultiChoiceElection#census)
+- [description](MultiChoiceElection#description)
+- [duration](MultiChoiceElection#duration)
+- [electionType](MultiChoiceElection#electiontype)
+- [endDate](MultiChoiceElection#enddate)
+- [header](MultiChoiceElection#header)
+- [maxCensusSize](MultiChoiceElection#maxcensussize)
+- [maxNumberOfChoices](MultiChoiceElection#maxnumberofchoices)
+- [meta](MultiChoiceElection#meta)
+- [questions](MultiChoiceElection#questions)
+- [startDate](MultiChoiceElection#startdate)
+- [streamUri](MultiChoiceElection#streamuri)
+- [temporarySecretIdentity](MultiChoiceElection#temporarysecretidentity)
+- [title](MultiChoiceElection#title)
+- [voteType](MultiChoiceElection#votetype)
 
 ### Methods
 
-- [addQuestion](MultiChoiceElection.md#addquestion)
-- [generateEnvelopeType](MultiChoiceElection.md#generateenvelopetype)
-- [generateMetadata](MultiChoiceElection.md#generatemetadata)
-- [generateMode](MultiChoiceElection.md#generatemode)
-- [generateVoteOptions](MultiChoiceElection.md#generatevoteoptions)
-- [get](MultiChoiceElection.md#get)
-- [removeQuestion](MultiChoiceElection.md#removequestion)
-- [checkVote](MultiChoiceElection.md#checkvote)
-- [from](MultiChoiceElection.md#from)
+- [addQuestion](MultiChoiceElection#addquestion)
+- [generateEnvelopeType](MultiChoiceElection#generateenvelopetype)
+- [generateMetadata](MultiChoiceElection#generatemetadata)
+- [generateMode](MultiChoiceElection#generatemode)
+- [generateVoteOptions](MultiChoiceElection#generatevoteoptions)
+- [get](MultiChoiceElection#get)
+- [removeQuestion](MultiChoiceElection#removequestion)
+- [checkVote](MultiChoiceElection#checkvote)
+- [from](MultiChoiceElection#from)
 
 ## Constructors
 
 ### constructor
 
-• **new MultiChoiceElection**(`params`): [`MultiChoiceElection`](MultiChoiceElection.md)
+• **new MultiChoiceElection**(`params`): [`MultiChoiceElection`](MultiChoiceElection)
 
 Constructs a multi choice election
 
@@ -79,15 +79,15 @@ Constructs a multi choice election
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `params` | [`IMultiChoiceElectionParameters`](../interfaces/IMultiChoiceElectionParameters.md) | Multi choice election parameters |
+| `params` | [`IMultiChoiceElectionParameters`](../interfaces/IMultiChoiceElectionParameters) | Multi choice election parameters |
 
 #### Returns
 
-[`MultiChoiceElection`](MultiChoiceElection.md)
+[`MultiChoiceElection`](MultiChoiceElection)
 
 #### Overrides
 
-[UnpublishedElection](UnpublishedElection.md).[constructor](UnpublishedElection.md#constructor)
+[UnpublishedElection](UnpublishedElection.md).[constructor](UnpublishedElection#constructor)
 
 #### Defined in
 
@@ -101,7 +101,7 @@ Constructs a multi choice election
 
 #### Inherited from
 
-[UnpublishedElection](UnpublishedElection.md).[_addSDKVersion](UnpublishedElection.md#_addsdkversion)
+[UnpublishedElection](UnpublishedElection).[_addSDKVersion](UnpublishedElection.md#_addsdkversion)
 
 #### Defined in
 
@@ -121,11 +121,11 @@ ___
 
 ### \_census
 
-• `Protected` **\_census**: [`Census`](Census.md)
+• `Protected` **\_census**: [`Census`](Census)
 
 #### Inherited from
 
-[UnpublishedElection](UnpublishedElection.md).[_census](UnpublishedElection.md#_census)
+[UnpublishedElection](UnpublishedElection).[_census](UnpublishedElection.md#_census)
 
 #### Defined in
 
@@ -139,7 +139,7 @@ ___
 
 #### Inherited from
 
-[UnpublishedElection](UnpublishedElection.md).[_description](UnpublishedElection.md#_description)
+[UnpublishedElection](UnpublishedElection).[_description](UnpublishedElection.md#_description)
 
 #### Defined in
 
@@ -149,11 +149,11 @@ ___
 
 ### \_electionType
 
-• `Protected` **\_electionType**: [`IElectionType`](../interfaces/IElectionType.md)
+• `Protected` **\_electionType**: [`IElectionType`](../interfaces/IElectionType)
 
 #### Inherited from
 
-[UnpublishedElection](UnpublishedElection.md).[_electionType](UnpublishedElection.md#_electiontype)
+[UnpublishedElection](UnpublishedElection).[_electionType](UnpublishedElection.md#_electiontype)
 
 #### Defined in
 
@@ -167,7 +167,7 @@ ___
 
 #### Inherited from
 
-[UnpublishedElection](UnpublishedElection.md).[_endDate](UnpublishedElection.md#_enddate)
+[UnpublishedElection](UnpublishedElection).[_endDate](UnpublishedElection.md#_enddate)
 
 #### Defined in
 
@@ -181,7 +181,7 @@ ___
 
 #### Inherited from
 
-[UnpublishedElection](UnpublishedElection.md).[_header](UnpublishedElection.md#_header)
+[UnpublishedElection](UnpublishedElection).[_header](UnpublishedElection.md#_header)
 
 #### Defined in
 
@@ -195,7 +195,7 @@ ___
 
 #### Inherited from
 
-[UnpublishedElection](UnpublishedElection.md).[_maxCensusSize](UnpublishedElection.md#_maxcensussize)
+[UnpublishedElection](UnpublishedElection).[_maxCensusSize](UnpublishedElection.md#_maxcensussize)
 
 #### Defined in
 
@@ -209,7 +209,7 @@ ___
 
 #### Inherited from
 
-[UnpublishedElection](UnpublishedElection.md).[_meta](UnpublishedElection.md#_meta)
+[UnpublishedElection](UnpublishedElection).[_meta](UnpublishedElection.md#_meta)
 
 #### Defined in
 
@@ -219,11 +219,11 @@ ___
 
 ### \_questions
 
-• `Protected` **\_questions**: [`IQuestion`](../interfaces/IQuestion.md)[]
+• `Protected` **\_questions**: [`IQuestion`](../interfaces/IQuestion)[]
 
 #### Inherited from
 
-[UnpublishedElection](UnpublishedElection.md).[_questions](UnpublishedElection.md#_questions)
+[UnpublishedElection](UnpublishedElection).[_questions](UnpublishedElection.md#_questions)
 
 #### Defined in
 
@@ -237,7 +237,7 @@ ___
 
 #### Inherited from
 
-[UnpublishedElection](UnpublishedElection.md).[_startDate](UnpublishedElection.md#_startdate)
+[UnpublishedElection](UnpublishedElection).[_startDate](UnpublishedElection.md#_startdate)
 
 #### Defined in
 
@@ -251,7 +251,7 @@ ___
 
 #### Inherited from
 
-[UnpublishedElection](UnpublishedElection.md).[_streamUri](UnpublishedElection.md#_streamuri)
+[UnpublishedElection](UnpublishedElection).[_streamUri](UnpublishedElection.md#_streamuri)
 
 #### Defined in
 
@@ -265,7 +265,7 @@ ___
 
 #### Inherited from
 
-[UnpublishedElection](UnpublishedElection.md).[_temporarySecretIdentity](UnpublishedElection.md#_temporarysecretidentity)
+[UnpublishedElection](UnpublishedElection).[_temporarySecretIdentity](UnpublishedElection.md#_temporarysecretidentity)
 
 #### Defined in
 
@@ -279,7 +279,7 @@ ___
 
 #### Inherited from
 
-[UnpublishedElection](UnpublishedElection.md).[_title](UnpublishedElection.md#_title)
+[UnpublishedElection](UnpublishedElection).[_title](UnpublishedElection.md#_title)
 
 #### Defined in
 
@@ -289,11 +289,11 @@ ___
 
 ### \_voteType
 
-• `Protected` **\_voteType**: [`IVoteType`](../interfaces/IVoteType.md)
+• `Protected` **\_voteType**: [`IVoteType`](../interfaces/IVoteType)
 
 #### Inherited from
 
-[UnpublishedElection](UnpublishedElection.md).[_voteType](UnpublishedElection.md#_votetype)
+[UnpublishedElection](UnpublishedElection).[_voteType](UnpublishedElection.md#_votetype)
 
 #### Defined in
 
@@ -401,11 +401,11 @@ ___
 
 ### census
 
-• `get` **census**(): [`Census`](Census.md)
+• `get` **census**(): [`Census`](Census)
 
 #### Returns
 
-[`Census`](Census.md)
+[`Census`](Census)
 
 #### Inherited from
 
@@ -421,7 +421,7 @@ UnpublishedElection.census
 
 | Name | Type |
 | :------ | :------ |
-| `value` | [`Census`](Census.md) |
+| `value` | [`Census`](Census) |
 
 #### Returns
 
@@ -495,11 +495,11 @@ ___
 
 ### electionType
 
-• `get` **electionType**(): [`IElectionType`](../interfaces/IElectionType.md)
+• `get` **electionType**(): [`IElectionType`](../interfaces/IElectionType)
 
 #### Returns
 
-[`IElectionType`](../interfaces/IElectionType.md)
+[`IElectionType`](../interfaces/IElectionType)
 
 #### Inherited from
 
@@ -515,7 +515,7 @@ UnpublishedElection.electionType
 
 | Name | Type |
 | :------ | :------ |
-| `value` | [`IElectionType`](../interfaces/IElectionType.md) |
+| `value` | [`IElectionType`](../interfaces/IElectionType) |
 
 #### Returns
 
@@ -715,11 +715,11 @@ ___
 
 ### questions
 
-• `get` **questions**(): [`IQuestion`](../interfaces/IQuestion.md)[]
+• `get` **questions**(): [`IQuestion`](../interfaces/IQuestion)[]
 
 #### Returns
 
-[`IQuestion`](../interfaces/IQuestion.md)[]
+[`IQuestion`](../interfaces/IQuestion)[]
 
 #### Inherited from
 
@@ -735,7 +735,7 @@ UnpublishedElection.questions
 
 | Name | Type |
 | :------ | :------ |
-| `value` | [`IQuestion`](../interfaces/IQuestion.md)[] |
+| `value` | [`IQuestion`](../interfaces/IQuestion)[] |
 
 #### Returns
 
@@ -905,11 +905,11 @@ ___
 
 ### voteType
 
-• `get` **voteType**(): [`IVoteType`](../interfaces/IVoteType.md)
+• `get` **voteType**(): [`IVoteType`](../interfaces/IVoteType)
 
 #### Returns
 
-[`IVoteType`](../interfaces/IVoteType.md)
+[`IVoteType`](../interfaces/IVoteType)
 
 #### Inherited from
 
@@ -925,7 +925,7 @@ UnpublishedElection.voteType
 
 | Name | Type |
 | :------ | :------ |
-| `value` | [`IVoteType`](../interfaces/IVoteType.md) |
+| `value` | [`IVoteType`](../interfaces/IVoteType) |
 
 #### Returns
 
@@ -943,7 +943,7 @@ UnpublishedElection.voteType
 
 ### addQuestion
 
-▸ **addQuestion**(`title`, `description`, `choices`): [`UnpublishedElection`](UnpublishedElection.md)
+▸ **addQuestion**(`title`, `description`, `choices`): [`UnpublishedElection`](UnpublishedElection)
 
 #### Parameters
 
@@ -955,11 +955,11 @@ UnpublishedElection.voteType
 
 #### Returns
 
-[`UnpublishedElection`](UnpublishedElection.md)
+[`UnpublishedElection`](UnpublishedElection)
 
 #### Overrides
 
-[UnpublishedElection](UnpublishedElection.md).[addQuestion](UnpublishedElection.md#addquestion)
+[UnpublishedElection](UnpublishedElection.md).[addQuestion](UnpublishedElection#addquestion)
 
 #### Defined in
 
@@ -977,7 +977,7 @@ ___
 
 #### Overrides
 
-[UnpublishedElection](UnpublishedElection.md).[generateEnvelopeType](UnpublishedElection.md#generateenvelopetype)
+[UnpublishedElection](UnpublishedElection.md).[generateEnvelopeType](UnpublishedElection#generateenvelopetype)
 
 #### Defined in
 
@@ -987,15 +987,15 @@ ___
 
 ### generateMetadata
 
-▸ **generateMetadata**(): [`ElectionMetadata`](../interfaces/ElectionMetadata.md)
+▸ **generateMetadata**(): [`ElectionMetadata`](../interfaces/ElectionMetadata)
 
 #### Returns
 
-[`ElectionMetadata`](../interfaces/ElectionMetadata.md)
+[`ElectionMetadata`](../interfaces/ElectionMetadata)
 
 #### Overrides
 
-[UnpublishedElection](UnpublishedElection.md).[generateMetadata](UnpublishedElection.md#generatemetadata)
+[UnpublishedElection](UnpublishedElection.md).[generateMetadata](UnpublishedElection#generatemetadata)
 
 #### Defined in
 
@@ -1013,7 +1013,7 @@ ___
 
 #### Inherited from
 
-[UnpublishedElection](UnpublishedElection.md).[generateMode](UnpublishedElection.md#generatemode)
+[UnpublishedElection](UnpublishedElection.md).[generateMode](UnpublishedElection#generatemode)
 
 #### Defined in
 
@@ -1031,7 +1031,7 @@ ___
 
 #### Overrides
 
-[UnpublishedElection](UnpublishedElection.md).[generateVoteOptions](UnpublishedElection.md#generatevoteoptions)
+[UnpublishedElection](UnpublishedElection.md).[generateVoteOptions](UnpublishedElection#generatevoteoptions)
 
 #### Defined in
 
@@ -1055,7 +1055,7 @@ ___
 
 #### Inherited from
 
-[UnpublishedElection](UnpublishedElection.md).[get](UnpublishedElection.md#get)
+[UnpublishedElection](UnpublishedElection.md).[get](UnpublishedElection#get)
 
 #### Defined in
 
@@ -1065,7 +1065,7 @@ ___
 
 ### removeQuestion
 
-▸ **removeQuestion**(`questionNumber`): [`UnpublishedElection`](UnpublishedElection.md)
+▸ **removeQuestion**(`questionNumber`): [`UnpublishedElection`](UnpublishedElection)
 
 #### Parameters
 
@@ -1075,11 +1075,11 @@ ___
 
 #### Returns
 
-[`UnpublishedElection`](UnpublishedElection.md)
+[`UnpublishedElection`](UnpublishedElection)
 
 #### Inherited from
 
-[UnpublishedElection](UnpublishedElection.md).[removeQuestion](UnpublishedElection.md#removequestion)
+[UnpublishedElection](UnpublishedElection.md).[removeQuestion](UnpublishedElection#removequestion)
 
 #### Defined in
 
@@ -1095,8 +1095,8 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `vote` | [`Vote`](Vote.md) |
-| `voteType` | [`IVoteType`](../interfaces/IVoteType.md) |
+| `vote` | [`Vote`](Vote) |
+| `voteType` | [`IVoteType`](../interfaces/IVoteType) |
 
 #### Returns
 
@@ -1110,7 +1110,7 @@ ___
 
 ### from
 
-▸ **from**(`params`): [`MultiChoiceElection`](MultiChoiceElection.md)
+▸ **from**(`params`): [`MultiChoiceElection`](MultiChoiceElection)
 
 Returns an unpublished election object
 
@@ -1118,15 +1118,15 @@ Returns an unpublished election object
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `params` | [`IMultiChoiceElectionParameters`](../interfaces/IMultiChoiceElectionParameters.md) | Unpublished Election parameters |
+| `params` | [`IMultiChoiceElectionParameters`](../interfaces/IMultiChoiceElectionParameters) | Unpublished Election parameters |
 
 #### Returns
 
-[`MultiChoiceElection`](MultiChoiceElection.md)
+[`MultiChoiceElection`](MultiChoiceElection)
 
 #### Overrides
 
-[UnpublishedElection](UnpublishedElection.md).[from](UnpublishedElection.md#from)
+[UnpublishedElection](UnpublishedElection.md).[from](UnpublishedElection#from)
 
 #### Defined in
 

@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / IVoteMode
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / IVoteMode
 
 # Interface: IVoteMode
 
@@ -6,11 +6,11 @@
 
 ### Properties
 
-- [anonymous](IVoteMode.md#anonymous)
-- [costFromWeight](IVoteMode.md#costfromweight)
-- [encryptedVotes](IVoteMode.md#encryptedvotes)
-- [serial](IVoteMode.md#serial)
-- [uniqueValues](IVoteMode.md#uniquevalues)
+- [anonymous](IVoteMode#anonymous)
+- [costFromWeight](IVoteMode#costfromweight)
+- [encryptedVotes](IVoteMode#encryptedvotes)
+- [serial](IVoteMode#serial)
+- [uniqueValues](IVoteMode#uniquevalues)
 
 ## Properties
 

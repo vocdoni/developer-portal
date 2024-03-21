@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / ICensus3CensusResponse
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / ICensus3CensusResponse
 
 # Interface: ICensus3CensusResponse
 
@@ -6,14 +6,14 @@
 
 ### Properties
 
-- [ID](ICensus3CensusResponse.md#id)
-- [accuracy](ICensus3CensusResponse.md#accuracy)
-- [anonymous](ICensus3CensusResponse.md#anonymous)
-- [merkleRoot](ICensus3CensusResponse.md#merkleroot)
-- [size](ICensus3CensusResponse.md#size)
-- [strategyID](ICensus3CensusResponse.md#strategyid)
-- [uri](ICensus3CensusResponse.md#uri)
-- [weight](ICensus3CensusResponse.md#weight)
+- [ID](ICensus3CensusResponse#id)
+- [accuracy](ICensus3CensusResponse#accuracy)
+- [anonymous](ICensus3CensusResponse#anonymous)
+- [merkleRoot](ICensus3CensusResponse#merkleroot)
+- [size](ICensus3CensusResponse#size)
+- [strategyID](ICensus3CensusResponse#strategyid)
+- [uri](ICensus3CensusResponse#uri)
+- [weight](ICensus3CensusResponse#weight)
 
 ## Properties
 

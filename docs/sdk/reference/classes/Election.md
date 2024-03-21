@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / Election
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / Election
 
 # Class: Election
 
@@ -8,15 +8,15 @@ Represents an election
 
 - **`Election`**
 
-  ↳ [`UnpublishedElection`](UnpublishedElection.md)
+  ↳ [`UnpublishedElection`](UnpublishedElection)
 
-  ↳ [`PublishedElection`](PublishedElection.md)
+  ↳ [`PublishedElection`](PublishedElection)
 
 ## Table of contents
 
 ### Constructors
 
-- [constructor](Election.md#constructor)
+- [constructor](Election#constructor)
 
 ### Properties
 
@@ -37,31 +37,31 @@ Represents an election
 
 ### Accessors
 
-- [addSDKVersion](Election.md#addsdkversion)
-- [census](Election.md#census)
-- [description](Election.md#description)
-- [electionType](Election.md#electiontype)
-- [endDate](Election.md#enddate)
-- [header](Election.md#header)
-- [maxCensusSize](Election.md#maxcensussize)
-- [meta](Election.md#meta)
-- [questions](Election.md#questions)
-- [startDate](Election.md#startdate)
-- [streamUri](Election.md#streamuri)
-- [temporarySecretIdentity](Election.md#temporarysecretidentity)
-- [title](Election.md#title)
-- [voteType](Election.md#votetype)
+- [addSDKVersion](Election#addsdkversion)
+- [census](Election#census)
+- [description](Election#description)
+- [electionType](Election#electiontype)
+- [endDate](Election#enddate)
+- [header](Election#header)
+- [maxCensusSize](Election#maxcensussize)
+- [meta](Election#meta)
+- [questions](Election#questions)
+- [startDate](Election#startdate)
+- [streamUri](Election#streamuri)
+- [temporarySecretIdentity](Election#temporarysecretidentity)
+- [title](Election#title)
+- [voteType](Election#votetype)
 
 ### Methods
 
-- [get](Election.md#get)
-- [from](Election.md#from)
+- [get](Election#get)
+- [from](Election#from)
 
 ## Constructors
 
 ### constructor
 
-• **new Election**(`params?`): [`Election`](Election.md)
+• **new Election**(`params?`): [`Election`](Election)
 
 Constructs an election
 
@@ -69,11 +69,11 @@ Constructs an election
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `params?` | [`IElectionParameters`](../interfaces/IElectionParameters.md) | Election parameters |
+| `params?` | [`IElectionParameters`](../interfaces/IElectionParameters) | Election parameters |
 
 #### Returns
 
-[`Election`](Election.md)
+[`Election`](Election)
 
 #### Defined in
 
@@ -93,7 +93,7 @@ ___
 
 ### \_census
 
-• `Protected` **\_census**: [`Census`](Census.md)
+• `Protected` **\_census**: [`Census`](Census)
 
 #### Defined in
 
@@ -113,7 +113,7 @@ ___
 
 ### \_electionType
 
-• `Protected` **\_electionType**: [`IElectionType`](../interfaces/IElectionType.md)
+• `Protected` **\_electionType**: [`IElectionType`](../interfaces/IElectionType)
 
 #### Defined in
 
@@ -163,7 +163,7 @@ ___
 
 ### \_questions
 
-• `Protected` **\_questions**: [`IQuestion`](../interfaces/IQuestion.md)[]
+• `Protected` **\_questions**: [`IQuestion`](../interfaces/IQuestion)[]
 
 #### Defined in
 
@@ -213,7 +213,7 @@ ___
 
 ### \_voteType
 
-• `Protected` **\_voteType**: [`IVoteType`](../interfaces/IVoteType.md)
+• `Protected` **\_voteType**: [`IVoteType`](../interfaces/IVoteType)
 
 #### Defined in
 
@@ -237,11 +237,11 @@ ___
 
 ### census
 
-• `get` **census**(): [`Census`](Census.md)
+• `get` **census**(): [`Census`](Census)
 
 #### Returns
 
-[`Census`](Census.md)
+[`Census`](Census)
 
 #### Defined in
 
@@ -265,11 +265,11 @@ ___
 
 ### electionType
 
-• `get` **electionType**(): [`IElectionType`](../interfaces/IElectionType.md)
+• `get` **electionType**(): [`IElectionType`](../interfaces/IElectionType)
 
 #### Returns
 
-[`IElectionType`](../interfaces/IElectionType.md)
+[`IElectionType`](../interfaces/IElectionType)
 
 #### Defined in
 
@@ -335,11 +335,11 @@ ___
 
 ### questions
 
-• `get` **questions**(): [`IQuestion`](../interfaces/IQuestion.md)[]
+• `get` **questions**(): [`IQuestion`](../interfaces/IQuestion)[]
 
 #### Returns
 
-[`IQuestion`](../interfaces/IQuestion.md)[]
+[`IQuestion`](../interfaces/IQuestion)[]
 
 #### Defined in
 
@@ -405,11 +405,11 @@ ___
 
 ### voteType
 
-• `get` **voteType**(): [`IVoteType`](../interfaces/IVoteType.md)
+• `get` **voteType**(): [`IVoteType`](../interfaces/IVoteType)
 
 #### Returns
 
-[`IVoteType`](../interfaces/IVoteType.md)
+[`IVoteType`](../interfaces/IVoteType)
 
 #### Defined in
 
@@ -439,7 +439,7 @@ ___
 
 ### from
 
-▸ **from**(`params`): [`UnpublishedElection`](UnpublishedElection.md)
+▸ **from**(`params`): [`UnpublishedElection`](UnpublishedElection)
 
 Returns an unpublished election object
 
@@ -447,11 +447,11 @@ Returns an unpublished election object
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `params` | [`IElectionParameters`](../interfaces/IElectionParameters.md) | Unpublished Election parameters |
+| `params` | [`IElectionParameters`](../interfaces/IElectionParameters) | Unpublished Election parameters |
 
 #### Returns
 
-[`UnpublishedElection`](UnpublishedElection.md)
+[`UnpublishedElection`](UnpublishedElection)
 
 #### Defined in
 

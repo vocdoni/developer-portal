@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / ICensus3StrategyCreateResponse
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / ICensus3StrategyCreateResponse
 
 # Interface: ICensus3StrategyCreateResponse
 
@@ -6,7 +6,7 @@
 
 ### Properties
 
-- [strategyID](ICensus3StrategyCreateResponse.md#strategyid)
+- [strategyID](ICensus3StrategyCreateResponse#strategyid)
 
 ## Properties
 
