@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / CircuitInputs
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / CircuitInputs
 
 # Interface: CircuitInputs
 
@@ -6,18 +6,18 @@
 
 ### Properties
 
-- [address](CircuitInputs.md#address)
-- [availableWeight](CircuitInputs.md#availableweight)
-- [censusRoot](CircuitInputs.md#censusroot)
-- [censusSiblings](CircuitInputs.md#censussiblings)
-- [electionId](CircuitInputs.md#electionid)
-- [nullifier](CircuitInputs.md#nullifier)
-- [password](CircuitInputs.md#password)
-- [signature](CircuitInputs.md#signature)
-- [sikRoot](CircuitInputs.md#sikroot)
-- [sikSiblings](CircuitInputs.md#siksiblings)
-- [voteHash](CircuitInputs.md#votehash)
-- [voteWeight](CircuitInputs.md#voteweight)
+- [address](CircuitInputs#address)
+- [availableWeight](CircuitInputs#availableweight)
+- [censusRoot](CircuitInputs#censusroot)
+- [censusSiblings](CircuitInputs#censussiblings)
+- [electionId](CircuitInputs#electionid)
+- [nullifier](CircuitInputs#nullifier)
+- [password](CircuitInputs#password)
+- [signature](CircuitInputs#signature)
+- [sikRoot](CircuitInputs#sikroot)
+- [sikSiblings](CircuitInputs#siksiblings)
+- [voteHash](CircuitInputs#votehash)
+- [voteWeight](CircuitInputs#voteweight)
 
 ## Properties
 
@@ -27,7 +27,7 @@
 
 #### Defined in
 
-[services/anonymous.ts:43](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/anonymous.ts#L43)
+[services/anonymous.ts:43](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/anonymous.ts#L43)
 
 ___
 
@@ -37,7 +37,7 @@ ___
 
 #### Defined in
 
-[services/anonymous.ts:38](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/anonymous.ts#L38)
+[services/anonymous.ts:38](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/anonymous.ts#L38)
 
 ___
 
@@ -47,7 +47,7 @@ ___
 
 #### Defined in
 
-[services/anonymous.ts:41](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/anonymous.ts#L41)
+[services/anonymous.ts:41](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/anonymous.ts#L41)
 
 ___
 
@@ -57,7 +57,7 @@ ___
 
 #### Defined in
 
-[services/anonymous.ts:48](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/anonymous.ts#L48)
+[services/anonymous.ts:48](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/anonymous.ts#L48)
 
 ___
 
@@ -67,7 +67,7 @@ ___
 
 #### Defined in
 
-[services/anonymous.ts:36](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/anonymous.ts#L36)
+[services/anonymous.ts:36](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/anonymous.ts#L36)
 
 ___
 
@@ -77,7 +77,7 @@ ___
 
 #### Defined in
 
-[services/anonymous.ts:37](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/anonymous.ts#L37)
+[services/anonymous.ts:37](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/anonymous.ts#L37)
 
 ___
 
@@ -87,7 +87,7 @@ ___
 
 #### Defined in
 
-[services/anonymous.ts:44](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/anonymous.ts#L44)
+[services/anonymous.ts:44](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/anonymous.ts#L44)
 
 ___
 
@@ -97,7 +97,7 @@ ___
 
 #### Defined in
 
-[services/anonymous.ts:45](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/anonymous.ts#L45)
+[services/anonymous.ts:45](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/anonymous.ts#L45)
 
 ___
 
@@ -107,7 +107,7 @@ ___
 
 #### Defined in
 
-[services/anonymous.ts:40](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/anonymous.ts#L40)
+[services/anonymous.ts:40](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/anonymous.ts#L40)
 
 ___
 
@@ -117,7 +117,7 @@ ___
 
 #### Defined in
 
-[services/anonymous.ts:47](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/anonymous.ts#L47)
+[services/anonymous.ts:47](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/anonymous.ts#L47)
 
 ___
 
@@ -127,7 +127,7 @@ ___
 
 #### Defined in
 
-[services/anonymous.ts:39](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/anonymous.ts#L39)
+[services/anonymous.ts:39](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/anonymous.ts#L39)
 
 ___
 
@@ -137,4 +137,4 @@ ___
 
 #### Defined in
 
-[services/anonymous.ts:46](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/anonymous.ts#L46)
+[services/anonymous.ts:46](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/anonymous.ts#L46)

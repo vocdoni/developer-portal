@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / IChainGetInfoResponse
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / IChainGetInfoResponse
 
 # Interface: IChainGetInfoResponse
 
@@ -6,19 +6,19 @@
 
 ### Properties
 
-- [blockTime](IChainGetInfoResponse.md#blocktime)
-- [blockTimestamp](IChainGetInfoResponse.md#blocktimestamp)
-- [chainId](IChainGetInfoResponse.md#chainid)
-- [circuitConfigurationTag](IChainGetInfoResponse.md#circuitconfigurationtag)
-- [electionCount](IChainGetInfoResponse.md#electioncount)
-- [genesisTime](IChainGetInfoResponse.md#genesistime)
-- [height](IChainGetInfoResponse.md#height)
-- [maxCensusSize](IChainGetInfoResponse.md#maxcensussize)
-- [organizationCount](IChainGetInfoResponse.md#organizationcount)
-- [syncing](IChainGetInfoResponse.md#syncing)
-- [transactionCount](IChainGetInfoResponse.md#transactioncount)
-- [validatorCount](IChainGetInfoResponse.md#validatorcount)
-- [voteCount](IChainGetInfoResponse.md#votecount)
+- [blockTime](IChainGetInfoResponse#blocktime)
+- [blockTimestamp](IChainGetInfoResponse#blocktimestamp)
+- [chainId](IChainGetInfoResponse#chainid)
+- [circuitConfigurationTag](IChainGetInfoResponse#circuitconfigurationtag)
+- [electionCount](IChainGetInfoResponse#electioncount)
+- [genesisTime](IChainGetInfoResponse#genesistime)
+- [height](IChainGetInfoResponse#height)
+- [maxCensusSize](IChainGetInfoResponse#maxcensussize)
+- [organizationCount](IChainGetInfoResponse#organizationcount)
+- [syncing](IChainGetInfoResponse#syncing)
+- [transactionCount](IChainGetInfoResponse#transactioncount)
+- [validatorCount](IChainGetInfoResponse#validatorcount)
+- [voteCount](IChainGetInfoResponse#votecount)
 
 ## Properties
 
@@ -30,7 +30,7 @@ The different block times from the chain.
 
 #### Defined in
 
-[api/chain.ts:35](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain.ts#L35)
+[api/chain.ts:35](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L35)
 
 ___
 
@@ -42,7 +42,7 @@ The timestamp of the actual block.
 
 #### Defined in
 
-[api/chain.ts:65](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain.ts#L65)
+[api/chain.ts:65](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L65)
 
 ___
 
@@ -54,7 +54,7 @@ The id of the current chain
 
 #### Defined in
 
-[api/chain.ts:30](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain.ts#L30)
+[api/chain.ts:30](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L30)
 
 ___
 
@@ -66,7 +66,7 @@ The circuit configuration tag.
 
 #### Defined in
 
-[api/chain.ts:85](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain.ts#L85)
+[api/chain.ts:85](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L85)
 
 ___
 
@@ -78,7 +78,7 @@ The number of elections existing on the Vochain.
 
 #### Defined in
 
-[api/chain.ts:40](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain.ts#L40)
+[api/chain.ts:40](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L40)
 
 ___
 
@@ -90,7 +90,7 @@ The time of the genesis block.
 
 #### Defined in
 
-[api/chain.ts:50](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain.ts#L50)
+[api/chain.ts:50](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L50)
 
 ___
 
@@ -102,7 +102,7 @@ The height or actual block of the current chain.
 
 #### Defined in
 
-[api/chain.ts:55](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain.ts#L55)
+[api/chain.ts:55](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L55)
 
 ___
 
@@ -114,7 +114,7 @@ The maximum size of a census.
 
 #### Defined in
 
-[api/chain.ts:90](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain.ts#L90)
+[api/chain.ts:90](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L90)
 
 ___
 
@@ -126,7 +126,7 @@ The number of organizations existing on the Vochain.
 
 #### Defined in
 
-[api/chain.ts:45](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain.ts#L45)
+[api/chain.ts:45](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L45)
 
 ___
 
@@ -138,7 +138,7 @@ Whether the blockchain is syncing.
 
 #### Defined in
 
-[api/chain.ts:60](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain.ts#L60)
+[api/chain.ts:60](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L60)
 
 ___
 
@@ -150,7 +150,7 @@ The number of transactions.
 
 #### Defined in
 
-[api/chain.ts:70](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain.ts#L70)
+[api/chain.ts:70](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L70)
 
 ___
 
@@ -162,7 +162,7 @@ The number of validators.
 
 #### Defined in
 
-[api/chain.ts:75](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain.ts#L75)
+[api/chain.ts:75](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L75)
 
 ___
 
@@ -174,4 +174,4 @@ The number of votes.
 
 #### Defined in
 
-[api/chain.ts:80](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain.ts#L80)
+[api/chain.ts:80](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L80)

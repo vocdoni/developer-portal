@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / CensusType
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / CensusType
 
 # Enumeration: CensusType
 
@@ -6,10 +6,10 @@
 
 ### Enumeration Members
 
-- [ANONYMOUS](CensusType.md#anonymous)
-- [CSP](CensusType.md#csp)
-- [UNKNOWN](CensusType.md#unknown)
-- [WEIGHTED](CensusType.md#weighted)
+- [ANONYMOUS](CensusType#anonymous)
+- [CSP](CensusType#csp)
+- [UNKNOWN](CensusType#unknown)
+- [WEIGHTED](CensusType#weighted)
 
 ## Enumeration Members
 
@@ -19,7 +19,7 @@
 
 #### Defined in
 
-[types/census/census.ts:3](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/census/census.ts#L3)
+[types/census/census.ts:3](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/census/census.ts#L3)
 
 ___
 
@@ -29,7 +29,7 @@ ___
 
 #### Defined in
 
-[types/census/census.ts:4](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/census/census.ts#L4)
+[types/census/census.ts:4](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/census/census.ts#L4)
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 #### Defined in
 
-[types/census/census.ts:5](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/census/census.ts#L5)
+[types/census/census.ts:5](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/census/census.ts#L5)
 
 ___
 
@@ -49,4 +49,4 @@ ___
 
 #### Defined in
 
-[types/census/census.ts:2](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/census/census.ts#L2)
+[types/census/census.ts:2](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/census/census.ts#L2)

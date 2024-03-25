@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / ICensus3ValidatePredicateToken
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / ICensus3ValidatePredicateToken
 
 # Interface: ICensus3ValidatePredicateToken
 
@@ -6,7 +6,7 @@
 
 ### Properties
 
-- [literal](ICensus3ValidatePredicateToken.md#literal)
+- [literal](ICensus3ValidatePredicateToken#literal)
 
 ## Properties
 
@@ -18,4 +18,4 @@ The literal of the predicate
 
 #### Defined in
 
-[api/census3/strategy.ts:204](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/census3/strategy.ts#L204)
+[api/census3/strategy.ts:204](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/census3/strategy.ts#L204)

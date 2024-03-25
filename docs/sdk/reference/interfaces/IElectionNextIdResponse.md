@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / IElectionNextIdResponse
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / IElectionNextIdResponse
 
 # Interface: IElectionNextIdResponse
 
@@ -6,7 +6,7 @@
 
 ### Properties
 
-- [electionID](IElectionNextIdResponse.md#electionid)
+- [electionID](IElectionNextIdResponse#electionid)
 
 ## Properties
 
@@ -18,4 +18,4 @@ The next election identifier
 
 #### Defined in
 
-[api/election.ts:146](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/election.ts#L146)
+[api/election.ts:146](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/election.ts#L146)

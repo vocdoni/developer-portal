@@ -1,3 +1,3 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / ICensusImportResponse
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / ICensusImportResponse
 
 # Interface: ICensusImportResponse

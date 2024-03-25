@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / ICensus3TokenTypesResponse
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / ICensus3TokenTypesResponse
 
 # Interface: ICensus3TokenTypesResponse
 
@@ -6,7 +6,7 @@
 
 ### Properties
 
-- [supportedTypes](ICensus3TokenTypesResponse.md#supportedtypes)
+- [supportedTypes](ICensus3TokenTypesResponse#supportedtypes)
 
 ## Properties
 
@@ -18,4 +18,4 @@ The list of the tokens types
 
 #### Defined in
 
-[api/census3/token.ts:131](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/census3/token.ts#L131)
+[api/census3/token.ts:131](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/census3/token.ts#L131)

@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / AccountAPI
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / AccountAPI
 
 # Class: AccountAPI
 
@@ -12,32 +12,32 @@
 
 ### Constructors
 
-- [constructor](AccountAPI.md#constructor)
+- [constructor](AccountAPI#constructor)
 
 ### Methods
 
-- [count](AccountAPI.md#count)
-- [electionsList](AccountAPI.md#electionslist)
-- [info](AccountAPI.md#info)
-- [isApiError](AccountAPI.md#isapierror)
-- [isUndefinedError](AccountAPI.md#isundefinederror)
-- [list](AccountAPI.md#list)
-- [metadata](AccountAPI.md#metadata)
-- [setInfo](AccountAPI.md#setinfo)
-- [transfersCount](AccountAPI.md#transferscount)
-- [transfersList](AccountAPI.md#transferslist)
+- [count](AccountAPI#count)
+- [electionsList](AccountAPI#electionslist)
+- [info](AccountAPI#info)
+- [isApiError](AccountAPI#isapierror)
+- [isUndefinedError](AccountAPI#isundefinederror)
+- [list](AccountAPI#list)
+- [metadata](AccountAPI#metadata)
+- [setInfo](AccountAPI#setinfo)
+- [transfersCount](AccountAPI#transferscount)
+- [transfersList](AccountAPI#transferslist)
 
 ## Constructors
 
 ### constructor
 
-• **new AccountAPI**(): [`AccountAPI`](AccountAPI.md)
+• **new AccountAPI**(): [`AccountAPI`](AccountAPI)
 
 Cannot be constructed.
 
 #### Returns
 
-[`AccountAPI`](AccountAPI.md)
+[`AccountAPI`](AccountAPI)
 
 #### Overrides
 
@@ -45,13 +45,13 @@ API.constructor
 
 #### Defined in
 
-[api/account.ts:109](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/account.ts#L109)
+[api/account.ts:109](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/account.ts#L109)
 
 ## Methods
 
 ### count
 
-▸ **count**(`url`): `Promise`\<[`IAccountsCountResponse`](../interfaces/IAccountsCountResponse.md)\>
+▸ **count**(`url`): `Promise`\<[`IAccountsCountResponse`](../interfaces/IAccountsCountResponse)\>
 
 Returns the number of accounts
 
@@ -63,17 +63,17 @@ Returns the number of accounts
 
 #### Returns
 
-`Promise`\<[`IAccountsCountResponse`](../interfaces/IAccountsCountResponse.md)\>
+`Promise`\<[`IAccountsCountResponse`](../interfaces/IAccountsCountResponse)\>
 
 #### Defined in
 
-[api/account.ts:133](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/account.ts#L133)
+[api/account.ts:133](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/account.ts#L133)
 
 ___
 
 ### electionsList
 
-▸ **electionsList**(`url`, `accountId`, `page?`): `Promise`\<[`IElectionListResponse`](../interfaces/IElectionListResponse.md)\>
+▸ **electionsList**(`url`, `accountId`, `page?`): `Promise`\<[`IElectionListResponse`](../interfaces/IElectionListResponse)\>
 
 Returns paginated list of elections for a specific account
 
@@ -87,11 +87,11 @@ Returns paginated list of elections for a specific account
 
 #### Returns
 
-`Promise`\<[`IElectionListResponse`](../interfaces/IElectionListResponse.md)\>
+`Promise`\<[`IElectionListResponse`](../interfaces/IElectionListResponse)\>
 
 #### Defined in
 
-[api/account.ts:220](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/account.ts#L220)
+[api/account.ts:220](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/account.ts#L220)
 
 ___
 
@@ -114,7 +114,7 @@ Fetches an Account information
 
 #### Defined in
 
-[api/account.ts:147](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/account.ts#L147)
+[api/account.ts:147](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/account.ts#L147)
 
 ___
 
@@ -138,7 +138,7 @@ API.isApiError
 
 #### Defined in
 
-[api/api.ts:21](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/api.ts#L21)
+[api/api.ts:21](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/api.ts#L21)
 
 ___
 
@@ -163,13 +163,13 @@ API.isUndefinedError
 
 #### Defined in
 
-[api/api.ts:64](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/api.ts#L64)
+[api/api.ts:64](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/api.ts#L64)
 
 ___
 
 ### list
 
-▸ **list**(`url`, `page?`): `Promise`\<[`IAccountsListResponse`](../interfaces/IAccountsListResponse.md)\>
+▸ **list**(`url`, `page?`): `Promise`\<[`IAccountsListResponse`](../interfaces/IAccountsListResponse)\>
 
 Returns paginated list of accounts
 
@@ -182,17 +182,17 @@ Returns paginated list of accounts
 
 #### Returns
 
-`Promise`\<[`IAccountsListResponse`](../interfaces/IAccountsListResponse.md)\>
+`Promise`\<[`IAccountsListResponse`](../interfaces/IAccountsListResponse)\>
 
 #### Defined in
 
-[api/account.ts:120](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/account.ts#L120)
+[api/account.ts:120](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/account.ts#L120)
 
 ___
 
 ### metadata
 
-▸ **metadata**(`url`, `accountId`): `Promise`\<[`AccountMetadata`](../interfaces/AccountMetadata.md)\>
+▸ **metadata**(`url`, `accountId`): `Promise`\<[`AccountMetadata`](../interfaces/AccountMetadata)\>
 
 Fetches the account metadata
 
@@ -205,11 +205,11 @@ Fetches the account metadata
 
 #### Returns
 
-`Promise`\<[`AccountMetadata`](../interfaces/AccountMetadata.md)\>
+`Promise`\<[`AccountMetadata`](../interfaces/AccountMetadata)\>
 
 #### Defined in
 
-[api/account.ts:161](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/account.ts#L161)
+[api/account.ts:161](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/account.ts#L161)
 
 ___
 
@@ -233,13 +233,13 @@ Sets Account information
 
 #### Defined in
 
-[api/account.ts:176](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/account.ts#L176)
+[api/account.ts:176](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/account.ts#L176)
 
 ___
 
 ### transfersCount
 
-▸ **transfersCount**(`url`, `accountId`): `Promise`\<[`IAccountTransfersCountResponse`](../interfaces/IAccountTransfersCountResponse.md)\>
+▸ **transfersCount**(`url`, `accountId`): `Promise`\<[`IAccountTransfersCountResponse`](../interfaces/IAccountTransfersCountResponse)\>
 
 Returns the account's transfers count
 
@@ -252,11 +252,11 @@ Returns the account's transfers count
 
 #### Returns
 
-`Promise`\<[`IAccountTransfersCountResponse`](../interfaces/IAccountTransfersCountResponse.md)\>
+`Promise`\<[`IAccountTransfersCountResponse`](../interfaces/IAccountTransfersCountResponse)\>
 
 #### Defined in
 
-[api/account.ts:205](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/account.ts#L205)
+[api/account.ts:205](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/account.ts#L205)
 
 ___
 
@@ -280,4 +280,4 @@ Returns paginated list of transfers for a specific account
 
 #### Defined in
 
-[api/account.ts:191](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/account.ts#L191)
+[api/account.ts:191](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/account.ts#L191)

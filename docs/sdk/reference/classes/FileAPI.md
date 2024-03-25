@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / FileAPI
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / FileAPI
 
 # Class: FileAPI
 
@@ -12,25 +12,25 @@
 
 ### Constructors
 
-- [constructor](FileAPI.md#constructor)
+- [constructor](FileAPI#constructor)
 
 ### Methods
 
-- [cid](FileAPI.md#cid)
-- [isApiError](FileAPI.md#isapierror)
-- [isUndefinedError](FileAPI.md#isundefinederror)
+- [cid](FileAPI#cid)
+- [isApiError](FileAPI#isapierror)
+- [isUndefinedError](FileAPI#isundefinederror)
 
 ## Constructors
 
 ### constructor
 
-• **new FileAPI**(): [`FileAPI`](FileAPI.md)
+• **new FileAPI**(): [`FileAPI`](FileAPI)
 
 Cannot be constructed.
 
 #### Returns
 
-[`FileAPI`](FileAPI.md)
+[`FileAPI`](FileAPI)
 
 #### Overrides
 
@@ -38,7 +38,7 @@ API.constructor
 
 #### Defined in
 
-[api/file.ts:19](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/file.ts#L19)
+[api/file.ts:19](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/file.ts#L19)
 
 ## Methods
 
@@ -63,7 +63,7 @@ promised IFileCIDResponse
 
 #### Defined in
 
-[api/file.ts:30](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/file.ts#L30)
+[api/file.ts:30](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/file.ts#L30)
 
 ___
 
@@ -87,7 +87,7 @@ API.isApiError
 
 #### Defined in
 
-[api/api.ts:21](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/api.ts#L21)
+[api/api.ts:21](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/api.ts#L21)
 
 ___
 
@@ -112,4 +112,4 @@ API.isUndefinedError
 
 #### Defined in
 
-[api/api.ts:64](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/api.ts#L64)
+[api/api.ts:64](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/api.ts#L64)

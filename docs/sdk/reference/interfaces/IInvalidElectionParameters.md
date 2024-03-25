@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / IInvalidElectionParameters
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / IInvalidElectionParameters
 
 # Interface: IInvalidElectionParameters
 
@@ -6,7 +6,7 @@
 
 ### Properties
 
-- [id](IInvalidElectionParameters.md#id)
+- [id](IInvalidElectionParameters#id)
 
 ## Properties
 
@@ -16,4 +16,4 @@
 
 #### Defined in
 
-[types/election/invalid.ts:2](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/election/invalid.ts#L2)
+[types/election/invalid.ts:2](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/election/invalid.ts#L2)

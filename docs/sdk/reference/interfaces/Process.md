@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / Process
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / Process
 
 # Interface: Process
 
@@ -6,37 +6,37 @@
 
 ### Properties
 
-- [blockCount](Process.md#blockcount)
-- [censusOrigin](Process.md#censusorigin)
-- [censusRoot](Process.md#censusroot)
-- [censusURI](Process.md#censusuri)
-- [encryptionPrivateKeys](Process.md#encryptionprivatekeys)
-- [encryptionPublicKeys](Process.md#encryptionpublickeys)
-- [entityId](Process.md#entityid)
-- [envelopeType](Process.md#envelopetype)
-- [ethIndexSlot](Process.md#ethindexslot)
-- [keyIndex](Process.md#keyindex)
-- [maxCensusSize](Process.md#maxcensussize)
-- [metadata](Process.md#metadata)
-- [mode](Process.md#mode)
-- [namespace](Process.md#namespace)
-- [nullifiersRoot](Process.md#nullifiersroot)
-- [owner](Process.md#owner)
-- [paramsSignature](Process.md#paramssignature)
-- [processId](Process.md#processid)
-- [questionCount](Process.md#questioncount)
-- [questionIndex](Process.md#questionindex)
-- [results](Process.md#results)
-- [resultsSignatures](Process.md#resultssignatures)
-- [rollingCensusRoot](Process.md#rollingcensusroot)
-- [rollingCensusSize](Process.md#rollingcensussize)
-- [sourceBlockHeight](Process.md#sourceblockheight)
-- [sourceNetworkContractAddr](Process.md#sourcenetworkcontractaddr)
-- [sourceNetworkId](Process.md#sourcenetworkid)
-- [startBlock](Process.md#startblock)
-- [status](Process.md#status)
-- [tokenDecimals](Process.md#tokendecimals)
-- [voteOptions](Process.md#voteoptions)
+- [blockCount](Process#blockcount)
+- [censusOrigin](Process#censusorigin)
+- [censusRoot](Process#censusroot)
+- [censusURI](Process#censusuri)
+- [encryptionPrivateKeys](Process#encryptionprivatekeys)
+- [encryptionPublicKeys](Process#encryptionpublickeys)
+- [entityId](Process#entityid)
+- [envelopeType](Process#envelopetype)
+- [ethIndexSlot](Process#ethindexslot)
+- [keyIndex](Process#keyindex)
+- [maxCensusSize](Process#maxcensussize)
+- [metadata](Process#metadata)
+- [mode](Process#mode)
+- [namespace](Process#namespace)
+- [nullifiersRoot](Process#nullifiersroot)
+- [owner](Process#owner)
+- [paramsSignature](Process#paramssignature)
+- [processId](Process#processid)
+- [questionCount](Process#questioncount)
+- [questionIndex](Process#questionindex)
+- [results](Process#results)
+- [resultsSignatures](Process#resultssignatures)
+- [rollingCensusRoot](Process#rollingcensusroot)
+- [rollingCensusSize](Process#rollingcensussize)
+- [sourceBlockHeight](Process#sourceblockheight)
+- [sourceNetworkContractAddr](Process#sourcenetworkcontractaddr)
+- [sourceNetworkId](Process#sourcenetworkid)
+- [startBlock](Process#startblock)
+- [status](Process#status)
+- [tokenDecimals](Process#tokendecimals)
+- [voteOptions](Process#voteoptions)
 
 ## Properties
 
@@ -48,17 +48,17 @@ BlockCount represents the amount of tendermint blocks that the process will last
 
 #### Defined in
 
-[api/chain/transactions.ts:174](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain/transactions.ts#L174)
+[api/chain/transactions.ts:174](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain/transactions.ts#L174)
 
 ___
 
 ### censusOrigin
 
-• **censusOrigin**: [`CensusOrigin`](../enums/CensusOrigin.md)
+• **censusOrigin**: [`CensusOrigin`](../enums/CensusOrigin)
 
 #### Defined in
 
-[api/chain/transactions.ts:192](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain/transactions.ts#L192)
+[api/chain/transactions.ts:192](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain/transactions.ts#L192)
 
 ___
 
@@ -70,7 +70,7 @@ CensusRoot merkle root of all the census in the process
 
 #### Defined in
 
-[api/chain/transactions.ts:176](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain/transactions.ts#L176)
+[api/chain/transactions.ts:176](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain/transactions.ts#L176)
 
 ___
 
@@ -82,7 +82,7 @@ CensusURI where to find the census
 
 #### Defined in
 
-[api/chain/transactions.ts:178](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain/transactions.ts#L178)
+[api/chain/transactions.ts:178](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain/transactions.ts#L178)
 
 ___
 
@@ -94,7 +94,7 @@ EncryptionPrivateKeys are the keys required to decrypt the votes
 
 #### Defined in
 
-[api/chain/transactions.ts:180](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain/transactions.ts#L180)
+[api/chain/transactions.ts:180](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain/transactions.ts#L180)
 
 ___
 
@@ -106,7 +106,7 @@ EncryptionPublicKeys are the keys required to encrypt the votes
 
 #### Defined in
 
-[api/chain/transactions.ts:182](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain/transactions.ts#L182)
+[api/chain/transactions.ts:182](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain/transactions.ts#L182)
 
 ___
 
@@ -118,7 +118,7 @@ EntityId identifies unequivocally an entity
 
 #### Defined in
 
-[api/chain/transactions.ts:170](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain/transactions.ts#L170)
+[api/chain/transactions.ts:170](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain/transactions.ts#L170)
 
 ___
 
@@ -128,7 +128,7 @@ ___
 
 #### Defined in
 
-[api/chain/transactions.ts:187](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain/transactions.ts#L187)
+[api/chain/transactions.ts:187](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain/transactions.ts#L187)
 
 ___
 
@@ -138,7 +138,7 @@ ___
 
 #### Defined in
 
-[api/chain/transactions.ts:195](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain/transactions.ts#L195)
+[api/chain/transactions.ts:195](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain/transactions.ts#L195)
 
 ___
 
@@ -148,7 +148,7 @@ ___
 
 #### Defined in
 
-[api/chain/transactions.ts:183](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain/transactions.ts#L183)
+[api/chain/transactions.ts:183](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain/transactions.ts#L183)
 
 ___
 
@@ -160,7 +160,7 @@ MaxCensusSize is set by the Process creator.
 
 #### Defined in
 
-[api/chain/transactions.ts:205](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain/transactions.ts#L205)
+[api/chain/transactions.ts:205](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain/transactions.ts#L205)
 
 ___
 
@@ -172,7 +172,7 @@ Metadata is the content hashed URI of the JSON meta data (See Data Origins)
 
 #### Defined in
 
-[api/chain/transactions.ts:201](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain/transactions.ts#L201)
+[api/chain/transactions.ts:201](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain/transactions.ts#L201)
 
 ___
 
@@ -182,7 +182,7 @@ ___
 
 #### Defined in
 
-[api/chain/transactions.ts:188](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain/transactions.ts#L188)
+[api/chain/transactions.ts:188](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain/transactions.ts#L188)
 
 ___
 
@@ -192,7 +192,7 @@ ___
 
 #### Defined in
 
-[api/chain/transactions.ts:186](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain/transactions.ts#L186)
+[api/chain/transactions.ts:186](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain/transactions.ts#L186)
 
 ___
 
@@ -205,7 +205,7 @@ Used when Mode.PreRegister = true.
 
 #### Defined in
 
-[api/chain/transactions.ts:220](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain/transactions.ts#L220)
+[api/chain/transactions.ts:220](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain/transactions.ts#L220)
 
 ___
 
@@ -217,7 +217,7 @@ Owner is the creator of a process (if any) otherwise is assumed the creator is t
 
 #### Defined in
 
-[api/chain/transactions.ts:199](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain/transactions.ts#L199)
+[api/chain/transactions.ts:199](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain/transactions.ts#L199)
 
 ___
 
@@ -227,7 +227,7 @@ ___
 
 #### Defined in
 
-[api/chain/transactions.ts:185](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain/transactions.ts#L185)
+[api/chain/transactions.ts:185](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain/transactions.ts#L185)
 
 ___
 
@@ -237,7 +237,7 @@ ___
 
 #### Defined in
 
-[api/chain/transactions.ts:168](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain/transactions.ts#L168)
+[api/chain/transactions.ts:168](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain/transactions.ts#L168)
 
 ___
 
@@ -247,7 +247,7 @@ ___
 
 #### Defined in
 
-[api/chain/transactions.ts:190](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain/transactions.ts#L190)
+[api/chain/transactions.ts:190](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain/transactions.ts#L190)
 
 ___
 
@@ -257,7 +257,7 @@ ___
 
 #### Defined in
 
-[api/chain/transactions.ts:189](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain/transactions.ts#L189)
+[api/chain/transactions.ts:189](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain/transactions.ts#L189)
 
 ___
 
@@ -267,7 +267,7 @@ ___
 
 #### Defined in
 
-[api/chain/transactions.ts:193](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain/transactions.ts#L193)
+[api/chain/transactions.ts:193](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain/transactions.ts#L193)
 
 ___
 
@@ -277,7 +277,7 @@ ___
 
 #### Defined in
 
-[api/chain/transactions.ts:194](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain/transactions.ts#L194)
+[api/chain/transactions.ts:194](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain/transactions.ts#L194)
 
 ___
 
@@ -290,7 +290,7 @@ vocdoni-node when Mode.Process = true
 
 #### Defined in
 
-[api/chain/transactions.ts:210](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain/transactions.ts#L210)
+[api/chain/transactions.ts:210](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain/transactions.ts#L210)
 
 ___
 
@@ -303,7 +303,7 @@ true and the StartBlock has been reached.
 
 #### Defined in
 
-[api/chain/transactions.ts:215](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain/transactions.ts#L215)
+[api/chain/transactions.ts:215](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain/transactions.ts#L215)
 
 ___
 
@@ -315,7 +315,7 @@ SourceBlockHeight is the block height of the origin blockchain (if any)
 
 #### Defined in
 
-[api/chain/transactions.ts:197](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain/transactions.ts#L197)
+[api/chain/transactions.ts:197](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain/transactions.ts#L197)
 
 ___
 
@@ -328,7 +328,7 @@ the contract address of the token that is going to define the census
 
 #### Defined in
 
-[api/chain/transactions.ts:225](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain/transactions.ts#L225)
+[api/chain/transactions.ts:225](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain/transactions.ts#L225)
 
 ___
 
@@ -340,7 +340,7 @@ SourceNetworkId is the identifier of the network origin (where the process have 
 
 #### Defined in
 
-[api/chain/transactions.ts:203](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain/transactions.ts#L203)
+[api/chain/transactions.ts:203](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain/transactions.ts#L203)
 
 ___
 
@@ -352,7 +352,7 @@ StartBlock represents the tendermint block where the process goes from scheduled
 
 #### Defined in
 
-[api/chain/transactions.ts:172](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain/transactions.ts#L172)
+[api/chain/transactions.ts:172](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain/transactions.ts#L172)
 
 ___
 
@@ -362,7 +362,7 @@ ___
 
 #### Defined in
 
-[api/chain/transactions.ts:184](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain/transactions.ts#L184)
+[api/chain/transactions.ts:184](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain/transactions.ts#L184)
 
 ___
 
@@ -375,7 +375,7 @@ It is normally used for processes with on-chain census
 
 #### Defined in
 
-[api/chain/transactions.ts:230](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain/transactions.ts#L230)
+[api/chain/transactions.ts:230](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain/transactions.ts#L230)
 
 ___
 
@@ -385,4 +385,4 @@ ___
 
 #### Defined in
 
-[api/chain/transactions.ts:191](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain/transactions.ts#L191)
+[api/chain/transactions.ts:191](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain/transactions.ts#L191)

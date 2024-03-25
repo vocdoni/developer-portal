@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / EnvOptions
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / EnvOptions
 
 # Enumeration: EnvOptions
 
@@ -6,9 +6,9 @@
 
 ### Enumeration Members
 
-- [DEV](EnvOptions.md#dev)
-- [PROD](EnvOptions.md#prod)
-- [STG](EnvOptions.md#stg)
+- [DEV](EnvOptions#dev)
+- [PROD](EnvOptions#prod)
+- [STG](EnvOptions#stg)
 
 ## Enumeration Members
 
@@ -18,7 +18,7 @@
 
 #### Defined in
 
-[client.ts:58](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/client.ts#L58)
+[client.ts:58](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/client.ts#L58)
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 #### Defined in
 
-[client.ts:60](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/client.ts#L60)
+[client.ts:60](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/client.ts#L60)
 
 ___
 
@@ -38,4 +38,4 @@ ___
 
 #### Defined in
 
-[client.ts:59](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/client.ts#L59)
+[client.ts:59](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/client.ts#L59)

@@ -4,6 +4,11 @@ There are two types of census origins: Those who depend on a list of public keys
 
 The second case, referred to as an on-chain census, enables the weighted set of eligible voters for a process to be derived from the token holder balances for some ERC-20 Ethereum token. This is possible through the use of Ethereum Storage Proofs.
 
+
+:::tip census3
+This page describes how the token-based census works at a low-level. In order to facilitate the usage of token-based censuses, we provide the [Census3](/sdk/integration-details/census-types/on-chain) service. The Census3 Service is an API service which provides an easy way to create censuses for elections with holders of a single token or a combination of them. This is a wrapper of the on-chain census design and enables integrators to use on-chain censuses without manually registering tokens or generating storage proofs.
+:::
+
 ### ERC-20 Token Storage Proofs
 
 Each Ethereum account has its own Storage Trie, which is where all of the contract data lives for that account. A 256-bit hash of the storage trie’s root node is stored as the storageRoot value in the global Ethereum state trie. In the context of storage proofs, we are concerned with ERC-20 Token Smart Contract accounts, whose Storage Tries contain the list of token balances of each token holder. 

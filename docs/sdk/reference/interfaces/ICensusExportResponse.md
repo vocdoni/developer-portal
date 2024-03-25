@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / ICensusExportResponse
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / ICensusExportResponse
 
 # Interface: ICensusExportResponse
 
@@ -6,10 +6,10 @@
 
 ### Properties
 
-- [data](ICensusExportResponse.md#data)
-- [maxLevels](ICensusExportResponse.md#maxlevels)
-- [rootHash](ICensusExportResponse.md#roothash)
-- [type](ICensusExportResponse.md#type)
+- [data](ICensusExportResponse#data)
+- [maxLevels](ICensusExportResponse#maxlevels)
+- [rootHash](ICensusExportResponse#roothash)
+- [type](ICensusExportResponse#type)
 
 ## Properties
 
@@ -21,7 +21,7 @@ The data of the census
 
 #### Defined in
 
-[api/census.ts:54](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/census.ts#L54)
+[api/census.ts:54](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/census.ts#L54)
 
 ___
 
@@ -33,7 +33,7 @@ The max levels of the census
 
 #### Defined in
 
-[api/census.ts:59](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/census.ts#L59)
+[api/census.ts:59](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/census.ts#L59)
 
 ___
 
@@ -45,7 +45,7 @@ The root hash of the census
 
 #### Defined in
 
-[api/census.ts:49](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/census.ts#L49)
+[api/census.ts:49](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/census.ts#L49)
 
 ___
 
@@ -57,4 +57,4 @@ The type of the census
 
 #### Defined in
 
-[api/census.ts:44](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/census.ts#L44)
+[api/census.ts:44](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/census.ts#L44)

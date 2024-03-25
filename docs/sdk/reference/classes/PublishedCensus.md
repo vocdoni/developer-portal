@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / PublishedCensus
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / PublishedCensus
 
 # Class: PublishedCensus
 
@@ -6,17 +6,17 @@ Represents a published census
 
 ## Hierarchy
 
-- [`Census`](Census.md)
+- [`Census`](Census)
 
   ↳ **`PublishedCensus`**
 
-  ↳↳ [`TokenCensus`](TokenCensus.md)
+  ↳↳ [`TokenCensus`](TokenCensus)
 
 ## Table of contents
 
 ### Constructors
 
-- [constructor](PublishedCensus.md#constructor)
+- [constructor](PublishedCensus#constructor)
 
 ### Properties
 
@@ -26,22 +26,22 @@ Represents a published census
 
 ### Accessors
 
-- [censusId](PublishedCensus.md#censusid)
-- [censusURI](PublishedCensus.md#censusuri)
-- [isPublished](PublishedCensus.md#ispublished)
-- [size](PublishedCensus.md#size)
-- [type](PublishedCensus.md#type)
-- [weight](PublishedCensus.md#weight)
+- [censusId](PublishedCensus#censusid)
+- [censusURI](PublishedCensus#censusuri)
+- [isPublished](PublishedCensus#ispublished)
+- [size](PublishedCensus#size)
+- [type](PublishedCensus#type)
+- [weight](PublishedCensus#weight)
 
 ### Methods
 
-- [censusTypeFromCensusOrigin](PublishedCensus.md#censustypefromcensusorigin)
+- [censusTypeFromCensusOrigin](PublishedCensus#censustypefromcensusorigin)
 
 ## Constructors
 
 ### constructor
 
-• **new PublishedCensus**(`censusId`, `censusURI`, `type`, `size?`, `weight?`): [`PublishedCensus`](PublishedCensus.md)
+• **new PublishedCensus**(`censusId`, `censusURI`, `type`, `size?`, `weight?`): [`PublishedCensus`](PublishedCensus)
 
 Constructs a published census
 
@@ -51,21 +51,21 @@ Constructs a published census
 | :------ | :------ | :------ |
 | `censusId` | `string` | The id of the census |
 | `censusURI` | `string` | The URI of the census |
-| `type` | [`CensusType`](../enums/CensusType.md) | The type of the census |
+| `type` | [`CensusType`](../enums/CensusType) | The type of the census |
 | `size?` | `number` | The size of the census |
 | `weight?` | `bigint` | The weight of the census |
 
 #### Returns
 
-[`PublishedCensus`](PublishedCensus.md)
+[`PublishedCensus`](PublishedCensus)
 
 #### Overrides
 
-[Census](Census.md).[constructor](Census.md#constructor)
+[Census](Census.md).[constructor](Census#constructor)
 
 #### Defined in
 
-[types/census/published.ts:17](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/census/published.ts#L17)
+[types/census/published.ts:17](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/census/published.ts#L17)
 
 ## Properties
 
@@ -75,11 +75,11 @@ Constructs a published census
 
 #### Inherited from
 
-[Census](Census.md).[_censusId](Census.md#_censusid)
+[Census](Census).[_censusId](Census.md#_censusid)
 
 #### Defined in
 
-[types/census/census.ts:12](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/census/census.ts#L12)
+[types/census/census.ts:12](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/census/census.ts#L12)
 
 ___
 
@@ -89,25 +89,25 @@ ___
 
 #### Inherited from
 
-[Census](Census.md).[_censusURI](Census.md#_censusuri)
+[Census](Census).[_censusURI](Census.md#_censusuri)
 
 #### Defined in
 
-[types/census/census.ts:13](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/census/census.ts#L13)
+[types/census/census.ts:13](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/census/census.ts#L13)
 
 ___
 
 ### \_type
 
-• `Protected` **\_type**: [`CensusType`](../enums/CensusType.md)
+• `Protected` **\_type**: [`CensusType`](../enums/CensusType)
 
 #### Inherited from
 
-[Census](Census.md).[_type](Census.md#_type)
+[Census](Census).[_type](Census.md#_type)
 
 #### Defined in
 
-[types/census/census.ts:14](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/census/census.ts#L14)
+[types/census/census.ts:14](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/census/census.ts#L14)
 
 ## Accessors
 
@@ -125,7 +125,7 @@ Census.censusId
 
 #### Defined in
 
-[types/census/census.ts:35](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/census/census.ts#L35)
+[types/census/census.ts:35](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/census/census.ts#L35)
 
 • `set` **censusId**(`value`): `void`
 
@@ -145,7 +145,7 @@ Census.censusId
 
 #### Defined in
 
-[types/census/census.ts:39](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/census/census.ts#L39)
+[types/census/census.ts:39](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/census/census.ts#L39)
 
 ___
 
@@ -163,7 +163,7 @@ Census.censusURI
 
 #### Defined in
 
-[types/census/census.ts:43](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/census/census.ts#L43)
+[types/census/census.ts:43](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/census/census.ts#L43)
 
 • `set` **censusURI**(`value`): `void`
 
@@ -183,7 +183,7 @@ Census.censusURI
 
 #### Defined in
 
-[types/census/census.ts:47](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/census/census.ts#L47)
+[types/census/census.ts:47](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/census/census.ts#L47)
 
 ___
 
@@ -201,7 +201,7 @@ Census.isPublished
 
 #### Defined in
 
-[types/census/census.ts:75](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/census/census.ts#L75)
+[types/census/census.ts:75](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/census/census.ts#L75)
 
 ___
 
@@ -219,7 +219,7 @@ Census.size
 
 #### Defined in
 
-[types/census/census.ts:59](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/census/census.ts#L59)
+[types/census/census.ts:59](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/census/census.ts#L59)
 
 • `set` **size**(`value`): `void`
 
@@ -239,17 +239,17 @@ Census.size
 
 #### Defined in
 
-[types/census/census.ts:63](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/census/census.ts#L63)
+[types/census/census.ts:63](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/census/census.ts#L63)
 
 ___
 
 ### type
 
-• `get` **type**(): [`CensusType`](../enums/CensusType.md)
+• `get` **type**(): [`CensusType`](../enums/CensusType)
 
 #### Returns
 
-[`CensusType`](../enums/CensusType.md)
+[`CensusType`](../enums/CensusType)
 
 #### Inherited from
 
@@ -257,7 +257,7 @@ Census.type
 
 #### Defined in
 
-[types/census/census.ts:51](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/census/census.ts#L51)
+[types/census/census.ts:51](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/census/census.ts#L51)
 
 • `set` **type**(`value`): `void`
 
@@ -265,7 +265,7 @@ Census.type
 
 | Name | Type |
 | :------ | :------ |
-| `value` | [`CensusType`](../enums/CensusType.md) |
+| `value` | [`CensusType`](../enums/CensusType) |
 
 #### Returns
 
@@ -277,7 +277,7 @@ Census.type
 
 #### Defined in
 
-[types/census/census.ts:55](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/census/census.ts#L55)
+[types/census/census.ts:55](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/census/census.ts#L55)
 
 ___
 
@@ -295,7 +295,7 @@ Census.weight
 
 #### Defined in
 
-[types/census/census.ts:67](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/census/census.ts#L67)
+[types/census/census.ts:67](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/census/census.ts#L67)
 
 • `set` **weight**(`value`): `void`
 
@@ -315,13 +315,13 @@ Census.weight
 
 #### Defined in
 
-[types/census/census.ts:71](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/census/census.ts#L71)
+[types/census/census.ts:71](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/census/census.ts#L71)
 
 ## Methods
 
 ### censusTypeFromCensusOrigin
 
-▸ **censusTypeFromCensusOrigin**(`censusOrigin`, `anonymous?`): [`CensusType`](../enums/CensusType.md)
+▸ **censusTypeFromCensusOrigin**(`censusOrigin`, `anonymous?`): [`CensusType`](../enums/CensusType)
 
 #### Parameters
 
@@ -332,12 +332,12 @@ Census.weight
 
 #### Returns
 
-[`CensusType`](../enums/CensusType.md)
+[`CensusType`](../enums/CensusType)
 
 #### Inherited from
 
-[Census](Census.md).[censusTypeFromCensusOrigin](Census.md#censustypefromcensusorigin)
+[Census](Census.md).[censusTypeFromCensusOrigin](Census#censustypefromcensusorigin)
 
 #### Defined in
 
-[types/census/census.ts:81](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/census/census.ts#L81)
+[types/census/census.ts:81](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/census/census.ts#L81)

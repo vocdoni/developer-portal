@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / IElectionSummary
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / IElectionSummary
 
 # Interface: IElectionSummary
 
@@ -6,13 +6,13 @@
 
 ### Properties
 
-- [electionId](IElectionSummary.md#electionid)
-- [endDate](IElectionSummary.md#enddate)
-- [finalResults](IElectionSummary.md#finalresults)
-- [organizationId](IElectionSummary.md#organizationid)
-- [startDate](IElectionSummary.md#startdate)
-- [status](IElectionSummary.md#status)
-- [voteCount](IElectionSummary.md#votecount)
+- [electionId](IElectionSummary#electionid)
+- [endDate](IElectionSummary#enddate)
+- [finalResults](IElectionSummary#finalresults)
+- [organizationId](IElectionSummary#organizationid)
+- [startDate](IElectionSummary#startdate)
+- [status](IElectionSummary#status)
+- [voteCount](IElectionSummary#votecount)
 
 ## Properties
 
@@ -24,7 +24,7 @@ The id of the election
 
 #### Defined in
 
-[api/election.ts:322](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/election.ts#L322)
+[api/election.ts:322](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/election.ts#L322)
 
 ___
 
@@ -36,7 +36,7 @@ The end date of the election
 
 #### Defined in
 
-[api/election.ts:342](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/election.ts#L342)
+[api/election.ts:342](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/election.ts#L342)
 
 ___
 
@@ -48,7 +48,7 @@ If the election has the final results
 
 #### Defined in
 
-[api/election.ts:352](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/election.ts#L352)
+[api/election.ts:352](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/election.ts#L352)
 
 ___
 
@@ -60,7 +60,7 @@ The id of the organization
 
 #### Defined in
 
-[api/election.ts:327](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/election.ts#L327)
+[api/election.ts:327](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/election.ts#L327)
 
 ___
 
@@ -72,19 +72,19 @@ The start date of the election
 
 #### Defined in
 
-[api/election.ts:337](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/election.ts#L337)
+[api/election.ts:337](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/election.ts#L337)
 
 ___
 
 ### status
 
-• **status**: [`PROCESS_UNKNOWN`](../enums/ElectionStatus.md#process_unknown) \| [`ENDED`](../enums/ElectionStatus.md#ended) \| [`CANCELED`](../enums/ElectionStatus.md#canceled) \| [`PAUSED`](../enums/ElectionStatus.md#paused) \| [`RESULTS`](../enums/ElectionStatus.md#results) \| [`READY`](../enums/ElectionStatusReady.md#ready)
+• **status**: [`PROCESS_UNKNOWN`](../enums/ElectionStatus.md#process_unknown) \| [`ENDED`](../enums/ElectionStatus.md#ended) \| [`CANCELED`](../enums/ElectionStatus.md#canceled) \| [`PAUSED`](../enums/ElectionStatus.md#paused) \| [`RESULTS`](../enums/ElectionStatus.md#results) \| [`READY`](../enums/ElectionStatusReady#ready)
 
 The status of the election
 
 #### Defined in
 
-[api/election.ts:332](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/election.ts#L332)
+[api/election.ts:332](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/election.ts#L332)
 
 ___
 
@@ -96,4 +96,4 @@ The number of votes of the election
 
 #### Defined in
 
-[api/election.ts:347](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/election.ts#L347)
+[api/election.ts:347](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/election.ts#L347)

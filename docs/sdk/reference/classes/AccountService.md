@@ -1,10 +1,10 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / AccountService
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / AccountService
 
 # Class: AccountService
 
 ## Hierarchy
 
-- [`Service`](Service.md)
+- [`Service`](Service)
 
   ↳ **`AccountService`**
 
@@ -16,24 +16,24 @@
 
 ### Constructors
 
-- [constructor](AccountService.md#constructor)
+- [constructor](AccountService#constructor)
 
 ### Properties
 
-- [chainService](AccountService.md#chainservice)
-- [url](AccountService.md#url)
+- [chainService](AccountService#chainservice)
+- [url](AccountService#url)
 
 ### Methods
 
-- [fetchAccountInfo](AccountService.md#fetchaccountinfo)
-- [setInfo](AccountService.md#setinfo)
-- [signTransaction](AccountService.md#signtransaction)
+- [fetchAccountInfo](AccountService#fetchaccountinfo)
+- [setInfo](AccountService#setinfo)
+- [signTransaction](AccountService#signtransaction)
 
 ## Constructors
 
 ### constructor
 
-• **new AccountService**(`params`): [`AccountService`](AccountService.md)
+• **new AccountService**(`params`): [`AccountService`](AccountService)
 
 Instantiate the election service.
 
@@ -45,21 +45,21 @@ Instantiate the election service.
 
 #### Returns
 
-[`AccountService`](AccountService.md)
+[`AccountService`](AccountService)
 
 #### Overrides
 
-[Service](Service.md).[constructor](Service.md#constructor)
+[Service](Service.md).[constructor](Service#constructor)
 
 #### Defined in
 
-[services/account.ts:45](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/account.ts#L45)
+[services/account.ts:45](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/account.ts#L45)
 
 ## Properties
 
 ### chainService
 
-• **chainService**: [`ChainService`](ChainService.md)
+• **chainService**: [`ChainService`](ChainService)
 
 #### Implementation of
 
@@ -67,7 +67,7 @@ AccountServiceProperties.chainService
 
 #### Defined in
 
-[services/account.ts:38](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/account.ts#L38)
+[services/account.ts:38](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/account.ts#L38)
 
 ___
 
@@ -77,17 +77,17 @@ ___
 
 #### Inherited from
 
-[Service](Service.md).[url](Service.md#url)
+[Service](Service.md).[url](Service#url)
 
 #### Defined in
 
-[services/service.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/service.ts#L6)
+[services/service.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/service.ts#L6)
 
 ## Methods
 
 ### fetchAccountInfo
 
-▸ **fetchAccountInfo**(`address`): `Promise`\<[`AccountData`](../modules.md#accountdata) \| [`ArchivedAccountData`](../modules.md#archivedaccountdata)\>
+▸ **fetchAccountInfo**(`address`): `Promise`\<[`AccountData`](../modules.md#accountdata) \| [`ArchivedAccountData`](../modules#archivedaccountdata)\>
 
 Fetches account information.
 
@@ -99,11 +99,11 @@ Fetches account information.
 
 #### Returns
 
-`Promise`\<[`AccountData`](../modules.md#accountdata) \| [`ArchivedAccountData`](../modules.md#archivedaccountdata)\>
+`Promise`\<[`AccountData`](../modules.md#accountdata) \| [`ArchivedAccountData`](../modules#archivedaccountdata)\>
 
 #### Defined in
 
-[services/account.ts:56](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/account.ts#L56)
+[services/account.ts:56](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/account.ts#L56)
 
 ___
 
@@ -128,7 +128,7 @@ The transaction hash
 
 #### Defined in
 
-[services/account.ts:96](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/account.ts#L96)
+[services/account.ts:96](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/account.ts#L96)
 
 ___
 
@@ -150,4 +150,4 @@ ___
 
 #### Defined in
 
-[services/account.ts:101](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/account.ts#L101)
+[services/account.ts:101](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/account.ts#L101)

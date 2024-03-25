@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / IChainValidator
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / IChainValidator
 
 # Interface: IChainValidator
 
@@ -6,10 +6,10 @@
 
 ### Properties
 
-- [address](IChainValidator.md#address)
-- [name](IChainValidator.md#name)
-- [power](IChainValidator.md#power)
-- [pubKey](IChainValidator.md#pubkey)
+- [address](IChainValidator#address)
+- [name](IChainValidator#name)
+- [power](IChainValidator#power)
+- [pubKey](IChainValidator#pubkey)
 
 ## Properties
 
@@ -21,7 +21,7 @@ Validator address
 
 #### Defined in
 
-[api/chain.ts:339](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain.ts#L339)
+[api/chain.ts:339](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L339)
 
 ___
 
@@ -33,7 +33,7 @@ Validator name reference. Could be empty.
 
 #### Defined in
 
-[api/chain.ts:344](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain.ts#L344)
+[api/chain.ts:344](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L344)
 
 ___
 
@@ -45,7 +45,7 @@ Current power of the validator
 
 #### Defined in
 
-[api/chain.ts:329](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain.ts#L329)
+[api/chain.ts:329](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L329)
 
 ___
 
@@ -57,4 +57,4 @@ Validator public key
 
 #### Defined in
 
-[api/chain.ts:334](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain.ts#L334)
+[api/chain.ts:334](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L334)

@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / ChainAPI
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / ChainAPI
 
 # Class: ChainAPI
 
@@ -12,40 +12,40 @@
 
 ### Constructors
 
-- [constructor](ChainAPI.md#constructor)
+- [constructor](ChainAPI#constructor)
 
 ### Methods
 
-- [blockByHash](ChainAPI.md#blockbyhash)
-- [blockByHeight](ChainAPI.md#blockbyheight)
-- [blockToDate](ChainAPI.md#blocktodate)
-- [blockTransactions](ChainAPI.md#blocktransactions)
-- [circuit](ChainAPI.md#circuit)
-- [circuits](ChainAPI.md#circuits)
-- [costs](ChainAPI.md#costs)
-- [dateToBlock](ChainAPI.md#datetoblock)
-- [info](ChainAPI.md#info)
-- [isApiError](ChainAPI.md#isapierror)
-- [isUndefinedError](ChainAPI.md#isundefinederror)
-- [organizationCount](ChainAPI.md#organizationcount)
-- [organizationList](ChainAPI.md#organizationlist)
-- [submitTx](ChainAPI.md#submittx)
-- [txInfo](ChainAPI.md#txinfo)
-- [txInfoByBlock](ChainAPI.md#txinfobyblock)
-- [txList](ChainAPI.md#txlist)
-- [validatorsList](ChainAPI.md#validatorslist)
+- [blockByHash](ChainAPI#blockbyhash)
+- [blockByHeight](ChainAPI#blockbyheight)
+- [blockToDate](ChainAPI#blocktodate)
+- [blockTransactions](ChainAPI#blocktransactions)
+- [circuit](ChainAPI#circuit)
+- [circuits](ChainAPI#circuits)
+- [costs](ChainAPI#costs)
+- [dateToBlock](ChainAPI#datetoblock)
+- [info](ChainAPI#info)
+- [isApiError](ChainAPI#isapierror)
+- [isUndefinedError](ChainAPI#isundefinederror)
+- [organizationCount](ChainAPI#organizationcount)
+- [organizationList](ChainAPI#organizationlist)
+- [submitTx](ChainAPI#submittx)
+- [txInfo](ChainAPI#txinfo)
+- [txInfoByBlock](ChainAPI#txinfobyblock)
+- [txList](ChainAPI#txlist)
+- [validatorsList](ChainAPI#validatorslist)
 
 ## Constructors
 
 ### constructor
 
-• **new ChainAPI**(): [`ChainAPI`](ChainAPI.md)
+• **new ChainAPI**(): [`ChainAPI`](ChainAPI)
 
 Cannot be constructed.
 
 #### Returns
 
-[`ChainAPI`](ChainAPI.md)
+[`ChainAPI`](ChainAPI)
 
 #### Overrides
 
@@ -53,13 +53,13 @@ API.constructor
 
 #### Defined in
 
-[api/chain.ts:358](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain.ts#L358)
+[api/chain.ts:358](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L358)
 
 ## Methods
 
 ### blockByHash
 
-▸ **blockByHash**(`url`, `hash`): `Promise`\<[`IChainBlockInfoResponse`](../interfaces/IChainBlockInfoResponse.md)\>
+▸ **blockByHash**(`url`, `hash`): `Promise`\<[`IChainBlockInfoResponse`](../interfaces/IChainBlockInfoResponse)\>
 
 Get block information by hash
 
@@ -72,17 +72,17 @@ Get block information by hash
 
 #### Returns
 
-`Promise`\<[`IChainBlockInfoResponse`](../interfaces/IChainBlockInfoResponse.md)\>
+`Promise`\<[`IChainBlockInfoResponse`](../interfaces/IChainBlockInfoResponse)\>
 
 #### Defined in
 
-[api/chain.ts:556](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain.ts#L556)
+[api/chain.ts:556](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L556)
 
 ___
 
 ### blockByHeight
 
-▸ **blockByHeight**(`url`, `height`): `Promise`\<[`IChainBlockInfoResponse`](../interfaces/IChainBlockInfoResponse.md)\>
+▸ **blockByHeight**(`url`, `height`): `Promise`\<[`IChainBlockInfoResponse`](../interfaces/IChainBlockInfoResponse)\>
 
 Get block information by height
 
@@ -95,11 +95,11 @@ Get block information by height
 
 #### Returns
 
-`Promise`\<[`IChainBlockInfoResponse`](../interfaces/IChainBlockInfoResponse.md)\>
+`Promise`\<[`IChainBlockInfoResponse`](../interfaces/IChainBlockInfoResponse)\>
 
 #### Defined in
 
-[api/chain.ts:529](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain.ts#L529)
+[api/chain.ts:529](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L529)
 
 ___
 
@@ -122,13 +122,13 @@ Return approximate date by a given block height.
 
 #### Defined in
 
-[api/chain.ts:600](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain.ts#L600)
+[api/chain.ts:600](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L600)
 
 ___
 
 ### blockTransactions
 
-▸ **blockTransactions**(`url`, `height`, `page?`): `Promise`\<[`IBlockTransactionsResponse`](../interfaces/IBlockTransactionsResponse.md)\>
+▸ **blockTransactions**(`url`, `height`, `page?`): `Promise`\<[`IBlockTransactionsResponse`](../interfaces/IBlockTransactionsResponse)\>
 
 Get paginated list of transactions registered on specific block
 
@@ -142,11 +142,11 @@ Get paginated list of transactions registered on specific block
 
 #### Returns
 
-`Promise`\<[`IBlockTransactionsResponse`](../interfaces/IBlockTransactionsResponse.md)\>
+`Promise`\<[`IBlockTransactionsResponse`](../interfaces/IBlockTransactionsResponse)\>
 
 #### Defined in
 
-[api/chain.ts:571](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain.ts#L571)
+[api/chain.ts:571](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L571)
 
 ___
 
@@ -168,13 +168,13 @@ Fetches a circuit.
 
 #### Defined in
 
-[api/chain.ts:407](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain.ts#L407)
+[api/chain.ts:407](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L407)
 
 ___
 
 ### circuits
 
-▸ **circuits**(`url`): `Promise`\<[`IChainGetCircuitResponse`](../interfaces/IChainGetCircuitResponse.md)\>
+▸ **circuits**(`url`): `Promise`\<[`IChainGetCircuitResponse`](../interfaces/IChainGetCircuitResponse)\>
 
 Fetches info about the blockchain anonymous circuits.
 
@@ -186,17 +186,17 @@ Fetches info about the blockchain anonymous circuits.
 
 #### Returns
 
-`Promise`\<[`IChainGetCircuitResponse`](../interfaces/IChainGetCircuitResponse.md)\>
+`Promise`\<[`IChainGetCircuitResponse`](../interfaces/IChainGetCircuitResponse)\>
 
 #### Defined in
 
-[api/chain.ts:394](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain.ts#L394)
+[api/chain.ts:394](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L394)
 
 ___
 
 ### costs
 
-▸ **costs**(`url`): `Promise`\<[`IChainGetCostsResponse`](../interfaces/IChainGetCostsResponse.md)\>
+▸ **costs**(`url`): `Promise`\<[`IChainGetCostsResponse`](../interfaces/IChainGetCostsResponse)\>
 
 Fetches info about the blockchain costs.
 
@@ -208,11 +208,11 @@ Fetches info about the blockchain costs.
 
 #### Returns
 
-`Promise`\<[`IChainGetCostsResponse`](../interfaces/IChainGetCostsResponse.md)\>
+`Promise`\<[`IChainGetCostsResponse`](../interfaces/IChainGetCostsResponse)\>
 
 #### Defined in
 
-[api/chain.ts:381](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain.ts#L381)
+[api/chain.ts:381](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L381)
 
 ___
 
@@ -235,13 +235,13 @@ By a given date give the estimate block for the current Vochain.
 
 #### Defined in
 
-[api/chain.ts:586](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain.ts#L586)
+[api/chain.ts:586](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L586)
 
 ___
 
 ### info
 
-▸ **info**(`url`): `Promise`\<[`IChainGetInfoResponse`](../interfaces/IChainGetInfoResponse.md)\>
+▸ **info**(`url`): `Promise`\<[`IChainGetInfoResponse`](../interfaces/IChainGetInfoResponse)\>
 
 Fetches info about the blockchain status.
 
@@ -253,11 +253,11 @@ Fetches info about the blockchain status.
 
 #### Returns
 
-`Promise`\<[`IChainGetInfoResponse`](../interfaces/IChainGetInfoResponse.md)\>
+`Promise`\<[`IChainGetInfoResponse`](../interfaces/IChainGetInfoResponse)\>
 
 #### Defined in
 
-[api/chain.ts:368](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain.ts#L368)
+[api/chain.ts:368](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L368)
 
 ___
 
@@ -281,7 +281,7 @@ API.isApiError
 
 #### Defined in
 
-[api/api.ts:21](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/api.ts#L21)
+[api/api.ts:21](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/api.ts#L21)
 
 ___
 
@@ -306,13 +306,13 @@ API.isUndefinedError
 
 #### Defined in
 
-[api/api.ts:64](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/api.ts#L64)
+[api/api.ts:64](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/api.ts#L64)
 
 ___
 
 ### organizationCount
 
-▸ **organizationCount**(`url`): `Promise`\<[`IChainOrganizationCountResponse`](../interfaces/IChainOrganizationCountResponse.md)\>
+▸ **organizationCount**(`url`): `Promise`\<[`IChainOrganizationCountResponse`](../interfaces/IChainOrganizationCountResponse)\>
 
 Returns the number of organizations
 
@@ -324,17 +324,17 @@ Returns the number of organizations
 
 #### Returns
 
-`Promise`\<[`IChainOrganizationCountResponse`](../interfaces/IChainOrganizationCountResponse.md)\>
+`Promise`\<[`IChainOrganizationCountResponse`](../interfaces/IChainOrganizationCountResponse)\>
 
 #### Defined in
 
-[api/chain.ts:488](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain.ts#L488)
+[api/chain.ts:488](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L488)
 
 ___
 
 ### organizationList
 
-▸ **organizationList**(`url`, `page?`, `organizationId?`): `Promise`\<[`IChainOrganizationListResponse`](../interfaces/IChainOrganizationListResponse.md)\>
+▸ **organizationList**(`url`, `page?`, `organizationId?`): `Promise`\<[`IChainOrganizationListResponse`](../interfaces/IChainOrganizationListResponse)\>
 
 Returns the list of organizations by page
 
@@ -348,17 +348,17 @@ Returns the list of organizations by page
 
 #### Returns
 
-`Promise`\<[`IChainOrganizationListResponse`](../interfaces/IChainOrganizationListResponse.md)\>
+`Promise`\<[`IChainOrganizationListResponse`](../interfaces/IChainOrganizationListResponse)\>
 
 #### Defined in
 
-[api/chain.ts:503](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain.ts#L503)
+[api/chain.ts:503](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L503)
 
 ___
 
 ### submitTx
 
-▸ **submitTx**(`url`, `payload`): `Promise`\<[`IChainSubmitTxResponse`](../interfaces/IChainSubmitTxResponse.md)\>
+▸ **submitTx**(`url`, `payload`): `Promise`\<[`IChainSubmitTxResponse`](../interfaces/IChainSubmitTxResponse)\>
 
 Submits a transaction to the blockchain
 
@@ -371,17 +371,17 @@ Submits a transaction to the blockchain
 
 #### Returns
 
-`Promise`\<[`IChainSubmitTxResponse`](../interfaces/IChainSubmitTxResponse.md)\>
+`Promise`\<[`IChainSubmitTxResponse`](../interfaces/IChainSubmitTxResponse)\>
 
 #### Defined in
 
-[api/chain.ts:461](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain.ts#L461)
+[api/chain.ts:461](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L461)
 
 ___
 
 ### txInfo
 
-▸ **txInfo**(`url`, `txHash`): `Promise`\<[`IChainTxReference`](../interfaces/IChainTxReference.md)\>
+▸ **txInfo**(`url`, `txHash`): `Promise`\<[`IChainTxReference`](../interfaces/IChainTxReference)\>
 
 Fetches information about a transaction from the blockchain.
 
@@ -394,17 +394,17 @@ Fetches information about a transaction from the blockchain.
 
 #### Returns
 
-`Promise`\<[`IChainTxReference`](../interfaces/IChainTxReference.md)\>
+`Promise`\<[`IChainTxReference`](../interfaces/IChainTxReference)\>
 
 #### Defined in
 
-[api/chain.ts:421](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain.ts#L421)
+[api/chain.ts:421](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L421)
 
 ___
 
 ### txInfoByBlock
 
-▸ **txInfoByBlock**(`url`, `blockHeight`, `txIndex`): `Promise`\<[`Tx`](../interfaces/Tx.md)\>
+▸ **txInfoByBlock**(`url`, `blockHeight`, `txIndex`): `Promise`\<[`Tx`](../interfaces/Tx)\>
 
 Fetches information about a transaction by its containing block an index on the block.
 
@@ -418,17 +418,17 @@ Fetches information about a transaction by its containing block an index on the 
 
 #### Returns
 
-`Promise`\<[`Tx`](../interfaces/Tx.md)\>
+`Promise`\<[`Tx`](../interfaces/Tx)\>
 
 #### Defined in
 
-[api/chain.ts:441](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain.ts#L441)
+[api/chain.ts:441](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L441)
 
 ___
 
 ### txList
 
-▸ **txList**(`url`, `page?`): `Promise`\<[`IChainTxListResponse`](../interfaces/IChainTxListResponse.md)\>
+▸ **txList**(`url`, `page?`): `Promise`\<[`IChainTxListResponse`](../interfaces/IChainTxListResponse)\>
 
 Returns the list of transactions by page
 
@@ -441,17 +441,17 @@ Returns the list of transactions by page
 
 #### Returns
 
-`Promise`\<[`IChainTxListResponse`](../interfaces/IChainTxListResponse.md)\>
+`Promise`\<[`IChainTxListResponse`](../interfaces/IChainTxListResponse)\>
 
 #### Defined in
 
-[api/chain.ts:475](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain.ts#L475)
+[api/chain.ts:475](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L475)
 
 ___
 
 ### validatorsList
 
-▸ **validatorsList**(`url`): `Promise`\<[`IChainValidatorsListResponse`](../interfaces/IChainValidatorsListResponse.md)\>
+▸ **validatorsList**(`url`): `Promise`\<[`IChainValidatorsListResponse`](../interfaces/IChainValidatorsListResponse)\>
 
 Returns the list of validators
 
@@ -463,8 +463,8 @@ Returns the list of validators
 
 #### Returns
 
-`Promise`\<[`IChainValidatorsListResponse`](../interfaces/IChainValidatorsListResponse.md)\>
+`Promise`\<[`IChainValidatorsListResponse`](../interfaces/IChainValidatorsListResponse)\>
 
 #### Defined in
 
-[api/chain.ts:542](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain.ts#L542)
+[api/chain.ts:542](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L542)

@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / ICensus3StrategyCreateResponse
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / ICensus3StrategyCreateResponse
 
 # Interface: ICensus3StrategyCreateResponse
 
@@ -6,7 +6,7 @@
 
 ### Properties
 
-- [strategyID](ICensus3StrategyCreateResponse.md#strategyid)
+- [strategyID](ICensus3StrategyCreateResponse#strategyid)
 
 ## Properties
 
@@ -18,4 +18,4 @@ The identifier of the created strategy
 
 #### Defined in
 
-[api/census3/strategy.ts:197](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/census3/strategy.ts#L197)
+[api/census3/strategy.ts:197](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/census3/strategy.ts#L197)

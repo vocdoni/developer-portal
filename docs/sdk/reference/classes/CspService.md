@@ -1,10 +1,10 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / CspService
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / CspService
 
 # Class: CspService
 
 ## Hierarchy
 
-- [`Service`](Service.md)
+- [`Service`](Service)
 
   ↳ **`CspService`**
 
@@ -16,28 +16,28 @@
 
 ### Constructors
 
-- [constructor](CspService.md#constructor)
+- [constructor](CspService#constructor)
 
 ### Properties
 
-- [info](CspService.md#info)
-- [url](CspService.md#url)
+- [info](CspService#info)
+- [url](CspService#url)
 
 ### Methods
 
-- [cspSign](CspService.md#cspsign)
-- [cspStep](CspService.md#cspstep)
-- [cspVote](CspService.md#cspvote)
-- [setInfo](CspService.md#setinfo)
-- [setUrlFromElection](CspService.md#seturlfromelection)
+- [cspSign](CspService#cspsign)
+- [cspStep](CspService#cspstep)
+- [cspVote](CspService#cspvote)
+- [setInfo](CspService#setinfo)
+- [setUrlFromElection](CspService#seturlfromelection)
 - [cspVote](CspService.md#cspvote-1)
-- [fetchUrlFromElection](CspService.md#fetchurlfromelection)
+- [fetchUrlFromElection](CspService#fetchurlfromelection)
 
 ## Constructors
 
 ### constructor
 
-• **new CspService**(`params`): [`CspService`](CspService.md)
+• **new CspService**(`params`): [`CspService`](CspService)
 
 Instantiate the CSP service.
 
@@ -49,15 +49,15 @@ Instantiate the CSP service.
 
 #### Returns
 
-[`CspService`](CspService.md)
+[`CspService`](CspService)
 
 #### Overrides
 
-[Service](Service.md).[constructor](Service.md#constructor)
+[Service](Service.md).[constructor](Service#constructor)
 
 #### Defined in
 
-[services/csp.ts:29](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/csp.ts#L29)
+[services/csp.ts:29](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/csp.ts#L29)
 
 ## Properties
 
@@ -71,7 +71,7 @@ CspServiceProperties.info
 
 #### Defined in
 
-[services/csp.ts:22](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/csp.ts#L22)
+[services/csp.ts:22](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/csp.ts#L22)
 
 ___
 
@@ -81,11 +81,11 @@ ___
 
 #### Inherited from
 
-[Service](Service.md).[url](Service.md#url)
+[Service](Service.md).[url](Service#url)
 
 #### Defined in
 
-[services/service.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/service.ts#L6)
+[services/service.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/service.ts#L6)
 
 ## Methods
 
@@ -107,7 +107,7 @@ ___
 
 #### Defined in
 
-[services/csp.ts:64](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/csp.ts#L64)
+[services/csp.ts:64](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/csp.ts#L64)
 
 ___
 
@@ -130,29 +130,29 @@ ___
 
 #### Defined in
 
-[services/csp.ts:49](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/csp.ts#L49)
+[services/csp.ts:49](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/csp.ts#L49)
 
 ___
 
 ### cspVote
 
-▸ **cspVote**(`vote`, `signature`, `proof_type?`): [`CspVote`](CspVote.md)
+▸ **cspVote**(`vote`, `signature`, `proof_type?`): [`CspVote`](CspVote)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `vote` | [`Vote`](Vote.md) |
+| `vote` | [`Vote`](Vote) |
 | `signature` | `string` |
-| `proof_type?` | [`CspProofType`](../enums/CspProofType.md) |
+| `proof_type?` | [`CspProofType`](../enums/CspProofType) |
 
 #### Returns
 
-[`CspVote`](CspVote.md)
+[`CspVote`](CspVote)
 
 #### Defined in
 
-[services/csp.ts:75](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/csp.ts#L75)
+[services/csp.ts:75](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/csp.ts#L75)
 
 ___
 
@@ -166,7 +166,7 @@ ___
 
 #### Defined in
 
-[services/csp.ts:43](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/csp.ts#L43)
+[services/csp.ts:43](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/csp.ts#L43)
 
 ___
 
@@ -178,7 +178,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `election` | [`Election`](Election.md) |
+| `election` | [`Election`](Election) |
 
 #### Returns
 
@@ -186,29 +186,29 @@ ___
 
 #### Defined in
 
-[services/csp.ts:39](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/csp.ts#L39)
+[services/csp.ts:39](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/csp.ts#L39)
 
 ___
 
 ### cspVote
 
-▸ **cspVote**(`vote`, `signature`, `proof_type?`): [`CspVote`](CspVote.md)
+▸ **cspVote**(`vote`, `signature`, `proof_type?`): [`CspVote`](CspVote)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `vote` | [`Vote`](Vote.md) |
+| `vote` | [`Vote`](Vote) |
 | `signature` | `string` |
-| `proof_type?` | [`CspProofType`](../enums/CspProofType.md) |
+| `proof_type?` | [`CspProofType`](../enums/CspProofType) |
 
 #### Returns
 
-[`CspVote`](CspVote.md)
+[`CspVote`](CspVote)
 
 #### Defined in
 
-[services/csp.ts:79](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/csp.ts#L79)
+[services/csp.ts:79](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/csp.ts#L79)
 
 ___
 
@@ -220,7 +220,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `election` | [`Election`](Election.md) |
+| `election` | [`Election`](Election) |
 
 #### Returns
 
@@ -228,4 +228,4 @@ ___
 
 #### Defined in
 
-[services/csp.ts:34](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/csp.ts#L34)
+[services/csp.ts:34](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/csp.ts#L34)

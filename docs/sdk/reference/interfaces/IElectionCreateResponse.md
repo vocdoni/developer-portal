@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / IElectionCreateResponse
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / IElectionCreateResponse
 
 # Interface: IElectionCreateResponse
 
@@ -6,9 +6,9 @@
 
 ### Properties
 
-- [electionID](IElectionCreateResponse.md#electionid)
-- [metadataURL](IElectionCreateResponse.md#metadataurl)
-- [txHash](IElectionCreateResponse.md#txhash)
+- [electionID](IElectionCreateResponse#electionid)
+- [metadataURL](IElectionCreateResponse#metadataurl)
+- [txHash](IElectionCreateResponse#txhash)
 
 ## Properties
 
@@ -20,7 +20,7 @@ The election identifier
 
 #### Defined in
 
-[api/election.ts:134](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/election.ts#L134)
+[api/election.ts:134](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/election.ts#L134)
 
 ___
 
@@ -32,7 +32,7 @@ The metadata URL
 
 #### Defined in
 
-[api/election.ts:139](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/election.ts#L139)
+[api/election.ts:139](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/election.ts#L139)
 
 ___
 
@@ -44,4 +44,4 @@ The hash of the transaction
 
 #### Defined in
 
-[api/election.ts:129](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/election.ts#L129)
+[api/election.ts:129](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/election.ts#L129)

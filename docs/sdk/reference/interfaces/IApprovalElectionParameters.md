@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / IApprovalElectionParameters
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / IApprovalElectionParameters
 
 # Interface: IApprovalElectionParameters
 
@@ -6,7 +6,7 @@ Define election parameters.
 
 ## Hierarchy
 
-- [`IElectionParameters`](IElectionParameters.md)
+- [`IElectionParameters`](IElectionParameters)
 
   ↳ **`IApprovalElectionParameters`**
 
@@ -14,20 +14,20 @@ Define election parameters.
 
 ### Properties
 
-- [addSDKVersion](IApprovalElectionParameters.md#addsdkversion)
-- [census](IApprovalElectionParameters.md#census)
-- [description](IApprovalElectionParameters.md#description)
-- [electionType](IApprovalElectionParameters.md#electiontype)
-- [endDate](IApprovalElectionParameters.md#enddate)
-- [header](IApprovalElectionParameters.md#header)
-- [maxCensusSize](IApprovalElectionParameters.md#maxcensussize)
-- [meta](IApprovalElectionParameters.md#meta)
-- [questions](IApprovalElectionParameters.md#questions)
-- [startDate](IApprovalElectionParameters.md#startdate)
-- [streamUri](IApprovalElectionParameters.md#streamuri)
-- [temporarySecretIdentity](IApprovalElectionParameters.md#temporarysecretidentity)
-- [title](IApprovalElectionParameters.md#title)
-- [voteType](IApprovalElectionParameters.md#votetype)
+- [addSDKVersion](IApprovalElectionParameters#addsdkversion)
+- [census](IApprovalElectionParameters#census)
+- [description](IApprovalElectionParameters#description)
+- [electionType](IApprovalElectionParameters#electiontype)
+- [endDate](IApprovalElectionParameters#enddate)
+- [header](IApprovalElectionParameters#header)
+- [maxCensusSize](IApprovalElectionParameters#maxcensussize)
+- [meta](IApprovalElectionParameters#meta)
+- [questions](IApprovalElectionParameters#questions)
+- [startDate](IApprovalElectionParameters#startdate)
+- [streamUri](IApprovalElectionParameters#streamuri)
+- [temporarySecretIdentity](IApprovalElectionParameters#temporarysecretidentity)
+- [title](IApprovalElectionParameters#title)
+- [voteType](IApprovalElectionParameters#votetype)
 
 ## Properties
 
@@ -39,25 +39,25 @@ Used to add the SDK version to the election metadata
 
 #### Inherited from
 
-[IElectionParameters](IElectionParameters.md).[addSDKVersion](IElectionParameters.md#addsdkversion)
+[IElectionParameters](IElectionParameters.md).[addSDKVersion](IElectionParameters#addsdkversion)
 
 #### Defined in
 
-[types/election/election.ts:155](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/election/election.ts#L155)
+[types/election/election.ts:155](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/election/election.ts#L155)
 
 ___
 
 ### census
 
-• **census**: [`Census`](../classes/Census.md)
+• **census**: [`Census`](../classes/Census)
 
 #### Inherited from
 
-[IElectionParameters](IElectionParameters.md).[census](IElectionParameters.md#census)
+[IElectionParameters](IElectionParameters.md).[census](IElectionParameters#census)
 
 #### Defined in
 
-[types/election/election.ts:129](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/election/election.ts#L129)
+[types/election/election.ts:129](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/election/election.ts#L129)
 
 ___
 
@@ -69,25 +69,25 @@ Election description
 
 #### Inherited from
 
-[IElectionParameters](IElectionParameters.md).[description](IElectionParameters.md#description)
+[IElectionParameters](IElectionParameters.md).[description](IElectionParameters#description)
 
 #### Defined in
 
-[types/election/election.ts:114](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/election/election.ts#L114)
+[types/election/election.ts:114](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/election/election.ts#L114)
 
 ___
 
 ### electionType
 
-• `Optional` **electionType**: [`IElectionType`](IElectionType.md)
+• `Optional` **electionType**: [`IElectionType`](IElectionType)
 
 #### Inherited from
 
-[IElectionParameters](IElectionParameters.md).[electionType](IElectionParameters.md#electiontype)
+[IElectionParameters](IElectionParameters.md).[electionType](IElectionParameters#electiontype)
 
 #### Defined in
 
-[types/election/election.ts:131](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/election/election.ts#L131)
+[types/election/election.ts:131](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/election/election.ts#L131)
 
 ___
 
@@ -97,11 +97,11 @@ ___
 
 #### Inherited from
 
-[IElectionParameters](IElectionParameters.md).[endDate](IElectionParameters.md#enddate)
+[IElectionParameters](IElectionParameters.md).[endDate](IElectionParameters#enddate)
 
 #### Defined in
 
-[types/election/election.ts:128](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/election/election.ts#L128)
+[types/election/election.ts:128](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/election/election.ts#L128)
 
 ___
 
@@ -113,11 +113,11 @@ Election header image url.
 
 #### Inherited from
 
-[IElectionParameters](IElectionParameters.md).[header](IElectionParameters.md#header)
+[IElectionParameters](IElectionParameters.md).[header](IElectionParameters#header)
 
 #### Defined in
 
-[types/election/election.ts:118](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/election/election.ts#L118)
+[types/election/election.ts:118](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/election/election.ts#L118)
 
 ___
 
@@ -137,11 +137,11 @@ size` error.
 
 #### Inherited from
 
-[IElectionParameters](IElectionParameters.md).[maxCensusSize](IElectionParameters.md#maxcensussize)
+[IElectionParameters](IElectionParameters.md).[maxCensusSize](IElectionParameters#maxcensussize)
 
 #### Defined in
 
-[types/election/election.ts:145](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/election/election.ts#L145)
+[types/election/election.ts:145](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/election/election.ts#L145)
 
 ___
 
@@ -153,25 +153,25 @@ Metadata (anything added by the election creator)
 
 #### Inherited from
 
-[IElectionParameters](IElectionParameters.md).[meta](IElectionParameters.md#meta)
+[IElectionParameters](IElectionParameters.md).[meta](IElectionParameters#meta)
 
 #### Defined in
 
-[types/election/election.ts:126](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/election/election.ts#L126)
+[types/election/election.ts:126](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/election/election.ts#L126)
 
 ___
 
 ### questions
 
-• `Optional` **questions**: [`IQuestion`](IQuestion.md)[]
+• `Optional` **questions**: [`IQuestion`](IQuestion)[]
 
 #### Inherited from
 
-[IElectionParameters](IElectionParameters.md).[questions](IElectionParameters.md#questions)
+[IElectionParameters](IElectionParameters.md).[questions](IElectionParameters#questions)
 
 #### Defined in
 
-[types/election/election.ts:132](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/election/election.ts#L132)
+[types/election/election.ts:132](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/election/election.ts#L132)
 
 ___
 
@@ -181,11 +181,11 @@ ___
 
 #### Inherited from
 
-[IElectionParameters](IElectionParameters.md).[startDate](IElectionParameters.md#startdate)
+[IElectionParameters](IElectionParameters.md).[startDate](IElectionParameters#startdate)
 
 #### Defined in
 
-[types/election/election.ts:127](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/election/election.ts#L127)
+[types/election/election.ts:127](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/election/election.ts#L127)
 
 ___
 
@@ -197,11 +197,11 @@ Election stream Uri (ex: a video url)
 
 #### Inherited from
 
-[IElectionParameters](IElectionParameters.md).[streamUri](IElectionParameters.md#streamuri)
+[IElectionParameters](IElectionParameters.md).[streamUri](IElectionParameters#streamuri)
 
 #### Defined in
 
-[types/election/election.ts:122](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/election/election.ts#L122)
+[types/election/election.ts:122](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/election/election.ts#L122)
 
 ___
 
@@ -213,11 +213,11 @@ Is used to remove the secret identities of the voters once the process is done.
 
 #### Inherited from
 
-[IElectionParameters](IElectionParameters.md).[temporarySecretIdentity](IElectionParameters.md#temporarysecretidentity)
+[IElectionParameters](IElectionParameters.md).[temporarySecretIdentity](IElectionParameters#temporarysecretidentity)
 
 #### Defined in
 
-[types/election/election.ts:150](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/election/election.ts#L150)
+[types/election/election.ts:150](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/election/election.ts#L150)
 
 ___
 
@@ -229,22 +229,22 @@ Election title
 
 #### Inherited from
 
-[IElectionParameters](IElectionParameters.md).[title](IElectionParameters.md#title)
+[IElectionParameters](IElectionParameters.md).[title](IElectionParameters#title)
 
 #### Defined in
 
-[types/election/election.ts:110](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/election/election.ts#L110)
+[types/election/election.ts:110](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/election/election.ts#L110)
 
 ___
 
 ### voteType
 
-• `Optional` **voteType**: [`IVoteType`](IVoteType.md)
+• `Optional` **voteType**: [`IVoteType`](IVoteType)
 
 #### Inherited from
 
-[IElectionParameters](IElectionParameters.md).[voteType](IElectionParameters.md#votetype)
+[IElectionParameters](IElectionParameters.md).[voteType](IElectionParameters#votetype)
 
 #### Defined in
 
-[types/election/election.ts:130](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/election/election.ts#L130)
+[types/election/election.ts:130](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/election/election.ts#L130)

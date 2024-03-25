@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / WalletAPI
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / WalletAPI
 
 # Class: WalletAPI
 
@@ -12,25 +12,25 @@
 
 ### Constructors
 
-- [constructor](WalletAPI.md#constructor)
+- [constructor](WalletAPI#constructor)
 
 ### Methods
 
-- [add](WalletAPI.md#add)
-- [isApiError](WalletAPI.md#isapierror)
-- [isUndefinedError](WalletAPI.md#isundefinederror)
+- [add](WalletAPI#add)
+- [isApiError](WalletAPI#isapierror)
+- [isUndefinedError](WalletAPI#isundefinederror)
 
 ## Constructors
 
 ### constructor
 
-• **new WalletAPI**(): [`WalletAPI`](WalletAPI.md)
+• **new WalletAPI**(): [`WalletAPI`](WalletAPI)
 
 Cannot be constructed.
 
 #### Returns
 
-[`WalletAPI`](WalletAPI.md)
+[`WalletAPI`](WalletAPI)
 
 #### Overrides
 
@@ -38,7 +38,7 @@ API.constructor
 
 #### Defined in
 
-[api/wallet.ts:25](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/wallet.ts#L25)
+[api/wallet.ts:25](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/wallet.ts#L25)
 
 ## Methods
 
@@ -59,7 +59,7 @@ API.constructor
 
 #### Defined in
 
-[api/wallet.ts:29](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/wallet.ts#L29)
+[api/wallet.ts:29](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/wallet.ts#L29)
 
 ___
 
@@ -83,7 +83,7 @@ API.isApiError
 
 #### Defined in
 
-[api/api.ts:21](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/api.ts#L21)
+[api/api.ts:21](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/api.ts#L21)
 
 ___
 
@@ -108,4 +108,4 @@ API.isUndefinedError
 
 #### Defined in
 
-[api/api.ts:64](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/api.ts#L64)
+[api/api.ts:64](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/api.ts#L64)

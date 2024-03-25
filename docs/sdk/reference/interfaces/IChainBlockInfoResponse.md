@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / IChainBlockInfoResponse
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / IChainBlockInfoResponse
 
 # Interface: IChainBlockInfoResponse
 
@@ -6,11 +6,11 @@
 
 ### Properties
 
-- [data](IChainBlockInfoResponse.md#data)
-- [evidence](IChainBlockInfoResponse.md#evidence)
-- [hash](IChainBlockInfoResponse.md#hash)
-- [header](IChainBlockInfoResponse.md#header)
-- [lastCommit](IChainBlockInfoResponse.md#lastcommit)
+- [data](IChainBlockInfoResponse#data)
+- [evidence](IChainBlockInfoResponse#evidence)
+- [hash](IChainBlockInfoResponse#hash)
+- [header](IChainBlockInfoResponse#header)
+- [lastCommit](IChainBlockInfoResponse#lastcommit)
 
 ## Properties
 
@@ -26,7 +26,7 @@
 
 #### Defined in
 
-[api/chain.ts:272](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain.ts#L272)
+[api/chain.ts:272](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L272)
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 #### Defined in
 
-[api/chain.ts:275](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain.ts#L275)
+[api/chain.ts:275](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L275)
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 #### Defined in
 
-[api/chain.ts:278](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain.ts#L278)
+[api/chain.ts:278](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L278)
 
 ___
 
@@ -83,7 +83,7 @@ ___
 
 #### Defined in
 
-[api/chain.ts:279](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain.ts#L279)
+[api/chain.ts:279](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L279)
 
 ___
 
@@ -102,4 +102,4 @@ ___
 
 #### Defined in
 
-[api/chain.ts:298](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain.ts#L298)
+[api/chain.ts:298](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L298)

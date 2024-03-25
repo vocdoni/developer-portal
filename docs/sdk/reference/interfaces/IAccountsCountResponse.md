@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / IAccountsCountResponse
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / IAccountsCountResponse
 
 # Interface: IAccountsCountResponse
 
@@ -6,7 +6,7 @@
 
 ### Properties
 
-- [count](IAccountsCountResponse.md#count)
+- [count](IAccountsCountResponse#count)
 
 ## Properties
 
@@ -18,4 +18,4 @@ Number of accounts
 
 #### Defined in
 
-[api/account.ts:102](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/account.ts#L102)
+[api/account.ts:102](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/account.ts#L102)

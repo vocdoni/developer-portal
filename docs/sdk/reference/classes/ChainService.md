@@ -1,10 +1,10 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / ChainService
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / ChainService
 
 # Class: ChainService
 
 ## Hierarchy
 
-- [`Service`](Service.md)
+- [`Service`](Service)
 
   ↳ **`ChainService`**
 
@@ -16,29 +16,29 @@
 
 ### Constructors
 
-- [constructor](ChainService.md#constructor)
+- [constructor](ChainService#constructor)
 
 ### Properties
 
-- [chainCosts](ChainService.md#chaincosts)
-- [chainData](ChainService.md#chaindata)
-- [txWait](ChainService.md#txwait)
-- [url](ChainService.md#url)
+- [chainCosts](ChainService#chaincosts)
+- [chainData](ChainService#chaindata)
+- [txWait](ChainService#txwait)
+- [url](ChainService#url)
 
 ### Methods
 
-- [dateToBlock](ChainService.md#datetoblock)
-- [fetchChainCosts](ChainService.md#fetchchaincosts)
-- [fetchChainData](ChainService.md#fetchchaindata)
-- [submitTx](ChainService.md#submittx)
-- [txInfo](ChainService.md#txinfo)
-- [waitForTransaction](ChainService.md#waitfortransaction)
+- [dateToBlock](ChainService#datetoblock)
+- [fetchChainCosts](ChainService#fetchchaincosts)
+- [fetchChainData](ChainService#fetchchaindata)
+- [submitTx](ChainService#submittx)
+- [txInfo](ChainService#txinfo)
+- [waitForTransaction](ChainService#waitfortransaction)
 
 ## Constructors
 
 ### constructor
 
-• **new ChainService**(`params`): [`ChainService`](ChainService.md)
+• **new ChainService**(`params`): [`ChainService`](ChainService)
 
 Instantiate the chain service.
 
@@ -50,21 +50,21 @@ Instantiate the chain service.
 
 #### Returns
 
-[`ChainService`](ChainService.md)
+[`ChainService`](ChainService)
 
 #### Overrides
 
-[Service](Service.md).[constructor](Service.md#constructor)
+[Service](Service.md).[constructor](Service#constructor)
 
 #### Defined in
 
-[services/chain.ts:47](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/chain.ts#L47)
+[services/chain.ts:47](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/chain.ts#L47)
 
 ## Properties
 
 ### chainCosts
 
-• **chainCosts**: [`IChainGetCostsResponse`](../interfaces/IChainGetCostsResponse.md)
+• **chainCosts**: [`IChainGetCostsResponse`](../interfaces/IChainGetCostsResponse)
 
 #### Implementation of
 
@@ -72,13 +72,13 @@ ChainServiceProperties.chainCosts
 
 #### Defined in
 
-[services/chain.ts:38](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/chain.ts#L38)
+[services/chain.ts:38](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/chain.ts#L38)
 
 ___
 
 ### chainData
 
-• **chainData**: [`ChainData`](../modules.md#chaindata)
+• **chainData**: [`ChainData`](../modules#chaindata)
 
 #### Implementation of
 
@@ -86,13 +86,13 @@ ChainServiceProperties.chainData
 
 #### Defined in
 
-[services/chain.ts:39](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/chain.ts#L39)
+[services/chain.ts:39](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/chain.ts#L39)
 
 ___
 
 ### txWait
 
-• **txWait**: [`TxWaitOptions`](../modules.md#txwaitoptions)
+• **txWait**: [`TxWaitOptions`](../modules#txwaitoptions)
 
 #### Implementation of
 
@@ -100,7 +100,7 @@ ChainServiceProperties.txWait
 
 #### Defined in
 
-[services/chain.ts:40](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/chain.ts#L40)
+[services/chain.ts:40](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/chain.ts#L40)
 
 ___
 
@@ -110,11 +110,11 @@ ___
 
 #### Inherited from
 
-[Service](Service.md).[url](Service.md#url)
+[Service](Service.md).[url](Service#url)
 
 #### Defined in
 
-[services/service.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/service.ts#L6)
+[services/service.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/service.ts#L6)
 
 ## Methods
 
@@ -138,39 +138,39 @@ The block number
 
 #### Defined in
 
-[services/chain.ts:114](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/chain.ts#L114)
+[services/chain.ts:114](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/chain.ts#L114)
 
 ___
 
 ### fetchChainCosts
 
-▸ **fetchChainCosts**(): `Promise`\<[`IChainGetCostsResponse`](../interfaces/IChainGetCostsResponse.md)\>
+▸ **fetchChainCosts**(): `Promise`\<[`IChainGetCostsResponse`](../interfaces/IChainGetCostsResponse)\>
 
 Fetches blockchain costs information if needed.
 
 #### Returns
 
-`Promise`\<[`IChainGetCostsResponse`](../interfaces/IChainGetCostsResponse.md)\>
+`Promise`\<[`IChainGetCostsResponse`](../interfaces/IChainGetCostsResponse)\>
 
 #### Defined in
 
-[services/chain.ts:74](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/chain.ts#L74)
+[services/chain.ts:74](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/chain.ts#L74)
 
 ___
 
 ### fetchChainData
 
-▸ **fetchChainData**(): `Promise`\<[`ChainData`](../modules.md#chaindata)\>
+▸ **fetchChainData**(): `Promise`\<[`ChainData`](../modules#chaindata)\>
 
 Fetches blockchain information if needed.
 
 #### Returns
 
-`Promise`\<[`ChainData`](../modules.md#chaindata)\>
+`Promise`\<[`ChainData`](../modules#chaindata)\>
 
 #### Defined in
 
-[services/chain.ts:57](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/chain.ts#L57)
+[services/chain.ts:57](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/chain.ts#L57)
 
 ___
 
@@ -194,13 +194,13 @@ The transaction hash
 
 #### Defined in
 
-[services/chain.ts:92](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/chain.ts#L92)
+[services/chain.ts:92](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/chain.ts#L92)
 
 ___
 
 ### txInfo
 
-▸ **txInfo**(`txHash`): `Promise`\<[`IChainTxReference`](../interfaces/IChainTxReference.md)\>
+▸ **txInfo**(`txHash`): `Promise`\<[`IChainTxReference`](../interfaces/IChainTxReference)\>
 
 Fetches information about a transaction from the blockchain.
 
@@ -212,13 +212,13 @@ Fetches information about a transaction from the blockchain.
 
 #### Returns
 
-`Promise`\<[`IChainTxReference`](../interfaces/IChainTxReference.md)\>
+`Promise`\<[`IChainTxReference`](../interfaces/IChainTxReference)\>
 
 The chain transaction
 
 #### Defined in
 
-[services/chain.ts:103](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/chain.ts#L103)
+[services/chain.ts:103](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/chain.ts#L103)
 
 ___
 
@@ -244,4 +244,4 @@ it fails.
 
 #### Defined in
 
-[services/chain.ts:129](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/chain.ts#L129)
+[services/chain.ts:129](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/chain.ts#L129)

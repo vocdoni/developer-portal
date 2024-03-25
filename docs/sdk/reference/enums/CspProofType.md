@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / CspProofType
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / CspProofType
 
 # Enumeration: CspProofType
 
@@ -6,7 +6,7 @@
 
 ### Enumeration Members
 
-- [ECDSA](CspProofType.md#ecdsa)
+- [ECDSA](CspProofType#ecdsa)
 - [ECDSA\_BLIND](CspProofType.md#ecdsa_blind)
 - [ECDSA\_BLIND\_PIDSALTED](CspProofType.md#ecdsa_blind_pidsalted)
 - [ECDSA\_PIDSALTED](CspProofType.md#ecdsa_pidsalted)
@@ -19,7 +19,7 @@
 
 #### Defined in
 
-[services/csp.ts:15](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/csp.ts#L15)
+[services/csp.ts:15](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/csp.ts#L15)
 
 ___
 
@@ -29,7 +29,7 @@ ___
 
 #### Defined in
 
-[services/csp.ts:17](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/csp.ts#L17)
+[services/csp.ts:17](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/csp.ts#L17)
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 #### Defined in
 
-[services/csp.ts:18](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/csp.ts#L18)
+[services/csp.ts:18](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/csp.ts#L18)
 
 ___
 
@@ -49,4 +49,4 @@ ___
 
 #### Defined in
 
-[services/csp.ts:16](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/csp.ts#L16)
+[services/csp.ts:16](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/csp.ts#L16)

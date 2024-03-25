@@ -1,10 +1,10 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / CensusService
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / CensusService
 
 # Class: CensusService
 
 ## Hierarchy
 
-- [`Service`](Service.md)
+- [`Service`](Service)
 
   ↳ **`CensusService`**
 
@@ -16,34 +16,34 @@
 
 ### Constructors
 
-- [constructor](CensusService.md#constructor)
+- [constructor](CensusService#constructor)
 
 ### Properties
 
-- [auth](CensusService.md#auth)
+- [auth](CensusService#auth)
 - [chunk\_size](CensusService.md#chunk_size)
-- [url](CensusService.md#url)
+- [url](CensusService#url)
 
 ### Methods
 
-- [add](CensusService.md#add)
-- [addParallel](CensusService.md#addparallel)
-- [create](CensusService.md#create)
-- [createCensus](CensusService.md#createcensus)
-- [createCensusParallel](CensusService.md#createcensusparallel)
-- [delete](CensusService.md#delete)
-- [export](CensusService.md#export)
-- [fetchAccountToken](CensusService.md#fetchaccounttoken)
-- [fetchProof](CensusService.md#fetchproof)
-- [get](CensusService.md#get)
-- [import](CensusService.md#import)
-- [publish](CensusService.md#publish)
+- [add](CensusService#add)
+- [addParallel](CensusService#addparallel)
+- [create](CensusService#create)
+- [createCensus](CensusService#createcensus)
+- [createCensusParallel](CensusService#createcensusparallel)
+- [delete](CensusService#delete)
+- [export](CensusService#export)
+- [fetchAccountToken](CensusService#fetchaccounttoken)
+- [fetchProof](CensusService#fetchproof)
+- [get](CensusService#get)
+- [import](CensusService#import)
+- [publish](CensusService#publish)
 
 ## Constructors
 
 ### constructor
 
-• **new CensusService**(`params`): [`CensusService`](CensusService.md)
+• **new CensusService**(`params`): [`CensusService`](CensusService)
 
 Instantiate the census service.
 
@@ -55,15 +55,15 @@ Instantiate the census service.
 
 #### Returns
 
-[`CensusService`](CensusService.md)
+[`CensusService`](CensusService)
 
 #### Overrides
 
-[Service](Service.md).[constructor](Service.md#constructor)
+[Service](Service.md).[constructor](Service#constructor)
 
 #### Defined in
 
-[services/census.ts:73](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/census.ts#L73)
+[services/census.ts:73](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/census.ts#L73)
 
 ## Properties
 
@@ -77,7 +77,7 @@ CensusServiceProperties.auth
 
 #### Defined in
 
-[services/census.ts:65](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/census.ts#L65)
+[services/census.ts:65](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/census.ts#L65)
 
 ___
 
@@ -91,7 +91,7 @@ CensusServiceProperties.chunk\_size
 
 #### Defined in
 
-[services/census.ts:66](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/census.ts#L66)
+[services/census.ts:66](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/census.ts#L66)
 
 ___
 
@@ -101,11 +101,11 @@ ___
 
 #### Inherited from
 
-[Service](Service.md).[url](Service.md#url)
+[Service](Service.md).[url](Service#url)
 
 #### Defined in
 
-[services/service.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/service.ts#L6)
+[services/service.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/service.ts#L6)
 
 ## Methods
 
@@ -118,7 +118,7 @@ ___
 | Name | Type |
 | :------ | :------ |
 | `censusId` | `string` |
-| `participants` | [`ICensusParticipant`](../interfaces/ICensusParticipant.md)[] |
+| `participants` | [`ICensusParticipant`](../interfaces/ICensusParticipant)[] |
 
 #### Returns
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-[services/census.ts:145](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/census.ts#L145)
+[services/census.ts:145](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/census.ts#L145)
 
 ___
 
@@ -139,7 +139,7 @@ ___
 | Name | Type |
 | :------ | :------ |
 | `censusId` | `string` |
-| `participants` | [`ICensusParticipant`](../interfaces/ICensusParticipant.md)[] |
+| `participants` | [`ICensusParticipant`](../interfaces/ICensusParticipant)[] |
 
 #### Returns
 
@@ -147,7 +147,7 @@ ___
 
 #### Defined in
 
-[services/census.ts:169](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/census.ts#L169)
+[services/census.ts:169](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/census.ts#L169)
 
 ___
 
@@ -159,7 +159,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `censusType` | [`CensusType`](../enums/CensusType.md) |
+| `censusType` | [`CensusType`](../enums/CensusType) |
 
 #### Returns
 
@@ -167,7 +167,7 @@ ___
 
 #### Defined in
 
-[services/census.ts:137](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/census.ts#L137)
+[services/census.ts:137](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/census.ts#L137)
 
 ___
 
@@ -181,7 +181,7 @@ Publishes the given census.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `census` | [`PlainCensus`](PlainCensus.md) \| [`WeightedCensus`](WeightedCensus.md) | The census to be published. |
+| `census` | [`PlainCensus`](PlainCensus.md) \| [`WeightedCensus`](WeightedCensus) | The census to be published. |
 
 #### Returns
 
@@ -189,7 +189,7 @@ Publishes the given census.
 
 #### Defined in
 
-[services/census.ts:232](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/census.ts#L232)
+[services/census.ts:232](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/census.ts#L232)
 
 ___
 
@@ -203,7 +203,7 @@ Publishes the given census.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `census` | [`PlainCensus`](PlainCensus.md) \| [`WeightedCensus`](WeightedCensus.md) | The census to be published. |
+| `census` | [`PlainCensus`](PlainCensus.md) \| [`WeightedCensus`](WeightedCensus) | The census to be published. |
 
 #### Returns
 
@@ -211,7 +211,7 @@ Publishes the given census.
 
 #### Defined in
 
-[services/census.ts:254](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/census.ts#L254)
+[services/census.ts:254](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/census.ts#L254)
 
 ___
 
@@ -233,13 +233,13 @@ Deletes the given census.
 
 #### Defined in
 
-[services/census.ts:110](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/census.ts#L110)
+[services/census.ts:110](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/census.ts#L110)
 
 ___
 
 ### export
 
-▸ **export**(`censusId`): `Promise`\<[`CensusImportExport`](../modules.md#censusimportexport)\>
+▸ **export**(`censusId`): `Promise`\<[`CensusImportExport`](../modules#censusimportexport)\>
 
 Exports the given census identifier.
 
@@ -251,11 +251,11 @@ Exports the given census identifier.
 
 #### Returns
 
-`Promise`\<[`CensusImportExport`](../modules.md#censusimportexport)\>
+`Promise`\<[`CensusImportExport`](../modules#censusimportexport)\>
 
 #### Defined in
 
-[services/census.ts:206](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/census.ts#L206)
+[services/census.ts:206](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/census.ts#L206)
 
 ___
 
@@ -271,13 +271,13 @@ Fetches the specific account token auth and sets it to the current instance.
 
 #### Defined in
 
-[services/census.ts:275](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/census.ts#L275)
+[services/census.ts:275](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/census.ts#L275)
 
 ___
 
 ### fetchProof
 
-▸ **fetchProof**(`censusId`, `key`): `Promise`\<[`CensusProof`](../modules.md#censusproof)\>
+▸ **fetchProof**(`censusId`, `key`): `Promise`\<[`CensusProof`](../modules#censusproof)\>
 
 Fetches proof that an address is part of the specified census.
 
@@ -290,17 +290,17 @@ Fetches proof that an address is part of the specified census.
 
 #### Returns
 
-`Promise`\<[`CensusProof`](../modules.md#censusproof)\>
+`Promise`\<[`CensusProof`](../modules#censusproof)\>
 
 #### Defined in
 
-[services/census.ts:124](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/census.ts#L124)
+[services/census.ts:124](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/census.ts#L124)
 
 ___
 
 ### get
 
-▸ **get**(`censusId`): `Promise`\<\{ `size`: `number` ; `type`: [`CensusType`](../enums/CensusType.md) ; `weight`: `bigint`  }\>
+▸ **get**(`censusId`): `Promise`\<\{ `size`: `number` ; `type`: [`CensusType`](../enums/CensusType) ; `weight`: `bigint`  }\>
 
 Fetches the information of a given census.
 
@@ -312,17 +312,17 @@ Fetches the information of a given census.
 
 #### Returns
 
-`Promise`\<\{ `size`: `number` ; `type`: [`CensusType`](../enums/CensusType.md) ; `weight`: `bigint`  }\>
+`Promise`\<\{ `size`: `number` ; `type`: [`CensusType`](../enums/CensusType) ; `weight`: `bigint`  }\>
 
 #### Defined in
 
-[services/census.ts:84](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/census.ts#L84)
+[services/census.ts:84](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/census.ts#L84)
 
 ___
 
 ### import
 
-▸ **import**(`censusId`, `data`): `Promise`\<[`ICensusImportResponse`](../interfaces/ICensusImportResponse.md)\>
+▸ **import**(`censusId`, `data`): `Promise`\<[`ICensusImportResponse`](../interfaces/ICensusImportResponse)\>
 
 Imports data into the given census identifier.
 
@@ -331,21 +331,21 @@ Imports data into the given census identifier.
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `censusId` | `string` | The census identifier |
-| `data` | [`CensusImportExport`](../modules.md#censusimportexport) | The census data |
+| `data` | [`CensusImportExport`](../modules#censusimportexport) | The census data |
 
 #### Returns
 
-`Promise`\<[`ICensusImportResponse`](../interfaces/ICensusImportResponse.md)\>
+`Promise`\<[`ICensusImportResponse`](../interfaces/ICensusImportResponse)\>
 
 #### Defined in
 
-[services/census.ts:219](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/census.ts#L219)
+[services/census.ts:219](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/census.ts#L219)
 
 ___
 
 ### publish
 
-▸ **publish**(`censusId`): `Promise`\<[`ICensusPublishResponse`](../interfaces/ICensusPublishResponse.md)\>
+▸ **publish**(`censusId`): `Promise`\<[`ICensusPublishResponse`](../interfaces/ICensusPublishResponse)\>
 
 Publishes the given census identifier.
 
@@ -357,8 +357,8 @@ Publishes the given census identifier.
 
 #### Returns
 
-`Promise`\<[`ICensusPublishResponse`](../interfaces/ICensusPublishResponse.md)\>
+`Promise`\<[`ICensusPublishResponse`](../interfaces/ICensusPublishResponse)\>
 
 #### Defined in
 
-[services/census.ts:194](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/census.ts#L194)
+[services/census.ts:194](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/census.ts#L194)

@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / InvalidElection
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / InvalidElection
 
 # Class: InvalidElection
 
@@ -8,7 +8,7 @@ Represents an invalid election
 
 ### Constructors
 
-- [constructor](InvalidElection.md#constructor)
+- [constructor](InvalidElection#constructor)
 
 ### Properties
 
@@ -16,14 +16,14 @@ Represents an invalid election
 
 ### Accessors
 
-- [id](InvalidElection.md#id)
-- [isValid](InvalidElection.md#isvalid)
+- [id](InvalidElection#id)
+- [isValid](InvalidElection#isvalid)
 
 ## Constructors
 
 ### constructor
 
-• **new InvalidElection**(`params`): [`InvalidElection`](InvalidElection.md)
+• **new InvalidElection**(`params`): [`InvalidElection`](InvalidElection)
 
 Constructs an invalid election
 
@@ -31,15 +31,15 @@ Constructs an invalid election
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `params` | [`IInvalidElectionParameters`](../interfaces/IInvalidElectionParameters.md) | Election parameters |
+| `params` | [`IInvalidElectionParameters`](../interfaces/IInvalidElectionParameters) | Election parameters |
 
 #### Returns
 
-[`InvalidElection`](InvalidElection.md)
+[`InvalidElection`](InvalidElection)
 
 #### Defined in
 
-[types/election/invalid.ts:16](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/election/invalid.ts#L16)
+[types/election/invalid.ts:16](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/election/invalid.ts#L16)
 
 ## Properties
 
@@ -49,7 +49,7 @@ Constructs an invalid election
 
 #### Defined in
 
-[types/election/invalid.ts:9](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/election/invalid.ts#L9)
+[types/election/invalid.ts:9](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/election/invalid.ts#L9)
 
 ## Accessors
 
@@ -63,7 +63,7 @@ Constructs an invalid election
 
 #### Defined in
 
-[types/election/invalid.ts:20](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/election/invalid.ts#L20)
+[types/election/invalid.ts:20](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/election/invalid.ts#L20)
 
 ___
 
@@ -77,4 +77,4 @@ ___
 
 #### Defined in
 
-[types/election/invalid.ts:24](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/election/invalid.ts#L24)
+[types/election/invalid.ts:24](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/election/invalid.ts#L24)

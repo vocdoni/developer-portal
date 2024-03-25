@@ -1,10 +1,10 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / FaucetService
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / FaucetService
 
 # Class: FaucetService
 
 ## Hierarchy
 
-- [`Service`](Service.md)
+- [`Service`](Service)
 
   ↳ **`FaucetService`**
 
@@ -16,23 +16,23 @@
 
 ### Constructors
 
-- [constructor](FaucetService.md#constructor)
+- [constructor](FaucetService#constructor)
 
 ### Properties
 
 - [token\_limit](FaucetService.md#token_limit)
-- [url](FaucetService.md#url)
+- [url](FaucetService#url)
 
 ### Methods
 
-- [fetchPayload](FaucetService.md#fetchpayload)
-- [parseFaucetPackage](FaucetService.md#parsefaucetpackage)
+- [fetchPayload](FaucetService#fetchpayload)
+- [parseFaucetPackage](FaucetService#parsefaucetpackage)
 
 ## Constructors
 
 ### constructor
 
-• **new FaucetService**(`params`): [`FaucetService`](FaucetService.md)
+• **new FaucetService**(`params`): [`FaucetService`](FaucetService)
 
 Instantiate the chain service.
 
@@ -44,15 +44,15 @@ Instantiate the chain service.
 
 #### Returns
 
-[`FaucetService`](FaucetService.md)
+[`FaucetService`](FaucetService)
 
 #### Overrides
 
-[Service](Service.md).[constructor](Service.md#constructor)
+[Service](Service.md).[constructor](Service#constructor)
 
 #### Defined in
 
-[services/faucet.ts:38](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/faucet.ts#L38)
+[services/faucet.ts:38](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/faucet.ts#L38)
 
 ## Properties
 
@@ -66,7 +66,7 @@ FaucetServiceProperties.token\_limit
 
 #### Defined in
 
-[services/faucet.ts:31](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/faucet.ts#L31)
+[services/faucet.ts:31](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/faucet.ts#L31)
 
 ___
 
@@ -76,11 +76,11 @@ ___
 
 #### Inherited from
 
-[Service](Service.md).[url](Service.md#url)
+[Service](Service.md).[url](Service#url)
 
 #### Defined in
 
-[services/service.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/service.ts#L6)
+[services/service.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/service.ts#L6)
 
 ## Methods
 
@@ -104,13 +104,13 @@ The encoded faucet package
 
 #### Defined in
 
-[services/faucet.ts:49](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/faucet.ts#L49)
+[services/faucet.ts:49](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/faucet.ts#L49)
 
 ___
 
 ### parseFaucetPackage
 
-▸ **parseFaucetPackage**(`faucetPackage`): [`FaucetPackage`](../modules.md#faucetpackage)
+▸ **parseFaucetPackage**(`faucetPackage`): [`FaucetPackage`](../modules#faucetpackage)
 
 Parses a faucet package.
 
@@ -122,8 +122,8 @@ Parses a faucet package.
 
 #### Returns
 
-[`FaucetPackage`](../modules.md#faucetpackage)
+[`FaucetPackage`](../modules#faucetpackage)
 
 #### Defined in
 
-[services/faucet.ts:59](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/faucet.ts#L59)
+[services/faucet.ts:59](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/faucet.ts#L59)

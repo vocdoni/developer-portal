@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / ITallyMode
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / ITallyMode
 
 # Interface: ITallyMode
 
@@ -6,11 +6,11 @@
 
 ### Properties
 
-- [costExponent](ITallyMode.md#costexponent)
-- [maxCount](ITallyMode.md#maxcount)
-- [maxTotalCost](ITallyMode.md#maxtotalcost)
-- [maxValue](ITallyMode.md#maxvalue)
-- [maxVoteOverwrites](ITallyMode.md#maxvoteoverwrites)
+- [costExponent](ITallyMode#costexponent)
+- [maxCount](ITallyMode#maxcount)
+- [maxTotalCost](ITallyMode#maxtotalcost)
+- [maxValue](ITallyMode#maxvalue)
+- [maxVoteOverwrites](ITallyMode#maxvoteoverwrites)
 
 ## Properties
 
@@ -22,7 +22,7 @@ The cost exponent of the vote
 
 #### Defined in
 
-[api/election.ts:122](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/election.ts#L122)
+[api/election.ts:122](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/election.ts#L122)
 
 ___
 
@@ -34,7 +34,7 @@ The max count of the vote's values sum
 
 #### Defined in
 
-[api/election.ts:102](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/election.ts#L102)
+[api/election.ts:102](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/election.ts#L102)
 
 ___
 
@@ -46,7 +46,7 @@ The max total cost of the votes
 
 #### Defined in
 
-[api/election.ts:117](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/election.ts#L117)
+[api/election.ts:117](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/election.ts#L117)
 
 ___
 
@@ -58,7 +58,7 @@ The max value of the vote's values
 
 #### Defined in
 
-[api/election.ts:107](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/election.ts#L107)
+[api/election.ts:107](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/election.ts#L107)
 
 ___
 
@@ -70,4 +70,4 @@ The max number of votes overwrites
 
 #### Defined in
 
-[api/election.ts:112](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/election.ts#L112)
+[api/election.ts:112](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/election.ts#L112)

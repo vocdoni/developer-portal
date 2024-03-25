@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / ICensusProofResponse
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / ICensusProofResponse
 
 # Interface: ICensusProofResponse
 
@@ -6,12 +6,12 @@
 
 ### Properties
 
-- [censusProof](ICensusProofResponse.md#censusproof)
-- [censusRoot](ICensusProofResponse.md#censusroot)
-- [censusSiblings](ICensusProofResponse.md#censussiblings)
-- [type](ICensusProofResponse.md#type)
-- [value](ICensusProofResponse.md#value)
-- [weight](ICensusProofResponse.md#weight)
+- [censusProof](ICensusProofResponse#censusproof)
+- [censusRoot](ICensusProofResponse#censusroot)
+- [censusSiblings](ICensusProofResponse#censussiblings)
+- [type](ICensusProofResponse#type)
+- [value](ICensusProofResponse#value)
+- [weight](ICensusProofResponse#weight)
 
 ## Properties
 
@@ -23,7 +23,7 @@ The proof for the given key
 
 #### Defined in
 
-[api/census.ts:83](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/census.ts#L83)
+[api/census.ts:83](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/census.ts#L83)
 
 ___
 
@@ -35,7 +35,7 @@ The root (id) of the census
 
 #### Defined in
 
-[api/census.ts:78](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/census.ts#L78)
+[api/census.ts:78](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/census.ts#L78)
 
 ___
 
@@ -47,19 +47,19 @@ The census siblings
 
 #### Defined in
 
-[api/census.ts:93](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/census.ts#L93)
+[api/census.ts:93](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/census.ts#L93)
 
 ___
 
 ### type
 
-• **type**: [`CensusType`](../enums/CensusType.md)
+• **type**: [`CensusType`](../enums/CensusType)
 
 The type of the census
 
 #### Defined in
 
-[api/census.ts:68](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/census.ts#L68)
+[api/census.ts:68](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/census.ts#L68)
 
 ___
 
@@ -71,7 +71,7 @@ The value for the given key
 
 #### Defined in
 
-[api/census.ts:88](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/census.ts#L88)
+[api/census.ts:88](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/census.ts#L88)
 
 ___
 
@@ -83,4 +83,4 @@ The weight as a string
 
 #### Defined in
 
-[api/census.ts:73](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/census.ts#L73)
+[api/census.ts:73](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/census.ts#L73)

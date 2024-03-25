@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / IEncryptionKey
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / IEncryptionKey
 
 # Interface: IEncryptionKey
 
@@ -6,8 +6,8 @@
 
 ### Properties
 
-- [index](IEncryptionKey.md#index)
-- [key](IEncryptionKey.md#key)
+- [index](IEncryptionKey#index)
+- [key](IEncryptionKey#key)
 
 ## Properties
 
@@ -19,7 +19,7 @@ The index of the encryption key
 
 #### Defined in
 
-[api/election.ts:257](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/election.ts#L257)
+[api/election.ts:257](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/election.ts#L257)
 
 ___
 
@@ -31,4 +31,4 @@ The encryption key
 
 #### Defined in
 
-[api/election.ts:262](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/election.ts#L262)
+[api/election.ts:262](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/election.ts#L262)

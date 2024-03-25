@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / IElectionVoteListResponse
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / IElectionVoteListResponse
 
 # Interface: IElectionVoteListResponse
 
@@ -6,16 +6,16 @@
 
 ### Properties
 
-- [votes](IElectionVoteListResponse.md#votes)
+- [votes](IElectionVoteListResponse#votes)
 
 ## Properties
 
 ### votes
 
-• **votes**: [`IElectionVote`](IElectionVote.md)[]
+• **votes**: [`IElectionVote`](IElectionVote)[]
 
 List of votes
 
 #### Defined in
 
-[api/election.ts:315](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/election.ts#L315)
+[api/election.ts:315](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/election.ts#L315)

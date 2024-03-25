@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / CensusTypeEnum
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / CensusTypeEnum
 
 # Enumeration: CensusTypeEnum
 
@@ -7,10 +7,10 @@
 ### Enumeration Members
 
 - [CENSUS\_UNKNOWN](CensusTypeEnum.md#census_unknown)
-- [ERC1155](CensusTypeEnum.md#erc1155)
-- [ERC20](CensusTypeEnum.md#erc20)
-- [ERC721](CensusTypeEnum.md#erc721)
-- [ERC777](CensusTypeEnum.md#erc777)
+- [ERC1155](CensusTypeEnum#erc1155)
+- [ERC20](CensusTypeEnum#erc20)
+- [ERC721](CensusTypeEnum#erc721)
+- [ERC777](CensusTypeEnum#erc777)
 - [MINI\_ME](CensusTypeEnum.md#mini_me)
 - [OFF\_CHAIN\_CA](CensusTypeEnum.md#off_chain_ca)
 - [OFF\_CHAIN\_TREE](CensusTypeEnum.md#off_chain_tree)
@@ -24,7 +24,7 @@
 
 #### Defined in
 
-[api/election.ts:150](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/election.ts#L150)
+[api/election.ts:150](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/election.ts#L150)
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 #### Defined in
 
-[api/election.ts:156](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/election.ts#L156)
+[api/election.ts:156](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/election.ts#L156)
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 #### Defined in
 
-[api/election.ts:154](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/election.ts#L154)
+[api/election.ts:154](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/election.ts#L154)
 
 ___
 
@@ -54,7 +54,7 @@ ___
 
 #### Defined in
 
-[api/election.ts:155](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/election.ts#L155)
+[api/election.ts:155](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/election.ts#L155)
 
 ___
 
@@ -64,7 +64,7 @@ ___
 
 #### Defined in
 
-[api/election.ts:157](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/election.ts#L157)
+[api/election.ts:157](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/election.ts#L157)
 
 ___
 
@@ -74,7 +74,7 @@ ___
 
 #### Defined in
 
-[api/election.ts:158](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/election.ts#L158)
+[api/election.ts:158](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/election.ts#L158)
 
 ___
 
@@ -84,7 +84,7 @@ ___
 
 #### Defined in
 
-[api/election.ts:153](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/election.ts#L153)
+[api/election.ts:153](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/election.ts#L153)
 
 ___
 
@@ -94,7 +94,7 @@ ___
 
 #### Defined in
 
-[api/election.ts:151](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/election.ts#L151)
+[api/election.ts:151](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/election.ts#L151)
 
 ___
 
@@ -104,4 +104,4 @@ ___
 
 #### Defined in
 
-[api/election.ts:152](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/election.ts#L152)
+[api/election.ts:152](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/election.ts#L152)

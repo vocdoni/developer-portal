@@ -4,6 +4,8 @@ The Vocdoni SDK is a convenient way to interact with the Vocdoni Protocol throug
 
 ### Start by following along with the [SDK tutorial][tutorial]
 
+#### There is also a [tutorial](/sdk/integration-details/census-types/on-chain#tutorial) for using an on-chain token-based census
+
 ### Detailed [SDK reference][reference]
 
 

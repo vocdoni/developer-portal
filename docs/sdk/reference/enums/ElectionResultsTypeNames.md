@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / ElectionResultsTypeNames
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / ElectionResultsTypeNames
 
 # Enumeration: ElectionResultsTypeNames
 
@@ -6,8 +6,8 @@
 
 ### Enumeration Members
 
-- [APPROVAL](ElectionResultsTypeNames.md#approval)
-- [BUDGET](ElectionResultsTypeNames.md#budget)
+- [APPROVAL](ElectionResultsTypeNames#approval)
+- [BUDGET](ElectionResultsTypeNames#budget)
 - [MULTIPLE\_CHOICE](ElectionResultsTypeNames.md#multiple_choice)
 - [SINGLE\_CHOICE\_MULTIQUESTION](ElectionResultsTypeNames.md#single_choice_multiquestion)
 
@@ -19,7 +19,7 @@
 
 #### Defined in
 
-[types/metadata/election.ts:41](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/metadata/election.ts#L41)
+[types/metadata/election.ts:41](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/metadata/election.ts#L41)
 
 ___
 
@@ -29,7 +29,7 @@ ___
 
 #### Defined in
 
-[types/metadata/election.ts:40](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/metadata/election.ts#L40)
+[types/metadata/election.ts:40](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/metadata/election.ts#L40)
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 #### Defined in
 
-[types/metadata/election.ts:39](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/metadata/election.ts#L39)
+[types/metadata/election.ts:39](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/metadata/election.ts#L39)
 
 ___
 
@@ -49,4 +49,4 @@ ___
 
 #### Defined in
 
-[types/metadata/election.ts:38](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/metadata/election.ts#L38)
+[types/metadata/election.ts:38](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/metadata/election.ts#L38)

@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / VoteEnvelope
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / VoteEnvelope
 
 # Interface: VoteEnvelope
 
@@ -6,12 +6,12 @@
 
 ### Properties
 
-- [encryptionKeyIndexes](VoteEnvelope.md#encryptionkeyindexes)
-- [nonce](VoteEnvelope.md#nonce)
-- [nullifier](VoteEnvelope.md#nullifier)
-- [processId](VoteEnvelope.md#processid)
-- [proof](VoteEnvelope.md#proof)
-- [votePackage](VoteEnvelope.md#votepackage)
+- [encryptionKeyIndexes](VoteEnvelope#encryptionkeyindexes)
+- [nonce](VoteEnvelope#nonce)
+- [nullifier](VoteEnvelope#nullifier)
+- [processId](VoteEnvelope#processid)
+- [proof](VoteEnvelope#proof)
+- [votePackage](VoteEnvelope#votepackage)
 
 ## Properties
 
@@ -23,7 +23,7 @@ On encrypted votes, contains the (sorted) indexes of the keys used to encrypt
 
 #### Defined in
 
-[api/chain/transactions.ts:80](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain/transactions.ts#L80)
+[api/chain/transactions.ts:80](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain/transactions.ts#L80)
 
 ___
 
@@ -35,7 +35,7 @@ Unique number per vote attempt, so that replay attacks can't reuse this payload
 
 #### Defined in
 
-[api/chain/transactions.ts:60](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain/transactions.ts#L60)
+[api/chain/transactions.ts:60](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain/transactions.ts#L60)
 
 ___
 
@@ -47,7 +47,7 @@ Hash of the private key + processId
 
 #### Defined in
 
-[api/chain/transactions.ts:76](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain/transactions.ts#L76)
+[api/chain/transactions.ts:76](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain/transactions.ts#L76)
 
 ___
 
@@ -59,19 +59,19 @@ The process for which the vote is casted
 
 #### Defined in
 
-[api/chain/transactions.ts:64](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain/transactions.ts#L64)
+[api/chain/transactions.ts:64](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain/transactions.ts#L64)
 
 ___
 
 ### proof
 
-• **proof**: [`Proof`](Proof.md)
+• **proof**: [`Proof`](Proof)
 
 Franchise proof
 
 #### Defined in
 
-[api/chain/transactions.ts:68](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain/transactions.ts#L68)
+[api/chain/transactions.ts:68](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain/transactions.ts#L68)
 
 ___
 
@@ -83,4 +83,4 @@ JSON string of the Vote Package (potentially encrypted), encoded as bytes.
 
 #### Defined in
 
-[api/chain/transactions.ts:72](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain/transactions.ts#L72)
+[api/chain/transactions.ts:72](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain/transactions.ts#L72)

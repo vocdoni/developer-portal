@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / ICensus3CensusQueueResponse
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / ICensus3CensusQueueResponse
 
 # Interface: ICensus3CensusQueueResponse
 
@@ -6,21 +6,21 @@
 
 ### Properties
 
-- [census](ICensus3CensusQueueResponse.md#census)
-- [done](ICensus3CensusQueueResponse.md#done)
-- [error](ICensus3CensusQueueResponse.md#error)
+- [census](ICensus3CensusQueueResponse#census)
+- [done](ICensus3CensusQueueResponse#done)
+- [error](ICensus3CensusQueueResponse#error)
 
 ## Properties
 
 ### census
 
-• **census**: [`ICensus3CensusResponse`](ICensus3CensusResponse.md)
+• **census**: [`ICensus3CensusResponse`](ICensus3CensusResponse)
 
 The census
 
 #### Defined in
 
-[api/census3/census.ts:84](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/census3/census.ts#L84)
+[api/census3/census.ts:84](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/census3/census.ts#L84)
 
 ___
 
@@ -32,7 +32,7 @@ If the queue has been done
 
 #### Defined in
 
-[api/census3/census.ts:64](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/census3/census.ts#L64)
+[api/census3/census.ts:64](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/census3/census.ts#L64)
 
 ___
 
@@ -51,4 +51,4 @@ The error of the queue
 
 #### Defined in
 
-[api/census3/census.ts:69](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/census3/census.ts#L69)
+[api/census3/census.ts:69](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/census3/census.ts#L69)

@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / ICensus3SupportedChain
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / ICensus3SupportedChain
 
 # Interface: ICensus3SupportedChain
 
@@ -6,9 +6,9 @@
 
 ### Properties
 
-- [chainID](ICensus3SupportedChain.md#chainid)
-- [name](ICensus3SupportedChain.md#name)
-- [shortName](ICensus3SupportedChain.md#shortname)
+- [chainID](ICensus3SupportedChain#chainid)
+- [name](ICensus3SupportedChain#name)
+- [shortName](ICensus3SupportedChain#shortname)
 
 ## Properties
 
@@ -20,7 +20,7 @@ The identifier of the chain
 
 #### Defined in
 
-[api/census3/service.ts:12](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/census3/service.ts#L12)
+[api/census3/service.ts:12](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/census3/service.ts#L12)
 
 ___
 
@@ -32,7 +32,7 @@ The name of the chain
 
 #### Defined in
 
-[api/census3/service.ts:22](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/census3/service.ts#L22)
+[api/census3/service.ts:22](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/census3/service.ts#L22)
 
 ___
 
@@ -44,4 +44,4 @@ The short name of the chain
 
 #### Defined in
 
-[api/census3/service.ts:17](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/census3/service.ts#L17)
+[api/census3/service.ts:17](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/census3/service.ts#L17)

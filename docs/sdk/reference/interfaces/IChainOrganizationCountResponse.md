@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / IChainOrganizationCountResponse
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / IChainOrganizationCountResponse
 
 # Interface: IChainOrganizationCountResponse
 
@@ -6,7 +6,7 @@
 
 ### Properties
 
-- [count](IChainOrganizationCountResponse.md#count)
+- [count](IChainOrganizationCountResponse#count)
 
 ## Properties
 
@@ -18,4 +18,4 @@ The number of organizations
 
 #### Defined in
 
-[api/chain.ts:241](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain.ts#L241)
+[api/chain.ts:241](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L241)

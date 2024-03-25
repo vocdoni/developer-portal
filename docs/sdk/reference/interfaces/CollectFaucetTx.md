@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / CollectFaucetTx
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / CollectFaucetTx
 
 # Interface: CollectFaucetTx
 
@@ -6,9 +6,9 @@
 
 ### Properties
 
-- [faucetPackage](CollectFaucetTx.md#faucetpackage)
-- [nonce](CollectFaucetTx.md#nonce)
-- [txType](CollectFaucetTx.md#txtype)
+- [faucetPackage](CollectFaucetTx#faucetpackage)
+- [nonce](CollectFaucetTx#nonce)
+- [txType](CollectFaucetTx#txtype)
 
 ## Properties
 
@@ -18,7 +18,7 @@
 
 #### Defined in
 
-[api/chain/transactions.ts:158](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain/transactions.ts#L158)
+[api/chain/transactions.ts:158](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain/transactions.ts#L158)
 
 ___
 
@@ -28,14 +28,14 @@ ___
 
 #### Defined in
 
-[api/chain/transactions.ts:159](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain/transactions.ts#L159)
+[api/chain/transactions.ts:159](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain/transactions.ts#L159)
 
 ___
 
 ### txType
 
-• **txType**: [`TxType`](../enums/TxType.md)
+• **txType**: [`TxType`](../enums/TxType)
 
 #### Defined in
 
-[api/chain/transactions.ts:157](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain/transactions.ts#L157)
+[api/chain/transactions.ts:157](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain/transactions.ts#L157)

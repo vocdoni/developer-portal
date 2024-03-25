@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / ICensus3StrategyHoldersResponse
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / ICensus3StrategyHoldersResponse
 
 # Interface: ICensus3StrategyHoldersResponse
 
@@ -6,13 +6,13 @@
 
 - **`ICensus3StrategyHoldersResponse`**
 
-  ↳ [`ICensus3StrategyHoldersResponsePaginated`](ICensus3StrategyHoldersResponsePaginated.md)
+  ↳ [`ICensus3StrategyHoldersResponsePaginated`](ICensus3StrategyHoldersResponsePaginated)
 
 ## Table of contents
 
 ### Properties
 
-- [holders](ICensus3StrategyHoldersResponse.md#holders)
+- [holders](ICensus3StrategyHoldersResponse#holders)
 
 ## Properties
 
@@ -28,4 +28,4 @@ The list of the strategy holders
 
 #### Defined in
 
-[api/census3/strategy.ts:36](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/census3/strategy.ts#L36)
+[api/census3/strategy.ts:36](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/census3/strategy.ts#L36)

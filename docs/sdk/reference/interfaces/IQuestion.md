@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / IQuestion
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / IQuestion
 
 # Interface: IQuestion
 
@@ -6,20 +6,20 @@
 
 ### Properties
 
-- [choices](IQuestion.md#choices)
-- [description](IQuestion.md#description)
-- [numAbstains](IQuestion.md#numabstains)
-- [title](IQuestion.md#title)
+- [choices](IQuestion#choices)
+- [description](IQuestion#description)
+- [numAbstains](IQuestion#numabstains)
+- [title](IQuestion#title)
 
 ## Properties
 
 ### choices
 
-• **choices**: [`IChoice`](IChoice.md)[]
+• **choices**: [`IChoice`](IChoice)[]
 
 #### Defined in
 
-[types/metadata/election.ts:34](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/metadata/election.ts#L34)
+[types/metadata/election.ts:34](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/metadata/election.ts#L34)
 
 ___
 
@@ -29,7 +29,7 @@ ___
 
 #### Defined in
 
-[types/metadata/election.ts:32](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/metadata/election.ts#L32)
+[types/metadata/election.ts:32](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/metadata/election.ts#L32)
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 #### Defined in
 
-[types/metadata/election.ts:33](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/metadata/election.ts#L33)
+[types/metadata/election.ts:33](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/metadata/election.ts#L33)
 
 ___
 
@@ -49,4 +49,4 @@ ___
 
 #### Defined in
 
-[types/metadata/election.ts:31](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/metadata/election.ts#L31)
+[types/metadata/election.ts:31](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/metadata/election.ts#L31)

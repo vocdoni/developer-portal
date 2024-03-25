@@ -1,10 +1,10 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / VoteService
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / VoteService
 
 # Class: VoteService
 
 ## Hierarchy
 
-- [`Service`](Service.md)
+- [`Service`](Service)
 
   ↳ **`VoteService`**
 
@@ -16,25 +16,25 @@
 
 ### Constructors
 
-- [constructor](VoteService.md#constructor)
+- [constructor](VoteService#constructor)
 
 ### Properties
 
-- [chainService](VoteService.md#chainservice)
-- [url](VoteService.md#url)
+- [chainService](VoteService#chainservice)
+- [url](VoteService#url)
 
 ### Methods
 
-- [encodeTransaction](VoteService.md#encodetransaction)
-- [info](VoteService.md#info)
-- [signTransaction](VoteService.md#signtransaction)
-- [vote](VoteService.md#vote)
+- [encodeTransaction](VoteService#encodetransaction)
+- [info](VoteService#info)
+- [signTransaction](VoteService#signtransaction)
+- [vote](VoteService#vote)
 
 ## Constructors
 
 ### constructor
 
-• **new VoteService**(`params`): [`VoteService`](VoteService.md)
+• **new VoteService**(`params`): [`VoteService`](VoteService)
 
 Instantiate the election service.
 
@@ -46,21 +46,21 @@ Instantiate the election service.
 
 #### Returns
 
-[`VoteService`](VoteService.md)
+[`VoteService`](VoteService)
 
 #### Overrides
 
-[Service](Service.md).[constructor](Service.md#constructor)
+[Service](Service.md).[constructor](Service#constructor)
 
 #### Defined in
 
-[services/vote.ts:45](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/vote.ts#L45)
+[services/vote.ts:45](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/vote.ts#L45)
 
 ## Properties
 
 ### chainService
 
-• **chainService**: [`ChainService`](ChainService.md)
+• **chainService**: [`ChainService`](ChainService)
 
 #### Implementation of
 
@@ -68,7 +68,7 @@ VoteServiceProperties.chainService
 
 #### Defined in
 
-[services/vote.ts:38](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/vote.ts#L38)
+[services/vote.ts:38](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/vote.ts#L38)
 
 ___
 
@@ -78,11 +78,11 @@ ___
 
 #### Inherited from
 
-[Service](Service.md).[url](Service.md#url)
+[Service](Service.md).[url](Service#url)
 
 #### Defined in
 
-[services/service.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/service.ts#L6)
+[services/service.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/service.ts#L6)
 
 ## Methods
 
@@ -102,13 +102,13 @@ ___
 
 #### Defined in
 
-[services/vote.ts:58](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/vote.ts#L58)
+[services/vote.ts:58](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/vote.ts#L58)
 
 ___
 
 ### info
 
-▸ **info**(`voteId`): `Promise`\<[`IVoteInfoResponse`](../interfaces/IVoteInfoResponse.md)\>
+▸ **info**(`voteId`): `Promise`\<[`IVoteInfoResponse`](../interfaces/IVoteInfoResponse)\>
 
 Get the vote information
 
@@ -120,11 +120,11 @@ Get the vote information
 
 #### Returns
 
-`Promise`\<[`IVoteInfoResponse`](../interfaces/IVoteInfoResponse.md)\>
+`Promise`\<[`IVoteInfoResponse`](../interfaces/IVoteInfoResponse)\>
 
 #### Defined in
 
-[services/vote.ts:69](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/vote.ts#L69)
+[services/vote.ts:69](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/vote.ts#L69)
 
 ___
 
@@ -146,13 +146,13 @@ ___
 
 #### Defined in
 
-[services/vote.ts:50](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/vote.ts#L50)
+[services/vote.ts:50](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/vote.ts#L50)
 
 ___
 
 ### vote
 
-▸ **vote**(`payload`): `Promise`\<[`IVoteSubmitResponse`](../interfaces/IVoteSubmitResponse.md)\>
+▸ **vote**(`payload`): `Promise`\<[`IVoteSubmitResponse`](../interfaces/IVoteSubmitResponse)\>
 
 Submit the vote to the chain
 
@@ -164,8 +164,8 @@ Submit the vote to the chain
 
 #### Returns
 
-`Promise`\<[`IVoteSubmitResponse`](../interfaces/IVoteSubmitResponse.md)\>
+`Promise`\<[`IVoteSubmitResponse`](../interfaces/IVoteSubmitResponse)\>
 
 #### Defined in
 
-[services/vote.ts:81](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/vote.ts#L81)
+[services/vote.ts:81](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/vote.ts#L81)

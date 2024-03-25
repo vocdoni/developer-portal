@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / SetTransactionCostsTx
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / SetTransactionCostsTx
 
 # Interface: SetTransactionCostsTx
 
@@ -6,9 +6,9 @@
 
 ### Properties
 
-- [nonce](SetTransactionCostsTx.md#nonce)
-- [txtype](SetTransactionCostsTx.md#txtype)
-- [value](SetTransactionCostsTx.md#value)
+- [nonce](SetTransactionCostsTx#nonce)
+- [txtype](SetTransactionCostsTx#txtype)
+- [value](SetTransactionCostsTx#value)
 
 ## Properties
 
@@ -18,17 +18,17 @@
 
 #### Defined in
 
-[api/chain/transactions.ts:143](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain/transactions.ts#L143)
+[api/chain/transactions.ts:143](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain/transactions.ts#L143)
 
 ___
 
 ### txtype
 
-• **txtype**: [`TxType`](../enums/TxType.md)
+• **txtype**: [`TxType`](../enums/TxType)
 
 #### Defined in
 
-[api/chain/transactions.ts:142](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain/transactions.ts#L142)
+[api/chain/transactions.ts:142](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain/transactions.ts#L142)
 
 ___
 
@@ -38,4 +38,4 @@ ___
 
 #### Defined in
 
-[api/chain/transactions.ts:144](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain/transactions.ts#L144)
+[api/chain/transactions.ts:144](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain/transactions.ts#L144)

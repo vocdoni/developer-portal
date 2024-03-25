@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / FaucetAPI
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / FaucetAPI
 
 # Class: FaucetAPI
 
@@ -12,25 +12,25 @@
 
 ### Constructors
 
-- [constructor](FaucetAPI.md#constructor)
+- [constructor](FaucetAPI#constructor)
 
 ### Methods
 
-- [collect](FaucetAPI.md#collect)
-- [isApiError](FaucetAPI.md#isapierror)
-- [isUndefinedError](FaucetAPI.md#isundefinederror)
+- [collect](FaucetAPI#collect)
+- [isApiError](FaucetAPI#isapierror)
+- [isUndefinedError](FaucetAPI#isundefinederror)
 
 ## Constructors
 
 ### constructor
 
-• **new FaucetAPI**(): [`FaucetAPI`](FaucetAPI.md)
+• **new FaucetAPI**(): [`FaucetAPI`](FaucetAPI)
 
 Cannot be constructed.
 
 #### Returns
 
-[`FaucetAPI`](FaucetAPI.md)
+[`FaucetAPI`](FaucetAPI)
 
 #### Overrides
 
@@ -38,7 +38,7 @@ API.constructor
 
 #### Defined in
 
-[api/faucet.ts:24](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/faucet.ts#L24)
+[api/faucet.ts:24](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/faucet.ts#L24)
 
 ## Methods
 
@@ -61,7 +61,7 @@ Calls the collect tokens method.
 
 #### Defined in
 
-[api/faucet.ts:35](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/faucet.ts#L35)
+[api/faucet.ts:35](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/faucet.ts#L35)
 
 ___
 
@@ -85,7 +85,7 @@ API.isApiError
 
 #### Defined in
 
-[api/api.ts:21](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/api.ts#L21)
+[api/api.ts:21](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/api.ts#L21)
 
 ___
 
@@ -110,4 +110,4 @@ API.isUndefinedError
 
 #### Defined in
 
-[api/api.ts:64](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/api.ts#L64)
+[api/api.ts:64](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/api.ts#L64)

@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / IBudgetElectionParametersWithBudget
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / IBudgetElectionParametersWithBudget
 
 # Interface: IBudgetElectionParametersWithBudget
 
@@ -6,7 +6,7 @@ Define election parameters.
 
 ## Hierarchy
 
-- [`IBudgetElectionParametersInfo`](IBudgetElectionParametersInfo.md)
+- [`IBudgetElectionParametersInfo`](IBudgetElectionParametersInfo)
 
   ↳ **`IBudgetElectionParametersWithBudget`**
 
@@ -14,24 +14,24 @@ Define election parameters.
 
 ### Properties
 
-- [addSDKVersion](IBudgetElectionParametersWithBudget.md#addsdkversion)
-- [census](IBudgetElectionParametersWithBudget.md#census)
-- [description](IBudgetElectionParametersWithBudget.md#description)
-- [electionType](IBudgetElectionParametersWithBudget.md#electiontype)
-- [endDate](IBudgetElectionParametersWithBudget.md#enddate)
-- [forceFullBudget](IBudgetElectionParametersWithBudget.md#forcefullbudget)
-- [header](IBudgetElectionParametersWithBudget.md#header)
-- [maxBudget](IBudgetElectionParametersWithBudget.md#maxbudget)
-- [maxCensusSize](IBudgetElectionParametersWithBudget.md#maxcensussize)
-- [meta](IBudgetElectionParametersWithBudget.md#meta)
-- [minStep](IBudgetElectionParametersWithBudget.md#minstep)
-- [questions](IBudgetElectionParametersWithBudget.md#questions)
-- [startDate](IBudgetElectionParametersWithBudget.md#startdate)
-- [streamUri](IBudgetElectionParametersWithBudget.md#streamuri)
-- [temporarySecretIdentity](IBudgetElectionParametersWithBudget.md#temporarysecretidentity)
-- [title](IBudgetElectionParametersWithBudget.md#title)
-- [useCensusWeightAsBudget](IBudgetElectionParametersWithBudget.md#usecensusweightasbudget)
-- [voteType](IBudgetElectionParametersWithBudget.md#votetype)
+- [addSDKVersion](IBudgetElectionParametersWithBudget#addsdkversion)
+- [census](IBudgetElectionParametersWithBudget#census)
+- [description](IBudgetElectionParametersWithBudget#description)
+- [electionType](IBudgetElectionParametersWithBudget#electiontype)
+- [endDate](IBudgetElectionParametersWithBudget#enddate)
+- [forceFullBudget](IBudgetElectionParametersWithBudget#forcefullbudget)
+- [header](IBudgetElectionParametersWithBudget#header)
+- [maxBudget](IBudgetElectionParametersWithBudget#maxbudget)
+- [maxCensusSize](IBudgetElectionParametersWithBudget#maxcensussize)
+- [meta](IBudgetElectionParametersWithBudget#meta)
+- [minStep](IBudgetElectionParametersWithBudget#minstep)
+- [questions](IBudgetElectionParametersWithBudget#questions)
+- [startDate](IBudgetElectionParametersWithBudget#startdate)
+- [streamUri](IBudgetElectionParametersWithBudget#streamuri)
+- [temporarySecretIdentity](IBudgetElectionParametersWithBudget#temporarysecretidentity)
+- [title](IBudgetElectionParametersWithBudget#title)
+- [useCensusWeightAsBudget](IBudgetElectionParametersWithBudget#usecensusweightasbudget)
+- [voteType](IBudgetElectionParametersWithBudget#votetype)
 
 ## Properties
 
@@ -43,25 +43,25 @@ Used to add the SDK version to the election metadata
 
 #### Inherited from
 
-[IBudgetElectionParametersInfo](IBudgetElectionParametersInfo.md).[addSDKVersion](IBudgetElectionParametersInfo.md#addsdkversion)
+[IBudgetElectionParametersInfo](IBudgetElectionParametersInfo.md).[addSDKVersion](IBudgetElectionParametersInfo#addsdkversion)
 
 #### Defined in
 
-[types/election/election.ts:155](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/election/election.ts#L155)
+[types/election/election.ts:155](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/election/election.ts#L155)
 
 ___
 
 ### census
 
-• **census**: [`Census`](../classes/Census.md)
+• **census**: [`Census`](../classes/Census)
 
 #### Inherited from
 
-[IBudgetElectionParametersInfo](IBudgetElectionParametersInfo.md).[census](IBudgetElectionParametersInfo.md#census)
+[IBudgetElectionParametersInfo](IBudgetElectionParametersInfo.md).[census](IBudgetElectionParametersInfo#census)
 
 #### Defined in
 
-[types/election/election.ts:129](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/election/election.ts#L129)
+[types/election/election.ts:129](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/election/election.ts#L129)
 
 ___
 
@@ -73,25 +73,25 @@ Election description
 
 #### Inherited from
 
-[IBudgetElectionParametersInfo](IBudgetElectionParametersInfo.md).[description](IBudgetElectionParametersInfo.md#description)
+[IBudgetElectionParametersInfo](IBudgetElectionParametersInfo.md).[description](IBudgetElectionParametersInfo#description)
 
 #### Defined in
 
-[types/election/election.ts:114](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/election/election.ts#L114)
+[types/election/election.ts:114](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/election/election.ts#L114)
 
 ___
 
 ### electionType
 
-• `Optional` **electionType**: [`IElectionType`](IElectionType.md)
+• `Optional` **electionType**: [`IElectionType`](IElectionType)
 
 #### Inherited from
 
-[IBudgetElectionParametersInfo](IBudgetElectionParametersInfo.md).[electionType](IBudgetElectionParametersInfo.md#electiontype)
+[IBudgetElectionParametersInfo](IBudgetElectionParametersInfo.md).[electionType](IBudgetElectionParametersInfo#electiontype)
 
 #### Defined in
 
-[types/election/election.ts:131](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/election/election.ts#L131)
+[types/election/election.ts:131](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/election/election.ts#L131)
 
 ___
 
@@ -101,11 +101,11 @@ ___
 
 #### Inherited from
 
-[IBudgetElectionParametersInfo](IBudgetElectionParametersInfo.md).[endDate](IBudgetElectionParametersInfo.md#enddate)
+[IBudgetElectionParametersInfo](IBudgetElectionParametersInfo.md).[endDate](IBudgetElectionParametersInfo#enddate)
 
 #### Defined in
 
-[types/election/election.ts:128](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/election/election.ts#L128)
+[types/election/election.ts:128](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/election/election.ts#L128)
 
 ___
 
@@ -115,11 +115,11 @@ ___
 
 #### Inherited from
 
-[IBudgetElectionParametersInfo](IBudgetElectionParametersInfo.md).[forceFullBudget](IBudgetElectionParametersInfo.md#forcefullbudget)
+[IBudgetElectionParametersInfo](IBudgetElectionParametersInfo.md).[forceFullBudget](IBudgetElectionParametersInfo#forcefullbudget)
 
 #### Defined in
 
-[types/election/budget.ts:9](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/election/budget.ts#L9)
+[types/election/budget.ts:9](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/election/budget.ts#L9)
 
 ___
 
@@ -131,11 +131,11 @@ Election header image url.
 
 #### Inherited from
 
-[IBudgetElectionParametersInfo](IBudgetElectionParametersInfo.md).[header](IBudgetElectionParametersInfo.md#header)
+[IBudgetElectionParametersInfo](IBudgetElectionParametersInfo.md).[header](IBudgetElectionParametersInfo#header)
 
 #### Defined in
 
-[types/election/election.ts:118](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/election/election.ts#L118)
+[types/election/election.ts:118](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/election/election.ts#L118)
 
 ___
 
@@ -145,7 +145,7 @@ ___
 
 #### Defined in
 
-[types/election/budget.ts:18](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/election/budget.ts#L18)
+[types/election/budget.ts:18](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/election/budget.ts#L18)
 
 ___
 
@@ -165,11 +165,11 @@ size` error.
 
 #### Inherited from
 
-[IBudgetElectionParametersInfo](IBudgetElectionParametersInfo.md).[maxCensusSize](IBudgetElectionParametersInfo.md#maxcensussize)
+[IBudgetElectionParametersInfo](IBudgetElectionParametersInfo.md).[maxCensusSize](IBudgetElectionParametersInfo#maxcensussize)
 
 #### Defined in
 
-[types/election/election.ts:145](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/election/election.ts#L145)
+[types/election/election.ts:145](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/election/election.ts#L145)
 
 ___
 
@@ -181,11 +181,11 @@ Metadata (anything added by the election creator)
 
 #### Inherited from
 
-[IBudgetElectionParametersInfo](IBudgetElectionParametersInfo.md).[meta](IBudgetElectionParametersInfo.md#meta)
+[IBudgetElectionParametersInfo](IBudgetElectionParametersInfo.md).[meta](IBudgetElectionParametersInfo#meta)
 
 #### Defined in
 
-[types/election/election.ts:126](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/election/election.ts#L126)
+[types/election/election.ts:126](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/election/election.ts#L126)
 
 ___
 
@@ -195,25 +195,25 @@ ___
 
 #### Inherited from
 
-[IBudgetElectionParametersInfo](IBudgetElectionParametersInfo.md).[minStep](IBudgetElectionParametersInfo.md#minstep)
+[IBudgetElectionParametersInfo](IBudgetElectionParametersInfo.md).[minStep](IBudgetElectionParametersInfo#minstep)
 
 #### Defined in
 
-[types/election/budget.ts:8](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/election/budget.ts#L8)
+[types/election/budget.ts:8](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/election/budget.ts#L8)
 
 ___
 
 ### questions
 
-• `Optional` **questions**: [`IQuestion`](IQuestion.md)[]
+• `Optional` **questions**: [`IQuestion`](IQuestion)[]
 
 #### Inherited from
 
-[IBudgetElectionParametersInfo](IBudgetElectionParametersInfo.md).[questions](IBudgetElectionParametersInfo.md#questions)
+[IBudgetElectionParametersInfo](IBudgetElectionParametersInfo.md).[questions](IBudgetElectionParametersInfo#questions)
 
 #### Defined in
 
-[types/election/election.ts:132](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/election/election.ts#L132)
+[types/election/election.ts:132](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/election/election.ts#L132)
 
 ___
 
@@ -223,11 +223,11 @@ ___
 
 #### Inherited from
 
-[IBudgetElectionParametersInfo](IBudgetElectionParametersInfo.md).[startDate](IBudgetElectionParametersInfo.md#startdate)
+[IBudgetElectionParametersInfo](IBudgetElectionParametersInfo.md).[startDate](IBudgetElectionParametersInfo#startdate)
 
 #### Defined in
 
-[types/election/election.ts:127](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/election/election.ts#L127)
+[types/election/election.ts:127](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/election/election.ts#L127)
 
 ___
 
@@ -239,11 +239,11 @@ Election stream Uri (ex: a video url)
 
 #### Inherited from
 
-[IBudgetElectionParametersInfo](IBudgetElectionParametersInfo.md).[streamUri](IBudgetElectionParametersInfo.md#streamuri)
+[IBudgetElectionParametersInfo](IBudgetElectionParametersInfo.md).[streamUri](IBudgetElectionParametersInfo#streamuri)
 
 #### Defined in
 
-[types/election/election.ts:122](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/election/election.ts#L122)
+[types/election/election.ts:122](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/election/election.ts#L122)
 
 ___
 
@@ -255,11 +255,11 @@ Is used to remove the secret identities of the voters once the process is done.
 
 #### Inherited from
 
-[IBudgetElectionParametersInfo](IBudgetElectionParametersInfo.md).[temporarySecretIdentity](IBudgetElectionParametersInfo.md#temporarysecretidentity)
+[IBudgetElectionParametersInfo](IBudgetElectionParametersInfo.md).[temporarySecretIdentity](IBudgetElectionParametersInfo#temporarysecretidentity)
 
 #### Defined in
 
-[types/election/election.ts:150](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/election/election.ts#L150)
+[types/election/election.ts:150](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/election/election.ts#L150)
 
 ___
 
@@ -271,11 +271,11 @@ Election title
 
 #### Inherited from
 
-[IBudgetElectionParametersInfo](IBudgetElectionParametersInfo.md).[title](IBudgetElectionParametersInfo.md#title)
+[IBudgetElectionParametersInfo](IBudgetElectionParametersInfo.md).[title](IBudgetElectionParametersInfo#title)
 
 #### Defined in
 
-[types/election/election.ts:110](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/election/election.ts#L110)
+[types/election/election.ts:110](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/election/election.ts#L110)
 
 ___
 
@@ -285,18 +285,18 @@ ___
 
 #### Defined in
 
-[types/election/budget.ts:17](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/election/budget.ts#L17)
+[types/election/budget.ts:17](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/election/budget.ts#L17)
 
 ___
 
 ### voteType
 
-• `Optional` **voteType**: [`IVoteType`](IVoteType.md)
+• `Optional` **voteType**: [`IVoteType`](IVoteType)
 
 #### Inherited from
 
-[IBudgetElectionParametersInfo](IBudgetElectionParametersInfo.md).[voteType](IBudgetElectionParametersInfo.md#votetype)
+[IBudgetElectionParametersInfo](IBudgetElectionParametersInfo.md).[voteType](IBudgetElectionParametersInfo#votetype)
 
 #### Defined in
 
-[types/election/election.ts:130](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/election/election.ts#L130)
+[types/election/election.ts:130](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/election/election.ts#L130)

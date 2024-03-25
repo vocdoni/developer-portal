@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / IElectionMode
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / IElectionMode
 
 # Interface: IElectionMode
 
@@ -6,11 +6,11 @@
 
 ### Properties
 
-- [autoStart](IElectionMode.md#autostart)
-- [dynamicCensus](IElectionMode.md#dynamiccensus)
-- [encryptedMetaData](IElectionMode.md#encryptedmetadata)
-- [interruptible](IElectionMode.md#interruptible)
-- [preRegister](IElectionMode.md#preregister)
+- [autoStart](IElectionMode#autostart)
+- [dynamicCensus](IElectionMode#dynamiccensus)
+- [encryptedMetaData](IElectionMode#encryptedmetadata)
+- [interruptible](IElectionMode#interruptible)
+- [preRegister](IElectionMode#preregister)
 
 ## Properties
 
@@ -22,7 +22,7 @@ If the election should start automatically
 
 #### Defined in
 
-[api/election.ts:75](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/election.ts#L75)
+[api/election.ts:75](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/election.ts#L75)
 
 ___
 
@@ -34,7 +34,7 @@ If the election has a dynamic census
 
 #### Defined in
 
-[api/election.ts:85](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/election.ts#L85)
+[api/election.ts:85](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/election.ts#L85)
 
 ___
 
@@ -46,7 +46,7 @@ If the election has encrypted metadata
 
 #### Defined in
 
-[api/election.ts:90](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/election.ts#L90)
+[api/election.ts:90](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/election.ts#L90)
 
 ___
 
@@ -58,7 +58,7 @@ If the election is interruptible
 
 #### Defined in
 
-[api/election.ts:80](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/election.ts#L80)
+[api/election.ts:80](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/election.ts#L80)
 
 ___
 
@@ -70,4 +70,4 @@ If the election has preregister phase
 
 #### Defined in
 
-[api/election.ts:95](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/election.ts#L95)
+[api/election.ts:95](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/election.ts#L95)

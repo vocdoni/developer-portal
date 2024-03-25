@@ -1,10 +1,10 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / FileService
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / FileService
 
 # Class: FileService
 
 ## Hierarchy
 
-- [`Service`](Service.md)
+- [`Service`](Service)
 
   ↳ **`FileService`**
 
@@ -16,21 +16,21 @@
 
 ### Constructors
 
-- [constructor](FileService.md#constructor)
+- [constructor](FileService#constructor)
 
 ### Properties
 
-- [url](FileService.md#url)
+- [url](FileService#url)
 
 ### Methods
 
-- [calculateCID](FileService.md#calculatecid)
+- [calculateCID](FileService#calculatecid)
 
 ## Constructors
 
 ### constructor
 
-• **new FileService**(`params`): [`FileService`](FileService.md)
+• **new FileService**(`params`): [`FileService`](FileService)
 
 Instantiate the election service.
 
@@ -42,15 +42,15 @@ Instantiate the election service.
 
 #### Returns
 
-[`FileService`](FileService.md)
+[`FileService`](FileService)
 
 #### Overrides
 
-[Service](Service.md).[constructor](Service.md#constructor)
+[Service](Service.md).[constructor](Service#constructor)
 
 #### Defined in
 
-[services/file.ts:16](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/file.ts#L16)
+[services/file.ts:16](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/file.ts#L16)
 
 ## Properties
 
@@ -60,11 +60,11 @@ Instantiate the election service.
 
 #### Inherited from
 
-[Service](Service.md).[url](Service.md#url)
+[Service](Service.md).[url](Service#url)
 
 #### Defined in
 
-[services/service.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/service.ts#L6)
+[services/service.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/service.ts#L6)
 
 ## Methods
 
@@ -88,4 +88,4 @@ Resulting CID
 
 #### Defined in
 
-[services/file.ts:27](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/file.ts#L27)
+[services/file.ts:27](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/file.ts#L27)

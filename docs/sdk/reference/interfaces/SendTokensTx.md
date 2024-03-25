@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / SendTokensTx
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / SendTokensTx
 
 # Interface: SendTokensTx
 
@@ -6,11 +6,11 @@
 
 ### Properties
 
-- [from](SendTokensTx.md#from)
-- [nonce](SendTokensTx.md#nonce)
-- [to](SendTokensTx.md#to)
-- [txtype](SendTokensTx.md#txtype)
-- [value](SendTokensTx.md#value)
+- [from](SendTokensTx#from)
+- [nonce](SendTokensTx#nonce)
+- [to](SendTokensTx#to)
+- [txtype](SendTokensTx#txtype)
+- [value](SendTokensTx#value)
 
 ## Properties
 
@@ -20,7 +20,7 @@
 
 #### Defined in
 
-[api/chain/transactions.ts:136](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain/transactions.ts#L136)
+[api/chain/transactions.ts:136](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain/transactions.ts#L136)
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 #### Defined in
 
-[api/chain/transactions.ts:135](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain/transactions.ts#L135)
+[api/chain/transactions.ts:135](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain/transactions.ts#L135)
 
 ___
 
@@ -40,17 +40,17 @@ ___
 
 #### Defined in
 
-[api/chain/transactions.ts:137](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain/transactions.ts#L137)
+[api/chain/transactions.ts:137](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain/transactions.ts#L137)
 
 ___
 
 ### txtype
 
-• **txtype**: [`TxType`](../enums/TxType.md)
+• **txtype**: [`TxType`](../enums/TxType)
 
 #### Defined in
 
-[api/chain/transactions.ts:134](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain/transactions.ts#L134)
+[api/chain/transactions.ts:134](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain/transactions.ts#L134)
 
 ___
 
@@ -60,4 +60,4 @@ ___
 
 #### Defined in
 
-[api/chain/transactions.ts:138](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain/transactions.ts#L138)
+[api/chain/transactions.ts:138](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain/transactions.ts#L138)

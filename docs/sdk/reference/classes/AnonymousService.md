@@ -1,10 +1,10 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / AnonymousService
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / AnonymousService
 
 # Class: AnonymousService
 
 ## Hierarchy
 
-- [`Service`](Service.md)
+- [`Service`](Service)
 
   ↳ **`AnonymousService`**
 
@@ -16,39 +16,39 @@
 
 ### Constructors
 
-- [constructor](AnonymousService.md#constructor)
+- [constructor](AnonymousService#constructor)
 
 ### Properties
 
-- [chainCircuits](AnonymousService.md#chaincircuits)
-- [url](AnonymousService.md#url)
+- [chainCircuits](AnonymousService#chaincircuits)
+- [url](AnonymousService#url)
 - [arbo\_utils](AnonymousService.md#arbo_utils)
 - [ff\_utils](AnonymousService.md#ff_utils)
 - [hex\_utils](AnonymousService.md#hex_utils)
 
 ### Methods
 
-- [checkCircuitsHashes](AnonymousService.md#checkcircuitshashes)
-- [fetchAccountSIK](AnonymousService.md#fetchaccountsik)
-- [fetchCircuits](AnonymousService.md#fetchcircuits)
-- [fetchZKProof](AnonymousService.md#fetchzkproof)
-- [generateZkProof](AnonymousService.md#generatezkproof)
-- [hasRegisteredSIK](AnonymousService.md#hasregisteredsik)
-- [setCircuits](AnonymousService.md#setcircuits)
-- [signSIKPayload](AnonymousService.md#signsikpayload)
-- [calcCircuitInputs](AnonymousService.md#calccircuitinputs)
-- [calcNullifier](AnonymousService.md#calcnullifier)
-- [calcSik](AnonymousService.md#calcsik)
-- [calcVoteId](AnonymousService.md#calcvoteid)
-- [generateGroth16Proof](AnonymousService.md#generategroth16proof)
-- [prepareCircuitInputs](AnonymousService.md#preparecircuitinputs)
-- [signatureToVocdoniSikSignature](AnonymousService.md#signaturetovocdonisiksignature)
+- [checkCircuitsHashes](AnonymousService#checkcircuitshashes)
+- [fetchAccountSIK](AnonymousService#fetchaccountsik)
+- [fetchCircuits](AnonymousService#fetchcircuits)
+- [fetchZKProof](AnonymousService#fetchzkproof)
+- [generateZkProof](AnonymousService#generatezkproof)
+- [hasRegisteredSIK](AnonymousService#hasregisteredsik)
+- [setCircuits](AnonymousService#setcircuits)
+- [signSIKPayload](AnonymousService#signsikpayload)
+- [calcCircuitInputs](AnonymousService#calccircuitinputs)
+- [calcNullifier](AnonymousService#calcnullifier)
+- [calcSik](AnonymousService#calcsik)
+- [calcVoteId](AnonymousService#calcvoteid)
+- [generateGroth16Proof](AnonymousService#generategroth16proof)
+- [prepareCircuitInputs](AnonymousService#preparecircuitinputs)
+- [signatureToVocdoniSikSignature](AnonymousService#signaturetovocdonisiksignature)
 
 ## Constructors
 
 ### constructor
 
-• **new AnonymousService**(`params`): [`AnonymousService`](AnonymousService.md)
+• **new AnonymousService**(`params`): [`AnonymousService`](AnonymousService)
 
 Instantiate the anonymous service.
 
@@ -60,21 +60,21 @@ Instantiate the anonymous service.
 
 #### Returns
 
-[`AnonymousService`](AnonymousService.md)
+[`AnonymousService`](AnonymousService)
 
 #### Overrides
 
-[Service](Service.md).[constructor](Service.md#constructor)
+[Service](Service.md).[constructor](Service#constructor)
 
 #### Defined in
 
-[services/anonymous.ts:71](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/anonymous.ts#L71)
+[services/anonymous.ts:71](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/anonymous.ts#L71)
 
 ## Properties
 
 ### chainCircuits
 
-• **chainCircuits**: [`ChainCircuits`](../modules.md#chaincircuits)
+• **chainCircuits**: [`ChainCircuits`](../modules#chaincircuits)
 
 #### Implementation of
 
@@ -82,7 +82,7 @@ AnonymousServiceProperties.chainCircuits
 
 #### Defined in
 
-[services/anonymous.ts:64](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/anonymous.ts#L64)
+[services/anonymous.ts:64](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/anonymous.ts#L64)
 
 ___
 
@@ -92,11 +92,11 @@ ___
 
 #### Inherited from
 
-[Service](Service.md).[url](Service.md#url)
+[Service](Service.md).[url](Service#url)
 
 #### Defined in
 
-[services/service.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/service.ts#L6)
+[services/service.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/service.ts#L6)
 
 ___
 
@@ -114,7 +114,7 @@ ___
 
 #### Defined in
 
-[services/anonymous.ts:277](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/anonymous.ts#L277)
+[services/anonymous.ts:277](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/anonymous.ts#L277)
 
 ___
 
@@ -132,7 +132,7 @@ ___
 
 #### Defined in
 
-[services/anonymous.ts:329](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/anonymous.ts#L329)
+[services/anonymous.ts:329](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/anonymous.ts#L329)
 
 ___
 
@@ -150,25 +150,25 @@ ___
 
 #### Defined in
 
-[services/anonymous.ts:304](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/anonymous.ts#L304)
+[services/anonymous.ts:304](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/anonymous.ts#L304)
 
 ## Methods
 
 ### checkCircuitsHashes
 
-▸ **checkCircuitsHashes**(): [`ChainCircuits`](../modules.md#chaincircuits)
+▸ **checkCircuitsHashes**(): [`ChainCircuits`](../modules#chaincircuits)
 
 Checks circuit hashes
 
 #### Returns
 
-[`ChainCircuits`](../modules.md#chaincircuits)
+[`ChainCircuits`](../modules#chaincircuits)
 
 The checked circuit parameters
 
 #### Defined in
 
-[services/anonymous.ts:107](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/anonymous.ts#L107)
+[services/anonymous.ts:107](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/anonymous.ts#L107)
 
 ___
 
@@ -188,13 +188,13 @@ ___
 
 #### Defined in
 
-[services/anonymous.ts:82](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/anonymous.ts#L82)
+[services/anonymous.ts:82](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/anonymous.ts#L82)
 
 ___
 
 ### fetchCircuits
 
-▸ **fetchCircuits**(`circuits?`): `Promise`\<[`ChainCircuits`](../modules.md#chaincircuits)\>
+▸ **fetchCircuits**(`circuits?`): `Promise`\<[`ChainCircuits`](../modules#chaincircuits)\>
 
 Fetches circuits for anonymous voting
 
@@ -202,15 +202,15 @@ Fetches circuits for anonymous voting
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `circuits?` | `Omit`\<[`ChainCircuits`](../modules.md#chaincircuits), ``"zKeyData"`` \| ``"vKeyData"`` \| ``"wasmData"``\> | Additional options for custom circuits |
+| `circuits?` | `Omit`\<[`ChainCircuits`](../modules#chaincircuits), ``"zKeyData"`` \| ``"vKeyData"`` \| ``"wasmData"``\> | Additional options for custom circuits |
 
 #### Returns
 
-`Promise`\<[`ChainCircuits`](../modules.md#chaincircuits)\>
+`Promise`\<[`ChainCircuits`](../modules#chaincircuits)\>
 
 #### Defined in
 
-[services/anonymous.ts:131](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/anonymous.ts#L131)
+[services/anonymous.ts:131](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/anonymous.ts#L131)
 
 ___
 
@@ -230,27 +230,27 @@ ___
 
 #### Defined in
 
-[services/anonymous.ts:93](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/anonymous.ts#L93)
+[services/anonymous.ts:93](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/anonymous.ts#L93)
 
 ___
 
 ### generateZkProof
 
-▸ **generateZkProof**(`inputs`): `Promise`\<[`ZkProof`](../modules.md#zkproof)\>
+▸ **generateZkProof**(`inputs`): `Promise`\<[`ZkProof`](../modules#zkproof)\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `inputs` | [`CircuitInputs`](../interfaces/CircuitInputs.md) |
+| `inputs` | [`CircuitInputs`](../interfaces/CircuitInputs) |
 
 #### Returns
 
-`Promise`\<[`ZkProof`](../modules.md#zkproof)\>
+`Promise`\<[`ZkProof`](../modules#zkproof)\>
 
 #### Defined in
 
-[services/anonymous.ts:76](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/anonymous.ts#L76)
+[services/anonymous.ts:76](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/anonymous.ts#L76)
 
 ___
 
@@ -272,13 +272,13 @@ ___
 
 #### Defined in
 
-[services/anonymous.ts:87](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/anonymous.ts#L87)
+[services/anonymous.ts:87](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/anonymous.ts#L87)
 
 ___
 
 ### setCircuits
 
-▸ **setCircuits**(`circuits`): [`ChainCircuits`](../modules.md#chaincircuits)
+▸ **setCircuits**(`circuits`): [`ChainCircuits`](../modules#chaincircuits)
 
 Sets circuits for anonymous voting
 
@@ -286,15 +286,15 @@ Sets circuits for anonymous voting
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `circuits` | [`ChainCircuits`](../modules.md#chaincircuits) | Custom circuits |
+| `circuits` | [`ChainCircuits`](../modules#chaincircuits) | Custom circuits |
 
 #### Returns
 
-[`ChainCircuits`](../modules.md#chaincircuits)
+[`ChainCircuits`](../modules#chaincircuits)
 
 #### Defined in
 
-[services/anonymous.ts:187](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/anonymous.ts#L187)
+[services/anonymous.ts:187](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/anonymous.ts#L187)
 
 ___
 
@@ -314,7 +314,7 @@ ___
 
 #### Defined in
 
-[services/anonymous.ts:98](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/anonymous.ts#L98)
+[services/anonymous.ts:98](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/anonymous.ts#L98)
 
 ___
 
@@ -336,7 +336,7 @@ ___
 
 #### Defined in
 
-[services/anonymous.ts:234](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/anonymous.ts#L234)
+[services/anonymous.ts:234](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/anonymous.ts#L234)
 
 ___
 
@@ -358,7 +358,7 @@ ___
 
 #### Defined in
 
-[services/anonymous.ts:247](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/anonymous.ts#L247)
+[services/anonymous.ts:247](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/anonymous.ts#L247)
 
 ___
 
@@ -380,7 +380,7 @@ ___
 
 #### Defined in
 
-[services/anonymous.ts:257](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/anonymous.ts#L257)
+[services/anonymous.ts:257](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/anonymous.ts#L257)
 
 ___
 
@@ -402,35 +402,35 @@ ___
 
 #### Defined in
 
-[services/anonymous.ts:251](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/anonymous.ts#L251)
+[services/anonymous.ts:251](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/anonymous.ts#L251)
 
 ___
 
 ### generateGroth16Proof
 
-▸ **generateGroth16Proof**(`inputs`, `circuitPath`, `provingKey`): `Promise`\<[`ZkProof`](../modules.md#zkproof)\>
+▸ **generateGroth16Proof**(`inputs`, `circuitPath`, `provingKey`): `Promise`\<[`ZkProof`](../modules#zkproof)\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `inputs` | [`CircuitInputs`](../interfaces/CircuitInputs.md) |
+| `inputs` | [`CircuitInputs`](../interfaces/CircuitInputs) |
 | `circuitPath` | `Uint8Array` |
 | `provingKey` | `Uint8Array` |
 
 #### Returns
 
-`Promise`\<[`ZkProof`](../modules.md#zkproof)\>
+`Promise`\<[`ZkProof`](../modules#zkproof)\>
 
 #### Defined in
 
-[services/anonymous.ts:192](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/anonymous.ts#L192)
+[services/anonymous.ts:192](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/anonymous.ts#L192)
 
 ___
 
 ### prepareCircuitInputs
 
-▸ **prepareCircuitInputs**(`electionId`, `address`, `password`, `signature`, `voteWeight`, `availableWeight`, `sikRoot`, `sikSiblings`, `censusRoot`, `censusSiblings`, `votePackage`): `Promise`\<[`CircuitInputs`](../interfaces/CircuitInputs.md)\>
+▸ **prepareCircuitInputs**(`electionId`, `address`, `password`, `signature`, `voteWeight`, `availableWeight`, `sikRoot`, `sikSiblings`, `censusRoot`, `censusSiblings`, `votePackage`): `Promise`\<[`CircuitInputs`](../interfaces/CircuitInputs)\>
 
 #### Parameters
 
@@ -450,11 +450,11 @@ ___
 
 #### Returns
 
-`Promise`\<[`CircuitInputs`](../interfaces/CircuitInputs.md)\>
+`Promise`\<[`CircuitInputs`](../interfaces/CircuitInputs)\>
 
 #### Defined in
 
-[services/anonymous.ts:200](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/anonymous.ts#L200)
+[services/anonymous.ts:200](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/anonymous.ts#L200)
 
 ___
 
@@ -474,4 +474,4 @@ ___
 
 #### Defined in
 
-[services/anonymous.ts:270](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/anonymous.ts#L270)
+[services/anonymous.ts:270](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/anonymous.ts#L270)

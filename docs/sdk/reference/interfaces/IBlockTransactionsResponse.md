@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / IBlockTransactionsResponse
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / IBlockTransactionsResponse
 
 # Interface: IBlockTransactionsResponse
 
@@ -6,9 +6,9 @@
 
 ### Properties
 
-- [blockNumber](IBlockTransactionsResponse.md#blocknumber)
-- [transactionCount](IBlockTransactionsResponse.md#transactioncount)
-- [transactions](IBlockTransactionsResponse.md#transactions)
+- [blockNumber](IBlockTransactionsResponse#blocknumber)
+- [transactionCount](IBlockTransactionsResponse#transactioncount)
+- [transactions](IBlockTransactionsResponse#transactions)
 
 ## Properties
 
@@ -18,7 +18,7 @@
 
 #### Defined in
 
-[api/chain.ts:312](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain.ts#L312)
+[api/chain.ts:312](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L312)
 
 ___
 
@@ -28,14 +28,14 @@ ___
 
 #### Defined in
 
-[api/chain.ts:313](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain.ts#L313)
+[api/chain.ts:313](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L313)
 
 ___
 
 ### transactions
 
-• **transactions**: [`IChainTxReference`](IChainTxReference.md)[]
+• **transactions**: [`IChainTxReference`](IChainTxReference)[]
 
 #### Defined in
 
-[api/chain.ts:314](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain.ts#L314)
+[api/chain.ts:314](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L314)

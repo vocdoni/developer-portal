@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / CspVote
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / CspVote
 
 # Class: CspVote
 
@@ -6,7 +6,7 @@ Represents a vote
 
 ## Hierarchy
 
-- [`Vote`](Vote.md)
+- [`Vote`](Vote)
 
   ↳ **`CspVote`**
 
@@ -14,7 +14,7 @@ Represents a vote
 
 ### Constructors
 
-- [constructor](CspVote.md#constructor)
+- [constructor](CspVote#constructor)
 
 ### Properties
 
@@ -24,14 +24,14 @@ Represents a vote
 ### Accessors
 
 - [proof\_type](CspVote.md#proof_type)
-- [signature](CspVote.md#signature)
-- [votes](CspVote.md#votes)
+- [signature](CspVote#signature)
+- [votes](CspVote#votes)
 
 ## Constructors
 
 ### constructor
 
-• **new CspVote**(`votes`, `signature`, `proof_type?`): [`CspVote`](CspVote.md)
+• **new CspVote**(`votes`, `signature`, `proof_type?`): [`CspVote`](CspVote)
 
 Constructs a csp vote
 
@@ -41,29 +41,29 @@ Constructs a csp vote
 | :------ | :------ | :------ |
 | `votes` | (`number` \| `bigint`)[] | The list of votes values |
 | `signature` | `string` | The CSP signature |
-| `proof_type?` | [`CspProofType`](../enums/CspProofType.md) | The CSP proof type |
+| `proof_type?` | [`CspProofType`](../enums/CspProofType) | The CSP proof type |
 
 #### Returns
 
-[`CspVote`](CspVote.md)
+[`CspVote`](CspVote)
 
 #### Overrides
 
-[Vote](Vote.md).[constructor](Vote.md#constructor)
+[Vote](Vote.md).[constructor](Vote#constructor)
 
 #### Defined in
 
-[types/vote/csp.ts:15](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/vote/csp.ts#L15)
+[types/vote/csp.ts:15](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/vote/csp.ts#L15)
 
 ## Properties
 
 ### \_proof\_type
 
-• `Private` **\_proof\_type**: [`CspProofType`](../enums/CspProofType.md)
+• `Private` **\_proof\_type**: [`CspProofType`](../enums/CspProofType)
 
 #### Defined in
 
-[types/vote/csp.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/vote/csp.ts#L6)
+[types/vote/csp.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/vote/csp.ts#L6)
 
 ___
 
@@ -73,21 +73,21 @@ ___
 
 #### Defined in
 
-[types/vote/csp.ts:5](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/vote/csp.ts#L5)
+[types/vote/csp.ts:5](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/vote/csp.ts#L5)
 
 ## Accessors
 
 ### proof\_type
 
-• `get` **proof_type**(): [`CspProofType`](../enums/CspProofType.md)
+• `get` **proof_type**(): [`CspProofType`](../enums/CspProofType)
 
 #### Returns
 
-[`CspProofType`](../enums/CspProofType.md)
+[`CspProofType`](../enums/CspProofType)
 
 #### Defined in
 
-[types/vote/csp.ts:29](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/vote/csp.ts#L29)
+[types/vote/csp.ts:29](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/vote/csp.ts#L29)
 
 • `set` **proof_type**(`value`): `void`
 
@@ -95,7 +95,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `value` | [`CspProofType`](../enums/CspProofType.md) |
+| `value` | [`CspProofType`](../enums/CspProofType) |
 
 #### Returns
 
@@ -103,7 +103,7 @@ ___
 
 #### Defined in
 
-[types/vote/csp.ts:33](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/vote/csp.ts#L33)
+[types/vote/csp.ts:33](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/vote/csp.ts#L33)
 
 ___
 
@@ -117,7 +117,7 @@ ___
 
 #### Defined in
 
-[types/vote/csp.ts:21](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/vote/csp.ts#L21)
+[types/vote/csp.ts:21](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/vote/csp.ts#L21)
 
 • `set` **signature**(`value`): `void`
 
@@ -133,7 +133,7 @@ ___
 
 #### Defined in
 
-[types/vote/csp.ts:25](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/vote/csp.ts#L25)
+[types/vote/csp.ts:25](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/vote/csp.ts#L25)
 
 ___
 
@@ -151,7 +151,7 @@ Vote.votes
 
 #### Defined in
 
-[types/vote/vote.ts:16](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/vote/vote.ts#L16)
+[types/vote/vote.ts:16](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/vote/vote.ts#L16)
 
 • `set` **votes**(`value`): `void`
 
@@ -171,4 +171,4 @@ Vote.votes
 
 #### Defined in
 
-[types/vote/vote.ts:20](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/vote/vote.ts#L20)
+[types/vote/vote.ts:20](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/vote/vote.ts#L20)

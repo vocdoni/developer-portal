@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / IChainGetCircuitResponse
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / IChainGetCircuitResponse
 
 # Interface: IChainGetCircuitResponse
 
@@ -6,15 +6,15 @@
 
 ### Properties
 
-- [circuitPath](IChainGetCircuitResponse.md#circuitpath)
-- [levels](IChainGetCircuitResponse.md#levels)
-- [uri](IChainGetCircuitResponse.md#uri)
-- [vKeyFilename](IChainGetCircuitResponse.md#vkeyfilename)
-- [vKeyHash](IChainGetCircuitResponse.md#vkeyhash)
-- [wasmFilename](IChainGetCircuitResponse.md#wasmfilename)
-- [wasmHash](IChainGetCircuitResponse.md#wasmhash)
-- [zKeyFilename](IChainGetCircuitResponse.md#zkeyfilename)
-- [zKeyHash](IChainGetCircuitResponse.md#zkeyhash)
+- [circuitPath](IChainGetCircuitResponse#circuitpath)
+- [levels](IChainGetCircuitResponse#levels)
+- [uri](IChainGetCircuitResponse#uri)
+- [vKeyFilename](IChainGetCircuitResponse#vkeyfilename)
+- [vKeyHash](IChainGetCircuitResponse#vkeyhash)
+- [wasmFilename](IChainGetCircuitResponse#wasmfilename)
+- [wasmHash](IChainGetCircuitResponse#wasmhash)
+- [zKeyFilename](IChainGetCircuitResponse#zkeyfilename)
+- [zKeyHash](IChainGetCircuitResponse#zkeyhash)
 
 ## Properties
 
@@ -26,7 +26,7 @@ The path of the circuit.
 
 #### Defined in
 
-[api/chain.ts:127](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain.ts#L127)
+[api/chain.ts:127](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L127)
 
 ___
 
@@ -38,7 +38,7 @@ The circuit levels.
 
 #### Defined in
 
-[api/chain.ts:132](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain.ts#L132)
+[api/chain.ts:132](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L132)
 
 ___
 
@@ -50,7 +50,7 @@ The base uri of the files.
 
 #### Defined in
 
-[api/chain.ts:122](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain.ts#L122)
+[api/chain.ts:122](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L122)
 
 ___
 
@@ -62,7 +62,7 @@ The name of the verification key file.
 
 #### Defined in
 
-[api/chain.ts:152](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain.ts#L152)
+[api/chain.ts:152](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L152)
 
 ___
 
@@ -74,7 +74,7 @@ The hash of the verification key file.
 
 #### Defined in
 
-[api/chain.ts:147](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain.ts#L147)
+[api/chain.ts:147](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L147)
 
 ___
 
@@ -86,7 +86,7 @@ The name of the WASM file.
 
 #### Defined in
 
-[api/chain.ts:162](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain.ts#L162)
+[api/chain.ts:162](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L162)
 
 ___
 
@@ -98,7 +98,7 @@ The hash of the WASM file.
 
 #### Defined in
 
-[api/chain.ts:157](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain.ts#L157)
+[api/chain.ts:157](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L157)
 
 ___
 
@@ -110,7 +110,7 @@ The name of the proving key file.
 
 #### Defined in
 
-[api/chain.ts:142](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain.ts#L142)
+[api/chain.ts:142](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L142)
 
 ___
 
@@ -122,4 +122,4 @@ The hash of the proving key file.
 
 #### Defined in
 
-[api/chain.ts:137](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain.ts#L137)
+[api/chain.ts:137](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L137)

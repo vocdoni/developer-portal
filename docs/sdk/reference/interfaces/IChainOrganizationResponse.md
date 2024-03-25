@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / IChainOrganizationResponse
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / IChainOrganizationResponse
 
 # Interface: IChainOrganizationResponse
 
@@ -6,8 +6,8 @@
 
 ### Properties
 
-- [electionCount](IChainOrganizationResponse.md#electioncount)
-- [organizationID](IChainOrganizationResponse.md#organizationid)
+- [electionCount](IChainOrganizationResponse#electioncount)
+- [organizationID](IChainOrganizationResponse#organizationid)
 
 ## Properties
 
@@ -19,7 +19,7 @@ The number of elections
 
 #### Defined in
 
-[api/chain.ts:253](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain.ts#L253)
+[api/chain.ts:253](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L253)
 
 ___
 
@@ -31,4 +31,4 @@ The identifier of the organization
 
 #### Defined in
 
-[api/chain.ts:248](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain.ts#L248)
+[api/chain.ts:248](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L248)

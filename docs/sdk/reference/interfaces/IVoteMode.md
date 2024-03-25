@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / IVoteMode
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / IVoteMode
 
 # Interface: IVoteMode
 
@@ -6,11 +6,11 @@
 
 ### Properties
 
-- [anonymous](IVoteMode.md#anonymous)
-- [costFromWeight](IVoteMode.md#costfromweight)
-- [encryptedVotes](IVoteMode.md#encryptedvotes)
-- [serial](IVoteMode.md#serial)
-- [uniqueValues](IVoteMode.md#uniquevalues)
+- [anonymous](IVoteMode#anonymous)
+- [costFromWeight](IVoteMode#costfromweight)
+- [encryptedVotes](IVoteMode#encryptedvotes)
+- [serial](IVoteMode#serial)
+- [uniqueValues](IVoteMode#uniquevalues)
 
 ## Properties
 
@@ -22,7 +22,7 @@ If the vote is anonymous
 
 #### Defined in
 
-[api/election.ts:53](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/election.ts#L53)
+[api/election.ts:53](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/election.ts#L53)
 
 ___
 
@@ -34,7 +34,7 @@ Cost from weight of the election
 
 #### Defined in
 
-[api/election.ts:68](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/election.ts#L68)
+[api/election.ts:68](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/election.ts#L68)
 
 ___
 
@@ -46,7 +46,7 @@ If the vote is encrypted
 
 #### Defined in
 
-[api/election.ts:58](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/election.ts#L58)
+[api/election.ts:58](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/election.ts#L58)
 
 ___
 
@@ -58,7 +58,7 @@ If the vote is serial
 
 #### Defined in
 
-[api/election.ts:48](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/election.ts#L48)
+[api/election.ts:48](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/election.ts#L48)
 
 ___
 
@@ -70,4 +70,4 @@ If the vote values are unique
 
 #### Defined in
 
-[api/election.ts:63](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/election.ts#L63)
+[api/election.ts:63](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/election.ts#L63)

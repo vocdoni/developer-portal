@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / OffchainCensus
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / OffchainCensus
 
 # Class: OffchainCensus
 
@@ -6,19 +6,19 @@ Represents an offchain census
 
 ## Hierarchy
 
-- [`Census`](Census.md)
+- [`Census`](Census)
 
   ↳ **`OffchainCensus`**
 
-  ↳↳ [`PlainCensus`](PlainCensus.md)
+  ↳↳ [`PlainCensus`](PlainCensus)
 
-  ↳↳ [`WeightedCensus`](WeightedCensus.md)
+  ↳↳ [`WeightedCensus`](WeightedCensus)
 
 ## Table of contents
 
 ### Constructors
 
-- [constructor](OffchainCensus.md#constructor)
+- [constructor](OffchainCensus#constructor)
 
 ### Properties
 
@@ -29,40 +29,40 @@ Represents an offchain census
 
 ### Accessors
 
-- [censusId](OffchainCensus.md#censusid)
-- [censusURI](OffchainCensus.md#censusuri)
-- [isPublished](OffchainCensus.md#ispublished)
-- [participants](OffchainCensus.md#participants)
-- [size](OffchainCensus.md#size)
-- [type](OffchainCensus.md#type)
-- [weight](OffchainCensus.md#weight)
+- [censusId](OffchainCensus#censusid)
+- [censusURI](OffchainCensus#censusuri)
+- [isPublished](OffchainCensus#ispublished)
+- [participants](OffchainCensus#participants)
+- [size](OffchainCensus#size)
+- [type](OffchainCensus#type)
+- [weight](OffchainCensus#weight)
 
 ### Methods
 
-- [addParticipants](OffchainCensus.md#addparticipants)
-- [checkParticipant](OffchainCensus.md#checkparticipant)
-- [removeParticipant](OffchainCensus.md#removeparticipant)
-- [censusTypeFromCensusOrigin](OffchainCensus.md#censustypefromcensusorigin)
+- [addParticipants](OffchainCensus#addparticipants)
+- [checkParticipant](OffchainCensus#checkparticipant)
+- [removeParticipant](OffchainCensus#removeparticipant)
+- [censusTypeFromCensusOrigin](OffchainCensus#censustypefromcensusorigin)
 
 ## Constructors
 
 ### constructor
 
-• **new OffchainCensus**(): [`OffchainCensus`](OffchainCensus.md)
+• **new OffchainCensus**(): [`OffchainCensus`](OffchainCensus)
 
 Constructs an offchain census
 
 #### Returns
 
-[`OffchainCensus`](OffchainCensus.md)
+[`OffchainCensus`](OffchainCensus)
 
 #### Overrides
 
-[Census](Census.md).[constructor](Census.md#constructor)
+[Census](Census.md).[constructor](Census#constructor)
 
 #### Defined in
 
-[types/census/offchain.ts:19](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/census/offchain.ts#L19)
+[types/census/offchain.ts:19](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/census/offchain.ts#L19)
 
 ## Properties
 
@@ -72,11 +72,11 @@ Constructs an offchain census
 
 #### Inherited from
 
-[Census](Census.md).[_censusId](Census.md#_censusid)
+[Census](Census).[_censusId](Census.md#_censusid)
 
 #### Defined in
 
-[types/census/census.ts:12](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/census/census.ts#L12)
+[types/census/census.ts:12](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/census/census.ts#L12)
 
 ___
 
@@ -86,35 +86,35 @@ ___
 
 #### Inherited from
 
-[Census](Census.md).[_censusURI](Census.md#_censusuri)
+[Census](Census).[_censusURI](Census.md#_censusuri)
 
 #### Defined in
 
-[types/census/census.ts:13](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/census/census.ts#L13)
+[types/census/census.ts:13](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/census/census.ts#L13)
 
 ___
 
 ### \_participants
 
-• `Private` **\_participants**: [`ICensusParticipant`](../interfaces/ICensusParticipant.md)[]
+• `Private` **\_participants**: [`ICensusParticipant`](../interfaces/ICensusParticipant)[]
 
 #### Defined in
 
-[types/census/offchain.ts:14](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/census/offchain.ts#L14)
+[types/census/offchain.ts:14](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/census/offchain.ts#L14)
 
 ___
 
 ### \_type
 
-• `Protected` **\_type**: [`CensusType`](../enums/CensusType.md)
+• `Protected` **\_type**: [`CensusType`](../enums/CensusType)
 
 #### Inherited from
 
-[Census](Census.md).[_type](Census.md#_type)
+[Census](Census).[_type](Census.md#_type)
 
 #### Defined in
 
-[types/census/census.ts:14](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/census/census.ts#L14)
+[types/census/census.ts:14](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/census/census.ts#L14)
 
 ## Accessors
 
@@ -132,7 +132,7 @@ Census.censusId
 
 #### Defined in
 
-[types/census/census.ts:35](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/census/census.ts#L35)
+[types/census/census.ts:35](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/census/census.ts#L35)
 
 • `set` **censusId**(`value`): `void`
 
@@ -152,7 +152,7 @@ Census.censusId
 
 #### Defined in
 
-[types/census/census.ts:39](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/census/census.ts#L39)
+[types/census/census.ts:39](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/census/census.ts#L39)
 
 ___
 
@@ -170,7 +170,7 @@ Census.censusURI
 
 #### Defined in
 
-[types/census/census.ts:43](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/census/census.ts#L43)
+[types/census/census.ts:43](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/census/census.ts#L43)
 
 • `set` **censusURI**(`value`): `void`
 
@@ -190,7 +190,7 @@ Census.censusURI
 
 #### Defined in
 
-[types/census/census.ts:47](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/census/census.ts#L47)
+[types/census/census.ts:47](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/census/census.ts#L47)
 
 ___
 
@@ -208,21 +208,21 @@ Census.isPublished
 
 #### Defined in
 
-[types/census/census.ts:75](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/census/census.ts#L75)
+[types/census/census.ts:75](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/census/census.ts#L75)
 
 ___
 
 ### participants
 
-• `get` **participants**(): [`ICensusParticipant`](../interfaces/ICensusParticipant.md)[]
+• `get` **participants**(): [`ICensusParticipant`](../interfaces/ICensusParticipant)[]
 
 #### Returns
 
-[`ICensusParticipant`](../interfaces/ICensusParticipant.md)[]
+[`ICensusParticipant`](../interfaces/ICensusParticipant)[]
 
 #### Defined in
 
-[types/census/offchain.ts:45](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/census/offchain.ts#L45)
+[types/census/offchain.ts:45](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/census/offchain.ts#L45)
 
 • `set` **participants**(`value`): `void`
 
@@ -230,7 +230,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `value` | [`ICensusParticipant`](../interfaces/ICensusParticipant.md)[] |
+| `value` | [`ICensusParticipant`](../interfaces/ICensusParticipant)[] |
 
 #### Returns
 
@@ -238,7 +238,7 @@ ___
 
 #### Defined in
 
-[types/census/offchain.ts:49](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/census/offchain.ts#L49)
+[types/census/offchain.ts:49](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/census/offchain.ts#L49)
 
 ___
 
@@ -256,7 +256,7 @@ Census.size
 
 #### Defined in
 
-[types/census/census.ts:59](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/census/census.ts#L59)
+[types/census/census.ts:59](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/census/census.ts#L59)
 
 • `set` **size**(`value`): `void`
 
@@ -276,17 +276,17 @@ Census.size
 
 #### Defined in
 
-[types/census/census.ts:63](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/census/census.ts#L63)
+[types/census/census.ts:63](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/census/census.ts#L63)
 
 ___
 
 ### type
 
-• `get` **type**(): [`CensusType`](../enums/CensusType.md)
+• `get` **type**(): [`CensusType`](../enums/CensusType)
 
 #### Returns
 
-[`CensusType`](../enums/CensusType.md)
+[`CensusType`](../enums/CensusType)
 
 #### Inherited from
 
@@ -294,7 +294,7 @@ Census.type
 
 #### Defined in
 
-[types/census/census.ts:51](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/census/census.ts#L51)
+[types/census/census.ts:51](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/census/census.ts#L51)
 
 • `set` **type**(`value`): `void`
 
@@ -302,7 +302,7 @@ Census.type
 
 | Name | Type |
 | :------ | :------ |
-| `value` | [`CensusType`](../enums/CensusType.md) |
+| `value` | [`CensusType`](../enums/CensusType) |
 
 #### Returns
 
@@ -314,7 +314,7 @@ Census.type
 
 #### Defined in
 
-[types/census/census.ts:55](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/census/census.ts#L55)
+[types/census/census.ts:55](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/census/census.ts#L55)
 
 ___
 
@@ -332,7 +332,7 @@ Census.weight
 
 #### Defined in
 
-[types/census/census.ts:67](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/census/census.ts#L67)
+[types/census/census.ts:67](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/census/census.ts#L67)
 
 • `set` **weight**(`value`): `void`
 
@@ -352,7 +352,7 @@ Census.weight
 
 #### Defined in
 
-[types/census/census.ts:71](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/census/census.ts#L71)
+[types/census/census.ts:71](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/census/census.ts#L71)
 
 ## Methods
 
@@ -364,7 +364,7 @@ Census.weight
 
 | Name | Type |
 | :------ | :------ |
-| `participants` | [`ICensusParticipant`](../interfaces/ICensusParticipant.md) \| [`ICensusParticipant`](../interfaces/ICensusParticipant.md)[] |
+| `participants` | [`ICensusParticipant`](../interfaces/ICensusParticipant.md) \| [`ICensusParticipant`](../interfaces/ICensusParticipant)[] |
 
 #### Returns
 
@@ -372,27 +372,27 @@ Census.weight
 
 #### Defined in
 
-[types/census/offchain.ts:25](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/census/offchain.ts#L25)
+[types/census/offchain.ts:25](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/census/offchain.ts#L25)
 
 ___
 
 ### checkParticipant
 
-▸ **checkParticipant**(`participant`): [`ICensusParticipant`](../interfaces/ICensusParticipant.md)
+▸ **checkParticipant**(`participant`): [`ICensusParticipant`](../interfaces/ICensusParticipant)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `participant` | [`ICensusParticipant`](../interfaces/ICensusParticipant.md) |
+| `participant` | [`ICensusParticipant`](../interfaces/ICensusParticipant) |
 
 #### Returns
 
-[`ICensusParticipant`](../interfaces/ICensusParticipant.md)
+[`ICensusParticipant`](../interfaces/ICensusParticipant)
 
 #### Defined in
 
-[types/census/offchain.ts:35](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/census/offchain.ts#L35)
+[types/census/offchain.ts:35](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/census/offchain.ts#L35)
 
 ___
 
@@ -412,13 +412,13 @@ ___
 
 #### Defined in
 
-[types/census/offchain.ts:41](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/census/offchain.ts#L41)
+[types/census/offchain.ts:41](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/census/offchain.ts#L41)
 
 ___
 
 ### censusTypeFromCensusOrigin
 
-▸ **censusTypeFromCensusOrigin**(`censusOrigin`, `anonymous?`): [`CensusType`](../enums/CensusType.md)
+▸ **censusTypeFromCensusOrigin**(`censusOrigin`, `anonymous?`): [`CensusType`](../enums/CensusType)
 
 #### Parameters
 
@@ -429,12 +429,12 @@ ___
 
 #### Returns
 
-[`CensusType`](../enums/CensusType.md)
+[`CensusType`](../enums/CensusType)
 
 #### Inherited from
 
-[Census](Census.md).[censusTypeFromCensusOrigin](Census.md#censustypefromcensusorigin)
+[Census](Census.md).[censusTypeFromCensusOrigin](Census#censustypefromcensusorigin)
 
 #### Defined in
 
-[types/census/census.ts:81](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/census/census.ts#L81)
+[types/census/census.ts:81](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/census/census.ts#L81)

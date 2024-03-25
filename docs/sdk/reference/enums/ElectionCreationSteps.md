@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / ElectionCreationSteps
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / ElectionCreationSteps
 
 # Enumeration: ElectionCreationSteps
 
@@ -7,8 +7,8 @@
 ### Enumeration Members
 
 - [CENSUS\_CREATED](ElectionCreationSteps.md#census_created)
-- [CREATING](ElectionCreationSteps.md#creating)
-- [DONE](ElectionCreationSteps.md#done)
+- [CREATING](ElectionCreationSteps#creating)
+- [DONE](ElectionCreationSteps#done)
 - [GENERATE\_TX](ElectionCreationSteps.md#generate_tx)
 - [GET\_ACCOUNT\_DATA](ElectionCreationSteps.md#get_account_data)
 - [GET\_CHAIN\_DATA](ElectionCreationSteps.md#get_chain_data)
@@ -23,7 +23,7 @@
 
 #### Defined in
 
-[services/election.ts:41](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/election.ts#L41)
+[services/election.ts:41](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/election.ts#L41)
 
 ___
 
@@ -33,7 +33,7 @@ ___
 
 #### Defined in
 
-[services/election.ts:46](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/election.ts#L46)
+[services/election.ts:46](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/election.ts#L46)
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 #### Defined in
 
-[services/election.ts:47](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/election.ts#L47)
+[services/election.ts:47](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/election.ts#L47)
 
 ___
 
@@ -53,7 +53,7 @@ ___
 
 #### Defined in
 
-[services/election.ts:44](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/election.ts#L44)
+[services/election.ts:44](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/election.ts#L44)
 
 ___
 
@@ -63,7 +63,7 @@ ___
 
 #### Defined in
 
-[services/election.ts:42](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/election.ts#L42)
+[services/election.ts:42](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/election.ts#L42)
 
 ___
 
@@ -73,7 +73,7 @@ ___
 
 #### Defined in
 
-[services/election.ts:40](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/election.ts#L40)
+[services/election.ts:40](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/election.ts#L40)
 
 ___
 
@@ -83,7 +83,7 @@ ___
 
 #### Defined in
 
-[services/election.ts:43](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/election.ts#L43)
+[services/election.ts:43](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/election.ts#L43)
 
 ___
 
@@ -93,4 +93,4 @@ ___
 
 #### Defined in
 
-[services/election.ts:45](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/election.ts#L45)
+[services/election.ts:45](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/election.ts#L45)

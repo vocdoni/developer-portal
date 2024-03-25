@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / ICensusParticipant
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / ICensusParticipant
 
 # Interface: ICensusParticipant
 
@@ -6,8 +6,8 @@
 
 ### Properties
 
-- [key](ICensusParticipant.md#key)
-- [weight](ICensusParticipant.md#weight)
+- [key](ICensusParticipant#key)
+- [weight](ICensusParticipant#weight)
 
 ## Properties
 
@@ -17,7 +17,7 @@
 
 #### Defined in
 
-[types/census/offchain.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/census/offchain.ts#L6)
+[types/census/offchain.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/census/offchain.ts#L6)
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 #### Defined in
 
-[types/census/offchain.ts:7](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/census/offchain.ts#L7)
+[types/census/offchain.ts:7](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/census/offchain.ts#L7)

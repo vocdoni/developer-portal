@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / Proof
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / Proof
 
 # Interface: Proof
 
@@ -6,7 +6,7 @@
 
 ### Properties
 
-- [payload](Proof.md#payload)
+- [payload](Proof#payload)
 
 ## Properties
 
@@ -16,4 +16,4 @@
 
 #### Defined in
 
-[api/chain/transactions.ts:341](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain/transactions.ts#L341)
+[api/chain/transactions.ts:341](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain/transactions.ts#L341)

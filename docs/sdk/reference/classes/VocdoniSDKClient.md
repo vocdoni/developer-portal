@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / VocdoniSDKClient
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / VocdoniSDKClient
 
 # Class: VocdoniSDKClient
 
@@ -10,82 +10,82 @@ point.
 
 ### Constructors
 
-- [constructor](VocdoniSDKClient.md#constructor)
+- [constructor](VocdoniSDKClient#constructor)
 
 ### Properties
 
-- [accountData](VocdoniSDKClient.md#accountdata)
-- [accountService](VocdoniSDKClient.md#accountservice)
-- [anonymousService](VocdoniSDKClient.md#anonymousservice)
-- [censusService](VocdoniSDKClient.md#censusservice)
-- [chainService](VocdoniSDKClient.md#chainservice)
-- [cspService](VocdoniSDKClient.md#cspservice)
-- [election](VocdoniSDKClient.md#election)
-- [electionId](VocdoniSDKClient.md#electionid)
-- [electionService](VocdoniSDKClient.md#electionservice)
-- [explorerUrl](VocdoniSDKClient.md#explorerurl)
-- [faucetService](VocdoniSDKClient.md#faucetservice)
-- [fileService](VocdoniSDKClient.md#fileservice)
-- [url](VocdoniSDKClient.md#url)
-- [voteService](VocdoniSDKClient.md#voteservice)
-- [wallet](VocdoniSDKClient.md#wallet)
+- [accountData](VocdoniSDKClient#accountdata)
+- [accountService](VocdoniSDKClient#accountservice)
+- [anonymousService](VocdoniSDKClient#anonymousservice)
+- [censusService](VocdoniSDKClient#censusservice)
+- [chainService](VocdoniSDKClient#chainservice)
+- [cspService](VocdoniSDKClient#cspservice)
+- [election](VocdoniSDKClient#election)
+- [electionId](VocdoniSDKClient#electionid)
+- [electionService](VocdoniSDKClient#electionservice)
+- [explorerUrl](VocdoniSDKClient#explorerurl)
+- [faucetService](VocdoniSDKClient#faucetservice)
+- [fileService](VocdoniSDKClient#fileservice)
+- [url](VocdoniSDKClient#url)
+- [voteService](VocdoniSDKClient#voteservice)
+- [wallet](VocdoniSDKClient#wallet)
 
 ### Methods
 
-- [calcZKProofForWallet](VocdoniSDKClient.md#calczkproofforwallet)
-- [calculateCID](VocdoniSDKClient.md#calculatecid)
-- [calculateElectionCost](VocdoniSDKClient.md#calculateelectioncost)
-- [cancelElection](VocdoniSDKClient.md#cancelelection)
-- [changeElectionCensus](VocdoniSDKClient.md#changeelectioncensus)
-- [changeElectionStatus](VocdoniSDKClient.md#changeelectionstatus)
-- [collectFaucetTokens](VocdoniSDKClient.md#collectfaucettokens)
-- [continueElection](VocdoniSDKClient.md#continueelection)
-- [createAccount](VocdoniSDKClient.md#createaccount)
-- [createAccountInfo](VocdoniSDKClient.md#createaccountinfo)
-- [createCensus](VocdoniSDKClient.md#createcensus)
-- [createElection](VocdoniSDKClient.md#createelection)
-- [createElectionSteps](VocdoniSDKClient.md#createelectionsteps)
-- [cspInfo](VocdoniSDKClient.md#cspinfo)
-- [cspSign](VocdoniSDKClient.md#cspsign)
-- [cspStep](VocdoniSDKClient.md#cspstep)
-- [cspUrl](VocdoniSDKClient.md#cspurl)
-- [cspVote](VocdoniSDKClient.md#cspvote)
-- [endElection](VocdoniSDKClient.md#endelection)
-- [estimateElectionCost](VocdoniSDKClient.md#estimateelectioncost)
-- [fetchAccount](VocdoniSDKClient.md#fetchaccount)
-- [fetchAccountInfo](VocdoniSDKClient.md#fetchaccountinfo)
-- [fetchCensusInfo](VocdoniSDKClient.md#fetchcensusinfo)
-- [fetchChainCosts](VocdoniSDKClient.md#fetchchaincosts)
-- [fetchChainId](VocdoniSDKClient.md#fetchchainid)
-- [fetchCircuits](VocdoniSDKClient.md#fetchcircuits)
-- [fetchElection](VocdoniSDKClient.md#fetchelection)
-- [fetchElections](VocdoniSDKClient.md#fetchelections)
-- [fetchFaucetPayload](VocdoniSDKClient.md#fetchfaucetpayload)
-- [fetchProof](VocdoniSDKClient.md#fetchproof)
-- [fetchProofForWallet](VocdoniSDKClient.md#fetchproofforwallet)
-- [generateRandomWallet](VocdoniSDKClient.md#generaterandomwallet)
-- [hasAlreadyVoted](VocdoniSDKClient.md#hasalreadyvoted)
-- [isAbleToVote](VocdoniSDKClient.md#isabletovote)
-- [isInCensus](VocdoniSDKClient.md#isincensus)
-- [parseFaucetPackage](VocdoniSDKClient.md#parsefaucetpackage)
-- [pauseElection](VocdoniSDKClient.md#pauseelection)
-- [sendTokens](VocdoniSDKClient.md#sendtokens)
-- [setAccountInfo](VocdoniSDKClient.md#setaccountinfo)
-- [setAccountSIK](VocdoniSDKClient.md#setaccountsik)
-- [setCircuits](VocdoniSDKClient.md#setcircuits)
-- [setElectionId](VocdoniSDKClient.md#setelectionid)
-- [submitVote](VocdoniSDKClient.md#submitvote)
-- [submitVoteSteps](VocdoniSDKClient.md#submitvotesteps)
-- [updateAccountInfo](VocdoniSDKClient.md#updateaccountinfo)
-- [votesLeftCount](VocdoniSDKClient.md#votesleftcount)
-- [waitForTransaction](VocdoniSDKClient.md#waitfortransaction)
-- [generateWalletFromData](VocdoniSDKClient.md#generatewalletfromdata)
+- [calcZKProofForWallet](VocdoniSDKClient#calczkproofforwallet)
+- [calculateCID](VocdoniSDKClient#calculatecid)
+- [calculateElectionCost](VocdoniSDKClient#calculateelectioncost)
+- [cancelElection](VocdoniSDKClient#cancelelection)
+- [changeElectionCensus](VocdoniSDKClient#changeelectioncensus)
+- [changeElectionStatus](VocdoniSDKClient#changeelectionstatus)
+- [collectFaucetTokens](VocdoniSDKClient#collectfaucettokens)
+- [continueElection](VocdoniSDKClient#continueelection)
+- [createAccount](VocdoniSDKClient#createaccount)
+- [createAccountInfo](VocdoniSDKClient#createaccountinfo)
+- [createCensus](VocdoniSDKClient#createcensus)
+- [createElection](VocdoniSDKClient#createelection)
+- [createElectionSteps](VocdoniSDKClient#createelectionsteps)
+- [cspInfo](VocdoniSDKClient#cspinfo)
+- [cspSign](VocdoniSDKClient#cspsign)
+- [cspStep](VocdoniSDKClient#cspstep)
+- [cspUrl](VocdoniSDKClient#cspurl)
+- [cspVote](VocdoniSDKClient#cspvote)
+- [endElection](VocdoniSDKClient#endelection)
+- [estimateElectionCost](VocdoniSDKClient#estimateelectioncost)
+- [fetchAccount](VocdoniSDKClient#fetchaccount)
+- [fetchAccountInfo](VocdoniSDKClient#fetchaccountinfo)
+- [fetchCensusInfo](VocdoniSDKClient#fetchcensusinfo)
+- [fetchChainCosts](VocdoniSDKClient#fetchchaincosts)
+- [fetchChainId](VocdoniSDKClient#fetchchainid)
+- [fetchCircuits](VocdoniSDKClient#fetchcircuits)
+- [fetchElection](VocdoniSDKClient#fetchelection)
+- [fetchElections](VocdoniSDKClient#fetchelections)
+- [fetchFaucetPayload](VocdoniSDKClient#fetchfaucetpayload)
+- [fetchProof](VocdoniSDKClient#fetchproof)
+- [fetchProofForWallet](VocdoniSDKClient#fetchproofforwallet)
+- [generateRandomWallet](VocdoniSDKClient#generaterandomwallet)
+- [hasAlreadyVoted](VocdoniSDKClient#hasalreadyvoted)
+- [isAbleToVote](VocdoniSDKClient#isabletovote)
+- [isInCensus](VocdoniSDKClient#isincensus)
+- [parseFaucetPackage](VocdoniSDKClient#parsefaucetpackage)
+- [pauseElection](VocdoniSDKClient#pauseelection)
+- [sendTokens](VocdoniSDKClient#sendtokens)
+- [setAccountInfo](VocdoniSDKClient#setaccountinfo)
+- [setAccountSIK](VocdoniSDKClient#setaccountsik)
+- [setCircuits](VocdoniSDKClient#setcircuits)
+- [setElectionId](VocdoniSDKClient#setelectionid)
+- [submitVote](VocdoniSDKClient#submitvote)
+- [submitVoteSteps](VocdoniSDKClient#submitvotesteps)
+- [updateAccountInfo](VocdoniSDKClient#updateaccountinfo)
+- [votesLeftCount](VocdoniSDKClient#votesleftcount)
+- [waitForTransaction](VocdoniSDKClient#waitfortransaction)
+- [generateWalletFromData](VocdoniSDKClient#generatewalletfromdata)
 
 ## Constructors
 
 ### constructor
 
-• **new VocdoniSDKClient**(`opts`): [`VocdoniSDKClient`](VocdoniSDKClient.md)
+• **new VocdoniSDKClient**(`opts`): [`VocdoniSDKClient`](VocdoniSDKClient)
 
 Instantiate new VocdoniSDK client.
 
@@ -97,85 +97,85 @@ To instantiate the client just pass the `ClientOptions` you want or empty object
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `opts` | [`ClientOptions`](../modules.md#clientoptions) | optional arguments |
+| `opts` | [`ClientOptions`](../modules#clientoptions) | optional arguments |
 
 #### Returns
 
-[`VocdoniSDKClient`](VocdoniSDKClient.md)
+[`VocdoniSDKClient`](VocdoniSDKClient)
 
 #### Defined in
 
-[client.ts:127](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/client.ts#L127)
+[client.ts:127](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/client.ts#L127)
 
 ## Properties
 
 ### accountData
 
-• `Private` **accountData**: [`AccountData`](../modules.md#accountdata) \| [`ArchivedAccountData`](../modules.md#archivedaccountdata) = `null`
+• `Private` **accountData**: [`AccountData`](../modules.md#accountdata) \| [`ArchivedAccountData`](../modules#archivedaccountdata) = `null`
 
 #### Defined in
 
-[client.ts:100](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/client.ts#L100)
+[client.ts:100](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/client.ts#L100)
 
 ___
 
 ### accountService
 
-• **accountService**: [`AccountService`](AccountService.md)
+• **accountService**: [`AccountService`](AccountService)
 
 #### Defined in
 
-[client.ts:111](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/client.ts#L111)
+[client.ts:111](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/client.ts#L111)
 
 ___
 
 ### anonymousService
 
-• **anonymousService**: [`AnonymousService`](AnonymousService.md)
+• **anonymousService**: [`AnonymousService`](AnonymousService)
 
 #### Defined in
 
-[client.ts:105](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/client.ts#L105)
+[client.ts:105](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/client.ts#L105)
 
 ___
 
 ### censusService
 
-• **censusService**: [`CensusService`](CensusService.md)
+• **censusService**: [`CensusService`](CensusService)
 
 #### Defined in
 
-[client.ts:103](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/client.ts#L103)
+[client.ts:103](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/client.ts#L103)
 
 ___
 
 ### chainService
 
-• **chainService**: [`ChainService`](ChainService.md)
+• **chainService**: [`ChainService`](ChainService)
 
 #### Defined in
 
-[client.ts:104](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/client.ts#L104)
+[client.ts:104](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/client.ts#L104)
 
 ___
 
 ### cspService
 
-• **cspService**: [`CspService`](CspService.md)
+• **cspService**: [`CspService`](CspService)
 
 #### Defined in
 
-[client.ts:106](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/client.ts#L106)
+[client.ts:106](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/client.ts#L106)
 
 ___
 
 ### election
 
-• `Private` **election**: [`PublishedElection`](PublishedElection.md) \| [`UnpublishedElection`](UnpublishedElection.md) = `null`
+• `Private` **election**: [`PublishedElection`](PublishedElection.md) \| [`UnpublishedElection`](UnpublishedElection) = `null`
 
 #### Defined in
 
-[client.ts:101](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/client.ts#L101)
+[client.ts:101](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/client.ts#L101)
 
 ___
 
@@ -185,17 +185,17 @@ ___
 
 #### Defined in
 
-[client.ts:115](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/client.ts#L115)
+[client.ts:115](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/client.ts#L115)
 
 ___
 
 ### electionService
 
-• **electionService**: [`ElectionService`](ElectionService.md)
+• **electionService**: [`ElectionService`](ElectionService)
 
 #### Defined in
 
-[client.ts:107](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/client.ts#L107)
+[client.ts:107](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/client.ts#L107)
 
 ___
 
@@ -205,27 +205,27 @@ ___
 
 #### Defined in
 
-[client.ts:116](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/client.ts#L116)
+[client.ts:116](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/client.ts#L116)
 
 ___
 
 ### faucetService
 
-• **faucetService**: [`FaucetService`](FaucetService.md)
+• **faucetService**: [`FaucetService`](FaucetService)
 
 #### Defined in
 
-[client.ts:110](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/client.ts#L110)
+[client.ts:110](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/client.ts#L110)
 
 ___
 
 ### fileService
 
-• **fileService**: [`FileService`](FileService.md)
+• **fileService**: [`FileService`](FileService)
 
 #### Defined in
 
-[client.ts:109](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/client.ts#L109)
+[client.ts:109](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/client.ts#L109)
 
 ___
 
@@ -235,17 +235,17 @@ ___
 
 #### Defined in
 
-[client.ts:113](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/client.ts#L113)
+[client.ts:113](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/client.ts#L113)
 
 ___
 
 ### voteService
 
-• **voteService**: [`VoteService`](VoteService.md)
+• **voteService**: [`VoteService`](VoteService)
 
 #### Defined in
 
-[client.ts:108](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/client.ts#L108)
+[client.ts:108](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/client.ts#L108)
 
 ___
 
@@ -255,13 +255,13 @@ ___
 
 #### Defined in
 
-[client.ts:114](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/client.ts#L114)
+[client.ts:114](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/client.ts#L114)
 
 ## Methods
 
 ### calcZKProofForWallet
 
-▸ **calcZKProofForWallet**(`election`, `wallet`, `signature`, `votePackage`, `password?`): `Promise`\<[`ZkProof`](../modules.md#zkproof)\>
+▸ **calcZKProofForWallet**(`election`, `wallet`, `signature`, `votePackage`, `password?`): `Promise`\<[`ZkProof`](../modules#zkproof)\>
 
 Calculates ZK proof from given wallet.
 
@@ -269,7 +269,7 @@ Calculates ZK proof from given wallet.
 
 | Name | Type | Default value |
 | :------ | :------ | :------ |
-| `election` | [`PublishedElection`](PublishedElection.md) | `undefined` |
+| `election` | [`PublishedElection`](PublishedElection) | `undefined` |
 | `wallet` | `Wallet` \| `Signer` | `undefined` |
 | `signature` | `string` | `undefined` |
 | `votePackage` | `Buffer` | `undefined` |
@@ -277,11 +277,11 @@ Calculates ZK proof from given wallet.
 
 #### Returns
 
-`Promise`\<[`ZkProof`](../modules.md#zkproof)\>
+`Promise`\<[`ZkProof`](../modules#zkproof)\>
 
 #### Defined in
 
-[client.ts:282](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/client.ts#L282)
+[client.ts:282](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/client.ts#L282)
 
 ___
 
@@ -305,7 +305,7 @@ Resulting CID
 
 #### Defined in
 
-[client.ts:1041](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/client.ts#L1041)
+[client.ts:1041](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/client.ts#L1041)
 
 ___
 
@@ -319,7 +319,7 @@ Calculate the election cost
 
 | Name | Type |
 | :------ | :------ |
-| `election` | [`UnpublishedElection`](UnpublishedElection.md) |
+| `election` | [`UnpublishedElection`](UnpublishedElection) |
 
 #### Returns
 
@@ -329,7 +329,7 @@ The cost in tokens.
 
 #### Defined in
 
-[client.ts:1031](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/client.ts#L1031)
+[client.ts:1031](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/client.ts#L1031)
 
 ___
 
@@ -351,7 +351,7 @@ Cancels an election.
 
 #### Defined in
 
-[client.ts:620](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/client.ts#L620)
+[client.ts:620](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/client.ts#L620)
 
 ___
 
@@ -375,7 +375,7 @@ Changes the census of an election.
 
 #### Defined in
 
-[client.ts:666](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/client.ts#L666)
+[client.ts:666](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/client.ts#L666)
 
 ___
 
@@ -390,7 +390,7 @@ Changes the status of an election.
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `electionId` | `string` | The id of the election |
-| `newStatus` | [`AllElectionStatus`](../modules.md#allelectionstatus) | The new status |
+| `newStatus` | [`AllElectionStatus`](../modules#allelectionstatus) | The new status |
 
 #### Returns
 
@@ -398,13 +398,13 @@ Changes the status of an election.
 
 #### Defined in
 
-[client.ts:641](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/client.ts#L641)
+[client.ts:641](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/client.ts#L641)
 
 ___
 
 ### collectFaucetTokens
 
-▸ **collectFaucetTokens**(`faucetPackage?`): `Promise`\<[`AccountData`](../modules.md#accountdata)\>
+▸ **collectFaucetTokens**(`faucetPackage?`): `Promise`\<[`AccountData`](../modules#accountdata)\>
 
 Calls the faucet to get new tokens. Only under development.
 
@@ -416,13 +416,13 @@ Calls the faucet to get new tokens. Only under development.
 
 #### Returns
 
-`Promise`\<[`AccountData`](../modules.md#accountdata)\>
+`Promise`\<[`AccountData`](../modules#accountdata)\>
 
 Account data information updated with new balance
 
 #### Defined in
 
-[client.ts:480](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/client.ts#L480)
+[client.ts:480](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/client.ts#L480)
 
 ___
 
@@ -444,13 +444,13 @@ Continues an election.
 
 #### Defined in
 
-[client.ts:630](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/client.ts#L630)
+[client.ts:630](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/client.ts#L630)
 
 ___
 
 ### createAccount
 
-▸ **createAccount**(`options?`): `Promise`\<[`AccountData`](../modules.md#accountdata)\>
+▸ **createAccount**(`options?`): `Promise`\<[`AccountData`](../modules#accountdata)\>
 
 Registers an account against vochain, so it can create new elections.
 
@@ -459,24 +459,24 @@ Registers an account against vochain, so it can create new elections.
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `options?` | `Object` | Additional options, like extra information of the account, or the faucet package string |
-| `options.account?` | [`Account`](Account.md) | - |
+| `options.account?` | [`Account`](Account) | - |
 | `options.faucetPackage?` | `string` | - |
 | `options.password?` | `string` | - |
 | `options.sik?` | `boolean` | - |
 
 #### Returns
 
-`Promise`\<[`AccountData`](../modules.md#accountdata)\>
+`Promise`\<[`AccountData`](../modules#accountdata)\>
 
 #### Defined in
 
-[client.ts:412](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/client.ts#L412)
+[client.ts:412](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/client.ts#L412)
 
 ___
 
 ### createAccountInfo
 
-▸ **createAccountInfo**(`options`): `Promise`\<[`AccountData`](../modules.md#accountdata)\>
+▸ **createAccountInfo**(`options`): `Promise`\<[`AccountData`](../modules#accountdata)\>
 
 Creates an account with information.
 
@@ -485,18 +485,18 @@ Creates an account with information.
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `options` | `Object` | Additional options, like extra information of the account, or the faucet package string. |
-| `options.account` | [`Account`](Account.md) | - |
+| `options.account` | [`Account`](Account) | - |
 | `options.faucetPackage?` | `string` | - |
 | `options.password?` | `string` | - |
 | `options.signedSikPayload?` | `string` | - |
 
 #### Returns
 
-`Promise`\<[`AccountData`](../modules.md#accountdata)\>
+`Promise`\<[`AccountData`](../modules#accountdata)\>
 
 #### Defined in
 
-[client.ts:323](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/client.ts#L323)
+[client.ts:323](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/client.ts#L323)
 
 ___
 
@@ -510,7 +510,7 @@ Publishes the given census.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `census` | [`PlainCensus`](PlainCensus.md) \| [`WeightedCensus`](WeightedCensus.md) | The census to be published. |
+| `census` | [`PlainCensus`](PlainCensus.md) \| [`WeightedCensus`](WeightedCensus) | The census to be published. |
 
 #### Returns
 
@@ -518,7 +518,7 @@ Publishes the given census.
 
 #### Defined in
 
-[client.ts:940](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/client.ts#L940)
+[client.ts:940](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/client.ts#L940)
 
 ___
 
@@ -532,7 +532,7 @@ Creates a new voting election.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `election` | [`UnpublishedElection`](UnpublishedElection.md) | The election object to be created. |
+| `election` | [`UnpublishedElection`](UnpublishedElection) | The election object to be created. |
 
 #### Returns
 
@@ -542,13 +542,13 @@ Resulting election id.
 
 #### Defined in
 
-[client.ts:506](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/client.ts#L506)
+[client.ts:506](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/client.ts#L506)
 
 ___
 
 ### createElectionSteps
 
-▸ **createElectionSteps**(`election`): `AsyncGenerator`\<[`ElectionCreationStepValue`](../modules.md#electioncreationstepvalue), `any`, `unknown`\>
+▸ **createElectionSteps**(`election`): `AsyncGenerator`\<[`ElectionCreationStepValue`](../modules#electioncreationstepvalue), `any`, `unknown`\>
 
 Creates a new voting election by steps with async returns.
 
@@ -556,17 +556,17 @@ Creates a new voting election by steps with async returns.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `election` | [`UnpublishedElection`](UnpublishedElection.md) | The election object to be created. |
+| `election` | [`UnpublishedElection`](UnpublishedElection) | The election object to be created. |
 
 #### Returns
 
-`AsyncGenerator`\<[`ElectionCreationStepValue`](../modules.md#electioncreationstepvalue), `any`, `unknown`\>
+`AsyncGenerator`\<[`ElectionCreationStepValue`](../modules#electioncreationstepvalue), `any`, `unknown`\>
 
 The async step returns.
 
 #### Defined in
 
-[client.ts:522](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/client.ts#L522)
+[client.ts:522](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/client.ts#L522)
 
 ___
 
@@ -580,7 +580,7 @@ ___
 
 #### Defined in
 
-[client.ts:979](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/client.ts#L979)
+[client.ts:979](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/client.ts#L979)
 
 ___
 
@@ -601,7 +601,7 @@ ___
 
 #### Defined in
 
-[client.ts:990](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/client.ts#L990)
+[client.ts:990](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/client.ts#L990)
 
 ___
 
@@ -623,7 +623,7 @@ ___
 
 #### Defined in
 
-[client.ts:983](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/client.ts#L983)
+[client.ts:983](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/client.ts#L983)
 
 ___
 
@@ -637,29 +637,29 @@ ___
 
 #### Defined in
 
-[client.ts:974](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/client.ts#L974)
+[client.ts:974](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/client.ts#L974)
 
 ___
 
 ### cspVote
 
-▸ **cspVote**(`vote`, `signature`, `proof_type?`): [`CspVote`](CspVote.md)
+▸ **cspVote**(`vote`, `signature`, `proof_type?`): [`CspVote`](CspVote)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `vote` | [`Vote`](Vote.md) |
+| `vote` | [`Vote`](Vote) |
 | `signature` | `string` |
-| `proof_type?` | [`CspProofType`](../enums/CspProofType.md) |
+| `proof_type?` | [`CspProofType`](../enums/CspProofType) |
 
 #### Returns
 
-[`CspVote`](CspVote.md)
+[`CspVote`](CspVote)
 
 #### Defined in
 
-[client.ts:995](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/client.ts#L995)
+[client.ts:995](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/client.ts#L995)
 
 ___
 
@@ -681,7 +681,7 @@ Ends an election.
 
 #### Defined in
 
-[client.ts:600](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/client.ts#L600)
+[client.ts:600](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/client.ts#L600)
 
 ___
 
@@ -695,7 +695,7 @@ Estimates the election cost
 
 | Name | Type |
 | :------ | :------ |
-| `election` | [`UnpublishedElection`](UnpublishedElection.md) |
+| `election` | [`UnpublishedElection`](UnpublishedElection) |
 
 #### Returns
 
@@ -705,13 +705,13 @@ The cost in tokens.
 
 #### Defined in
 
-[client.ts:1022](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/client.ts#L1022)
+[client.ts:1022](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/client.ts#L1022)
 
 ___
 
 ### fetchAccount
 
-▸ **fetchAccount**(`address?`): `Promise`\<[`AccountData`](../modules.md#accountdata)\>
+▸ **fetchAccount**(`address?`): `Promise`\<[`AccountData`](../modules#accountdata)\>
 
 Fetches account.
 
@@ -723,17 +723,17 @@ Fetches account.
 
 #### Returns
 
-`Promise`\<[`AccountData`](../modules.md#accountdata)\>
+`Promise`\<[`AccountData`](../modules#accountdata)\>
 
 #### Defined in
 
-[client.ts:196](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/client.ts#L196)
+[client.ts:196](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/client.ts#L196)
 
 ___
 
 ### fetchAccountInfo
 
-▸ **fetchAccountInfo**(`address?`): `Promise`\<[`AccountData`](../modules.md#accountdata) \| [`ArchivedAccountData`](../modules.md#archivedaccountdata)\>
+▸ **fetchAccountInfo**(`address?`): `Promise`\<[`AccountData`](../modules.md#accountdata) \| [`ArchivedAccountData`](../modules#archivedaccountdata)\>
 
 Fetches account information.
 
@@ -745,17 +745,17 @@ Fetches account information.
 
 #### Returns
 
-`Promise`\<[`AccountData`](../modules.md#accountdata) \| [`ArchivedAccountData`](../modules.md#archivedaccountdata)\>
+`Promise`\<[`AccountData`](../modules.md#accountdata) \| [`ArchivedAccountData`](../modules#archivedaccountdata)\>
 
 #### Defined in
 
-[client.ts:177](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/client.ts#L177)
+[client.ts:177](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/client.ts#L177)
 
 ___
 
 ### fetchCensusInfo
 
-▸ **fetchCensusInfo**(`censusId`): `Promise`\<\{ `size`: `number` ; `type`: [`CensusType`](../enums/CensusType.md) ; `weight`: `bigint`  }\>
+▸ **fetchCensusInfo**(`censusId`): `Promise`\<\{ `size`: `number` ; `type`: [`CensusType`](../enums/CensusType) ; `weight`: `bigint`  }\>
 
 Fetches the information of a given census.
 
@@ -767,27 +767,27 @@ Fetches the information of a given census.
 
 #### Returns
 
-`Promise`\<\{ `size`: `number` ; `type`: [`CensusType`](../enums/CensusType.md) ; `weight`: `bigint`  }\>
+`Promise`\<\{ `size`: `number` ; `type`: [`CensusType`](../enums/CensusType) ; `weight`: `bigint`  }\>
 
 #### Defined in
 
-[client.ts:950](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/client.ts#L950)
+[client.ts:950](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/client.ts#L950)
 
 ___
 
 ### fetchChainCosts
 
-▸ **fetchChainCosts**(): `Promise`\<[`IChainGetCostsResponse`](../interfaces/IChainGetCostsResponse.md)\>
+▸ **fetchChainCosts**(): `Promise`\<[`IChainGetCostsResponse`](../interfaces/IChainGetCostsResponse)\>
 
 Fetches blockchain costs information if needed.
 
 #### Returns
 
-`Promise`\<[`IChainGetCostsResponse`](../interfaces/IChainGetCostsResponse.md)\>
+`Promise`\<[`IChainGetCostsResponse`](../interfaces/IChainGetCostsResponse)\>
 
 #### Defined in
 
-[client.ts:1004](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/client.ts#L1004)
+[client.ts:1004](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/client.ts#L1004)
 
 ___
 
@@ -803,13 +803,13 @@ Fetches blockchain information if needed and returns the chain id.
 
 #### Defined in
 
-[client.ts:1013](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/client.ts#L1013)
+[client.ts:1013](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/client.ts#L1013)
 
 ___
 
 ### fetchCircuits
 
-▸ **fetchCircuits**(`circuits?`): `Promise`\<[`ChainCircuits`](../modules.md#chaincircuits)\>
+▸ **fetchCircuits**(`circuits?`): `Promise`\<[`ChainCircuits`](../modules#chaincircuits)\>
 
 Fetches circuits for anonymous voting
 
@@ -817,21 +817,21 @@ Fetches circuits for anonymous voting
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `circuits?` | `Omit`\<[`ChainCircuits`](../modules.md#chaincircuits), ``"zKeyData"`` \| ``"vKeyData"`` \| ``"wasmData"``\> | Additional options for custom circuits |
+| `circuits?` | `Omit`\<[`ChainCircuits`](../modules#chaincircuits), ``"zKeyData"`` \| ``"vKeyData"`` \| ``"wasmData"``\> | Additional options for custom circuits |
 
 #### Returns
 
-`Promise`\<[`ChainCircuits`](../modules.md#chaincircuits)\>
+`Promise`\<[`ChainCircuits`](../modules#chaincircuits)\>
 
 #### Defined in
 
-[client.ts:960](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/client.ts#L960)
+[client.ts:960](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/client.ts#L960)
 
 ___
 
 ### fetchElection
 
-▸ **fetchElection**(`electionId?`): `Promise`\<[`PublishedElection`](PublishedElection.md) \| [`ArchivedElection`](ArchivedElection.md)\>
+▸ **fetchElection**(`electionId?`): `Promise`\<[`PublishedElection`](PublishedElection.md) \| [`ArchivedElection`](ArchivedElection)\>
 
 Fetches info about an election.
 
@@ -843,17 +843,17 @@ Fetches info about an election.
 
 #### Returns
 
-`Promise`\<[`PublishedElection`](PublishedElection.md) \| [`ArchivedElection`](ArchivedElection.md)\>
+`Promise`\<[`PublishedElection`](PublishedElection.md) \| [`ArchivedElection`](ArchivedElection)\>
 
 #### Defined in
 
-[client.ts:224](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/client.ts#L224)
+[client.ts:224](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/client.ts#L224)
 
 ___
 
 ### fetchElections
 
-▸ **fetchElections**(`account?`, `page?`): `Promise`\<([`PublishedElection`](PublishedElection.md) \| [`ArchivedElection`](ArchivedElection.md) \| [`InvalidElection`](InvalidElection.md))[]\>
+▸ **fetchElections**(`account?`, `page?`): `Promise`\<([`PublishedElection`](PublishedElection.md) \| [`ArchivedElection`](ArchivedElection.md) \| [`InvalidElection`](InvalidElection))[]\>
 
 #### Parameters
 
@@ -864,11 +864,11 @@ ___
 
 #### Returns
 
-`Promise`\<([`PublishedElection`](PublishedElection.md) \| [`ArchivedElection`](ArchivedElection.md) \| [`InvalidElection`](InvalidElection.md))[]\>
+`Promise`\<([`PublishedElection`](PublishedElection.md) \| [`ArchivedElection`](ArchivedElection.md) \| [`InvalidElection`](InvalidElection))[]\>
 
 #### Defined in
 
-[client.ts:231](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/client.ts#L231)
+[client.ts:231](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/client.ts#L231)
 
 ___
 
@@ -884,13 +884,13 @@ Fetches a faucet payload. Only for development.
 
 #### Defined in
 
-[client.ts:1050](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/client.ts#L1050)
+[client.ts:1050](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/client.ts#L1050)
 
 ___
 
 ### fetchProof
 
-▸ **fetchProof**(`censusId`, `key`): `Promise`\<[`CensusProof`](../modules.md#censusproof)\>
+▸ **fetchProof**(`censusId`, `key`): `Promise`\<[`CensusProof`](../modules#censusproof)\>
 
 Fetches proof that an address is part of the specified census.
 
@@ -903,17 +903,17 @@ Fetches proof that an address is part of the specified census.
 
 #### Returns
 
-`Promise`\<[`CensusProof`](../modules.md#censusproof)\>
+`Promise`\<[`CensusProof`](../modules#censusproof)\>
 
 #### Defined in
 
-[client.ts:930](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/client.ts#L930)
+[client.ts:930](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/client.ts#L930)
 
 ___
 
 ### fetchProofForWallet
 
-▸ **fetchProofForWallet**(`censusId`, `wallet`): `Promise`\<[`CensusProof`](../modules.md#censusproof)\>
+▸ **fetchProofForWallet**(`censusId`, `wallet`): `Promise`\<[`CensusProof`](../modules#censusproof)\>
 
 Fetches proof that an address is part of the specified census.
 
@@ -926,11 +926,11 @@ Fetches proof that an address is part of the specified census.
 
 #### Returns
 
-`Promise`\<[`CensusProof`](../modules.md#censusproof)\>
+`Promise`\<[`CensusProof`](../modules#censusproof)\>
 
 #### Defined in
 
-[client.ts:245](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/client.ts#L245)
+[client.ts:245](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/client.ts#L245)
 
 ___
 
@@ -948,7 +948,7 @@ The private key.
 
 #### Defined in
 
-[client.ts:901](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/client.ts#L901)
+[client.ts:901](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/client.ts#L901)
 
 ___
 
@@ -962,7 +962,7 @@ Checks if the user has already voted
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `options?` | `Partial`\<[`WalletOption`](../modules.md#walletoption) & [`ElectionIdOption`](../modules.md#electionidoption) & [`VoteIdOption`](../modules.md#voteidoption)\> | Options for has already voted |
+| `options?` | `Partial`\<[`WalletOption`](../modules.md#walletoption) & [`ElectionIdOption`](../modules.md#electionidoption) & [`VoteIdOption`](../modules#voteidoption)\> | Options for has already voted |
 
 #### Returns
 
@@ -972,7 +972,7 @@ The id of the vote
 
 #### Defined in
 
-[client.ts:711](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/client.ts#L711)
+[client.ts:711](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/client.ts#L711)
 
 ___
 
@@ -986,7 +986,7 @@ Checks if the user is able to vote
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `options?` | `Partial`\<[`WalletOption`](../modules.md#walletoption) & [`ElectionIdOption`](../modules.md#electionidoption) & [`VoteIdOption`](../modules.md#voteidoption)\> | Options for is able to vote |
+| `options?` | `Partial`\<[`WalletOption`](../modules.md#walletoption) & [`ElectionIdOption`](../modules.md#electionidoption) & [`VoteIdOption`](../modules#voteidoption)\> | Options for is able to vote |
 
 #### Returns
 
@@ -994,7 +994,7 @@ Checks if the user is able to vote
 
 #### Defined in
 
-[client.ts:743](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/client.ts#L743)
+[client.ts:743](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/client.ts#L743)
 
 ___
 
@@ -1008,7 +1008,7 @@ Checks if the user is in census.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `options?` | `Partial`\<[`WalletOption`](../modules.md#walletoption) & [`ElectionIdOption`](../modules.md#electionidoption)\> | Options for is in census |
+| `options?` | `Partial`\<[`WalletOption`](../modules.md#walletoption) & [`ElectionIdOption`](../modules#electionidoption)\> | Options for is in census |
 
 #### Returns
 
@@ -1016,13 +1016,13 @@ Checks if the user is in census.
 
 #### Defined in
 
-[client.ts:690](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/client.ts#L690)
+[client.ts:690](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/client.ts#L690)
 
 ___
 
 ### parseFaucetPackage
 
-▸ **parseFaucetPackage**(`faucetPackage`): [`FaucetPackage`](../modules.md#faucetpackage)
+▸ **parseFaucetPackage**(`faucetPackage`): [`FaucetPackage`](../modules#faucetpackage)
 
 Parses a faucet package.
 
@@ -1034,11 +1034,11 @@ Parses a faucet package.
 
 #### Returns
 
-[`FaucetPackage`](../modules.md#faucetpackage)
+[`FaucetPackage`](../modules#faucetpackage)
 
 #### Defined in
 
-[client.ts:1061](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/client.ts#L1061)
+[client.ts:1061](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/client.ts#L1061)
 
 ___
 
@@ -1060,7 +1060,7 @@ Pauses an election.
 
 #### Defined in
 
-[client.ts:610](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/client.ts#L610)
+[client.ts:610](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/client.ts#L610)
 
 ___
 
@@ -1074,7 +1074,7 @@ Send tokens from one account to another.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `options` | [`SendTokensOptions`](../modules.md#sendtokensoptions) | Options for send tokens |
+| `options` | [`SendTokensOptions`](../modules#sendtokensoptions) | Options for send tokens |
 
 #### Returns
 
@@ -1082,13 +1082,13 @@ Send tokens from one account to another.
 
 #### Defined in
 
-[client.ts:451](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/client.ts#L451)
+[client.ts:451](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/client.ts#L451)
 
 ___
 
 ### setAccountInfo
 
-▸ **setAccountInfo**(`promAccountData`): `Promise`\<[`AccountData`](../modules.md#accountdata)\>
+▸ **setAccountInfo**(`promAccountData`): `Promise`\<[`AccountData`](../modules#accountdata)\>
 
 Updates an account with information
 
@@ -1100,11 +1100,11 @@ Updates an account with information
 
 #### Returns
 
-`Promise`\<[`AccountData`](../modules.md#accountdata)\>
+`Promise`\<[`AccountData`](../modules#accountdata)\>
 
 #### Defined in
 
-[client.ts:392](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/client.ts#L392)
+[client.ts:392](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/client.ts#L392)
 
 ___
 
@@ -1119,7 +1119,7 @@ ___
 | `electionId` | `string` |
 | `signature` | `string` |
 | `password` | `string` |
-| `censusProof` | [`CensusProof`](../modules.md#censusproof) |
+| `censusProof` | [`CensusProof`](../modules#censusproof) |
 | `wallet` | `Wallet` \| `Signer` |
 
 #### Returns
@@ -1128,13 +1128,13 @@ ___
 
 #### Defined in
 
-[client.ts:249](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/client.ts#L249)
+[client.ts:249](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/client.ts#L249)
 
 ___
 
 ### setCircuits
 
-▸ **setCircuits**(`circuits`): [`ChainCircuits`](../modules.md#chaincircuits)
+▸ **setCircuits**(`circuits`): [`ChainCircuits`](../modules#chaincircuits)
 
 Sets circuits for anonymous voting
 
@@ -1142,15 +1142,15 @@ Sets circuits for anonymous voting
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `circuits` | [`ChainCircuits`](../modules.md#chaincircuits) | Custom circuits |
+| `circuits` | [`ChainCircuits`](../modules#chaincircuits) | Custom circuits |
 
 #### Returns
 
-[`ChainCircuits`](../modules.md#chaincircuits)
+[`ChainCircuits`](../modules#chaincircuits)
 
 #### Defined in
 
-[client.ts:970](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/client.ts#L970)
+[client.ts:970](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/client.ts#L970)
 
 ___
 
@@ -1172,7 +1172,7 @@ Sets an election id. Required by other methods like submitVote or createElection
 
 #### Defined in
 
-[client.ts:167](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/client.ts#L167)
+[client.ts:167](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/client.ts#L167)
 
 ___
 
@@ -1186,7 +1186,7 @@ Submits a vote.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `vote` | [`Vote`](Vote.md) \| [`AnonymousVote`](AnonymousVote.md) \| [`CspVote`](CspVote.md) | The vote (or votes) to be sent. |
+| `vote` | [`Vote`](Vote.md) \| [`AnonymousVote`](AnonymousVote.md) \| [`CspVote`](CspVote) | The vote (or votes) to be sent. |
 
 #### Returns
 
@@ -1196,13 +1196,13 @@ Vote confirmation id.
 
 #### Defined in
 
-[client.ts:790](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/client.ts#L790)
+[client.ts:790](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/client.ts#L790)
 
 ___
 
 ### submitVoteSteps
 
-▸ **submitVoteSteps**(`vote`): `AsyncGenerator`\<[`VoteStepValue`](../modules.md#votestepvalue), `any`, `unknown`\>
+▸ **submitVoteSteps**(`vote`): `AsyncGenerator`\<[`VoteStepValue`](../modules#votestepvalue), `any`, `unknown`\>
 
 Submits a vote by steps.
 
@@ -1210,23 +1210,23 @@ Submits a vote by steps.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `vote` | [`Vote`](Vote.md) \| [`AnonymousVote`](AnonymousVote.md) \| [`CspVote`](CspVote.md) | The vote (or votes) to be sent. |
+| `vote` | [`Vote`](Vote.md) \| [`AnonymousVote`](AnonymousVote.md) \| [`CspVote`](CspVote) | The vote (or votes) to be sent. |
 
 #### Returns
 
-`AsyncGenerator`\<[`VoteStepValue`](../modules.md#votestepvalue), `any`, `unknown`\>
+`AsyncGenerator`\<[`VoteStepValue`](../modules#votestepvalue), `any`, `unknown`\>
 
 Vote confirmation id.
 
 #### Defined in
 
-[client.ts:806](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/client.ts#L806)
+[client.ts:806](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/client.ts#L806)
 
 ___
 
 ### updateAccountInfo
 
-▸ **updateAccountInfo**(`account`): `Promise`\<[`AccountData`](../modules.md#accountdata)\>
+▸ **updateAccountInfo**(`account`): `Promise`\<[`AccountData`](../modules#accountdata)\>
 
 Updates an account with information
 
@@ -1234,15 +1234,15 @@ Updates an account with information
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `account` | [`Account`](Account.md) | Account data. |
+| `account` | [`Account`](Account) | Account data. |
 
 #### Returns
 
-`Promise`\<[`AccountData`](../modules.md#accountdata)\>
+`Promise`\<[`AccountData`](../modules#accountdata)\>
 
 #### Defined in
 
-[client.ts:366](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/client.ts#L366)
+[client.ts:366](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/client.ts#L366)
 
 ___
 
@@ -1256,7 +1256,7 @@ Checks how many times a user can submit their vote
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `options?` | `Partial`\<[`WalletOption`](../modules.md#walletoption) & [`ElectionIdOption`](../modules.md#electionidoption) & [`VoteIdOption`](../modules.md#voteidoption)\> | Options for votes left count |
+| `options?` | `Partial`\<[`WalletOption`](../modules.md#walletoption) & [`ElectionIdOption`](../modules.md#electionidoption) & [`VoteIdOption`](../modules#voteidoption)\> | Options for votes left count |
 
 #### Returns
 
@@ -1264,7 +1264,7 @@ Checks how many times a user can submit their vote
 
 #### Defined in
 
-[client.ts:753](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/client.ts#L753)
+[client.ts:753](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/client.ts#L753)
 
 ___
 
@@ -1290,7 +1290,7 @@ it fails.
 
 #### Defined in
 
-[client.ts:1075](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/client.ts#L1075)
+[client.ts:1075](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/client.ts#L1075)
 
 ___
 
@@ -1314,4 +1314,4 @@ The deterministic wallet.
 
 #### Defined in
 
-[client.ts:913](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/client.ts#L913)
+[client.ts:913](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/client.ts#L913)

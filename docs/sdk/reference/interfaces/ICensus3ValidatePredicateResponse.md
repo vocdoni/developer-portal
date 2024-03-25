@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / ICensus3ValidatePredicateResponse
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / ICensus3ValidatePredicateResponse
 
 # Interface: ICensus3ValidatePredicateResponse
 
@@ -6,7 +6,7 @@
 
 ### Properties
 
-- [result](ICensus3ValidatePredicateResponse.md#result)
+- [result](ICensus3ValidatePredicateResponse#result)
 
 ## Properties
 
@@ -20,8 +20,8 @@ The parsed version of the predicate
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `childs` | [`ICensus3ValidatePredicateChild`](ICensus3ValidatePredicateChild.md) | The childs of the predicate |
+| `childs` | [`ICensus3ValidatePredicateChild`](ICensus3ValidatePredicateChild) | The childs of the predicate |
 
 #### Defined in
 
-[api/census3/strategy.ts:242](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/census3/strategy.ts#L242)
+[api/census3/strategy.ts:242](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/census3/strategy.ts#L242)

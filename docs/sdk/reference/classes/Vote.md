@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / Vote
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / Vote
 
 # Class: Vote
 
@@ -8,15 +8,15 @@ Represents a vote
 
 - **`Vote`**
 
-  ↳ [`AnonymousVote`](AnonymousVote.md)
+  ↳ [`AnonymousVote`](AnonymousVote)
 
-  ↳ [`CspVote`](CspVote.md)
+  ↳ [`CspVote`](CspVote)
 
 ## Table of contents
 
 ### Constructors
 
-- [constructor](Vote.md#constructor)
+- [constructor](Vote#constructor)
 
 ### Properties
 
@@ -24,13 +24,13 @@ Represents a vote
 
 ### Accessors
 
-- [votes](Vote.md#votes)
+- [votes](Vote#votes)
 
 ## Constructors
 
 ### constructor
 
-• **new Vote**(`votes`): [`Vote`](Vote.md)
+• **new Vote**(`votes`): [`Vote`](Vote)
 
 Constructs a vote
 
@@ -42,11 +42,11 @@ Constructs a vote
 
 #### Returns
 
-[`Vote`](Vote.md)
+[`Vote`](Vote)
 
 #### Defined in
 
-[types/vote/vote.ts:12](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/vote/vote.ts#L12)
+[types/vote/vote.ts:12](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/vote/vote.ts#L12)
 
 ## Properties
 
@@ -56,7 +56,7 @@ Constructs a vote
 
 #### Defined in
 
-[types/vote/vote.ts:5](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/vote/vote.ts#L5)
+[types/vote/vote.ts:5](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/vote/vote.ts#L5)
 
 ## Accessors
 
@@ -70,7 +70,7 @@ Constructs a vote
 
 #### Defined in
 
-[types/vote/vote.ts:16](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/vote/vote.ts#L16)
+[types/vote/vote.ts:16](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/vote/vote.ts#L16)
 
 • `set` **votes**(`value`): `void`
 
@@ -86,4 +86,4 @@ Constructs a vote
 
 #### Defined in
 
-[types/vote/vote.ts:20](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/vote/vote.ts#L20)
+[types/vote/vote.ts:20](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/vote/vote.ts#L20)

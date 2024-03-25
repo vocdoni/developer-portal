@@ -30,7 +30,10 @@
     "re-gen-versioned": "yarn clean-all-versioned && yarn gen-all-versioned",
     "gen-post": "if [ \"$(uname)\" = \"Darwin\" ]; then npm run gen-post:Darwin; else npm run gen-post:Linux; fi",
     "gen-post:Darwin": "grep -L \"mdx-code-block\" docs/vocdoni-api/** | xargs -I {} sed -i '' -e $'/^\\(<\\)/i\\\n````mdx-code-block\n' -e $'/^\\(<\\)/a\\\n````' {}",
-    "gen-post:Linux": "grep -L \"mdx-code-block\" docs/vocdoni-api/** | xargs sed -i -e '/^\\(<\\)/i````mdx-code-block' -e '/^\\(<\\)/a````'"
+    "gen-post:Linux": "grep -L \"mdx-code-block\" docs/vocdoni-api/** | xargs sed -i -e '/^\\(<\\)/i````mdx-code-block' -e '/^\\(<\\)/a````'",
+    "fix-sdk-docs": "if [ \"$(uname)\" = \"Darwin\" ]; then npm run fix-sdk-docs:Darwin; else npm run fix-sdk-docs:Linux; fi",
+    "fix-sdk-docs:Darwin": "rm -rf ./docs/sdk/reference && cp -R  $VOCDONI_SDK_PATH/docs/temp_docs/ ./docs/sdk/reference && rm -rf $VOCDONI_SDK_PATH/docs/temp_docs && brew install gsed && find ./docs/sdk/reference -type f | xargs gsed -i -r -e 's\/\\[\\@vocdoni\\\/sdk\\]\\((\\.\\.\\\/)*README\\.md\\)\/\\[\\@vocdoni\\\/sdk\\]\\(\\\/sdk\\)\/g' && find ./docs/sdk/reference -type f | xargs gsed -i -e 's\/(\\(.*\\).md\\(#[a-zA-Z0-9]*\\)*)\/(\\1\\2)\/g'",
+    "fix-sdk-docs:Linux": "rm -rf ./docs/sdk/reference && cp -R  $VOCDONI_SDK_PATH/docs/temp_docs/ ./docs/sdk/reference && rm -rf $VOCDONI_SDK_PATH/docs/temp_docs && find ./docs/sdk/reference -type f | xargs sed -i -r -e 's\/\\[\\@vocdoni\\\/sdk\\]\\((\\.\\.\\\/)*README\\.md\\)\/\\[\\@vocdoni\\\/sdk\\]\\(\\\/sdk\\)\/g' && find ./docs/sdk/reference -type f | xargs gsed -i -e 's\/(\\(.*\\).md\\(#[a-zA-Z0-9]*\\)*)\/(\\1\\2)\/g'"
   },
   "dependencies": {
     "@aragon/ui-components": "0.1.3",

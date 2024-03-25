@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / MintTokensTx
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / MintTokensTx
 
 # Interface: MintTokensTx
 
@@ -6,10 +6,10 @@
 
 ### Properties
 
-- [nonce](MintTokensTx.md#nonce)
-- [to](MintTokensTx.md#to)
-- [txtype](MintTokensTx.md#txtype)
-- [value](MintTokensTx.md#value)
+- [nonce](MintTokensTx#nonce)
+- [to](MintTokensTx#to)
+- [txtype](MintTokensTx#txtype)
+- [value](MintTokensTx#value)
 
 ## Properties
 
@@ -19,7 +19,7 @@
 
 #### Defined in
 
-[api/chain/transactions.ts:128](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain/transactions.ts#L128)
+[api/chain/transactions.ts:128](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain/transactions.ts#L128)
 
 ___
 
@@ -29,17 +29,17 @@ ___
 
 #### Defined in
 
-[api/chain/transactions.ts:129](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain/transactions.ts#L129)
+[api/chain/transactions.ts:129](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain/transactions.ts#L129)
 
 ___
 
 ### txtype
 
-• **txtype**: [`TxType`](../enums/TxType.md)
+• **txtype**: [`TxType`](../enums/TxType)
 
 #### Defined in
 
-[api/chain/transactions.ts:127](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain/transactions.ts#L127)
+[api/chain/transactions.ts:127](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain/transactions.ts#L127)
 
 ___
 
@@ -49,4 +49,4 @@ ___
 
 #### Defined in
 
-[api/chain/transactions.ts:130](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/chain/transactions.ts#L130)
+[api/chain/transactions.ts:130](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain/transactions.ts#L130)

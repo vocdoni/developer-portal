@@ -6,227 +6,227 @@
 
 ### Enumerations
 
-- [CensusOrigin](enums/CensusOrigin.md)
-- [CensusType](enums/CensusType.md)
-- [CensusTypeEnum](enums/CensusTypeEnum.md)
-- [CspProofType](enums/CspProofType.md)
-- [ElectionCreationSteps](enums/ElectionCreationSteps.md)
-- [ElectionResultsTypeNames](enums/ElectionResultsTypeNames.md)
-- [ElectionStatus](enums/ElectionStatus.md)
-- [ElectionStatusReady](enums/ElectionStatusReady.md)
-- [EnvOptions](enums/EnvOptions.md)
-- [TransactionType](enums/TransactionType.md)
-- [TxType](enums/TxType.md)
-- [VoteSteps](enums/VoteSteps.md)
+- [CensusOrigin](enums/CensusOrigin)
+- [CensusType](enums/CensusType)
+- [CensusTypeEnum](enums/CensusTypeEnum)
+- [CspProofType](enums/CspProofType)
+- [ElectionCreationSteps](enums/ElectionCreationSteps)
+- [ElectionResultsTypeNames](enums/ElectionResultsTypeNames)
+- [ElectionStatus](enums/ElectionStatus)
+- [ElectionStatusReady](enums/ElectionStatusReady)
+- [EnvOptions](enums/EnvOptions)
+- [TransactionType](enums/TransactionType)
+- [TxType](enums/TxType)
+- [VoteSteps](enums/VoteSteps)
 
 ### Classes
 
-- [Account](classes/Account.md)
-- [AccountAPI](classes/AccountAPI.md)
-- [AccountService](classes/AccountService.md)
-- [AnonymousService](classes/AnonymousService.md)
-- [AnonymousVote](classes/AnonymousVote.md)
-- [ApprovalElection](classes/ApprovalElection.md)
-- [ArchivedElection](classes/ArchivedElection.md)
-- [BudgetElection](classes/BudgetElection.md)
-- [Census](classes/Census.md)
-- [Census3CensusAPI](classes/Census3CensusAPI.md)
-- [Census3ServiceAPI](classes/Census3ServiceAPI.md)
-- [Census3StrategyAPI](classes/Census3StrategyAPI.md)
-- [Census3TokenAPI](classes/Census3TokenAPI.md)
-- [CensusAPI](classes/CensusAPI.md)
-- [CensusService](classes/CensusService.md)
-- [ChainAPI](classes/ChainAPI.md)
-- [ChainService](classes/ChainService.md)
-- [CspCensus](classes/CspCensus.md)
-- [CspService](classes/CspService.md)
-- [CspVote](classes/CspVote.md)
-- [Election](classes/Election.md)
-- [ElectionAPI](classes/ElectionAPI.md)
-- [ElectionService](classes/ElectionService.md)
-- [FaucetAPI](classes/FaucetAPI.md)
-- [FaucetService](classes/FaucetService.md)
-- [FileAPI](classes/FileAPI.md)
-- [FileService](classes/FileService.md)
-- [InvalidElection](classes/InvalidElection.md)
-- [MultiChoiceElection](classes/MultiChoiceElection.md)
-- [OffchainCensus](classes/OffchainCensus.md)
-- [PlainCensus](classes/PlainCensus.md)
-- [PublishedCensus](classes/PublishedCensus.md)
-- [PublishedElection](classes/PublishedElection.md)
-- [Service](classes/Service.md)
-- [TokenCensus](classes/TokenCensus.md)
-- [UnpublishedElection](classes/UnpublishedElection.md)
-- [VocdoniCensus3Client](classes/VocdoniCensus3Client.md)
-- [VocdoniSDKClient](classes/VocdoniSDKClient.md)
-- [Vote](classes/Vote.md)
-- [VoteAPI](classes/VoteAPI.md)
-- [VoteService](classes/VoteService.md)
-- [WalletAPI](classes/WalletAPI.md)
-- [WeightedCensus](classes/WeightedCensus.md)
+- [Account](classes/Account)
+- [AccountAPI](classes/AccountAPI)
+- [AccountService](classes/AccountService)
+- [AnonymousService](classes/AnonymousService)
+- [AnonymousVote](classes/AnonymousVote)
+- [ApprovalElection](classes/ApprovalElection)
+- [ArchivedElection](classes/ArchivedElection)
+- [BudgetElection](classes/BudgetElection)
+- [Census](classes/Census)
+- [Census3CensusAPI](classes/Census3CensusAPI)
+- [Census3ServiceAPI](classes/Census3ServiceAPI)
+- [Census3StrategyAPI](classes/Census3StrategyAPI)
+- [Census3TokenAPI](classes/Census3TokenAPI)
+- [CensusAPI](classes/CensusAPI)
+- [CensusService](classes/CensusService)
+- [ChainAPI](classes/ChainAPI)
+- [ChainService](classes/ChainService)
+- [CspCensus](classes/CspCensus)
+- [CspService](classes/CspService)
+- [CspVote](classes/CspVote)
+- [Election](classes/Election)
+- [ElectionAPI](classes/ElectionAPI)
+- [ElectionService](classes/ElectionService)
+- [FaucetAPI](classes/FaucetAPI)
+- [FaucetService](classes/FaucetService)
+- [FileAPI](classes/FileAPI)
+- [FileService](classes/FileService)
+- [InvalidElection](classes/InvalidElection)
+- [MultiChoiceElection](classes/MultiChoiceElection)
+- [OffchainCensus](classes/OffchainCensus)
+- [PlainCensus](classes/PlainCensus)
+- [PublishedCensus](classes/PublishedCensus)
+- [PublishedElection](classes/PublishedElection)
+- [Service](classes/Service)
+- [TokenCensus](classes/TokenCensus)
+- [UnpublishedElection](classes/UnpublishedElection)
+- [VocdoniCensus3Client](classes/VocdoniCensus3Client)
+- [VocdoniSDKClient](classes/VocdoniSDKClient)
+- [Vote](classes/Vote)
+- [VoteAPI](classes/VoteAPI)
+- [VoteService](classes/VoteService)
+- [WalletAPI](classes/WalletAPI)
+- [WeightedCensus](classes/WeightedCensus)
 
 ### Interfaces
 
-- [AccountMetadata](interfaces/AccountMetadata.md)
-- [AdminTx](interfaces/AdminTx.md)
-- [CircuitInputs](interfaces/CircuitInputs.md)
-- [CollectFaucetTx](interfaces/CollectFaucetTx.md)
-- [ElectionMetadata](interfaces/ElectionMetadata.md)
-- [FetchElectionsParameters](interfaces/FetchElectionsParameters.md)
-- [IAccount](interfaces/IAccount.md)
-- [IAccountTransfersCountResponse](interfaces/IAccountTransfersCountResponse.md)
-- [IAccountsCountResponse](interfaces/IAccountsCountResponse.md)
-- [IAccountsListResponse](interfaces/IAccountsListResponse.md)
-- [IApprovalElectionParameters](interfaces/IApprovalElectionParameters.md)
-- [IBlockTransactionsResponse](interfaces/IBlockTransactionsResponse.md)
-- [IBudgetElectionParametersInfo](interfaces/IBudgetElectionParametersInfo.md)
-- [IBudgetElectionParametersWithBudget](interfaces/IBudgetElectionParametersWithBudget.md)
-- [IBudgetElectionParametersWithCensusWeight](interfaces/IBudgetElectionParametersWithCensusWeight.md)
-- [ICensus](interfaces/ICensus.md)
-- [ICensus3CensusListResponse](interfaces/ICensus3CensusListResponse.md)
-- [ICensus3CensusQueueResponse](interfaces/ICensus3CensusQueueResponse.md)
-- [ICensus3CensusResponse](interfaces/ICensus3CensusResponse.md)
-- [ICensus3ServiceInfoResponse](interfaces/ICensus3ServiceInfoResponse.md)
-- [ICensus3StrategiesListResponse](interfaces/ICensus3StrategiesListResponse.md)
-- [ICensus3StrategiesListResponsePaginated](interfaces/ICensus3StrategiesListResponsePaginated.md)
-- [ICensus3StrategiesOperator](interfaces/ICensus3StrategiesOperator.md)
-- [ICensus3StrategiesOperatorsResponse](interfaces/ICensus3StrategiesOperatorsResponse.md)
-- [ICensus3StrategyCreateResponse](interfaces/ICensus3StrategyCreateResponse.md)
-- [ICensus3StrategyEstimationQueueResponse](interfaces/ICensus3StrategyEstimationQueueResponse.md)
-- [ICensus3StrategyHoldersResponse](interfaces/ICensus3StrategyHoldersResponse.md)
-- [ICensus3StrategyHoldersResponsePaginated](interfaces/ICensus3StrategyHoldersResponsePaginated.md)
-- [ICensus3StrategyImportQueueResponse](interfaces/ICensus3StrategyImportQueueResponse.md)
-- [ICensus3StrategyToken](interfaces/ICensus3StrategyToken.md)
-- [ICensus3SupportedChain](interfaces/ICensus3SupportedChain.md)
-- [ICensus3TokenHolderResponse](interfaces/ICensus3TokenHolderResponse.md)
-- [ICensus3TokenListResponse](interfaces/ICensus3TokenListResponse.md)
-- [ICensus3TokenListResponsePaginated](interfaces/ICensus3TokenListResponsePaginated.md)
-- [ICensus3TokenTypesResponse](interfaces/ICensus3TokenTypesResponse.md)
-- [ICensus3ValidatePredicateChild](interfaces/ICensus3ValidatePredicateChild.md)
-- [ICensus3ValidatePredicateResponse](interfaces/ICensus3ValidatePredicateResponse.md)
-- [ICensus3ValidatePredicateToken](interfaces/ICensus3ValidatePredicateToken.md)
-- [ICensusExportResponse](interfaces/ICensusExportResponse.md)
-- [ICensusImportResponse](interfaces/ICensusImportResponse.md)
-- [ICensusParticipant](interfaces/ICensusParticipant.md)
-- [ICensusProofResponse](interfaces/ICensusProofResponse.md)
-- [ICensusPublishResponse](interfaces/ICensusPublishResponse.md)
-- [IChainBlockInfoResponse](interfaces/IChainBlockInfoResponse.md)
-- [IChainGetCircuitResponse](interfaces/IChainGetCircuitResponse.md)
-- [IChainGetCostsResponse](interfaces/IChainGetCostsResponse.md)
-- [IChainGetInfoResponse](interfaces/IChainGetInfoResponse.md)
-- [IChainOrganizationCountResponse](interfaces/IChainOrganizationCountResponse.md)
-- [IChainOrganizationListResponse](interfaces/IChainOrganizationListResponse.md)
-- [IChainOrganizationResponse](interfaces/IChainOrganizationResponse.md)
-- [IChainSubmitTxResponse](interfaces/IChainSubmitTxResponse.md)
-- [IChainTxCountResponse](interfaces/IChainTxCountResponse.md)
-- [IChainTxListResponse](interfaces/IChainTxListResponse.md)
-- [IChainTxReference](interfaces/IChainTxReference.md)
-- [IChainValidator](interfaces/IChainValidator.md)
-- [IChainValidatorsListResponse](interfaces/IChainValidatorsListResponse.md)
-- [IChoice](interfaces/IChoice.md)
-- [IElectionCreateResponse](interfaces/IElectionCreateResponse.md)
-- [IElectionInfoResponse](interfaces/IElectionInfoResponse.md)
-- [IElectionKeysResponse](interfaces/IElectionKeysResponse.md)
-- [IElectionListFilter](interfaces/IElectionListFilter.md)
-- [IElectionListResponse](interfaces/IElectionListResponse.md)
-- [IElectionMode](interfaces/IElectionMode.md)
-- [IElectionNextIdResponse](interfaces/IElectionNextIdResponse.md)
-- [IElectionParameters](interfaces/IElectionParameters.md)
-- [IElectionSummary](interfaces/IElectionSummary.md)
-- [IElectionType](interfaces/IElectionType.md)
-- [IElectionVote](interfaces/IElectionVote.md)
-- [IElectionVoteListResponse](interfaces/IElectionVoteListResponse.md)
-- [IEncryptionKey](interfaces/IEncryptionKey.md)
-- [IInvalidElectionParameters](interfaces/IInvalidElectionParameters.md)
-- [IMultiChoiceElectionParameters](interfaces/IMultiChoiceElectionParameters.md)
-- [IPublishedElectionParameters](interfaces/IPublishedElectionParameters.md)
-- [IQuestion](interfaces/IQuestion.md)
-- [ITallyMode](interfaces/ITallyMode.md)
-- [IVoteInfoResponse](interfaces/IVoteInfoResponse.md)
-- [IVoteMode](interfaces/IVoteMode.md)
-- [IVoteSubmitResponse](interfaces/IVoteSubmitResponse.md)
-- [IVoteType](interfaces/IVoteType.md)
-- [MintTokensTx](interfaces/MintTokensTx.md)
-- [NewProcessTx](interfaces/NewProcessTx.md)
-- [Process](interfaces/Process.md)
-- [Proof](interfaces/Proof.md)
-- [RegisterKeyTx](interfaces/RegisterKeyTx.md)
-- [SendTokensTx](interfaces/SendTokensTx.md)
-- [ServiceProperties](interfaces/ServiceProperties.md)
-- [SetAccountTx](interfaces/SetAccountTx.md)
-- [SetProcessTx](interfaces/SetProcessTx.md)
-- [SetTransactionCostsTx](interfaces/SetTransactionCostsTx.md)
-- [Tx](interfaces/Tx.md)
-- [VoteEnvelope](interfaces/VoteEnvelope.md)
+- [AccountMetadata](interfaces/AccountMetadata)
+- [AdminTx](interfaces/AdminTx)
+- [CircuitInputs](interfaces/CircuitInputs)
+- [CollectFaucetTx](interfaces/CollectFaucetTx)
+- [ElectionMetadata](interfaces/ElectionMetadata)
+- [FetchElectionsParameters](interfaces/FetchElectionsParameters)
+- [IAccount](interfaces/IAccount)
+- [IAccountTransfersCountResponse](interfaces/IAccountTransfersCountResponse)
+- [IAccountsCountResponse](interfaces/IAccountsCountResponse)
+- [IAccountsListResponse](interfaces/IAccountsListResponse)
+- [IApprovalElectionParameters](interfaces/IApprovalElectionParameters)
+- [IBlockTransactionsResponse](interfaces/IBlockTransactionsResponse)
+- [IBudgetElectionParametersInfo](interfaces/IBudgetElectionParametersInfo)
+- [IBudgetElectionParametersWithBudget](interfaces/IBudgetElectionParametersWithBudget)
+- [IBudgetElectionParametersWithCensusWeight](interfaces/IBudgetElectionParametersWithCensusWeight)
+- [ICensus](interfaces/ICensus)
+- [ICensus3CensusListResponse](interfaces/ICensus3CensusListResponse)
+- [ICensus3CensusQueueResponse](interfaces/ICensus3CensusQueueResponse)
+- [ICensus3CensusResponse](interfaces/ICensus3CensusResponse)
+- [ICensus3ServiceInfoResponse](interfaces/ICensus3ServiceInfoResponse)
+- [ICensus3StrategiesListResponse](interfaces/ICensus3StrategiesListResponse)
+- [ICensus3StrategiesListResponsePaginated](interfaces/ICensus3StrategiesListResponsePaginated)
+- [ICensus3StrategiesOperator](interfaces/ICensus3StrategiesOperator)
+- [ICensus3StrategiesOperatorsResponse](interfaces/ICensus3StrategiesOperatorsResponse)
+- [ICensus3StrategyCreateResponse](interfaces/ICensus3StrategyCreateResponse)
+- [ICensus3StrategyEstimationQueueResponse](interfaces/ICensus3StrategyEstimationQueueResponse)
+- [ICensus3StrategyHoldersResponse](interfaces/ICensus3StrategyHoldersResponse)
+- [ICensus3StrategyHoldersResponsePaginated](interfaces/ICensus3StrategyHoldersResponsePaginated)
+- [ICensus3StrategyImportQueueResponse](interfaces/ICensus3StrategyImportQueueResponse)
+- [ICensus3StrategyToken](interfaces/ICensus3StrategyToken)
+- [ICensus3SupportedChain](interfaces/ICensus3SupportedChain)
+- [ICensus3TokenHolderResponse](interfaces/ICensus3TokenHolderResponse)
+- [ICensus3TokenListResponse](interfaces/ICensus3TokenListResponse)
+- [ICensus3TokenListResponsePaginated](interfaces/ICensus3TokenListResponsePaginated)
+- [ICensus3TokenTypesResponse](interfaces/ICensus3TokenTypesResponse)
+- [ICensus3ValidatePredicateChild](interfaces/ICensus3ValidatePredicateChild)
+- [ICensus3ValidatePredicateResponse](interfaces/ICensus3ValidatePredicateResponse)
+- [ICensus3ValidatePredicateToken](interfaces/ICensus3ValidatePredicateToken)
+- [ICensusExportResponse](interfaces/ICensusExportResponse)
+- [ICensusImportResponse](interfaces/ICensusImportResponse)
+- [ICensusParticipant](interfaces/ICensusParticipant)
+- [ICensusProofResponse](interfaces/ICensusProofResponse)
+- [ICensusPublishResponse](interfaces/ICensusPublishResponse)
+- [IChainBlockInfoResponse](interfaces/IChainBlockInfoResponse)
+- [IChainGetCircuitResponse](interfaces/IChainGetCircuitResponse)
+- [IChainGetCostsResponse](interfaces/IChainGetCostsResponse)
+- [IChainGetInfoResponse](interfaces/IChainGetInfoResponse)
+- [IChainOrganizationCountResponse](interfaces/IChainOrganizationCountResponse)
+- [IChainOrganizationListResponse](interfaces/IChainOrganizationListResponse)
+- [IChainOrganizationResponse](interfaces/IChainOrganizationResponse)
+- [IChainSubmitTxResponse](interfaces/IChainSubmitTxResponse)
+- [IChainTxCountResponse](interfaces/IChainTxCountResponse)
+- [IChainTxListResponse](interfaces/IChainTxListResponse)
+- [IChainTxReference](interfaces/IChainTxReference)
+- [IChainValidator](interfaces/IChainValidator)
+- [IChainValidatorsListResponse](interfaces/IChainValidatorsListResponse)
+- [IChoice](interfaces/IChoice)
+- [IElectionCreateResponse](interfaces/IElectionCreateResponse)
+- [IElectionInfoResponse](interfaces/IElectionInfoResponse)
+- [IElectionKeysResponse](interfaces/IElectionKeysResponse)
+- [IElectionListFilter](interfaces/IElectionListFilter)
+- [IElectionListResponse](interfaces/IElectionListResponse)
+- [IElectionMode](interfaces/IElectionMode)
+- [IElectionNextIdResponse](interfaces/IElectionNextIdResponse)
+- [IElectionParameters](interfaces/IElectionParameters)
+- [IElectionSummary](interfaces/IElectionSummary)
+- [IElectionType](interfaces/IElectionType)
+- [IElectionVote](interfaces/IElectionVote)
+- [IElectionVoteListResponse](interfaces/IElectionVoteListResponse)
+- [IEncryptionKey](interfaces/IEncryptionKey)
+- [IInvalidElectionParameters](interfaces/IInvalidElectionParameters)
+- [IMultiChoiceElectionParameters](interfaces/IMultiChoiceElectionParameters)
+- [IPublishedElectionParameters](interfaces/IPublishedElectionParameters)
+- [IQuestion](interfaces/IQuestion)
+- [ITallyMode](interfaces/ITallyMode)
+- [IVoteInfoResponse](interfaces/IVoteInfoResponse)
+- [IVoteMode](interfaces/IVoteMode)
+- [IVoteSubmitResponse](interfaces/IVoteSubmitResponse)
+- [IVoteType](interfaces/IVoteType)
+- [MintTokensTx](interfaces/MintTokensTx)
+- [NewProcessTx](interfaces/NewProcessTx)
+- [Process](interfaces/Process)
+- [Proof](interfaces/Proof)
+- [RegisterKeyTx](interfaces/RegisterKeyTx)
+- [SendTokensTx](interfaces/SendTokensTx)
+- [ServiceProperties](interfaces/ServiceProperties)
+- [SetAccountTx](interfaces/SetAccountTx)
+- [SetProcessTx](interfaces/SetProcessTx)
+- [SetTransactionCostsTx](interfaces/SetTransactionCostsTx)
+- [Tx](interfaces/Tx)
+- [VoteEnvelope](interfaces/VoteEnvelope)
 
 ### Type Aliases
 
-- [AccountData](modules.md#accountdata)
-- [AllElectionStatus](modules.md#allelectionstatus)
-- [ArchivedAccountData](modules.md#archivedaccountdata)
-- [Census3Census](modules.md#census3census)
-- [Census3CreateStrategyToken](modules.md#census3createstrategytoken)
-- [Census3Strategy](modules.md#census3strategy)
-- [Census3StrategyToken](modules.md#census3strategytoken)
-- [Census3SummaryToken](modules.md#census3summarytoken)
-- [Census3Token](modules.md#census3token)
-- [CensusImportExport](modules.md#censusimportexport)
-- [CensusProof](modules.md#censusproof)
-- [ChainCircuits](modules.md#chaincircuits)
-- [ChainCosts](modules.md#chaincosts)
-- [ChainData](modules.md#chaindata)
-- [ChainTx](modules.md#chaintx)
-- [ClientOptions](modules.md#clientoptions)
-- [CspCensusProof](modules.md#cspcensusproof)
-- [ElectionCreatedInformation](modules.md#electioncreatedinformation)
-- [ElectionCreationStepValue](modules.md#electioncreationstepvalue)
-- [ElectionIdOption](modules.md#electionidoption)
-- [ElectionKeys](modules.md#electionkeys)
-- [ElectionMeta](modules.md#electionmeta)
-- [ElectionResultsType](modules.md#electionresultstype)
-- [FaucetOptions](modules.md#faucetoptions)
-- [FaucetPackage](modules.md#faucetpackage)
-- [HasAlreadyVotedOptions](modules.md#hasalreadyvotedoptions)
-- [IAccountSummary](modules.md#iaccountsummary)
-- [IBudgetElectionParameters](modules.md#ibudgetelectionparameters)
-- [IsAbleToVoteOptions](modules.md#isabletovoteoptions)
-- [IsInCensusOptions](modules.md#isincensusoptions)
-- [ParsedPredicate](modules.md#parsedpredicate)
-- [SendTokensOptions](modules.md#sendtokensoptions)
-- [Strategy](modules.md#strategy)
-- [StrategyHolder](modules.md#strategyholder)
-- [StrategyHolders](modules.md#strategyholders)
-- [StrategyToken](modules.md#strategytoken)
-- [SupportedChain](modules.md#supportedchain)
-- [SupportedOperator](modules.md#supportedoperator)
-- [Token](modules.md#token)
-- [TokenSummary](modules.md#tokensummary)
-- [TxWaitOptions](modules.md#txwaitoptions)
-- [VoteIdOption](modules.md#voteidoption)
-- [VoteInfo](modules.md#voteinfo)
-- [VoteStepValue](modules.md#votestepvalue)
-- [VoteSubmit](modules.md#votesubmit)
-- [VotesLeftCountOptions](modules.md#votesleftcountoptions)
-- [WalletOption](modules.md#walletoption)
-- [ZkProof](modules.md#zkproof)
+- [AccountData](modules#accountdata)
+- [AllElectionStatus](modules#allelectionstatus)
+- [ArchivedAccountData](modules#archivedaccountdata)
+- [Census3Census](modules#census3census)
+- [Census3CreateStrategyToken](modules#census3createstrategytoken)
+- [Census3Strategy](modules#census3strategy)
+- [Census3StrategyToken](modules#census3strategytoken)
+- [Census3SummaryToken](modules#census3summarytoken)
+- [Census3Token](modules#census3token)
+- [CensusImportExport](modules#censusimportexport)
+- [CensusProof](modules#censusproof)
+- [ChainCircuits](modules#chaincircuits)
+- [ChainCosts](modules#chaincosts)
+- [ChainData](modules#chaindata)
+- [ChainTx](modules#chaintx)
+- [ClientOptions](modules#clientoptions)
+- [CspCensusProof](modules#cspcensusproof)
+- [ElectionCreatedInformation](modules#electioncreatedinformation)
+- [ElectionCreationStepValue](modules#electioncreationstepvalue)
+- [ElectionIdOption](modules#electionidoption)
+- [ElectionKeys](modules#electionkeys)
+- [ElectionMeta](modules#electionmeta)
+- [ElectionResultsType](modules#electionresultstype)
+- [FaucetOptions](modules#faucetoptions)
+- [FaucetPackage](modules#faucetpackage)
+- [HasAlreadyVotedOptions](modules#hasalreadyvotedoptions)
+- [IAccountSummary](modules#iaccountsummary)
+- [IBudgetElectionParameters](modules#ibudgetelectionparameters)
+- [IsAbleToVoteOptions](modules#isabletovoteoptions)
+- [IsInCensusOptions](modules#isincensusoptions)
+- [ParsedPredicate](modules#parsedpredicate)
+- [SendTokensOptions](modules#sendtokensoptions)
+- [Strategy](modules#strategy)
+- [StrategyHolder](modules#strategyholder)
+- [StrategyHolders](modules#strategyholders)
+- [StrategyToken](modules#strategytoken)
+- [SupportedChain](modules#supportedchain)
+- [SupportedOperator](modules#supportedoperator)
+- [Token](modules#token)
+- [TokenSummary](modules#tokensummary)
+- [TxWaitOptions](modules#txwaitoptions)
+- [VoteIdOption](modules#voteidoption)
+- [VoteInfo](modules#voteinfo)
+- [VoteStepValue](modules#votestepvalue)
+- [VoteSubmit](modules#votesubmit)
+- [VotesLeftCountOptions](modules#votesleftcountoptions)
+- [WalletOption](modules#walletoption)
+- [ZkProof](modules#zkproof)
 
 ### Variables
 
-- [AccountMetadataTemplate](modules.md#accountmetadatatemplate)
-- [ElectionMetadataTemplate](modules.md#electionmetadatatemplate)
+- [AccountMetadataTemplate](modules#accountmetadatatemplate)
+- [ElectionMetadataTemplate](modules#electionmetadatatemplate)
 
 ### Functions
 
-- [areEqualHexStrings](modules.md#areequalhexstrings)
-- [checkValidAccountMetadata](modules.md#checkvalidaccountmetadata)
-- [checkValidElectionMetadata](modules.md#checkvalidelectionmetadata)
-- [delay](modules.md#delay)
-- [dotobject](modules.md#dotobject)
-- [ensure0x](modules.md#ensure0x)
-- [formatUnits](modules.md#formatunits)
-- [getBytes](modules.md#getbytes)
-- [getHex](modules.md#gethex)
-- [strip0x](modules.md#strip0x)
+- [areEqualHexStrings](modules#areequalhexstrings)
+- [checkValidAccountMetadata](modules#checkvalidaccountmetadata)
+- [checkValidElectionMetadata](modules#checkvalidelectionmetadata)
+- [delay](modules#delay)
+- [dotobject](modules#dotobject)
+- [ensure0x](modules#ensure0x)
+- [formatUnits](modules#formatunits)
+- [getBytes](modules#getbytes)
+- [getHex](modules#gethex)
+- [strip0x](modules#strip0x)
 
 ## Type Aliases
 
@@ -238,7 +238,7 @@
 
 | Name | Type |
 | :------ | :------ |
-| `account` | [`Account`](classes/Account.md) |
+| `account` | [`Account`](classes/Account) |
 | `address` | `string` |
 | `balance` | `number` |
 | `electionIndex` | `number` |
@@ -248,47 +248,47 @@
 
 #### Defined in
 
-[services/account.ts:25](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/account.ts#L25)
+[services/account.ts:25](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/account.ts#L25)
 
 ___
 
 ### AllElectionStatus
 
-Ƭ **AllElectionStatus**: [`ElectionStatus`](enums/ElectionStatus.md) \| [`ElectionStatusReady`](enums/ElectionStatusReady.md)
+Ƭ **AllElectionStatus**: [`ElectionStatus`](enums/ElectionStatus.md) \| [`ElectionStatusReady`](enums/ElectionStatusReady)
 
 #### Defined in
 
-[types/election/published.ts:24](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/election/published.ts#L24)
+[types/election/published.ts:24](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/election/published.ts#L24)
 
 ___
 
 ### ArchivedAccountData
 
-Ƭ **ArchivedAccountData**: `Pick`\<[`AccountData`](modules.md#accountdata), ``"address"`` \| ``"account"``\>
+Ƭ **ArchivedAccountData**: `Pick`\<[`AccountData`](modules#accountdata), ``"address"`` \| ``"account"``\>
 
 #### Defined in
 
-[services/account.ts:35](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/account.ts#L35)
+[services/account.ts:35](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/account.ts#L35)
 
 ___
 
 ### Census3Census
 
-Ƭ **Census3Census**: [`ICensus3CensusResponse`](interfaces/ICensus3CensusResponse.md)
+Ƭ **Census3Census**: [`ICensus3CensusResponse`](interfaces/ICensus3CensusResponse)
 
 #### Defined in
 
-[census3.ts:30](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/census3.ts#L30)
+[census3.ts:30](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/census3.ts#L30)
 
 ___
 
 ### Census3CreateStrategyToken
 
-Ƭ **Census3CreateStrategyToken**: `Omit`\<[`Census3StrategyToken`](modules.md#census3strategytoken), ``"chainAddress"``\>
+Ƭ **Census3CreateStrategyToken**: `Omit`\<[`Census3StrategyToken`](modules#census3strategytoken), ``"chainAddress"``\>
 
 #### Defined in
 
-[api/census3/strategy.ts:100](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/census3/strategy.ts#L100)
+[api/census3/strategy.ts:100](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/census3/strategy.ts#L100)
 
 ___
 
@@ -303,12 +303,12 @@ ___
 | `ID` | `number` | The strategy identifier |
 | `alias` | `string` | The strategy alias |
 | `predicate` | `string` | The strategy predicate |
-| `tokens` | \{ `[key: string]`: [`Census3StrategyToken`](modules.md#census3strategytoken);  } | The list of tokens |
+| `tokens` | \{ `[key: string]`: [`Census3StrategyToken`](modules#census3strategytoken);  } | The list of tokens |
 | `uri` | `string` | The URI of the strategy |
 
 #### Defined in
 
-[api/census3/strategy.ts:46](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/census3/strategy.ts#L46)
+[api/census3/strategy.ts:46](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/census3/strategy.ts#L46)
 
 ___
 
@@ -328,17 +328,17 @@ ___
 
 #### Defined in
 
-[api/census3/strategy.ts:73](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/census3/strategy.ts#L73)
+[api/census3/strategy.ts:73](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/census3/strategy.ts#L73)
 
 ___
 
 ### Census3SummaryToken
 
-Ƭ **Census3SummaryToken**: `Omit`\<[`Census3Token`](modules.md#census3token), ``"status"`` \| ``"size"``\> & \{ `synced`: `boolean`  }
+Ƭ **Census3SummaryToken**: `Omit`\<[`Census3Token`](modules#census3token), ``"status"`` \| ``"size"``\> & \{ `synced`: `boolean`  }
 
 #### Defined in
 
-[api/census3/token.ts:12](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/census3/token.ts#L12)
+[api/census3/token.ts:12](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/census3/token.ts#L12)
 
 ___
 
@@ -371,7 +371,7 @@ ___
 
 #### Defined in
 
-[api/census3/token.ts:14](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/census3/token.ts#L14)
+[api/census3/token.ts:14](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/census3/token.ts#L14)
 
 ___
 
@@ -390,7 +390,7 @@ ___
 
 #### Defined in
 
-[services/census.ts:42](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/census.ts#L42)
+[services/census.ts:42](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/census.ts#L42)
 
 ___
 
@@ -405,13 +405,13 @@ ___
 | `proof` | `string` |
 | `root` | `string` |
 | `siblings?` | `string`[] |
-| `type` | [`CensusType`](enums/CensusType.md) |
+| `type` | [`CensusType`](enums/CensusType) |
 | `value` | `string` |
 | `weight` | `string` |
 
 #### Defined in
 
-[services/census.ts:26](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/census.ts#L26)
+[services/census.ts:26](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/census.ts#L26)
 
 ___
 
@@ -435,17 +435,17 @@ ___
 
 #### Defined in
 
-[services/anonymous.ts:51](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/anonymous.ts#L51)
+[services/anonymous.ts:51](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/anonymous.ts#L51)
 
 ___
 
 ### ChainCosts
 
-Ƭ **ChainCosts**: [`IChainGetCostsResponse`](interfaces/IChainGetCostsResponse.md)
+Ƭ **ChainCosts**: [`IChainGetCostsResponse`](interfaces/IChainGetCostsResponse)
 
 #### Defined in
 
-[services/chain.ts:14](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/chain.ts#L14)
+[services/chain.ts:14](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/chain.ts#L14)
 
 ___
 
@@ -465,17 +465,17 @@ ___
 
 #### Defined in
 
-[services/chain.ts:29](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/chain.ts#L29)
+[services/chain.ts:29](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/chain.ts#L29)
 
 ___
 
 ### ChainTx
 
-Ƭ **ChainTx**: [`IChainTxReference`](interfaces/IChainTxReference.md)
+Ƭ **ChainTx**: [`IChainTxReference`](interfaces/IChainTxReference)
 
 #### Defined in
 
-[services/chain.ts:15](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/chain.ts#L15)
+[services/chain.ts:15](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/chain.ts#L15)
 
 ___
 
@@ -491,14 +491,14 @@ Optional VocdoniSDKClient arguments
 | :------ | :------ |
 | `api_url?` | `string` |
 | `electionId?` | `string` |
-| `env` | [`EnvOptions`](enums/EnvOptions.md) |
-| `faucet?` | `Partial`\<[`FaucetOptions`](modules.md#faucetoptions)\> |
+| `env` | [`EnvOptions`](enums/EnvOptions) |
+| `faucet?` | `Partial`\<[`FaucetOptions`](modules#faucetoptions)\> |
 | `tx_wait?` | `TxWaitOptions` |
 | `wallet?` | `Wallet` \| `Signer` |
 
 #### Defined in
 
-[client.ts:85](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/client.ts#L85)
+[client.ts:85](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/client.ts#L85)
 
 ___
 
@@ -511,34 +511,34 @@ ___
 | Name | Type |
 | :------ | :------ |
 | `address` | `string` |
-| `proof_type?` | [`CspProofType`](enums/CspProofType.md) |
+| `proof_type?` | [`CspProofType`](enums/CspProofType) |
 | `signature` | `string` |
 | `type?` | `number` |
 | `weight?` | `bigint` |
 
 #### Defined in
 
-[services/census.ts:56](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/census.ts#L56)
+[services/census.ts:56](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/census.ts#L56)
 
 ___
 
 ### ElectionCreatedInformation
 
-Ƭ **ElectionCreatedInformation**: [`IElectionCreateResponse`](interfaces/IElectionCreateResponse.md)
+Ƭ **ElectionCreatedInformation**: [`IElectionCreateResponse`](interfaces/IElectionCreateResponse)
 
 #### Defined in
 
-[services/election.ts:37](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/election.ts#L37)
+[services/election.ts:37](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/election.ts#L37)
 
 ___
 
 ### ElectionCreationStepValue
 
-Ƭ **ElectionCreationStepValue**: \{ `key`: [`GET_CHAIN_DATA`](enums/ElectionCreationSteps.md#get_chain_data)  } \| \{ `key`: [`CENSUS_CREATED`](enums/ElectionCreationSteps.md#census_created)  } \| \{ `key`: [`GET_ACCOUNT_DATA`](enums/ElectionCreationSteps.md#get_account_data)  } \| \{ `key`: [`GET_DATA_PIN`](enums/ElectionCreationSteps.md#get_data_pin)  } \| \{ `key`: [`GENERATE_TX`](enums/ElectionCreationSteps.md#generate_tx)  } \| \{ `key`: [`SIGN_TX`](enums/ElectionCreationSteps.md#sign_tx)  } \| \{ `key`: [`CREATING`](enums/ElectionCreationSteps.md#creating) ; `txHash`: `string`  } \| \{ `electionId`: `string` ; `key`: [`DONE`](enums/ElectionCreationSteps.md#done)  }
+Ƭ **ElectionCreationStepValue**: \{ `key`: [`GET_CHAIN_DATA`](enums/ElectionCreationSteps.md#get_chain_data)  } \| \{ `key`: [`CENSUS_CREATED`](enums/ElectionCreationSteps.md#census_created)  } \| \{ `key`: [`GET_ACCOUNT_DATA`](enums/ElectionCreationSteps.md#get_account_data)  } \| \{ `key`: [`GET_DATA_PIN`](enums/ElectionCreationSteps.md#get_data_pin)  } \| \{ `key`: [`GENERATE_TX`](enums/ElectionCreationSteps.md#generate_tx)  } \| \{ `key`: [`SIGN_TX`](enums/ElectionCreationSteps.md#sign_tx)  } \| \{ `key`: [`CREATING`](enums/ElectionCreationSteps.md#creating) ; `txHash`: `string`  } \| \{ `electionId`: `string` ; `key`: [`DONE`](enums/ElectionCreationSteps#done)  }
 
 #### Defined in
 
-[services/election.ts:50](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/election.ts#L50)
+[services/election.ts:50](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/election.ts#L50)
 
 ___
 
@@ -554,17 +554,17 @@ ___
 
 #### Defined in
 
-[types/client/account.ts:5](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/client/account.ts#L5)
+[types/client/account.ts:5](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/client/account.ts#L5)
 
 ___
 
 ### ElectionKeys
 
-Ƭ **ElectionKeys**: [`IElectionKeysResponse`](interfaces/IElectionKeysResponse.md)
+Ƭ **ElectionKeys**: [`IElectionKeysResponse`](interfaces/IElectionKeysResponse)
 
 #### Defined in
 
-[services/election.ts:36](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/election.ts#L36)
+[services/election.ts:36](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/election.ts#L36)
 
 ___
 
@@ -574,17 +574,17 @@ ___
 
 #### Defined in
 
-[types/election/election.ts:101](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/election/election.ts#L101)
+[types/election/election.ts:101](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/election/election.ts#L101)
 
 ___
 
 ### ElectionResultsType
 
-Ƭ **ElectionResultsType**: \{ `name`: [`SINGLE_CHOICE_MULTIQUESTION`](enums/ElectionResultsTypeNames.md#single_choice_multiquestion) ; `properties`: {}  } \| \{ `name`: [`MULTIPLE_CHOICE`](enums/ElectionResultsTypeNames.md#multiple_choice) ; `properties`: \{ `abstainValues`: `string`[] ; `canAbstain`: `boolean` ; `repeatChoice`: `boolean`  }  } \| \{ `name`: [`BUDGET`](enums/ElectionResultsTypeNames.md#budget) ; `properties`: \{ `forceFullBudget`: `boolean` ; `maxBudget`: `number` ; `minStep`: `number` ; `useCensusWeightAsBudget`: `boolean`  }  } \| \{ `name`: [`APPROVAL`](enums/ElectionResultsTypeNames.md#approval) ; `properties`: \{ `acceptValue`: `number` ; `rejectValue`: `number`  }  }
+Ƭ **ElectionResultsType**: \{ `name`: [`SINGLE_CHOICE_MULTIQUESTION`](enums/ElectionResultsTypeNames.md#single_choice_multiquestion) ; `properties`: {}  } \| \{ `name`: [`MULTIPLE_CHOICE`](enums/ElectionResultsTypeNames.md#multiple_choice) ; `properties`: \{ `abstainValues`: `string`[] ; `canAbstain`: `boolean` ; `repeatChoice`: `boolean`  }  } \| \{ `name`: [`BUDGET`](enums/ElectionResultsTypeNames.md#budget) ; `properties`: \{ `forceFullBudget`: `boolean` ; `maxBudget`: `number` ; `minStep`: `number` ; `useCensusWeightAsBudget`: `boolean`  }  } \| \{ `name`: [`APPROVAL`](enums/ElectionResultsTypeNames#approval) ; `properties`: \{ `acceptValue`: `number` ; `rejectValue`: `number`  }  }
 
 #### Defined in
 
-[types/metadata/election.ts:44](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/metadata/election.ts#L44)
+[types/metadata/election.ts:44](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/metadata/election.ts#L44)
 
 ___
 
@@ -594,7 +594,7 @@ ___
 
 #### Defined in
 
-[services/faucet.ts:28](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/faucet.ts#L28)
+[services/faucet.ts:28](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/faucet.ts#L28)
 
 ___
 
@@ -611,17 +611,17 @@ ___
 
 #### Defined in
 
-[services/faucet.ts:23](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/faucet.ts#L23)
+[services/faucet.ts:23](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/faucet.ts#L23)
 
 ___
 
 ### HasAlreadyVotedOptions
 
-Ƭ **HasAlreadyVotedOptions**: `Partial`\<[`WalletOption`](modules.md#walletoption) & [`ElectionIdOption`](modules.md#electionidoption) & [`VoteIdOption`](modules.md#voteidoption)\>
+Ƭ **HasAlreadyVotedOptions**: `Partial`\<[`WalletOption`](modules.md#walletoption) & [`ElectionIdOption`](modules.md#electionidoption) & [`VoteIdOption`](modules#voteidoption)\>
 
 #### Defined in
 
-[types/client/account.ts:10](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/client/account.ts#L10)
+[types/client/account.ts:10](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/client/account.ts#L10)
 
 ___
 
@@ -631,67 +631,67 @@ ___
 
 #### Defined in
 
-[api/account.ts:17](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/account.ts#L17)
+[api/account.ts:17](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/account.ts#L17)
 
 ___
 
 ### IBudgetElectionParameters
 
-Ƭ **IBudgetElectionParameters**: [`IBudgetElectionParametersWithCensusWeight`](interfaces/IBudgetElectionParametersWithCensusWeight.md) \| [`IBudgetElectionParametersWithBudget`](interfaces/IBudgetElectionParametersWithBudget.md)
+Ƭ **IBudgetElectionParameters**: [`IBudgetElectionParametersWithCensusWeight`](interfaces/IBudgetElectionParametersWithCensusWeight.md) \| [`IBudgetElectionParametersWithBudget`](interfaces/IBudgetElectionParametersWithBudget)
 
 #### Defined in
 
-[types/election/budget.ts:21](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/election/budget.ts#L21)
+[types/election/budget.ts:21](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/election/budget.ts#L21)
 
 ___
 
 ### IsAbleToVoteOptions
 
-Ƭ **IsAbleToVoteOptions**: `Partial`\<[`WalletOption`](modules.md#walletoption) & [`ElectionIdOption`](modules.md#electionidoption) & [`VoteIdOption`](modules.md#voteidoption)\>
+Ƭ **IsAbleToVoteOptions**: `Partial`\<[`WalletOption`](modules.md#walletoption) & [`ElectionIdOption`](modules.md#electionidoption) & [`VoteIdOption`](modules#voteidoption)\>
 
 #### Defined in
 
-[types/client/account.ts:12](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/client/account.ts#L12)
+[types/client/account.ts:12](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/client/account.ts#L12)
 
 ___
 
 ### IsInCensusOptions
 
-Ƭ **IsInCensusOptions**: `Partial`\<[`WalletOption`](modules.md#walletoption) & [`ElectionIdOption`](modules.md#electionidoption)\>
+Ƭ **IsInCensusOptions**: `Partial`\<[`WalletOption`](modules.md#walletoption) & [`ElectionIdOption`](modules#electionidoption)\>
 
 #### Defined in
 
-[types/client/account.ts:9](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/client/account.ts#L9)
+[types/client/account.ts:9](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/client/account.ts#L9)
 
 ___
 
 ### ParsedPredicate
 
-Ƭ **ParsedPredicate**: [`ICensus3ValidatePredicateResponse`](interfaces/ICensus3ValidatePredicateResponse.md)
+Ƭ **ParsedPredicate**: [`ICensus3ValidatePredicateResponse`](interfaces/ICensus3ValidatePredicateResponse)
 
 #### Defined in
 
-[census3.ts:33](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/census3.ts#L33)
+[census3.ts:33](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/census3.ts#L33)
 
 ___
 
 ### SendTokensOptions
 
-Ƭ **SendTokensOptions**: `Partial`\<[`WalletOption`](modules.md#walletoption)\> & \{ `amount`: `number` ; `to`: `string`  }
+Ƭ **SendTokensOptions**: `Partial`\<[`WalletOption`](modules#walletoption)\> & \{ `amount`: `number` ; `to`: `string`  }
 
 #### Defined in
 
-[types/client/account.ts:8](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/client/account.ts#L8)
+[types/client/account.ts:8](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/client/account.ts#L8)
 
 ___
 
 ### Strategy
 
-Ƭ **Strategy**: [`Census3Strategy`](modules.md#census3strategy)
+Ƭ **Strategy**: [`Census3Strategy`](modules#census3strategy)
 
 #### Defined in
 
-[census3.ts:26](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/census3.ts#L26)
+[census3.ts:26](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/census3.ts#L26)
 
 ___
 
@@ -708,7 +708,7 @@ ___
 
 #### Defined in
 
-[census3.ts:27](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/census3.ts#L27)
+[census3.ts:27](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/census3.ts#L27)
 
 ___
 
@@ -720,62 +720,62 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `holders` | [`StrategyHolder`](modules.md#strategyholder)[] |
+| `holders` | [`StrategyHolder`](modules#strategyholder)[] |
 | `pagination` | `Census3Pagination` |
 
 #### Defined in
 
-[census3.ts:28](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/census3.ts#L28)
+[census3.ts:28](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/census3.ts#L28)
 
 ___
 
 ### StrategyToken
 
-Ƭ **StrategyToken**: [`Census3CreateStrategyToken`](modules.md#census3createstrategytoken)
+Ƭ **StrategyToken**: [`Census3CreateStrategyToken`](modules#census3createstrategytoken)
 
 #### Defined in
 
-[census3.ts:29](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/census3.ts#L29)
+[census3.ts:29](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/census3.ts#L29)
 
 ___
 
 ### SupportedChain
 
-Ƭ **SupportedChain**: [`ICensus3SupportedChain`](interfaces/ICensus3SupportedChain.md)
+Ƭ **SupportedChain**: [`ICensus3SupportedChain`](interfaces/ICensus3SupportedChain)
 
 #### Defined in
 
-[census3.ts:31](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/census3.ts#L31)
+[census3.ts:31](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/census3.ts#L31)
 
 ___
 
 ### SupportedOperator
 
-Ƭ **SupportedOperator**: [`ICensus3StrategiesOperator`](interfaces/ICensus3StrategiesOperator.md)
+Ƭ **SupportedOperator**: [`ICensus3StrategiesOperator`](interfaces/ICensus3StrategiesOperator)
 
 #### Defined in
 
-[census3.ts:32](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/census3.ts#L32)
+[census3.ts:32](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/census3.ts#L32)
 
 ___
 
 ### Token
 
-Ƭ **Token**: `Omit`\<[`Census3Token`](modules.md#census3token), ``"tags"``\> & \{ `tags`: `string`[]  }
+Ƭ **Token**: `Omit`\<[`Census3Token`](modules#census3token), ``"tags"``\> & \{ `tags`: `string`[]  }
 
 #### Defined in
 
-[census3.ts:24](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/census3.ts#L24)
+[census3.ts:24](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/census3.ts#L24)
 
 ___
 
 ### TokenSummary
 
-Ƭ **TokenSummary**: `Omit`\<[`Census3SummaryToken`](modules.md#census3summarytoken), ``"tags"``\> & \{ `tags`: `string`[]  }
+Ƭ **TokenSummary**: `Omit`\<[`Census3SummaryToken`](modules#census3summarytoken), ``"tags"``\> & \{ `tags`: `string`[]  }
 
 #### Defined in
 
-[census3.ts:25](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/census3.ts#L25)
+[census3.ts:25](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/census3.ts#L25)
 
 ___
 
@@ -794,7 +794,7 @@ Specify custom retry times and attempts when waiting for a transaction.
 
 #### Defined in
 
-[services/chain.ts:24](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/chain.ts#L24)
+[services/chain.ts:24](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/chain.ts#L24)
 
 ___
 
@@ -810,47 +810,47 @@ ___
 
 #### Defined in
 
-[types/client/account.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/client/account.ts#L6)
+[types/client/account.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/client/account.ts#L6)
 
 ___
 
 ### VoteInfo
 
-Ƭ **VoteInfo**: [`IVoteInfoResponse`](interfaces/IVoteInfoResponse.md)
+Ƭ **VoteInfo**: [`IVoteInfoResponse`](interfaces/IVoteInfoResponse)
 
 #### Defined in
 
-[services/vote.ts:15](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/vote.ts#L15)
+[services/vote.ts:15](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/vote.ts#L15)
 
 ___
 
 ### VoteStepValue
 
-Ƭ **VoteStepValue**: \{ `electionId`: `string` ; `key`: [`GET_ELECTION`](enums/VoteSteps.md#get_election)  } \| \{ `key`: [`GET_PROOF`](enums/VoteSteps.md#get_proof)  } \| \{ `key`: [`GET_SIGNATURE`](enums/VoteSteps.md#get_signature) ; `signature`: `string`  } \| \{ `key`: [`CALC_ZK_PROOF`](enums/VoteSteps.md#calc_zk_proof)  } \| \{ `key`: [`GENERATE_TX`](enums/VoteSteps.md#generate_tx)  } \| \{ `key`: [`SIGN_TX`](enums/VoteSteps.md#sign_tx)  } \| \{ `key`: [`DONE`](enums/VoteSteps.md#done) ; `voteId`: `string`  }
+Ƭ **VoteStepValue**: \{ `electionId`: `string` ; `key`: [`GET_ELECTION`](enums/VoteSteps.md#get_election)  } \| \{ `key`: [`GET_PROOF`](enums/VoteSteps.md#get_proof)  } \| \{ `key`: [`GET_SIGNATURE`](enums/VoteSteps.md#get_signature) ; `signature`: `string`  } \| \{ `key`: [`CALC_ZK_PROOF`](enums/VoteSteps.md#calc_zk_proof)  } \| \{ `key`: [`GENERATE_TX`](enums/VoteSteps.md#generate_tx)  } \| \{ `key`: [`SIGN_TX`](enums/VoteSteps.md#sign_tx)  } \| \{ `key`: [`DONE`](enums/VoteSteps#done) ; `voteId`: `string`  }
 
 #### Defined in
 
-[services/vote.ts:28](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/vote.ts#L28)
+[services/vote.ts:28](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/vote.ts#L28)
 
 ___
 
 ### VoteSubmit
 
-Ƭ **VoteSubmit**: [`IVoteSubmitResponse`](interfaces/IVoteSubmitResponse.md)
+Ƭ **VoteSubmit**: [`IVoteSubmitResponse`](interfaces/IVoteSubmitResponse)
 
 #### Defined in
 
-[services/vote.ts:16](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/vote.ts#L16)
+[services/vote.ts:16](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/vote.ts#L16)
 
 ___
 
 ### VotesLeftCountOptions
 
-Ƭ **VotesLeftCountOptions**: `Partial`\<[`WalletOption`](modules.md#walletoption) & [`ElectionIdOption`](modules.md#electionidoption) & [`VoteIdOption`](modules.md#voteidoption)\>
+Ƭ **VotesLeftCountOptions**: `Partial`\<[`WalletOption`](modules.md#walletoption) & [`ElectionIdOption`](modules.md#electionidoption) & [`VoteIdOption`](modules#voteidoption)\>
 
 #### Defined in
 
-[types/client/account.ts:11](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/client/account.ts#L11)
+[types/client/account.ts:11](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/client/account.ts#L11)
 
 ___
 
@@ -866,7 +866,7 @@ ___
 
 #### Defined in
 
-[types/client/account.ts:4](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/client/account.ts#L4)
+[types/client/account.ts:4](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/client/account.ts#L4)
 
 ___
 
@@ -888,27 +888,27 @@ ___
 
 #### Defined in
 
-[services/anonymous.ts:23](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/services/anonymous.ts#L23)
+[services/anonymous.ts:23](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/anonymous.ts#L23)
 
 ## Variables
 
 ### AccountMetadataTemplate
 
-• `Const` **AccountMetadataTemplate**: [`AccountMetadata`](interfaces/AccountMetadata.md)
+• `Const` **AccountMetadataTemplate**: [`AccountMetadata`](interfaces/AccountMetadata)
 
 #### Defined in
 
-[types/metadata/account.ts:67](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/metadata/account.ts#L67)
+[types/metadata/account.ts:67](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/metadata/account.ts#L67)
 
 ___
 
 ### ElectionMetadataTemplate
 
-• `Const` **ElectionMetadataTemplate**: [`ElectionMetadata`](interfaces/ElectionMetadata.md)
+• `Const` **ElectionMetadataTemplate**: [`ElectionMetadata`](interfaces/ElectionMetadata)
 
 #### Defined in
 
-[types/metadata/election.ts:140](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/metadata/election.ts#L140)
+[types/metadata/election.ts:140](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/metadata/election.ts#L140)
 
 ## Functions
 
@@ -932,13 +932,13 @@ have hex prefix and are lowercase.
 
 #### Defined in
 
-[util/common.ts:36](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/util/common.ts#L36)
+[util/common.ts:36](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/util/common.ts#L36)
 
 ___
 
 ### checkValidAccountMetadata
 
-▸ **checkValidAccountMetadata**(`accountMetadata`): [`AccountMetadata`](interfaces/AccountMetadata.md)
+▸ **checkValidAccountMetadata**(`accountMetadata`): [`AccountMetadata`](interfaces/AccountMetadata)
 
 Asserts that the given metadata is valid.
 Throws an exception if it is not.
@@ -947,21 +947,21 @@ Throws an exception if it is not.
 
 | Name | Type |
 | :------ | :------ |
-| `accountMetadata` | [`AccountMetadata`](interfaces/AccountMetadata.md) |
+| `accountMetadata` | [`AccountMetadata`](interfaces/AccountMetadata) |
 
 #### Returns
 
-[`AccountMetadata`](interfaces/AccountMetadata.md)
+[`AccountMetadata`](interfaces/AccountMetadata)
 
 #### Defined in
 
-[types/metadata/account.ts:8](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/metadata/account.ts#L8)
+[types/metadata/account.ts:8](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/metadata/account.ts#L8)
 
 ___
 
 ### checkValidElectionMetadata
 
-▸ **checkValidElectionMetadata**(`electionMetadata`): [`ElectionMetadata`](interfaces/ElectionMetadata.md)
+▸ **checkValidElectionMetadata**(`electionMetadata`): [`ElectionMetadata`](interfaces/ElectionMetadata)
 
 Asserts that the given metadata is valid.
 Throws an exception if it is not.
@@ -970,15 +970,15 @@ Throws an exception if it is not.
 
 | Name | Type |
 | :------ | :------ |
-| `electionMetadata` | [`ElectionMetadata`](interfaces/ElectionMetadata.md) |
+| `electionMetadata` | [`ElectionMetadata`](interfaces/ElectionMetadata) |
 
 #### Returns
 
-[`ElectionMetadata`](interfaces/ElectionMetadata.md)
+[`ElectionMetadata`](interfaces/ElectionMetadata)
 
 #### Defined in
 
-[types/metadata/election.ts:8](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/types/metadata/election.ts#L8)
+[types/metadata/election.ts:8](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/metadata/election.ts#L8)
 
 ___
 
@@ -998,7 +998,7 @@ ___
 
 #### Defined in
 
-[util/common.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/util/common.ts#L6)
+[util/common.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/util/common.ts#L6)
 
 ___
 
@@ -1024,7 +1024,7 @@ Return the object data
 
 #### Defined in
 
-[util/common.ts:61](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/util/common.ts#L61)
+[util/common.ts:61](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/util/common.ts#L61)
 
 ___
 
@@ -1044,7 +1044,7 @@ ___
 
 #### Defined in
 
-[util/common.ts:12](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/util/common.ts#L12)
+[util/common.ts:12](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/util/common.ts#L12)
 
 ___
 
@@ -1069,7 +1069,7 @@ The formatted string
 
 #### Defined in
 
-[util/common.ts:49](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/util/common.ts#L49)
+[util/common.ts:49](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/util/common.ts#L49)
 
 ___
 
@@ -1089,7 +1089,7 @@ ___
 
 #### Defined in
 
-[util/common.ts:16](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/util/common.ts#L16)
+[util/common.ts:16](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/util/common.ts#L16)
 
 ___
 
@@ -1105,7 +1105,7 @@ Generates a random seed and returns a 32 byte keccak256 hash of it (starting wit
 
 #### Defined in
 
-[util/common.ts:23](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/util/common.ts#L23)
+[util/common.ts:23](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/util/common.ts#L23)
 
 ___
 
@@ -1125,4 +1125,4 @@ ___
 
 #### Defined in
 
-[util/common.ts:8](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/util/common.ts#L8)
+[util/common.ts:8](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/util/common.ts#L8)

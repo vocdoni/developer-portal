@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules.md) / ICensus3CensusListResponse
+[@vocdoni/sdk](/sdk) / [Exports](../modules) / ICensus3CensusListResponse
 
 # Interface: ICensus3CensusListResponse
 
@@ -6,16 +6,16 @@
 
 ### Properties
 
-- [censuses](ICensus3CensusListResponse.md#censuses)
+- [censuses](ICensus3CensusListResponse#censuses)
 
 ## Properties
 
 ### censuses
 
-• **censuses**: [`ICensus3CensusResponse`](ICensus3CensusResponse.md)[]
+• **censuses**: [`ICensus3CensusResponse`](ICensus3CensusResponse)[]
 
 The list of the strategies identifiers
 
 #### Defined in
 
-[api/census3/census.ts:15](https://github.com/vocdoni/vocdoni-sdk/blob/2c8c18a/src/api/census3/census.ts#L15)
+[api/census3/census.ts:15](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/census3/census.ts#L15)
