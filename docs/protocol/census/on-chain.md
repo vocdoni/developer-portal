@@ -6,7 +6,7 @@ The second case, referred to as an on-chain census, enables the weighted set of 
 
 
 :::tip census3
-This page describes how the token-based census works at a low-level. In order to facilitate the usage of token-based censuses, we provide the [Census3](on-chain/census3) service. The Census3 Service is an API service which provides an easy way to create censuses for elections with holders of a single token or a combination of them. This is a wrapper of the on-chain census design and enables integrators to use on-chain censuses without manually registering tokens or generating storage proofs.
+This page describes how the token-based census works at a low-level. In order to facilitate the usage of token-based censuses, we provide the [Census3](/sdk/integration-details/census-types/on-chain) service. The Census3 Service is an API service which provides an easy way to create censuses for elections with holders of a single token or a combination of them. This is a wrapper of the on-chain census design and enables integrators to use on-chain censuses without manually registering tokens or generating storage proofs.
 :::
 
 ### ERC-20 Token Storage Proofs

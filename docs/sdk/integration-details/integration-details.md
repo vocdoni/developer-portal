@@ -13,7 +13,7 @@ There are many ways to define a census of voters using the Vocdoni SDK. Each cen
 
 ## Anonymous Voting
 
-Anonymous voting is available in some form with all three census types, with the strongest anonymity being anonymous off-chain Merkle tree elections. Minor modifications are usually necessary to convert censuses to being fully anonymous. See the [integration details](integration-details/census-types) for each census type to see how to enable anonymity.
+Anonymous voting is available in some form with all three census types, with the strongest anonymity being anonymous off-chain Merkle tree elections. Minor modifications are usually necessary to convert censuses to being fully anonymous. Read the section on [census types](integration-details/census-types) to see how to enable anonymity.
 
 
 ## Election Types

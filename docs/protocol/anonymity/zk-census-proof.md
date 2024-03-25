@@ -109,7 +109,7 @@ Vochain->>Vochain: 13. verify zkSNARK proof, accept the vote
     - Where each leaf contains the hash of each user's `secretKey` (*zkCensusKey*)
     - MerkleTree type: circom compatible
         - Hash function: [Poseidon](https://github.com/iden3/go-iden3-crypto/blob/master/poseidon/poseidon.go)
-        - Tree [Go impl](https://github.com/vocdoni/vocdoni-node/blob/master/censustree/arbotree/wrapper.go)
+        - Tree [Go impl](https://github.com/vocdoni/vocdoni-node/blob/main/censustree/censustree.go)
 6. *[V]* StartBlock is reached, **process starts**
 7. *[V]* Last merkle tree root becomes **censusRoot**
 8. *[V+U]* **Get MerkleProof**

@@ -31,6 +31,6 @@ Metamask is used to sign the transactions that create elections and cast votes. 
 [api]: /vocdoni-api/vocdoni-api
 [sdk]: /sdk
 [ui-components]: /ui-components
-[tutorial]: /sdk/01-tutorial
+[tutorial]: /sdk/tutorial
 [sdk-demo]: https://vocdoni.github.io/vocdoni-sdk/
 [metamask]: https://metamask.io/download/

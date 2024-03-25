@@ -60,3 +60,21 @@ const voteId = await client.submitVote(vote);
 Credential Service Provider elections provide strong anonymity by the use of [Blind Signatures][blind-signatures]. This is a slight modification on the standard CSP Census design, in which users are able to send a "blinded" version of their vote to the CSP after getting verified. The CSP signs this blinded package, and the user is then able cast their vote signed by the CSP without their identity being traced to that vote by anybody, including the CSP.
 
 [Ask us][contact] if you would like to try setting up at CSP that can compute blind signatures. 
+
+[blockchain]: /protocol#11-the-blockchain
+[contact]: https://chat.vocdoni.io
+[createAccount]: /sdk/reference/classes/VocdoniSDKClient#createaccount
+[fetchAccountInfo]: /sdk/reference/classes/VocdoniSDKClient#fetchaccount
+[collectFaucetTokens]: /sdk/reference/classes/VocdoniSDKClient#collectfaucettokens
+[estimateElectionCost]: /sdk/reference/classes/VocdoniSDKClient#estimateelectioncost
+[calculateElectionCost]: /sdk/reference/classes/VocdoniSDKClient#calculateelectioncost
+[zk-census-proof]: /protocol/anonymity/zk-census-proof
+[chat]: https://chat.vocdoni.io
+[blind-signatures]: /protocol/Census/off-chain-csp#blind-signatures
+[ballot-protocol]: /protocol/ballot-protocol
+[voting-types]: /sdk/integration-details/voting-types
+[election-states]: /protocol#election-lifecycle-states
+[generate-random-wallet]: /sdk/reference/classes/VocdoniSDKClient#generaterandomwallet
+[generate-wallet-data]: /sdk/reference/classes/VocdoniSDKClient#generatewalletfromdata
+[maxCensusSize]: /sdk/reference/interfaces/IElectionParameters#maxcensussize
+[zk-census-proof]: /protocol/anonymity/zk-census-proof

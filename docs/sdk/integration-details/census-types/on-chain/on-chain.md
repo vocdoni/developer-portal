@@ -19,7 +19,7 @@ This census type is supported by our [Census3](https://github.com/vocdoni/census
 
 ## Tutorial
 
-The on-chain census requires some extra setup, as censuses depend on indexing token balances from a public blockchain. Luckily the SDK provides a client to the Census3 service which keeps track of token balances and translates blockchain data to a straightforward census of voters. This tutorial explains how to set up your environment and use the [VocdoniCensus3Client](/sdk/reference/classes/vocdonisdkclient).
+The on-chain census requires some extra setup, as censuses depend on indexing token balances from a public blockchain. Luckily the SDK provides a client to the Census3 service which keeps track of token balances and translates blockchain data to a straightforward census of voters. This tutorial explains how to set up your environment and use the [VocdoniCensus3Client](/sdk/reference/classes/vocdonicensus3client).
 
 ### Setup
 The first consideration when setting up an on-chain census is which token you will use to validate voters. This section will explain how to create a token for testing and register that token to the census3 service.
@@ -110,8 +110,11 @@ const census = await census3Client.createTokenCensus(myToken.address, myToken.ch
 #### Complex Census
 It is possible to create a census with more complex inclusion criteria, such as holders of two different tokens. In order to do this, each token must individually be supported by the census3 service. 
 The first step is to create a 'strategy' with `census3Client.createStrategy`. This strategy ID is then passed to `census3Client.createCensus` to generate the census itself.
+`createStrategy` takes a `predicate` string which defines the logical operations representing inclusion criteria for the census strategy.
 
-`createStrategy` takes a `predicate` string which defines the logical operations representing inclusion criteria for the census strategy. This page will be updated soon with a guide for creating a predicate string for this use case.
+For a detailed guide on creating complex on-chain censuses, check out [Complex Census](on-chain/complex-census)
+
+
 
 ### Election & Voting
 Once a census has been created, the entire process is identical to the off-chain tree census process.
