@@ -14,10 +14,11 @@ While all of the above token types are supported, the recommended use-case for a
 :::
 
 
-This census type is supported by our [Census3](https://github.com/vocdoni/census3) service which serves as a bridge between Ethereum and clients, collecting token-holder data and generating census trees. 
-
+This census type is supported by our [Census3](https://github.com/vocdoni/census3) service which serves as a bridge between Ethereum and clients, collecting token-holder data and generating census trees.
 
 ## Tutorial
+
+You can check out a full working example of this tutorial [here](https://github.com/vocdoni/vocdoni-sdk/tree/examples/token-based/examples/token-based)
 
 The on-chain census requires some extra setup, as censuses depend on indexing token balances from a public blockchain. Luckily the SDK provides a client to the Census3 service which keeps track of token balances and translates blockchain data to a straightforward census of voters. This tutorial explains how to set up your environment and use the [VocdoniCensus3Client](/sdk/reference/classes/vocdonicensus3client).
 

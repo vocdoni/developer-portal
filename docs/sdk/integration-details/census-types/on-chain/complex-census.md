@@ -149,7 +149,19 @@ const strategyID = await census3Client.createStrategy('voc_test_strategy', 'VOC3
 This API call, if successful, returns the ID of the newly-created strategy. You can also use `getStrategies()` again to make sure the strategy is supported. This ID is needed to create the census based off of the strategy:
 
 ~~~ts
-const census = await census3Client.createCensus(strategyID);
+const censusInfo = await census3Client.createCensus(strategyID);
+~~~
+
+This returns a set of information about the census but cannot be used to directly create an election. To do this, just manually create a `PublishedCensus`.
+
+~~~ts
+const census = new PublishedCensus(
+  censusInfo.merkleRoot,
+  censusInfo.uri,
+  censusInfo.anonymous ? CensusType.ANONYMOUS : CensusType.WEIGHTED,
+  censusInfo.size,
+  BigInt(censusInfo.weight)
+);
 ~~~
 
 This census can be used to create an election just like any other. In this case, the census would represent all token-holders of the `VOC3TEST` and `VOC3TEST3` tokens, all with a weight of 1. 

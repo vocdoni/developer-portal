@@ -87,8 +87,8 @@ p {
   margin-bottom: 25px;
 }
 
-ul, ol{
-  list-style-position: inside;
+ul, ol {
+  list-style-position: outside;
 }
 
 ul {
@@ -97,7 +97,7 @@ ul {
 ol {
   list-style-type: decimal;
 }
-ul ul,
+/* ul ul,
 ol ul {
   list-style-type: circle;
   list-style-position: inside;
@@ -106,7 +106,7 @@ ol ol,
 ul ol {
   list-style-type: lower-latin;
   list-style-position: inside;
-}
+} */
 
 li {
   padding-left: 10px;
