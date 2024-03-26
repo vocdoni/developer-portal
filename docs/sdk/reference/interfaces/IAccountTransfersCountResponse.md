@@ -18,4 +18,4 @@ Number of account's transfers
 
 #### Defined in
 
-[api/account.ts:95](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/account.ts#L95)
+[api/account.ts:95](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/api/account.ts#L95)

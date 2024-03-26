@@ -53,7 +53,7 @@ Constructs a csp vote
 
 #### Defined in
 
-[types/vote/csp.ts:15](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/vote/csp.ts#L15)
+[types/vote/csp.ts:15](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/types/vote/csp.ts#L15)
 
 ## Properties
 
@@ -63,7 +63,7 @@ Constructs a csp vote
 
 #### Defined in
 
-[types/vote/csp.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/vote/csp.ts#L6)
+[types/vote/csp.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/types/vote/csp.ts#L6)
 
 ___
 
@@ -73,7 +73,7 @@ ___
 
 #### Defined in
 
-[types/vote/csp.ts:5](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/vote/csp.ts#L5)
+[types/vote/csp.ts:5](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/types/vote/csp.ts#L5)
 
 ## Accessors
 
@@ -87,7 +87,7 @@ ___
 
 #### Defined in
 
-[types/vote/csp.ts:29](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/vote/csp.ts#L29)
+[types/vote/csp.ts:29](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/types/vote/csp.ts#L29)
 
 • `set` **proof_type**(`value`): `void`
 
@@ -103,7 +103,7 @@ ___
 
 #### Defined in
 
-[types/vote/csp.ts:33](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/vote/csp.ts#L33)
+[types/vote/csp.ts:33](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/types/vote/csp.ts#L33)
 
 ___
 
@@ -117,7 +117,7 @@ ___
 
 #### Defined in
 
-[types/vote/csp.ts:21](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/vote/csp.ts#L21)
+[types/vote/csp.ts:21](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/types/vote/csp.ts#L21)
 
 • `set` **signature**(`value`): `void`
 
@@ -133,7 +133,7 @@ ___
 
 #### Defined in
 
-[types/vote/csp.ts:25](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/vote/csp.ts#L25)
+[types/vote/csp.ts:25](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/types/vote/csp.ts#L25)
 
 ___
 
@@ -151,7 +151,7 @@ Vote.votes
 
 #### Defined in
 
-[types/vote/vote.ts:16](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/vote/vote.ts#L16)
+[types/vote/vote.ts:16](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/types/vote/vote.ts#L16)
 
 • `set` **votes**(`value`): `void`
 
@@ -171,4 +171,4 @@ Vote.votes
 
 #### Defined in
 
-[types/vote/vote.ts:20](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/vote/vote.ts#L20)
+[types/vote/vote.ts:20](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/types/vote/vote.ts#L20)

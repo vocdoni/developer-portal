@@ -56,7 +56,7 @@ Used to add the SDK version to the election metadata
 
 #### Defined in
 
-[types/election/election.ts:155](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/election/election.ts#L155)
+[types/election/election.ts:155](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/types/election/election.ts#L155)
 
 ___
 
@@ -70,7 +70,7 @@ ___
 
 #### Defined in
 
-[types/election/election.ts:129](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/election/election.ts#L129)
+[types/election/election.ts:129](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/types/election/election.ts#L129)
 
 ___
 
@@ -80,7 +80,7 @@ ___
 
 #### Defined in
 
-[types/election/published.ts:35](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/election/published.ts#L35)
+[types/election/published.ts:35](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/types/election/published.ts#L35)
 
 ___
 
@@ -90,7 +90,7 @@ ___
 
 #### Defined in
 
-[types/election/published.ts:36](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/election/published.ts#L36)
+[types/election/published.ts:36](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/types/election/published.ts#L36)
 
 ___
 
@@ -106,7 +106,7 @@ Election description
 
 #### Defined in
 
-[types/election/election.ts:114](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/election/election.ts#L114)
+[types/election/election.ts:114](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/types/election/election.ts#L114)
 
 ___
 
@@ -120,7 +120,7 @@ ___
 
 #### Defined in
 
-[types/election/election.ts:131](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/election/election.ts#L131)
+[types/election/election.ts:131](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/types/election/election.ts#L131)
 
 ___
 
@@ -134,7 +134,7 @@ ___
 
 #### Defined in
 
-[types/election/election.ts:128](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/election/election.ts#L128)
+[types/election/election.ts:128](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/types/election/election.ts#L128)
 
 ___
 
@@ -144,7 +144,7 @@ ___
 
 #### Defined in
 
-[types/election/published.ts:31](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/election/published.ts#L31)
+[types/election/published.ts:31](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/types/election/published.ts#L31)
 
 ___
 
@@ -154,7 +154,7 @@ ___
 
 #### Defined in
 
-[types/election/published.ts:34](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/election/published.ts#L34)
+[types/election/published.ts:34](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/types/election/published.ts#L34)
 
 ___
 
@@ -170,7 +170,7 @@ Election header image url.
 
 #### Defined in
 
-[types/election/election.ts:118](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/election/election.ts#L118)
+[types/election/election.ts:118](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/types/election/election.ts#L118)
 
 ___
 
@@ -180,7 +180,7 @@ ___
 
 #### Defined in
 
-[types/election/published.ts:27](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/election/published.ts#L27)
+[types/election/published.ts:27](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/types/election/published.ts#L27)
 
 ___
 
@@ -190,7 +190,7 @@ ___
 
 #### Defined in
 
-[types/election/published.ts:33](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/election/published.ts#L33)
+[types/election/published.ts:33](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/types/election/published.ts#L33)
 
 ___
 
@@ -214,7 +214,7 @@ size` error.
 
 #### Defined in
 
-[types/election/election.ts:145](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/election/election.ts#L145)
+[types/election/election.ts:145](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/types/election/election.ts#L145)
 
 ___
 
@@ -230,7 +230,7 @@ Metadata (anything added by the election creator)
 
 #### Defined in
 
-[types/election/election.ts:126](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/election/election.ts#L126)
+[types/election/election.ts:126](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/types/election/election.ts#L126)
 
 ___
 
@@ -240,7 +240,7 @@ ___
 
 #### Defined in
 
-[types/election/published.ts:37](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/election/published.ts#L37)
+[types/election/published.ts:37](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/types/election/published.ts#L37)
 
 ___
 
@@ -250,7 +250,7 @@ ___
 
 #### Defined in
 
-[types/election/published.ts:28](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/election/published.ts#L28)
+[types/election/published.ts:28](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/types/election/published.ts#L28)
 
 ___
 
@@ -264,7 +264,7 @@ ___
 
 #### Defined in
 
-[types/election/election.ts:132](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/election/election.ts#L132)
+[types/election/election.ts:132](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/types/election/election.ts#L132)
 
 ___
 
@@ -274,7 +274,7 @@ ___
 
 #### Defined in
 
-[types/election/published.ts:39](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/election/published.ts#L39)
+[types/election/published.ts:39](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/types/election/published.ts#L39)
 
 ___
 
@@ -284,7 +284,7 @@ ___
 
 #### Defined in
 
-[types/election/published.ts:32](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/election/published.ts#L32)
+[types/election/published.ts:32](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/types/election/published.ts#L32)
 
 ___
 
@@ -294,7 +294,7 @@ ___
 
 #### Defined in
 
-[types/election/published.ts:38](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/election/published.ts#L38)
+[types/election/published.ts:38](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/types/election/published.ts#L38)
 
 ___
 
@@ -308,7 +308,7 @@ ___
 
 #### Defined in
 
-[types/election/election.ts:127](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/election/election.ts#L127)
+[types/election/election.ts:127](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/types/election/election.ts#L127)
 
 ___
 
@@ -318,7 +318,7 @@ ___
 
 #### Defined in
 
-[types/election/published.ts:29](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/election/published.ts#L29)
+[types/election/published.ts:29](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/types/election/published.ts#L29)
 
 ___
 
@@ -334,7 +334,7 @@ Election stream Uri (ex: a video url)
 
 #### Defined in
 
-[types/election/election.ts:122](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/election/election.ts#L122)
+[types/election/election.ts:122](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/types/election/election.ts#L122)
 
 ___
 
@@ -350,7 +350,7 @@ Is used to remove the secret identities of the voters once the process is done.
 
 #### Defined in
 
-[types/election/election.ts:150](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/election/election.ts#L150)
+[types/election/election.ts:150](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/types/election/election.ts#L150)
 
 ___
 
@@ -366,7 +366,7 @@ Election title
 
 #### Defined in
 
-[types/election/election.ts:110](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/election/election.ts#L110)
+[types/election/election.ts:110](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/types/election/election.ts#L110)
 
 ___
 
@@ -376,7 +376,7 @@ ___
 
 #### Defined in
 
-[types/election/published.ts:30](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/election/published.ts#L30)
+[types/election/published.ts:30](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/types/election/published.ts#L30)
 
 ___
 
@@ -390,4 +390,4 @@ ___
 
 #### Defined in
 
-[types/election/election.ts:130](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/election/election.ts#L130)
+[types/election/election.ts:130](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/types/election/election.ts#L130)

@@ -19,7 +19,7 @@ The number of elections
 
 #### Defined in
 
-[api/chain.ts:253](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L253)
+[api/chain.ts:253](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/api/chain.ts#L253)
 
 ___
 
@@ -31,4 +31,4 @@ The identifier of the organization
 
 #### Defined in
 
-[api/chain.ts:248](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L248)
+[api/chain.ts:248](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/api/chain.ts#L248)

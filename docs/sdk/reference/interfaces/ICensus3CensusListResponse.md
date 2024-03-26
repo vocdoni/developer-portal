@@ -18,4 +18,4 @@ The list of the strategies identifiers
 
 #### Defined in
 
-[api/census3/census.ts:15](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/census3/census.ts#L15)
+[api/census3/census.ts:15](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/api/census3/census.ts#L15)

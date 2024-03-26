@@ -38,7 +38,7 @@ API.constructor
 
 #### Defined in
 
-[api/faucet.ts:24](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/faucet.ts#L24)
+[api/faucet.ts:24](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/api/faucet.ts#L24)
 
 ## Methods
 
@@ -61,7 +61,7 @@ Calls the collect tokens method.
 
 #### Defined in
 
-[api/faucet.ts:35](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/faucet.ts#L35)
+[api/faucet.ts:35](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/api/faucet.ts#L35)
 
 ___
 
@@ -85,7 +85,7 @@ API.isApiError
 
 #### Defined in
 
-[api/api.ts:21](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/api.ts#L21)
+[api/api.ts:21](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/api/api.ts#L21)
 
 ___
 
@@ -110,4 +110,4 @@ API.isUndefinedError
 
 #### Defined in
 
-[api/api.ts:64](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/api.ts#L64)
+[api/api.ts:64](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/api/api.ts#L64)

@@ -18,4 +18,4 @@ The next election identifier
 
 #### Defined in
 
-[api/election.ts:146](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/election.ts#L146)
+[api/election.ts:146](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/api/election.ts#L146)

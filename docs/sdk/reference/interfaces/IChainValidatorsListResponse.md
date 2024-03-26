@@ -18,4 +18,4 @@ The list of validators
 
 #### Defined in
 
-[api/chain.ts:351](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L351)
+[api/chain.ts:351](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/api/chain.ts#L351)

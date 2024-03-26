@@ -19,7 +19,7 @@
 
 #### Defined in
 
-[types/metadata/election.ts:34](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/metadata/election.ts#L34)
+[types/metadata/election.ts:34](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/types/metadata/election.ts#L34)
 
 ___
 
@@ -29,7 +29,7 @@ ___
 
 #### Defined in
 
-[types/metadata/election.ts:32](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/metadata/election.ts#L32)
+[types/metadata/election.ts:32](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/types/metadata/election.ts#L32)
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 #### Defined in
 
-[types/metadata/election.ts:33](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/metadata/election.ts#L33)
+[types/metadata/election.ts:33](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/types/metadata/election.ts#L33)
 
 ___
 
@@ -49,4 +49,4 @@ ___
 
 #### Defined in
 
-[types/metadata/election.ts:31](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/metadata/election.ts#L31)
+[types/metadata/election.ts:31](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/types/metadata/election.ts#L31)

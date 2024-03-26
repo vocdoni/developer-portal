@@ -18,4 +18,4 @@ List of accounts
 
 #### Defined in
 
-[api/account.ts:88](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/account.ts#L88)
+[api/account.ts:88](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/api/account.ts#L88)

@@ -58,7 +58,7 @@ Instantiate the chain service.
 
 #### Defined in
 
-[services/chain.ts:47](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/chain.ts#L47)
+[services/chain.ts:47](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/services/chain.ts#L47)
 
 ## Properties
 
@@ -72,7 +72,7 @@ ChainServiceProperties.chainCosts
 
 #### Defined in
 
-[services/chain.ts:38](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/chain.ts#L38)
+[services/chain.ts:38](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/services/chain.ts#L38)
 
 ___
 
@@ -86,7 +86,7 @@ ChainServiceProperties.chainData
 
 #### Defined in
 
-[services/chain.ts:39](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/chain.ts#L39)
+[services/chain.ts:39](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/services/chain.ts#L39)
 
 ___
 
@@ -100,7 +100,7 @@ ChainServiceProperties.txWait
 
 #### Defined in
 
-[services/chain.ts:40](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/chain.ts#L40)
+[services/chain.ts:40](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/services/chain.ts#L40)
 
 ___
 
@@ -114,7 +114,7 @@ ___
 
 #### Defined in
 
-[services/service.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/service.ts#L6)
+[services/service.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/services/service.ts#L6)
 
 ## Methods
 
@@ -138,7 +138,7 @@ The block number
 
 #### Defined in
 
-[services/chain.ts:114](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/chain.ts#L114)
+[services/chain.ts:114](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/services/chain.ts#L114)
 
 ___
 
@@ -154,7 +154,7 @@ Fetches blockchain costs information if needed.
 
 #### Defined in
 
-[services/chain.ts:74](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/chain.ts#L74)
+[services/chain.ts:74](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/services/chain.ts#L74)
 
 ___
 
@@ -170,7 +170,7 @@ Fetches blockchain information if needed.
 
 #### Defined in
 
-[services/chain.ts:57](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/chain.ts#L57)
+[services/chain.ts:57](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/services/chain.ts#L57)
 
 ___
 
@@ -194,7 +194,7 @@ The transaction hash
 
 #### Defined in
 
-[services/chain.ts:92](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/chain.ts#L92)
+[services/chain.ts:92](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/services/chain.ts#L92)
 
 ___
 
@@ -218,7 +218,7 @@ The chain transaction
 
 #### Defined in
 
-[services/chain.ts:103](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/chain.ts#L103)
+[services/chain.ts:103](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/services/chain.ts#L103)
 
 ___
 
@@ -244,4 +244,4 @@ it fails.
 
 #### Defined in
 
-[services/chain.ts:129](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/chain.ts#L129)
+[services/chain.ts:129](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/services/chain.ts#L129)

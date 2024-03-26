@@ -45,7 +45,7 @@ API.constructor
 
 #### Defined in
 
-[api/election.ts:373](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/election.ts#L373)
+[api/election.ts:373](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/api/election.ts#L373)
 
 ## Methods
 
@@ -69,7 +69,7 @@ Creates a new election.
 
 #### Defined in
 
-[api/election.ts:413](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/election.ts#L413)
+[api/election.ts:413](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/api/election.ts#L413)
 
 ___
 
@@ -93,7 +93,7 @@ Return list of all elections in the chain
 
 #### Defined in
 
-[api/election.ts:487](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/election.ts#L487)
+[api/election.ts:487](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/api/election.ts#L487)
 
 ___
 
@@ -116,7 +116,7 @@ Fetches info about the specified process.
 
 #### Defined in
 
-[api/election.ts:384](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/election.ts#L384)
+[api/election.ts:384](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/api/election.ts#L384)
 
 ___
 
@@ -140,7 +140,7 @@ API.isApiError
 
 #### Defined in
 
-[api/api.ts:21](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/api.ts#L21)
+[api/api.ts:21](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/api/api.ts#L21)
 
 ___
 
@@ -165,7 +165,7 @@ API.isUndefinedError
 
 #### Defined in
 
-[api/api.ts:64](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/api.ts#L64)
+[api/api.ts:64](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/api/api.ts#L64)
 
 ___
 
@@ -188,7 +188,7 @@ Fetches the encryption keys from the specified process.
 
 #### Defined in
 
-[api/election.ts:398](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/election.ts#L398)
+[api/election.ts:398](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/api/election.ts#L398)
 
 ___
 
@@ -213,7 +213,7 @@ Returns the next election id.
 
 #### Defined in
 
-[api/election.ts:429](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/election.ts#L429)
+[api/election.ts:429](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/api/election.ts#L429)
 
 ___
 
@@ -240,7 +240,7 @@ Calculates the election price.
 
 #### Defined in
 
-[api/election.ts:520](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/election.ts#L520)
+[api/election.ts:520](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/api/election.ts#L520)
 
 ___
 
@@ -263,7 +263,7 @@ Returns the number of votes of a given election
 
 #### Defined in
 
-[api/election.ts:452](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/election.ts#L452)
+[api/election.ts:452](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/api/election.ts#L452)
 
 ___
 
@@ -287,4 +287,4 @@ Returns the list of votes for a given election
 
 #### Defined in
 
-[api/election.ts:467](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/election.ts#L467)
+[api/election.ts:467](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/api/election.ts#L467)

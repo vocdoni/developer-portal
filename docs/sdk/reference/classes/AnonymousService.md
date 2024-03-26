@@ -68,7 +68,7 @@ Instantiate the anonymous service.
 
 #### Defined in
 
-[services/anonymous.ts:71](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/anonymous.ts#L71)
+[services/anonymous.ts:71](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/services/anonymous.ts#L71)
 
 ## Properties
 
@@ -82,7 +82,7 @@ AnonymousServiceProperties.chainCircuits
 
 #### Defined in
 
-[services/anonymous.ts:64](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/anonymous.ts#L64)
+[services/anonymous.ts:64](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/services/anonymous.ts#L64)
 
 ___
 
@@ -96,7 +96,7 @@ ___
 
 #### Defined in
 
-[services/service.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/service.ts#L6)
+[services/service.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/services/service.ts#L6)
 
 ___
 
@@ -114,7 +114,7 @@ ___
 
 #### Defined in
 
-[services/anonymous.ts:277](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/anonymous.ts#L277)
+[services/anonymous.ts:277](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/services/anonymous.ts#L277)
 
 ___
 
@@ -132,7 +132,7 @@ ___
 
 #### Defined in
 
-[services/anonymous.ts:329](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/anonymous.ts#L329)
+[services/anonymous.ts:329](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/services/anonymous.ts#L329)
 
 ___
 
@@ -150,7 +150,7 @@ ___
 
 #### Defined in
 
-[services/anonymous.ts:304](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/anonymous.ts#L304)
+[services/anonymous.ts:304](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/services/anonymous.ts#L304)
 
 ## Methods
 
@@ -168,7 +168,7 @@ The checked circuit parameters
 
 #### Defined in
 
-[services/anonymous.ts:107](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/anonymous.ts#L107)
+[services/anonymous.ts:107](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/services/anonymous.ts#L107)
 
 ___
 
@@ -188,7 +188,7 @@ ___
 
 #### Defined in
 
-[services/anonymous.ts:82](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/anonymous.ts#L82)
+[services/anonymous.ts:82](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/services/anonymous.ts#L82)
 
 ___
 
@@ -210,7 +210,7 @@ Fetches circuits for anonymous voting
 
 #### Defined in
 
-[services/anonymous.ts:131](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/anonymous.ts#L131)
+[services/anonymous.ts:131](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/services/anonymous.ts#L131)
 
 ___
 
@@ -230,7 +230,7 @@ ___
 
 #### Defined in
 
-[services/anonymous.ts:93](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/anonymous.ts#L93)
+[services/anonymous.ts:93](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/services/anonymous.ts#L93)
 
 ___
 
@@ -250,7 +250,7 @@ ___
 
 #### Defined in
 
-[services/anonymous.ts:76](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/anonymous.ts#L76)
+[services/anonymous.ts:76](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/services/anonymous.ts#L76)
 
 ___
 
@@ -272,7 +272,7 @@ ___
 
 #### Defined in
 
-[services/anonymous.ts:87](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/anonymous.ts#L87)
+[services/anonymous.ts:87](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/services/anonymous.ts#L87)
 
 ___
 
@@ -294,7 +294,7 @@ Sets circuits for anonymous voting
 
 #### Defined in
 
-[services/anonymous.ts:187](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/anonymous.ts#L187)
+[services/anonymous.ts:187](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/services/anonymous.ts#L187)
 
 ___
 
@@ -314,7 +314,7 @@ ___
 
 #### Defined in
 
-[services/anonymous.ts:98](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/anonymous.ts#L98)
+[services/anonymous.ts:98](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/services/anonymous.ts#L98)
 
 ___
 
@@ -336,7 +336,7 @@ ___
 
 #### Defined in
 
-[services/anonymous.ts:234](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/anonymous.ts#L234)
+[services/anonymous.ts:234](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/services/anonymous.ts#L234)
 
 ___
 
@@ -358,7 +358,7 @@ ___
 
 #### Defined in
 
-[services/anonymous.ts:247](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/anonymous.ts#L247)
+[services/anonymous.ts:247](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/services/anonymous.ts#L247)
 
 ___
 
@@ -380,7 +380,7 @@ ___
 
 #### Defined in
 
-[services/anonymous.ts:257](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/anonymous.ts#L257)
+[services/anonymous.ts:257](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/services/anonymous.ts#L257)
 
 ___
 
@@ -402,7 +402,7 @@ ___
 
 #### Defined in
 
-[services/anonymous.ts:251](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/anonymous.ts#L251)
+[services/anonymous.ts:251](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/services/anonymous.ts#L251)
 
 ___
 
@@ -424,7 +424,7 @@ ___
 
 #### Defined in
 
-[services/anonymous.ts:192](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/anonymous.ts#L192)
+[services/anonymous.ts:192](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/services/anonymous.ts#L192)
 
 ___
 
@@ -454,7 +454,7 @@ ___
 
 #### Defined in
 
-[services/anonymous.ts:200](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/anonymous.ts#L200)
+[services/anonymous.ts:200](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/services/anonymous.ts#L200)
 
 ___
 
@@ -474,4 +474,4 @@ ___
 
 #### Defined in
 
-[services/anonymous.ts:270](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/anonymous.ts#L270)
+[services/anonymous.ts:270](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/services/anonymous.ts#L270)

@@ -18,4 +18,4 @@ The list of supported operators
 
 #### Defined in
 
-[api/census3/strategy.ts:235](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/census3/strategy.ts#L235)
+[api/census3/strategy.ts:245](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/api/census3/strategy.ts#L245)

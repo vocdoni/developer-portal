@@ -6,21 +6,22 @@
 
 ### Properties
 
-- [census](ICensus3CensusQueueResponse#census)
+- [data](ICensus3CensusQueueResponse#data)
 - [done](ICensus3CensusQueueResponse#done)
 - [error](ICensus3CensusQueueResponse#error)
+- [progress](ICensus3CensusQueueResponse#progress)
 
 ## Properties
 
-### census
+### data
 
-• **census**: [`ICensus3CensusResponse`](ICensus3CensusResponse)
+• **data**: [`ICensus3CensusResponse`](ICensus3CensusResponse)
 
-The census
+The census data
 
 #### Defined in
 
-[api/census3/census.ts:84](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/census3/census.ts#L84)
+[api/census3/census.ts:84](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/api/census3/census.ts#L84)
 
 ___
 
@@ -32,7 +33,7 @@ If the queue has been done
 
 #### Defined in
 
-[api/census3/census.ts:64](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/census3/census.ts#L64)
+[api/census3/census.ts:64](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/api/census3/census.ts#L64)
 
 ___
 
@@ -51,4 +52,16 @@ The error of the queue
 
 #### Defined in
 
-[api/census3/census.ts:69](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/census3/census.ts#L69)
+[api/census3/census.ts:69](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/api/census3/census.ts#L69)
+
+___
+
+### progress
+
+• **progress**: `number`
+
+The creation progress
+
+#### Defined in
+
+[api/census3/census.ts:89](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/api/census3/census.ts#L89)

@@ -53,7 +53,7 @@ API.constructor
 
 #### Defined in
 
-[api/chain.ts:358](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L358)
+[api/chain.ts:358](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/api/chain.ts#L358)
 
 ## Methods
 
@@ -76,7 +76,7 @@ Get block information by hash
 
 #### Defined in
 
-[api/chain.ts:556](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L556)
+[api/chain.ts:556](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/api/chain.ts#L556)
 
 ___
 
@@ -99,7 +99,7 @@ Get block information by height
 
 #### Defined in
 
-[api/chain.ts:529](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L529)
+[api/chain.ts:529](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/api/chain.ts#L529)
 
 ___
 
@@ -122,7 +122,7 @@ Return approximate date by a given block height.
 
 #### Defined in
 
-[api/chain.ts:600](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L600)
+[api/chain.ts:600](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/api/chain.ts#L600)
 
 ___
 
@@ -146,7 +146,7 @@ Get paginated list of transactions registered on specific block
 
 #### Defined in
 
-[api/chain.ts:571](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L571)
+[api/chain.ts:571](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/api/chain.ts#L571)
 
 ___
 
@@ -168,7 +168,7 @@ Fetches a circuit.
 
 #### Defined in
 
-[api/chain.ts:407](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L407)
+[api/chain.ts:407](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/api/chain.ts#L407)
 
 ___
 
@@ -190,7 +190,7 @@ Fetches info about the blockchain anonymous circuits.
 
 #### Defined in
 
-[api/chain.ts:394](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L394)
+[api/chain.ts:394](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/api/chain.ts#L394)
 
 ___
 
@@ -212,7 +212,7 @@ Fetches info about the blockchain costs.
 
 #### Defined in
 
-[api/chain.ts:381](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L381)
+[api/chain.ts:381](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/api/chain.ts#L381)
 
 ___
 
@@ -235,7 +235,7 @@ By a given date give the estimate block for the current Vochain.
 
 #### Defined in
 
-[api/chain.ts:586](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L586)
+[api/chain.ts:586](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/api/chain.ts#L586)
 
 ___
 
@@ -257,7 +257,7 @@ Fetches info about the blockchain status.
 
 #### Defined in
 
-[api/chain.ts:368](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L368)
+[api/chain.ts:368](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/api/chain.ts#L368)
 
 ___
 
@@ -281,7 +281,7 @@ API.isApiError
 
 #### Defined in
 
-[api/api.ts:21](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/api.ts#L21)
+[api/api.ts:21](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/api/api.ts#L21)
 
 ___
 
@@ -306,7 +306,7 @@ API.isUndefinedError
 
 #### Defined in
 
-[api/api.ts:64](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/api.ts#L64)
+[api/api.ts:64](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/api/api.ts#L64)
 
 ___
 
@@ -328,7 +328,7 @@ Returns the number of organizations
 
 #### Defined in
 
-[api/chain.ts:488](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L488)
+[api/chain.ts:488](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/api/chain.ts#L488)
 
 ___
 
@@ -352,7 +352,7 @@ Returns the list of organizations by page
 
 #### Defined in
 
-[api/chain.ts:503](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L503)
+[api/chain.ts:503](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/api/chain.ts#L503)
 
 ___
 
@@ -375,7 +375,7 @@ Submits a transaction to the blockchain
 
 #### Defined in
 
-[api/chain.ts:461](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L461)
+[api/chain.ts:461](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/api/chain.ts#L461)
 
 ___
 
@@ -398,7 +398,7 @@ Fetches information about a transaction from the blockchain.
 
 #### Defined in
 
-[api/chain.ts:421](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L421)
+[api/chain.ts:421](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/api/chain.ts#L421)
 
 ___
 
@@ -422,7 +422,7 @@ Fetches information about a transaction by its containing block an index on the 
 
 #### Defined in
 
-[api/chain.ts:441](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L441)
+[api/chain.ts:441](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/api/chain.ts#L441)
 
 ___
 
@@ -445,7 +445,7 @@ Returns the list of transactions by page
 
 #### Defined in
 
-[api/chain.ts:475](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L475)
+[api/chain.ts:475](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/api/chain.ts#L475)
 
 ___
 
@@ -467,4 +467,4 @@ Returns the list of validators
 
 #### Defined in
 
-[api/chain.ts:542](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L542)
+[api/chain.ts:542](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/api/chain.ts#L542)

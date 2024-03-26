@@ -39,7 +39,7 @@ Census3API.constructor
 
 #### Defined in
 
-[api/census3/service.ts:36](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/census3/service.ts#L36)
+[api/census3/service.ts:36](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/api/census3/service.ts#L36)
 
 ## Methods
 
@@ -61,7 +61,7 @@ Fetches supported chains from the service
 
 #### Defined in
 
-[api/census3/service.ts:46](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/census3/service.ts#L46)
+[api/census3/service.ts:46](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/api/census3/service.ts#L46)
 
 ___
 
@@ -85,7 +85,7 @@ Census3API.isApiError
 
 #### Defined in
 
-[api/census3/api.ts:101](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/census3/api.ts#L101)
+[api/census3/api.ts:101](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/api/census3/api.ts#L101)
 
 ___
 
@@ -110,7 +110,7 @@ Census3API.isUndefinedError
 
 #### Defined in
 
-[api/api.ts:64](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/api.ts#L64)
+[api/api.ts:64](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/api/api.ts#L64)
 
 ___
 
@@ -134,4 +134,4 @@ Census3API.serializePagination
 
 #### Defined in
 
-[api/census3/api.ts:92](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/census3/api.ts#L92)
+[api/census3/api.ts:92](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/api/census3/api.ts#L92)

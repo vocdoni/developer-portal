@@ -18,4 +18,4 @@ The literal of the predicate
 
 #### Defined in
 
-[api/census3/strategy.ts:204](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/census3/strategy.ts#L204)
+[api/census3/strategy.ts:214](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/api/census3/strategy.ts#L214)

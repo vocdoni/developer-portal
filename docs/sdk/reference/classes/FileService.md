@@ -50,7 +50,7 @@ Instantiate the election service.
 
 #### Defined in
 
-[services/file.ts:16](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/file.ts#L16)
+[services/file.ts:16](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/services/file.ts#L16)
 
 ## Properties
 
@@ -64,7 +64,7 @@ Instantiate the election service.
 
 #### Defined in
 
-[services/service.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/service.ts#L6)
+[services/service.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/services/service.ts#L6)
 
 ## Methods
 
@@ -88,4 +88,4 @@ Resulting CID
 
 #### Defined in
 
-[services/file.ts:27](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/services/file.ts#L27)
+[services/file.ts:27](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/services/file.ts#L27)

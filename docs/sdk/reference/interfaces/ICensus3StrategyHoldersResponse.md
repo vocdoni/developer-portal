@@ -28,4 +28,4 @@ The list of the strategy holders
 
 #### Defined in
 
-[api/census3/strategy.ts:36](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/census3/strategy.ts#L36)
+[api/census3/strategy.ts:36](https://github.com/vocdoni/vocdoni-sdk/blob/9e24a20/src/api/census3/strategy.ts#L36)
