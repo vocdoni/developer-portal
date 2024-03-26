@@ -55,7 +55,7 @@ Then you can return to the developer-documentation directory and run the yarn sc
 ~~~bash
 # Set the vocdoni sdk folder path
 export VOCDONI_SDK_PATH=......
-yarn fix-sdk-docs
+yarn copy-sdk-docs
 ~~~
 
 Note that the SDK docs are tracked by git, and you should not need to do this if you are not a repo maintainer.
