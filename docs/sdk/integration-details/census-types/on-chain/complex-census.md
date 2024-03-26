@@ -77,16 +77,7 @@ As you can see, there are two main differences between the simple and complex st
 
 Predicates are logical operators that define how strategies create a census. There are currently two logical operators (`AND` and `OR`), each with two additional 'powerups' (`sum` and `mul`).
 
-Each of the operators uses a different logical strategy for combining token holder balances to create a weighted census:
-
-| Operator | Powerup | Usage | Description |
-|:---|:---|:---|:---|
-| `AND` || `AND` | Holders of both tokens, with a fixed weight of 1. |
-| `OR` || `OR` | Holders of either or both tokens, with fixed weight of 1. |
-| `AND` | `sum` | `AND:sum` | Holders of both tokens, with a weight adding the token balances. |
-| `AND` | `mul` | `AND:mul` | Holders of both tokens, with a weight multiplying the token balances.  |
-| `OR` | `sum` | `OR:sum` | Holders of either or both tokens, with a weight adding the token balances.|
-| `OR` | `mul` | `OR:mul` |  Holders of either or both tokens, with a weight multiplying the token balances if both are non-zero, or equaling the balance that is non-zero.|
+The predicate syntax and available operators are documented in-depth at [Creating a Strategy](/protocol/census/on-chain/census3#creating-a-strategy).
 
 You can also query the census3 service for a list of available operators:
 

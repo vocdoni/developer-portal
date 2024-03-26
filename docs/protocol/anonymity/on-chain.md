@@ -1,8 +1,12 @@
 # On-Chain Census Anonymity
 
-On-chain cenuses derive their contents from a public set of holders of a given token (or set of tokens) on the Ethereum blockchain. This information is turned into a census by generating a Merkle Proof on that set of data. This Merkle Proof is similar to that used for a typical off-chain tree census, and the same sort of [ZK Census Proof](/protocol/anonymity/zk-census-proof) can be used to compute voter validation anonymously.
+On-chain cenuses created with the Census3 Service derive their contents from a public set of holders of a given token (or set of tokens) on the Ethereum blockchain. This information is turned into a census by generating a Merkle Proof on that set of data. This Merkle Proof is similar to that used for a typical off-chain tree census, and the same sort of [ZK Census Proof](/protocol/anonymity/zk-census-proof) can be used to compute voter validation anonymously.
 
 Unfortunately a zero-knowledge census itself is not enough to anonymize an on-chain election, because voters are weighted according to their unique token balances, making them easy to identify as the weight of a vote can be correlated with an address. We address this problem by rounding voter weights in order to hide unique token balances.
+
+:::warning ethereum storage proofs
+On-chain censuses created manually with [Ethereum Storage Proofs](/protocol/census/on-chain#erc-20-token-storage-proofs) cannot be anonymized
+:::
 
 ## Rounding Censuses
 To ensure that the balances of token-based censuses remain private, we must alter them in some way. However, any change must meet two requirements:
@@ -37,6 +41,6 @@ Evidently, accuracy cannot be maintained under all possible conditions. We've es
 
 ## Anonymity Level
 
-This scheme for token-based census anonymity is not as absolutely anonymous as a zk-merkle-proof. There are potential vulnerabilities to specific attacks. 
+This scheme for token-based census anonymity is not as absolutely anonymous as a zk-merkle-proof. The parameter settings are important- a `privacyThreshold` that is too small could result in a rounded group of voters who all vote for the same result, effectively de-anonymizing every member of the group. If this threshold is too high, however, accuracy is lost.
 
-For example, acquiring a certain amount of a token to manipulate the algorithm into grouping an address with others could theoretically expose that address. However, such strategies are impractical and unlikely to significantly impact election outcomes. This type of attack also requires an analysis of balance distributions, complicating its execution.
+There are also potential vulnerabilities to specific attacks. For example, acquiring a certain amount of a token to manipulate the algorithm into grouping an address with others could theoretically expose that address. However, such strategies are impractical and unlikely to significantly impact election outcomes. This type of attack also requires an analysis of balance distributions, complicating its execution.

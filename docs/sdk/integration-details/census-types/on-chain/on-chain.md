@@ -14,7 +14,7 @@ While all of the above token types are supported, the recommended use-case for a
 :::
 
 
-This census type is supported by our [Census3](https://github.com/vocdoni/census3) service which serves as a bridge between Ethereum and clients, collecting token-holder data and generating census trees.
+This census type is supported by our [Census3](/protocol/census/on-chain/census3) service which serves as a bridge between Ethereum and clients, collecting token-holder data and generating census trees.
 
 ## Tutorial
 

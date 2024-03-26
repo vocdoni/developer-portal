@@ -1,6 +1,6 @@
 # Census Types
 
-A census is a list of voters who are eligible to vote in a given election. There are multiple ways to define a census with Vocdoni, each with different privacy and verifiability considerations. The [census types][census] are defined at a protocol level and include [on-chain][on-chain], [off-chain Merkle tree][off-chain], and [off-chain Credential Service Provider][csp]. 
+A census is a list of voters who are eligible to vote in a given election. There are multiple ways to define a census with Vocdoni, each with different privacy and verifiability considerations. The census types are defined and [documented][census] at a protocol level and include [on-chain][on-chain], [off-chain Merkle tree][off-chain], and [off-chain Credential Service Provider][csp]. 
 
 The census type is selected from the SDK by using a [`census`][census-class] of that type when creating an election. The SDK [census types][census-class-hierarchy] correspond to the three protocol-level census types according to the following table:
 
