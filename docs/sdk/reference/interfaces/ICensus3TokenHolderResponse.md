@@ -18,4 +18,4 @@ The balance of the holder
 
 #### Defined in
 
-[api/census3/token.ts:117](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/census3/token.ts#L117)
+[api/census3/token.ts:117](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/census3/token.ts#L117)

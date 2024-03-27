@@ -40,7 +40,7 @@ API.constructor
 
 #### Defined in
 
-[api/vote.ts:78](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/vote.ts#L78)
+[api/vote.ts:78](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/vote.ts#L78)
 
 ## Methods
 
@@ -63,7 +63,7 @@ Vote info
 
 #### Defined in
 
-[api/vote.ts:105](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/vote.ts#L105)
+[api/vote.ts:105](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/vote.ts#L105)
 
 ___
 
@@ -87,7 +87,7 @@ API.isApiError
 
 #### Defined in
 
-[api/api.ts:21](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/api.ts#L21)
+[api/api.ts:21](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/api.ts#L21)
 
 ___
 
@@ -112,7 +112,7 @@ API.isUndefinedError
 
 #### Defined in
 
-[api/api.ts:64](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/api.ts#L64)
+[api/api.ts:64](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/api.ts#L64)
 
 ___
 
@@ -135,7 +135,7 @@ Voting
 
 #### Defined in
 
-[api/vote.ts:90](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/vote.ts#L90)
+[api/vote.ts:90](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/vote.ts#L90)
 
 ___
 
@@ -161,4 +161,4 @@ Return true if response has status 200
 
 #### Defined in
 
-[api/vote.ts:121](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/vote.ts#L121)
+[api/vote.ts:121](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/vote.ts#L121)

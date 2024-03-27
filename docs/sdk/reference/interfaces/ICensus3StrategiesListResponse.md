@@ -24,4 +24,4 @@ The list of the strategies identifiers
 
 #### Defined in
 
-[api/census3/strategy.ts:22](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/census3/strategy.ts#L22)
+[api/census3/strategy.ts:22](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/census3/strategy.ts#L22)
