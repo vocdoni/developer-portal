@@ -86,3 +86,11 @@ second index.
 
 The array `[ [ '4', '6' ] ]` encapsulates this result, which can be interpreted as "4 weighted votes for 'no' and 6 
 weighted votes for 'yes'".
+
+:::tip
+In a weighted election, the Vochain stores the envelope without calculating the weight of each voter. However, when 
+retrieving the results using the SDK, you will see the weights applied. The application of these weights is performed 
+by the vocdoni-node indexer, which calculates the weights for you.
+
+The weights of each vote are stored in the envelope, which is saved on the Vochain.
+:::

@@ -22,7 +22,7 @@ The protocol is composed by a set of numeric and boolean variables that restrict
 - `uint8 maxCount`
 Max number of fields per ballot. 1 <= maxCount <= 100.
 - `uint8 maxValue`
-Determines the acceptable maximum value for all fields.
+Determines the acceptable maximum value for all fields. If `maxValue` is set to `0`, the results are aggregated.
 - `uint8 minValue`
 Determines the acceptable minimum value for all fields.
 - `bool uniqueValues`
@@ -272,7 +272,7 @@ Candidate 5 has won the CEO position, whereas COO is tied between candidates 2, 
 
 ## Vocdoni results interpretation
 
-Results interpretation is not part of the ballot protocol, but it informs how the protocol should be understood and displayed. The Process Metadata has a couple of flags describing the expected interpretation.
+Results interpretation is not part of the ballot protocol, but it informs how the protocol should be understood and displayed by clients. The Process Metadata has a couple of flags that can be used to tell clients how to interpret a results matrix:
 
 ```json
     "results": {

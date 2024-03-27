@@ -22,6 +22,7 @@ This voting system supports **one** or **multiple questions**.
 
 See:
 
+- [Complete example](https://github.com/vocdoni/vocdoni-sdk/blob/main/examples/typescript/src/index.ts)
 - [Ballot protocol implementation][protocol-single-choice]
 
 ## Setting up the election
@@ -70,12 +71,6 @@ Take note that the question values  are **incremental** and the initial value **
 
 :::
 
-:::tip Multiple questions support
-
-This election type can accommodate multiple questions.
-
-:::
-
 :::caution Not all elections type supports multiple questions!
 
 This is the sole type of election that supports multiple questions. Other election types, such as `ranked`, `quadratic`,
@@ -120,7 +115,7 @@ For single question is same philosophy, you could configure the election as:
     maxValue: 3, // That accepts three choices
 // ...
 // And finally casting the vote
-client.submitVote(new Vote([0, 2])); // Voting the third option
+client.submitVote(new Vote([2])); // Voting the third option
 ```
 
 :::

@@ -1,14 +1,9 @@
 # Quadratic voting
 
 Quadratic voting is a voting mechanism that allows individuals to express their preferences on different issues with 
-more granularity and intensity. In quadratic voting, voters are allocated a fixed number of voting credits, and they can 
-distribute those credits across various options or issues in a quadratic manner. This means that voters can assign more 
-credits to options they care strongly about while still being able to express preferences on multiple issues.
+more granularity and intensity. In quadratic voting, voters are allocated a fixed number of voting credits, and they can distribute those credits across various options or issues. This means that voters can assign more credits to options they care strongly about while still being able to express preferences on multiple issues.
 
-The quadratic aspect of the system ensures that the cost of allocating additional credits increases quadratically, which 
-helps prevent a small number of voters from dominating the decision-making process. Quadratic voting aims to promote a 
-more accurate representation of individual preferences and allocate resources based on the collective intensity of 
-preferences rather than just a simple majority rule.
+The quadratic aspect of the system ensures that the cost of allocating additional credits increases quadratically, which helps prevent a small number of voters from dominating the decision-making process. Quadratic voting aims to promote a more accurate representation of individual preferences and allocate resources based on the collective intensity of preferences rather than just a simple majority rule.
 
 See:
 
