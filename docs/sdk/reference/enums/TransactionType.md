@@ -26,7 +26,7 @@
 
 #### Defined in
 
-[api/chain.ts:168](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L168)
+[api/chain.ts:168](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/chain.ts#L168)
 
 ___
 
@@ -36,7 +36,7 @@ ___
 
 #### Defined in
 
-[api/chain.ts:175](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L175)
+[api/chain.ts:175](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/chain.ts#L175)
 
 ___
 
@@ -46,7 +46,7 @@ ___
 
 #### Defined in
 
-[api/chain.ts:171](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L171)
+[api/chain.ts:171](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/chain.ts#L171)
 
 ___
 
@@ -56,7 +56,7 @@ ___
 
 #### Defined in
 
-[api/chain.ts:167](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L167)
+[api/chain.ts:167](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/chain.ts#L167)
 
 ___
 
@@ -66,7 +66,7 @@ ___
 
 #### Defined in
 
-[api/chain.ts:170](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L170)
+[api/chain.ts:170](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/chain.ts#L170)
 
 ___
 
@@ -76,7 +76,7 @@ ___
 
 #### Defined in
 
-[api/chain.ts:172](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L172)
+[api/chain.ts:172](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/chain.ts#L172)
 
 ___
 
@@ -86,7 +86,7 @@ ___
 
 #### Defined in
 
-[api/chain.ts:174](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L174)
+[api/chain.ts:174](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/chain.ts#L174)
 
 ___
 
@@ -96,7 +96,7 @@ ___
 
 #### Defined in
 
-[api/chain.ts:176](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L176)
+[api/chain.ts:176](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/chain.ts#L176)
 
 ___
 
@@ -106,7 +106,7 @@ ___
 
 #### Defined in
 
-[api/chain.ts:169](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L169)
+[api/chain.ts:169](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/chain.ts#L169)
 
 ___
 
@@ -116,7 +116,7 @@ ___
 
 #### Defined in
 
-[api/chain.ts:173](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L173)
+[api/chain.ts:173](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/chain.ts#L173)
 
 ___
 
@@ -126,4 +126,4 @@ ___
 
 #### Defined in
 
-[api/chain.ts:166](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/chain.ts#L166)
+[api/chain.ts:166](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/chain.ts#L166)

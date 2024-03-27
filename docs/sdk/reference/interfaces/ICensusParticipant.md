@@ -17,7 +17,7 @@
 
 #### Defined in
 
-[types/census/offchain.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/census/offchain.ts#L6)
+[types/census/offchain.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/census/offchain.ts#L6)
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 #### Defined in
 
-[types/census/offchain.ts:7](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/census/offchain.ts#L7)
+[types/census/offchain.ts:7](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/census/offchain.ts#L7)

@@ -18,4 +18,4 @@ The identifier of the created strategy
 
 #### Defined in
 
-[api/census3/strategy.ts:197](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/census3/strategy.ts#L197)
+[api/census3/strategy.ts:207](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/census3/strategy.ts#L207)

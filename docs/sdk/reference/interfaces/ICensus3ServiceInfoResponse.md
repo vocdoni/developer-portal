@@ -18,4 +18,4 @@ The list of supported chains
 
 #### Defined in
 
-[api/census3/service.ts:29](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/api/census3/service.ts#L29)
+[api/census3/service.ts:29](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/census3/service.ts#L29)

@@ -16,4 +16,4 @@
 
 #### Defined in
 
-[types/election/invalid.ts:2](https://github.com/vocdoni/vocdoni-sdk/blob/0a4464c/src/types/election/invalid.ts#L2)
+[types/election/invalid.ts:2](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/election/invalid.ts#L2)
