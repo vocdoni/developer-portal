@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules) / PublishedElection
+[@vocdoni/sdk](/sdk) / PublishedElection
 
 # Class: PublishedElection
 
@@ -13,40 +13,6 @@ Represents a published election
   ↳↳ [`ArchivedElection`](ArchivedElection)
 
 ## Table of contents
-
-### Constructors
-
-- [constructor](PublishedElection#constructor)
-
-### Properties
-
-- [\_addSDKVersion](PublishedElection.md#_addsdkversion)
-- [\_census](PublishedElection.md#_census)
-- [\_chainId](PublishedElection.md#_chainid)
-- [\_creationTime](PublishedElection.md#_creationtime)
-- [\_description](PublishedElection.md#_description)
-- [\_electionType](PublishedElection.md#_electiontype)
-- [\_endDate](PublishedElection.md#_enddate)
-- [\_finalResults](PublishedElection.md#_finalresults)
-- [\_fromArchive](PublishedElection.md#_fromarchive)
-- [\_header](PublishedElection.md#_header)
-- [\_id](PublishedElection.md#_id)
-- [\_manuallyEnded](PublishedElection.md#_manuallyended)
-- [\_maxCensusSize](PublishedElection.md#_maxcensussize)
-- [\_meta](PublishedElection.md#_meta)
-- [\_metadataURL](PublishedElection.md#_metadataurl)
-- [\_organizationId](PublishedElection.md#_organizationid)
-- [\_questions](PublishedElection.md#_questions)
-- [\_raw](PublishedElection.md#_raw)
-- [\_results](PublishedElection.md#_results)
-- [\_resultsType](PublishedElection.md#_resultstype)
-- [\_startDate](PublishedElection.md#_startdate)
-- [\_status](PublishedElection.md#_status)
-- [\_streamUri](PublishedElection.md#_streamuri)
-- [\_temporarySecretIdentity](PublishedElection.md#_temporarysecretidentity)
-- [\_title](PublishedElection.md#_title)
-- [\_voteCount](PublishedElection.md#_votecount)
-- [\_voteType](PublishedElection.md#_votetype)
 
 ### Accessors
 
@@ -79,6 +45,10 @@ Represents a published election
 - [voteCount](PublishedElection#votecount)
 - [voteType](PublishedElection#votetype)
 
+### Constructors
+
+- [constructor](PublishedElection#constructor)
+
 ### Methods
 
 - [checkVote](PublishedElection#checkvote)
@@ -87,6 +57,454 @@ Represents a published election
 - [checkVote](PublishedElection.md#checkvote-1)
 - [from](PublishedElection#from)
 - [getStatus](PublishedElection#getstatus)
+
+## Accessors
+
+### addSDKVersion
+
+• `get` **addSDKVersion**(): `boolean`
+
+#### Returns
+
+`boolean`
+
+#### Inherited from
+
+Election.addSDKVersion
+
+#### Defined in
+
+[types/election/election.ts:262](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/election/election.ts#L262)
+
+___
+
+### census
+
+• `get` **census**(): [`PublishedCensus`](PublishedCensus)
+
+#### Returns
+
+[`PublishedCensus`](PublishedCensus)
+
+#### Overrides
+
+Election.census
+
+#### Defined in
+
+[types/election/published.ts:179](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/election/published.ts#L179)
+
+___
+
+### chainId
+
+• `get` **chainId**(): `string`
+
+#### Returns
+
+`string`
+
+#### Defined in
+
+[types/election/published.ts:219](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/election/published.ts#L219)
+
+___
+
+### creationTime
+
+• `get` **creationTime**(): `Date`
+
+#### Returns
+
+`Date`
+
+#### Defined in
+
+[types/election/published.ts:223](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/election/published.ts#L223)
+
+___
+
+### description
+
+• `get` **description**(): `MultiLanguage`\<`string`\>
+
+#### Returns
+
+`MultiLanguage`\<`string`\>
+
+#### Overrides
+
+Election.description
+
+#### Defined in
+
+[types/election/published.ts:147](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/election/published.ts#L147)
+
+___
+
+### electionType
+
+• `get` **electionType**(): [`IElectionType`](../interfaces/IElectionType)
+
+#### Returns
+
+[`IElectionType`](../interfaces/IElectionType)
+
+#### Overrides
+
+Election.electionType
+
+#### Defined in
+
+[types/election/published.ts:167](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/election/published.ts#L167)
+
+___
+
+### endDate
+
+• `get` **endDate**(): `Date`
+
+#### Returns
+
+`Date`
+
+#### Overrides
+
+Election.endDate
+
+#### Defined in
+
+[types/election/published.ts:163](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/election/published.ts#L163)
+
+___
+
+### finalResults
+
+• `get` **finalResults**(): `boolean`
+
+#### Returns
+
+`boolean`
+
+#### Defined in
+
+[types/election/published.ts:203](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/election/published.ts#L203)
+
+___
+
+### fromArchive
+
+• `get` **fromArchive**(): `boolean`
+
+#### Returns
+
+`boolean`
+
+#### Defined in
+
+[types/election/published.ts:215](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/election/published.ts#L215)
+
+___
+
+### header
+
+• `get` **header**(): `string`
+
+#### Returns
+
+`string`
+
+#### Overrides
+
+Election.header
+
+#### Defined in
+
+[types/election/published.ts:151](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/election/published.ts#L151)
+
+___
+
+### id
+
+• `get` **id**(): `string`
+
+#### Returns
+
+`string`
+
+#### Defined in
+
+[types/election/published.ts:187](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/election/published.ts#L187)
+
+___
+
+### isValid
+
+• `get` **isValid**(): `boolean`
+
+#### Returns
+
+`boolean`
+
+#### Defined in
+
+[types/election/published.ts:239](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/election/published.ts#L239)
+
+___
+
+### manuallyEnded
+
+• `get` **manuallyEnded**(): `boolean`
+
+#### Returns
+
+`boolean`
+
+#### Defined in
+
+[types/election/published.ts:211](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/election/published.ts#L211)
+
+___
+
+### maxCensusSize
+
+• `get` **maxCensusSize**(): `number`
+
+#### Returns
+
+`number`
+
+#### Overrides
+
+Election.maxCensusSize
+
+#### Defined in
+
+[types/election/published.ts:183](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/election/published.ts#L183)
+
+___
+
+### meta
+
+• `get` **meta**(): `any`
+
+#### Returns
+
+`any`
+
+#### Inherited from
+
+Election.meta
+
+#### Defined in
+
+[types/election/election.ts:226](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/election/election.ts#L226)
+
+___
+
+### metadataURL
+
+• `get` **metadataURL**(): `string`
+
+#### Returns
+
+`string`
+
+#### Defined in
+
+[types/election/published.ts:227](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/election/published.ts#L227)
+
+___
+
+### organizationId
+
+• `get` **organizationId**(): `string`
+
+#### Returns
+
+`string`
+
+#### Defined in
+
+[types/election/published.ts:191](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/election/published.ts#L191)
+
+___
+
+### questions
+
+• `get` **questions**(): [`IQuestion`](../interfaces/IQuestion)[]
+
+#### Returns
+
+[`IQuestion`](../interfaces/IQuestion)[]
+
+#### Overrides
+
+Election.questions
+
+#### Defined in
+
+[types/election/published.ts:175](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/election/published.ts#L175)
+
+___
+
+### raw
+
+• `get` **raw**(): `object`
+
+#### Returns
+
+`object`
+
+#### Defined in
+
+[types/election/published.ts:235](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/election/published.ts#L235)
+
+___
+
+### results
+
+• `get` **results**(): `string`[][]
+
+#### Returns
+
+`string`[][]
+
+#### Defined in
+
+[types/election/published.ts:207](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/election/published.ts#L207)
+
+___
+
+### resultsType
+
+• `get` **resultsType**(): [`ElectionResultsType`](../sdk-reference#electionresultstype)
+
+#### Returns
+
+[`ElectionResultsType`](../sdk-reference#electionresultstype)
+
+#### Defined in
+
+[types/election/published.ts:231](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/election/published.ts#L231)
+
+___
+
+### startDate
+
+• `get` **startDate**(): `Date`
+
+#### Returns
+
+`Date`
+
+#### Overrides
+
+Election.startDate
+
+#### Defined in
+
+[types/election/published.ts:159](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/election/published.ts#L159)
+
+___
+
+### status
+
+• `get` **status**(): [`ElectionStatus`](../enums/ElectionStatus)
+
+#### Returns
+
+[`ElectionStatus`](../enums/ElectionStatus)
+
+#### Defined in
+
+[types/election/published.ts:195](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/election/published.ts#L195)
+
+___
+
+### streamUri
+
+• `get` **streamUri**(): `string`
+
+#### Returns
+
+`string`
+
+#### Overrides
+
+Election.streamUri
+
+#### Defined in
+
+[types/election/published.ts:155](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/election/published.ts#L155)
+
+___
+
+### temporarySecretIdentity
+
+• `get` **temporarySecretIdentity**(): `boolean`
+
+#### Returns
+
+`boolean`
+
+#### Inherited from
+
+Election.temporarySecretIdentity
+
+#### Defined in
+
+[types/election/election.ts:258](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/election/election.ts#L258)
+
+___
+
+### title
+
+• `get` **title**(): `MultiLanguage`\<`string`\>
+
+#### Returns
+
+`MultiLanguage`\<`string`\>
+
+#### Overrides
+
+Election.title
+
+#### Defined in
+
+[types/election/published.ts:143](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/election/published.ts#L143)
+
+___
+
+### voteCount
+
+• `get` **voteCount**(): `number`
+
+#### Returns
+
+`number`
+
+#### Defined in
+
+[types/election/published.ts:199](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/election/published.ts#L199)
+
+___
+
+### voteType
+
+• `get` **voteType**(): [`IVoteType`](../interfaces/IVoteType)
+
+#### Returns
+
+[`IVoteType`](../interfaces/IVoteType)
+
+#### Overrides
+
+Election.voteType
+
+#### Defined in
+
+[types/election/published.ts:171](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/election/published.ts#L171)
 
 ## Constructors
 
@@ -108,785 +526,11 @@ Constructs a published election
 
 #### Overrides
 
-[Election](Election.md).[constructor](Election#constructor)
+Election.constructor
 
 #### Defined in
 
-[types/election/published.ts:65](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/election/published.ts#L65)
-
-## Properties
-
-### \_addSDKVersion
-
-• `Protected` **\_addSDKVersion**: `boolean`
-
-#### Inherited from
-
-[Election](Election).[_addSDKVersion](Election.md#_addsdkversion)
-
-#### Defined in
-
-[types/election/election.ts:175](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/election/election.ts#L175)
-
-___
-
-### \_census
-
-• `Protected` **\_census**: [`Census`](Census)
-
-#### Inherited from
-
-[Election](Election).[_census](Election.md#_census)
-
-#### Defined in
-
-[types/election/election.ts:172](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/election/election.ts#L172)
-
-___
-
-### \_chainId
-
-• `Private` `Readonly` **\_chainId**: `string`
-
-#### Defined in
-
-[types/election/published.ts:53](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/election/published.ts#L53)
-
-___
-
-### \_creationTime
-
-• `Private` `Readonly` **\_creationTime**: `Date`
-
-#### Defined in
-
-[types/election/published.ts:55](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/election/published.ts#L55)
-
-___
-
-### \_description
-
-• `Protected` **\_description**: `MultiLanguage`\<`string`\>
-
-#### Inherited from
-
-[Election](Election).[_description](Election.md#_description)
-
-#### Defined in
-
-[types/election/election.ts:163](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/election/election.ts#L163)
-
-___
-
-### \_electionType
-
-• `Protected` **\_electionType**: [`IElectionType`](../interfaces/IElectionType)
-
-#### Inherited from
-
-[Election](Election).[_electionType](Election.md#_electiontype)
-
-#### Defined in
-
-[types/election/election.ts:169](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/election/election.ts#L169)
-
-___
-
-### \_endDate
-
-• `Protected` **\_endDate**: `Date`
-
-#### Inherited from
-
-[Election](Election).[_endDate](Election.md#_enddate)
-
-#### Defined in
-
-[types/election/election.ts:168](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/election/election.ts#L168)
-
-___
-
-### \_finalResults
-
-• `Private` `Readonly` **\_finalResults**: `boolean`
-
-#### Defined in
-
-[types/election/published.ts:50](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/election/published.ts#L50)
-
-___
-
-### \_fromArchive
-
-• `Private` `Readonly` **\_fromArchive**: `boolean`
-
-#### Defined in
-
-[types/election/published.ts:52](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/election/published.ts#L52)
-
-___
-
-### \_header
-
-• `Protected` **\_header**: `string`
-
-#### Inherited from
-
-[Election](Election).[_header](Election.md#_header)
-
-#### Defined in
-
-[types/election/election.ts:164](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/election/election.ts#L164)
-
-___
-
-### \_id
-
-• `Private` `Readonly` **\_id**: `string`
-
-#### Defined in
-
-[types/election/published.ts:46](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/election/published.ts#L46)
-
-___
-
-### \_manuallyEnded
-
-• `Private` `Readonly` **\_manuallyEnded**: `boolean`
-
-#### Defined in
-
-[types/election/published.ts:51](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/election/published.ts#L51)
-
-___
-
-### \_maxCensusSize
-
-• `Protected` **\_maxCensusSize**: `number`
-
-#### Inherited from
-
-[Election](Election).[_maxCensusSize](Election.md#_maxcensussize)
-
-#### Defined in
-
-[types/election/election.ts:173](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/election/election.ts#L173)
-
-___
-
-### \_meta
-
-• `Protected` **\_meta**: `any`
-
-#### Inherited from
-
-[Election](Election).[_meta](Election.md#_meta)
-
-#### Defined in
-
-[types/election/election.ts:166](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/election/election.ts#L166)
-
-___
-
-### \_metadataURL
-
-• `Private` `Readonly` **\_metadataURL**: `string`
-
-#### Defined in
-
-[types/election/published.ts:56](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/election/published.ts#L56)
-
-___
-
-### \_organizationId
-
-• `Private` `Readonly` **\_organizationId**: `string`
-
-#### Defined in
-
-[types/election/published.ts:47](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/election/published.ts#L47)
-
-___
-
-### \_questions
-
-• `Protected` **\_questions**: [`IQuestion`](../interfaces/IQuestion)[]
-
-#### Inherited from
-
-[Election](Election).[_questions](Election.md#_questions)
-
-#### Defined in
-
-[types/election/election.ts:171](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/election/election.ts#L171)
-
-___
-
-### \_raw
-
-• `Private` `Readonly` **\_raw**: `object`
-
-#### Defined in
-
-[types/election/published.ts:58](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/election/published.ts#L58)
-
-___
-
-### \_results
-
-• `Private` `Readonly` **\_results**: `string`[][]
-
-#### Defined in
-
-[types/election/published.ts:54](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/election/published.ts#L54)
-
-___
-
-### \_resultsType
-
-• `Private` `Readonly` **\_resultsType**: [`ElectionResultsType`](../modules#electionresultstype)
-
-#### Defined in
-
-[types/election/published.ts:57](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/election/published.ts#L57)
-
-___
-
-### \_startDate
-
-• `Protected` **\_startDate**: `Date`
-
-#### Inherited from
-
-[Election](Election).[_startDate](Election.md#_startdate)
-
-#### Defined in
-
-[types/election/election.ts:167](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/election/election.ts#L167)
-
-___
-
-### \_status
-
-• `Private` `Readonly` **\_status**: [`ElectionStatus`](../enums/ElectionStatus)
-
-#### Defined in
-
-[types/election/published.ts:48](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/election/published.ts#L48)
-
-___
-
-### \_streamUri
-
-• `Protected` **\_streamUri**: `string`
-
-#### Inherited from
-
-[Election](Election).[_streamUri](Election.md#_streamuri)
-
-#### Defined in
-
-[types/election/election.ts:165](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/election/election.ts#L165)
-
-___
-
-### \_temporarySecretIdentity
-
-• `Protected` **\_temporarySecretIdentity**: `boolean`
-
-#### Inherited from
-
-[Election](Election).[_temporarySecretIdentity](Election.md#_temporarysecretidentity)
-
-#### Defined in
-
-[types/election/election.ts:174](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/election/election.ts#L174)
-
-___
-
-### \_title
-
-• `Protected` **\_title**: `MultiLanguage`\<`string`\>
-
-#### Inherited from
-
-[Election](Election).[_title](Election.md#_title)
-
-#### Defined in
-
-[types/election/election.ts:162](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/election/election.ts#L162)
-
-___
-
-### \_voteCount
-
-• `Private` `Readonly` **\_voteCount**: `number`
-
-#### Defined in
-
-[types/election/published.ts:49](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/election/published.ts#L49)
-
-___
-
-### \_voteType
-
-• `Protected` **\_voteType**: [`IVoteType`](../interfaces/IVoteType)
-
-#### Inherited from
-
-[Election](Election).[_voteType](Election.md#_votetype)
-
-#### Defined in
-
-[types/election/election.ts:170](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/election/election.ts#L170)
-
-## Accessors
-
-### addSDKVersion
-
-• `get` **addSDKVersion**(): `boolean`
-
-#### Returns
-
-`boolean`
-
-#### Inherited from
-
-Election.addSDKVersion
-
-#### Defined in
-
-[types/election/election.ts:262](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/election/election.ts#L262)
-
-___
-
-### census
-
-• `get` **census**(): [`PublishedCensus`](PublishedCensus)
-
-#### Returns
-
-[`PublishedCensus`](PublishedCensus)
-
-#### Overrides
-
-Election.census
-
-#### Defined in
-
-[types/election/published.ts:179](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/election/published.ts#L179)
-
-___
-
-### chainId
-
-• `get` **chainId**(): `string`
-
-#### Returns
-
-`string`
-
-#### Defined in
-
-[types/election/published.ts:219](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/election/published.ts#L219)
-
-___
-
-### creationTime
-
-• `get` **creationTime**(): `Date`
-
-#### Returns
-
-`Date`
-
-#### Defined in
-
-[types/election/published.ts:223](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/election/published.ts#L223)
-
-___
-
-### description
-
-• `get` **description**(): `MultiLanguage`\<`string`\>
-
-#### Returns
-
-`MultiLanguage`\<`string`\>
-
-#### Overrides
-
-Election.description
-
-#### Defined in
-
-[types/election/published.ts:147](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/election/published.ts#L147)
-
-___
-
-### electionType
-
-• `get` **electionType**(): [`IElectionType`](../interfaces/IElectionType)
-
-#### Returns
-
-[`IElectionType`](../interfaces/IElectionType)
-
-#### Overrides
-
-Election.electionType
-
-#### Defined in
-
-[types/election/published.ts:167](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/election/published.ts#L167)
-
-___
-
-### endDate
-
-• `get` **endDate**(): `Date`
-
-#### Returns
-
-`Date`
-
-#### Overrides
-
-Election.endDate
-
-#### Defined in
-
-[types/election/published.ts:163](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/election/published.ts#L163)
-
-___
-
-### finalResults
-
-• `get` **finalResults**(): `boolean`
-
-#### Returns
-
-`boolean`
-
-#### Defined in
-
-[types/election/published.ts:203](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/election/published.ts#L203)
-
-___
-
-### fromArchive
-
-• `get` **fromArchive**(): `boolean`
-
-#### Returns
-
-`boolean`
-
-#### Defined in
-
-[types/election/published.ts:215](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/election/published.ts#L215)
-
-___
-
-### header
-
-• `get` **header**(): `string`
-
-#### Returns
-
-`string`
-
-#### Overrides
-
-Election.header
-
-#### Defined in
-
-[types/election/published.ts:151](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/election/published.ts#L151)
-
-___
-
-### id
-
-• `get` **id**(): `string`
-
-#### Returns
-
-`string`
-
-#### Defined in
-
-[types/election/published.ts:187](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/election/published.ts#L187)
-
-___
-
-### isValid
-
-• `get` **isValid**(): `boolean`
-
-#### Returns
-
-`boolean`
-
-#### Defined in
-
-[types/election/published.ts:239](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/election/published.ts#L239)
-
-___
-
-### manuallyEnded
-
-• `get` **manuallyEnded**(): `boolean`
-
-#### Returns
-
-`boolean`
-
-#### Defined in
-
-[types/election/published.ts:211](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/election/published.ts#L211)
-
-___
-
-### maxCensusSize
-
-• `get` **maxCensusSize**(): `number`
-
-#### Returns
-
-`number`
-
-#### Overrides
-
-Election.maxCensusSize
-
-#### Defined in
-
-[types/election/published.ts:183](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/election/published.ts#L183)
-
-___
-
-### meta
-
-• `get` **meta**(): `any`
-
-#### Returns
-
-`any`
-
-#### Inherited from
-
-Election.meta
-
-#### Defined in
-
-[types/election/election.ts:226](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/election/election.ts#L226)
-
-___
-
-### metadataURL
-
-• `get` **metadataURL**(): `string`
-
-#### Returns
-
-`string`
-
-#### Defined in
-
-[types/election/published.ts:227](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/election/published.ts#L227)
-
-___
-
-### organizationId
-
-• `get` **organizationId**(): `string`
-
-#### Returns
-
-`string`
-
-#### Defined in
-
-[types/election/published.ts:191](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/election/published.ts#L191)
-
-___
-
-### questions
-
-• `get` **questions**(): [`IQuestion`](../interfaces/IQuestion)[]
-
-#### Returns
-
-[`IQuestion`](../interfaces/IQuestion)[]
-
-#### Overrides
-
-Election.questions
-
-#### Defined in
-
-[types/election/published.ts:175](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/election/published.ts#L175)
-
-___
-
-### raw
-
-• `get` **raw**(): `object`
-
-#### Returns
-
-`object`
-
-#### Defined in
-
-[types/election/published.ts:235](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/election/published.ts#L235)
-
-___
-
-### results
-
-• `get` **results**(): `string`[][]
-
-#### Returns
-
-`string`[][]
-
-#### Defined in
-
-[types/election/published.ts:207](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/election/published.ts#L207)
-
-___
-
-### resultsType
-
-• `get` **resultsType**(): [`ElectionResultsType`](../modules#electionresultstype)
-
-#### Returns
-
-[`ElectionResultsType`](../modules#electionresultstype)
-
-#### Defined in
-
-[types/election/published.ts:231](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/election/published.ts#L231)
-
-___
-
-### startDate
-
-• `get` **startDate**(): `Date`
-
-#### Returns
-
-`Date`
-
-#### Overrides
-
-Election.startDate
-
-#### Defined in
-
-[types/election/published.ts:159](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/election/published.ts#L159)
-
-___
-
-### status
-
-• `get` **status**(): [`ElectionStatus`](../enums/ElectionStatus)
-
-#### Returns
-
-[`ElectionStatus`](../enums/ElectionStatus)
-
-#### Defined in
-
-[types/election/published.ts:195](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/election/published.ts#L195)
-
-___
-
-### streamUri
-
-• `get` **streamUri**(): `string`
-
-#### Returns
-
-`string`
-
-#### Overrides
-
-Election.streamUri
-
-#### Defined in
-
-[types/election/published.ts:155](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/election/published.ts#L155)
-
-___
-
-### temporarySecretIdentity
-
-• `get` **temporarySecretIdentity**(): `boolean`
-
-#### Returns
-
-`boolean`
-
-#### Inherited from
-
-Election.temporarySecretIdentity
-
-#### Defined in
-
-[types/election/election.ts:258](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/election/election.ts#L258)
-
-___
-
-### title
-
-• `get` **title**(): `MultiLanguage`\<`string`\>
-
-#### Returns
-
-`MultiLanguage`\<`string`\>
-
-#### Overrides
-
-Election.title
-
-#### Defined in
-
-[types/election/published.ts:143](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/election/published.ts#L143)
-
-___
-
-### voteCount
-
-• `get` **voteCount**(): `number`
-
-#### Returns
-
-`number`
-
-#### Defined in
-
-[types/election/published.ts:199](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/election/published.ts#L199)
-
-___
-
-### voteType
-
-• `get` **voteType**(): [`IVoteType`](../interfaces/IVoteType)
-
-#### Returns
-
-[`IVoteType`](../interfaces/IVoteType)
-
-#### Overrides
-
-Election.voteType
-
-#### Defined in
-
-[types/election/published.ts:171](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/election/published.ts#L171)
+[types/election/published.ts:65](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/election/published.ts#L65)
 
 ## Methods
 
@@ -906,7 +550,7 @@ Election.voteType
 
 #### Defined in
 
-[types/election/published.ts:113](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/election/published.ts#L113)
+[types/election/published.ts:113](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/election/published.ts#L113)
 
 ___
 
@@ -930,7 +574,7 @@ ___
 
 #### Defined in
 
-[types/election/election.ts:266](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/election/election.ts#L266)
+[types/election/election.ts:266](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/election/election.ts#L266)
 
 ___
 
@@ -952,7 +596,7 @@ Returns a published election object
 
 #### Defined in
 
-[types/election/published.ts:100](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/election/published.ts#L100)
+[types/election/published.ts:100](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/election/published.ts#L100)
 
 ___
 
@@ -973,7 +617,7 @@ ___
 
 #### Defined in
 
-[types/election/published.ts:127](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/election/published.ts#L127)
+[types/election/published.ts:127](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/election/published.ts#L127)
 
 ___
 
@@ -999,7 +643,7 @@ Returns an unpublished election object
 
 #### Defined in
 
-[types/election/election.ts:206](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/election/election.ts#L206)
+[types/election/election.ts:206](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/election/election.ts#L206)
 
 ___
 
@@ -1011,7 +655,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `status` | [`AllElectionStatus`](../modules#allelectionstatus) |
+| `status` | [`AllElectionStatus`](../sdk-reference#allelectionstatus) |
 | `startDate` | `Date` |
 
 #### Returns
@@ -1020,4 +664,4 @@ ___
 
 #### Defined in
 
-[types/election/published.ts:104](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/election/published.ts#L104)
+[types/election/published.ts:104](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/election/published.ts#L104)

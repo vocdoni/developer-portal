@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules) / VocdoniCensus3Client
+[@vocdoni/sdk](/sdk) / VocdoniCensus3Client
 
 # Class: VocdoniCensus3Client
 
@@ -7,11 +7,6 @@
 ### Constructors
 
 - [constructor](VocdoniCensus3Client#constructor)
-
-### Properties
-
-- [queueWait](VocdoniCensus3Client#queuewait)
-- [url](VocdoniCensus3Client#url)
 
 ### Methods
 
@@ -36,6 +31,11 @@
 - [tokenHolderBalance](VocdoniCensus3Client#tokenholderbalance)
 - [validatePredicate](VocdoniCensus3Client#validatepredicate)
 
+### Properties
+
+- [queueWait](VocdoniCensus3Client#queuewait)
+- [url](VocdoniCensus3Client#url)
+
 ## Constructors
 
 ### constructor
@@ -44,7 +44,7 @@
 
 Instantiate new VocdoniCensus3 client.
 
-To instantiate the client just pass the `ClientOptions` you want or empty object to let defaults.
+To instantiate the client just pass the `ClientOptions` you want or use an empty object for the defaults.
 
 `const client = new VocdoniCensus3Client({EnvOptions.PROD})`
 
@@ -52,7 +52,7 @@ To instantiate the client just pass the `ClientOptions` you want or empty object
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `opts` | [`ClientOptions`](../modules#clientoptions) | optional arguments |
+| `opts` | [`ClientOptions`](../sdk-reference#clientoptions) | optional arguments |
 
 #### Returns
 
@@ -60,34 +60,7 @@ To instantiate the client just pass the `ClientOptions` you want or empty object
 
 #### Defined in
 
-[census3.ts:48](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/census3.ts#L48)
-
-## Properties
-
-### queueWait
-
-• **queueWait**: `Object`
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `attempts` | `number` |
-| `retryTime` | `number` |
-
-#### Defined in
-
-[census3.ts:37](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/census3.ts#L37)
-
-___
-
-### url
-
-• **url**: `string`
-
-#### Defined in
-
-[census3.ts:36](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/census3.ts#L36)
+[census3.ts:48](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/census3.ts#L48)
 
 ## Methods
 
@@ -112,7 +85,7 @@ The census information
 
 #### Defined in
 
-[census3.ts:358](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/census3.ts#L358)
+[census3.ts:356](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/census3.ts#L356)
 
 ___
 
@@ -138,7 +111,7 @@ The strategy id
 
 #### Defined in
 
-[census3.ts:275](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/census3.ts#L275)
+[census3.ts:273](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/census3.ts#L273)
 
 ___
 
@@ -164,7 +137,7 @@ Creates a new token to be tracked in the service
 
 #### Defined in
 
-[census3.ts:163](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/census3.ts#L163)
+[census3.ts:163](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/census3.ts#L163)
 
 ___
 
@@ -191,7 +164,7 @@ The token census
 
 #### Defined in
 
-[census3.ts:395](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/census3.ts#L395)
+[census3.ts:393](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/census3.ts#L393)
 
 ___
 
@@ -215,7 +188,7 @@ The census3 census
 
 #### Defined in
 
-[census3.ts:346](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/census3.ts#L346)
+[census3.ts:344](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/census3.ts#L344)
 
 ___
 
@@ -239,31 +212,31 @@ The list of census3 censuses
 
 #### Defined in
 
-[census3.ts:335](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/census3.ts#L335)
+[census3.ts:333](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/census3.ts#L333)
 
 ___
 
 ### getStrategies
 
-▸ **getStrategies**(): `Promise`\<[`Census3Strategy`](../modules#census3strategy)[]\>
+▸ **getStrategies**(): `Promise`\<[`Census3Strategy`](../sdk-reference#census3strategy)[]\>
 
 Returns the strategies
 
 #### Returns
 
-`Promise`\<[`Census3Strategy`](../modules#census3strategy)[]\>
+`Promise`\<[`Census3Strategy`](../sdk-reference#census3strategy)[]\>
 
 The list of strategies
 
 #### Defined in
 
-[census3.ts:181](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/census3.ts#L181)
+[census3.ts:181](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/census3.ts#L181)
 
 ___
 
 ### getStrategiesByToken
 
-▸ **getStrategiesByToken**(`id`, `chainId`, `externalId?`): `Promise`\<[`Census3Strategy`](../modules#census3strategy)[]\>
+▸ **getStrategiesByToken**(`id`, `chainId`, `externalId?`): `Promise`\<[`Census3Strategy`](../sdk-reference#census3strategy)[]\>
 
 Returns the strategies from the given token
 
@@ -277,19 +250,19 @@ Returns the strategies from the given token
 
 #### Returns
 
-`Promise`\<[`Census3Strategy`](../modules#census3strategy)[]\>
+`Promise`\<[`Census3Strategy`](../sdk-reference#census3strategy)[]\>
 
 The list of strategies
 
 #### Defined in
 
-[census3.ts:207](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/census3.ts#L207)
+[census3.ts:207](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/census3.ts#L207)
 
 ___
 
 ### getStrategy
 
-▸ **getStrategy**(`id`): `Promise`\<[`Census3Strategy`](../modules#census3strategy)\>
+▸ **getStrategy**(`id`): `Promise`\<[`Census3Strategy`](../sdk-reference#census3strategy)\>
 
 Returns the information of the strategy based on the id
 
@@ -301,13 +274,13 @@ Returns the information of the strategy based on the id
 
 #### Returns
 
-`Promise`\<[`Census3Strategy`](../modules#census3strategy)\>
+`Promise`\<[`Census3Strategy`](../sdk-reference#census3strategy)\>
 
 The strategy information
 
 #### Defined in
 
-[census3.ts:221](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/census3.ts#L221)
+[census3.ts:219](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/census3.ts#L219)
 
 ___
 
@@ -332,13 +305,13 @@ The strategy estimation
 
 #### Defined in
 
-[census3.ts:233](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/census3.ts#L233)
+[census3.ts:231](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/census3.ts#L231)
 
 ___
 
 ### getStrategyHolders
 
-▸ **getStrategyHolders**(`id`, `pagination?`): `Promise`\<[`StrategyHolders`](../modules#strategyholders)\>
+▸ **getStrategyHolders**(`id`, `pagination?`): `Promise`\<[`StrategyHolders`](../sdk-reference#strategyholders)\>
 
 Returns the strategy holders
 
@@ -351,13 +324,13 @@ Returns the strategy holders
 
 #### Returns
 
-`Promise`\<[`StrategyHolders`](../modules#strategyholders)\>
+`Promise`\<[`StrategyHolders`](../sdk-reference#strategyholders)\>
 
 The list strategy holders
 
 #### Defined in
 
-[census3.ts:192](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/census3.ts#L192)
+[census3.ts:192](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/census3.ts#L192)
 
 ___
 
@@ -375,7 +348,7 @@ Supported chain list
 
 #### Defined in
 
-[census3.ts:76](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/census3.ts#L76)
+[census3.ts:76](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/census3.ts#L76)
 
 ___
 
@@ -393,25 +366,25 @@ Supported strategies operators list
 
 #### Defined in
 
-[census3.ts:94](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/census3.ts#L94)
+[census3.ts:94](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/census3.ts#L94)
 
 ___
 
 ### getSupportedTokens
 
-▸ **getSupportedTokens**(): `Promise`\<[`TokenSummary`](../modules#tokensummary)[]\>
+▸ **getSupportedTokens**(): `Promise`\<[`TokenSummary`](../sdk-reference#tokensummary)[]\>
 
 Returns a list of summary tokens supported by the service
 
 #### Returns
 
-`Promise`\<[`TokenSummary`](../modules#tokensummary)[]\>
+`Promise`\<[`TokenSummary`](../sdk-reference#tokensummary)[]\>
 
 Token summary list
 
 #### Defined in
 
-[census3.ts:61](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/census3.ts#L61)
+[census3.ts:61](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/census3.ts#L61)
 
 ___
 
@@ -429,13 +402,13 @@ Supported tokens type list
 
 #### Defined in
 
-[census3.ts:85](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/census3.ts#L85)
+[census3.ts:85](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/census3.ts#L85)
 
 ___
 
 ### getToken
 
-▸ **getToken**(`id`, `chainId`, `externalId?`): `Promise`\<[`Token`](../modules#token)\>
+▸ **getToken**(`id`, `chainId`, `externalId?`): `Promise`\<[`Token`](../sdk-reference#token)\>
 
 Returns the full token information based on the id (address)
 
@@ -449,19 +422,19 @@ Returns the full token information based on the id (address)
 
 #### Returns
 
-`Promise`\<[`Token`](../modules#token)\>
+`Promise`\<[`Token`](../sdk-reference#token)\>
 
 The token information
 
 #### Defined in
 
-[census3.ts:106](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/census3.ts#L106)
+[census3.ts:106](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/census3.ts#L106)
 
 ___
 
 ### importStrategy
 
-▸ **importStrategy**(`cid`): `Promise`\<[`Census3Strategy`](../modules#census3strategy)\>
+▸ **importStrategy**(`cid`): `Promise`\<[`Census3Strategy`](../sdk-reference#census3strategy)\>
 
 Imports a strategy from IPFS from the given cid.
 
@@ -473,13 +446,13 @@ Imports a strategy from IPFS from the given cid.
 
 #### Returns
 
-`Promise`\<[`Census3Strategy`](../modules#census3strategy)\>
+`Promise`\<[`Census3Strategy`](../sdk-reference#census3strategy)\>
 
 The strategy information
 
 #### Defined in
 
-[census3.ts:290](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/census3.ts#L290)
+[census3.ts:288](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/census3.ts#L288)
 
 ___
 
@@ -506,7 +479,7 @@ If the holder is in the token
 
 #### Defined in
 
-[census3.ts:124](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/census3.ts#L124)
+[census3.ts:124](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/census3.ts#L124)
 
 ___
 
@@ -533,7 +506,7 @@ The balance of the holder
 
 #### Defined in
 
-[census3.ts:145](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/census3.ts#L145)
+[census3.ts:145](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/census3.ts#L145)
 
 ___
 
@@ -557,4 +530,31 @@ The parsed predicate
 
 #### Defined in
 
-[census3.ts:324](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/census3.ts#L324)
+[census3.ts:322](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/census3.ts#L322)
+
+## Properties
+
+### queueWait
+
+• **queueWait**: `Object`
+
+#### Type declaration
+
+| Name | Type |
+| :------ | :------ |
+| `attempts` | `number` |
+| `retryTime` | `number` |
+
+#### Defined in
+
+[census3.ts:37](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/census3.ts#L37)
+
+___
+
+### url
+
+• **url**: `string`
+
+#### Defined in
+
+[census3.ts:36](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/census3.ts#L36)

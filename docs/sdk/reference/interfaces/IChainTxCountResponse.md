@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules) / IChainTxCountResponse
+[@vocdoni/sdk](/sdk) / IChainTxCountResponse
 
 # Interface: IChainTxCountResponse
 
@@ -18,4 +18,4 @@ The number of transactions
 
 #### Defined in
 
-[api/chain.ts:210](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/chain.ts#L210)
+[api/chain.ts:210](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/chain.ts#L210)

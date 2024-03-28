@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules) / AccountAPI
+[@vocdoni/sdk](/sdk) / AccountAPI
 
 # Class: AccountAPI
 
@@ -10,42 +10,16 @@
 
 ## Table of contents
 
-### Constructors
-
-- [constructor](AccountAPI#constructor)
-
 ### Methods
 
 - [count](AccountAPI#count)
 - [electionsList](AccountAPI#electionslist)
 - [info](AccountAPI#info)
-- [isApiError](AccountAPI#isapierror)
-- [isUndefinedError](AccountAPI#isundefinederror)
 - [list](AccountAPI#list)
 - [metadata](AccountAPI#metadata)
 - [setInfo](AccountAPI#setinfo)
 - [transfersCount](AccountAPI#transferscount)
 - [transfersList](AccountAPI#transferslist)
-
-## Constructors
-
-### constructor
-
-• **new AccountAPI**(): [`AccountAPI`](AccountAPI)
-
-Cannot be constructed.
-
-#### Returns
-
-[`AccountAPI`](AccountAPI)
-
-#### Overrides
-
-API.constructor
-
-#### Defined in
-
-[api/account.ts:109](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/account.ts#L109)
 
 ## Methods
 
@@ -67,7 +41,7 @@ Returns the number of accounts
 
 #### Defined in
 
-[api/account.ts:133](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/account.ts#L133)
+[api/account.ts:131](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/account.ts#L131)
 
 ___
 
@@ -91,7 +65,7 @@ Returns paginated list of elections for a specific account
 
 #### Defined in
 
-[api/account.ts:220](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/account.ts#L220)
+[api/account.ts:212](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/account.ts#L212)
 
 ___
 
@@ -114,56 +88,7 @@ Fetches an Account information
 
 #### Defined in
 
-[api/account.ts:147](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/account.ts#L147)
-
-___
-
-### isApiError
-
-▸ **isApiError**(`error`): `never`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `error` | `AxiosError`\<`unknown`, `any`\> |
-
-#### Returns
-
-`never`
-
-#### Inherited from
-
-API.isApiError
-
-#### Defined in
-
-[api/api.ts:21](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/api.ts#L21)
-
-___
-
-### isUndefinedError
-
-▸ **isUndefinedError**(`error`, `message?`): `never`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `error` | `AxiosError`\<`unknown`, `any`\> |
-| `message?` | `string` |
-
-#### Returns
-
-`never`
-
-#### Inherited from
-
-API.isUndefinedError
-
-#### Defined in
-
-[api/api.ts:64](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/api.ts#L64)
+[api/account.ts:144](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/account.ts#L144)
 
 ___
 
@@ -186,7 +111,7 @@ Returns paginated list of accounts
 
 #### Defined in
 
-[api/account.ts:120](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/account.ts#L120)
+[api/account.ts:119](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/account.ts#L119)
 
 ___
 
@@ -209,7 +134,7 @@ Fetches the account metadata
 
 #### Defined in
 
-[api/account.ts:161](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/account.ts#L161)
+[api/account.ts:157](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/account.ts#L157)
 
 ___
 
@@ -233,7 +158,7 @@ Sets Account information
 
 #### Defined in
 
-[api/account.ts:176](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/account.ts#L176)
+[api/account.ts:171](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/account.ts#L171)
 
 ___
 
@@ -256,7 +181,7 @@ Returns the account's transfers count
 
 #### Defined in
 
-[api/account.ts:205](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/account.ts#L205)
+[api/account.ts:198](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/account.ts#L198)
 
 ___
 
@@ -280,4 +205,4 @@ Returns paginated list of transfers for a specific account
 
 #### Defined in
 
-[api/account.ts:191](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/account.ts#L191)
+[api/account.ts:185](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/account.ts#L185)

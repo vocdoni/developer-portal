@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules) / FaucetService
+[@vocdoni/sdk](/sdk) / FaucetService
 
 # Class: FaucetService
 
@@ -18,15 +18,15 @@
 
 - [constructor](FaucetService#constructor)
 
-### Properties
-
-- [token\_limit](FaucetService.md#token_limit)
-- [url](FaucetService#url)
-
 ### Methods
 
 - [fetchPayload](FaucetService#fetchpayload)
 - [parseFaucetPackage](FaucetService#parsefaucetpackage)
+
+### Properties
+
+- [token\_limit](FaucetService.md#token_limit)
+- [url](FaucetService#url)
 
 ## Constructors
 
@@ -48,39 +48,11 @@ Instantiate the chain service.
 
 #### Overrides
 
-[Service](Service.md).[constructor](Service#constructor)
+Service.constructor
 
 #### Defined in
 
-[services/faucet.ts:38](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/services/faucet.ts#L38)
-
-## Properties
-
-### token\_limit
-
-• **token\_limit**: `number`
-
-#### Implementation of
-
-FaucetServiceProperties.token\_limit
-
-#### Defined in
-
-[services/faucet.ts:31](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/services/faucet.ts#L31)
-
-___
-
-### url
-
-• **url**: `string`
-
-#### Inherited from
-
-[Service](Service.md).[url](Service#url)
-
-#### Defined in
-
-[services/service.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/services/service.ts#L6)
+[services/faucet.ts:38](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/services/faucet.ts#L38)
 
 ## Methods
 
@@ -104,13 +76,13 @@ The encoded faucet package
 
 #### Defined in
 
-[services/faucet.ts:49](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/services/faucet.ts#L49)
+[services/faucet.ts:49](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/services/faucet.ts#L49)
 
 ___
 
 ### parseFaucetPackage
 
-▸ **parseFaucetPackage**(`faucetPackage`): [`FaucetPackage`](../modules#faucetpackage)
+▸ **parseFaucetPackage**(`faucetPackage`): [`FaucetPackage`](../sdk-reference#faucetpackage)
 
 Parses a faucet package.
 
@@ -122,8 +94,36 @@ Parses a faucet package.
 
 #### Returns
 
-[`FaucetPackage`](../modules#faucetpackage)
+[`FaucetPackage`](../sdk-reference#faucetpackage)
 
 #### Defined in
 
-[services/faucet.ts:59](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/services/faucet.ts#L59)
+[services/faucet.ts:58](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/services/faucet.ts#L58)
+
+## Properties
+
+### token\_limit
+
+• **token\_limit**: `number`
+
+#### Implementation of
+
+FaucetServiceProperties.token\_limit
+
+#### Defined in
+
+[services/faucet.ts:31](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/services/faucet.ts#L31)
+
+___
+
+### url
+
+• **url**: `string`
+
+#### Inherited from
+
+[Service](Service.md).[url](Service#url)
+
+#### Defined in
+
+[services/service.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/services/service.ts#L6)

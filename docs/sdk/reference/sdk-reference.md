@@ -1,23 +1,6 @@
-[@vocdoni/sdk](/sdk) / Exports
-
 # @vocdoni/sdk
 
 ## Table of contents
-
-### Enumerations
-
-- [CensusOrigin](enums/CensusOrigin)
-- [CensusType](enums/CensusType)
-- [CensusTypeEnum](enums/CensusTypeEnum)
-- [CspProofType](enums/CspProofType)
-- [ElectionCreationSteps](enums/ElectionCreationSteps)
-- [ElectionResultsTypeNames](enums/ElectionResultsTypeNames)
-- [ElectionStatus](enums/ElectionStatus)
-- [ElectionStatusReady](enums/ElectionStatusReady)
-- [EnvOptions](enums/EnvOptions)
-- [TransactionType](enums/TransactionType)
-- [TxType](enums/TxType)
-- [VoteSteps](enums/VoteSteps)
 
 ### Classes
 
@@ -159,74 +142,306 @@
 - [Tx](interfaces/Tx)
 - [VoteEnvelope](interfaces/VoteEnvelope)
 
-### Type Aliases
+### Enumerations
 
-- [AccountData](modules#accountdata)
-- [AllElectionStatus](modules#allelectionstatus)
-- [ArchivedAccountData](modules#archivedaccountdata)
-- [Census3Census](modules#census3census)
-- [Census3CreateStrategyToken](modules#census3createstrategytoken)
-- [Census3Strategy](modules#census3strategy)
-- [Census3StrategyToken](modules#census3strategytoken)
-- [Census3SummaryToken](modules#census3summarytoken)
-- [Census3Token](modules#census3token)
-- [CensusImportExport](modules#censusimportexport)
-- [CensusProof](modules#censusproof)
-- [ChainCircuits](modules#chaincircuits)
-- [ChainCosts](modules#chaincosts)
-- [ChainData](modules#chaindata)
-- [ChainTx](modules#chaintx)
-- [ClientOptions](modules#clientoptions)
-- [CspCensusProof](modules#cspcensusproof)
-- [ElectionCreatedInformation](modules#electioncreatedinformation)
-- [ElectionCreationStepValue](modules#electioncreationstepvalue)
-- [ElectionIdOption](modules#electionidoption)
-- [ElectionKeys](modules#electionkeys)
-- [ElectionMeta](modules#electionmeta)
-- [ElectionResultsType](modules#electionresultstype)
-- [FaucetOptions](modules#faucetoptions)
-- [FaucetPackage](modules#faucetpackage)
-- [HasAlreadyVotedOptions](modules#hasalreadyvotedoptions)
-- [IAccountSummary](modules#iaccountsummary)
-- [IBudgetElectionParameters](modules#ibudgetelectionparameters)
-- [IsAbleToVoteOptions](modules#isabletovoteoptions)
-- [IsInCensusOptions](modules#isincensusoptions)
-- [ParsedPredicate](modules#parsedpredicate)
-- [SendTokensOptions](modules#sendtokensoptions)
-- [Strategy](modules#strategy)
-- [StrategyHolder](modules#strategyholder)
-- [StrategyHolders](modules#strategyholders)
-- [StrategyToken](modules#strategytoken)
-- [SupportedChain](modules#supportedchain)
-- [SupportedOperator](modules#supportedoperator)
-- [Token](modules#token)
-- [TokenSummary](modules#tokensummary)
-- [TxWaitOptions](modules#txwaitoptions)
-- [VoteIdOption](modules#voteidoption)
-- [VoteInfo](modules#voteinfo)
-- [VoteStepValue](modules#votestepvalue)
-- [VoteSubmit](modules#votesubmit)
-- [VotesLeftCountOptions](modules#votesleftcountoptions)
-- [WalletOption](modules#walletoption)
-- [ZkProof](modules#zkproof)
-
-### Variables
-
-- [AccountMetadataTemplate](modules#accountmetadatatemplate)
-- [ElectionMetadataTemplate](modules#electionmetadatatemplate)
+- [CensusOrigin](enums/CensusOrigin)
+- [CensusType](enums/CensusType)
+- [CensusTypeEnum](enums/CensusTypeEnum)
+- [CspProofType](enums/CspProofType)
+- [ElectionCreationSteps](enums/ElectionCreationSteps)
+- [ElectionResultsTypeNames](enums/ElectionResultsTypeNames)
+- [ElectionStatus](enums/ElectionStatus)
+- [ElectionStatusReady](enums/ElectionStatusReady)
+- [EnvOptions](enums/EnvOptions)
+- [TransactionType](enums/TransactionType)
+- [TxType](enums/TxType)
+- [VoteSteps](enums/VoteSteps)
 
 ### Functions
 
-- [areEqualHexStrings](modules#areequalhexstrings)
-- [checkValidAccountMetadata](modules#checkvalidaccountmetadata)
-- [checkValidElectionMetadata](modules#checkvalidelectionmetadata)
-- [delay](modules#delay)
-- [dotobject](modules#dotobject)
-- [ensure0x](modules#ensure0x)
-- [formatUnits](modules#formatunits)
-- [getBytes](modules#getbytes)
-- [getHex](modules#gethex)
-- [strip0x](modules#strip0x)
+- [areEqualHexStrings](sdk-reference#areequalhexstrings)
+- [checkValidAccountMetadata](sdk-reference#checkvalidaccountmetadata)
+- [checkValidElectionMetadata](sdk-reference#checkvalidelectionmetadata)
+- [delay](sdk-reference#delay)
+- [dotobject](sdk-reference#dotobject)
+- [ensure0x](sdk-reference#ensure0x)
+- [formatUnits](sdk-reference#formatunits)
+- [getBytes](sdk-reference#getbytes)
+- [getHex](sdk-reference#gethex)
+- [strip0x](sdk-reference#strip0x)
+
+### Type Aliases
+
+- [AccountData](sdk-reference#accountdata)
+- [AllElectionStatus](sdk-reference#allelectionstatus)
+- [ArchivedAccountData](sdk-reference#archivedaccountdata)
+- [Census3Census](sdk-reference#census3census)
+- [Census3CreateStrategyToken](sdk-reference#census3createstrategytoken)
+- [Census3Strategy](sdk-reference#census3strategy)
+- [Census3StrategyToken](sdk-reference#census3strategytoken)
+- [Census3SummaryToken](sdk-reference#census3summarytoken)
+- [Census3Token](sdk-reference#census3token)
+- [CensusImportExport](sdk-reference#censusimportexport)
+- [CensusProof](sdk-reference#censusproof)
+- [ChainCircuits](sdk-reference#chaincircuits)
+- [ChainCosts](sdk-reference#chaincosts)
+- [ChainData](sdk-reference#chaindata)
+- [ChainTx](sdk-reference#chaintx)
+- [ClientOptions](sdk-reference#clientoptions)
+- [CspCensusProof](sdk-reference#cspcensusproof)
+- [ElectionCreatedInformation](sdk-reference#electioncreatedinformation)
+- [ElectionCreationStepValue](sdk-reference#electioncreationstepvalue)
+- [ElectionIdOption](sdk-reference#electionidoption)
+- [ElectionKeys](sdk-reference#electionkeys)
+- [ElectionMeta](sdk-reference#electionmeta)
+- [ElectionResultsType](sdk-reference#electionresultstype)
+- [FaucetOptions](sdk-reference#faucetoptions)
+- [FaucetPackage](sdk-reference#faucetpackage)
+- [HasAlreadyVotedOptions](sdk-reference#hasalreadyvotedoptions)
+- [IAccountSummary](sdk-reference#iaccountsummary)
+- [IBudgetElectionParameters](sdk-reference#ibudgetelectionparameters)
+- [IsAbleToVoteOptions](sdk-reference#isabletovoteoptions)
+- [IsInCensusOptions](sdk-reference#isincensusoptions)
+- [ParsedPredicate](sdk-reference#parsedpredicate)
+- [SendTokensOptions](sdk-reference#sendtokensoptions)
+- [Strategy](sdk-reference#strategy)
+- [StrategyHolder](sdk-reference#strategyholder)
+- [StrategyHolders](sdk-reference#strategyholders)
+- [StrategyToken](sdk-reference#strategytoken)
+- [SupportedChain](sdk-reference#supportedchain)
+- [SupportedOperator](sdk-reference#supportedoperator)
+- [Token](sdk-reference#token)
+- [TokenSummary](sdk-reference#tokensummary)
+- [TxWaitOptions](sdk-reference#txwaitoptions)
+- [VoteIdOption](sdk-reference#voteidoption)
+- [VoteInfo](sdk-reference#voteinfo)
+- [VoteStepValue](sdk-reference#votestepvalue)
+- [VoteSubmit](sdk-reference#votesubmit)
+- [VotesLeftCountOptions](sdk-reference#votesleftcountoptions)
+- [WalletOption](sdk-reference#walletoption)
+- [ZkProof](sdk-reference#zkproof)
+
+### Variables
+
+- [AccountMetadataTemplate](sdk-reference#accountmetadatatemplate)
+- [ElectionMetadataTemplate](sdk-reference#electionmetadatatemplate)
+
+## Functions
+
+### areEqualHexStrings
+
+▸ **areEqualHexStrings**(`hex1?`, `hex2?`): `boolean`
+
+Compares two hex strings checking if they're the same. It ensures both
+have hex prefix and are lowercase.
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `hex1?` | `string` |
+| `hex2?` | `string` |
+
+#### Returns
+
+`boolean`
+
+#### Defined in
+
+[util/common.ts:35](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/util/common.ts#L35)
+
+___
+
+### checkValidAccountMetadata
+
+▸ **checkValidAccountMetadata**(`accountMetadata`): [`AccountMetadata`](interfaces/AccountMetadata)
+
+Asserts that the given metadata is valid.
+Throws an exception if it is not.
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `accountMetadata` | [`AccountMetadata`](interfaces/AccountMetadata) |
+
+#### Returns
+
+[`AccountMetadata`](interfaces/AccountMetadata)
+
+#### Defined in
+
+[types/metadata/account.ts:8](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/metadata/account.ts#L8)
+
+___
+
+### checkValidElectionMetadata
+
+▸ **checkValidElectionMetadata**(`electionMetadata`): [`ElectionMetadata`](interfaces/ElectionMetadata)
+
+Asserts that the given metadata is valid.
+Throws an exception if it is not.
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `electionMetadata` | [`ElectionMetadata`](interfaces/ElectionMetadata) |
+
+#### Returns
+
+[`ElectionMetadata`](interfaces/ElectionMetadata)
+
+#### Defined in
+
+[types/metadata/election.ts:8](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/metadata/election.ts#L8)
+
+___
+
+### delay
+
+▸ **delay**(`ms`): `Promise`\<`unknown`\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `ms` | `any` |
+
+#### Returns
+
+`Promise`\<`unknown`\>
+
+#### Defined in
+
+[util/common.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/util/common.ts#L6)
+
+___
+
+### dotobject
+
+▸ **dotobject**(`obj`, `dot`): `any`
+
+Dot notation to object conversion. Takes any object as first argument and uses the string dot notation from the
+second argument (i.e. 'a.child.node') to access that given object value.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `obj` | `any` | Object to be accessed by dot notation |
+| `dot` | `string` | Dot notation string to extract object data |
+
+#### Returns
+
+`any`
+
+Return the object data
+
+#### Defined in
+
+[util/common.ts:60](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/util/common.ts#L60)
+
+___
+
+### ensure0x
+
+▸ **ensure0x**(`value`): `string`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `string` |
+
+#### Returns
+
+`string`
+
+#### Defined in
+
+[util/common.ts:12](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/util/common.ts#L12)
+
+___
+
+### formatUnits
+
+▸ **formatUnits**(`value`, `decimals?`): `string`
+
+Returns a string representation of value formatted with decimals digits
+
+#### Parameters
+
+| Name | Type | Default value | Description |
+| :------ | :------ | :------ | :------ |
+| `value` | `BigNumberish` | `undefined` | The value in native BigInt |
+| `decimals` | `number` | `18` | The number of decimals |
+
+#### Returns
+
+`string`
+
+The formatted string
+
+#### Defined in
+
+[util/common.ts:48](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/util/common.ts#L48)
+
+___
+
+### getBytes
+
+▸ **getBytes**(`count`): `Uint8Array`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `count` | `number` |
+
+#### Returns
+
+`Uint8Array`
+
+#### Defined in
+
+[util/common.ts:16](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/util/common.ts#L16)
+
+___
+
+### getHex
+
+▸ **getHex**(): `string`
+
+Generates a random seed and returns a 32 byte keccak256 hash of it (starting with "0x")
+
+#### Returns
+
+`string`
+
+#### Defined in
+
+[util/common.ts:23](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/util/common.ts#L23)
+
+___
+
+### strip0x
+
+▸ **strip0x**(`value`): `string`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `string` |
+
+#### Returns
+
+`string`
+
+#### Defined in
+
+[util/common.ts:8](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/util/common.ts#L8)
 
 ## Type Aliases
 
@@ -248,7 +463,7 @@
 
 #### Defined in
 
-[services/account.ts:25](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/services/account.ts#L25)
+[services/account.ts:25](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/services/account.ts#L25)
 
 ___
 
@@ -258,17 +473,17 @@ ___
 
 #### Defined in
 
-[types/election/published.ts:24](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/election/published.ts#L24)
+[types/election/published.ts:24](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/election/published.ts#L24)
 
 ___
 
 ### ArchivedAccountData
 
-Ƭ **ArchivedAccountData**: `Pick`\<[`AccountData`](modules#accountdata), ``"address"`` \| ``"account"``\>
+Ƭ **ArchivedAccountData**: `Pick`\<[`AccountData`](sdk-reference#accountdata), ``"address"`` \| ``"account"``\>
 
 #### Defined in
 
-[services/account.ts:35](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/services/account.ts#L35)
+[services/account.ts:35](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/services/account.ts#L35)
 
 ___
 
@@ -278,17 +493,17 @@ ___
 
 #### Defined in
 
-[census3.ts:30](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/census3.ts#L30)
+[census3.ts:30](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/census3.ts#L30)
 
 ___
 
 ### Census3CreateStrategyToken
 
-Ƭ **Census3CreateStrategyToken**: `Omit`\<[`Census3StrategyToken`](modules#census3strategytoken), ``"chainAddress"``\>
+Ƭ **Census3CreateStrategyToken**: `Omit`\<[`Census3StrategyToken`](sdk-reference#census3strategytoken), ``"chainAddress"``\>
 
 #### Defined in
 
-[api/census3/strategy.ts:100](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/census3/strategy.ts#L100)
+[api/census3/strategy.ts:100](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/census3/strategy.ts#L100)
 
 ___
 
@@ -303,12 +518,12 @@ ___
 | `ID` | `number` | The strategy identifier |
 | `alias` | `string` | The strategy alias |
 | `predicate` | `string` | The strategy predicate |
-| `tokens` | \{ `[key: string]`: [`Census3StrategyToken`](modules#census3strategytoken);  } | The list of tokens |
+| `tokens` | \{ `[key: string]`: [`Census3StrategyToken`](sdk-reference#census3strategytoken);  } | The list of tokens |
 | `uri` | `string` | The URI of the strategy |
 
 #### Defined in
 
-[api/census3/strategy.ts:46](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/census3/strategy.ts#L46)
+[api/census3/strategy.ts:46](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/census3/strategy.ts#L46)
 
 ___
 
@@ -328,17 +543,17 @@ ___
 
 #### Defined in
 
-[api/census3/strategy.ts:73](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/census3/strategy.ts#L73)
+[api/census3/strategy.ts:73](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/census3/strategy.ts#L73)
 
 ___
 
 ### Census3SummaryToken
 
-Ƭ **Census3SummaryToken**: `Omit`\<[`Census3Token`](modules#census3token), ``"status"`` \| ``"size"``\> & \{ `synced`: `boolean`  }
+Ƭ **Census3SummaryToken**: `Omit`\<[`Census3Token`](sdk-reference#census3token), ``"status"`` \| ``"size"``\> & \{ `synced`: `boolean`  }
 
 #### Defined in
 
-[api/census3/token.ts:12](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/census3/token.ts#L12)
+[api/census3/token.ts:12](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/census3/token.ts#L12)
 
 ___
 
@@ -371,7 +586,7 @@ ___
 
 #### Defined in
 
-[api/census3/token.ts:14](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/census3/token.ts#L14)
+[api/census3/token.ts:14](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/census3/token.ts#L14)
 
 ___
 
@@ -390,7 +605,7 @@ ___
 
 #### Defined in
 
-[services/census.ts:42](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/services/census.ts#L42)
+[services/census.ts:42](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/services/census.ts#L42)
 
 ___
 
@@ -411,7 +626,7 @@ ___
 
 #### Defined in
 
-[services/census.ts:26](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/services/census.ts#L26)
+[services/census.ts:26](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/services/census.ts#L26)
 
 ___
 
@@ -435,7 +650,7 @@ ___
 
 #### Defined in
 
-[services/anonymous.ts:51](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/services/anonymous.ts#L51)
+[services/anonymous.ts:51](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/services/anonymous.ts#L51)
 
 ___
 
@@ -445,7 +660,7 @@ ___
 
 #### Defined in
 
-[services/chain.ts:14](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/services/chain.ts#L14)
+[services/chain.ts:14](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/services/chain.ts#L14)
 
 ___
 
@@ -465,7 +680,7 @@ ___
 
 #### Defined in
 
-[services/chain.ts:29](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/services/chain.ts#L29)
+[services/chain.ts:29](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/services/chain.ts#L29)
 
 ___
 
@@ -475,7 +690,7 @@ ___
 
 #### Defined in
 
-[services/chain.ts:15](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/services/chain.ts#L15)
+[services/chain.ts:15](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/services/chain.ts#L15)
 
 ___
 
@@ -492,13 +707,13 @@ Optional VocdoniSDKClient arguments
 | `api_url?` | `string` |
 | `electionId?` | `string` |
 | `env` | [`EnvOptions`](enums/EnvOptions) |
-| `faucet?` | `Partial`\<[`FaucetOptions`](modules#faucetoptions)\> |
+| `faucet?` | `Partial`\<[`FaucetOptions`](sdk-reference#faucetoptions)\> |
 | `tx_wait?` | `TxWaitOptions` |
 | `wallet?` | `Wallet` \| `Signer` |
 
 #### Defined in
 
-[client.ts:85](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/client.ts#L85)
+[client.ts:85](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/client.ts#L85)
 
 ___
 
@@ -518,7 +733,7 @@ ___
 
 #### Defined in
 
-[services/census.ts:56](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/services/census.ts#L56)
+[services/census.ts:56](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/services/census.ts#L56)
 
 ___
 
@@ -528,7 +743,7 @@ ___
 
 #### Defined in
 
-[services/election.ts:37](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/services/election.ts#L37)
+[services/election.ts:37](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/services/election.ts#L37)
 
 ___
 
@@ -538,7 +753,7 @@ ___
 
 #### Defined in
 
-[services/election.ts:50](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/services/election.ts#L50)
+[services/election.ts:50](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/services/election.ts#L50)
 
 ___
 
@@ -554,7 +769,7 @@ ___
 
 #### Defined in
 
-[types/client/account.ts:5](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/client/account.ts#L5)
+[types/client/account.ts:5](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/client/account.ts#L5)
 
 ___
 
@@ -564,7 +779,7 @@ ___
 
 #### Defined in
 
-[services/election.ts:36](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/services/election.ts#L36)
+[services/election.ts:36](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/services/election.ts#L36)
 
 ___
 
@@ -574,7 +789,7 @@ ___
 
 #### Defined in
 
-[types/election/election.ts:101](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/election/election.ts#L101)
+[types/election/election.ts:101](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/election/election.ts#L101)
 
 ___
 
@@ -584,7 +799,7 @@ ___
 
 #### Defined in
 
-[types/metadata/election.ts:44](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/metadata/election.ts#L44)
+[types/metadata/election.ts:44](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/metadata/election.ts#L44)
 
 ___
 
@@ -594,7 +809,7 @@ ___
 
 #### Defined in
 
-[services/faucet.ts:28](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/services/faucet.ts#L28)
+[services/faucet.ts:28](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/services/faucet.ts#L28)
 
 ___
 
@@ -611,17 +826,17 @@ ___
 
 #### Defined in
 
-[services/faucet.ts:23](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/services/faucet.ts#L23)
+[services/faucet.ts:23](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/services/faucet.ts#L23)
 
 ___
 
 ### HasAlreadyVotedOptions
 
-Ƭ **HasAlreadyVotedOptions**: `Partial`\<[`WalletOption`](modules.md#walletoption) & [`ElectionIdOption`](modules.md#electionidoption) & [`VoteIdOption`](modules#voteidoption)\>
+Ƭ **HasAlreadyVotedOptions**: `Partial`\<[`WalletOption`](sdk-reference.md#walletoption) & [`ElectionIdOption`](sdk-reference.md#electionidoption) & [`VoteIdOption`](sdk-reference#voteidoption)\>
 
 #### Defined in
 
-[types/client/account.ts:10](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/client/account.ts#L10)
+[types/client/account.ts:10](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/client/account.ts#L10)
 
 ___
 
@@ -631,7 +846,7 @@ ___
 
 #### Defined in
 
-[api/account.ts:17](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/account.ts#L17)
+[api/account.ts:17](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/account.ts#L17)
 
 ___
 
@@ -641,27 +856,27 @@ ___
 
 #### Defined in
 
-[types/election/budget.ts:21](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/election/budget.ts#L21)
+[types/election/budget.ts:21](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/election/budget.ts#L21)
 
 ___
 
 ### IsAbleToVoteOptions
 
-Ƭ **IsAbleToVoteOptions**: `Partial`\<[`WalletOption`](modules.md#walletoption) & [`ElectionIdOption`](modules.md#electionidoption) & [`VoteIdOption`](modules#voteidoption)\>
+Ƭ **IsAbleToVoteOptions**: `Partial`\<[`WalletOption`](sdk-reference.md#walletoption) & [`ElectionIdOption`](sdk-reference.md#electionidoption) & [`VoteIdOption`](sdk-reference#voteidoption)\>
 
 #### Defined in
 
-[types/client/account.ts:12](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/client/account.ts#L12)
+[types/client/account.ts:12](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/client/account.ts#L12)
 
 ___
 
 ### IsInCensusOptions
 
-Ƭ **IsInCensusOptions**: `Partial`\<[`WalletOption`](modules.md#walletoption) & [`ElectionIdOption`](modules#electionidoption)\>
+Ƭ **IsInCensusOptions**: `Partial`\<[`WalletOption`](sdk-reference.md#walletoption) & [`ElectionIdOption`](sdk-reference#electionidoption)\>
 
 #### Defined in
 
-[types/client/account.ts:9](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/client/account.ts#L9)
+[types/client/account.ts:9](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/client/account.ts#L9)
 
 ___
 
@@ -671,27 +886,27 @@ ___
 
 #### Defined in
 
-[census3.ts:33](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/census3.ts#L33)
+[census3.ts:33](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/census3.ts#L33)
 
 ___
 
 ### SendTokensOptions
 
-Ƭ **SendTokensOptions**: `Partial`\<[`WalletOption`](modules#walletoption)\> & \{ `amount`: `number` ; `to`: `string`  }
+Ƭ **SendTokensOptions**: `Partial`\<[`WalletOption`](sdk-reference#walletoption)\> & \{ `amount`: `number` ; `to`: `string`  }
 
 #### Defined in
 
-[types/client/account.ts:8](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/client/account.ts#L8)
+[types/client/account.ts:8](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/client/account.ts#L8)
 
 ___
 
 ### Strategy
 
-Ƭ **Strategy**: [`Census3Strategy`](modules#census3strategy)
+Ƭ **Strategy**: [`Census3Strategy`](sdk-reference#census3strategy)
 
 #### Defined in
 
-[census3.ts:26](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/census3.ts#L26)
+[census3.ts:26](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/census3.ts#L26)
 
 ___
 
@@ -708,7 +923,7 @@ ___
 
 #### Defined in
 
-[census3.ts:27](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/census3.ts#L27)
+[census3.ts:27](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/census3.ts#L27)
 
 ___
 
@@ -720,22 +935,22 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `holders` | [`StrategyHolder`](modules#strategyholder)[] |
+| `holders` | [`StrategyHolder`](sdk-reference#strategyholder)[] |
 | `pagination` | `Census3Pagination` |
 
 #### Defined in
 
-[census3.ts:28](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/census3.ts#L28)
+[census3.ts:28](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/census3.ts#L28)
 
 ___
 
 ### StrategyToken
 
-Ƭ **StrategyToken**: [`Census3CreateStrategyToken`](modules#census3createstrategytoken)
+Ƭ **StrategyToken**: [`Census3CreateStrategyToken`](sdk-reference#census3createstrategytoken)
 
 #### Defined in
 
-[census3.ts:29](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/census3.ts#L29)
+[census3.ts:29](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/census3.ts#L29)
 
 ___
 
@@ -745,7 +960,7 @@ ___
 
 #### Defined in
 
-[census3.ts:31](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/census3.ts#L31)
+[census3.ts:31](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/census3.ts#L31)
 
 ___
 
@@ -755,27 +970,27 @@ ___
 
 #### Defined in
 
-[census3.ts:32](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/census3.ts#L32)
+[census3.ts:32](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/census3.ts#L32)
 
 ___
 
 ### Token
 
-Ƭ **Token**: `Omit`\<[`Census3Token`](modules#census3token), ``"tags"``\> & \{ `tags`: `string`[]  }
+Ƭ **Token**: `Omit`\<[`Census3Token`](sdk-reference#census3token), ``"tags"``\> & \{ `tags`: `string`[]  }
 
 #### Defined in
 
-[census3.ts:24](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/census3.ts#L24)
+[census3.ts:24](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/census3.ts#L24)
 
 ___
 
 ### TokenSummary
 
-Ƭ **TokenSummary**: `Omit`\<[`Census3SummaryToken`](modules#census3summarytoken), ``"tags"``\> & \{ `tags`: `string`[]  }
+Ƭ **TokenSummary**: `Omit`\<[`Census3SummaryToken`](sdk-reference#census3summarytoken), ``"tags"``\> & \{ `tags`: `string`[]  }
 
 #### Defined in
 
-[census3.ts:25](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/census3.ts#L25)
+[census3.ts:25](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/census3.ts#L25)
 
 ___
 
@@ -794,7 +1009,7 @@ Specify custom retry times and attempts when waiting for a transaction.
 
 #### Defined in
 
-[services/chain.ts:24](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/services/chain.ts#L24)
+[services/chain.ts:24](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/services/chain.ts#L24)
 
 ___
 
@@ -810,7 +1025,7 @@ ___
 
 #### Defined in
 
-[types/client/account.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/client/account.ts#L6)
+[types/client/account.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/client/account.ts#L6)
 
 ___
 
@@ -820,7 +1035,7 @@ ___
 
 #### Defined in
 
-[services/vote.ts:15](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/services/vote.ts#L15)
+[services/vote.ts:15](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/services/vote.ts#L15)
 
 ___
 
@@ -830,7 +1045,7 @@ ___
 
 #### Defined in
 
-[services/vote.ts:28](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/services/vote.ts#L28)
+[services/vote.ts:28](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/services/vote.ts#L28)
 
 ___
 
@@ -840,17 +1055,17 @@ ___
 
 #### Defined in
 
-[services/vote.ts:16](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/services/vote.ts#L16)
+[services/vote.ts:16](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/services/vote.ts#L16)
 
 ___
 
 ### VotesLeftCountOptions
 
-Ƭ **VotesLeftCountOptions**: `Partial`\<[`WalletOption`](modules.md#walletoption) & [`ElectionIdOption`](modules.md#electionidoption) & [`VoteIdOption`](modules#voteidoption)\>
+Ƭ **VotesLeftCountOptions**: `Partial`\<[`WalletOption`](sdk-reference.md#walletoption) & [`ElectionIdOption`](sdk-reference.md#electionidoption) & [`VoteIdOption`](sdk-reference#voteidoption)\>
 
 #### Defined in
 
-[types/client/account.ts:11](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/client/account.ts#L11)
+[types/client/account.ts:11](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/client/account.ts#L11)
 
 ___
 
@@ -866,7 +1081,7 @@ ___
 
 #### Defined in
 
-[types/client/account.ts:4](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/client/account.ts#L4)
+[types/client/account.ts:4](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/client/account.ts#L4)
 
 ___
 
@@ -888,7 +1103,7 @@ ___
 
 #### Defined in
 
-[services/anonymous.ts:23](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/services/anonymous.ts#L23)
+[services/anonymous.ts:23](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/services/anonymous.ts#L23)
 
 ## Variables
 
@@ -898,7 +1113,7 @@ ___
 
 #### Defined in
 
-[types/metadata/account.ts:67](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/metadata/account.ts#L67)
+[types/metadata/account.ts:67](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/metadata/account.ts#L67)
 
 ___
 
@@ -908,221 +1123,4 @@ ___
 
 #### Defined in
 
-[types/metadata/election.ts:140](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/metadata/election.ts#L140)
-
-## Functions
-
-### areEqualHexStrings
-
-▸ **areEqualHexStrings**(`hex1?`, `hex2?`): `boolean`
-
-Compares two hex strings checking if they're the same. It ensures both
-have hex prefix and are lowercase.
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `hex1?` | `string` |
-| `hex2?` | `string` |
-
-#### Returns
-
-`boolean`
-
-#### Defined in
-
-[util/common.ts:36](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/util/common.ts#L36)
-
-___
-
-### checkValidAccountMetadata
-
-▸ **checkValidAccountMetadata**(`accountMetadata`): [`AccountMetadata`](interfaces/AccountMetadata)
-
-Asserts that the given metadata is valid.
-Throws an exception if it is not.
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `accountMetadata` | [`AccountMetadata`](interfaces/AccountMetadata) |
-
-#### Returns
-
-[`AccountMetadata`](interfaces/AccountMetadata)
-
-#### Defined in
-
-[types/metadata/account.ts:8](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/metadata/account.ts#L8)
-
-___
-
-### checkValidElectionMetadata
-
-▸ **checkValidElectionMetadata**(`electionMetadata`): [`ElectionMetadata`](interfaces/ElectionMetadata)
-
-Asserts that the given metadata is valid.
-Throws an exception if it is not.
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `electionMetadata` | [`ElectionMetadata`](interfaces/ElectionMetadata) |
-
-#### Returns
-
-[`ElectionMetadata`](interfaces/ElectionMetadata)
-
-#### Defined in
-
-[types/metadata/election.ts:8](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/metadata/election.ts#L8)
-
-___
-
-### delay
-
-▸ **delay**(`ms`): `Promise`\<`unknown`\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `ms` | `any` |
-
-#### Returns
-
-`Promise`\<`unknown`\>
-
-#### Defined in
-
-[util/common.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/util/common.ts#L6)
-
-___
-
-### dotobject
-
-▸ **dotobject**(`obj`, `dot`): `any`
-
-Dot notation to object conversion. Takes any object as first argument and uses the string dot notation from the
-second argument (i.e. 'a.child.node') to access that given object value.
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `obj` | `any` | Object to be accessed by dot notation |
-| `dot` | `string` | Dot notation string to extract object data |
-
-#### Returns
-
-`any`
-
-Return the object data
-
-#### Defined in
-
-[util/common.ts:61](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/util/common.ts#L61)
-
-___
-
-### ensure0x
-
-▸ **ensure0x**(`value`): `string`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `value` | `string` |
-
-#### Returns
-
-`string`
-
-#### Defined in
-
-[util/common.ts:12](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/util/common.ts#L12)
-
-___
-
-### formatUnits
-
-▸ **formatUnits**(`value`, `decimals?`): `string`
-
-Returns a string representation of value formatted with decimals digits
-
-#### Parameters
-
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `value` | `BigNumberish` | `undefined` | The value in native BigInt |
-| `decimals` | `number` | `18` | The number of decimals |
-
-#### Returns
-
-`string`
-
-The formatted string
-
-#### Defined in
-
-[util/common.ts:49](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/util/common.ts#L49)
-
-___
-
-### getBytes
-
-▸ **getBytes**(`count`): `Uint8Array`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `count` | `number` |
-
-#### Returns
-
-`Uint8Array`
-
-#### Defined in
-
-[util/common.ts:16](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/util/common.ts#L16)
-
-___
-
-### getHex
-
-▸ **getHex**(): `string`
-
-Generates a random seed and returns a 32 byte keccak256 hash of it (starting with "0x")
-
-#### Returns
-
-`string`
-
-#### Defined in
-
-[util/common.ts:23](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/util/common.ts#L23)
-
-___
-
-### strip0x
-
-▸ **strip0x**(`value`): `string`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `value` | `string` |
-
-#### Returns
-
-`string`
-
-#### Defined in
-
-[util/common.ts:8](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/util/common.ts#L8)
+[types/metadata/election.ts:140](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/metadata/election.ts#L140)

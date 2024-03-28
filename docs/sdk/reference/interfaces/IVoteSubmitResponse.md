@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules) / IVoteSubmitResponse
+[@vocdoni/sdk](/sdk) / IVoteSubmitResponse
 
 # Interface: IVoteSubmitResponse
 
@@ -19,7 +19,7 @@ The hash of the transaction
 
 #### Defined in
 
-[api/vote.ts:14](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/vote.ts#L14)
+[api/vote.ts:14](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/vote.ts#L14)
 
 ___
 
@@ -31,4 +31,4 @@ The identifier of the vote, also called nullifier.
 
 #### Defined in
 
-[api/vote.ts:19](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/vote.ts#L19)
+[api/vote.ts:19](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/vote.ts#L19)

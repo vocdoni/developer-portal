@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules) / Tx
+[@vocdoni/sdk](/sdk) / Tx
 
 # Interface: Tx
 
@@ -17,7 +17,7 @@
 
 #### Defined in
 
-[api/chain/transactions.ts:4](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/chain/transactions.ts#L4)
+[api/chain/transactions.ts:4](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/chain/transactions.ts#L4)
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 #### Defined in
 
-[api/chain/transactions.ts:53](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/chain/transactions.ts#L53)
+[api/chain/transactions.ts:53](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/chain/transactions.ts#L53)

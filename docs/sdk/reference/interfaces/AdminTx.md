@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules) / AdminTx
+[@vocdoni/sdk](/sdk) / AdminTx
 
 # Interface: AdminTx
 
@@ -24,7 +24,7 @@
 
 #### Defined in
 
-[api/chain/transactions.ts:92](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/chain/transactions.ts#L92)
+[api/chain/transactions.ts:92](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/chain/transactions.ts#L92)
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 #### Defined in
 
-[api/chain/transactions.ts:93](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/chain/transactions.ts#L93)
+[api/chain/transactions.ts:93](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/chain/transactions.ts#L93)
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 #### Defined in
 
-[api/chain/transactions.ts:94](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/chain/transactions.ts#L94)
+[api/chain/transactions.ts:94](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/chain/transactions.ts#L94)
 
 ___
 
@@ -54,7 +54,7 @@ ___
 
 #### Defined in
 
-[api/chain/transactions.ts:95](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/chain/transactions.ts#L95)
+[api/chain/transactions.ts:95](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/chain/transactions.ts#L95)
 
 ___
 
@@ -64,7 +64,7 @@ ___
 
 #### Defined in
 
-[api/chain/transactions.ts:98](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/chain/transactions.ts#L98)
+[api/chain/transactions.ts:98](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/chain/transactions.ts#L98)
 
 ___
 
@@ -74,7 +74,7 @@ ___
 
 #### Defined in
 
-[api/chain/transactions.ts:96](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/chain/transactions.ts#L96)
+[api/chain/transactions.ts:96](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/chain/transactions.ts#L96)
 
 ___
 
@@ -84,7 +84,7 @@ ___
 
 #### Defined in
 
-[api/chain/transactions.ts:91](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/chain/transactions.ts#L91)
+[api/chain/transactions.ts:91](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/chain/transactions.ts#L91)
 
 ___
 
@@ -94,7 +94,7 @@ ___
 
 #### Defined in
 
-[api/chain/transactions.ts:97](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/chain/transactions.ts#L97)
+[api/chain/transactions.ts:97](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/chain/transactions.ts#L97)
 
 ___
 
@@ -104,4 +104,4 @@ ___
 
 #### Defined in
 
-[api/chain/transactions.ts:90](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/chain/transactions.ts#L90)
+[api/chain/transactions.ts:90](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/chain/transactions.ts#L90)

@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules) / IElectionSummary
+[@vocdoni/sdk](/sdk) / IElectionSummary
 
 # Interface: IElectionSummary
 
@@ -24,7 +24,7 @@ The id of the election
 
 #### Defined in
 
-[api/election.ts:322](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/election.ts#L322)
+[api/election.ts:322](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/election.ts#L322)
 
 ___
 
@@ -36,7 +36,7 @@ The end date of the election
 
 #### Defined in
 
-[api/election.ts:342](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/election.ts#L342)
+[api/election.ts:342](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/election.ts#L342)
 
 ___
 
@@ -48,7 +48,7 @@ If the election has the final results
 
 #### Defined in
 
-[api/election.ts:352](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/election.ts#L352)
+[api/election.ts:352](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/election.ts#L352)
 
 ___
 
@@ -60,7 +60,7 @@ The id of the organization
 
 #### Defined in
 
-[api/election.ts:327](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/election.ts#L327)
+[api/election.ts:327](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/election.ts#L327)
 
 ___
 
@@ -72,7 +72,7 @@ The start date of the election
 
 #### Defined in
 
-[api/election.ts:337](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/election.ts#L337)
+[api/election.ts:337](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/election.ts#L337)
 
 ___
 
@@ -84,7 +84,7 @@ The status of the election
 
 #### Defined in
 
-[api/election.ts:332](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/election.ts#L332)
+[api/election.ts:332](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/election.ts#L332)
 
 ___
 
@@ -96,4 +96,4 @@ The number of votes of the election
 
 #### Defined in
 
-[api/election.ts:347](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/election.ts#L347)
+[api/election.ts:347](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/election.ts#L347)

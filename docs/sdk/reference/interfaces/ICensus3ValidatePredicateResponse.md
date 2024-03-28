@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules) / ICensus3ValidatePredicateResponse
+[@vocdoni/sdk](/sdk) / ICensus3ValidatePredicateResponse
 
 # Interface: ICensus3ValidatePredicateResponse
 
@@ -24,4 +24,4 @@ The parsed version of the predicate
 
 #### Defined in
 
-[api/census3/strategy.ts:252](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/census3/strategy.ts#L252)
+[api/census3/strategy.ts:252](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/census3/strategy.ts#L252)

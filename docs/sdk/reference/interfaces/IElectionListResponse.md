@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules) / IElectionListResponse
+[@vocdoni/sdk](/sdk) / IElectionListResponse
 
 # Interface: IElectionListResponse
 
@@ -18,4 +18,4 @@ List of election summaries
 
 #### Defined in
 
-[api/election.ts:359](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/election.ts#L359)
+[api/election.ts:359](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/election.ts#L359)

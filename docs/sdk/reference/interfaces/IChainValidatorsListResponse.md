@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules) / IChainValidatorsListResponse
+[@vocdoni/sdk](/sdk) / IChainValidatorsListResponse
 
 # Interface: IChainValidatorsListResponse
 
@@ -18,4 +18,4 @@ The list of validators
 
 #### Defined in
 
-[api/chain.ts:351](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/chain.ts#L351)
+[api/chain.ts:351](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/chain.ts#L351)

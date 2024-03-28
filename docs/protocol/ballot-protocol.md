@@ -22,7 +22,7 @@ The protocol is composed by a set of numeric and boolean variables that restrict
 - `uint8 maxCount`
 Max number of fields per ballot. 1 <= maxCount <= 100.
 - `uint8 maxValue`
-Determines the acceptable maximum value for all fields. If `maxValue` is set to `0`, the results are aggregated.
+Determines the acceptable maximum value for all fields. If `maxValue` is set to 0, the results are aggregated.
 - `uint8 minValue`
 Determines the acceptable minimum value for all fields.
 - `bool uniqueValues`
@@ -37,9 +37,9 @@ Minimum limit on the total sum of all ballot fields' values (if applicable).
 The exponent that will be used to compute the "cost" of the field values.
 - `totalCost = Σ (value[i] ^ costExponent) <= maxTotalCost`
 - `costExponent` is represented as `exp * 10000` so:
-- 0 => 0.0000
-- 10000 => 1.0000
-- 65535 => 6.5535
+  - 0 => 0.0000
+  - 10000 => 1.0000
+  - 65535 => 6.5535
 
 ![https://blog.vocdoni.io/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fpapyrus_images%2Fb8d920f2d64cf347ff2f47f7e34a3340.png&w=1920&q=75](https://blog.vocdoni.io/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fpapyrus_images%2Fb8d920f2d64cf347ff2f47f7e34a3340.png&w=1920&q=75)
 

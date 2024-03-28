@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules) / CensusAPI
+[@vocdoni/sdk](/sdk) / CensusAPI
 
 # Class: CensusAPI
 
@@ -10,10 +10,6 @@
 
 ## Table of contents
 
-### Constructors
-
-- [constructor](CensusAPI#constructor)
-
 ### Methods
 
 - [add](CensusAPI#add)
@@ -21,33 +17,11 @@
 - [delete](CensusAPI#delete)
 - [export](CensusAPI#export)
 - [import](CensusAPI#import)
-- [isApiError](CensusAPI#isapierror)
-- [isUndefinedError](CensusAPI#isundefinederror)
 - [proof](CensusAPI#proof)
 - [publish](CensusAPI#publish)
 - [size](CensusAPI#size)
 - [type](CensusAPI#type)
 - [weight](CensusAPI#weight)
-
-## Constructors
-
-### constructor
-
-• **new CensusAPI**(): [`CensusAPI`](CensusAPI)
-
-Cannot be constructed.
-
-#### Returns
-
-[`CensusAPI`](CensusAPI)
-
-#### Overrides
-
-API.constructor
-
-#### Defined in
-
-[api/census.ts:121](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/census.ts#L121)
 
 ## Methods
 
@@ -72,7 +46,7 @@ Adds participants to a census
 
 #### Defined in
 
-[api/census.ts:153](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/census.ts#L153)
+[api/census.ts:151](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/census.ts#L151)
 
 ___
 
@@ -96,7 +70,7 @@ Create's a new census in the API.
 
 #### Defined in
 
-[api/census.ts:133](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/census.ts#L133)
+[api/census.ts:132](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/census.ts#L132)
 
 ___
 
@@ -122,7 +96,7 @@ on success
 
 #### Defined in
 
-[api/census.ts:275](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/census.ts#L275)
+[api/census.ts:273](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/census.ts#L273)
 
 ___
 
@@ -148,7 +122,7 @@ on success
 
 #### Defined in
 
-[api/census.ts:223](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/census.ts#L223)
+[api/census.ts:221](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/census.ts#L221)
 
 ___
 
@@ -177,56 +151,7 @@ on success
 
 #### Defined in
 
-[api/census.ts:245](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/census.ts#L245)
-
-___
-
-### isApiError
-
-▸ **isApiError**(`error`): `never`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `error` | `AxiosError`\<`unknown`, `any`\> |
-
-#### Returns
-
-`never`
-
-#### Inherited from
-
-API.isApiError
-
-#### Defined in
-
-[api/api.ts:21](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/api.ts#L21)
-
-___
-
-### isUndefinedError
-
-▸ **isUndefinedError**(`error`, `message?`): `never`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `error` | `AxiosError`\<`unknown`, `any`\> |
-| `message?` | `string` |
-
-#### Returns
-
-`never`
-
-#### Inherited from
-
-API.isUndefinedError
-
-#### Defined in
-
-[api/api.ts:64](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/api.ts#L64)
+[api/census.ts:243](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/census.ts#L243)
 
 ___
 
@@ -252,7 +177,7 @@ on success
 
 #### Defined in
 
-[api/census.ts:208](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/census.ts#L208)
+[api/census.ts:206](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/census.ts#L206)
 
 ___
 
@@ -278,7 +203,7 @@ on success
 
 #### Defined in
 
-[api/census.ts:189](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/census.ts#L189)
+[api/census.ts:187](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/census.ts#L187)
 
 ___
 
@@ -301,7 +226,7 @@ Returns the size of a given census
 
 #### Defined in
 
-[api/census.ts:293](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/census.ts#L293)
+[api/census.ts:290](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/census.ts#L290)
 
 ___
 
@@ -324,7 +249,7 @@ Returns the type of given census
 
 #### Defined in
 
-[api/census.ts:321](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/census.ts#L321)
+[api/census.ts:316](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/census.ts#L316)
 
 ___
 
@@ -347,4 +272,4 @@ Returns the weight of a given census
 
 #### Defined in
 
-[api/census.ts:307](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/census.ts#L307)
+[api/census.ts:303](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/census.ts#L303)

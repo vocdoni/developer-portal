@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules) / AccountService
+[@vocdoni/sdk](/sdk) / AccountService
 
 # Class: AccountService
 
@@ -18,16 +18,16 @@
 
 - [constructor](AccountService#constructor)
 
-### Properties
-
-- [chainService](AccountService#chainservice)
-- [url](AccountService#url)
-
 ### Methods
 
 - [fetchAccountInfo](AccountService#fetchaccountinfo)
 - [setInfo](AccountService#setinfo)
 - [signTransaction](AccountService#signtransaction)
+
+### Properties
+
+- [chainService](AccountService#chainservice)
+- [url](AccountService#url)
 
 ## Constructors
 
@@ -49,45 +49,17 @@ Instantiate the election service.
 
 #### Overrides
 
-[Service](Service.md).[constructor](Service#constructor)
+Service.constructor
 
 #### Defined in
 
-[services/account.ts:45](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/services/account.ts#L45)
-
-## Properties
-
-### chainService
-
-• **chainService**: [`ChainService`](ChainService)
-
-#### Implementation of
-
-AccountServiceProperties.chainService
-
-#### Defined in
-
-[services/account.ts:38](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/services/account.ts#L38)
-
-___
-
-### url
-
-• **url**: `string`
-
-#### Inherited from
-
-[Service](Service.md).[url](Service#url)
-
-#### Defined in
-
-[services/service.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/services/service.ts#L6)
+[services/account.ts:45](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/services/account.ts#L45)
 
 ## Methods
 
 ### fetchAccountInfo
 
-▸ **fetchAccountInfo**(`address`): `Promise`\<[`AccountData`](../modules.md#accountdata) \| [`ArchivedAccountData`](../modules#archivedaccountdata)\>
+▸ **fetchAccountInfo**(`address`): `Promise`\<[`AccountData`](../sdk-reference.md#accountdata) \| [`ArchivedAccountData`](../sdk-reference#archivedaccountdata)\>
 
 Fetches account information.
 
@@ -99,11 +71,11 @@ Fetches account information.
 
 #### Returns
 
-`Promise`\<[`AccountData`](../modules.md#accountdata) \| [`ArchivedAccountData`](../modules#archivedaccountdata)\>
+`Promise`\<[`AccountData`](../sdk-reference.md#accountdata) \| [`ArchivedAccountData`](../sdk-reference#archivedaccountdata)\>
 
 #### Defined in
 
-[services/account.ts:56](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/services/account.ts#L56)
+[services/account.ts:55](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/services/account.ts#L55)
 
 ___
 
@@ -128,7 +100,7 @@ The transaction hash
 
 #### Defined in
 
-[services/account.ts:96](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/services/account.ts#L96)
+[services/account.ts:95](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/services/account.ts#L95)
 
 ___
 
@@ -150,4 +122,32 @@ ___
 
 #### Defined in
 
-[services/account.ts:101](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/services/account.ts#L101)
+[services/account.ts:100](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/services/account.ts#L100)
+
+## Properties
+
+### chainService
+
+• **chainService**: [`ChainService`](ChainService)
+
+#### Implementation of
+
+AccountServiceProperties.chainService
+
+#### Defined in
+
+[services/account.ts:38](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/services/account.ts#L38)
+
+___
+
+### url
+
+• **url**: `string`
+
+#### Inherited from
+
+[Service](Service.md).[url](Service#url)
+
+#### Defined in
+
+[services/service.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/services/service.ts#L6)

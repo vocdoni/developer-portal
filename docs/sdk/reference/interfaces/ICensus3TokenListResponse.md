@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules) / ICensus3TokenListResponse
+[@vocdoni/sdk](/sdk) / ICensus3TokenListResponse
 
 # Interface: ICensus3TokenListResponse
 
@@ -18,10 +18,10 @@
 
 ### tokens
 
-• **tokens**: [`Census3SummaryToken`](../modules#census3summarytoken)[]
+• **tokens**: [`Census3SummaryToken`](../sdk-reference#census3summarytoken)[]
 
 The list of the tokens
 
 #### Defined in
 
-[api/census3/token.ts:110](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/census3/token.ts#L110)
+[api/census3/token.ts:110](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/census3/token.ts#L110)

@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules) / Census3CensusAPI
+[@vocdoni/sdk](/sdk) / Census3CensusAPI
 
 # Class: Census3CensusAPI
 
@@ -10,39 +10,12 @@
 
 ## Table of contents
 
-### Constructors
-
-- [constructor](Census3CensusAPI#constructor)
-
 ### Methods
 
 - [census](Census3CensusAPI#census)
 - [create](Census3CensusAPI#create)
-- [isApiError](Census3CensusAPI#isapierror)
-- [isUndefinedError](Census3CensusAPI#isundefinederror)
 - [list](Census3CensusAPI#list)
 - [queue](Census3CensusAPI#queue)
-- [serializePagination](Census3CensusAPI#serializepagination)
-
-## Constructors
-
-### constructor
-
-• **new Census3CensusAPI**(): [`Census3CensusAPI`](Census3CensusAPI)
-
-Cannot be constructed.
-
-#### Returns
-
-[`Census3CensusAPI`](Census3CensusAPI)
-
-#### Overrides
-
-Census3API.constructor
-
-#### Defined in
-
-[api/census3/census.ts:96](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/census3/census.ts#L96)
 
 ## Methods
 
@@ -65,7 +38,7 @@ Returns the information of the census
 
 #### Defined in
 
-[api/census3/census.ts:121](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/census3/census.ts#L121)
+[api/census3/census.ts:119](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/census3/census.ts#L119)
 
 ___
 
@@ -91,56 +64,7 @@ The queue identifier
 
 #### Defined in
 
-[api/census3/census.ts:150](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/census3/census.ts#L150)
-
-___
-
-### isApiError
-
-▸ **isApiError**(`error`): `never`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `error` | `AxiosError`\<`unknown`, `any`\> |
-
-#### Returns
-
-`never`
-
-#### Inherited from
-
-Census3API.isApiError
-
-#### Defined in
-
-[api/census3/api.ts:101](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/census3/api.ts#L101)
-
-___
-
-### isUndefinedError
-
-▸ **isUndefinedError**(`error`, `message?`): `never`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `error` | `AxiosError`\<`unknown`, `any`\> |
-| `message?` | `string` |
-
-#### Returns
-
-`never`
-
-#### Inherited from
-
-Census3API.isUndefinedError
-
-#### Defined in
-
-[api/api.ts:64](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/api.ts#L64)
+[api/census3/census.ts:147](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/census3/census.ts#L147)
 
 ___
 
@@ -163,7 +87,7 @@ Fetches list of census based on given strategy
 
 #### Defined in
 
-[api/census3/census.ts:107](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/census3/census.ts#L107)
+[api/census3/census.ts:106](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/census3/census.ts#L106)
 
 ___
 
@@ -186,28 +110,4 @@ Returns the information of the census queue
 
 #### Defined in
 
-[api/census3/census.ts:135](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/census3/census.ts#L135)
-
-___
-
-### serializePagination
-
-▸ **serializePagination**(`pagination?`): `string`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `pagination?` | `Census3Pagination` |
-
-#### Returns
-
-`string`
-
-#### Inherited from
-
-Census3API.serializePagination
-
-#### Defined in
-
-[api/census3/api.ts:92](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/census3/api.ts#L92)
+[api/census3/census.ts:132](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/census3/census.ts#L132)

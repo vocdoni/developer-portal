@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules) / ElectionStatusReady
+[@vocdoni/sdk](/sdk) / ElectionStatusReady
 
 # Enumeration: ElectionStatusReady
 
@@ -16,4 +16,4 @@
 
 #### Defined in
 
-[types/election/published.ts:21](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/election/published.ts#L21)
+[types/election/published.ts:21](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/election/published.ts#L21)

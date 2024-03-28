@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules) / Service
+[@vocdoni/sdk](/sdk) / Service
 
 # Class: Service
 
@@ -30,29 +30,9 @@
 
 ## Table of contents
 
-### Constructors
-
-- [constructor](Service#constructor)
-
 ### Properties
 
 - [url](Service#url)
-
-## Constructors
-
-### constructor
-
-• **new Service**(): [`Service`](Service)
-
-Cannot be constructed.
-
-#### Returns
-
-[`Service`](Service)
-
-#### Defined in
-
-[services/service.ts:10](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/services/service.ts#L10)
 
 ## Properties
 
@@ -66,4 +46,4 @@ Cannot be constructed.
 
 #### Defined in
 
-[services/service.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/services/service.ts#L6)
+[services/service.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/services/service.ts#L6)

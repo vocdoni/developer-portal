@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules) / ICensus3TokenHolderResponse
+[@vocdoni/sdk](/sdk) / ICensus3TokenHolderResponse
 
 # Interface: ICensus3TokenHolderResponse
 
@@ -18,4 +18,4 @@ The balance of the holder
 
 #### Defined in
 
-[api/census3/token.ts:117](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/census3/token.ts#L117)
+[api/census3/token.ts:117](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/census3/token.ts#L117)

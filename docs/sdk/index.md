@@ -52,7 +52,7 @@ This SDK is licensed under the [GNU Affero General Public License v3.0][license]
 [builddocs]: https://github.com/vocdoni/vocdoni-sdk/blob/main/docs/README.md
 [chat]: https://chat.vocdoni.io
 [esm-gif]: https://raw.githubusercontent.com/vocdoni/vocdoni-sdk/main/examples/esm/esm.gif
-[reference]: /sdk/reference/modules
+[reference]: /sdk/reference/sdk-reference
 [tutorial]: /sdk/tutorial
 [vocdoni-api]: /vocdoni-api/vocdoni-api
 [license]: https://github.com/vocdoni/vocdoni-sdk/blob/main/LICENSE

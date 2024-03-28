@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules) / IBlockTransactionsResponse
+[@vocdoni/sdk](/sdk) / IBlockTransactionsResponse
 
 # Interface: IBlockTransactionsResponse
 
@@ -18,7 +18,7 @@
 
 #### Defined in
 
-[api/chain.ts:312](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/chain.ts#L312)
+[api/chain.ts:312](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/chain.ts#L312)
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 #### Defined in
 
-[api/chain.ts:313](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/chain.ts#L313)
+[api/chain.ts:313](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/chain.ts#L313)
 
 ___
 
@@ -38,4 +38,4 @@ ___
 
 #### Defined in
 
-[api/chain.ts:314](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/chain.ts#L314)
+[api/chain.ts:314](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/chain.ts#L314)

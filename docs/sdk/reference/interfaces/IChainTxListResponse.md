@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules) / IChainTxListResponse
+[@vocdoni/sdk](/sdk) / IChainTxListResponse
 
 # Interface: IChainTxListResponse
 
@@ -18,4 +18,4 @@ List of transactions reference
 
 #### Defined in
 
-[api/chain.ts:234](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/chain.ts#L234)
+[api/chain.ts:234](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/chain.ts#L234)

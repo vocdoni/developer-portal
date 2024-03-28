@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules) / SetTransactionCostsTx
+[@vocdoni/sdk](/sdk) / SetTransactionCostsTx
 
 # Interface: SetTransactionCostsTx
 
@@ -18,7 +18,7 @@
 
 #### Defined in
 
-[api/chain/transactions.ts:143](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/chain/transactions.ts#L143)
+[api/chain/transactions.ts:143](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/chain/transactions.ts#L143)
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 #### Defined in
 
-[api/chain/transactions.ts:142](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/chain/transactions.ts#L142)
+[api/chain/transactions.ts:142](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/chain/transactions.ts#L142)
 
 ___
 
@@ -38,4 +38,4 @@ ___
 
 #### Defined in
 
-[api/chain/transactions.ts:144](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/chain/transactions.ts#L144)
+[api/chain/transactions.ts:144](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/chain/transactions.ts#L144)

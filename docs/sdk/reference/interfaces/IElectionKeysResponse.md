@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules) / IElectionKeysResponse
+[@vocdoni/sdk](/sdk) / IElectionKeysResponse
 
 # Interface: IElectionKeysResponse
 
@@ -17,7 +17,7 @@
 
 #### Defined in
 
-[api/election.ts:267](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/election.ts#L267)
+[api/election.ts:267](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/election.ts#L267)
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 #### Defined in
 
-[api/election.ts:266](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/election.ts#L266)
+[api/election.ts:266](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/election.ts#L266)

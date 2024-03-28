@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules) / Vote
+[@vocdoni/sdk](/sdk) / Vote
 
 # Class: Vote
 
@@ -14,17 +14,43 @@ Represents a vote
 
 ## Table of contents
 
+### Accessors
+
+- [votes](Vote#votes)
+
 ### Constructors
 
 - [constructor](Vote#constructor)
 
-### Properties
+## Accessors
 
-- [\_votes](Vote.md#_votes)
+### votes
 
-### Accessors
+• `get` **votes**(): (`number` \| `bigint`)[]
 
-- [votes](Vote#votes)
+#### Returns
+
+(`number` \| `bigint`)[]
+
+#### Defined in
+
+[types/vote/vote.ts:16](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/vote/vote.ts#L16)
+
+• `set` **votes**(`value`): `void`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | (`number` \| `bigint`)[] |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+[types/vote/vote.ts:20](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/vote/vote.ts#L20)
 
 ## Constructors
 
@@ -46,44 +72,4 @@ Constructs a vote
 
 #### Defined in
 
-[types/vote/vote.ts:12](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/vote/vote.ts#L12)
-
-## Properties
-
-### \_votes
-
-• `Private` **\_votes**: (`number` \| `bigint`)[]
-
-#### Defined in
-
-[types/vote/vote.ts:5](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/vote/vote.ts#L5)
-
-## Accessors
-
-### votes
-
-• `get` **votes**(): (`number` \| `bigint`)[]
-
-#### Returns
-
-(`number` \| `bigint`)[]
-
-#### Defined in
-
-[types/vote/vote.ts:16](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/vote/vote.ts#L16)
-
-• `set` **votes**(`value`): `void`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `value` | (`number` \| `bigint`)[] |
-
-#### Returns
-
-`void`
-
-#### Defined in
-
-[types/vote/vote.ts:20](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/vote/vote.ts#L20)
+[types/vote/vote.ts:12](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/vote/vote.ts#L12)

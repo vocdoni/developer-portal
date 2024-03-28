@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules) / ICensus3ServiceInfoResponse
+[@vocdoni/sdk](/sdk) / ICensus3ServiceInfoResponse
 
 # Interface: ICensus3ServiceInfoResponse
 
@@ -18,4 +18,4 @@ The list of supported chains
 
 #### Defined in
 
-[api/census3/service.ts:29](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/census3/service.ts#L29)
+[api/census3/service.ts:29](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/census3/service.ts#L29)

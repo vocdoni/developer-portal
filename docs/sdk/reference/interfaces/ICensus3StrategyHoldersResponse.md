@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules) / ICensus3StrategyHoldersResponse
+[@vocdoni/sdk](/sdk) / ICensus3StrategyHoldersResponse
 
 # Interface: ICensus3StrategyHoldersResponse
 
@@ -28,4 +28,4 @@ The list of the strategy holders
 
 #### Defined in
 
-[api/census3/strategy.ts:36](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/census3/strategy.ts#L36)
+[api/census3/strategy.ts:36](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/census3/strategy.ts#L36)

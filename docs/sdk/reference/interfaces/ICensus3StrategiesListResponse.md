@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules) / ICensus3StrategiesListResponse
+[@vocdoni/sdk](/sdk) / ICensus3StrategiesListResponse
 
 # Interface: ICensus3StrategiesListResponse
 
@@ -18,10 +18,10 @@
 
 ### strategies
 
-• **strategies**: [`Census3Strategy`](../modules#census3strategy)[]
+• **strategies**: [`Census3Strategy`](../sdk-reference#census3strategy)[]
 
 The list of the strategies identifiers
 
 #### Defined in
 
-[api/census3/strategy.ts:22](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/census3/strategy.ts#L22)
+[api/census3/strategy.ts:22](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/census3/strategy.ts#L22)

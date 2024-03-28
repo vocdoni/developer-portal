@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules) / VoteAPI
+[@vocdoni/sdk](/sdk) / VoteAPI
 
 # Class: VoteAPI
 
@@ -10,37 +10,11 @@
 
 ## Table of contents
 
-### Constructors
-
-- [constructor](VoteAPI#constructor)
-
 ### Methods
 
 - [info](VoteAPI#info)
-- [isApiError](VoteAPI#isapierror)
-- [isUndefinedError](VoteAPI#isundefinederror)
 - [submit](VoteAPI#submit)
 - [verify](VoteAPI#verify)
-
-## Constructors
-
-### constructor
-
-• **new VoteAPI**(): [`VoteAPI`](VoteAPI)
-
-Cannot be constructed.
-
-#### Returns
-
-[`VoteAPI`](VoteAPI)
-
-#### Overrides
-
-API.constructor
-
-#### Defined in
-
-[api/vote.ts:78](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/vote.ts#L78)
 
 ## Methods
 
@@ -63,56 +37,7 @@ Vote info
 
 #### Defined in
 
-[api/vote.ts:105](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/vote.ts#L105)
-
-___
-
-### isApiError
-
-▸ **isApiError**(`error`): `never`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `error` | `AxiosError`\<`unknown`, `any`\> |
-
-#### Returns
-
-`never`
-
-#### Inherited from
-
-API.isApiError
-
-#### Defined in
-
-[api/api.ts:21](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/api.ts#L21)
-
-___
-
-### isUndefinedError
-
-▸ **isUndefinedError**(`error`, `message?`): `never`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `error` | `AxiosError`\<`unknown`, `any`\> |
-| `message?` | `string` |
-
-#### Returns
-
-`never`
-
-#### Inherited from
-
-API.isUndefinedError
-
-#### Defined in
-
-[api/api.ts:64](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/api.ts#L64)
+[api/vote.ts:103](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/vote.ts#L103)
 
 ___
 
@@ -135,7 +60,7 @@ Voting
 
 #### Defined in
 
-[api/vote.ts:90](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/vote.ts#L90)
+[api/vote.ts:89](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/vote.ts#L89)
 
 ___
 
@@ -161,4 +86,4 @@ Return true if response has status 200
 
 #### Defined in
 
-[api/vote.ts:121](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/vote.ts#L121)
+[api/vote.ts:119](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/vote.ts#L119)

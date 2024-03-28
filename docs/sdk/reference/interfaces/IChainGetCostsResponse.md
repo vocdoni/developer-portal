@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules) / IChainGetCostsResponse
+[@vocdoni/sdk](/sdk) / IChainGetCostsResponse
 
 # Interface: IChainGetCostsResponse
 
@@ -20,7 +20,7 @@ The base price.
 
 #### Defined in
 
-[api/chain.ts:97](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/chain.ts#L97)
+[api/chain.ts:97](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/chain.ts#L97)
 
 ___
 
@@ -32,7 +32,7 @@ The capacity of the chain.
 
 #### Defined in
 
-[api/chain.ts:102](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/chain.ts#L102)
+[api/chain.ts:102](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/chain.ts#L102)
 
 ___
 
@@ -56,4 +56,4 @@ The factors.
 
 #### Defined in
 
-[api/chain.ts:107](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/chain.ts#L107)
+[api/chain.ts:107](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/chain.ts#L107)

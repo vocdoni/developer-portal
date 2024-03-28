@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules) / IAccountsListResponse
+[@vocdoni/sdk](/sdk) / IAccountsListResponse
 
 # Interface: IAccountsListResponse
 
@@ -12,10 +12,10 @@
 
 ### accounts
 
-• **accounts**: [`IAccountSummary`](../modules#iaccountsummary)[]
+• **accounts**: [`IAccountSummary`](../sdk-reference#iaccountsummary)[]
 
 List of accounts
 
 #### Defined in
 
-[api/account.ts:88](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/account.ts#L88)
+[api/account.ts:88](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/account.ts#L88)

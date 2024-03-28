@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules) / ICensus3StrategyHoldersResponsePaginated
+[@vocdoni/sdk](/sdk) / ICensus3StrategyHoldersResponsePaginated
 
 # Interface: ICensus3StrategyHoldersResponsePaginated
 
@@ -33,7 +33,7 @@ The list of the strategy holders
 
 #### Defined in
 
-[api/census3/strategy.ts:36](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/census3/strategy.ts#L36)
+[api/census3/strategy.ts:36](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/census3/strategy.ts#L36)
 
 ___
 
@@ -45,4 +45,4 @@ The pagination information
 
 #### Defined in
 
-[api/census3/strategy.ts:43](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/census3/strategy.ts#L43)
+[api/census3/strategy.ts:43](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/census3/strategy.ts#L43)

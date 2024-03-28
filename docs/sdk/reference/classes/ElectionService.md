@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules) / ElectionService
+[@vocdoni/sdk](/sdk) / ElectionService
 
 # Class: ElectionService
 
@@ -18,19 +18,9 @@
 
 - [constructor](ElectionService#constructor)
 
-### Properties
-
-- [censusService](ElectionService#censusservice)
-- [chainService](ElectionService#chainservice)
-- [url](ElectionService#url)
-
 ### Methods
 
-- [buildCensus](ElectionService#buildcensus)
-- [buildPublishedCensus](ElectionService#buildpublishedcensus)
-- [calculateChoiceResults](ElectionService#calculatechoiceresults)
 - [calculateElectionCost](ElectionService#calculateelectioncost)
-- [calculateMultichoiceAbstains](ElectionService#calculatemultichoiceabstains)
 - [create](ElectionService#create)
 - [estimateElectionCost](ElectionService#estimateelectioncost)
 - [fetchElection](ElectionService#fetchelection)
@@ -40,6 +30,12 @@
 - [keys](ElectionService#keys)
 - [nextElectionId](ElectionService#nextelectionid)
 - [signTransaction](ElectionService#signtransaction)
+
+### Properties
+
+- [censusService](ElectionService#censusservice)
+- [chainService](ElectionService#chainservice)
+- [url](ElectionService#url)
 
 ## Constructors
 
@@ -61,118 +57,13 @@ Instantiate the election service.
 
 #### Overrides
 
-[Service](Service.md).[constructor](Service#constructor)
+Service.constructor
 
 #### Defined in
 
-[services/election.ts:69](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/services/election.ts#L69)
-
-## Properties
-
-### censusService
-
-• **censusService**: [`CensusService`](CensusService)
-
-#### Implementation of
-
-ElectionServiceProperties.censusService
-
-#### Defined in
-
-[services/election.ts:61](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/services/election.ts#L61)
-
-___
-
-### chainService
-
-• **chainService**: [`ChainService`](ChainService)
-
-#### Implementation of
-
-ElectionServiceProperties.chainService
-
-#### Defined in
-
-[services/election.ts:62](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/services/election.ts#L62)
-
-___
-
-### url
-
-• **url**: `string`
-
-#### Inherited from
-
-[Service](Service.md).[url](Service#url)
-
-#### Defined in
-
-[services/service.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/services/service.ts#L6)
+[services/election.ts:69](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/services/election.ts#L69)
 
 ## Methods
-
-### buildCensus
-
-▸ **buildCensus**(`electionInfo`): `Promise`\<[`PublishedCensus`](PublishedCensus) \| `ArchivedCensus`\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `electionInfo` | `any` |
-
-#### Returns
-
-`Promise`\<[`PublishedCensus`](PublishedCensus) \| `ArchivedCensus`\>
-
-#### Defined in
-
-[services/election.ts:100](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/services/election.ts#L100)
-
-___
-
-### buildPublishedCensus
-
-▸ **buildPublishedCensus**(`electionInfo`): `Promise`\<[`PublishedCensus`](PublishedCensus)\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `electionInfo` | `any` |
-
-#### Returns
-
-`Promise`\<[`PublishedCensus`](PublishedCensus)\>
-
-#### Defined in
-
-[services/election.ts:84](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/services/election.ts#L84)
-
-___
-
-### calculateChoiceResults
-
-▸ **calculateChoiceResults**(`electionType`, `result`, `qIndex`, `cIndex`): `any`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `electionType` | `any` |
-| `result` | `any` |
-| `qIndex` | `any` |
-| `cIndex` | `any` |
-
-#### Returns
-
-`any`
-
-#### Defined in
-
-[services/election.ts:180](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/services/election.ts#L180)
-
-___
 
 ### calculateElectionCost
 
@@ -194,28 +85,7 @@ The cost in tokens.
 
 #### Defined in
 
-[services/election.ts:338](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/services/election.ts#L338)
-
-___
-
-### calculateMultichoiceAbstains
-
-▸ **calculateMultichoiceAbstains**(`electionType`, `result`): `string`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `electionType` | `any` |
-| `result` | `any` |
-
-#### Returns
-
-`string`
-
-#### Defined in
-
-[services/election.ts:203](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/services/election.ts#L203)
+[services/election.ts:336](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/services/election.ts#L336)
 
 ___
 
@@ -240,7 +110,7 @@ The created election information
 
 #### Defined in
 
-[services/election.ts:257](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/services/election.ts#L257)
+[services/election.ts:256](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/services/election.ts#L256)
 
 ___
 
@@ -264,7 +134,7 @@ The cost in tokens.
 
 #### Defined in
 
-[services/election.ts:325](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/services/election.ts#L325)
+[services/election.ts:323](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/services/election.ts#L323)
 
 ___
 
@@ -286,7 +156,7 @@ Fetches info about an election.
 
 #### Defined in
 
-[services/election.ts:115](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/services/election.ts#L115)
+[services/election.ts:114](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/services/election.ts#L114)
 
 ___
 
@@ -306,7 +176,7 @@ ___
 
 #### Defined in
 
-[services/election.ts:222](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/services/election.ts#L222)
+[services/election.ts:221](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/services/election.ts#L221)
 
 ___
 
@@ -331,7 +201,7 @@ The election salt
 
 #### Defined in
 
-[services/election.ts:288](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/services/election.ts#L288)
+[services/election.ts:287](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/services/election.ts#L287)
 
 ___
 
@@ -355,7 +225,7 @@ The numeric identifier
 
 #### Defined in
 
-[services/election.ts:302](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/services/election.ts#L302)
+[services/election.ts:301](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/services/election.ts#L301)
 
 ___
 
@@ -377,7 +247,7 @@ Fetches the encryption keys from the specified process.
 
 #### Defined in
 
-[services/election.ts:315](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/services/election.ts#L315)
+[services/election.ts:313](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/services/election.ts#L313)
 
 ___
 
@@ -402,7 +272,7 @@ The next election identifier
 
 #### Defined in
 
-[services/election.ts:269](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/services/election.ts#L269)
+[services/election.ts:268](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/services/election.ts#L268)
 
 ___
 
@@ -424,4 +294,46 @@ ___
 
 #### Defined in
 
-[services/election.ts:74](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/services/election.ts#L74)
+[services/election.ts:74](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/services/election.ts#L74)
+
+## Properties
+
+### censusService
+
+• **censusService**: [`CensusService`](CensusService)
+
+#### Implementation of
+
+ElectionServiceProperties.censusService
+
+#### Defined in
+
+[services/election.ts:61](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/services/election.ts#L61)
+
+___
+
+### chainService
+
+• **chainService**: [`ChainService`](ChainService)
+
+#### Implementation of
+
+ElectionServiceProperties.chainService
+
+#### Defined in
+
+[services/election.ts:62](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/services/election.ts#L62)
+
+___
+
+### url
+
+• **url**: `string`
+
+#### Inherited from
+
+[Service](Service.md).[url](Service#url)
+
+#### Defined in
+
+[services/service.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/services/service.ts#L6)

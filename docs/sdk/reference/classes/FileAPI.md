@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules) / FileAPI
+[@vocdoni/sdk](/sdk) / FileAPI
 
 # Class: FileAPI
 
@@ -10,35 +10,9 @@
 
 ## Table of contents
 
-### Constructors
-
-- [constructor](FileAPI#constructor)
-
 ### Methods
 
 - [cid](FileAPI#cid)
-- [isApiError](FileAPI#isapierror)
-- [isUndefinedError](FileAPI#isundefinederror)
-
-## Constructors
-
-### constructor
-
-• **new FileAPI**(): [`FileAPI`](FileAPI)
-
-Cannot be constructed.
-
-#### Returns
-
-[`FileAPI`](FileAPI)
-
-#### Overrides
-
-API.constructor
-
-#### Defined in
-
-[api/file.ts:19](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/file.ts#L19)
 
 ## Methods
 
@@ -63,53 +37,4 @@ promised IFileCIDResponse
 
 #### Defined in
 
-[api/file.ts:30](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/file.ts#L30)
-
-___
-
-### isApiError
-
-▸ **isApiError**(`error`): `never`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `error` | `AxiosError`\<`unknown`, `any`\> |
-
-#### Returns
-
-`never`
-
-#### Inherited from
-
-API.isApiError
-
-#### Defined in
-
-[api/api.ts:21](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/api.ts#L21)
-
-___
-
-### isUndefinedError
-
-▸ **isUndefinedError**(`error`, `message?`): `never`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `error` | `AxiosError`\<`unknown`, `any`\> |
-| `message?` | `string` |
-
-#### Returns
-
-`never`
-
-#### Inherited from
-
-API.isUndefinedError
-
-#### Defined in
-
-[api/api.ts:64](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/api.ts#L64)
+[api/file.ts:30](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/file.ts#L30)

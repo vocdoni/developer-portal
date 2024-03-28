@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules) / IElectionListFilter
+[@vocdoni/sdk](/sdk) / IElectionListFilter
 
 # Interface: IElectionListFilter
 
@@ -19,7 +19,7 @@
 
 #### Defined in
 
-[api/election.ts:364](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/election.ts#L364)
+[api/election.ts:364](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/election.ts#L364)
 
 ___
 
@@ -29,7 +29,7 @@ ___
 
 #### Defined in
 
-[api/election.ts:363](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/election.ts#L363)
+[api/election.ts:363](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/election.ts#L363)
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 #### Defined in
 
-[api/election.ts:366](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/election.ts#L366)
+[api/election.ts:366](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/election.ts#L366)
 
 ___
 
@@ -49,4 +49,4 @@ ___
 
 #### Defined in
 
-[api/election.ts:365](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/election.ts#L365)
+[api/election.ts:365](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/election.ts#L365)

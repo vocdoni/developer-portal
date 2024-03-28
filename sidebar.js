@@ -49,32 +49,47 @@ function modifySDKReference (items) {
           // Modify reference category title
           referenceCategory = {
             ...SDKCategory.items[index2],
-            label: 'Reference'
+            label: 'Reference',
+            link: {
+              type: 'doc',
+              id: 'sdk/reference/sdk-reference'
+            }
           }
-          // Move Changelog to the last item
-          if (referenceCategory.items[0].id === 'sdk/reference/changelog') {
-            changelogItem = referenceCategory.items[0]
-            referenceCategory.items = referenceCategory.items.slice(1)
-            referenceCategory.items.push(changelogItem)
-          }
+          let changelogIdx,
+            referenceIdx = 0
           for (var index3 in referenceCategory?.items) {
+            // Get index of changelog file
+            if (
+              referenceCategory.items[index3].id === 'sdk/reference/changelog'
+            ) {
+              changelogIdx = index3
+            }
+            // Get index of reference file
+            if (
+              referenceCategory.items[index3].id ===
+              'sdk/reference/sdk-reference'
+            ) {
+              referenceIdx = index3
+            }
             // Capitalize category labels
             if (referenceCategory.items[index3].label != null) {
               referenceCategory.items[index3].label = toTitleCase(
                 referenceCategory.items[index3].label
               )
             }
-            // Capitalize modules label
-            if (
-              referenceCategory.items[index3].id === 'sdk/reference/modules'
-            ) {
-              referenceCategory.items[index3].label = 'Modules'
-            }
           }
+          // Swap positions of changelog and reference links
+          ;[
+            referenceCategory.items[referenceIdx],
+            referenceCategory.items[changelogIdx]
+          ] = [
+            referenceCategory.items[changelogIdx],
+            referenceCategory.items[referenceIdx]
+          ]
           SDKCategory.items[index2] = referenceCategory
         }
-        items[index1] = SDKCategory
       }
+      items[index1] = SDKCategory
     }
   }
   return items

@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules) / FetchElectionsParameters
+[@vocdoni/sdk](/sdk) / FetchElectionsParameters
 
 # Interface: FetchElectionsParameters
 
@@ -17,7 +17,7 @@
 
 #### Defined in
 
-[services/election.ts:32](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/services/election.ts#L32)
+[services/election.ts:32](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/services/election.ts#L32)
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 #### Defined in
 
-[services/election.ts:33](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/services/election.ts#L33)
+[services/election.ts:33](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/services/election.ts#L33)

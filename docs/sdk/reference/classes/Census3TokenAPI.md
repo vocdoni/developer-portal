@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules) / Census3TokenAPI
+[@vocdoni/sdk](/sdk) / Census3TokenAPI
 
 # Class: Census3TokenAPI
 
@@ -10,40 +10,13 @@
 
 ## Table of contents
 
-### Constructors
-
-- [constructor](Census3TokenAPI#constructor)
-
 ### Methods
 
 - [create](Census3TokenAPI#create)
 - [holder](Census3TokenAPI#holder)
-- [isApiError](Census3TokenAPI#isapierror)
-- [isUndefinedError](Census3TokenAPI#isundefinederror)
 - [list](Census3TokenAPI#list)
-- [serializePagination](Census3TokenAPI#serializepagination)
 - [token](Census3TokenAPI#token)
 - [types](Census3TokenAPI#types)
-
-## Constructors
-
-### constructor
-
-• **new Census3TokenAPI**(): [`Census3TokenAPI`](Census3TokenAPI)
-
-Cannot be constructed.
-
-#### Returns
-
-[`Census3TokenAPI`](Census3TokenAPI)
-
-#### Overrides
-
-Census3API.constructor
-
-#### Defined in
-
-[api/census3/token.ts:138](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/census3/token.ts#L138)
 
 ## Methods
 
@@ -72,7 +45,7 @@ promised IFileCIDResponse
 
 #### Defined in
 
-[api/census3/token.ts:229](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/census3/token.ts#L229)
+[api/census3/token.ts:226](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/census3/token.ts#L226)
 
 ___
 
@@ -100,56 +73,7 @@ The balance of holder
 
 #### Defined in
 
-[api/census3/token.ts:199](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/census3/token.ts#L199)
-
-___
-
-### isApiError
-
-▸ **isApiError**(`error`): `never`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `error` | `AxiosError`\<`unknown`, `any`\> |
-
-#### Returns
-
-`never`
-
-#### Inherited from
-
-Census3API.isApiError
-
-#### Defined in
-
-[api/census3/api.ts:101](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/census3/api.ts#L101)
-
-___
-
-### isUndefinedError
-
-▸ **isUndefinedError**(`error`, `message?`): `never`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `error` | `AxiosError`\<`unknown`, `any`\> |
-| `message?` | `string` |
-
-#### Returns
-
-`never`
-
-#### Inherited from
-
-Census3API.isUndefinedError
-
-#### Defined in
-
-[api/api.ts:64](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/api.ts#L64)
+[api/census3/token.ts:196](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/census3/token.ts#L196)
 
 ___
 
@@ -172,37 +96,13 @@ Fetches list of already added tokens
 
 #### Defined in
 
-[api/census3/token.ts:149](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/census3/token.ts#L149)
-
-___
-
-### serializePagination
-
-▸ **serializePagination**(`pagination?`): `string`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `pagination?` | `Census3Pagination` |
-
-#### Returns
-
-`string`
-
-#### Inherited from
-
-Census3API.serializePagination
-
-#### Defined in
-
-[api/census3/api.ts:92](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/census3/api.ts#L92)
+[api/census3/token.ts:148](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/census3/token.ts#L148)
 
 ___
 
 ### token
 
-▸ **token**(`url`, `tokenId`, `chainId`, `externalId?`): `Promise`\<[`Census3Token`](../modules#census3token)\>
+▸ **token**(`url`, `tokenId`, `chainId`, `externalId?`): `Promise`\<[`Census3Token`](../sdk-reference#census3token)\>
 
 Fetch the full token information
 
@@ -217,11 +117,11 @@ Fetch the full token information
 
 #### Returns
 
-`Promise`\<[`Census3Token`](../modules#census3token)\>
+`Promise`\<[`Census3Token`](../sdk-reference#census3token)\>
 
 #### Defined in
 
-[api/census3/token.ts:178](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/census3/token.ts#L178)
+[api/census3/token.ts:175](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/census3/token.ts#L175)
 
 ___
 
@@ -243,4 +143,4 @@ Fetches list of tokens types
 
 #### Defined in
 
-[api/census3/token.ts:162](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/census3/token.ts#L162)
+[api/census3/token.ts:160](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/census3/token.ts#L160)

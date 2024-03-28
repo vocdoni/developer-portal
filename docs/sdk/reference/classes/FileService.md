@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules) / FileService
+[@vocdoni/sdk](/sdk) / FileService
 
 # Class: FileService
 
@@ -18,13 +18,13 @@
 
 - [constructor](FileService#constructor)
 
-### Properties
-
-- [url](FileService#url)
-
 ### Methods
 
 - [calculateCID](FileService#calculatecid)
+
+### Properties
+
+- [url](FileService#url)
 
 ## Constructors
 
@@ -46,25 +46,11 @@ Instantiate the election service.
 
 #### Overrides
 
-[Service](Service.md).[constructor](Service#constructor)
+Service.constructor
 
 #### Defined in
 
-[services/file.ts:16](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/services/file.ts#L16)
-
-## Properties
-
-### url
-
-• **url**: `string`
-
-#### Inherited from
-
-[Service](Service.md).[url](Service#url)
-
-#### Defined in
-
-[services/service.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/services/service.ts#L6)
+[services/file.ts:16](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/services/file.ts#L16)
 
 ## Methods
 
@@ -88,4 +74,18 @@ Resulting CID
 
 #### Defined in
 
-[services/file.ts:27](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/services/file.ts#L27)
+[services/file.ts:27](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/services/file.ts#L27)
+
+## Properties
+
+### url
+
+• **url**: `string`
+
+#### Inherited from
+
+[Service](Service.md).[url](Service#url)
+
+#### Defined in
+
+[services/service.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/services/service.ts#L6)

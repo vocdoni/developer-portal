@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules) / Census
+[@vocdoni/sdk](/sdk) / Census
 
 # Class: Census
 
@@ -16,18 +16,6 @@ Represents a generic census
 
 ## Table of contents
 
-### Constructors
-
-- [constructor](Census#constructor)
-
-### Properties
-
-- [\_censusId](Census.md#_censusid)
-- [\_censusURI](Census.md#_censusuri)
-- [\_size](Census.md#_size)
-- [\_type](Census.md#_type)
-- [\_weight](Census.md#_weight)
-
 ### Accessors
 
 - [censusId](Census#censusid)
@@ -41,82 +29,6 @@ Represents a generic census
 
 - [censusTypeFromCensusOrigin](Census#censustypefromcensusorigin)
 
-## Constructors
-
-### constructor
-
-• **new Census**(`censusId?`, `censusURI?`, `type?`, `size?`, `weight?`): [`Census`](Census)
-
-Constructs a generic census
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `censusId?` | `string` | The id of the census |
-| `censusURI?` | `string` | The URI of the census |
-| `type?` | [`CensusType`](../enums/CensusType) | The type of the census |
-| `size?` | `number` | The size of the census |
-| `weight?` | `bigint` | The weight of the census |
-
-#### Returns
-
-[`Census`](Census)
-
-#### Defined in
-
-[types/census/census.ts:27](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/census/census.ts#L27)
-
-## Properties
-
-### \_censusId
-
-• `Protected` **\_censusId**: `string`
-
-#### Defined in
-
-[types/census/census.ts:12](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/census/census.ts#L12)
-
-___
-
-### \_censusURI
-
-• `Protected` **\_censusURI**: `string`
-
-#### Defined in
-
-[types/census/census.ts:13](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/census/census.ts#L13)
-
-___
-
-### \_size
-
-• `Private` **\_size**: `number`
-
-#### Defined in
-
-[types/census/census.ts:15](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/census/census.ts#L15)
-
-___
-
-### \_type
-
-• `Protected` **\_type**: [`CensusType`](../enums/CensusType)
-
-#### Defined in
-
-[types/census/census.ts:14](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/census/census.ts#L14)
-
-___
-
-### \_weight
-
-• `Private` **\_weight**: `bigint`
-
-#### Defined in
-
-[types/census/census.ts:16](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/census/census.ts#L16)
-
 ## Accessors
 
 ### censusId
@@ -129,7 +41,7 @@ ___
 
 #### Defined in
 
-[types/census/census.ts:35](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/census/census.ts#L35)
+[types/census/census.ts:35](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/census/census.ts#L35)
 
 • `set` **censusId**(`value`): `void`
 
@@ -145,7 +57,7 @@ ___
 
 #### Defined in
 
-[types/census/census.ts:39](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/census/census.ts#L39)
+[types/census/census.ts:39](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/census/census.ts#L39)
 
 ___
 
@@ -159,7 +71,7 @@ ___
 
 #### Defined in
 
-[types/census/census.ts:43](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/census/census.ts#L43)
+[types/census/census.ts:43](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/census/census.ts#L43)
 
 • `set` **censusURI**(`value`): `void`
 
@@ -175,7 +87,7 @@ ___
 
 #### Defined in
 
-[types/census/census.ts:47](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/census/census.ts#L47)
+[types/census/census.ts:47](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/census/census.ts#L47)
 
 ___
 
@@ -189,7 +101,7 @@ ___
 
 #### Defined in
 
-[types/census/census.ts:75](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/census/census.ts#L75)
+[types/census/census.ts:75](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/census/census.ts#L75)
 
 ___
 
@@ -203,7 +115,7 @@ ___
 
 #### Defined in
 
-[types/census/census.ts:59](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/census/census.ts#L59)
+[types/census/census.ts:59](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/census/census.ts#L59)
 
 • `set` **size**(`value`): `void`
 
@@ -219,7 +131,7 @@ ___
 
 #### Defined in
 
-[types/census/census.ts:63](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/census/census.ts#L63)
+[types/census/census.ts:63](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/census/census.ts#L63)
 
 ___
 
@@ -233,7 +145,7 @@ ___
 
 #### Defined in
 
-[types/census/census.ts:51](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/census/census.ts#L51)
+[types/census/census.ts:51](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/census/census.ts#L51)
 
 • `set` **type**(`value`): `void`
 
@@ -249,7 +161,7 @@ ___
 
 #### Defined in
 
-[types/census/census.ts:55](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/census/census.ts#L55)
+[types/census/census.ts:55](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/census/census.ts#L55)
 
 ___
 
@@ -263,7 +175,7 @@ ___
 
 #### Defined in
 
-[types/census/census.ts:67](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/census/census.ts#L67)
+[types/census/census.ts:67](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/census/census.ts#L67)
 
 • `set` **weight**(`value`): `void`
 
@@ -279,7 +191,7 @@ ___
 
 #### Defined in
 
-[types/census/census.ts:71](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/census/census.ts#L71)
+[types/census/census.ts:71](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/census/census.ts#L71)
 
 ## Methods
 
@@ -300,4 +212,4 @@ ___
 
 #### Defined in
 
-[types/census/census.ts:81](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/census/census.ts#L81)
+[types/census/census.ts:81](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/census/census.ts#L81)

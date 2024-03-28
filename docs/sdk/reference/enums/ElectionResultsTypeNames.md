@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules) / ElectionResultsTypeNames
+[@vocdoni/sdk](/sdk) / ElectionResultsTypeNames
 
 # Enumeration: ElectionResultsTypeNames
 
@@ -19,7 +19,7 @@
 
 #### Defined in
 
-[types/metadata/election.ts:41](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/metadata/election.ts#L41)
+[types/metadata/election.ts:41](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/metadata/election.ts#L41)
 
 ___
 
@@ -29,7 +29,7 @@ ___
 
 #### Defined in
 
-[types/metadata/election.ts:40](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/metadata/election.ts#L40)
+[types/metadata/election.ts:40](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/metadata/election.ts#L40)
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 #### Defined in
 
-[types/metadata/election.ts:39](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/metadata/election.ts#L39)
+[types/metadata/election.ts:39](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/metadata/election.ts#L39)
 
 ___
 
@@ -49,4 +49,4 @@ ___
 
 #### Defined in
 
-[types/metadata/election.ts:38](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/metadata/election.ts#L38)
+[types/metadata/election.ts:38](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/metadata/election.ts#L38)

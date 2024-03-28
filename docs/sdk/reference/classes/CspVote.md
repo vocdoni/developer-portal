@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules) / CspVote
+[@vocdoni/sdk](/sdk) / CspVote
 
 # Class: CspVote
 
@@ -12,68 +12,15 @@ Represents a vote
 
 ## Table of contents
 
-### Constructors
-
-- [constructor](CspVote#constructor)
-
-### Properties
-
-- [\_proof\_type](CspVote.md#_proof_type)
-- [\_signature](CspVote.md#_signature)
-
 ### Accessors
 
 - [proof\_type](CspVote.md#proof_type)
 - [signature](CspVote#signature)
 - [votes](CspVote#votes)
 
-## Constructors
+### Constructors
 
-### constructor
-
-• **new CspVote**(`votes`, `signature`, `proof_type?`): [`CspVote`](CspVote)
-
-Constructs a csp vote
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `votes` | (`number` \| `bigint`)[] | The list of votes values |
-| `signature` | `string` | The CSP signature |
-| `proof_type?` | [`CspProofType`](../enums/CspProofType) | The CSP proof type |
-
-#### Returns
-
-[`CspVote`](CspVote)
-
-#### Overrides
-
-[Vote](Vote.md).[constructor](Vote#constructor)
-
-#### Defined in
-
-[types/vote/csp.ts:15](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/vote/csp.ts#L15)
-
-## Properties
-
-### \_proof\_type
-
-• `Private` **\_proof\_type**: [`CspProofType`](../enums/CspProofType)
-
-#### Defined in
-
-[types/vote/csp.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/vote/csp.ts#L6)
-
-___
-
-### \_signature
-
-• `Private` **\_signature**: `string`
-
-#### Defined in
-
-[types/vote/csp.ts:5](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/vote/csp.ts#L5)
+- [constructor](CspVote#constructor)
 
 ## Accessors
 
@@ -87,7 +34,7 @@ ___
 
 #### Defined in
 
-[types/vote/csp.ts:29](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/vote/csp.ts#L29)
+[types/vote/csp.ts:29](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/vote/csp.ts#L29)
 
 • `set` **proof_type**(`value`): `void`
 
@@ -103,7 +50,7 @@ ___
 
 #### Defined in
 
-[types/vote/csp.ts:33](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/vote/csp.ts#L33)
+[types/vote/csp.ts:33](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/vote/csp.ts#L33)
 
 ___
 
@@ -117,7 +64,7 @@ ___
 
 #### Defined in
 
-[types/vote/csp.ts:21](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/vote/csp.ts#L21)
+[types/vote/csp.ts:21](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/vote/csp.ts#L21)
 
 • `set` **signature**(`value`): `void`
 
@@ -133,7 +80,7 @@ ___
 
 #### Defined in
 
-[types/vote/csp.ts:25](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/vote/csp.ts#L25)
+[types/vote/csp.ts:25](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/vote/csp.ts#L25)
 
 ___
 
@@ -151,7 +98,7 @@ Vote.votes
 
 #### Defined in
 
-[types/vote/vote.ts:16](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/vote/vote.ts#L16)
+[types/vote/vote.ts:16](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/vote/vote.ts#L16)
 
 • `set` **votes**(`value`): `void`
 
@@ -171,4 +118,32 @@ Vote.votes
 
 #### Defined in
 
-[types/vote/vote.ts:20](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/types/vote/vote.ts#L20)
+[types/vote/vote.ts:20](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/vote/vote.ts#L20)
+
+## Constructors
+
+### constructor
+
+• **new CspVote**(`votes`, `signature`, `proof_type?`): [`CspVote`](CspVote)
+
+Constructs a csp vote
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `votes` | (`number` \| `bigint`)[] | The list of votes values |
+| `signature` | `string` | The CSP signature |
+| `proof_type?` | [`CspProofType`](../enums/CspProofType) | - |
+
+#### Returns
+
+[`CspVote`](CspVote)
+
+#### Overrides
+
+[Vote](Vote.md).[constructor](Vote#constructor)
+
+#### Defined in
+
+[types/vote/csp.ts:15](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/vote/csp.ts#L15)

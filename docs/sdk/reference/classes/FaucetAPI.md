@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules) / FaucetAPI
+[@vocdoni/sdk](/sdk) / FaucetAPI
 
 # Class: FaucetAPI
 
@@ -10,35 +10,9 @@
 
 ## Table of contents
 
-### Constructors
-
-- [constructor](FaucetAPI#constructor)
-
 ### Methods
 
 - [collect](FaucetAPI#collect)
-- [isApiError](FaucetAPI#isapierror)
-- [isUndefinedError](FaucetAPI#isundefinederror)
-
-## Constructors
-
-### constructor
-
-• **new FaucetAPI**(): [`FaucetAPI`](FaucetAPI)
-
-Cannot be constructed.
-
-#### Returns
-
-[`FaucetAPI`](FaucetAPI)
-
-#### Overrides
-
-API.constructor
-
-#### Defined in
-
-[api/faucet.ts:24](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/faucet.ts#L24)
 
 ## Methods
 
@@ -61,53 +35,4 @@ Calls the collect tokens method.
 
 #### Defined in
 
-[api/faucet.ts:35](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/faucet.ts#L35)
-
-___
-
-### isApiError
-
-▸ **isApiError**(`error`): `never`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `error` | `AxiosError`\<`unknown`, `any`\> |
-
-#### Returns
-
-`never`
-
-#### Inherited from
-
-API.isApiError
-
-#### Defined in
-
-[api/api.ts:21](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/api.ts#L21)
-
-___
-
-### isUndefinedError
-
-▸ **isUndefinedError**(`error`, `message?`): `never`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `error` | `AxiosError`\<`unknown`, `any`\> |
-| `message?` | `string` |
-
-#### Returns
-
-`never`
-
-#### Inherited from
-
-API.isUndefinedError
-
-#### Defined in
-
-[api/api.ts:64](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/api.ts#L64)
+[api/faucet.ts:34](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/faucet.ts#L34)

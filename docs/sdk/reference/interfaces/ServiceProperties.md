@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules) / ServiceProperties
+[@vocdoni/sdk](/sdk) / ServiceProperties
 
 # Interface: ServiceProperties
 
@@ -20,4 +20,4 @@
 
 #### Defined in
 
-[services/service.ts:2](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/services/service.ts#L2)
+[services/service.ts:2](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/services/service.ts#L2)

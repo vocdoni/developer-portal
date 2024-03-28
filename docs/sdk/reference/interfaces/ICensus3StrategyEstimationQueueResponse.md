@@ -1,4 +1,4 @@
-[@vocdoni/sdk](/sdk) / [Exports](../modules) / ICensus3StrategyEstimationQueueResponse
+[@vocdoni/sdk](/sdk) / ICensus3StrategyEstimationQueueResponse
 
 # Interface: ICensus3StrategyEstimationQueueResponse
 
@@ -29,7 +29,7 @@ The estimation data of the strategy
 
 #### Defined in
 
-[api/census3/strategy.ts:126](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/census3/strategy.ts#L126)
+[api/census3/strategy.ts:126](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/census3/strategy.ts#L126)
 
 ___
 
@@ -41,7 +41,7 @@ If the queue has been done
 
 #### Defined in
 
-[api/census3/strategy.ts:106](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/census3/strategy.ts#L106)
+[api/census3/strategy.ts:106](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/census3/strategy.ts#L106)
 
 ___
 
@@ -60,7 +60,7 @@ The error of the queue
 
 #### Defined in
 
-[api/census3/strategy.ts:111](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/census3/strategy.ts#L111)
+[api/census3/strategy.ts:111](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/census3/strategy.ts#L111)
 
 ___
 
@@ -72,4 +72,4 @@ The estimation progress
 
 #### Defined in
 
-[api/census3/strategy.ts:146](https://github.com/vocdoni/vocdoni-sdk/blob/2244934/src/api/census3/strategy.ts#L146)
+[api/census3/strategy.ts:146](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/census3/strategy.ts#L146)
