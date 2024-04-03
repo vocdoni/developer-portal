@@ -19,7 +19,7 @@ The operator used in the predicate
 
 #### Defined in
 
-[api/census3/strategy.ts:221](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/census3/strategy.ts#L221)
+[api/census3/strategy.ts:221](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/api/census3/strategy.ts#L221)
 
 ___
 
@@ -31,4 +31,4 @@ The list of tokens of the predicate
 
 #### Defined in
 
-[api/census3/strategy.ts:226](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/census3/strategy.ts#L226)
+[api/census3/strategy.ts:226](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/api/census3/strategy.ts#L226)

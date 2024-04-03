@@ -18,4 +18,4 @@ Number of accounts
 
 #### Defined in
 
-[api/account.ts:102](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/account.ts#L102)
+[api/account.ts:102](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/api/account.ts#L102)

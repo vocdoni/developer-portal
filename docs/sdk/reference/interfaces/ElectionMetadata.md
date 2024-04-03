@@ -25,7 +25,7 @@ More info: https://vocdoni.io/docs/#/architecture/components/process?id=process-
 
 #### Defined in
 
-[types/metadata/election.ts:127](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/metadata/election.ts#L127)
+[types/metadata/election.ts:127](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/types/metadata/election.ts#L127)
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 #### Defined in
 
-[types/metadata/election.ts:128](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/metadata/election.ts#L128)
+[types/metadata/election.ts:128](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/types/metadata/election.ts#L128)
 
 ___
 
@@ -58,7 +58,7 @@ Arbitrary key/value data that specific applications can use for their own needs
 
 #### Defined in
 
-[types/metadata/election.ts:133](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/metadata/election.ts#L133)
+[types/metadata/election.ts:133](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/types/metadata/election.ts#L133)
 
 ___
 
@@ -68,7 +68,7 @@ ___
 
 #### Defined in
 
-[types/metadata/election.ts:136](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/metadata/election.ts#L136)
+[types/metadata/election.ts:136](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/types/metadata/election.ts#L136)
 
 ___
 
@@ -78,7 +78,7 @@ ___
 
 #### Defined in
 
-[types/metadata/election.ts:126](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/metadata/election.ts#L126)
+[types/metadata/election.ts:126](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/types/metadata/election.ts#L126)
 
 ___
 
@@ -88,7 +88,7 @@ ___
 
 #### Defined in
 
-[types/metadata/election.ts:137](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/metadata/election.ts#L137)
+[types/metadata/election.ts:137](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/types/metadata/election.ts#L137)
 
 ___
 
@@ -98,4 +98,4 @@ ___
 
 #### Defined in
 
-[types/metadata/election.ts:125](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/metadata/election.ts#L125)
+[types/metadata/election.ts:125](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/types/metadata/election.ts#L125)

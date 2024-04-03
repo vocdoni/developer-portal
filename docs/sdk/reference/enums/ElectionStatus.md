@@ -22,7 +22,7 @@
 
 #### Defined in
 
-[types/election/published.ts:15](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/election/published.ts#L15)
+[types/election/published.ts:15](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/types/election/published.ts#L15)
 
 ___
 
@@ -32,7 +32,7 @@ ___
 
 #### Defined in
 
-[types/election/published.ts:14](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/election/published.ts#L14)
+[types/election/published.ts:14](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/types/election/published.ts#L14)
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 #### Defined in
 
-[types/election/published.ts:13](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/election/published.ts#L13)
+[types/election/published.ts:13](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/types/election/published.ts#L13)
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 #### Defined in
 
-[types/election/published.ts:16](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/election/published.ts#L16)
+[types/election/published.ts:16](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/types/election/published.ts#L16)
 
 ___
 
@@ -62,7 +62,7 @@ ___
 
 #### Defined in
 
-[types/election/published.ts:11](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/election/published.ts#L11)
+[types/election/published.ts:11](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/types/election/published.ts#L11)
 
 ___
 
@@ -72,7 +72,7 @@ ___
 
 #### Defined in
 
-[types/election/published.ts:17](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/election/published.ts#L17)
+[types/election/published.ts:17](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/types/election/published.ts#L17)
 
 ___
 
@@ -82,4 +82,4 @@ ___
 
 #### Defined in
 
-[types/election/published.ts:12](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/election/published.ts#L12)
+[types/election/published.ts:12](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/types/election/published.ts#L12)

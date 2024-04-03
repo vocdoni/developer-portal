@@ -43,7 +43,7 @@ Creates a new election.
 
 #### Defined in
 
-[api/election.ts:410](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/election.ts#L410)
+[api/election.ts:410](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/api/election.ts#L410)
 
 ___
 
@@ -67,7 +67,7 @@ Return list of all elections in the chain
 
 #### Defined in
 
-[api/election.ts:477](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/election.ts#L477)
+[api/election.ts:477](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/api/election.ts#L477)
 
 ___
 
@@ -90,7 +90,7 @@ Fetches info about the specified process.
 
 #### Defined in
 
-[api/election.ts:383](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/election.ts#L383)
+[api/election.ts:383](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/api/election.ts#L383)
 
 ___
 
@@ -113,7 +113,7 @@ Fetches the encryption keys from the specified process.
 
 #### Defined in
 
-[api/election.ts:396](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/election.ts#L396)
+[api/election.ts:396](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/api/election.ts#L396)
 
 ___
 
@@ -138,7 +138,7 @@ Returns the next election id.
 
 #### Defined in
 
-[api/election.ts:425](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/election.ts#L425)
+[api/election.ts:425](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/api/election.ts#L425)
 
 ___
 
@@ -165,7 +165,7 @@ Calculates the election price.
 
 #### Defined in
 
-[api/election.ts:509](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/election.ts#L509)
+[api/election.ts:509](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/api/election.ts#L509)
 
 ___
 
@@ -188,7 +188,7 @@ Returns the number of votes of a given election
 
 #### Defined in
 
-[api/election.ts:447](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/election.ts#L447)
+[api/election.ts:447](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/api/election.ts#L447)
 
 ___
 
@@ -212,4 +212,4 @@ Returns the list of votes for a given election
 
 #### Defined in
 
-[api/election.ts:461](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/election.ts#L461)
+[api/election.ts:461](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/api/election.ts#L461)

@@ -16,4 +16,4 @@
 
 #### Defined in
 
-[types/election/published.ts:21](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/election/published.ts#L21)
+[types/election/published.ts:21](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/types/election/published.ts#L21)

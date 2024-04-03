@@ -18,4 +18,4 @@ The number of transactions
 
 #### Defined in
 
-[api/chain.ts:210](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/chain.ts#L210)
+[api/chain.ts:210](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/api/chain.ts#L210)
