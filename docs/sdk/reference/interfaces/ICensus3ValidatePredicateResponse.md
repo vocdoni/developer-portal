@@ -24,4 +24,4 @@ The parsed version of the predicate
 
 #### Defined in
 
-[api/census3/strategy.ts:252](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/census3/strategy.ts#L252)
+[api/census3/strategy.ts:252](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/api/census3/strategy.ts#L252)

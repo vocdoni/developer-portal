@@ -20,4 +20,4 @@
 
 #### Defined in
 
-[services/service.ts:2](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/services/service.ts#L2)
+[services/service.ts:2](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/services/service.ts#L2)

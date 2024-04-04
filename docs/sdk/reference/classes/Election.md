@@ -48,7 +48,7 @@ Represents an election
 
 #### Defined in
 
-[types/election/election.ts:262](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/election/election.ts#L262)
+[types/election/election.ts:262](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/types/election/election.ts#L262)
 
 ___
 
@@ -62,7 +62,7 @@ ___
 
 #### Defined in
 
-[types/election/election.ts:250](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/election/election.ts#L250)
+[types/election/election.ts:250](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/types/election/election.ts#L250)
 
 ___
 
@@ -76,7 +76,7 @@ ___
 
 #### Defined in
 
-[types/election/election.ts:214](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/election/election.ts#L214)
+[types/election/election.ts:214](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/types/election/election.ts#L214)
 
 ___
 
@@ -90,7 +90,7 @@ ___
 
 #### Defined in
 
-[types/election/election.ts:238](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/election/election.ts#L238)
+[types/election/election.ts:238](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/types/election/election.ts#L238)
 
 ___
 
@@ -104,7 +104,7 @@ ___
 
 #### Defined in
 
-[types/election/election.ts:234](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/election/election.ts#L234)
+[types/election/election.ts:234](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/types/election/election.ts#L234)
 
 ___
 
@@ -118,7 +118,7 @@ ___
 
 #### Defined in
 
-[types/election/election.ts:218](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/election/election.ts#L218)
+[types/election/election.ts:218](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/types/election/election.ts#L218)
 
 ___
 
@@ -132,7 +132,7 @@ ___
 
 #### Defined in
 
-[types/election/election.ts:254](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/election/election.ts#L254)
+[types/election/election.ts:254](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/types/election/election.ts#L254)
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-[types/election/election.ts:226](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/election/election.ts#L226)
+[types/election/election.ts:226](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/types/election/election.ts#L226)
 
 ___
 
@@ -160,7 +160,7 @@ ___
 
 #### Defined in
 
-[types/election/election.ts:246](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/election/election.ts#L246)
+[types/election/election.ts:246](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/types/election/election.ts#L246)
 
 ___
 
@@ -174,7 +174,7 @@ ___
 
 #### Defined in
 
-[types/election/election.ts:230](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/election/election.ts#L230)
+[types/election/election.ts:230](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/types/election/election.ts#L230)
 
 ___
 
@@ -188,7 +188,7 @@ ___
 
 #### Defined in
 
-[types/election/election.ts:222](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/election/election.ts#L222)
+[types/election/election.ts:222](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/types/election/election.ts#L222)
 
 ___
 
@@ -202,7 +202,7 @@ ___
 
 #### Defined in
 
-[types/election/election.ts:258](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/election/election.ts#L258)
+[types/election/election.ts:258](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/types/election/election.ts#L258)
 
 ___
 
@@ -216,7 +216,7 @@ ___
 
 #### Defined in
 
-[types/election/election.ts:210](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/election/election.ts#L210)
+[types/election/election.ts:210](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/types/election/election.ts#L210)
 
 ___
 
@@ -230,7 +230,7 @@ ___
 
 #### Defined in
 
-[types/election/election.ts:242](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/election/election.ts#L242)
+[types/election/election.ts:242](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/types/election/election.ts#L242)
 
 ## Methods
 
@@ -250,7 +250,7 @@ ___
 
 #### Defined in
 
-[types/election/election.ts:266](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/election/election.ts#L266)
+[types/election/election.ts:266](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/types/election/election.ts#L266)
 
 ___
 
@@ -272,4 +272,4 @@ Returns an unpublished election object
 
 #### Defined in
 
-[types/election/election.ts:206](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/election/election.ts#L206)
+[types/election/election.ts:206](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/types/election/election.ts#L206)

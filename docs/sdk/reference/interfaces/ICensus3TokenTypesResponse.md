@@ -18,4 +18,4 @@ The list of the tokens types
 
 #### Defined in
 
-[api/census3/token.ts:131](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/census3/token.ts#L131)
+[api/census3/token.ts:131](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/api/census3/token.ts#L131)

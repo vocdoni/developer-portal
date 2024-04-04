@@ -34,4 +34,4 @@ Fetches supported chains from the service
 
 #### Defined in
 
-[api/census3/service.ts:45](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/census3/service.ts#L45)
+[api/census3/service.ts:45](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/api/census3/service.ts#L45)

@@ -54,7 +54,7 @@ Service.constructor
 
 #### Defined in
 
-[services/vote.ts:45](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/services/vote.ts#L45)
+[services/vote.ts:45](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/services/vote.ts#L45)
 
 ## Methods
 
@@ -74,7 +74,7 @@ Service.constructor
 
 #### Defined in
 
-[services/vote.ts:58](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/services/vote.ts#L58)
+[services/vote.ts:58](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/services/vote.ts#L58)
 
 ___
 
@@ -96,7 +96,7 @@ Get the vote information
 
 #### Defined in
 
-[services/vote.ts:68](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/services/vote.ts#L68)
+[services/vote.ts:68](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/services/vote.ts#L68)
 
 ___
 
@@ -110,7 +110,7 @@ ___
 | :------ | :------ |
 | `tx` | `Uint8Array` |
 | `message` | `string` |
-| `walletOrSigner` | `Wallet` \| `Signer` |
+| `walletOrSigner` | `Signer` \| `Wallet` |
 
 #### Returns
 
@@ -118,7 +118,7 @@ ___
 
 #### Defined in
 
-[services/vote.ts:50](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/services/vote.ts#L50)
+[services/vote.ts:50](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/services/vote.ts#L50)
 
 ___
 
@@ -140,7 +140,7 @@ Submit the vote to the chain
 
 #### Defined in
 
-[services/vote.ts:79](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/services/vote.ts#L79)
+[services/vote.ts:79](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/services/vote.ts#L79)
 
 ## Properties
 
@@ -154,7 +154,7 @@ VoteServiceProperties.chainService
 
 #### Defined in
 
-[services/vote.ts:38](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/services/vote.ts#L38)
+[services/vote.ts:38](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/services/vote.ts#L38)
 
 ___
 
@@ -168,4 +168,4 @@ ___
 
 #### Defined in
 
-[services/service.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/services/service.ts#L6)
+[services/service.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/services/service.ts#L6)

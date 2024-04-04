@@ -27,7 +27,7 @@ Represents an invalid election
 
 #### Defined in
 
-[types/election/invalid.ts:20](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/election/invalid.ts#L20)
+[types/election/invalid.ts:20](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/types/election/invalid.ts#L20)
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 #### Defined in
 
-[types/election/invalid.ts:24](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/election/invalid.ts#L24)
+[types/election/invalid.ts:24](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/types/election/invalid.ts#L24)
 
 ## Constructors
 
@@ -63,4 +63,4 @@ Constructs an invalid election
 
 #### Defined in
 
-[types/election/invalid.ts:16](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/election/invalid.ts#L16)
+[types/election/invalid.ts:16](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/types/election/invalid.ts#L16)

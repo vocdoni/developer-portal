@@ -18,7 +18,7 @@
 
 #### Defined in
 
-[client.ts:58](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/client.ts#L58)
+[client.ts:59](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/client.ts#L59)
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 #### Defined in
 
-[client.ts:60](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/client.ts#L60)
+[client.ts:61](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/client.ts#L61)
 
 ___
 
@@ -38,4 +38,4 @@ ___
 
 #### Defined in
 
-[client.ts:59](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/client.ts#L59)
+[client.ts:60](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/client.ts#L60)

@@ -35,4 +35,4 @@ Calls the collect tokens method.
 
 #### Defined in
 
-[api/faucet.ts:34](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/faucet.ts#L34)
+[api/faucet.ts:34](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/api/faucet.ts#L34)

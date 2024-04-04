@@ -24,4 +24,4 @@ The list of the tokens
 
 #### Defined in
 
-[api/census3/token.ts:110](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/census3/token.ts#L110)
+[api/census3/token.ts:110](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/api/census3/token.ts#L110)

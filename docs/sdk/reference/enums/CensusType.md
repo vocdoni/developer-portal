@@ -19,7 +19,7 @@
 
 #### Defined in
 
-[types/census/census.ts:3](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/census/census.ts#L3)
+[types/census/census.ts:3](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/types/census/census.ts#L3)
 
 ___
 
@@ -29,7 +29,7 @@ ___
 
 #### Defined in
 
-[types/census/census.ts:4](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/census/census.ts#L4)
+[types/census/census.ts:4](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/types/census/census.ts#L4)
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 #### Defined in
 
-[types/census/census.ts:5](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/census/census.ts#L5)
+[types/census/census.ts:5](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/types/census/census.ts#L5)
 
 ___
 
@@ -49,4 +49,4 @@ ___
 
 #### Defined in
 
-[types/census/census.ts:2](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/types/census/census.ts#L2)
+[types/census/census.ts:2](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/types/census/census.ts#L2)

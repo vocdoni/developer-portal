@@ -57,7 +57,7 @@ Service.constructor
 
 #### Defined in
 
-[services/csp.ts:29](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/services/csp.ts#L29)
+[services/csp.ts:29](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/services/csp.ts#L29)
 
 ## Methods
 
@@ -79,13 +79,13 @@ Service.constructor
 
 #### Defined in
 
-[services/csp.ts:64](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/services/csp.ts#L64)
+[services/csp.ts:64](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/services/csp.ts#L64)
 
 ___
 
 ### cspStep
 
-▸ **cspStep**(`electionId`, `stepNumber`, `data`, `authToken?`): `Promise`\<`ICspIntermediateStepResponse` \| `ICspFinalStepResponse`\>
+▸ **cspStep**(`electionId`, `stepNumber`, `data`, `authToken?`): `Promise`\<[`ICspIntermediateStepResponse`](../interfaces/ICspIntermediateStepResponse.md) \| [`ICspFinalStepResponse`](../interfaces/ICspFinalStepResponse)\>
 
 #### Parameters
 
@@ -98,11 +98,11 @@ ___
 
 #### Returns
 
-`Promise`\<`ICspIntermediateStepResponse` \| `ICspFinalStepResponse`\>
+`Promise`\<[`ICspIntermediateStepResponse`](../interfaces/ICspIntermediateStepResponse.md) \| [`ICspFinalStepResponse`](../interfaces/ICspFinalStepResponse)\>
 
 #### Defined in
 
-[services/csp.ts:49](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/services/csp.ts#L49)
+[services/csp.ts:49](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/services/csp.ts#L49)
 
 ___
 
@@ -124,21 +124,21 @@ ___
 
 #### Defined in
 
-[services/csp.ts:75](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/services/csp.ts#L75)
+[services/csp.ts:75](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/services/csp.ts#L75)
 
 ___
 
 ### setInfo
 
-▸ **setInfo**(): `Promise`\<`ICspInfoResponse`\>
+▸ **setInfo**(): `Promise`\<[`ICspInfoResponse`](../interfaces/ICspInfoResponse)\>
 
 #### Returns
 
-`Promise`\<`ICspInfoResponse`\>
+`Promise`\<[`ICspInfoResponse`](../interfaces/ICspInfoResponse)\>
 
 #### Defined in
 
-[services/csp.ts:43](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/services/csp.ts#L43)
+[services/csp.ts:43](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/services/csp.ts#L43)
 
 ___
 
@@ -158,7 +158,7 @@ ___
 
 #### Defined in
 
-[services/csp.ts:39](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/services/csp.ts#L39)
+[services/csp.ts:39](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/services/csp.ts#L39)
 
 ___
 
@@ -180,7 +180,7 @@ ___
 
 #### Defined in
 
-[services/csp.ts:79](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/services/csp.ts#L79)
+[services/csp.ts:79](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/services/csp.ts#L79)
 
 ___
 
@@ -200,13 +200,13 @@ ___
 
 #### Defined in
 
-[services/csp.ts:34](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/services/csp.ts#L34)
+[services/csp.ts:34](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/services/csp.ts#L34)
 
 ## Properties
 
 ### info
 
-• **info**: `ICspInfoResponse`
+• **info**: [`ICspInfoResponse`](../interfaces/ICspInfoResponse)
 
 #### Implementation of
 
@@ -214,7 +214,7 @@ CspServiceProperties.info
 
 #### Defined in
 
-[services/csp.ts:22](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/services/csp.ts#L22)
+[services/csp.ts:22](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/services/csp.ts#L22)
 
 ___
 
@@ -228,4 +228,4 @@ ___
 
 #### Defined in
 
-[services/service.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/services/service.ts#L6)
+[services/service.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/services/service.ts#L6)

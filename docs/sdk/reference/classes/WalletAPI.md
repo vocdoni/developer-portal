@@ -33,4 +33,4 @@
 
 #### Defined in
 
-[api/wallet.ts:29](https://github.com/vocdoni/vocdoni-sdk/blob/1053e59/src/api/wallet.ts#L29)
+[api/wallet.ts:29](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/api/wallet.ts#L29)
