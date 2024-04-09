@@ -124,35 +124,24 @@ As seen in the strategy example above, you can combine operators to create compl
 
 The first step in creating a complex census is to create the strategy itself. You can write a predicate with the operators defined above and use the predicate with [`createStrategy()`](/sdk/reference/classes/vocdonicensus3client#createstrategy). The only requirement is that you include a list of the necessary tokens used by this predicate, including the token `ID` (address), `chainID`, and optionally the `minBalance` (the minimum necessary balance to include a token-holder in a census).
 ~~~ts
-const strategyID = await census3Client.createStrategy('voc_test_strategy', 'VOC3TEST AND VOC3TEST3', {
+const strategyID = await census3Client.createStrategy('voc_test_strategy', 'VOC3TEST AND VOC3TEST2', {
   VOC3TEST: {
     ID: '0x9286d95DB5a59306113028EF0BA85bF7068A199F',
     chainID: 11155111,
     minBalance: '1',
   },
-  VOC3TEST3: {
+  VOC3TEST2: {
     ID: '0x61353Bc49B062EEe99F4768225f4e4f0df5DB1b9',
     chainID: 11155111,
     minBalance: '1',
   },
 });
 ~~~
+
 This API call, if successful, returns the ID of the newly-created strategy. You can also use `getStrategies()` again to make sure the strategy is supported. This ID is needed to create the census based off of the strategy:
 
 ~~~ts
-const censusInfo = await census3Client.createCensus(strategyID);
+const census = await census3Client.createStrategyCensus(strategyID);
 ~~~
 
-This returns a set of information about the census but cannot be used to directly create an election. To do this, just manually create a `PublishedCensus`.
-
-~~~ts
-const census = new PublishedCensus(
-  censusInfo.merkleRoot,
-  censusInfo.uri,
-  censusInfo.anonymous ? CensusType.ANONYMOUS : CensusType.WEIGHTED,
-  censusInfo.size,
-  BigInt(censusInfo.weight)
-);
-~~~
-
-This census can be used to create an election just like any other. In this case, the census would represent all token-holders of the `VOC3TEST` and `VOC3TEST3` tokens, all with a weight of 1. 
+This returns a census can be used to create an election just like any other. In this case, the census would represent all token-holders of the `VOC3TEST` and `VOC3TEST3` tokens, all with a weight of 1. The selected strategy is displayed in the `meta` field of a token-based election.

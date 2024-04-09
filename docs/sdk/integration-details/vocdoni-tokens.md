@@ -1,6 +1,6 @@
 # Vocdoni Tokens
 
-Behind-the-scenes, Vocdoni is powered by a custom [blockchain][blockchain]. This component provides universal verifiability, but it also introduces some complexity. In order to distribute workload and verify transactions, our blockchain uses a digital "currency" of Vocdoni tokens that have no real-world value but help with load-balancing and spam reduction. Actions that update data on the blockchain, such as creating an election, incur a "cost." Integrators are responsible for ensuring that accounts creating elections have a sufficient balance of tokens.
+Behind-the-scenes, Vocdoni is powered by a custom [blockchain][blockchain]. This component provides universal verifiability, but it also introduces some complexity. In order to distribute workload and verify transactions, our blockchain uses a digital "currency" of Vocdoni tokens that have no real-world value but help with spam reduction and self-sustainability. Actions that update data on the blockchain, such as creating an election, incur a "cost." Integrators are responsible for ensuring that accounts creating elections have a sufficient balance of tokens.
 
 :::info 
 Casting a vote ***never*** requires Vocdoni tokens.

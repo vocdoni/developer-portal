@@ -6,7 +6,7 @@ This is the census type used in the [SDK Tutorial](/sdk/tutorial). Follow along 
 
 Off-chain tree census can be created as [`PlainCensus`][plain-census] or [`WeightedCensus`][weighted-census]. If a weighted census is used, voters can be assigned a weight which proportionally determines the power of their vote: 
 
-~~~js
+~~~ts
 weightedCensus.add([
     {
       key: address1,
