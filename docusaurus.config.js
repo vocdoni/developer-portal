@@ -140,22 +140,24 @@ const config = {
             position: 'left',
             items: [
               {
-                type: 'doc',
-                docId: 'sdk/index',
+                to: 'sdk',
                 label: 'SDK',
-                className: 'plausible-event-name=Header+SDK'
+                activeBasePath: 'sdk'
               },
               {
-                type: 'doc',
-                docId: 'ui-components/index',
+                to: 'vocdoni-api/vocdoni-api',
+                label: 'API',
+                activeBasePath: 'vocdoni-api'
+              },
+              {
+                to: 'ui-components',
                 label: 'UI Components',
-                className: 'plausible-event-name=Header+UICOMPONENTS'
+                activeBasePath: 'ui-components'
               },
               {
-                type: 'doc',
-                docId: 'protocol/index',
+                to: 'protocol',
                 label: 'Protocol',
-                className: 'plausible-event-name=Header+API'
+                activeBasePath: 'protocol'
               }
             ]
           },
