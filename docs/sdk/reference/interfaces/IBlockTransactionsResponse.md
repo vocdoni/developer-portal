@@ -18,7 +18,7 @@
 
 #### Defined in
 
-[api/chain.ts:312](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/api/chain.ts#L312)
+[api/chain.ts:312](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/api/chain.ts#L312)
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 #### Defined in
 
-[api/chain.ts:313](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/api/chain.ts#L313)
+[api/chain.ts:313](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/api/chain.ts#L313)
 
 ___
 
@@ -38,4 +38,4 @@ ___
 
 #### Defined in
 
-[api/chain.ts:314](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/api/chain.ts#L314)
+[api/chain.ts:314](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/api/chain.ts#L314)

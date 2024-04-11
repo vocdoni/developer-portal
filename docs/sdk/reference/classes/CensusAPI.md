@@ -46,7 +46,7 @@ Adds participants to a census
 
 #### Defined in
 
-[api/census.ts:151](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/api/census.ts#L151)
+[api/census.ts:151](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/api/census.ts#L151)
 
 ___
 
@@ -70,7 +70,7 @@ Create's a new census in the API.
 
 #### Defined in
 
-[api/census.ts:132](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/api/census.ts#L132)
+[api/census.ts:132](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/api/census.ts#L132)
 
 ___
 
@@ -96,7 +96,7 @@ on success
 
 #### Defined in
 
-[api/census.ts:273](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/api/census.ts#L273)
+[api/census.ts:273](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/api/census.ts#L273)
 
 ___
 
@@ -122,7 +122,7 @@ on success
 
 #### Defined in
 
-[api/census.ts:221](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/api/census.ts#L221)
+[api/census.ts:221](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/api/census.ts#L221)
 
 ___
 
@@ -151,7 +151,7 @@ on success
 
 #### Defined in
 
-[api/census.ts:243](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/api/census.ts#L243)
+[api/census.ts:243](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/api/census.ts#L243)
 
 ___
 
@@ -177,7 +177,7 @@ on success
 
 #### Defined in
 
-[api/census.ts:206](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/api/census.ts#L206)
+[api/census.ts:206](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/api/census.ts#L206)
 
 ___
 
@@ -203,7 +203,7 @@ on success
 
 #### Defined in
 
-[api/census.ts:187](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/api/census.ts#L187)
+[api/census.ts:187](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/api/census.ts#L187)
 
 ___
 
@@ -226,7 +226,7 @@ Returns the size of a given census
 
 #### Defined in
 
-[api/census.ts:290](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/api/census.ts#L290)
+[api/census.ts:290](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/api/census.ts#L290)
 
 ___
 
@@ -249,7 +249,7 @@ Returns the type of given census
 
 #### Defined in
 
-[api/census.ts:316](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/api/census.ts#L316)
+[api/census.ts:316](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/api/census.ts#L316)
 
 ___
 
@@ -272,4 +272,4 @@ Returns the weight of a given census
 
 #### Defined in
 
-[api/census.ts:303](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/api/census.ts#L303)
+[api/census.ts:303](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/api/census.ts#L303)

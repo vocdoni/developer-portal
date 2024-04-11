@@ -19,7 +19,7 @@ The auth token for the following requests
 
 #### Defined in
 
-[api/csp.ts:49](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/api/csp.ts#L49)
+[api/csp.ts:49](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/api/csp.ts#L49)
 
 ___
 
@@ -31,4 +31,4 @@ The response of the CSP
 
 #### Defined in
 
-[api/csp.ts:54](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/api/csp.ts#L54)
+[api/csp.ts:54](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/api/csp.ts#L54)

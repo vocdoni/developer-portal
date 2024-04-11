@@ -41,7 +41,7 @@ Returns the number of accounts
 
 #### Defined in
 
-[api/account.ts:131](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/api/account.ts#L131)
+[api/account.ts:131](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/api/account.ts#L131)
 
 ___
 
@@ -65,7 +65,7 @@ Returns paginated list of elections for a specific account
 
 #### Defined in
 
-[api/account.ts:212](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/api/account.ts#L212)
+[api/account.ts:212](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/api/account.ts#L212)
 
 ___
 
@@ -88,7 +88,7 @@ Fetches an Account information
 
 #### Defined in
 
-[api/account.ts:144](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/api/account.ts#L144)
+[api/account.ts:144](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/api/account.ts#L144)
 
 ___
 
@@ -111,7 +111,7 @@ Returns paginated list of accounts
 
 #### Defined in
 
-[api/account.ts:119](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/api/account.ts#L119)
+[api/account.ts:119](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/api/account.ts#L119)
 
 ___
 
@@ -134,7 +134,7 @@ Fetches the account metadata
 
 #### Defined in
 
-[api/account.ts:157](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/api/account.ts#L157)
+[api/account.ts:157](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/api/account.ts#L157)
 
 ___
 
@@ -158,7 +158,7 @@ Sets Account information
 
 #### Defined in
 
-[api/account.ts:171](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/api/account.ts#L171)
+[api/account.ts:171](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/api/account.ts#L171)
 
 ___
 
@@ -181,7 +181,7 @@ Returns the account's transfers count
 
 #### Defined in
 
-[api/account.ts:198](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/api/account.ts#L198)
+[api/account.ts:198](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/api/account.ts#L198)
 
 ___
 
@@ -205,4 +205,4 @@ Returns paginated list of transfers for a specific account
 
 #### Defined in
 
-[api/account.ts:185](https://github.com/vocdoni/vocdoni-sdk/blob/9c64446/src/api/account.ts#L185)
+[api/account.ts:185](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/api/account.ts#L185)
