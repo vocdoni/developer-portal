@@ -22,6 +22,8 @@ const config = {
   deploymentBranch: 'gh-pages',
   trailingSlash: false,
 
+  staticDirectories: ['static', 'static/workers'],
+
   markdown: {
     mermaid: true
   },

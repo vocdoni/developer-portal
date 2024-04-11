@@ -1,0 +1,63 @@
+```jsx live
+<p>
+<OrganizationHeader/>
+<Flex
+      flexDirection={{ base: 'column', lg: 'row' }}
+      alignItems={{ base: 'center', lg: 'start' }}
+      gap={{ base: 2, lg: 8 }}
+      mb={10}
+      pt={10}
+    >
+      <Box flex='1 1 10%' minW={40}>
+        <AspectRatio ratio={1.25 / 1} maxW={56}>
+          <OrganizationAvatar
+            mx='auto'
+          />
+        </AspectRatio>
+      </Box>
+
+      <Flex
+        flex='1 1 80%'
+        justifyContent='space-between'
+        alignItems={{ base: 'center', lg: 'start' }}
+        flexDirection={{ base: 'column', lg: 'row' }}
+        gap={{ base: 2 }}
+        minW={0}
+        maxW='100%'
+      >
+        <Flex
+          flex='1 1 100%'
+          direction='column'
+          justifyContent={{ lg: 'space-between' }}
+          alignItems={{ base: 'center', lg: 'start' }}
+          gap={2}
+          order={{ base: 2, lg: 0 }}
+        >
+          <Flex
+            w='100%'
+            flexDirection='row'
+            justifyContent='space-between'
+            alignItems='center'
+            sx={{
+              p: {
+                noOfLines: 'none',
+                overflow: 'hidden',
+                display: '-webkit-box',
+                WebkitBoxOrient: 'vertical',
+                WebkitLineClamp: 'var(--chakra-line-clamp)',
+              },
+            }}
+          >
+            <OrganizationName
+              as='p'
+              fontSize={32}
+              lineHeight={1.5}
+              maxW={{ base: '250px', sm: '300px', sm2: '350px', md: '450px', lg: '370px', lg2: '500px', xl: '650px' }}
+            />
+          </Flex>
+            <OrganizationDescription fontSize='lg' lineHeight={1.7} />
+        </Flex>
+      </Flex>
+    </Flex>
+</p>
+```

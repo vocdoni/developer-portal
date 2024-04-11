@@ -32,8 +32,8 @@
     "gen-post:Darwin": "grep -L \"mdx-code-block\" docs/vocdoni-api/** | xargs -I {} sed -i '' -e $'/^\\(<\\)/i\\\n````mdx-code-block\n' -e $'/^\\(<\\)/a\\\n````' {}",
     "gen-post:Linux": "grep -L \"mdx-code-block\" docs/vocdoni-api/** | xargs sed -i -e '/^\\(<\\)/i````mdx-code-block' -e '/^\\(<\\)/a````'",
     "copy-sdk-docs": "rm -rf ./docs/sdk/reference && cp -R  $VOCDONI_SDK_PATH/docs/temp_docs/ ./docs/sdk/reference && rm -rf $VOCDONI_SDK_PATH/docs/temp_docs && mv ./docs/sdk/reference/README.md ./docs/sdk/reference/sdk-reference.md && if [ \"$(uname)\" = \"Darwin\" ]; then npm run sdk-post:Darwin; else npm run sdk-post:Linux; fi",
-    "sdk-post:Darwin": "brew install gsed && find ./docs/sdk/reference -type f | xargs gsed -i -r -e 's\/\\[\\@vocdoni\\\/sdk\\]\\((\\.\\.\\\/)*README\\.md\\)\/\\[\\@vocdoni\\\/sdk\\]\\(\\\/sdk\\)\/g' && find ./docs/sdk/reference -type f | xargs gsed -i -e 's\/(\\(.*\\).md\\(#[a-zA-Z0-9]*\\)*)\/(\\1\\2)\/g' && gsed -i -z -r -e 's/^@vocdoni\\/sdk\\\n\\\n//g' ./docs/sdk/reference/sdk-reference.md && find ./docs/sdk/reference -type f | xargs gsed -i -e 's/README/sdk-reference/g'",
-    "sdk-post:Linux": "find ./docs/sdk/reference -type f | xargs sed -i -r -e 's\/\\[\\@vocdoni\\\/sdk\\]\\((\\.\\.\\\/)*README\\.md\\)\/\\[\\@vocdoni\\\/sdk\\]\\(\\\/sdk\\)\/g' && find ./docs/sdk/reference -type f | xargs sed -i -e 's\/(\\(.*\\).md\\(#[a-zA-Z0-9]*\\)*)\/(\\1\\2)\/g' && sed -i -z -r -e 's/^@vocdoni\\/sdk\\\n\\\n//g' ./docs/sdk/reference/sdk-reference.md && find ./docs/sdk/reference -type f | xargs sed -i -e 's/README/sdk-reference/g'"
+    "sdk-post:Darwin": "brew install gsed && find ./docs/sdk/reference -type f | xargs gsed -i -r -e 's/\\[\\@vocdoni\\/sdk\\]\\((\\.\\.\\/)*README\\.md\\)/\\[\\@vocdoni\\/sdk\\]\\(\\/sdk\\)/g' && find ./docs/sdk/reference -type f | xargs gsed -i -e 's/(\\(.*\\).md\\(#[a-zA-Z0-9]*\\)*)/(\\1\\2)/g' && gsed -i -z -r -e 's/^@vocdoni\\/sdk\\\n\\\n//g' ./docs/sdk/reference/sdk-reference.md && find ./docs/sdk/reference -type f | xargs gsed -i -e 's/README/sdk-reference/g'",
+    "sdk-post:Linux": "find ./docs/sdk/reference -type f | xargs sed -i -r -e 's/\\[\\@vocdoni\\/sdk\\]\\((\\.\\.\\/)*README\\.md\\)/\\[\\@vocdoni\\/sdk\\]\\(\\/sdk\\)/g' && find ./docs/sdk/reference -type f | xargs sed -i -e 's/(\\(.*\\).md\\(#[a-zA-Z0-9]*\\)*)/(\\1\\2)/g' && sed -i -z -r -e 's/^@vocdoni\\/sdk\\\n\\\n//g' ./docs/sdk/reference/sdk-reference.md && find ./docs/sdk/reference -type f | xargs sed -i -e 's/README/sdk-reference/g'"
   },
   "dependencies": {
     "@aragon/ui-components": "0.1.3",
@@ -58,6 +58,7 @@
     "ethers": "^5.7.2",
     "framer-motion": "^10.12.16",
     "hast-util-is-element": "1.1.0",
+    "msw": "^2.2.13",
     "postcss": "^8.4.18",
     "prism-react-renderer": "^1.3.1",
     "react": "^18.2.0",
@@ -94,6 +95,11 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
+    ]
+  },
+  "msw": {
+    "workerDirectory": [
+      "static/workers"
     ]
   }
 }
