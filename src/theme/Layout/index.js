@@ -1,5 +1,7 @@
+import {Center} from '@chakra-ui/react';
 import Layout from '@theme-original/Layout';
 import React, {useEffect, useState} from 'react';
+import ClipLoader from 'react-spinners/ClipLoader';
 import {worker} from '../../mocks/worker';
 
 export default function LayoutWrapper(props) {
@@ -24,9 +26,24 @@ export default function LayoutWrapper(props) {
 
   if (!isWorkerReady) {
     // Optionally render a loading indicator or return null to wait without showing anything
-    return <div>Loading...</div>;
+    return <Loading1></Loading1>;
   }
 
   // Render the original Layout component only when the worker is ready
   return <Layout {...props} />;
 }
+
+const Loading1 = () => {
+  return (
+    <Center centerContent size="full" minHeight="100vh">
+      <ClipLoader
+        loading={true}
+        size={15}
+        cssOverride={{
+          margin: '0 5px',
+        }}
+      />
+      loading...
+    </Center>
+  );
+};
