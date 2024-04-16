@@ -1,22 +1,43 @@
----
-title: Election components
-description: Vocdoni Chakra components for Elections
----
+# Election Components
+
+## Election Component
+
+While individual election components can be used, the `Election` component provides all of the components in a single group. This is provided for ease of use but allows for less customization than the use of individual components. The Election component does not need to be used with an `ElectionProvider`.
+
+```jsx live 
+<Election id={'4ae20a8eb4caa2f2508be2538decb9648bd9fab41f1d5a549a42020000000000'}/>
+```
 
 ## Election provider
 
-To use election components you have to wrap them using the `ElectionProvider`
+To use election components you have to wrap them with the `ElectionProvider` and `ClientProvider`. 
 
 ```jsx
-<ElectionProvider id='your-organization-uid'>
-      <ElectionHeader />
-      <ElectionTitle />
-      <ElectionSchedule textTransform='uppercase' />
-      <ElectionStatusBadge variant='solid' colorScheme='teal' />
-      <ElectionDescription fontFamily='monospace' />
-      <ElectionQuestions />
-</ElectionProvider>
+<ClientProvider signer={signer}>
+      <ElectionProvider id='your-election-id' fetchCensus={true}>
+            <ElectionHeader />
+            <ElectionTitle />
+            <ElectionSchedule textTransform='uppercase' />
+            <ElectionStatusBadge variant='solid' colorScheme='teal' />
+            <ElectionDescription fontFamily='monospace' />
+            <ElectionQuestions />
+      </ElectionProvider>
+</ClientProvider>
 ```
+
+:::warning
+If voting with a non-CSP census, you need to set `fetchCensus={true}` for the `ElectionProvider`
+:::
+
+The `ElectionActions` component also need to be wrapped with the `ActionsProvider`:
+
+```jsx
+<ActionsProvider>
+      <ElectionActions />
+</ActionsProvider>
+```
+
+
 ## Election Header
 
 Show an election's header image.
@@ -33,6 +54,14 @@ Show an election's title.
 <ElectionTitle />
 ```
 
+## Election Description
+
+Show an election's description.
+
+```jsx live
+<ElectionDescription fontFamily='monospace' />
+```
+
 ## Election Schedule
 
 Show an election's voting period. You can specify date format using [date-fns](https://date-fns.org/v2.30.0/docs/format) format
@@ -43,41 +72,79 @@ Show an election's voting period. You can specify date format using [date-fns](h
 
 ## Election Status Badge
 
-Shows the status badge for an election. Possible values are defined by `ElectionStatus` from `@vocdoni/sdk`:
+Shows the status badge for an election. Possible values are defined by [`ElectionStatus`](/sdk/reference/enums/electionstatus) from `@vocdoni/sdk`:
 `PROCESS_UNKNOWN`, `UPCOMING`, `ONGOING`, `ENDED`, `CANCELED`, `PAUSED`, `RESULTS`
 
 ```jsx live
 <ElectionStatusBadge variant='solid' colorScheme='teal' />
 ```
 
-## Election Description
+The `ElectionStatusBadge` is styled leveraging the capabilities of the Chakra styling system [`tag`](https://chakra-ui.com/docs/components/tag) component. By adjusting the `colorScheme` property, you can easily alter the color of the badge based on the election status. If no color scheme is set, the [default color scheme]((https://github.com/vocdoni/ui-components/blob/2ca7942/packages/chakra-components/src/components/Election/StatusBadge.tsx#L12-L24)) adjusts tag color based on the election status.
 
-Show an election's description.
-
-```jsx live
-<ElectionDescription fontFamily='monospace' />
-```
+:::info theming
+For a more comprehensive customization, consider reading [`Theming`](/ui-components/theming).
+:::
 
 ## Election Questions
 
 Show the questions for an election.
 
 ```jsx live
-<ElectionQuestions />
+<ElectionQuestions
+  onInvalid={(errors) => console.error(errors)}
+  confirmContents={(questions, answers) => (
+    <>
+      <p>Customizing contents is quite easy</p>
+      <QuestionsConfirmation questions={questions} answers={values} />
+    </>
+  )}
+/>
 ```
+
+:::info
+
+This component renders **Markdown** text in the question descriptions.
+
+:::
+
 
 ## Election Results
 
-Show the results for an election.
+Show the results for an election. 
 
 ```jsx live
 <ElectionResults />
 ```
 
+## Election Actions
+
+Show buttons for changing the status of the election.
 
 ```jsx live
+<ElectionActions />
+```
+
+## Vote Button 
+
+Show the vote button for an election. Button is enabled if the current user is able to vote. 
+
+```jsx live
+<VoteButton />
+```
+
+## Spreadsheet Access
+
+Show the interactive user validation pane for CSP elections.
+```jsx live title="spreadsheet"
 <SpreadsheetAccess />
 ```
 
-import { ElectionResults, SpreadsheetAccess } from "@vocdoni/chakra-components"
 
+# Internal components
+
+There are some internal components that are not exported but can still be styled.
+Some of these are:
+
+- `ConfirmModal`
+- `QuestionsConfirmation`
+import { RiLiveFill } from "react-icons/ri"

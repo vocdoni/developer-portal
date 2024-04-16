@@ -1,25 +1,30 @@
-import React from 'react'
 import {
-  Image,
-  ElectionProvider,
-  ElectionHeader,
-  ElectionTitle,
-  ElectionSchedule,
-  ElectionResults,
-  ElectionStatusBadge,
+  Balance,
+  Button,
+  Election,
+  ElectionActions,
   ElectionDescription,
+  ElectionHeader,
   ElectionQuestions,
-  OrganizationProvider,
+  ElectionResults,
+  ElectionSchedule,
+  ElectionStatusBadge,
+  ElectionTitle,
+  HR,
+  Image,
+  Markdown,
   OrganizationAvatar,
   OrganizationDescription,
   OrganizationHeader,
   OrganizationName,
-  Organization,
-  Balance
-} from '@vocdoni/chakra-components'
+  QuestionsConfirmation,
+  SpreadsheetAccess,
+  VoteButton,
+} from '@vocdoni/chakra-components';
+import {ElectionProvider, OrganizationProvider} from '@vocdoni/react-providers';
+import React from 'react';
 
-import {Flex, Box, AspectRatio} from '@chakra-ui/react'
-
+import {AspectRatio, Box, Flex} from '@chakra-ui/react';
 // Add react-live imports you need here
 const ReactLiveScope = {
   React,
@@ -36,12 +41,20 @@ const ReactLiveScope = {
   ElectionStatusBadge,
   ElectionDescription,
   ElectionQuestions,
+  ElectionActions,
+  Election,
+  QuestionsConfirmation,
+  SpreadsheetAccess,
+  VoteButton,
   OrganizationProvider,
   OrganizationAvatar,
   OrganizationDescription,
   OrganizationHeader,
   OrganizationName,
-  Organization,
-  Balance
-}
-export default ReactLiveScope
+  Balance,
+  Button,
+  HR,
+  Image,
+  Markdown,
+};
+export default ReactLiveScope;

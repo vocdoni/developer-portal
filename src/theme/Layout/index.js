@@ -35,7 +35,7 @@ export default function LayoutWrapper(props) {
 
 const Loading1 = () => {
   return (
-    <Center centerContent size="full" minHeight="100vh">
+    <Center size="full" minHeight="100vh">
       <ClipLoader
         loading={true}
         size={15}

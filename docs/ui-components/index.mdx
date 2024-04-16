@@ -1,15 +1,8 @@
----
-title: UI Components
-description: Vocdoni Chakra components
----
-
-UI Components with Chakra UI
-==========================
+# UI Components
 
 Chakra ui components for easily integrating Vocdoni services.
 
-Installing
-----------
+## Installing
 
 You'll first need to have a project with chakra installed and configured. Follow
 their [official documentation][chakra getting started] in order to do so.
@@ -20,11 +13,10 @@ After that, you can add the required vocdoni components dependencies:
 yarn add @vocdoni/sdk @vocdoni/chakra-components react-markdown remark-gfm
 ~~~
 
-Usage
------
+## Usage
 
 The very first step is to add the `<ClientProvider />` as a wrapper of your
-application or, at least, of your election:
+application or your election components. The `signer` is the wallet belonging to the organization or voter you with to use to interact with elections. 
 
 ~~~tsx
 import { ClientProvider } from '@vocdoni/chakra-components'
@@ -39,24 +31,20 @@ const App = () => {
 }
 ~~~
 
-Note `env` can be any of the [SDK available environments][sdk environments],
-either in string format, or using the SDK `EnvOptions` enum.
+Note `env` can be any of the [Vocdoni Environments][sdk environments], either in string format or using the SDK `EnvOptions` enum.
 
-After that, the easiest way to integrate a voting would be to just import the
-`Election` component and specify it an id for your election:
+After that, the easiest way to integrate a voting process would be to just import the
+`Election` component and specify an election id:
 
 ~~~tsx
 import { Election } from '@vocdoni/chakra-components'
 
 const CustomVoteComponent = () => {
-  return <Election id='your-awesome-election-process-uid' />
+  return <Election id='your-election-id' />
 }
 ~~~
 
-This will automatically instance the Election Provider with all the available
-voting components. You can style it following the [instructions below][theming],
-and/or you can also create your own vote view, based on the components used by
-the `Election` component, and style it directly with props:
+This will automatically instantiate the Election Provider with all the available voting components. You can style it following the [theming instructions][theming]. You can also create your own vote view, based on the components used by the `Election` component, and style it directly with props:
 
 ~~~tsx
 import {
@@ -71,7 +59,7 @@ import {
 
 const CustomVoteComponent = () => {
   return (
-    <ElectionProvider id='your-awesome-election-process-uid'>
+    <ElectionProvider id='your-election-id' fetchCensus={true}>
       <ElectionHeader />
       <ElectionTitle
         p={5}
@@ -89,22 +77,11 @@ const CustomVoteComponent = () => {
 }
 ~~~
 
-Take a look at section below on more examples of how to style the voting
-components.
+## Theming
 
-> Note you won't see some required styles if you have not added the
-> ChakraProvider to your project, see below for more details on this.
+Since these components use chakra's theming system, they can be styled in the same way as [described in the Chakra documentation][chakra theming], but using the custom theme components we defined (see [theming components] for more details).
 
-Theming
--------
-
-Since these components use chakra's theming system, the way to style these
-voting components is
-[the same as described in their documentation][chakra theming], but using the
-custom components we defined (see [theming components] for more details).
-
-In order to start styling the voting components, you should use the
-`ChakraProvider`, and customize the passed theme:
+In order to start styling the voting components, you should use the `ChakraProvider`, and customize the theme:
 
 ~~~tsx
 // this can be imported from '@chakra-ui/react' too, but that's more generic
@@ -118,18 +95,12 @@ export const App = () => (
 )
 ~~~
 
-As you can see, we're importing a custom defined theme from
-`@vocdoni/chakra-components`, but at the same time, we're using `extendTheme`.
-This is because we're not merging our styles with the base chakra theme, both to
-avoid a bigger bundle size and to ensure we don't unexpectedly overwrite styles.
+As you can see, we're importing a custom defined theme from `@vocdoni/chakra-components`, but at the same time, we're using `extendTheme`. This is in order to avoid using base chakra theme, both to avoid a bigger bundle size and to ensure we don't unexpectedly overwrite styles.
 
-The above example is the easiest way to get all the default styles up and
-running, but you can always define your entire theme and ignore our base styles.
-See how our components are grainly styled below, in [components structure].
+The above example is the easiest way to get all the default styles up and running, but you can always define your own entire theme and ignore our base styles.
+The [components structure] section describes how our components are styled with more granular detail.
 
-In case you want to add the voting components to a page and ensure chakra-ui
-will not affect your theme, you may need to pass `resetCSS={false}` as a
-component prop:
+In case you want to add the voting components to a page and ensure chakra-ui will not affect your existing theme, you may need to pass `resetCSS={false}` as a component prop: 
 
 ~~~tsx
 import { extendTheme } from '@chakra-ui/system'
@@ -163,16 +134,13 @@ export const App = () => (
 )
 ~~~
 
-We have applied a few amount of styles, so you can perfectly ignore our styles
-and write them from the ground up.
+You can perfectly ignore our styles and write them from the ground up.
 
 ### Theming components
 
-Since you have components for every part of an election process, you can follow
-the official Chakra documentation on how to customize component styles, and just
-use our components where required.
+For each of the election components we provide, you can follow the official Chakra documentation on how to customize component styles.
 
-Here's a small example styling the title and image of elections:
+Here's a small example of custom theme for the title and image of an election:
 
 ~~~ts
 import { extendTheme, ComponentSingleStyleConfig } from '@chakra-ui/react'
@@ -209,11 +177,8 @@ export default theme
 All components have all the features you would expect from a chakra component,
 meaning you can style all components via component props too:
 
-~~~tsx
-import { ElectionTitle, ElectionHeader } from '@vocdoni/chakra-components'
-
-const App = () => (
-  <ElectionProvider id='an-election-id'>
+~~~tsx live
+  <ElectionProvider id='4ae20a8eb4caa2f2508be2538decb9648bd9fab41f1d5a549a42020000000000'>
     <ElectionHeader
       borderRadius="full"
       boxSize="100px"
@@ -226,17 +191,79 @@ const App = () => (
       fontSize='50px'
     />
   </ElectionProvider>
-)
 ~~~
+
+You can also use component props much more extensively. For example, here is a more attractive organization pane styled with props:
+
+```jsx live
+<p>
+<OrganizationHeader/>
+<Flex
+      flexDirection={{ base: 'column', lg: 'row' }}
+      alignItems={{ base: 'center', lg: 'start' }}
+      gap={{ base: 2, lg: 8 }}
+      mb={10}
+      pt={10}
+    >
+      <Box flex='1 1 10%' minW={40}>
+        <AspectRatio ratio={1.25 / 1} maxW={56}>
+          <OrganizationAvatar
+            mx='auto'
+          />
+        </AspectRatio>
+      </Box>
+
+      <Flex
+        flex='1 1 80%'
+        justifyContent='space-between'
+        alignItems={{ base: 'center', lg: 'start' }}
+        flexDirection={{ base: 'column', lg: 'row' }}
+        gap={{ base: 2 }}
+        minW={0}
+        maxW='100%'
+      >
+        <Flex
+          flex='1 1 100%'
+          direction='column'
+          justifyContent={{ lg: 'space-between' }}
+          alignItems={{ base: 'center', lg: 'start' }}
+          gap={2}
+          order={{ base: 2, lg: 0 }}
+        >
+          <Flex
+            w='100%'
+            flexDirection='row'
+            justifyContent='space-between'
+            alignItems='center'
+            sx={{
+              p: {
+                noOfLines: 'none',
+                overflow: 'hidden',
+                display: '-webkit-box',
+                WebkitBoxOrient: 'vertical',
+                WebkitLineClamp: 'var(--chakra-line-clamp)',
+              },
+            }}
+          >
+            <OrganizationName
+              as='p'
+              fontSize={32}
+              lineHeight={1.5}
+              maxW={{ base: '250px', sm: '300px', sm2: '350px', md: '450px', lg: '370px', lg2: '500px', xl: '650px' }}
+            />
+          </Flex>
+            <OrganizationDescription fontSize='lg' lineHeight={1.7} />
+        </Flex>
+      </Flex>
+    </Flex>
+</p>
+```
 
 #### Theming complex multipart components
 
-Some components, like `<ElectionQuestions />` follow a multipart component
-structure. Please refer to the
-[official chakra documentation][multipart components] for more info on how to
-style these type of components.
+Some components, like `ElectionQuestions`, follow a multipart component structure. Please refer to the [official chakra documentation][multipart components] for more info on how to style this type of component.
 
-Here's a small example styling the `ElectionQuestions` component:
+Here's a small example of styling the `ElectionQuestions` component:
 
 ~~~ts
 import { extendTheme, createMultiStyleConfigHelpers } from '@chakra-ui/react'
@@ -317,8 +344,8 @@ v3.0][license].
 [advanced theming]: https://chakra-ui.com/docs/styled-system/advanced-theming
 [multipart components]: https://chakra-ui.com/docs/styled-system/component-style#styling-multipart-components
 [questions]: #questions
-[theme path]: https://github.com/vocdoni/ui-components/tree/7e2f161be654b287ebc82d553c316164e20c8fd3/templates/chakra/src/theme
+[theme path]: https://github.com/vocdoni/ui-components/tree/main/templates/chakra/src/theme
 [chakra template]: ../../templates/chakra/src/theme
 [css props]: #styling-via-props
 [sdk environments]: /sdk/integration-details#environment
-[translations file]: https://github.com/vocdoni/ui-components/blob/7e2f161be654b287ebc82d553c316164e20c8fd3/packages/react-providers/src/i18n/localize.tsx
+[translations file]: https://github.com/vocdoni/ui-components/blob/main/packages/react-providers/src/i18n/localize.tsx

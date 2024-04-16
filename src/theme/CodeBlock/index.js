@@ -1,30 +1,37 @@
 import {ChakraProvider, extendTheme} from '@chakra-ui/react';
-import {Wallet} from '@ethersproject/wallet';
 import CodeBlock from '@theme-init/CodeBlock';
 import Playground from '@theme/Playground';
 import ReactLiveScope from '@theme/ReactLiveScope';
 import {
+  ActionsProvider,
   ClientProvider,
-  ElectionProvider,
-  OrganizationProvider,
   theme,
 } from '@vocdoni/chakra-components';
+import {ElectionProvider, OrganizationProvider} from '@vocdoni/react-providers';
+import {EnvOptions} from '@vocdoni/sdk';
 import React from 'react';
-import {mockedElection, mockedOrganization} from '../../lib/provider-mocks';
+import {
+  client,
+  electionId,
+  organizationId,
+  spreadsheetElectionId,
+} from '../../lib/provider-mocks';
 
 const withLiveEditor = Component => {
   function WrappedComponent(props) {
     if (props.live) {
-      // @ts-expect-error: we have deliberately widened the type of language prop
-      const signer = new Wallet(
-        '0xfd799c0f8ca842ba0b2479580500713c949637f159344e14c0333ff6b76d8920'
-      );
+      let mockElectionId = electionId;
+      if (props.title === '"spreadsheet"') {
+        mockElectionId = spreadsheetElectionId;
+      }
       return (
         <ChakraProvider theme={extendTheme(theme)} resetCSS={false}>
-          <ClientProvider env="stg" signer={signer}>
-            <OrganizationProvider organization={mockedOrganization}>
-              <ElectionProvider election={mockedElection}>
-                <Playground scope={ReactLiveScope} {...props} />
+          <ClientProvider env={EnvOptions.STG} signer={client.wallet}>
+            <OrganizationProvider id={organizationId}>
+              <ElectionProvider id={mockElectionId} fetchCensus={true}>
+                <ActionsProvider>
+                  <Playground scope={ReactLiveScope} {...props} />
+                </ActionsProvider>
               </ElectionProvider>
             </OrganizationProvider>
           </ClientProvider>
