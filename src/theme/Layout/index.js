@@ -2,26 +2,54 @@ import {Center} from '@chakra-ui/react';
 import Layout from '@theme-original/Layout';
 import React, {useEffect, useState} from 'react';
 import ClipLoader from 'react-spinners/ClipLoader';
-import {worker} from '../../mocks/worker';
+import {
+  mockAccountService,
+  mockCensusService,
+  mockCensusSizeService,
+  mockCensusTypeService,
+  mockCensusWeightService,
+  mockElectionService,
+  mockTransactionReferenceService,
+  mockTransactionService,
+  mockVoteService,
+} from '../../lib/provider-mocks';
 
 export default function LayoutWrapper(props) {
   const [isWorkerReady, setWorkerReady] = useState(false);
 
   useEffect(() => {
-    worker
-      .start({
-        onUnhandledRequest: 'bypass',
-      })
-      .then(() => {
-        setWorkerReady(true); // Set the state to true when the worker is ready
-      })
-      .catch(error => {
-        console.error('Failed to start the MSW worker:', error);
-      });
-
-    return () => {
-      worker.stop(); // Optionally stop the worker when the component unmounts
-    };
+    if (typeof window !== 'undefined') {
+      import('msw/browser')
+        .then(({setupWorker}) => {
+          const worker = setupWorker(
+            mockAccountService,
+            mockElectionService,
+            mockTransactionService,
+            mockTransactionReferenceService,
+            mockCensusService,
+            mockCensusSizeService,
+            mockCensusTypeService,
+            mockCensusWeightService,
+            mockVoteService
+          );
+          worker
+            .start({
+              onUnhandledRequest: 'bypass',
+            })
+            .then(() => {
+              // Set the state to true when the worker is ready
+              setWorkerReady(true);
+              return () => {
+                return () => {
+                  worker.stop(); // Optionally stop the worker when the component unmounts
+                };
+              };
+            });
+        })
+        .catch(error => {
+          console.error('Failed to start the MSW worker:', error);
+        });
+    }
   }, []);
 
   if (!isWorkerReady) {

@@ -11,8 +11,8 @@ import {HttpResponse, http} from 'msw';
 /**
  * This file contains mock request responses used for the ui-components documentation.
  * Request interception is done with Mock Service Workers (static/workers/mockServiceWorker.js)
- * New mock workers must be added to src/mocks/worker.ts.
- * src/theme/layout.ts starts the mock service workers before the react-live panes render.
+ * New mock workers must be added to src/theme/layout.ts which starts the mock service workers
+ *  before the react-live panes render.
  */
 
 export const electionId =
