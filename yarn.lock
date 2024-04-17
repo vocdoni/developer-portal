@@ -4636,7 +4636,7 @@
     "@typescript-eslint/types" "5.42.1"
     eslint-visitor-keys "^3.3.0"
 
-"@vocdoni/chakra-components@^0.7.17":
+"@vocdoni/chakra-components@0.7.17":
   version "0.7.17"
   resolved "https://registry.yarnpkg.com/@vocdoni/chakra-components/-/chakra-components-0.7.17.tgz#9c21463e7a70c12ab97f9bdc4cb7bc4a18e644e9"
   integrity sha512-VBBxz7jB+2RqMFdOwelspSg/dMm8kmtjaNRJ/iaqj9Xoigx7dUx9lndX/K5kbvCM/6RKjf8XuxmiiGNOme8G9A==
