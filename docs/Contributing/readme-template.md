@@ -1,28 +1,42 @@
 # Readme Template
 
 Please use this template when creating readme files for new Vocdoni repositories. This is meant to serve as a guide, rather than a rigid rule; adapt it as necessary. Replace all the instances of `REPO_NAME` with the name of your repository, and fill-in the contents of every `\[bracketed\] item. If you add new sections, make sure to update the table of contents. 
-:::note
-Some features are displayed differently on this site than they will be when rendered as standard markdown. For example, the following logo and badges are centered when displayed on Github.
-:::
+
+**Note:**
+Some features are displayed differently on the developer portal than they are when rendered as standard markdown. For example, the following logo and badges are centered when displayed on Github.
 
 <p align="center" width="100%">
     <img src="https://docs.vocdoni.io/Logotype.svg" />
 </p>
 
+<p align="center" width="100%">
+    <img src="https://img.shields.io/github/commit-activity/m/vocdoni/REPO_NAME" />
+    <a href="https://github.com/vocdoni/REPO_NAME/issues">
+      <img src="https://img.shields.io/github/issues/vocdoni/REPO_NAME" />
+    </a>
+    <a href="https://discord.gg/xFTh8Np2ga">
+      <img src="https://img.shields.io/badge/discord-join%20chat-blue.svg" />
+    </a>
+    <a href="https://twitter.com/vocdoni">
+      <img src="https://img.shields.io/twitter/follow/vocdoni.svg?style=social&label=Follow" />
+    </a>
+</p>
 
-![GitHub commit activity (main)](https://img.shields.io/github/commit-activity/m/vocdoni/REPO_NAME)
-[![GitHub issues](https://img.shields.io/github/issues/vocdoni/REPO_NAME)](https://github.com/vocdoni/REPO_NAME/issues)
-[![Join Discord](https://img.shields.io/badge/discord-join%20chat-blue.svg)](https://discord.gg/xFTh8Np2ga)
-[![Twitter Follow](https://img.shields.io/twitter/follow/vocdoni.svg?style=social&label=Follow)](https://twitter.com/vocdoni)
 
 <!-- Some other badges you can add if applicable:
 Github Workflows:
- ![Main workflow](https://github.com/vocdoni/\[REPO_NAME\]/actions/workflows/main.yml/badge.svg) 
+<img src="https://github.com/vocdoni/\[REPO_NAME\]/actions/workflows/main.yml/badge.svg" />
 Test coverage::
- [![Coverage Status](https://coveralls.io/repos/github/vocdoni/vocdoni-node/badge.svg)](https://coveralls.io/github/vocdoni/vocdoni-node)
+<a href="https://coveralls.io/github/vocdoni/vocdoni-node">
+  <img src="https://coveralls.io/repos/github/vocdoni/vocdoni-node/badge.svg">
+</a>
 Golang specific:
- [![GoDoc](https://godoc.org/go.vocdoni.io/dvote?status.svg)](https://godoc.org/go.vocdoni.io/dvote)
- [![Go Report Card](https://goreportcard.com/badge/go.vocdoni.io/dvote)](https://goreportcard.com/report/go.vocdoni.io/dvote)
+<a href="https://godoc.org/go.vocdoni.io/dvote">
+  <img src="https://godoc.org/go.vocdoni.io/dvote?status.svg">
+</a>
+<a href="https://goreportcard.com/report/go.vocdoni.io/dvote">
+  <img src="https://goreportcard.com/badge/go.vocdoni.io/dvote">
+</a>
  -->
 
   <div align="center">
