@@ -112,17 +112,9 @@ The best place to learn about using \[REPO_NAME\] is the [developer portal](http
 
 ## Contributing 
 
-
 While we welcome contributions from the community, we do not track all of our issues on Github and we may not have the resources to onboard developers and review complex pull requests. That being said, there are multiple ways you can get involved with the project. 
 
-- If you have a simple bug or feature request, please submit an issue. We have many repositories, so please try to submit your issue to the relevant code base (eg. protocol feature request => [vocdoni-node](https://github.com/vocdoni/vocdoni-node), UI integration bugs => [ui-components](https://github.com/vocdoni/ui-components)). 
-- For simpler and more accessible contributions that should be possible without much onboarding, search this repo and others for issues that have the [help-wanted](https://github.com/vocdoni/REPO_NAME/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22) or [good-first-issue](https://github.com/vocdoni/REPO_NAME/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22) tags. 
-    - Fork the Project
-    - Create your Feature Branch (`git checkout -b feature/yourFeature`)
-    - Commit your Changes (`git commit -m 'Add some yourFeature'`)
-    - Push to the Branch (`git push origin feature/yourFeature`)
-    - Open a Pull Request
-- For more complex feature requests, or if you would like to contribute further, please reach out on our [discord](https://chat.vocdoni.io) support channel. 
+Please review our [development guidelines](https://developer.vocdoni.io/development-guidelines).
 
 ## License
 
@@ -131,7 +123,7 @@ This repository is licensed under \[license\](./LICENSE)
 <!-- ATTACH LICENSE NOTICE, IF APPLICABLE. FOR EXAMPLE: -->
 
     Vocdoni API Typescript SDK
-    Copyright (C) 2022 Vocdoni Roots MCU
+    Copyright (C) 2024 Vocdoni Association
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU Affero General Public License as published by

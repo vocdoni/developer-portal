@@ -4,7 +4,7 @@ const sidebarLabelOrder = {
   'Vocdoni API': 2,
   'UI Components': 3,
   'Vocdoni Protocol': 4,
-  Contributing: 5, // Last
+  'Development Guidelines': 5, // Last
 };
 
 const sdkSidebarIDOrder = {
