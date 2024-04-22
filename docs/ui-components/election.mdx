@@ -25,6 +25,11 @@ To use election components you have to wrap them with the `ElectionProvider` and
 </ClientProvider>
 ```
 
+
+::: info election provider
+If you specify an election ID, the provider will fetch the election for you. You can alternatively directly pass an `election` object to the `ElectionProvider` constructor. This is useful if you want to render a list of elections whose data you already have.
+:::
+
 :::warning
 If voting with a non-CSP census, you need to set `fetchCensus={true}` for the `ElectionProvider`
 :::
