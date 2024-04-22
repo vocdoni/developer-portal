@@ -2,6 +2,8 @@
 
 Please use this template when creating readme files for new Vocdoni repositories. This is meant to serve as a guide, rather than a rigid rule; adapt it as necessary. Replace all the instances of `REPO_NAME` with the name of your repository, and fill-in the contents of every `\[bracketed\] item. If you add new sections, make sure to update the table of contents. 
 
+***Make sure to replace the `REPO_NAME` placeholders in the repo-specific badge links***
+
 **Note:**
 Some features are displayed differently on the developer portal than they are when rendered as standard markdown. For example, the following logo and badges are centered when displayed on Github.
 
@@ -13,33 +15,21 @@ Some features are displayed differently on the developer portal than they are wh
 </p>
 
 <p align="center" width="100%">
-    <img src="https://img.shields.io/github/commit-activity/m/vocdoni/REPO_NAME" />
-    <a href="https://github.com/vocdoni/REPO_NAME/issues">
-      <img src="https://img.shields.io/github/issues/vocdoni/REPO_NAME" />
-    </a>
-    <a href="https://discord.gg/xFTh8Np2ga">
-      <img src="https://img.shields.io/badge/discord-join%20chat-blue.svg" />
-    </a>
-    <a href="https://twitter.com/vocdoni">
-      <img src="https://img.shields.io/twitter/follow/vocdoni.svg?style=social&label=Follow" />
-    </a>
+    <a href="https://github.com/vocdoni/REPO_NAME/commits/main/"><img src="https://img.shields.io/github/commit-activity/m/vocdoni/REPO_NAME" /></a>
+    <a href="https://github.com/vocdoni/REPO_NAME/issues"><img src="https://img.shields.io/github/issues/vocdoni/REPO_NAME" /></a>
+    <a href="https://discord.gg/xFTh8Np2ga"><img src="https://img.shields.io/badge/discord-join%20chat-blue.svg" /></a>
+    <a href="https://twitter.com/vocdoni"><img src="https://img.shields.io/twitter/follow/vocdoni.svg?style=social&label=Follow" /></a>
 </p>
 
 
 <!-- Some other badges you can add if applicable:
 Github Workflows:
-<img src="https://github.com/vocdoni/\[REPO_NAME\]/actions/workflows/main.yml/badge.svg" />
+    <a href="https://github.com/vocdoni/REPO_NAME/actions/workflows/main.yml/"><img src="https://github.com/vocdoni/REPO_NAME/actions/workflows/main.yml/badge.svg" /></a>
 Test coverage::
-<a href="https://coveralls.io/github/vocdoni/vocdoni-node">
-  <img src="https://coveralls.io/repos/github/vocdoni/vocdoni-node/badge.svg">
-</a>
+<a href="https://coveralls.io/github/vocdoni/vocdoni-node"><img src="https://coveralls.io/repos/github/vocdoni/vocdoni-node/badge.svg"></a>
 Golang specific:
-<a href="https://godoc.org/go.vocdoni.io/dvote">
-  <img src="https://godoc.org/go.vocdoni.io/dvote?status.svg">
-</a>
-<a href="https://goreportcard.com/report/go.vocdoni.io/dvote">
-  <img src="https://goreportcard.com/badge/go.vocdoni.io/dvote">
-</a>
+<a href="https://godoc.org/go.vocdoni.io/dvote"><img src="https://godoc.org/go.vocdoni.io/dvote?status.svg"></a>
+<a href="https://goreportcard.com/report/go.vocdoni.io/dvote"><img src="https://goreportcard.com/badge/go.vocdoni.io/dvote"></a>
  -->
 
   <div align="center">
@@ -118,11 +108,11 @@ Please review our [development guidelines](https://developer.vocdoni.io/developm
 
 ## License
 
-This repository is licensed under \[license\](./LICENSE)
+This repository is licensed under the [GNU Affero General Public License v3.0.](./LICENSE)
 
 <!-- ATTACH LICENSE NOTICE, IF APPLICABLE. FOR EXAMPLE: -->
 
-    Vocdoni API Typescript SDK
+    Vocdoni \[REPO_NAME\]
     Copyright (C) 2024 Vocdoni Association
 
     This program is free software: you can redistribute it and/or modify
@@ -138,3 +128,6 @@ This repository is licensed under \[license\](./LICENSE)
     You should have received a copy of the GNU Affero General Public License
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
+<!-- Add this badge if the repository has a code of conduct -->
+<!-- [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v1.4%20adopted-ff69b4.svg)](code-of-conduct.md)  -->
+[![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
