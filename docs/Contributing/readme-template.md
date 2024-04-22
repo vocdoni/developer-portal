@@ -5,8 +5,11 @@ Please use this template when creating readme files for new Vocdoni repositories
 **Note:**
 Some features are displayed differently on the developer portal than they are when rendered as standard markdown. For example, the following logo and badges are centered when displayed on Github.
 
+### Everything after this line is the readme template:
+---
+
 <p align="center" width="100%">
-    <img src="https://docs.vocdoni.io/Logotype.svg" />
+    <img src="https://developer.vocdoni.io/img/vocdoni_logotype_full_white.svg" />
 </p>
 
 <p align="center" width="100%">
