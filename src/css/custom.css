@@ -12,47 +12,56 @@
 @tailwind utilities;
 
 :root {
-  --ifm-color-primary: #27AF86;
-  --ifm-color-primary-dark: #1E8666;
-  --ifm-color-primary-darker: #145C46;
-  --ifm-color-primary-darkest: #0B3226;
+  --ifm-color-primary: #27af86;
+  --ifm-color-primary-dark: #1e8666;
+  --ifm-color-primary-darker: #145c46;
+  --ifm-color-primary-darkest: #0b3226;
   --ifm-color-primary-light: #007575;
-  --ifm-color-primary-lighter: #00A7A7;
-  --ifm-color-primary-lightest: #00DBDB;
+  --ifm-color-primary-lighter: #00a7a7;
+  --ifm-color-primary-lightest: #00dbdb;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-
-
 
   --ifm-background-color: var(--ifm-color-emphasis-0) !important;
   --ifm-footer-background-color: transparent;
 
-  --ifm-font-family-monospace: "Fira Code", monospace;
-  --ifm-font-family-base:  Manrope, sans-serif;
-  font-family:  Manrope, sans-serif;
+  --ifm-font-family-monospace: 'Fira Code', monospace;
+  --ifm-font-family-base: Manrope, sans-serif;
+  font-family: Manrope, sans-serif;
   --ifm-code-font-size: 90%;
   --voc-line-height: 28px;
   --ifm-font-size-base: 17px;
 
   --feedback-component-button-size: 3rem;
 
-  --voc-landing-background-gradient: linear-gradient(90deg,rgba(231,255,0,0) -0.01%, #00DDB3 100%);
-  --voc-navbar-landing-background-gradient: linear-gradient(90deg, rgba(231, 255, 0, 0) -0.01%, #00DDB3 200%), rgba(255, 255, 255, 0.25);
+  --voc-landing-background-gradient: linear-gradient(
+    90deg,
+    rgba(231, 255, 0, 0) -0.01%,
+    #00ddb3 100%
+  );
+  --voc-navbar-landing-background-gradient: linear-gradient(
+      90deg,
+      rgba(231, 255, 0, 0) -0.01%,
+      #00ddb3 200%
+    ),
+    rgba(255, 255, 255, 0.25);
 
   --ifm-navbar-shadow: rgba(255, 255, 255, 0.5) 0px 1px 1px 0px;
   --ifm-navbar-search-input-background-color: transparent;
   --ifm-navbar-search-input-color: black;
-  --ifm-navbar-search-input-placeholder-color: var(--ifm-navbar-search-input-color);
+  --ifm-navbar-search-input-placeholder-color: var(
+    --ifm-navbar-search-input-color
+  );
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #27AF86;
-  --ifm-color-primary-dark: #B4EEDD;
-  --ifm-color-primary-darker: #8AE5CA;
-  --ifm-color-primary-darkest: #61DCB7;
-  --ifm-color-primary-light: #27AF86;
-  --ifm-color-primary-lighter: #37D2A4;
-  --ifm-color-primary-lightest: #61DCB7;
+  --ifm-color-primary: #27af86;
+  --ifm-color-primary-dark: #b4eedd;
+  --ifm-color-primary-darker: #8ae5ca;
+  --ifm-color-primary-darkest: #61dcb7;
+  --ifm-color-primary-light: #27af86;
+  --ifm-color-primary-lighter: #37d2a4;
+  --ifm-color-primary-lightest: #61dcb7;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
@@ -62,7 +71,12 @@ a:any-link:hover {
 }
 /* Copied from working instance */
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: var(--ifm-heading-color);
   font-family: var(--ifm-heading-font-family);
   font-weight: var(--ifm-heading-font-weight);
@@ -74,12 +88,24 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1rem;
 }
 
-h1 { font-size: var(--ifm-h1-font-size); }
-h2 { font-size: var(--ifm-h2-font-size); }
-h3 { font-size: var(--ifm-h3-font-size); }
-h4 { font-size: var(--ifm-h4-font-size); }
-h5 { font-size: var(--ifm-h5-font-size); }
-h6 { font-size: var(--ifm-h6-font-size); }
+h1 {
+  font-size: var(--ifm-h1-font-size);
+}
+h2 {
+  font-size: var(--ifm-h2-font-size);
+}
+h3 {
+  font-size: var(--ifm-h3-font-size);
+}
+h4 {
+  font-size: var(--ifm-h4-font-size);
+}
+h5 {
+  font-size: var(--ifm-h5-font-size);
+}
+h6 {
+  font-size: var(--ifm-h6-font-size);
+}
 
 p {
   line-height: var(--voc-line-height);
@@ -87,7 +113,8 @@ p {
   margin-bottom: 25px;
 }
 
-ul, ol {
+ul,
+ol {
   list-style-position: outside;
 }
 
@@ -112,6 +139,15 @@ li {
   padding-left: 10px;
 }
 
+.markown ol .markdown ul {
+  margin-bottom: 0px;
+}
+
+.markdown li p {
+  margin-top: 6px;
+  margin-bottom: 0px;
+}
+
 /* Medium Header Link */
 .header-medium-link:hover {
   opacity: 0.6;
@@ -119,8 +155,8 @@ li {
 
 /* Blog icon */
 .header-medium-link:before {
-  content: "\f37d";
-  font-family: "Font Awesome 5 Brands";
+  content: '\f37d';
+  font-family: 'Font Awesome 5 Brands';
   font-size: x-large;
 }
 
@@ -129,7 +165,7 @@ li {
   /*align-self: center;*/
 }
 
-.main-wrapper h1[class^="docTitle"] {
+.main-wrapper h1[class^='docTitle'] {
   font-size: 2.8rem;
 }
 
@@ -143,7 +179,7 @@ li {
 @media (max-width: 1320px) and (min-width: 997px) {
   .container {
     max-width: calc(
-            var(--ifm-container-width) - 125px - var(--ifm-spacing-horizontal) * 2
+      var(--ifm-container-width) - 125px - var(--ifm-spacing-horizontal) * 2
     );
   }
 }
@@ -154,7 +190,7 @@ a {
   text-decoration: var(--ifm-link-decoration);
 }
 
-.theme-edit-this-page{
+.theme-edit-this-page {
   display: flex;
 }
 

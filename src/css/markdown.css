@@ -1,73 +1,75 @@
 /* Openapi Markdown */
 
 .markdown {
-    --ifm-h1-vertical-rhythm-top: 3;
-    --ifm-h2-vertical-rhythm-top: 2;
-    --ifm-h3-vertical-rhythm-top: 1.5;
-    --ifm-heading-vertical-rhythm-top: 1.25;
-    --ifm-h1-vertical-rhythm-bottom: 1.25;
-    --ifm-heading-vertical-rhythm-bottom: 1;
+  --ifm-h1-vertical-rhythm-top: 3;
+  --ifm-h2-vertical-rhythm-top: 2;
+  --ifm-h3-vertical-rhythm-top: 1.5;
+  --ifm-heading-vertical-rhythm-top: 1.25;
+  --ifm-h1-vertical-rhythm-bottom: 1.25;
+  --ifm-heading-vertical-rhythm-bottom: 1;
 }
 
 .markdown h1:first-child {
-    margin-top: 0;
-    font-size: 2.5rem;
+  margin-top: 0;
+  font-size: 2.5rem;
 }
 
 .markdown h1 {
-    padding-top: 30px;
-    border-top: 1px dotted #bbb;
-    margin-top: 35px;
+  padding-top: 30px;
+  border-top: 1px dotted #bbb;
+  margin-top: 35px;
 }
 
-.markdown h2, .markdown h3{
-    padding-top: 20px;
+.markdown h2,
+.markdown h3 {
+  padding-top: 20px;
 }
 
 .markdown h4 {
-    padding-top: 15px;
+  padding-top: 15px;
 }
 
-.markdown li, body {
-    word-wrap: break-word;
+.markdown li,
+body {
+  word-wrap: break-word;
 }
 
-
-.markdown ul, .markdown ol {
-    line-height: var(--voc-line-height);
+.markdown ul,
+.markdown ol {
+  line-height: var(--voc-line-height);
 }
 
 .markdown li {
-    text-align: left;
+  text-align: left;
 }
-
 
 .markdown p {
-    margin: 0 0 var(--ifm-paragraph-margin-bottom);
+  margin: 0 0 var(--ifm-paragraph-margin-bottom);
 }
 
-.markdown ol, .markdown ul {
-    margin: 0 0 var(--ifm-paragraph-margin-bottom) 30px;
+.markdown ol,
+.markdown ul {
+  margin: 0 0 8px 30px;
 }
 
 .markdown hr {
-    background-color: var(--ifm-hr-background-color);
-    border: 0;
-    height: var(--ifm-hr-height);
-    margin: var(--ifm-hr-margin-vertical) 0;
+  background-color: var(--ifm-hr-background-color);
+  border: 0;
+  height: var(--ifm-hr-height);
+  margin: var(--ifm-hr-margin-vertical) 0;
 }
 
-.markdown [class^="codeBlock"] > pre {
-    margin-bottom: 0;
+.markdown [class^='codeBlock'] > pre {
+  margin-bottom: 0;
 }
 
-.docusaurus-mermaid-container{
-    margin: 50px 10px;
+.docusaurus-mermaid-container {
+  margin: 50px 10px;
 }
 
 .inline-img-container {
-    width: 100%;
-    margin-bottom: var(--ifm-heading-margin-bottom);
+  width: 100%;
+  margin-bottom: var(--ifm-heading-margin-bottom);
 }
 
 /*:root {*/
@@ -118,7 +120,6 @@
 /*  margin: 0;*/
 /*  margin-bottom: 16px;*/
 /*}*/
-
 
 /*.table-cell-positive {*/
 /*  color: green;*/

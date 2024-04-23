@@ -140,7 +140,7 @@ Credential Service Provider elections provide strong anonymity with the use of [
 [calculateElectionCost]: /sdk/reference/classes/VocdoniSDKClient#calculateelectioncost
 [zk-census-proof]: /protocol/anonymity/zk-census-proof
 [chat]: https://chat.vocdoni.io
-[blind-signatures]: /protocol/Census/off-chain-csp#blind-signatures
+[blind-signatures]: /protocol/census/off-chain-csp#blind-signatures
 [ballot-protocol]: /protocol/ballot-protocol
 [voting-types]: /sdk/integration-details/voting-types
 [election-states]: /protocol#election-lifecycle-states
