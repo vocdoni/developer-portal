@@ -1,46 +1,96 @@
-# vocdoni-docs
+<p align="center" width="100%">
+    <img src="https://developer.vocdoni.io/img/vocdoni_logotype_full_white.svg" />
+</p>
 
-Documentation about the Vocdoni API, SDK and more
+<p align="center" width="100%">
+    <a href="https://github.com/vocdoni/developer-portal/commits/main/"><img src="https://img.shields.io/github/commit-activity/m/vocdoni/developer-portal" /></a>
+    <a href="https://github.com/vocdoni/developer-portal/issues"><img src="https://img.shields.io/github/issues/vocdoni/developer-portal" /></a>
+    <a href="https://discord.gg/xFTh8Np2ga"><img src="https://img.shields.io/badge/discord-join%20chat-blue.svg" /></a>
+    <a href="https://twitter.com/vocdoni"><img src="https://img.shields.io/twitter/follow/vocdoni.svg?style=social&label=Follow" /></a>
+</p>
 
-## Run dev environment
 
-This generates the api docs from the swagger into the `docs/vocdoni-api` and then run docusaurus development server.
+  <div align="center">
+    Vocdoni is the first universally verifiable, censorship-resistant, anonymous, and self-sovereign governance protocol. <br />
+    Our main aim is a trustless voting system where anyone can speak their voice and where everything is auditable. <br />
+    We are engineering building blocks for a permissionless, private and censorship resistant democracy.
+    <br />
+    <a href="https://developer.vocdoni.io/"><strong>Explore the developer portal »</strong></a>
+    <br />
+    <h3>More About Us</h3>
+    <a href="https://vocdoni.io">Vocdoni Website</a>
+    |
+    <a href="https://vocdoni.app">Web Application</a>
+    |
+    <a href="https://explorer.vote/">Blockchain Explorer</a>
+    |
+    <a href="https://law.mit.edu/pub/remotevotingintheageofcryptography/release/1">MIT Law Publication</a>
+    |
+    <a href="https://chat.vocdoni.io">Contact Us</a>
+    <br />
+    <h3>Key Repositories</h3>
+    <a href="https://github.com/vocdoni/vocdoni-node">Vocdoni Node</a>
+    |
+    <a href="https://github.com/vocdoni/vocdoni-sdk/">Vocdoni SDK</a>
+    |
+    <a href="https://github.com/vocdoni/ui-components">UI Components</a>
+    |
+    <a href="https://github.com/vocdoni/ui-scaffold">Application UI</a>
+    |
+    <a href="https://github.com/vocdoni/census3">Census3</a>
+  </div>
+
+# developer-portal
+
+This repository hosts the Vocdoni developer portal, the source-of-truth of technical documentation for all of the software under the Vocdoni umbrella. 
+It is created with [Docusaurus](https://docusaurus.io/) and is hosted at https://developer.vocdoni.io
+
+### Table of Contents
+- [Getting Started](#getting-started)
+- [Reference](#reference)
+- [Examples](#examples)
+- [Preview](#preview)
+- [Disclaimer](#disclaimer)
+- [Contributing](#contributing)
+- [License](#license)
 
 
-```bash 
+## Getting Started
+
+You can host the developer portal locally. The easiest way to do so is with the docusaurus development server:
+
+```bash
 yarn install
 yarn start
 ```
 
-## Build
-
-This generates the api docs from the swagger into the `docs/vocdoni-api` and then build the site to `build/` folder.
-
+You can also build the site:
 ```bash
 yarn build
 ```
 
-## Deploy locally
-
-Locally, on the branch you want to deploy, run:
-
+You can locally deploy the site:
 ```bash
 USE_SSH=true yarn deploy
 ```
+This will run `docusaurus deploy` which deploys whatever iteration of the site has been built in the `build/` folder. It will then push the build result to the remote `gh-pages` branch corresponding to the branch you are running the command from.
 
-This will run `docusaurus deploy`. You may need to regenerate the swagger docs if there are ungenerated changes. 
 
-The command, finally, will  push the build result to remote `gh-pages` branch. 
+## Reference
 
-## Generate only the API documentation
+There are multiple auto-generated documentation files that require generation.
 
-If you modified the swagger file under `swaggers/` folder and want to build `.mdx` files again:
+### Generate the API documentation
+
+The Vocdoni API documentation is sourced from the `swaggers` folder. If you modified the swagger file under `swaggers/` folder and want to build `.mdx` files again:
 
 ```bash
 yarn run re-gen
 ```
 
-## Generate the SDK documentation
+Note that this docs generation step is already performed as part of `yarn start` or `yarn build`. 
+
+### Generate the SDK documentation
 
 If you want to generate the SDK documentation for yourself, you can do so from inside the `docs` directory in the `vocdoni-sdk` project. 
 
@@ -60,7 +110,8 @@ yarn copy-sdk-docs
 
 Note that the SDK docs are tracked by git, and you should not need to do this if you are not a repo maintainer.
 
-## Translations
+
+### Translations
 
 We integrated crowdin for translations. Use:
 
@@ -74,19 +125,37 @@ To upload translations to crowdin. There you can translate the files and then do
 yarn crowdin:download
 ```
 
-This will download translation files to `i18n/` folder. To test them use `yarn start -- --locale es`.
+This will download translation files to the `i18n/` folder. To test them use `yarn start -- --locale es`.
 
-See this issues [1](https://community.crowdin.com/t/exclude-single-line-on-markdown-headers/2897), 
+See these issues [1](https://community.crowdin.com/t/exclude-single-line-on-markdown-headers/2897), 
 [2](https://community.crowdin.com/t/broken-mdx-components-on-download/2912) to understand why the `pre`/`post` scripts 
-on crowdin download and upload: 
+on crowdin download and upload. 
 
-## Deploy
 
-* After push the branch you want to deploy
-* And, locally, on the branch you want to deploy
+## Contributing 
 
-Run:
+While we welcome contributions from the community, we do not track all of our issues on Github and we may not have the resources to onboard developers and review complex pull requests. That being said, there are multiple ways you can get involved with the project. 
 
-```bash
-USE_SSH=true yarn deploy
-```
+Please review our [development guidelines](https://developer.vocdoni.io/development-guidelines).
+
+## License
+
+This repository is licensed under the [GNU Affero General Public License v3.0.](./LICENSE)
+
+    Vocdoni Developer Portal
+    Copyright (C) 2024 Vocdoni Association
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Affero General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU Affero General Public License for more details.
+
+    You should have received a copy of the GNU Affero General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+[![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
