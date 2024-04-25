@@ -150,9 +150,13 @@ Moreover, the system ensures absolute verifiability. Every end user possesses th
 
 ### Transactions and Fees
 
-Vochain transactions are protobuf encoded and signed by the sender. However, the SDK handles this operation transparently for the end user.
+Vochain transactions are actions such as creating a voting process, changing the state of a voting process, casting a vote, or anything else that updates the state of the data stored on the Vochain. Transactions are protobuf-encoded and signed by the sender. However, the SDK handles this operation transparently for the end user. 
 
-Transactions may have a fee that the sender needs to cover from its own balance. The fee cost per transaction is currently fixed and configured in the blockchain genesis file. At the moment, once a transaction is executed, the fee is automatically burned. This is an intermediate solution that will become invalid once the full features of the Voc tokenomics chain are implemented.
+Transactions may have a fee that the sender needs to cover from its own balance. The fee cost per transaction is currently fixed and configured in the blockchain genesis file. At the moment, once a transaction is executed, the fee is automatically burned. This is an intermediate solution that will become invalid once the full features of the Vochain are implemented. 
+
+:::info voting
+Voting *never* requires a fee. This means that the costs of an election will always be the responsibility of election administrators during setup, and once an election is underway voters will never be charged to vote.
+:::
 
 The following list shows the transactions:
 
