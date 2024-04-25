@@ -1,36 +1,34 @@
 # Vocdoni Protocol
 
-## 1. Introduction
+## Introduction
 
-Voĉdoni in Esperanto translates to "to give voice". We aim to achieve change by empowering society from the bottom up, building the necessary primitives and tools to enable every voice to be heard, from a few individuals to millions of citizens. We aspire to be the most accessible and functional toolset on earth, open to every group of people, regardless of their position or resources.
+The Vocdoni Protocol is the distributed backend which fulfills our mission by providing a decentralized, open-source, universally-verifiable, and anonymous voting system. The Protocol has many different elements and services running in a network of distributed nodes. The core of the protocol is [vocdoni-node](https://github.com/vocdoni/vocdoni-node), a piece of software written in golang that enables a node to be run in one of many modes, depending which services and features are needed. The golang reference for this library is documented at [pkg.go.dev](https://pkg.go.dev/go.vocdoni.io/dvote#section-readme) and the api service provided by vocdoni-node is documented [here](/vocdoni-api/vocdoni-api).
 
-We perceive voting as a collective signaling mechanism "to give voice", that can be fully digitalized, if provided with cryptographic guarantees about its integrity and its outcome. To this end, we have designed and implemented the Vocdoni Protocol, a universally verifiable set of rules and primitives that allow anyone to create and participate in collective decision making.
+### The blockchain
 
-### 1.1 The blockchain
-
-The Vocdoni blockchain is named **Vochain**. It is a Byzantine fault-tolerant network based on [Tendermint][tendermint] that executes the Vocdoni Protocol logic represented as a state machine. Its main purpose is to register votes in a decentralized and verifiable format. Currently, the network can process more than 30K votes per minute while using no more than the resources found on commodity computers.
+Data integrity and universal verifiability are provided by the Vocdoni blockchain, or **Vochain**. This is a Byzantine fault-tolerant network based on [Tendermint][tendermint] that executes the Vocdoni Protocol logic represented as a state machine. Its main purpose is to register votes in a decentralized and verifiable format. Currently, the network can process more than 30K votes per minute while using no more than the resources found on a common cloud server.
 
 The Vocdoni blockchain requires a native token (VOC) to execute management transactions (i.e creating elections), but not for casting votes. Therefore, the voters can participate in governance processes in a free and gasless manner.
 
-Vochain is currently based on Proof-of-Authority consensus. However, we are already working towards transitioning to Proof-of-Stake in 2023. Until then, the tokens are free and can be obtained by anyone by using our faucet service.
+Vochain is currently based on Proof-of-Authority consensus. However, we are already working towards transitioning to Proof-of-Stake model. Until then, the tokens are free and can be obtained by anyone by using our faucet service.
 
 The current vocdoni-node code can be found [in our github repository][vochain-github].
 
-### 1.2 Gateways
+### Gateways
 
-The Gateways provide entry points to our P2P network. They allow clients to reach decentralized services through a standard **HTTP(s) API interface**.
+The Gateways provide entry points to our P2P network. They allow clients to reach decentralized services through a standard [**HTTP(s) API interface**](/vocdoni-api/vocdoni-api).
 
 Internally, the Gateways act as a standard blockchain full node, but also as indexers, meaning that they store and update a separate non state-related database that contains digested information useful for fulfilling client query requirements. For instance, **Gateways compute election results** (which are not part of the state) and provide census services (so voters can fetch their election Merkle proof). To perform the indexer function, Gateways need access to the auxiliary distributed filestore.
 
 
-### 1.3 Distributed storage
+### Distributed storage
 
-Vocdoni currently relies on the [InterPlanetary File System (IPFS)][ipfs] for storing auxiliary information. In a voting process, this includes information such as texts (questions, descriptions, and options), complementary images, as well as census. This data does not need to be permanent in order to ensure the voting guarantees, and is expensive to keep it around, so it is published to IPFS until it can be discarded.
+Vocdoni currently relies on the [InterPlanetary File System (IPFS)][ipfs] for storing auxiliary information. In a voting process, this includes information such as texts (questions, descriptions, and options), complementary images, as well as censuses. This data does not need to be permanent in order to ensure the integrity of a voting process, and is expensive to keep it around, so it is published to IPFS until it can be discarded.
 
 We have designed the Vocdoni primitives in a modular fashion, which allows us to incorporate more data layers in the future, such as Ethersphere Swarm, DAT, STORj or Filecoin.
 
 
-## 2. Process overview
+## Process overview
 
 This section provides an overview of the Vocdoni flow for creating a participatory process, its main attributes, and configuration options.
 
@@ -44,7 +42,7 @@ The following diagram is a summary of the flow, from creating an organization ac
 Let's explore in more detail the different concepts.
 
 
-### 2.1 The census
+### The census
 
 The census is a key component of every voting process. It defines the set of users (identified by a public key or address) who are eligible for participating in an election.
 
@@ -52,42 +50,14 @@ Vocdoni is designed to be as flexible as possible and to enable, at the very lea
 
 The current census origins available are:
 
-+ **weighted merkle tree:** for standard elections, allowing participants to vote with different "weights" (e.g. someone with 50 points might have 50 votes)
-+ **indexed merkle tree:** an optimized merkle tree for voting on zkSnarks
++ [**weighted merkle tree:**](/protocol/census/off-chain-tree) for standard elections, allowing participants to vote with different "weights" (e.g. someone with 50 points might have 50 votes)
++ [**indexed merkle tree:**](/protocol/anonymity/zk-census-proof) an optimized merkle tree for voting on zkSnarks
 + **credential service provider (CSP):** for elections where an authority provides voting credentials (such as OAUTH, mailing, SMS, etc.)
-+ **ERC20 based on storage proofs:** for Ethereum based tokens, the user needs to fetch an EIP1186 proof from a web3 provider (implemented as part of https://voice.aragon.org)
-
-The current implementation of our Vocdoni API/SDK only provides the weighted merkle tree, so we will focus on this specific origin. More options will become available in the following months.
-
-#### Weighted merkle tree census
-
-The census itself is represented as a binary [Merkle Tree][wiki-merkle-tree], where the keys of the tree contain the (hashed) public keys or addresses of all eligible voters and the leafs (values) represent the voting weight.
-
-```mermaid
-graph TD;
-style Root fill:#EBAE9A,stroke:#333,stroke-width:2px
-
-Root-->H1
-Root-->H2
-H1-->H3
-H1-->H4
-H2-->H5
-H2-->H6
-H3-.->WeightParticipant1
-H4-.->Empty
-H5-.->WeightParticipant2
-H6-.->WeightParticipant3
-```
-
-Using Merkle Trees, we can efficiently prove that a key/value belongs to the tree. For a tree of size `N` elements, only `log(N)` elements are needed to generate a proof. A tree with 1 million leaves, for example, would only need 20 hashes to prove the inclusion of any one leaf. 
-
-A **prover** is able to prove the inclusion of any leaf of the Merkle Tree to a **verifier**:
-+ The **verifier** only needs to know the Root Hash
-+ The **prover** only needs to provide the Leaf and its Sibling, as well as the siblings of each of its ancestors (hence, `log(N)` elements).
++ [**ERC20 based on the census3 service:**](/protocol/census/on-chain#census3-service) we provide a Census3 Service which tracks token-holders of many tokens on Ethereum-based networks and facilitates the creation of weighted censuses based on this information
++ [**ERC20 based on storage proofs:**](/protocol/census/on-chain#census3-service) this is an older method for creating a token-based census that enables anyone to create a census without the need for an intermediary service, but requires gas cost and is expensive. For Ethereum based tokens, the user needs to fetch an EIP1186 proof from a web3 provider (implemented as part of https://voice.aragon.org)
 
 
-
-### 2.2 Accounts
+### Accounts
 
 A Vocdoni account is identified by an Ethereum-like address. This allows us to use standard Web3 signers such as Metamask.
 
@@ -103,7 +73,7 @@ For creating an account, a faucet package is required, since bootstrapping requi
 An account often represents an organization and might have associated an `infoURL` pointing to an external IPFS file containing the metadata details (name, description, logo, etc.). All Vochain nodes automatically distribute and store this data. 
 
 
-### 2.3 Elections
+### Elections
 
 An Election (named a `process` internally) is a rule-set of options and requirements written into the blockchain state, thus guaranteeing that they can no longer be modified (unless explicitly configured to be upgradeable). The election is created and configured by an account owner or account delegates.
 
@@ -115,7 +85,7 @@ The following election options can be configured:
 + **Vote mode:** the kind of ballots expected from voters.
 + **Tally mode:** how should the results be computed as defined by the [Vocdoni Ballot protocol][ballot-protocol]. Details and examples can be found [here][blog-ballot-protocol].
 
-#### Election lifecycle states
+#### Election Lifecycle States
 
 An election must be in one of the following states:
 
@@ -140,7 +110,7 @@ Ready-->Canceled
 Ended-->Results
 ```
 
-#### Election mode
+#### Election Mode
 
 + **Auto-start:** Enables the voting process to be started manually by the election administrator, as opposed to setting a start date.
 + **Interruptible:** The election administrator may pause or end the process at any point in time.
@@ -148,14 +118,14 @@ Ended-->Results
 + **Dynamic census:** By default, the census is immutable and  cannot be changed once published. However, long lasting polls may enable a dynamic census so that new members of a community may vote on a process after joining. 
 + **Allow override:** If enabled, a voter may vote multiple times and replace any prior vote envelope. This protects voters from coercion and accidental mistakes.
 
-#### Vote mode
+#### Vote Mode
 
 
 + **Anonymous:** If enabled, the voter’s public key will remain unrecoverable. Instead, the voter will prove that they are registered to vote by computing a zk-SNARK proof (ZKP) on their device. If this option is not chosen, the vote envelope will contain a signed vote, resulting in a pseudonymous vote. If an observer correlates the voter’s public key with personal data, the voter could be identified.
 + **Encrypted:** If enabled, the payload of the votes emitted will remain encrypted until the end of the process. The results will be available once the encryption keys are published by the miners at the end of the process. If disabled, the results can be seen in real time.
 + **CostFromWeight:** If enabled, the total cost defined in the ballot protocol will equal the voter's census weight.
 
-### 2.4 Anonymous vote
+### Anonymous Voting
 
 A voting envelope is composed of two parts: the census proof (which defines the eligibility of the voter) and the ballot (the actual contents of the vote, containing the chosen options). The anonymization of the voting envelope is achieved by anonymizing the census proof using zk-SNARKs technology.
 
@@ -165,7 +135,7 @@ The goal of the Vocdoni zk-SNARK circuit is to prove that a voter (identified by
 
 *Note: while zk-SNARK voting is enabled in the protocol and available at [https://vocdoni.app][app], it is not yet implemented as part of the current SDK.*
 
-### 2.5 Results
+### Results
 
 The results are computed by a set of rules configured by the election owner and following the [Vocdoni ballot protocol][ballot-protocol], which allows for almost any type of voting such as Range or Quadratic.
 
@@ -178,7 +148,7 @@ The computation of results is intricately woven into the fabric of blockchain lo
 
 Moreover, the system ensures absolute verifiability. Every end user possesses the capability to retrieve the comprehensive list of votes related to a specific election from the blockchain state, facilitating local replication of the tally. This accessibility further solidifies the credibility of the election results, fostering trust within the network.
 
-### 2.6 Transactions and fees
+### Transactions and Fees
 
 Vochain transactions are protobuf encoded and signed by the sender. However, the SDK handles this operation transparently for the end user.
 
@@ -211,7 +181,7 @@ The following list shows the transactions:
 
 
 [tendermint]: https://tendermint.com/
-[vochain-github]: https://github.com/vocdoni/vocdoni-node/tree/master/vochain
+[vochain-github]: https://github.com/vocdoni/vocdoni-node/tree/main/vochain
 [ipfs]: https://www.ipfs.tech/
 [ballot-protocol]: /protocol/ballot-protocol
 [wiki-merkle-tree]: https://en.wikipedia.org/wiki/Merkle_tree
