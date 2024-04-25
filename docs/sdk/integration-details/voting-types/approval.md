@@ -4,17 +4,15 @@ slug: approval
 ---
 
 
-#  Approval Voting (Multiple Choice)
+#  Approval Voting
 
-An election with Approval voting is a voting system where voters are allowed to indicate their support for multiple 
-candidates or options on the ballot. Instead of selecting just one preferred choice, voters can approve or "check" off 
-all the candidates they deem acceptable or worthy of their support.
+Approval voting is a voting system where voters indicate their support for multiple candidates or options on the ballot in the form of a binary (yes/no) decision. Instead of selecting just one preferred choice, voters can approve or disapprove of each candidate.
 
 Approval voting does not involve ranking or prioritizing candidates; it simply allows voters to express their approval 
 for multiple choices. This system aims to provide a more nuanced representation of voter preferences and can encourage 
 candidates to appeal to a broader range of voters.
 
-For example: select your two favourite colors from a list of 4.
+For example: select the colors you like from a list of 4.
 
 See:
 
@@ -31,7 +29,7 @@ const election_opts: IVoteType = {
     costFromWeight: false,
     maxCount: 4, // Correspond to the number of choices of the given question.
     maxValue: 1, // Determines the maximum value that can be assigned to a single choice.
-    maxTotalCost: 2, // Set the maximum number of choices a user can select. 
+    maxTotalCost: 4, // Set the maximum number of choices a user can select. 
 }
 ```
 

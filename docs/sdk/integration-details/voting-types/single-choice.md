@@ -91,7 +91,7 @@ const election = Election.from({
   election_opts,
   //...
 })
-````
+```
 
 ## Casting a vote
 
@@ -104,9 +104,9 @@ client.submitVote(new Vote([0, 2]));
 Each position in the vote array corresponds to a question, and the value is the associated selected choice. In this
 instance, we select the first choice for the first question and the third choice for the second.
 
-:::info Single question vote
+:::info Multiple choice vote
 
-For single question is same philosophy, you could configure the election as:
+For a single-question, multiple-choice vote, the idea is the same. This is similar to approval voting and can be set up with the following:
 
 ```ts
 // If you want to restrict the election creation

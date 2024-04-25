@@ -173,9 +173,9 @@ How do you feel today? Choose 1 out of 3 possible options: Bad, Good, Amazing
 |---|---|---|---|---|---|---|
 | 3  | 0 | 1  | 1 | 1  | -  | No  |
 
-### Multiple choice
+### Approval voting
 
-Choose your 3 favorite colours out of 5: green:0, blue:1, pink:2, orange:3, black:4
+Choose the colors that you like out of 5: green:0, blue:1, pink:2, orange:3, black:4
 
 - Vote Envelope: `[1,1,1,0,0]` `[0,1,1,1,0]` `[1,1,1,0,0]`
 - Results: `[ [1, 2], [0, 3], [0, 3], [2, 1], [3, 0] ]`
