@@ -26,10 +26,10 @@ Some features are displayed differently on the developer portal than they are wh
 Github Workflows:
     <a href="https://github.com/vocdoni/REPO_NAME/actions/workflows/main.yml/"><img src="https://github.com/vocdoni/REPO_NAME/actions/workflows/main.yml/badge.svg" /></a>
 Test coverage::
-<a href="https://coveralls.io/github/vocdoni/vocdoni-node"><img src="https://coveralls.io/repos/github/vocdoni/vocdoni-node/badge.svg"></a>
+<a href="https://coveralls.io/github/vocdoni/REPO_NAME"><img src="https://coveralls.io/repos/github/vocdoni/REPO_NAME/badge.svg"></a>
 Golang specific:
-<a href="https://godoc.org/go.vocdoni.io/dvote"><img src="https://godoc.org/go.vocdoni.io/dvote?status.svg"></a>
-<a href="https://goreportcard.com/report/go.vocdoni.io/dvote"><img src="https://goreportcard.com/badge/go.vocdoni.io/dvote"></a>
+<a href="https://godoc.org/go.vocdoni.io/REPO_NAME"><img src="https://godoc.org/go.vocdoni.io/REPO_NAME?status.svg"></a>
+<a href="https://goreportcard.com/report/go.vocdoni.io/REPO_NAME"><img src="https://goreportcard.com/badge/go.vocdoni.io/REPO_NAME"></a>
  -->
 
   <div align="center">

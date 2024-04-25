@@ -3,7 +3,7 @@
 These guidelines serve both as an internal guide for our team and an overview for contributors. While we welcome contributions from the community, we do not track all of our issues on Github and we may not have the resources to onboard developers and review complex pull requests. That being said, there are multiple ways you can get involved with the project. 
 
 - If you have a simple bug or feature request, please submit an issue. We have many repositories, so please try to submit your issue to the relevant code base (eg. protocol feature request => [vocdoni-node](https://github.com/vocdoni/vocdoni-node), UI integration bugs => [ui-components](https://github.com/vocdoni/ui-components)). 
-- For simpler and more accessible contributions that should be possible without much onboarding, search our repositories for issues that have the [help-wanted](https://github.com/vocdoni/REPO_NAME/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22) or [good-first-issue](https://github.com/vocdoni/REPO_NAME/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22) tags. 
+- For simpler and more accessible contributions that should be possible without much onboarding, search our repositories for issues that have the [help-wanted](https://github.com/search?q=org%3Avocdoni+label%3A%22help+wanted%22+state%3Aopen&type=issues&ref=advsearch) or [good-first-issue](https://github.com/search?q=org%3Avocdoni+label%3A%22good+first+issue%22+state%3Aopen&type=issues&ref=advsearch) tags. 
     - Fork the Project
     - Create your Feature Branch (`git checkout -b feature/yourFeature`)
     - Commit your Changes (`git commit -m 'Add some yourFeature'`)
