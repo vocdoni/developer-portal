@@ -1,160 +1,228 @@
+import {Wallet} from '@ethersproject/wallet';
 import {
-    Account,
-    AccountData,
-    Census, CensusTypeEnum, ElectionStatus, IElectionInfoResponse,
-    PublishedCensus,
-    PublishedElection
-} from "@vocdoni/sdk";
+  ElectionResultsTypeNames,
+  ElectionStatusReady,
+  EnvOptions,
+  IElectionInfoResponse,
+  VocdoniSDKClient,
+} from '@vocdoni/sdk';
+import {HttpResponse, http} from 'msw';
 
 /**
- * On this file you will find mocks used on ui-components documentation
+ * This file contains mock request responses used for the ui-components documentation.
+ * Request interception is done with Mock Service Workers (static/workers/mockServiceWorker.js)
+ * New mock workers must be added to src/theme/layout.ts which starts the mock service workers
+ *  before the react-live panes render.
  */
 
-const orgAddr = "f752b527e2aba395d1ba4c0de9c1471234567890";
+export const electionId =
+  '4be20a8eb4caa2f2508be2538decb9648bd9fab41f1d5a549a42020000000000';
+// Election ID for mock election using 'spreadsheet' csp census
+// Election ID for mock election using 'spreadsheet' csp census
+export const spreadsheetElectionId =
+  '6be20a8eb4ca923f171c6502a404112ad06c05491f859949633e020000000003';
 
-const headerUrl = 'https://picsum.photos/seed/{seed}/1400/300';
+export const organizationId = 'a2f2508be2538decb9648bd9fab41f1d5a549a42';
 
-export const mockedOrganization: AccountData = {
-    address: orgAddr,
-    balance: 0,
-    nonce: 123,
-    electionIndex: 13,
-    account: new Account({
-        languages: [
-            'en'
-        ],
-        name: 'Awesome Organization',
-        description: 'Description of Awesome organization',
-        header: headerUrl.replace('{seed}', orgAddr),
-        avatar: `https://picsum.photos/seed/${orgAddr}/300`,
-        meta: []
-    })
-}
+const signer = new Wallet(
+  '0x51129d8e9e17f740997687a7e15d60642cb2fe33565e17823859fae5fd72d3cb'
+);
 
-const electionId = `c5d2460186f7${orgAddr}020000000000`;
+export const client = new VocdoniSDKClient({
+  env: EnvOptions.STG,
+  wallet: signer,
+  electionId: electionId,
+});
 
-// curl https://api-dev.vocdoni.net/v2/elections/c5d2460186f79b821aa92de2efc28ad6391fede437a92ce696d1020000000000  -s | jq
-const rawElection: IElectionInfoResponse = {
-    electionCount: 0,
-    electionId: electionId,
-    organizationId: "9b821aa92de2efc28ad6391fede437a92ce696d1",
-    status: ElectionStatus.RESULTS,
-    startDate: "2023-06-27T03:01:10.621236881Z",
-    endDate: "2023-07-17T05:49:16.598037746Z",
-    voteCount: 8,
-    finalResults: true,
-    result: [
-        [
-            "80",
-            "0",
-            "0"
-        ]
-    ],
-    census: {
-        censusOrigin: CensusTypeEnum.OFF_CHAIN_TREE_WEIGHTED,
-        censusRoot: "31755e98a4b7f6d0be2bb4071f05d45bbdb1c7871d37b1f93eb39d248d88ec9a",
-        postRegisterCensusRoot: "",
-        censusURL: "http://localhost:8080/census",
-        // maxCensusSize: 12
+const cspCensus = {
+  censusOrigin: 'OFF_CHAIN_CA',
+  censusRoot:
+    '025de8cb8de1005aa939c1403e37e1fa165ebc758da49cb37215c6237d01591104',
+  postRegisterCensusRoot: '',
+  censusURL: 'https://csp-dev-simplemath.vocdoni.net/v1',
+  maxCensusSize: 2000,
+  size: 1,
+};
+
+const mockElection = (id, {census = null, metaCensus = null} = {}) => {
+  const election: IElectionInfoResponse = {
+    electionId: id,
+    organizationId: organizationId,
+    status: ElectionStatusReady.READY,
+    startDate: '2024-04-12T15:18:09Z',
+    endDate: '2027-04-12T15:19:44Z',
+    voteCount: 0,
+    finalResults: false,
+    result: [['23', '300']],
+    manuallyEnded: false,
+    fromArchive: false,
+    chainId: 'vocdoni/STAGE/11',
+    census: census ?? {
+      censusOrigin: 'OFF_CHAIN_TREE_WEIGHTED',
+      censusRoot:
+        '7412677fec3de360c31899b5204a76b95f05d93131320e829376312bacbb6a14',
+      postRegisterCensusRoot: '',
+      censusURL:
+        'ipfs://bafybeihj4hjmdmgxdcdmplnfm7gnhvlcpyphr3pgcchnhpz4emnmls5br4',
+      maxCensusSize: 1,
+      size: 1,
     },
-    metadataURL: "ipfs://bafybeieo6pbbqvd4qhcsk4pdrv53tdkrdmtbjl273cumel27jurotdgszi",
-    creationTime: "2023-06-27T03:01:00Z",
+    metadataURL:
+      'ipfs://bafybeia6vwrynwrkkkw2zhozchvxxobblk3mipquann37ztzijnvzagi2m',
+    creationTime: '2024-04-12T15:17:59Z',
     voteMode: {
-        serial: false,
-        anonymous: false,
-        encryptedVotes: false,
-        uniqueValues: false,
-        costFromWeight: false
+      serial: false,
+      anonymous: false,
+      encryptedVotes: false,
+      uniqueValues: false,
+      costFromWeight: false,
     },
     electionMode: {
-        autoStart: true,
-        interruptible: true,
-        dynamicCensus: true,
-        encryptedMetaData: false,
-        preRegister: false
+      autoStart: true,
+      interruptible: true,
+      dynamicCensus: false,
+      encryptedMetaData: false,
+      preRegister: false,
     },
     tallyMode: {
-        maxCount: 1,
-        maxValue: 2,
-        maxVoteOverwrites: 0,
-        maxTotalCost: 2,
-        costExponent: 10000
+      maxCount: 1,
+      maxValue: 1,
+      maxVoteOverwrites: 0,
+      maxTotalCost: 0,
+      costExponent: 1,
     },
-    // metadata: undefined
     metadata: {
-        title: {
-            default: "My awesome election"
+      title: {default: 'Election title'},
+      version: '1.2',
+      description: {default: 'Election description'},
+      media: {header: 'https://source.unsplash.com/random/800x400'},
+      meta: {
+        sdk: {version: '0.7.5'},
+        census: metaCensus === null ? undefined : metaCensus,
+      },
+      questions: [
+        {
+          choices: [
+            {title: {default: 'Option 1'}, value: 0},
+            {title: {default: 'Option 2'}, value: 1},
+          ],
+          description: {default: 'This is a description'},
+          title: {default: 'This is a title'},
         },
-        version: "1.1",
-        description: {
-            default: "My awesome election description"
-        },
+      ],
+      type: {
+        name: ElectionResultsTypeNames.SINGLE_CHOICE_MULTIQUESTION,
+        properties: {},
+      },
+    },
+  };
+  return election;
+};
+
+export const mockAccountService = http.get(
+  client.url + '/accounts/:id',
+  ({params}) => {
+    const id = params.id as string;
+    return HttpResponse.json({
+      address: id,
+      nonce: 0,
+      balance: 9999,
+      electionIndex: 0,
+      infoURL:
+        'ipfs://bafybeif5mbhhwuju2pyd54bxhn3tdsj6m5cukx6f5xvchqfh2wvzkpbjpy',
+      metadata: {
+        version: '1.0',
+        languages: ['en'],
+        name: {default: 'Account name'},
+        description: {default: 'Description of the account'},
+        newsFeed: {default: ''},
         media: {
-            header: headerUrl.replace('{seed}', electionId)
+          logo: 'https://source.unsplash.com/random/400x400',
+          header: 'https://source.unsplash.com/random/800x400',
         },
-        questions: [
-            {
-                choices: [
-                    {
-                        title: {
-                            default: "Yes"
-                        },
-                        value: 0
-                    },
-                    {
-                        title: {
-                            default: "No"
-                        },
-                        value: 1
-                    },
-                ],
-                description: {
-                    default: "Test question 1 description"
-                },
-                title: {
-                    default: "Test question 1"
-                }
-            }
-        ],
-        results: {
-            aggregation: 'discrete-counting',
-            display: 'multiple-choice'
-        },
-        meta: undefined,
-    }
-}
+        meta: {},
+      },
+      sik: 'd5f382daca25f43ca46f629e6fa7b0a448f1c69c48fcb2031feee0bf439d502c',
+    });
+  }
+);
 
-export const mockedElection: PublishedElection = PublishedElection.build({
-    census: new PublishedCensus(
-        rawElection.census.censusRoot,
-        rawElection.census.censusURL,
-        Census.censusTypeFromCensusOrigin(rawElection.census.censusOrigin),
-        4, // curl https://api-dev.vocdoni.net/v2/censuses/31755e98a4b7f6d0be2bb4071f05d45bbdb1c7871d37b1f93eb39d248d88ec9a/size  -s | jq
-        BigInt("40") // curl https://api-dev.vocdoni.net/v2/censuses/31755e98a4b7f6d0be2bb4071f05d45bbdb1c7871d37b1f93eb39d248d88ec9a/weight  -s | jq
-    ),
-    creationTime: rawElection.creationTime,
-    electionCount: 0,
-    endDate: rawElection.endDate,
-    finalResults: rawElection.finalResults,
-    id: rawElection.electionId,
-    metadataURL: rawElection.metadataURL,
-    organizationId: rawElection.organizationId,
-    raw: rawElection,
-    results: rawElection.result,
-    status: rawElection.status,
-    title: rawElection.metadata.title,
-    description: rawElection.metadata.description,
-    voteCount: rawElection.voteCount,
-    header: rawElection.metadata.media.header,
-    questions: rawElection.metadata.questions,
-    startDate: rawElection.startDate,
-    voteType: rawElection.voteMode,
-    electionType:{
-        autoStart: rawElection.electionMode.autoStart,
-        interruptible: rawElection.electionMode.interruptible,
-        dynamicCensus: rawElection.electionMode.dynamicCensus,
-        secretUntilTheEnd: rawElection.voteMode.encryptedVotes,
-        anonymous:  rawElection.voteMode.anonymous,
+export const mockElectionService = http.get(
+  client.url + '/elections/:id',
+  ({params}) => {
+    const id = params.id as string;
+    if (id === spreadsheetElectionId) {
+      const metaCensus = {
+        fields: ['firstname', 'lastname', 'email'],
+        type: 'spreadsheet',
+      };
+      return HttpResponse.json(
+        mockElection(id, {census: cspCensus, metaCensus: metaCensus})
+      );
     }
-})
+    return HttpResponse.json(mockElection(id));
+  }
+);
 
+export const mockTransactionService = http.post(
+  client.url + '/chain/transactions',
+  () => {
+    return HttpResponse.json({
+      hash: 'd59c08ef32a57e2fd18041dd6d4a871d06ebe4fe91449be9f034269d80cc9de8',
+      code: 0,
+    });
+  }
+);
+
+export const mockTransactionReferenceService = http.get(
+  client.url + '/chain/transactions/reference/:id',
+  ({params}) => {
+    return HttpResponse.json({
+      transactionNumber: 13615,
+      transactionHash: params.id,
+      blockHeight: 489898,
+      transactionIndex: 1,
+      transactionType: 'setProcess',
+    });
+  }
+);
+
+export const mockCensusService = http.get(
+  client.url + '/censuses/:id/proof/:proof',
+  ({params}) => {
+    return HttpResponse.json({
+      type: 'weighted',
+      weight: '1',
+      censusRoot: params.id,
+      censusProof: '04000000',
+      value: '0100000000000000000000000000000000000000000000000000000000000000',
+    });
+  }
+);
+
+export const mockCensusTypeService = http.get(
+  client.url + '/censuses/:id/type',
+  () => {
+    return HttpResponse.json({type: 'weighted'});
+  }
+);
+
+export const mockCensusSizeService = http.get(
+  client.url + '/censuses/:id/size',
+  () => {
+    return HttpResponse.json({size: '10'});
+  }
+);
+export const mockCensusWeightService = http.get(
+  client.url + '/censuses/:id/weight',
+  () => {
+    return HttpResponse.json({weight: '10'});
+  }
+);
+
+export const mockVoteService = http.get(
+  client.url + '/votes/:id',
+  ({params}) => {
+    return new HttpResponse('No vote cast', {status: 404});
+  }
+);

@@ -32,8 +32,8 @@
     "gen-post:Darwin": "grep -L \"mdx-code-block\" docs/vocdoni-api/** | xargs -I {} sed -i '' -e $'/^\\(<\\)/i\\\n````mdx-code-block\n' -e $'/^\\(<\\)/a\\\n````' {}",
     "gen-post:Linux": "grep -L \"mdx-code-block\" docs/vocdoni-api/** | xargs sed -i -e '/^\\(<\\)/i````mdx-code-block' -e '/^\\(<\\)/a````'",
     "copy-sdk-docs": "rm -rf ./docs/sdk/reference && cp -R  $VOCDONI_SDK_PATH/docs/temp_docs/ ./docs/sdk/reference && rm -rf $VOCDONI_SDK_PATH/docs/temp_docs && mv ./docs/sdk/reference/README.md ./docs/sdk/reference/sdk-reference.md && if [ \"$(uname)\" = \"Darwin\" ]; then npm run sdk-post:Darwin; else npm run sdk-post:Linux; fi",
-    "sdk-post:Darwin": "brew install gsed && find ./docs/sdk/reference -type f | xargs gsed -i -r -e 's\/\\[\\@vocdoni\\\/sdk\\]\\((\\.\\.\\\/)*README\\.md\\)\/\\[\\@vocdoni\\\/sdk\\]\\(\\\/sdk\\)\/g' && find ./docs/sdk/reference -type f | xargs gsed -i -e 's\/(\\(.*\\).md\\(#[a-zA-Z0-9]*\\)*)\/(\\1\\2)\/g' && gsed -i -z -r -e 's/^@vocdoni\\/sdk\\\n\\\n//g' ./docs/sdk/reference/sdk-reference.md && find ./docs/sdk/reference -type f | xargs gsed -i -e 's/README/sdk-reference/g'",
-    "sdk-post:Linux": "find ./docs/sdk/reference -type f | xargs sed -i -r -e 's\/\\[\\@vocdoni\\\/sdk\\]\\((\\.\\.\\\/)*README\\.md\\)\/\\[\\@vocdoni\\\/sdk\\]\\(\\\/sdk\\)\/g' && find ./docs/sdk/reference -type f | xargs sed -i -e 's\/(\\(.*\\).md\\(#[a-zA-Z0-9]*\\)*)\/(\\1\\2)\/g' && sed -i -z -r -e 's/^@vocdoni\\/sdk\\\n\\\n//g' ./docs/sdk/reference/sdk-reference.md && find ./docs/sdk/reference -type f | xargs sed -i -e 's/README/sdk-reference/g'"
+    "sdk-post:Darwin": "brew install gsed && find ./docs/sdk/reference -type f | xargs gsed -i -r -e 's/\\[\\@vocdoni\\/sdk\\]\\((\\.\\.\\/)*README\\.md\\)/\\[\\@vocdoni\\/sdk\\]\\(\\/sdk\\)/g' && find ./docs/sdk/reference -type f | xargs gsed -i -e 's/(\\(.*\\).md\\(#[a-zA-Z0-9]*\\)*)/(\\1\\2)/g' && gsed -i -z -r -e 's/^@vocdoni\\/sdk\\\n\\\n//g' ./docs/sdk/reference/sdk-reference.md && find ./docs/sdk/reference -type f | xargs gsed -i -e 's/README/sdk-reference/g'",
+    "sdk-post:Linux": "find ./docs/sdk/reference -type f | xargs sed -i -r -e 's/\\[\\@vocdoni\\/sdk\\]\\((\\.\\.\\/)*README\\.md\\)/\\[\\@vocdoni\\/sdk\\]\\(\\/sdk\\)/g' && find ./docs/sdk/reference -type f | xargs sed -i -e 's/(\\(.*\\).md\\(#[a-zA-Z0-9]*\\)*)/(\\1\\2)/g' && sed -i -z -r -e 's/^@vocdoni\\/sdk\\\n\\\n//g' ./docs/sdk/reference/sdk-reference.md && find ./docs/sdk/reference -type f | xargs sed -i -e 's/README/sdk-reference/g'"
   },
   "dependencies": {
     "@aragon/ui-components": "0.1.3",
@@ -48,8 +48,9 @@
     "@emotion/styled": "^11.11.0",
     "@mantine/hooks": "^4.2.12",
     "@mdx-js/react": "^1.6.22",
-    "@vocdoni/chakra-components": "^0.2.9",
-    "@vocdoni/sdk": "^0.0.15",
+    "@vocdoni/chakra-components": "0.7.17",
+    "@vocdoni/react-providers": "^0.3.11",
+    "@vocdoni/sdk": "^0.7.5",
     "autoprefixer": "^10.4.13",
     "clsx": "^1.1.1",
     "docusaurus-plugin-openapi-docs": "^1.5.0",
@@ -58,17 +59,20 @@
     "ethers": "^5.7.2",
     "framer-motion": "^10.12.16",
     "hast-util-is-element": "1.1.0",
+    "msw": "^2.2.13",
     "postcss": "^8.4.18",
     "prism-react-renderer": "^1.3.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
     "react-markdown": "^8.0.7",
+    "react-spinners": "^0.13.8",
     "rehype-katex": "5",
     "remark-gfm": "^3.0.1",
     "remark-math": "3",
     "styled-components": "^5.3.5",
-    "tailwindcss": "^3.2.2"
+    "tailwindcss": "^3.2.2",
+    "webpack-loader": "./plugins/webpack-loader"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "^2.2.0",
@@ -94,6 +98,11 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
+    ]
+  },
+  "msw": {
+    "workerDirectory": [
+      "static/workers"
     ]
   }
 }

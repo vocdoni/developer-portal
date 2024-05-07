@@ -1,0 +1,48 @@
+# Organization Components
+
+## Organization provider
+
+To use organization components you have to wrap them using the `OrganizationProvider` and `ClientProvider`.
+
+```jsx
+<ClientProvider signer={signer}>
+    <OrganizationProvider id='your-organization-uid'>
+        <OrganizationAvatar />
+        <OrganizationHeader />
+        <OrganizationName />
+        <OrganizationDescription />
+    </OrganizationProvider>
+</ClientProvider>
+```
+
+## Organization Avatar
+
+Show an organization's avatar.
+
+```jsx live
+<OrganizationAvatar />
+```
+## Organization Header
+
+Show an organization's header image.
+
+```jsx live
+<OrganizationHeader />
+```
+
+## Organization Name
+
+Show an organization's name.
+
+```jsx live
+<OrganizationName />
+```
+
+## Organization Description
+
+Show an organization's description.
+
+```jsx live
+<OrganizationDescription fontFamily='monospace' />
+```
+
