@@ -1,12 +1,12 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/dracula')
-const darkCodeTheme = require('prism-react-renderer/themes/dracula')
-const {DOCUSAURUS_VERSION} = require('@docusaurus/utils')
-const math = require('remark-math')
-const katex = require('rehype-katex')
-const {Prism} = require('prism-react-renderer')
+const lightCodeTheme = require('prism-react-renderer/themes/dracula');
+const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const {DOCUSAURUS_VERSION} = require('@docusaurus/utils');
+const math = require('remark-math');
+const katex = require('rehype-katex');
+const {Prism} = require('prism-react-renderer');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -25,7 +25,7 @@ const config = {
   staticDirectories: ['static', 'static/workers'],
 
   markdown: {
-    mermaid: true
+    mermaid: true,
   },
 
   scripts: [
@@ -33,8 +33,8 @@ const config = {
       src: 'https://plsbl-proxy.vocdoni.net/js/script.tagged-events.outbound-links.js',
       defer: true,
       'data-domain': 'developer.vocdoni.io',
-      'api-host': 'https://plsbl-proxy.vocdoni.net'
-    }
+      'api-host': 'https://plsbl-proxy.vocdoni.net',
+    },
   ],
 
   presets: [
@@ -48,7 +48,7 @@ const config = {
           docLayoutComponent: '@theme/DocPage',
           docItemComponent: '@theme/ApiItem', // Derived from docusaurus-theme-openapi
           remarkPlugins: [math],
-          rehypePlugins: [katex]
+          rehypePlugins: [katex],
         },
         blog: false,
         theme: {
@@ -57,26 +57,26 @@ const config = {
             require.resolve('./src/css/open-api.css'),
             require.resolve('./src/css/markdown.css'),
             require.resolve('./src/css/announcement-bar.css'),
-            require.resolve('./src/css/feedback.css')
-          ]
+            require.resolve('./src/css/feedback.css'),
+          ],
         },
         sitemap: {
           changefreq: 'weekly',
           priority: 0.5,
           ignorePatterns: ['/tags/**'],
-          filename: 'sitemap.xml'
-        }
-      })
-    ]
+          filename: 'sitemap.xml',
+        },
+      }),
+    ],
   ],
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
     localeConfigs: {
       en: {
-        label: 'En'
-      }
-    }
+        label: 'En',
+      },
+    },
   },
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -88,20 +88,20 @@ const config = {
           content:
             'Blockchain Voting, Mobile Voting, Universally Verifiable, ' +
             'Voting-As-A-Service, Decentralized Governance, Anonymous Voting, Privacy Centric, Secure Electronic Voting, ' +
-            'Tamper-Proof Digital Voting, Data-Sovereignty, Resilient Governance, Governance/Coordination Tools'
+            'Tamper-Proof Digital Voting, Data-Sovereignty, Resilient Governance, Governance/Coordination Tools',
         },
         {
           property: 'og:description',
           content:
             'The Developer Portal contains everything you need to start integrating the ' +
-            'Vocdoni Protocol, including the API and SDK, as well as extensive documentation about the protocol design. '
-        }
+            'Vocdoni Protocol, including the API and SDK, as well as extensive documentation about the protocol design. ',
+        },
       ],
       docs: {
         sidebar: {
           hideable: true,
-          autoCollapseCategories: true
-        }
+          autoCollapseCategories: true,
+        },
       },
       algolia: {
         appId: 'V06M4VRZLG',
@@ -111,8 +111,8 @@ const config = {
         searchPagePath: 'search', //path for search page that enabled by default (`false` to disable it)
         replaceSearchResultPathname: {
           from: '/docs/', // or as RegExp: /\/docs\//
-          to: '/'
-        }
+          to: '/',
+        },
       },
       announcementBar: {
         id: 'wip_bar',
@@ -120,13 +120,13 @@ const config = {
           '<p><strong>Disclaimer: </strong>We are working in this repo (WIP) and changes will be made. Review this documentation often to be up-to-date with the new changes.</p>',
         backgroundColor: '#fafbfc',
         textColor: '#091E42',
-        isCloseable: false
+        isCloseable: false,
       },
       navbar: {
         title: '',
         logo: {
           alt: 'Vocdoni logo',
-          src: 'img/navbar-logo.svg'
+          src: 'img/navbar-logo.svg',
         },
         items: [
           {
@@ -134,7 +134,7 @@ const config = {
             docId: 'intro',
             position: 'left',
             label: 'Get Started',
-            className: 'plausible-event-name=Header+Introduction'
+            className: 'plausible-event-name=Header+Introduction',
           },
           {
             type: 'dropdown',
@@ -144,42 +144,42 @@ const config = {
               {
                 to: 'sdk',
                 label: 'SDK',
-                activeBasePath: 'sdk'
+                activeBasePath: 'sdk',
               },
               {
                 to: 'vocdoni-api/vocdoni-api',
                 label: 'API',
-                activeBasePath: 'vocdoni-api'
+                activeBasePath: 'vocdoni-api',
               },
               {
                 to: 'ui-components',
                 label: 'UI Components',
-                activeBasePath: 'ui-components'
+                activeBasePath: 'ui-components',
               },
               {
                 to: 'protocol',
                 label: 'Protocol',
-                activeBasePath: 'protocol'
-              }
-            ]
+                activeBasePath: 'protocol',
+              },
+            ],
           },
           {
             href: 'https://dev.explorer.vote',
             position: 'left',
-            label: 'Explorer'
+            label: 'Explorer',
           },
           {
             href: 'https://blog.vocdoni.io',
             position: 'left',
-            label: 'Blog'
+            label: 'Blog',
           },
           {
             href: 'https://github.com/vocdoni',
             position: 'right',
             className: 'header-github-link',
-            'aria-label': 'GitHub repository'
-          }
-        ]
+            'aria-label': 'GitHub repository',
+          },
+        ],
       },
       footer: {
         style: 'dark',
@@ -189,59 +189,59 @@ const config = {
             items: [
               {
                 label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus'
+                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
               },
               {
                 label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus'
+                href: 'https://discordapp.com/invite/docusaurus',
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/docusaurus'
-              }
-            ]
+                href: 'https://twitter.com/docusaurus',
+              },
+            ],
           },
           {
             title: 'More',
             items: [
               {
                 label: 'Blog',
-                href: 'https://medium.com/palo-alto-networks-developer-blog'
+                href: 'https://medium.com/palo-alto-networks-developer-blog',
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/PaloAltoNetworks/docusaurus-openapi-docs'
-              }
-            ]
-          }
+                href: 'https://github.com/PaloAltoNetworks/docusaurus-openapi-docs',
+              },
+            ],
+          },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Palo Alto Networks, Inc. Built with Docusaurus ${DOCUSAURUS_VERSION}.`
+        copyright: `Copyright © ${new Date().getFullYear()} Palo Alto Networks, Inc. Built with Docusaurus ${DOCUSAURUS_VERSION}.`,
       },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
-        additionalLanguages: ['ruby', 'csharp', 'php', 'protobuf']
+        additionalLanguages: ['ruby', 'csharp', 'php', 'protobuf'],
       },
       languageTabs: [
         {
           highlight: 'javascript',
           language: 'nodejs',
-          logoClass: 'nodejs'
+          logoClass: 'nodejs',
         },
         {
           highlight: 'bash',
           language: 'curl',
-          logoClass: 'bash'
+          logoClass: 'bash',
         },
         {
           highlight: 'python',
           language: 'python',
-          logoClass: 'python'
+          logoClass: 'python',
         },
         {
           highlight: 'go',
           language: 'go',
-          logoClass: 'go'
+          logoClass: 'go',
         },
         // {
         //   highlight: "ruby",
@@ -251,8 +251,8 @@ const config = {
         {
           highlight: 'csharp',
           language: 'csharp',
-          logoClass: 'csharp'
-        }
+          logoClass: 'csharp',
+        },
         // {
         //   highlight: "php",
         //   language: "php",
@@ -260,11 +260,12 @@ const config = {
         // },
       ],
       colorMode: {
-        disableSwitch: true
-      }
+        disableSwitch: true,
+      },
     }),
 
   plugins: [
+    './plugins/webpack-loader',
     [
       'docusaurus-plugin-openapi-docs',
       {
@@ -276,26 +277,26 @@ const config = {
             outputDir: 'docs/vocdoni-api',
             sidebarOptions: {
               groupPathsBy: 'tag',
-              categoryLinkSource: 'tag'
+              categoryLinkSource: 'tag',
             },
             // template: "api.mustache", // Customize API MDX with mustache template
             downloadUrl:
-              'https://raw.githubusercontent.com/vocdoni/developer-portal/main/swaggers/vocdoni-api.yaml'
-          }
-        }
-      }
+              'https://raw.githubusercontent.com/vocdoni/developer-portal/main/swaggers/vocdoni-api.yaml',
+          },
+        },
+      },
     ],
-    async function TailwindPlugin (context, options) {
+    async function TailwindPlugin(context, options) {
       return {
         name: 'docusaurus-tailwindcss',
-        configurePostCss (postcssOptions) {
+        configurePostCss(postcssOptions) {
           // Appends TailwindCSS and AutoPrefixer.
-          postcssOptions.plugins.push(require('tailwindcss'))
-          postcssOptions.plugins.push(require('autoprefixer'))
-          return postcssOptions
-        }
-      }
-    }
+          postcssOptions.plugins.push(require('tailwindcss'));
+          postcssOptions.plugins.push(require('autoprefixer'));
+          return postcssOptions;
+        },
+      };
+    },
     // [
     //   "@docusaurus/plugin-pwa",
     //   {
@@ -329,21 +330,21 @@ const config = {
   themes: [
     '@docusaurus/theme-live-codeblock',
     'docusaurus-theme-openapi-docs',
-    '@docusaurus/theme-mermaid'
+    '@docusaurus/theme-mermaid',
   ],
   stylesheets: [
     {
       href: 'https://use.fontawesome.com/releases/v5.11.0/css/all.css',
-      type: 'text/css'
+      type: 'text/css',
     },
     {
       href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
       type: 'text/css',
       integrity:
         'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
-      crossorigin: 'anonymous'
-    }
-  ]
-}
+      crossorigin: 'anonymous',
+    },
+  ],
+};
 
-module.exports = config
+module.exports = config;
