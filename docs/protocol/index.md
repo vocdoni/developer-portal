@@ -4,7 +4,7 @@
 
 The Vocdoni Protocol is the distributed backend which fulfills our mission by providing a decentralized, open-source, universally-verifiable, and anonymous voting system. The Protocol has many different elements and services running in a network of distributed nodes. The core of the protocol is [vocdoni-node](https://github.com/vocdoni/vocdoni-node), a piece of software written in golang that enables a node to be run in one of many modes, depending which services and features are needed. The golang reference for this library is documented at [pkg.go.dev](https://pkg.go.dev/go.vocdoni.io/dvote#section-readme) and the api service provided by vocdoni-node is documented [here](/vocdoni-api/vocdoni-api).
 
-### The blockchain
+### The Blockchain
 
 Data integrity and universal verifiability are provided by the Vocdoni blockchain, or **Vochain**. This is a Byzantine fault-tolerant network based on [Tendermint][tendermint] that executes the Vocdoni Protocol logic represented as a state machine. Its main purpose is to register votes in a decentralized and verifiable format. Currently, the network can process more than 30K votes per minute while using no more than the resources found on a common cloud server.
 
@@ -12,7 +12,7 @@ The Vocdoni blockchain requires a native token (VOC) to execute management trans
 
 Vochain is currently based on Proof-of-Authority consensus. However, we are already working towards transitioning to Proof-of-Stake model. Until then, the tokens are free and can be obtained by anyone by using our faucet service.
 
-The current vocdoni-node code can be found [in our github repository][vochain-github].
+The current Vochain code can be found in our [vocdoni-node][vochain-github] github repository.
 
 ### Gateways
 
