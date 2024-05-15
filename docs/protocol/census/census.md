@@ -10,7 +10,7 @@ When a voting process is created, the Census Origin is set to signify which type
 
 ## On-Chain Based Census (Ethereum ERC-20)
 
-On-chain census allow the set of eligible voters to be expressed as a weighted census of holders of a specific token on an Ethereum blockchain. This type of census is useful for organizations whose members are represented as token-holders. This is possible with either Ethereum Storage Proofs or the Census3 Service (only the Census3 Service is supported by the Vocdoni SDK). 
+On-chain census allow the set of eligible voters to be expressed as a weighted census of holders of a specific token on an Ethereum blockchain. This type of census is useful for organizations whose members are represented as token-holders. This is possible with either Ethereum Storage Proofs (deprecated) or the Census3 Service (only the Census3 Service is supported by the Vocdoni SDK). 
 
 Technical details for on-chain censuses can be found at [On-Chain Census][on-chain].
 

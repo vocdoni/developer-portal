@@ -4,9 +4,6 @@ On-chain cenuses created with the Census3 Service derive their contents from a p
 
 Unfortunately a zero-knowledge census itself is not enough to anonymize an on-chain election, because voters are weighted according to their unique token balances, making them easy to identify as the weight of a vote can be correlated with an address. We address this problem by rounding voter weights in order to hide unique token balances.
 
-:::warning ethereum storage proofs
-On-chain censuses created manually with [Ethereum Storage Proofs](/protocol/census/on-chain#erc-20-token-storage-proofs) cannot be anonymized
-:::
 
 ## Rounding Censuses
 To ensure that the balances of token-based censuses remain private, we must alter them in some way. However, any change must meet two requirements:

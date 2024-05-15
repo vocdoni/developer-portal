@@ -52,9 +52,8 @@ The current census origins available are:
 
 + [**weighted merkle tree:**](/protocol/census/off-chain-tree) for standard elections, allowing participants to vote with different "weights" (e.g. someone with 50 points might have 50 votes)
 + [**indexed merkle tree:**](/protocol/anonymity/zk-census-proof) an optimized merkle tree for voting on zkSnarks
-+ **credential service provider (CSP):** for elections where an authority provides voting credentials (such as OAUTH, mailing, SMS, etc.)
++ [**credential service provider (CSP):**](/protocol/census/off-chain-csp) for elections where an authority provides voting credentials (such as OAUTH, mailing, SMS, etc.)
 + [**ERC20 based on the census3 service:**](/protocol/census/on-chain#census3-service) we provide a Census3 Service which tracks token-holders of many tokens on Ethereum-based networks and facilitates the creation of weighted censuses based on this information
-+ [**ERC20 based on storage proofs:**](/protocol/census/on-chain#census3-service) this is an older method for creating a token-based census that enables anyone to create a census without the need for an intermediary service, but requires gas cost and is expensive. For Ethereum based tokens, the user needs to fetch an EIP1186 proof from a web3 provider (implemented as part of https://voice.aragon.org)
 
 
 ### Accounts
