@@ -10,6 +10,7 @@
 - [autoStart](IElectionType#autostart)
 - [dynamicCensus](IElectionType#dynamiccensus)
 - [interruptible](IElectionType#interruptible)
+- [metadata](IElectionType#metadata)
 - [secretUntilTheEnd](IElectionType#secretuntiltheend)
 
 ## Properties
@@ -22,7 +23,7 @@ Enable anonymous voting.
 
 #### Defined in
 
-[types/election/election.ts:92](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/types/election/election.ts#L92)
+[types/election/election.ts:92](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/types/election/election.ts#L92)
 
 ___
 
@@ -34,7 +35,7 @@ If false, election will start PAUSED and will have to be resumed manually.
 
 #### Defined in
 
-[types/election/election.ts:76](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/types/election/election.ts#L76)
+[types/election/election.ts:76](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/types/election/election.ts#L76)
 
 ___
 
@@ -46,7 +47,7 @@ Can add more voters to the census tree during the election.
 
 #### Defined in
 
-[types/election/election.ts:84](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/types/election/election.ts#L84)
+[types/election/election.ts:84](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/types/election/election.ts#L84)
 
 ___
 
@@ -58,7 +59,26 @@ The process can be paused and resumed.
 
 #### Defined in
 
-[types/election/election.ts:80](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/types/election/election.ts#L80)
+[types/election/election.ts:80](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/types/election/election.ts#L80)
+
+___
+
+### metadata
+
+• `Optional` **metadata**: `Object`
+
+If the metadata has to be encrypted or not.
+
+#### Type declaration
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `encrypted?` | `boolean` | If the metadata has to be encrypted or not. |
+| `password?` | `string` | Password to encrypt the metadata. |
+
+#### Defined in
+
+[types/election/election.ts:96](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/types/election/election.ts#L96)
 
 ___
 
@@ -70,4 +90,4 @@ Protect the results until the end of the process if true. It will show live resu
 
 #### Defined in
 
-[types/election/election.ts:88](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/types/election/election.ts#L88)
+[types/election/election.ts:88](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/types/election/election.ts#L88)

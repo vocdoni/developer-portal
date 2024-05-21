@@ -21,7 +21,7 @@ The id (address) of the token.
 
 #### Defined in
 
-[api/census3/strategy.ts:190](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/api/census3/strategy.ts#L190)
+[api/census3/strategy.ts:190](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/census3/strategy.ts#L190)
 
 ___
 
@@ -33,7 +33,7 @@ The method used for checking balances.
 
 #### Defined in
 
-[api/census3/strategy.ts:205](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/api/census3/strategy.ts#L205)
+[api/census3/strategy.ts:205](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/census3/strategy.ts#L205)
 
 ___
 
@@ -45,7 +45,7 @@ The minimum balance.
 
 #### Defined in
 
-[api/census3/strategy.ts:200](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/api/census3/strategy.ts#L200)
+[api/census3/strategy.ts:200](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/census3/strategy.ts#L200)
 
 ___
 
@@ -57,4 +57,4 @@ The name of the token.
 
 #### Defined in
 
-[api/census3/strategy.ts:195](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/api/census3/strategy.ts#L195)
+[api/census3/strategy.ts:195](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/census3/strategy.ts#L195)

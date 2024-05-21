@@ -36,7 +36,7 @@ CSP info
 
 #### Defined in
 
-[api/csp.ts:85](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/api/csp.ts#L85)
+[api/csp.ts:85](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/csp.ts#L85)
 
 ___
 
@@ -62,7 +62,7 @@ CSP sign
 
 #### Defined in
 
-[api/csp.ts:132](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/api/csp.ts#L132)
+[api/csp.ts:132](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/csp.ts#L132)
 
 ___
 
@@ -90,4 +90,4 @@ CSP step
 
 #### Defined in
 
-[api/csp.ts:104](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/api/csp.ts#L104)
+[api/csp.ts:104](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/csp.ts#L104)

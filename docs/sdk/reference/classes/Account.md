@@ -38,7 +38,7 @@ Represents an account
 
 #### Defined in
 
-[types/account.ts:108](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/types/account.ts#L108)
+[types/account.ts:108](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/types/account.ts#L108)
 
 • `set` **avatar**(`value`): `void`
 
@@ -54,7 +54,7 @@ Represents an account
 
 #### Defined in
 
-[types/account.ts:112](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/types/account.ts#L112)
+[types/account.ts:112](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/types/account.ts#L112)
 
 ___
 
@@ -68,7 +68,7 @@ ___
 
 #### Defined in
 
-[types/account.ts:92](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/types/account.ts#L92)
+[types/account.ts:92](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/types/account.ts#L92)
 
 • `set` **description**(`value`): `void`
 
@@ -84,7 +84,7 @@ ___
 
 #### Defined in
 
-[types/account.ts:96](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/types/account.ts#L96)
+[types/account.ts:96](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/types/account.ts#L96)
 
 ___
 
@@ -98,7 +98,7 @@ ___
 
 #### Defined in
 
-[types/account.ts:124](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/types/account.ts#L124)
+[types/account.ts:124](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/types/account.ts#L124)
 
 • `set` **feed**(`value`): `void`
 
@@ -114,7 +114,7 @@ ___
 
 #### Defined in
 
-[types/account.ts:128](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/types/account.ts#L128)
+[types/account.ts:128](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/types/account.ts#L128)
 
 ___
 
@@ -128,7 +128,7 @@ ___
 
 #### Defined in
 
-[types/account.ts:100](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/types/account.ts#L100)
+[types/account.ts:100](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/types/account.ts#L100)
 
 • `set` **header**(`value`): `void`
 
@@ -144,7 +144,7 @@ ___
 
 #### Defined in
 
-[types/account.ts:104](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/types/account.ts#L104)
+[types/account.ts:104](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/types/account.ts#L104)
 
 ___
 
@@ -158,7 +158,7 @@ ___
 
 #### Defined in
 
-[types/account.ts:140](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/types/account.ts#L140)
+[types/account.ts:140](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/types/account.ts#L140)
 
 • `set` **languages**(`value`): `void`
 
@@ -174,7 +174,7 @@ ___
 
 #### Defined in
 
-[types/account.ts:144](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/types/account.ts#L144)
+[types/account.ts:144](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/types/account.ts#L144)
 
 ___
 
@@ -188,7 +188,7 @@ ___
 
 #### Defined in
 
-[types/account.ts:116](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/types/account.ts#L116)
+[types/account.ts:116](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/types/account.ts#L116)
 
 • `set` **logo**(`value`): `void`
 
@@ -204,7 +204,7 @@ ___
 
 #### Defined in
 
-[types/account.ts:120](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/types/account.ts#L120)
+[types/account.ts:120](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/types/account.ts#L120)
 
 ___
 
@@ -218,7 +218,7 @@ ___
 
 #### Defined in
 
-[types/account.ts:132](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/types/account.ts#L132)
+[types/account.ts:132](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/types/account.ts#L132)
 
 • `set` **meta**(`value`): `void`
 
@@ -234,7 +234,7 @@ ___
 
 #### Defined in
 
-[types/account.ts:136](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/types/account.ts#L136)
+[types/account.ts:136](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/types/account.ts#L136)
 
 ___
 
@@ -248,7 +248,7 @@ ___
 
 #### Defined in
 
-[types/account.ts:84](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/types/account.ts#L84)
+[types/account.ts:84](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/types/account.ts#L84)
 
 • `set` **name**(`value`): `void`
 
@@ -264,7 +264,7 @@ ___
 
 #### Defined in
 
-[types/account.ts:88](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/types/account.ts#L88)
+[types/account.ts:88](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/types/account.ts#L88)
 
 ## Constructors
 
@@ -286,7 +286,7 @@ Constructs an account
 
 #### Defined in
 
-[types/account.ts:33](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/types/account.ts#L33)
+[types/account.ts:33](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/types/account.ts#L33)
 
 ## Methods
 
@@ -300,7 +300,7 @@ Constructs an account
 
 #### Defined in
 
-[types/account.ts:65](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/types/account.ts#L65)
+[types/account.ts:65](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/types/account.ts#L65)
 
 ___
 
@@ -322,4 +322,4 @@ Returns an account object
 
 #### Defined in
 
-[types/account.ts:61](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/types/account.ts#L61)
+[types/account.ts:61](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/types/account.ts#L61)

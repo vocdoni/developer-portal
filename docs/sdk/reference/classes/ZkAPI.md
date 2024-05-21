@@ -38,7 +38,7 @@ The ZK proof
 
 #### Defined in
 
-[api/zk.ts:54](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/api/zk.ts#L54)
+[api/zk.ts:54](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/zk.ts#L54)
 
 ___
 
@@ -63,4 +63,4 @@ The ZK proof
 
 #### Defined in
 
-[api/zk.ts:68](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/api/zk.ts#L68)
+[api/zk.ts:68](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/zk.ts#L68)
