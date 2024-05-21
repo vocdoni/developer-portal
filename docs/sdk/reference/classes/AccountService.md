@@ -53,7 +53,7 @@ Service.constructor
 
 #### Defined in
 
-[services/account.ts:45](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/services/account.ts#L45)
+[services/account.ts:45](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/services/account.ts#L45)
 
 ## Methods
 
@@ -75,7 +75,7 @@ Fetches account information.
 
 #### Defined in
 
-[services/account.ts:55](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/services/account.ts#L55)
+[services/account.ts:55](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/services/account.ts#L55)
 
 ___
 
@@ -100,7 +100,7 @@ The transaction hash
 
 #### Defined in
 
-[services/account.ts:95](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/services/account.ts#L95)
+[services/account.ts:95](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/services/account.ts#L95)
 
 ___
 
@@ -122,7 +122,7 @@ ___
 
 #### Defined in
 
-[services/account.ts:100](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/services/account.ts#L100)
+[services/account.ts:100](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/services/account.ts#L100)
 
 ## Properties
 
@@ -136,7 +136,7 @@ AccountServiceProperties.chainService
 
 #### Defined in
 
-[services/account.ts:38](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/services/account.ts#L38)
+[services/account.ts:38](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/services/account.ts#L38)
 
 ___
 
@@ -150,4 +150,4 @@ ___
 
 #### Defined in
 
-[services/service.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/services/service.ts#L6)
+[services/service.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/services/service.ts#L6)

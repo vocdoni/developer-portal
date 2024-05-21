@@ -49,7 +49,7 @@ The identifier of the created strategy
 
 #### Defined in
 
-[api/census3/strategy.ts:422](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/api/census3/strategy.ts#L422)
+[api/census3/strategy.ts:422](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/census3/strategy.ts#L422)
 
 ___
 
@@ -76,7 +76,7 @@ The queue identifier
 
 #### Defined in
 
-[api/census3/strategy.ts:354](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/api/census3/strategy.ts#L354)
+[api/census3/strategy.ts:354](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/census3/strategy.ts#L354)
 
 ___
 
@@ -99,7 +99,7 @@ Returns the information of the strategy estimation queue
 
 #### Defined in
 
-[api/census3/strategy.ts:375](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/api/census3/strategy.ts#L375)
+[api/census3/strategy.ts:375](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/census3/strategy.ts#L375)
 
 ___
 
@@ -123,7 +123,7 @@ Fetches list of holders by strategy
 
 #### Defined in
 
-[api/census3/strategy.ts:295](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/api/census3/strategy.ts#L295)
+[api/census3/strategy.ts:295](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/census3/strategy.ts#L295)
 
 ___
 
@@ -148,7 +148,7 @@ The queue identifier
 
 #### Defined in
 
-[api/census3/strategy.ts:406](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/api/census3/strategy.ts#L406)
+[api/census3/strategy.ts:406](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/census3/strategy.ts#L406)
 
 ___
 
@@ -171,7 +171,7 @@ Returns the information of the strategy import queue
 
 #### Defined in
 
-[api/census3/strategy.ts:390](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/api/census3/strategy.ts#L390)
+[api/census3/strategy.ts:390](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/census3/strategy.ts#L390)
 
 ___
 
@@ -194,7 +194,7 @@ Fetches list of strategies
 
 #### Defined in
 
-[api/census3/strategy.ts:279](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/api/census3/strategy.ts#L279)
+[api/census3/strategy.ts:279](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/census3/strategy.ts#L279)
 
 ___
 
@@ -219,7 +219,7 @@ Fetches list of strategies based on given token
 
 #### Defined in
 
-[api/census3/strategy.ts:316](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/api/census3/strategy.ts#L316)
+[api/census3/strategy.ts:316](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/census3/strategy.ts#L316)
 
 ___
 
@@ -241,7 +241,7 @@ Returns the list of supported operators to build strategy predicates.
 
 #### Defined in
 
-[api/census3/strategy.ts:453](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/api/census3/strategy.ts#L453)
+[api/census3/strategy.ts:453](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/census3/strategy.ts#L453)
 
 ___
 
@@ -264,7 +264,7 @@ Returns the information of the strategy
 
 #### Defined in
 
-[api/census3/strategy.ts:338](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/api/census3/strategy.ts#L338)
+[api/census3/strategy.ts:338](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/census3/strategy.ts#L338)
 
 ___
 
@@ -289,4 +289,4 @@ Parsed version of the predicate
 
 #### Defined in
 
-[api/census3/strategy.ts:441](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/api/census3/strategy.ts#L441)
+[api/census3/strategy.ts:441](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/census3/strategy.ts#L441)

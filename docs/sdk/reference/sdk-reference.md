@@ -133,8 +133,10 @@
 - [IPublishedElectionParameters](interfaces/IPublishedElectionParameters)
 - [IQuestion](interfaces/IQuestion)
 - [ITallyMode](interfaces/ITallyMode)
+- [IVoteEncryptedPackage](interfaces/IVoteEncryptedPackage)
 - [IVoteInfoResponse](interfaces/IVoteInfoResponse)
 - [IVoteMode](interfaces/IVoteMode)
+- [IVotePackage](interfaces/IVotePackage)
 - [IVoteSubmitResponse](interfaces/IVoteSubmitResponse)
 - [IVoteType](interfaces/IVoteType)
 - [IZkProofResponse](interfaces/IZkProofResponse)
@@ -258,7 +260,7 @@ have hex prefix and are lowercase.
 
 #### Defined in
 
-[util/common.ts:35](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/util/common.ts#L35)
+[util/common.ts:35](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/util/common.ts#L35)
 
 ___
 
@@ -281,7 +283,7 @@ Throws an exception if it is not.
 
 #### Defined in
 
-[types/metadata/account.ts:8](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/types/metadata/account.ts#L8)
+[types/metadata/account.ts:8](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/types/metadata/account.ts#L8)
 
 ___
 
@@ -304,7 +306,7 @@ Throws an exception if it is not.
 
 #### Defined in
 
-[types/metadata/election.ts:8](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/types/metadata/election.ts#L8)
+[types/metadata/election.ts:8](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/types/metadata/election.ts#L8)
 
 ___
 
@@ -324,7 +326,7 @@ ___
 
 #### Defined in
 
-[util/common.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/util/common.ts#L6)
+[util/common.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/util/common.ts#L6)
 
 ___
 
@@ -350,7 +352,7 @@ Return the object data
 
 #### Defined in
 
-[util/common.ts:60](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/util/common.ts#L60)
+[util/common.ts:60](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/util/common.ts#L60)
 
 ___
 
@@ -370,7 +372,7 @@ ___
 
 #### Defined in
 
-[util/common.ts:12](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/util/common.ts#L12)
+[util/common.ts:12](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/util/common.ts#L12)
 
 ___
 
@@ -395,7 +397,7 @@ The formatted string
 
 #### Defined in
 
-[util/common.ts:48](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/util/common.ts#L48)
+[util/common.ts:48](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/util/common.ts#L48)
 
 ___
 
@@ -415,7 +417,7 @@ ___
 
 #### Defined in
 
-[util/common.ts:16](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/util/common.ts#L16)
+[util/common.ts:16](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/util/common.ts#L16)
 
 ___
 
@@ -431,7 +433,7 @@ Generates a random seed and returns a 32 byte keccak256 hash of it (starting wit
 
 #### Defined in
 
-[util/common.ts:23](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/util/common.ts#L23)
+[util/common.ts:23](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/util/common.ts#L23)
 
 ___
 
@@ -451,7 +453,7 @@ ___
 
 #### Defined in
 
-[util/common.ts:8](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/util/common.ts#L8)
+[util/common.ts:8](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/util/common.ts#L8)
 
 ## Type Aliases
 
@@ -473,7 +475,7 @@ ___
 
 #### Defined in
 
-[services/account.ts:25](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/services/account.ts#L25)
+[services/account.ts:25](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/services/account.ts#L25)
 
 ___
 
@@ -483,7 +485,7 @@ ___
 
 #### Defined in
 
-[types/election/published.ts:24](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/types/election/published.ts#L24)
+[types/election/published.ts:24](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/types/election/published.ts#L24)
 
 ___
 
@@ -493,7 +495,7 @@ ___
 
 #### Defined in
 
-[services/account.ts:35](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/services/account.ts#L35)
+[services/account.ts:35](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/services/account.ts#L35)
 
 ___
 
@@ -503,7 +505,7 @@ ___
 
 #### Defined in
 
-[census3.ts:31](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/census3.ts#L31)
+[census3.ts:31](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/census3.ts#L31)
 
 ___
 
@@ -513,7 +515,7 @@ ___
 
 #### Defined in
 
-[api/census3/strategy.ts:105](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/api/census3/strategy.ts#L105)
+[api/census3/strategy.ts:105](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/census3/strategy.ts#L105)
 
 ___
 
@@ -533,7 +535,7 @@ ___
 
 #### Defined in
 
-[api/census3/strategy.ts:46](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/api/census3/strategy.ts#L46)
+[api/census3/strategy.ts:46](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/census3/strategy.ts#L46)
 
 ___
 
@@ -554,7 +556,7 @@ ___
 
 #### Defined in
 
-[api/census3/strategy.ts:73](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/api/census3/strategy.ts#L73)
+[api/census3/strategy.ts:73](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/census3/strategy.ts#L73)
 
 ___
 
@@ -564,7 +566,7 @@ ___
 
 #### Defined in
 
-[api/census3/token.ts:12](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/api/census3/token.ts#L12)
+[api/census3/token.ts:12](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/census3/token.ts#L12)
 
 ___
 
@@ -597,7 +599,7 @@ ___
 
 #### Defined in
 
-[api/census3/token.ts:14](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/api/census3/token.ts#L14)
+[api/census3/token.ts:14](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/census3/token.ts#L14)
 
 ___
 
@@ -616,7 +618,7 @@ ___
 
 #### Defined in
 
-[services/census.ts:42](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/services/census.ts#L42)
+[services/census.ts:42](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/services/census.ts#L42)
 
 ___
 
@@ -637,7 +639,7 @@ ___
 
 #### Defined in
 
-[services/census.ts:26](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/services/census.ts#L26)
+[services/census.ts:26](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/services/census.ts#L26)
 
 ___
 
@@ -661,7 +663,7 @@ ___
 
 #### Defined in
 
-[services/anonymous.ts:51](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/services/anonymous.ts#L51)
+[services/anonymous.ts:51](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/services/anonymous.ts#L51)
 
 ___
 
@@ -671,7 +673,7 @@ ___
 
 #### Defined in
 
-[services/chain.ts:14](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/services/chain.ts#L14)
+[services/chain.ts:14](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/services/chain.ts#L14)
 
 ___
 
@@ -691,7 +693,7 @@ ___
 
 #### Defined in
 
-[services/chain.ts:29](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/services/chain.ts#L29)
+[services/chain.ts:29](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/services/chain.ts#L29)
 
 ___
 
@@ -701,7 +703,7 @@ ___
 
 #### Defined in
 
-[services/chain.ts:15](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/services/chain.ts#L15)
+[services/chain.ts:15](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/services/chain.ts#L15)
 
 ___
 
@@ -724,7 +726,7 @@ Optional VocdoniSDKClient arguments
 
 #### Defined in
 
-[client.ts:86](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/client.ts#L86)
+[client.ts:86](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/client.ts#L86)
 
 ___
 
@@ -744,7 +746,7 @@ ___
 
 #### Defined in
 
-[services/census.ts:56](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/services/census.ts#L56)
+[services/census.ts:56](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/services/census.ts#L56)
 
 ___
 
@@ -754,7 +756,7 @@ ___
 
 #### Defined in
 
-[services/election.ts:37](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/services/election.ts#L37)
+[services/election.ts:38](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/services/election.ts#L38)
 
 ___
 
@@ -764,7 +766,7 @@ ___
 
 #### Defined in
 
-[services/election.ts:50](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/services/election.ts#L50)
+[services/election.ts:51](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/services/election.ts#L51)
 
 ___
 
@@ -780,7 +782,7 @@ ___
 
 #### Defined in
 
-[types/client/account.ts:5](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/types/client/account.ts#L5)
+[types/client/account.ts:5](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/types/client/account.ts#L5)
 
 ___
 
@@ -790,7 +792,7 @@ ___
 
 #### Defined in
 
-[services/election.ts:36](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/services/election.ts#L36)
+[services/election.ts:37](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/services/election.ts#L37)
 
 ___
 
@@ -800,7 +802,7 @@ ___
 
 #### Defined in
 
-[types/election/election.ts:101](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/types/election/election.ts#L101)
+[types/election/election.ts:114](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/types/election/election.ts#L114)
 
 ___
 
@@ -810,7 +812,7 @@ ___
 
 #### Defined in
 
-[types/metadata/election.ts:44](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/types/metadata/election.ts#L44)
+[types/metadata/election.ts:44](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/types/metadata/election.ts#L44)
 
 ___
 
@@ -820,7 +822,7 @@ ___
 
 #### Defined in
 
-[services/faucet.ts:28](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/services/faucet.ts#L28)
+[services/faucet.ts:28](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/services/faucet.ts#L28)
 
 ___
 
@@ -837,7 +839,7 @@ ___
 
 #### Defined in
 
-[services/faucet.ts:23](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/services/faucet.ts#L23)
+[services/faucet.ts:23](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/services/faucet.ts#L23)
 
 ___
 
@@ -847,7 +849,7 @@ ___
 
 #### Defined in
 
-[types/client/account.ts:10](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/types/client/account.ts#L10)
+[types/client/account.ts:10](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/types/client/account.ts#L10)
 
 ___
 
@@ -857,7 +859,7 @@ ___
 
 #### Defined in
 
-[api/account.ts:17](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/api/account.ts#L17)
+[api/account.ts:17](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/account.ts#L17)
 
 ___
 
@@ -867,7 +869,7 @@ ___
 
 #### Defined in
 
-[types/election/budget.ts:21](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/types/election/budget.ts#L21)
+[types/election/budget.ts:21](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/types/election/budget.ts#L21)
 
 ___
 
@@ -877,7 +879,7 @@ ___
 
 #### Defined in
 
-[types/client/account.ts:12](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/types/client/account.ts#L12)
+[types/client/account.ts:12](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/types/client/account.ts#L12)
 
 ___
 
@@ -887,7 +889,7 @@ ___
 
 #### Defined in
 
-[types/client/account.ts:9](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/types/client/account.ts#L9)
+[types/client/account.ts:9](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/types/client/account.ts#L9)
 
 ___
 
@@ -897,7 +899,7 @@ ___
 
 #### Defined in
 
-[census3.ts:34](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/census3.ts#L34)
+[census3.ts:34](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/census3.ts#L34)
 
 ___
 
@@ -907,7 +909,7 @@ ___
 
 #### Defined in
 
-[types/client/account.ts:8](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/types/client/account.ts#L8)
+[types/client/account.ts:8](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/types/client/account.ts#L8)
 
 ___
 
@@ -917,7 +919,7 @@ ___
 
 #### Defined in
 
-[census3.ts:27](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/census3.ts#L27)
+[census3.ts:27](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/census3.ts#L27)
 
 ___
 
@@ -934,7 +936,7 @@ ___
 
 #### Defined in
 
-[census3.ts:28](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/census3.ts#L28)
+[census3.ts:28](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/census3.ts#L28)
 
 ___
 
@@ -951,7 +953,7 @@ ___
 
 #### Defined in
 
-[census3.ts:29](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/census3.ts#L29)
+[census3.ts:29](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/census3.ts#L29)
 
 ___
 
@@ -961,7 +963,7 @@ ___
 
 #### Defined in
 
-[census3.ts:30](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/census3.ts#L30)
+[census3.ts:30](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/census3.ts#L30)
 
 ___
 
@@ -971,7 +973,7 @@ ___
 
 #### Defined in
 
-[census3.ts:32](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/census3.ts#L32)
+[census3.ts:32](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/census3.ts#L32)
 
 ___
 
@@ -981,7 +983,7 @@ ___
 
 #### Defined in
 
-[census3.ts:33](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/census3.ts#L33)
+[census3.ts:33](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/census3.ts#L33)
 
 ___
 
@@ -991,7 +993,7 @@ ___
 
 #### Defined in
 
-[census3.ts:25](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/census3.ts#L25)
+[census3.ts:25](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/census3.ts#L25)
 
 ___
 
@@ -1001,7 +1003,7 @@ ___
 
 #### Defined in
 
-[census3.ts:26](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/census3.ts#L26)
+[census3.ts:26](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/census3.ts#L26)
 
 ___
 
@@ -1020,7 +1022,7 @@ Specify custom retry times and attempts when waiting for a transaction.
 
 #### Defined in
 
-[services/chain.ts:24](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/services/chain.ts#L24)
+[services/chain.ts:24](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/services/chain.ts#L24)
 
 ___
 
@@ -1036,7 +1038,7 @@ ___
 
 #### Defined in
 
-[types/client/account.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/types/client/account.ts#L6)
+[types/client/account.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/types/client/account.ts#L6)
 
 ___
 
@@ -1046,7 +1048,7 @@ ___
 
 #### Defined in
 
-[services/vote.ts:15](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/services/vote.ts#L15)
+[services/vote.ts:15](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/services/vote.ts#L15)
 
 ___
 
@@ -1056,7 +1058,7 @@ ___
 
 #### Defined in
 
-[services/vote.ts:28](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/services/vote.ts#L28)
+[services/vote.ts:28](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/services/vote.ts#L28)
 
 ___
 
@@ -1066,7 +1068,7 @@ ___
 
 #### Defined in
 
-[services/vote.ts:16](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/services/vote.ts#L16)
+[services/vote.ts:16](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/services/vote.ts#L16)
 
 ___
 
@@ -1076,7 +1078,7 @@ ___
 
 #### Defined in
 
-[types/client/account.ts:11](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/types/client/account.ts#L11)
+[types/client/account.ts:11](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/types/client/account.ts#L11)
 
 ___
 
@@ -1092,7 +1094,7 @@ ___
 
 #### Defined in
 
-[types/client/account.ts:4](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/types/client/account.ts#L4)
+[types/client/account.ts:4](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/types/client/account.ts#L4)
 
 ___
 
@@ -1114,7 +1116,7 @@ ___
 
 #### Defined in
 
-[services/anonymous.ts:23](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/services/anonymous.ts#L23)
+[services/anonymous.ts:23](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/services/anonymous.ts#L23)
 
 ## Variables
 
@@ -1124,7 +1126,7 @@ ___
 
 #### Defined in
 
-[types/metadata/account.ts:67](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/types/metadata/account.ts#L67)
+[types/metadata/account.ts:67](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/types/metadata/account.ts#L67)
 
 ___
 
@@ -1134,4 +1136,4 @@ ___
 
 #### Defined in
 
-[types/metadata/election.ts:140](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/types/metadata/election.ts#L140)
+[types/metadata/election.ts:140](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/types/metadata/election.ts#L140)

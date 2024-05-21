@@ -35,7 +35,7 @@ The census of the election
 
 #### Defined in
 
-[api/election.ts:220](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/api/election.ts#L220)
+[api/election.ts:220](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/election.ts#L220)
 
 ___
 
@@ -47,7 +47,7 @@ The chain identifier of the election
 
 #### Defined in
 
-[api/election.ts:215](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/api/election.ts#L215)
+[api/election.ts:215](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/election.ts#L215)
 
 ___
 
@@ -59,7 +59,7 @@ The date of creation of the election
 
 #### Defined in
 
-[api/election.ts:230](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/api/election.ts#L230)
+[api/election.ts:230](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/election.ts#L230)
 
 ___
 
@@ -71,7 +71,7 @@ The id of the election
 
 #### Defined in
 
-[api/election.ts:165](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/api/election.ts#L165)
+[api/election.ts:165](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/election.ts#L165)
 
 ___
 
@@ -83,7 +83,7 @@ The election mode of the election
 
 #### Defined in
 
-[api/election.ts:240](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/api/election.ts#L240)
+[api/election.ts:240](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/election.ts#L240)
 
 ___
 
@@ -95,7 +95,7 @@ The end date of the election
 
 #### Defined in
 
-[api/election.ts:185](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/api/election.ts#L185)
+[api/election.ts:185](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/election.ts#L185)
 
 ___
 
@@ -107,7 +107,7 @@ If the election has the final results
 
 #### Defined in
 
-[api/election.ts:195](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/api/election.ts#L195)
+[api/election.ts:195](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/election.ts#L195)
 
 ___
 
@@ -119,7 +119,7 @@ If the election comes from the archive
 
 #### Defined in
 
-[api/election.ts:210](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/api/election.ts#L210)
+[api/election.ts:210](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/election.ts#L210)
 
 ___
 
@@ -131,19 +131,19 @@ If the election has been ended manually
 
 #### Defined in
 
-[api/election.ts:205](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/api/election.ts#L205)
+[api/election.ts:205](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/election.ts#L205)
 
 ___
 
 ### metadata
 
-• **metadata**: [`ElectionMetadata`](ElectionMetadata)
+• **metadata**: `string` \| [`ElectionMetadata`](ElectionMetadata)
 
-The metadata of the election
+The metadata of the election (can be encrypted)
 
 #### Defined in
 
-[api/election.ts:250](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/api/election.ts#L250)
+[api/election.ts:250](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/election.ts#L250)
 
 ___
 
@@ -155,7 +155,7 @@ The URL of the metadata
 
 #### Defined in
 
-[api/election.ts:225](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/api/election.ts#L225)
+[api/election.ts:225](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/election.ts#L225)
 
 ___
 
@@ -167,7 +167,7 @@ The id of the organization that created the election
 
 #### Defined in
 
-[api/election.ts:170](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/api/election.ts#L170)
+[api/election.ts:170](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/election.ts#L170)
 
 ___
 
@@ -179,7 +179,7 @@ The result of the election
 
 #### Defined in
 
-[api/election.ts:200](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/api/election.ts#L200)
+[api/election.ts:200](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/election.ts#L200)
 
 ___
 
@@ -191,7 +191,7 @@ The start date of the election
 
 #### Defined in
 
-[api/election.ts:180](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/api/election.ts#L180)
+[api/election.ts:180](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/election.ts#L180)
 
 ___
 
@@ -203,7 +203,7 @@ The status of the election
 
 #### Defined in
 
-[api/election.ts:175](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/api/election.ts#L175)
+[api/election.ts:175](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/election.ts#L175)
 
 ___
 
@@ -215,7 +215,7 @@ The tally mode of the vote
 
 #### Defined in
 
-[api/election.ts:245](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/api/election.ts#L245)
+[api/election.ts:245](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/election.ts#L245)
 
 ___
 
@@ -227,7 +227,7 @@ The number of votes of the election
 
 #### Defined in
 
-[api/election.ts:190](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/api/election.ts#L190)
+[api/election.ts:190](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/election.ts#L190)
 
 ___
 
@@ -239,4 +239,4 @@ The voting mode of the election
 
 #### Defined in
 
-[api/election.ts:235](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/api/election.ts#L235)
+[api/election.ts:235](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/election.ts#L235)

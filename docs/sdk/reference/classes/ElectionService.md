@@ -22,6 +22,7 @@
 
 - [calculateElectionCost](ElectionService#calculateelectioncost)
 - [create](ElectionService#create)
+- [decryptMetadata](ElectionService#decryptmetadata)
 - [estimateElectionCost](ElectionService#estimateelectioncost)
 - [fetchElection](ElectionService#fetchelection)
 - [fetchElections](ElectionService#fetchelections)
@@ -61,7 +62,7 @@ Service.constructor
 
 #### Defined in
 
-[services/election.ts:69](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/services/election.ts#L69)
+[services/election.ts:70](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/services/election.ts#L70)
 
 ## Methods
 
@@ -85,7 +86,7 @@ The cost in tokens.
 
 #### Defined in
 
-[services/election.ts:336](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/services/election.ts#L336)
+[services/election.ts:376](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/services/election.ts#L376)
 
 ___
 
@@ -110,7 +111,28 @@ The created election information
 
 #### Defined in
 
-[services/election.ts:256](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/services/election.ts#L256)
+[services/election.ts:296](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/services/election.ts#L296)
+
+___
+
+### decryptMetadata
+
+▸ **decryptMetadata**(`electionInfo`, `password`): `any`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `electionInfo` | `any` |
+| `password` | `any` |
+
+#### Returns
+
+`any`
+
+#### Defined in
+
+[services/election.ts:110](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/services/election.ts#L110)
 
 ___
 
@@ -134,13 +156,13 @@ The cost in tokens.
 
 #### Defined in
 
-[services/election.ts:323](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/services/election.ts#L323)
+[services/election.ts:363](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/services/election.ts#L363)
 
 ___
 
 ### fetchElection
 
-▸ **fetchElection**(`electionId`): `Promise`\<[`PublishedElection`](PublishedElection.md) \| [`ArchivedElection`](ArchivedElection)\>
+▸ **fetchElection**(`electionId`, `password?`): `Promise`\<[`PublishedElection`](PublishedElection.md) \| [`ArchivedElection`](ArchivedElection)\>
 
 Fetches info about an election.
 
@@ -149,6 +171,7 @@ Fetches info about an election.
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `electionId` | `string` | The id of the election |
+| `password?` | `string` | The password to decrypt the metadata |
 
 #### Returns
 
@@ -156,7 +179,7 @@ Fetches info about an election.
 
 #### Defined in
 
-[services/election.ts:114](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/services/election.ts#L114)
+[services/election.ts:148](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/services/election.ts#L148)
 
 ___
 
@@ -176,7 +199,7 @@ ___
 
 #### Defined in
 
-[services/election.ts:221](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/services/election.ts#L221)
+[services/election.ts:261](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/services/election.ts#L261)
 
 ___
 
@@ -201,7 +224,7 @@ The election salt
 
 #### Defined in
 
-[services/election.ts:287](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/services/election.ts#L287)
+[services/election.ts:327](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/services/election.ts#L327)
 
 ___
 
@@ -225,7 +248,7 @@ The numeric identifier
 
 #### Defined in
 
-[services/election.ts:301](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/services/election.ts#L301)
+[services/election.ts:341](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/services/election.ts#L341)
 
 ___
 
@@ -247,7 +270,7 @@ Fetches the encryption keys from the specified process.
 
 #### Defined in
 
-[services/election.ts:313](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/services/election.ts#L313)
+[services/election.ts:353](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/services/election.ts#L353)
 
 ___
 
@@ -272,7 +295,7 @@ The next election identifier
 
 #### Defined in
 
-[services/election.ts:268](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/services/election.ts#L268)
+[services/election.ts:308](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/services/election.ts#L308)
 
 ___
 
@@ -294,7 +317,7 @@ ___
 
 #### Defined in
 
-[services/election.ts:74](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/services/election.ts#L74)
+[services/election.ts:75](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/services/election.ts#L75)
 
 ## Properties
 
@@ -308,7 +331,7 @@ ElectionServiceProperties.censusService
 
 #### Defined in
 
-[services/election.ts:61](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/services/election.ts#L61)
+[services/election.ts:62](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/services/election.ts#L62)
 
 ___
 
@@ -322,7 +345,7 @@ ElectionServiceProperties.chainService
 
 #### Defined in
 
-[services/election.ts:62](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/services/election.ts#L62)
+[services/election.ts:63](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/services/election.ts#L63)
 
 ___
 
@@ -336,4 +359,4 @@ ___
 
 #### Defined in
 
-[services/service.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/66360b95227306027699be0e80826ca7975027a0/src/services/service.ts#L6)
+[services/service.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/services/service.ts#L6)
