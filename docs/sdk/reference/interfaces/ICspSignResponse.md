@@ -18,4 +18,4 @@ The blind signature
 
 #### Defined in
 
-[api/csp.ts:68](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/csp.ts#L68)
+[api/csp.ts:68](https://github.com/vocdoni/vocdoni-sdk/blob/c61694d51d7ca609cdc86440f23c7a75ea39ea5b/src/api/csp.ts#L68)

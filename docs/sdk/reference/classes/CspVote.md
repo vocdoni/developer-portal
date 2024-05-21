@@ -34,7 +34,7 @@ Represents a vote
 
 #### Defined in
 
-[types/vote/csp.ts:29](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/types/vote/csp.ts#L29)
+[types/vote/csp.ts:29](https://github.com/vocdoni/vocdoni-sdk/blob/c61694d51d7ca609cdc86440f23c7a75ea39ea5b/src/types/vote/csp.ts#L29)
 
 • `set` **proof_type**(`value`): `void`
 
@@ -50,7 +50,7 @@ Represents a vote
 
 #### Defined in
 
-[types/vote/csp.ts:33](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/types/vote/csp.ts#L33)
+[types/vote/csp.ts:33](https://github.com/vocdoni/vocdoni-sdk/blob/c61694d51d7ca609cdc86440f23c7a75ea39ea5b/src/types/vote/csp.ts#L33)
 
 ___
 
@@ -64,7 +64,7 @@ ___
 
 #### Defined in
 
-[types/vote/csp.ts:21](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/types/vote/csp.ts#L21)
+[types/vote/csp.ts:21](https://github.com/vocdoni/vocdoni-sdk/blob/c61694d51d7ca609cdc86440f23c7a75ea39ea5b/src/types/vote/csp.ts#L21)
 
 • `set` **signature**(`value`): `void`
 
@@ -80,7 +80,7 @@ ___
 
 #### Defined in
 
-[types/vote/csp.ts:25](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/types/vote/csp.ts#L25)
+[types/vote/csp.ts:25](https://github.com/vocdoni/vocdoni-sdk/blob/c61694d51d7ca609cdc86440f23c7a75ea39ea5b/src/types/vote/csp.ts#L25)
 
 ___
 
@@ -98,7 +98,7 @@ Vote.votes
 
 #### Defined in
 
-[types/vote/vote.ts:16](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/types/vote/vote.ts#L16)
+[types/vote/vote.ts:16](https://github.com/vocdoni/vocdoni-sdk/blob/c61694d51d7ca609cdc86440f23c7a75ea39ea5b/src/types/vote/vote.ts#L16)
 
 • `set` **votes**(`value`): `void`
 
@@ -118,7 +118,7 @@ Vote.votes
 
 #### Defined in
 
-[types/vote/vote.ts:20](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/types/vote/vote.ts#L20)
+[types/vote/vote.ts:20](https://github.com/vocdoni/vocdoni-sdk/blob/c61694d51d7ca609cdc86440f23c7a75ea39ea5b/src/types/vote/vote.ts#L20)
 
 ## Constructors
 
@@ -146,4 +146,4 @@ Constructs a csp vote
 
 #### Defined in
 
-[types/vote/csp.ts:15](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/types/vote/csp.ts#L15)
+[types/vote/csp.ts:15](https://github.com/vocdoni/vocdoni-sdk/blob/c61694d51d7ca609cdc86440f23c7a75ea39ea5b/src/types/vote/csp.ts#L15)

@@ -28,7 +28,7 @@ The block number where the transaction is mined.
 
 #### Defined in
 
-[api/vote.ts:80](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/vote.ts#L80)
+[api/vote.ts:80](https://github.com/vocdoni/vocdoni-sdk/blob/c61694d51d7ca609cdc86440f23c7a75ea39ea5b/src/api/vote.ts#L80)
 
 ___
 
@@ -40,7 +40,7 @@ Date when the vote was emitted
 
 #### Defined in
 
-[api/vote.ts:95](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/vote.ts#L95)
+[api/vote.ts:95](https://github.com/vocdoni/vocdoni-sdk/blob/c61694d51d7ca609cdc86440f23c7a75ea39ea5b/src/api/vote.ts#L95)
 
 ___
 
@@ -52,7 +52,7 @@ The identifier of the election.
 
 #### Defined in
 
-[api/vote.ts:70](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/vote.ts#L70)
+[api/vote.ts:70](https://github.com/vocdoni/vocdoni-sdk/blob/c61694d51d7ca609cdc86440f23c7a75ea39ea5b/src/api/vote.ts#L70)
 
 ___
 
@@ -64,7 +64,7 @@ Encryption key indexes used
 
 #### Defined in
 
-[api/vote.ts:55](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/vote.ts#L55)
+[api/vote.ts:55](https://github.com/vocdoni/vocdoni-sdk/blob/c61694d51d7ca609cdc86440f23c7a75ea39ea5b/src/api/vote.ts#L55)
 
 ___
 
@@ -76,7 +76,7 @@ The number of votes overwrites.
 
 #### Defined in
 
-[api/vote.ts:90](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/vote.ts#L90)
+[api/vote.ts:90](https://github.com/vocdoni/vocdoni-sdk/blob/c61694d51d7ca609cdc86440f23c7a75ea39ea5b/src/api/vote.ts#L90)
 
 ___
 
@@ -88,7 +88,7 @@ The vote package.
 
 #### Defined in
 
-[api/vote.ts:60](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/vote.ts#L60)
+[api/vote.ts:60](https://github.com/vocdoni/vocdoni-sdk/blob/c61694d51d7ca609cdc86440f23c7a75ea39ea5b/src/api/vote.ts#L60)
 
 ___
 
@@ -100,7 +100,7 @@ The index inside the block where the transaction is mined.
 
 #### Defined in
 
-[api/vote.ts:85](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/vote.ts#L85)
+[api/vote.ts:85](https://github.com/vocdoni/vocdoni-sdk/blob/c61694d51d7ca609cdc86440f23c7a75ea39ea5b/src/api/vote.ts#L85)
 
 ___
 
@@ -112,7 +112,7 @@ The hash of the transaction
 
 #### Defined in
 
-[api/vote.ts:45](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/vote.ts#L45)
+[api/vote.ts:45](https://github.com/vocdoni/vocdoni-sdk/blob/c61694d51d7ca609cdc86440f23c7a75ea39ea5b/src/api/vote.ts#L45)
 
 ___
 
@@ -124,7 +124,7 @@ The identifier of the vote, also called nullifier.
 
 #### Defined in
 
-[api/vote.ts:50](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/vote.ts#L50)
+[api/vote.ts:50](https://github.com/vocdoni/vocdoni-sdk/blob/c61694d51d7ca609cdc86440f23c7a75ea39ea5b/src/api/vote.ts#L50)
 
 ___
 
@@ -136,7 +136,7 @@ The identifier of the voter.
 
 #### Defined in
 
-[api/vote.ts:75](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/vote.ts#L75)
+[api/vote.ts:75](https://github.com/vocdoni/vocdoni-sdk/blob/c61694d51d7ca609cdc86440f23c7a75ea39ea5b/src/api/vote.ts#L75)
 
 ___
 
@@ -148,4 +148,4 @@ The weight of the vote.
 
 #### Defined in
 
-[api/vote.ts:65](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/vote.ts#L65)
+[api/vote.ts:65](https://github.com/vocdoni/vocdoni-sdk/blob/c61694d51d7ca609cdc86440f23c7a75ea39ea5b/src/api/vote.ts#L65)
