@@ -21,7 +21,7 @@ The proof for the given key
 
 #### Defined in
 
-[api/zk.ts:19](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/zk.ts#L19)
+[api/zk.ts:19](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/zk.ts#L19)
 
 ___
 
@@ -33,7 +33,7 @@ The root (id) of the census
 
 #### Defined in
 
-[api/zk.ts:14](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/zk.ts#L14)
+[api/zk.ts:14](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/zk.ts#L14)
 
 ___
 
@@ -45,7 +45,7 @@ The value for the census siblings
 
 #### Defined in
 
-[api/zk.ts:29](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/zk.ts#L29)
+[api/zk.ts:29](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/zk.ts#L29)
 
 ___
 
@@ -57,4 +57,4 @@ The value for the given key
 
 #### Defined in
 
-[api/zk.ts:24](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/zk.ts#L24)
+[api/zk.ts:24](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/zk.ts#L24)

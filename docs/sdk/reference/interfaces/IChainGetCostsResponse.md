@@ -20,7 +20,7 @@ The base price.
 
 #### Defined in
 
-[api/chain.ts:97](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/chain.ts#L97)
+[api/chain.ts:100](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain.ts#L100)
 
 ___
 
@@ -32,7 +32,7 @@ The capacity of the chain.
 
 #### Defined in
 
-[api/chain.ts:102](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/chain.ts#L102)
+[api/chain.ts:105](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain.ts#L105)
 
 ___
 
@@ -56,4 +56,4 @@ The factors.
 
 #### Defined in
 
-[api/chain.ts:107](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/chain.ts#L107)
+[api/chain.ts:110](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain.ts#L110)

@@ -21,7 +21,7 @@ Validator address
 
 #### Defined in
 
-[api/chain.ts:339](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/chain.ts#L339)
+[api/chain.ts:342](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain.ts#L342)
 
 ___
 
@@ -33,7 +33,7 @@ Validator name reference. Could be empty.
 
 #### Defined in
 
-[api/chain.ts:344](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/chain.ts#L344)
+[api/chain.ts:347](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain.ts#L347)
 
 ___
 
@@ -45,7 +45,7 @@ Current power of the validator
 
 #### Defined in
 
-[api/chain.ts:329](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/chain.ts#L329)
+[api/chain.ts:332](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain.ts#L332)
 
 ___
 
@@ -57,4 +57,4 @@ Validator public key
 
 #### Defined in
 
-[api/chain.ts:334](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/chain.ts#L334)
+[api/chain.ts:337](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain.ts#L337)

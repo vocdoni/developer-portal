@@ -37,7 +37,7 @@ Vote info
 
 #### Defined in
 
-[api/vote.ts:127](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/vote.ts#L127)
+[api/vote.ts:127](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/vote.ts#L127)
 
 ___
 
@@ -60,7 +60,7 @@ Voting
 
 #### Defined in
 
-[api/vote.ts:113](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/vote.ts#L113)
+[api/vote.ts:113](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/vote.ts#L113)
 
 ___
 
@@ -86,4 +86,4 @@ Return true if response has status 200
 
 #### Defined in
 
-[api/vote.ts:143](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/vote.ts#L143)
+[api/vote.ts:143](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/vote.ts#L143)
