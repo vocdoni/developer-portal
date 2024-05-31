@@ -23,7 +23,7 @@ Enable anonymous voting.
 
 #### Defined in
 
-[types/election/election.ts:92](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/types/election/election.ts#L92)
+[types/election/election.ts:92](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/types/election/election.ts#L92)
 
 ___
 
@@ -35,7 +35,7 @@ If false, election will start PAUSED and will have to be resumed manually.
 
 #### Defined in
 
-[types/election/election.ts:76](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/types/election/election.ts#L76)
+[types/election/election.ts:76](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/types/election/election.ts#L76)
 
 ___
 
@@ -47,7 +47,7 @@ Can add more voters to the census tree during the election.
 
 #### Defined in
 
-[types/election/election.ts:84](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/types/election/election.ts#L84)
+[types/election/election.ts:84](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/types/election/election.ts#L84)
 
 ___
 
@@ -59,7 +59,7 @@ The process can be paused and resumed.
 
 #### Defined in
 
-[types/election/election.ts:80](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/types/election/election.ts#L80)
+[types/election/election.ts:80](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/types/election/election.ts#L80)
 
 ___
 
@@ -78,7 +78,7 @@ If the metadata has to be encrypted or not.
 
 #### Defined in
 
-[types/election/election.ts:96](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/types/election/election.ts#L96)
+[types/election/election.ts:96](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/types/election/election.ts#L96)
 
 ___
 
@@ -90,4 +90,4 @@ Protect the results until the end of the process if true. It will show live resu
 
 #### Defined in
 
-[types/election/election.ts:88](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/types/election/election.ts#L88)
+[types/election/election.ts:88](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/types/election/election.ts#L88)

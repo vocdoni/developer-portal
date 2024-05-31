@@ -21,7 +21,7 @@ The auth steps to follow in order to get a blind signature
 
 #### Defined in
 
-[api/csp.ts:42](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/csp.ts#L42)
+[api/csp.ts:42](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/csp.ts#L42)
 
 ___
 
@@ -33,7 +33,7 @@ The authentication type of the CSP
 
 #### Defined in
 
-[api/csp.ts:37](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/csp.ts#L37)
+[api/csp.ts:37](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/csp.ts#L37)
 
 ___
 
@@ -45,7 +45,7 @@ The types of signature of the CSP
 
 #### Defined in
 
-[api/csp.ts:32](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/csp.ts#L32)
+[api/csp.ts:32](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/csp.ts#L32)
 
 ___
 
@@ -57,4 +57,4 @@ The title of the CSP Information
 
 #### Defined in
 
-[api/csp.ts:27](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/csp.ts#L27)
+[api/csp.ts:27](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/csp.ts#L27)

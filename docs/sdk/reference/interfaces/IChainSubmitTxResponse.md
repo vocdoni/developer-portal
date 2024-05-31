@@ -20,7 +20,7 @@ The response code
 
 #### Defined in
 
-[api/chain.ts:227](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/chain.ts#L227)
+[api/chain.ts:230](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain.ts#L230)
 
 ___
 
@@ -32,7 +32,7 @@ The hash of the transaction
 
 #### Defined in
 
-[api/chain.ts:217](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/chain.ts#L217)
+[api/chain.ts:220](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain.ts#L220)
 
 ___
 
@@ -44,4 +44,4 @@ The response data (can vary depending on the transaction type)
 
 #### Defined in
 
-[api/chain.ts:222](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/chain.ts#L222)
+[api/chain.ts:225](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain.ts#L225)

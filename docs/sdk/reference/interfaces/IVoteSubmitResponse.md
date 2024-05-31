@@ -19,7 +19,7 @@ The hash of the transaction
 
 #### Defined in
 
-[api/vote.ts:14](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/vote.ts#L14)
+[api/vote.ts:14](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/vote.ts#L14)
 
 ___
 
@@ -31,4 +31,4 @@ The identifier of the vote, also called nullifier.
 
 #### Defined in
 
-[api/vote.ts:19](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/vote.ts#L19)
+[api/vote.ts:19](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/vote.ts#L19)

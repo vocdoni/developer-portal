@@ -25,7 +25,7 @@ The pagination information
 
 #### Defined in
 
-[api/census3/strategy.ts:29](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/census3/strategy.ts#L29)
+[api/census3/strategy.ts:29](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/census3/strategy.ts#L29)
 
 ___
 
@@ -41,4 +41,4 @@ The list of the strategies identifiers
 
 #### Defined in
 
-[api/census3/strategy.ts:22](https://github.com/vocdoni/vocdoni-sdk/blob/ee6390524b82e6ef535da03c0e3bb826e450e622/src/api/census3/strategy.ts#L22)
+[api/census3/strategy.ts:22](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/census3/strategy.ts#L22)
