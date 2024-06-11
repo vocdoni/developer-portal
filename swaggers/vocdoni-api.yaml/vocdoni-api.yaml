@@ -1,7 +1,7 @@
 openapi: 3.0.0
 info:
   contact: {}
-  description: "The Vocdoni API is a REST API that substitutes the previous RPCs in order to make it easier for  developers/integrators to build on top of the voting protocol. This API facilitates creating votings using Vocdoni, without the hassle of learning a complex blockchain platform, allowing to perform all the features that enable the voting protocol such as creating an account, entity, voting process, census & vote, abstracting as much as possible the complexity and offering simple and straightforward methods to perform those actions. \n\nYou can review the API endpoints documentation in this section, the main entities are:\n\n- [**Chain**](chain): The Vocdoni blockchain is named Vochain. It is a Byzantine fault-tolerant network based on Tendermint that executes the Vocdoni Protocol logic represented as a state machine. Its main purpose is to register votes in a  decentralized and verifiable format. In those endpoints, you can consult the state of the chain, transactions costs,  list organizations and get more Vochain info.\n- [**Accounts**](accounts): Identified by an Ethereum like address. An account can create and manage elections, transfer tokens, give power to other accounts on his behalf (delegates) and manage its metadata.\n- [**Elections**](elections): Is a rule-set of options and requirements for creating a process in which people vote a series of options. To know more about the params of an election and its lifecycle go [here](../get-started/intro#23-elections). In this section you will find all information related to an election as its information, election keys, submitted votes & how to create a new election.\n- [**Censuses**](censuses): The census is a key component of any voting process. It specifies the set of users (identified by a public key or address) eligible for participating in an election. To understand more about the Censuses you can check [here](../get-started/intro#21-the-census). Here you will be able to get censuses information like the Merkle root, total weight & size, import/export the censuses and create new ones.\n- [**Votes**](votes): All the information related to the vote issued by a participant in a vote, you can check the validity of the vote, consult your information and send a vote.\n- [**SIK**](sik): The Secret Identity Key is a user-generated piece of information that proves the user's identity without revealing it. It is the hash of the user's address, the signature of a public message and an optional secret part. It is used to ensure anonymous voting. All registered accounts or anonymous voters must register a SIK, and they are all stored in a Merkle tree. The `/siks` endpoints help to generate a proof of membership, get the current valid SIK roots, or check if an account has a valid SIK.\n\n\n### Errors \n\nBackend error messages list are defined here: https://github.com/vocdoni/vocdoni-node/blob/master/api/errors.go\n\nAbout the **204 no content** error: this message will be returned only if the asset being queried cannot be found but no other errors have occurred. This response is commonly used to prevent Javascript errors that may arise when a client is waiting for a  transaction to be published. During this waiting period, the client can repeatedly query the endpoint until a  successful response with a status code of 200 is received, thereby avoiding any errors that may occur due to the transaction not being published yet."
+  description: "\nThe Vocdoni API is a REST API that substitutes the previous RPCs in order to make it easier for  developers/integrators to build on top of the voting protocol. This API facilitates the creation of voting processes with Vocdoni, without the hassle of integrating with a complex distributed stack with blockchain components. The API allows integrators to perform all the features enabled by the Vocdoni voting protocol, such as creating accounts, organizations, voting processes, and censuses, as well as casting votes. The API is designed to abstract away the complexity of the Vocdoni protocol as much as possible, offering a simple and straightforward way to performing these actions. \n\nThe API contains the following endpoints: \n\n- [**Chain**](chain): The Vocdoni blockchain is named Vochain. It is a Byzantine fault-tolerant network based on Tendermint that executes the Vocdoni Protocol logic represented as a state machine. Its main purpose is to register votes to a decentralized data store that is able to guarantee univeral verifiability. The chain endpoints allow you to consult the state of the chain, estimate transactions costs, list organizations, and get more Vochain info.\n- [**Accounts**](accounts): Identified by an Ethereum-like address. An account can create and manage elections, transfer tokens, give power to other accounts on its behalf (delegation) and manage its metadata. This endpoint allows users to set the metadata associated with an existing account and to query for information related to existing accounts.\n- [**Elections**](elections): The elections endpoint serves information related to elections such as basic election information, election keys, and submitted votes, as well as enabling users to create a new election and modify existing ones. There is a set of [options, specifications, and lifecycle states](https://developer.vocdoni.io/protocol#elections) that determine the behavior of an election and how votes are counted. \n- [**Censuses**](censuses): The census is a key component of any voting process. It specifies the set of users (each identified by a public key or address) eligible to participate in an election. The various types of census are documented [here](https://developer.vocdoni.io/protocol/census). This endpoint provides census information like the Merkle root, type, total weight, and size of a census. It also allows you to import/export censuses and create new ones.\n- [**Votes**](votes): This endpoint serves all the information associated with any specific vote, including its validity. It is also how users can cast votes.\n- [**Wallet**](wallet): The wallet endpoint facilitates the creation of accounts on the Vochain. This endpoint fulfills requests relating to the token balance held by a given account. \n- [**SIK**](sik): The Secret Identity Key is a user-generated piece of information that proves the user's identity without revealing it. It is the hash of the user's address, the signature of a public message, and an optional secret part. It is used to ensure anonymous voting. All registered accounts or anonymous voters must register a SIK, and these keys are all stored in a Merkle tree. The `/siks` endpoints helps to generate a proof of membership, get the current valid SIK roots, or check if an account has a valid SIK.\n\n\n### Errors \n\nBackend error messages list are defined here: https://github.com/vocdoni/vocdoni-node/blob/master/api/errors.go\n\nAbout the **204 no content** error: this message will be returned only if the asset being queried cannot be found but no other errors have occurred. This response is commonly used to prevent Javascript errors that may arise when a client is waiting for a  transaction to be published. During this waiting period, the client can repeatedly query the endpoint until a  successful response with a status code of 200 is received, thereby avoiding any errors that may occur due to the transaction not being published yet."
   title: Vocdoni API
   version: 2.0.0
 servers:
@@ -18,7 +18,7 @@ paths:
           description: OK
       tags:
         - Accounts
-      description: "It register an account to the blockchain including IPFS metadata upload. \n\n- Requires a signed protobuf transaction on the body to perform the operation.\n- Metadata is not required, but if no metadata is provided the account won't be listed on \n[/chain/organizations](organizations-list) endpoint. Check there to read about differences between an account and a organization."
+      description: "Register an account to the blockchain, including metadata upload to IPFS. \n\n- Requires a signed protobuf transaction on the body to perform the operation.\n- Metadata is not required, but if no metadata is provided the account won't be listed on the [/chain/organizations](organizations-list) endpoint. Check there to read about differences between an account and a organization."
       requestBody:
         content:
           application/json:
@@ -382,6 +382,38 @@ paths:
 
         - Published census cannot be deleted
       summary: Delete census
+  '/censuses/{censusID}/check':
+    get:
+      parameters:
+        - description: Census id
+          in: path
+          name: censusID
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  census:
+                    properties:
+                      censusID:
+                        type: string
+                      uri:
+                        type: string
+                    type: object
+                type: object
+          description: It return published censusID and the ipfs uri where its uploaded
+      tags:
+        - Censuses
+      description: >-
+        Returns the publication status of a specific census by its ID, including the IPFS URI where it's uploaded, if available. This handler checks whether a census has been published successfully and retrieves its access URI or any errors that occurred during the publication process.
+
+
+        This endpoint can be useful for anyone looking to verify the publication status of a census, and it facilitates accessing the published data directly through the returned URI.
+      summary: Check census publish status
   '/censuses/{censusID}/export':
     get:
       parameters:
@@ -439,7 +471,7 @@ paths:
         - BasicAuth: []
       tags:
         - Censuses
-      description: "Add list of public key/address with its weight to an unpublished census and returns the resulting \n[Merkle Root](https://en.wikipedia.org/wiki/Merkle_tree).  \n\nEach addition will modify the census merkle root creating a new \"snapshot\" of the census at this moment. This root  identifies the census at this point and can be used to publish the census at this specific state.\n\nFor example, supposing a census with id `0x1234` (random hex string generated during census creation), add 10 keys will generate specific root for this state, ex `0xabcd`. \n\nIf we add 5 keys more, the resulting root changes, the keys are added and the new census have the first 10 keys plus the last 5, with a resulting root of `0xffff`. \n\nSo, at [publishing moment](census-publish), you could specify no root to publish census on the last \nstate (`0xffff`), which will publish the first 10 plus the last 5. Or either specify the snapshot point which you want to publish the census, for example `0x1234`, which will publish just the first 10th.\n\n- Requires Bearer token \n- Adds a list of wallet public key or wallet address to a census with a specific weight\n- If the weight parameter is missing, weight=1 is considered"
+      description: "Adds list of public keys/addresses and voting weights to an unpublished census. Returns the resulting \n[Merkle Root](https://en.wikipedia.org/wiki/Merkle_tree).  \n\nEach addition will modify the census merkle root creating a new \"snapshot\" of the census at this moment. This root  identifies the census at this point and can be used to publish the census at this specific state.\n\nFor example, supposing a census with id `0x1234` (random hex string generated during census creation), adding 10 keys will generate specific root for this state, ex `0xabcd`. \n\nIf we add 5 keys more, the resulting root changes, the keys are added, and the new census has the first 10 keys plus the 5 new ones, with a resulting root of `0xffff`. \n\nSo, when [publishing](census-publish) the census, you could specify 'no root' to publish census on the last \nstate (`0xffff`), which will publish a census of all 15 voters. Or you could specify the snapshot point at which you want to publish, for example `0x1234`, which will publish a census containing just the first 10 voters.\n\n- Requires Bearer token \n- Adds a list of wallet public key or wallet addresses to a census with a specific weight\n- If the weight parameter is missing, weight=1 is considered"
       requestBody:
         content:
           application/json:
@@ -482,7 +514,7 @@ paths:
         - BasicAuth: []
       tags:
         - Censuses
-      description: "Prove the key and weight belong to the census root hash.\n\nIf the key exists on the census returns Merkle root information. `Proof` property is referred to the siblings of Merkle tree, the `value` points to the leaf of the Merkle Tree for this key (on this case, the weight), and weight is just the key weight for this census. \n\n[Further reading](/protocol/Census/off-chain-tree)\n\n- Requires Bearer token \n- Returns a merkle proof, proving the key and weight belongs to the census root hash"
+      description: "Proves that the key and weight belong to the census root hash.\n\nIf the key exists on the census, returns Merkle root information. The `Proof` property refers to the key's siblings on the Merkle tree, the `value` points to the leaf of the Merkle Tree for this key (in this case, the weight), and weight is just the key's weight for this census. \n\n[Further reading](/protocol/Census/off-chain-tree)\n\n- Requires Bearer token \n- Returns a merkle proof, proving the key and weight belongs to the census root hash"
       summary: Prove key to census
   '/censuses/{censusID}/publish':
     post:
@@ -512,7 +544,37 @@ paths:
         - BasicAuth: []
       tags:
         - Censuses
-      description: "Register a census to the storage (IPFS in our case). After this, the census can't be edited. \n        \nYou could provide the census Merkle root to specify census publication at specific snapshot. See [censuses/{censusId}/participants](census-add-participants-to-census)\n\n- Requires Bearer token\n- The census is copied to a new census identified by its Merkle Root\n- The new census **cannot be modified**\n- The census is published to the storage provided (IPFS in our case)\n- The new census ID is returned and can be used for querying\n- If a censusID with the same root has been already published, the request will fail\n- If `root` is specified as path parameter, it publish the census at specific  root (append the census to existing one)."
+      description: "Registers a census to storage (IPFS in our case). After this, the census can't be edited. \n        \nYou can optionally provide the census Merkle root to specify census publication at a specific snapshot. See [censuses/{censusId}/participants](census-add-participants-to-census)\n\n- Requires Bearer token\n- The census is copied to a new census identified by its Merkle Root\n- The new census **cannot be modified**\n- The census is published to the storage provided (IPFS in our case)\n- The new census ID is returned and can be used for querying\n- If a censusID with the same root has been already published, the request will fail\n- If `root` is specified as path parameter, it publish the census at specific  root (append the census to existing one)."
+      summary: Publish census
+  '/censuses/{censusID}/publish/async':
+    post:
+      parameters:
+        - description: Census id
+          in: path
+          name: censusID
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  census:
+                    properties:
+                      censusID:
+                        type: string
+                      uri:
+                        type: string
+                    type: object
+                type: object
+          description: It return published censusID and the ipfs uri where its uploaded
+      security:
+        - BasicAuth: []
+      tags:
+        - Censuses
+      description: "Registers a census to storage (IPFS in our case). After this, the census can't be edited. \n        \nYou can optionally provide the census Merkle root to specify census publication at a specific snapshot. See [censuses/{censusId}/participants](census-add-participants-to-census)\n\n- Requires Bearer token\n- The census is copied to a new census identified by its Merkle Root\n- The new census **cannot be modified**\n- The census is published to the storage provided (IPFS in our case)\n- The new census ID is returned and can be used for querying\n- If a censusID with the same root has been already published, the request will fail\n- If `root` is specified as path parameter, it publish the census at specific  root (append the census to existing one)."
       summary: Publish census
   '/censuses/{censusID}/publish/{root}':
     post:
@@ -548,7 +610,7 @@ paths:
         - BasicAuth: []
       tags:
         - Censuses
-      description: "Register a census to the storage (IPFS in our case). After this, the census can't be edited. \n        \nYou could provide the census Merkle root to specify census publication at specific snapshot. See [censuses/{censusId}/participants](census-add-participants-to-census)\n\n- Requires Bearer token\n- The census is copied to a new census identified by its Merkle Root\n- The new census **cannot be modified**\n- The census is published to the storage provided (IPFS in our case)\n- The new census ID is returned and can be used for querying\n- If a censusID with the same root has been already published, the request will fail\n- If `root` is specified as path parameter, it publish the census at specific  root (append the census to existing one)."
+      description: "Registers a census to storage (IPFS in our case). After this, the census can't be edited. \n        \nYou can optionally provide the census Merkle root to specify census publication at a specific snapshot. See [censuses/{censusId}/participants](census-add-participants-to-census)\n\n- Requires Bearer token\n- The census is copied to a new census identified by its Merkle Root\n- The new census **cannot be modified**\n- The census is published to the storage provided (IPFS in our case)\n- The new census ID is returned and can be used for querying\n- If a censusID with the same root has been already published, the request will fail\n- If `root` is specified as path parameter, it publish the census at specific  root (append the census to existing one)."
       summary: Publish census at root
   '/censuses/{censusID}/root':
     get:
@@ -694,7 +756,7 @@ paths:
         - BasicAuth: []
       tags:
         - Censuses
-      description: "Create a new census on the backend side. The census is still unpublished until [publish](publish-census) is called.  \n\nTo create the census it require a `Bearer token` created on the user side using a [UUID](https://en.wikipedia.org/wiki/Universally_unique_identifier). This token **should we stored for the user to perform operations to this census** such add participants or publish.\n\nIt return a new random censusID (a random 32 bytes hex string), which are used (along with the Bearer token) to [add participant keys](add-participants-to-census) to the census. Once the census is published no more keys can be added.\n\nTo use a census on an election, it **must be published**.\n\n- Available types are: `weighted` and `zkindexed`\n- Require header Bearer token created user side"
+      description: "Creates a new census on the backend side. The census is still unpublished until [publish](publish-census) is called.  \n\nTo create the census a `Bearer token` is required. This is created on the user side using a [UUID](https://en.wikipedia.org/wiki/Universally_unique_identifier). This token **should we stored for the user to perform operations to this census** such adding participants or publishing the census.\n\nReturns a new random censusID (a random 32 byte hex string), which is used (along with the Bearer token) to [add participant keys](add-participants-to-census) to the census. Once the census is published no more keys can be added.\n\nTo use a census for an election, it **must be published**.\n\n- Available types are: `weighted` and `zkindexed`\n- Requires header Bearer token created user side"
       summary: Create a new census
   '/chain/blockToDate/{height}':
     get:
@@ -925,7 +987,7 @@ paths:
       tags:
         - Chain
       description: >-
-        Return basic Vocdoni Blockchain (Vochain) information like blockTime, chainId, current height...
+        Returns basic Vocdoni Blockchain (Vochain) information like blockTime, chainId, current height, and more.
 
 
         `blockTime`: each array position return average time for 1 minute, 10 minutes, 1 hour, 6 hours and 24 hours.
@@ -934,19 +996,14 @@ paths:
         `blockTime`: every array position represents the average for 1 minute, 10m, 1h, 6h, 24h
 
 
-        `MaxCensusSize`: is a new feature introduced in the blockchain that is used to limit the number of  votes that can be registered for an election. This feature helps to prevent any potential overflow of the blockchain when the number of votes goes beyond the maximum limit. This is the maximum value  that an election creation can allow.
+        `MaxCensusSize`: is used to limit the number of voters that can be registered to a given census. This feature helps to prevent any potential overflow of the blockchain when the number of votes goes beyond the maximum limit. This is the maximum value that an election creation can allow.
 
 
-        In order to create an election, the creator is required to set the `MaxCensusSize` parameter to a proper value. Typically, this value should be equal to the size of the census. If the MaxCensusSize parameter is set to 0, an error will occur and the election cannot be created.
+        In order to create an election, the creator is required to set the `MaxCensusSize` parameter to a proper value. Typically, this value should be equal to the size of the census. If the MaxCensusSize parameter is set to 0, an error will occur and the election cannot be created. If the `MaxCensusSize` is greater than allowed by the blockchain, an error will be returned.
 
 
-        The `MaxCensusSize` parameter determines the maximum number of votes that can be registered by the blockchain.  If the number of votes exceeds this limit, the vote transaction will fail (overwrite votes does not count).
 
-
-        See `MaxCensusSize` attribute on the VocdoniSDK  to add the maximum census size to a single election. Will throw an error if is superior than the allowed on the Vochain: `Max census size for the election is greater than allowed size`.
-
-
-        `networkCapacity`  indicates how many votes per block is the blockchain supposed to achieve. As bigger the capacity as cheaper the elections.
+        `networkCapacity`  indicates how many votes per block is the blockchain expected to achieve. Larger capacity translates to cheaper elections.
       summary: Vochain information
   /chain/info/circuit:
     get:
@@ -976,10 +1033,10 @@ paths:
         Package electionprice provides a mechanism for calculating the price of an election based on its characteristics.
 
 
-        The formula used to calculate the price for creating an election on the Vocdoni blockchain is designed to take into account various factors that impact the cost and complexity of conducting an election. The price is determined by combining several components, each reflecting a specific aspect of the election process.
+        The formula used to calculate the price of creating an election on the Vocdoni blockchain is designed to take into account various factors that impact the computational cost and complexity of conducting an election. The price is determined by combining several components, each reflecting one specific aspect of the election process.
 
 
-        1. **Base Price**: This is a fixed cost that serves as a starting point for the price calculation. It represents the minimal price for creating an election, regardless of its size or duration.
+        1. **Base Price**: This is a fixed cost that serves as a starting point for the price calculation. It represents the minimal price for creating an election regardless of its size or duration.
 
         2. **Size Price**: As the number of voters (maxCensusSize) in an election increases, the resources required to manage the election also grow. To account for this, the size price component is directly proportional to the maximum number of votes allowed in the election. Additionally, it takes into consideration the blockchain's maximum capacity (capacity) and the maximum capacity the blockchain administrators can set (maxCapacity). This ensures that the price is adjusted based on the current capacity of the blockchain.
 
@@ -987,12 +1044,12 @@ paths:
 
         4. **Encrypted Votes**: If an election requires encryption for maintaining secrecy until the end (encryptedVotes), it demands additional resources and computational effort. Therefore, the encrypted price component is added to the total price when this feature is enabled.
 
-        5. **Anonymous Votes**: Similarly, if an election must be anonymous (anonymousVotes), it requires additional measures to ensure voter privacy. As a result, the anonymous price component is added to the total price when this option is chosen.
+        5. **Anonymous Votes**: Similarly, if an election is anonymous (anonymousVotes), it requires additional measures to ensure voter privacy. As a result, the anonymous price component is added to the total price when this option is chosen.
 
         6. **Overwrite Price**: Allowing voters to overwrite their votes (maxVoteOverwrite) can increase the complexity of managing the election, as it requires additional resources to handle vote updates. The overwrite price component accounts for this by being proportional to the maximum number of vote overwrites and the maximum number of votes allowed in the election. It also takes into account the blockchain's capacity to ensure the price reflects the current resource constraints.
 
 
-        The constant factors in the price formula play a crucial role in determining the price of an election based on its characteristics. Each factor is associated with a specific component of the price formula and helps to weigh the importance of that component in the final price calculation. The rationale beind these constant factors is to provide a flexible mechanism to adjust the pricing model based on the system's needs and requirements.
+        The constant factors in the price formula play a crucial role in determining the price of an election based on its characteristics. Each factor is associated with a specific component of the price formula and helps to weigh the importance of that component in the final price calculation. The rationale behind these constant factors is to provide a flexible mechanism to adjust the pricing model based on the system's needs and requirements.
 
 
         - **k1 (Size price factor)**: This constant factor affects the size price component of the formula. By adjusting k1, you can control the impact of the maximum number of votes (maxCensusSize) on the overall price. A higher k1 value would make the price increase more rapidly as the election size grows, while a lower k1 value would make the price less sensitive to the election size. The rationale behind k1 is to ensure that the pricing model can be adapted to accommodate different election sizes while considering the resource requirements.
@@ -1080,7 +1137,7 @@ paths:
           description: OK
       tags:
         - Chain
-      description: "An **Organizations** is an account with `infoUri` that contains organization associated  metadata. \nAn **Account** instead could be a validator, an oracle, a voter or just someone who wants to transfer tokens. \n\nThe `/chain/organizations` endpoints are related only to the Organization account type.\n\n- Return list of organizations ids.\n- If no page is defined, will assume page 0."
+      description: "An **Organization** is an account with an `infoUri` that contains organization-associated  metadata. \nAn **Account** could be a validator, an oracle, a voter or just someone who wants to transfer tokens. \n\nThe `/chain/organizations` endpoints are related only to the Organization account type.\n\n- Return list of organizations ids.\n- If no page is defined, will assume page 0."
       summary: List organizations
   /chain/transactions:
     post:
@@ -1095,7 +1152,7 @@ paths:
       tags:
         - Chain
       description: >
-        It submit a transaction. Depending of transaction type will return different kinds of responses:
+        Submits a transaction. Depending on the transaction type, will return one of multiple response types:
 
         - For a NewElection transaction, `response` will be the `newElectionId`
 
@@ -1209,7 +1266,7 @@ paths:
       tags:
         - Chain
       description: >-
-        Using transaction hash it return the `block` and `index` containing that contains the transaction. After, you could use this `block` and `index` to retrieve transaction full info using [transaction by block and index](transaction-by-block-index)
+        Using a transaction's hash, returns the `block` and `index` that contains the transaction. You can use this `block` and `index` to retrieve the full transaction info using [transaction by block and index](transaction-by-block-index)
       summary: Transaction by hash
   '/chain/transactions/{height}/{index}':
     get:
@@ -1265,7 +1322,7 @@ paths:
             It return txId, electionId and the metadataURL for the newly created election. If metadataURL is returned empty, means that there is some issue with the storage provider.
       tags:
         - Elections
-      description: "It creates an election on the Vochain. \n\nTo use this endpoint, you will need to provide a signed transaction that has been encoded on the client side using the **Vocdoni SDK**. This transaction, referred to as txPayload, must include the IPFS CID-formatted hash of the metadata for the election.\n\nThe metadata for the election is optional and is provided as a base64-encoded JSON object. This object should follow the Entity metadata specification and includes information about the election, such as the list of candidates and the election's description. This metadata is stored within IPFS so that participants can access it.\n\nThe API endpoint will verify that the hash in the txPayload transaction matches the uploaded metadata. If these do not match, the API will return an error.\n\nExample of election metadata object:\n\n```json\n{\n    \"version\": \"1.0\",\n    \"title\": {\"default\": \"Best pasta!\", \"en\": \"Best pasta!\", \"es\": \"La mejor pasta!\"},\n    \"description\": {\"default\": \"Decide what is the best pasta\", \"en\": \"Decide what is the best pasta\", \"es\": \"Decide cual es la mejor pasta\"},\n    // Following fields are optional\n    \"media\": {\n    \"header\": \"url to an image\"\n    \"streamUri\": \"url to a stream resource\"\n    },\n    \"questions\": [\n    {\n        \"choices\": [ \n        { \n            \"title\": {\"default\": \"Macarroni\", \"en\": \"Macarroni\", \"es\": \"Macarrones\"},\n            \"value\": 0\n        } \n        { \n            \"title\": {\"default\": \"Spaghetti\", \"en\": \"Spaghetti\", \"es\": \"Espaguetis\"},\n            \"value\": 1\n        } \n        ], \n        \"description\": {\"default\": \"Choice one of theme\", \"en\": \"Choice one of theme\", \"es\": \"Elije una de ellas\"},\n        \"title\": {\"default\": \"Macarroni or Spaghetti\", \"en\": \"Macarroni or Spaghetti\", \"es\": \"Macarrones o Espaguetis\"}\n    }\n    ]\n}\n```\n\n[Read more about process creation](https://docs.vocdoni.io/architecture/process-overview.html#process-creation)"
+      description: "Creates an election on the Vochain. \n\nTo use this endpoint, you will need to provide a signed transaction that has been encoded on the client side using the **Vocdoni SDK**. This transaction, referred to as txPayload, must include the IPFS CID-formatted hash of the metadata for the election.\n\nThe metadata for the election is optional and is provided as a base64-encoded JSON object. This object should follow the Entity metadata specification and includes information about the election, such as the list of candidates and the election's description. This metadata is stored within IPFS so that participants can access it.\n\nThe API endpoint will verify that the hash in the txPayload transaction matches the uploaded metadata. If these do not match, the API will return an error.\n\nExample of election metadata object:\n\n```json\n{\n    \"version\": \"1.0\",\n    \"title\": {\"default\": \"Best pasta!\", \"en\": \"Best pasta!\", \"es\": \"La mejor pasta!\"},\n    \"description\": {\"default\": \"Decide what is the best pasta\", \"en\": \"Decide what is the best pasta\", \"es\": \"Decide cual es la mejor pasta\"},\n    // Following fields are optional\n    \"media\": {\n    \"header\": \"url to an image\"\n    \"streamUri\": \"url to a stream resource\"\n    },\n    \"questions\": [\n    {\n        \"choices\": [ \n        { \n            \"title\": {\"default\": \"Macarroni\", \"en\": \"Macarroni\", \"es\": \"Macarrones\"},\n            \"value\": 0\n        } \n        { \n            \"title\": {\"default\": \"Spaghetti\", \"en\": \"Spaghetti\", \"es\": \"Espaguetis\"},\n            \"value\": 1\n        } \n        ], \n        \"description\": {\"default\": \"Choice one of theme\", \"en\": \"Choice one of theme\", \"es\": \"Elije una de ellas\"},\n        \"title\": {\"default\": \"Macarroni or Spaghetti\", \"en\": \"Macarroni or Spaghetti\", \"es\": \"Macarrones o Espaguetis\"}\n    }\n    ]\n}\n```\n\n[Read more about process creation](https://docs.vocdoni.io/architecture/process-overview.html#process-creation)"
       requestBody:
         content:
           application/json:
@@ -1293,7 +1350,7 @@ paths:
           description: OK
       tags:
         - Elections
-      description: "Return a filtered elections list, the available filters have to be sent on the request body. Available are: \n        \n```json\n{\n    \"organizationId\": \"hexString\",\n    \"electionId\": \"hexString\",\n    \"withResults\": false,\n    \"status\": \"READY\",\n}\n```\n\n`electionId` can be partial. \n\nSee [elections list](elections-list)"
+      description: "Returns a filtered list of elections. The filters have to be sent on the request body. The valid filters are: \n        \n```json\n{\n    \"organizationId\": \"hexString\",\n    \"electionId\": \"hexString\",\n    \"withResults\": false,\n    \"status\": \"READY\",\n}\n```\n\n`electionId` can be partial. \n\nSee [elections list](elections-list)"
       requestBody:
         content:
           application/json:
@@ -1317,15 +1374,15 @@ paths:
           description: OK
       tags:
         - Elections
-      description: nextElectionIDHandler
+      description: buildElectionIDHandler
       requestBody:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/api.NextElectionID'
-        description: 'OrganizationID, CensusOrigin and EnvelopeType'
+              $ref: '#/components/schemas/api.BuildElectionID'
+        description: 'Delta, OrganizationID, CensusOrigin and EnvelopeType'
         required: true
-      summary: Get next election ID
+      summary: Build an election ID
   '/elections/page/{page}':
     get:
       parameters:
@@ -1428,11 +1485,11 @@ paths:
       tags:
         - Elections
       description: >-
-        Returns a given election consensus results and useful information about the results. Results represented with BigInt strings.
+        Returns a given election consensus results and useful information about these results. Results are represented with BigInt strings.
 
 
 
-        This method can be used by anyone, but it is also used by Chainlink for fetching Vochain results and store it to the Results contract on an EVM network.
+        This method can be used by anyone, but it is also used by Chainlink for fetching Vochain results to store them on the Results contract on an EVM network.
 
 
 
@@ -1646,28 +1703,29 @@ paths:
       tags:
         - Votes
       description: >-
-        Get the content of an existing Vote. If is an encrypted election it return the `encryptionKeys` indexes and the package will be codified.
+        Returns the content of an existing Vote. If the election is encrypted, returns the `encryptionKeys` indexes and codifies the package.
 
 
 
-        The Vote is identified by its `voteId`, also called `nullifier`. The `nullifier` is deterministic and its hash could be computed as following (using `Keccak256`):
+        Each Vote is identified by its `voteId`, also called `nullifier`. The `nullifier` is deterministic and its hash can be computed with the following (using `Keccak256`):
 
 
-        - For signature based elections, is the hash of the `voterAddress` + `processId`
+        - For signature based elections, the nullifier is the hash of the `voterAddress` + `processId`
 
-        - For anonymous elections, the `privateKey` + `processId`
-
-
-
-        As well, on the response, the `voterId` won't be returned for anonymous elections, and the `encryptionKeyIndexes` only for finished encrypted elections.
+        - For anonymous elections, the nullifier is the hash of the `privateKey` + `processId`
 
 
 
-        Height and txIndex refer to the block height and the index of the transaction where vote is registered.
+        If an election is anonymous, the `voterId` will not be returned.
+
+        If an election is encrypted, the `encryptionKeyIndexes` will only be returned once the election is complete.
+
+
+        `Height` and `txIndex` refer to the block height and the index of the transaction where vote is registered.
 
 
 
-        The `overwriteCount` refers to the number of vote overwrites already executed by the user. At election creation time, you can specify the `maxVoteOverwrites` parameter, which defines how many times a voter can submit a vote. Only last vote will be taken into election final results.
+        The `overwriteCount` refers to the number of vote overwrites already executed by the user. At election creation time, you can specify the `maxVoteOverwrites` parameter, which defines how many times a voter can submit a vote. Only the most recent vote for any voter will be taken into an election's final results.
       summary: Get vote
   '/wallet/add/{privateKey}':
     post:
@@ -1829,6 +1887,29 @@ components:
         last_commit:
           $ref: '#/components/schemas/types.Commit'
       type: object
+    api.BuildElectionID:
+      properties:
+        censusOrigin:
+          type: integer
+        delta:
+          description: 0 means build next ElectionID
+          type: integer
+        envelopeType:
+          properties:
+            anonymous:
+              type: boolean
+            costFromWeight:
+              type: boolean
+            encryptedVotes:
+              type: boolean
+            serial:
+              type: boolean
+            uniqueValues:
+              type: boolean
+          type: object
+        organizationId:
+          type: string
+      type: object
     api.CensusParticipant:
       properties:
         key:
@@ -1888,6 +1969,9 @@ components:
         height:
           example: 5467
           type: integer
+        initialHeight:
+          example: 5467
+          type: integer
         maxCensusSize:
           example: 50000
           type: integer
@@ -1937,8 +2021,7 @@ components:
           type: boolean
         manuallyEnded:
           type: boolean
-        metadata:
-          $ref: '#/components/schemas/api.ElectionMetadata'
+        metadata: {}
         metadataURL:
           type: string
         organizationId:
@@ -1981,6 +2064,8 @@ components:
           items:
             type: integer
           type: array
+        metadataEncryptionPrivKey:
+          type: string
         metadataURL:
           type: string
         txHash:
@@ -2035,24 +2120,6 @@ components:
         publicKeys:
           type: string
       type: object
-    api.ElectionMetadata:
-      properties:
-        description:
-          $ref: '#/components/schemas/api.LanguageString'
-        media:
-          $ref: '#/components/schemas/api.ProcessMedia'
-        meta: {}
-        questions:
-          items:
-            $ref: '#/components/schemas/api.Question'
-          type: array
-        title:
-          $ref: '#/components/schemas/api.LanguageString'
-        type:
-          $ref: '#/components/schemas/api.ElectionProperties'
-        version:
-          type: string
-      type: object
     api.ElectionMode:
       properties:
         autoStart:
@@ -2065,12 +2132,6 @@ components:
           type: boolean
         preRegister:
           type: boolean
-      type: object
-    api.ElectionProperties:
-      properties:
-        name:
-          type: string
-        properties: {}
       type: object
     api.ElectionResults:
       properties:
@@ -2165,26 +2226,6 @@ components:
       additionalProperties:
         type: string
       type: object
-    api.NextElectionID:
-      properties:
-        censusOrigin:
-          type: integer
-        envelopeType:
-          properties:
-            anonymous:
-              type: boolean
-            costFromWeight:
-              type: boolean
-            encryptedVotes:
-              type: boolean
-            serial:
-              type: boolean
-            uniqueValues:
-              type: boolean
-          type: object
-        organizationId:
-          type: string
-      type: object
     api.OrganizationList:
       properties:
         electionCount:
@@ -2192,13 +2233,6 @@ components:
           type: integer
         organizationID:
           example: 3.1407138843303053e+47
-          type: string
-      type: object
-    api.ProcessMedia:
-      properties:
-        header:
-          type: string
-        streamUri:
           type: string
       type: object
     api.Question:
@@ -2320,6 +2354,7 @@ components:
           type: string
           x-omitempty: true
         weight:
+          description: '[math/big.Int.String]'
           type: string
           x-omitempty: true
       type: object
