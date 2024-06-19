@@ -1,6 +1,6 @@
 # Readme Template
 
-Please use this template when creating readme files for new Vocdoni repositories. This is meant to serve as a guide, rather than a rigid rule; adapt it as necessary. Replace all the instances of `REPO_NAME` with the name of your repository, and fill-in the contents of every `\[bracketed\] item. If you add new sections, make sure to update the table of contents. 
+Please use this template when creating readme files for new Vocdoni repositories. This is meant to serve as a guide, rather than a rigid rule; adapt it as necessary. Replace all the instances of `REPO_NAME` with the name of your repository, and fill-in the contents of every `\[bracketed\] item. If you add new sections, make sure to update the table of contents.
 
 ***Make sure to replace the `REPO_NAME` placeholders in the repo-specific badge links***
 
@@ -11,8 +11,13 @@ Some features are displayed differently on the developer portal than they are wh
 ---
 
 <p align="center" width="100%">
-    <img src="https://developer.vocdoni.io/img/vocdoni_logotype_full_white.svg" />
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://developer.vocdoni.io/img/vocdoni_logotype_full_blank.svg" />
+      <source media="(prefers-color-scheme: light)" srcset="https://developer.vocdoni.io/img/vocdoni_logotype_full_white.svg" />
+      <img alt="Vocdoni logo" src="https://developer.vocdoni.io/img/vocdoni_logotype_full_white.svg" />
+  </picture>
 </p>
+
 
 <p align="center" width="100%">
     <a href="https://github.com/vocdoni/REPO_NAME/commits/main/"><img src="https://img.shields.io/github/commit-activity/m/vocdoni/REPO_NAME" /></a>
@@ -100,9 +105,9 @@ The best place to learn about using \[REPO_NAME\] is the [developer portal](http
 
 \[The code in this repo\] is WIP. Please beware that it can be broken at any time if the release is `alpha` or `beta`. We encourage you to review this repository and the developer portal for any changes.
 
-## Contributing 
+## Contributing
 
-While we welcome contributions from the community, we do not track all of our issues on Github and we may not have the resources to onboard developers and review complex pull requests. That being said, there are multiple ways you can get involved with the project. 
+While we welcome contributions from the community, we do not track all of our issues on Github and we may not have the resources to onboard developers and review complex pull requests. That being said, there are multiple ways you can get involved with the project.
 
 Please review our [development guidelines](https://developer.vocdoni.io/development-guidelines).
 
