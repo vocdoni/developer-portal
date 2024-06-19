@@ -1,5 +1,9 @@
 <p align="center" width="100%">
-    <img src="https://developer.vocdoni.io/img/vocdoni_logotype_full_white.svg" />
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://developer.vocdoni.io/img/vocdoni_logotype_full_blank.svg" />
+      <source media="(prefers-color-scheme: light)" srcset="https://developer.vocdoni.io/img/vocdoni_logotype_full_white.svg" />
+      <img alt="Vocdoni logo" src="https://developer.vocdoni.io/img/vocdoni_logotype_full_white.svg" />
+  </picture>
 </p>
 
 <p align="center" width="100%">
@@ -42,7 +46,7 @@
 
 # developer-portal
 
-This repository hosts the Vocdoni developer portal, the source-of-truth of technical documentation for all of the software under the Vocdoni umbrella. 
+This repository hosts the Vocdoni developer portal, the source-of-truth of technical documentation for all of the software under the Vocdoni umbrella.
 It is created with [Docusaurus](https://docusaurus.io/) and is hosted at https://developer.vocdoni.io
 
 ### Table of Contents
@@ -88,11 +92,11 @@ The Vocdoni API documentation is sourced from the `swaggers` folder. If you modi
 yarn run re-gen
 ```
 
-Note that this docs generation step is already performed as part of `yarn start` or `yarn build`. 
+Note that this docs generation step is already performed as part of `yarn start` or `yarn build`.
 
 ### Generate the SDK documentation
 
-If you want to generate the SDK documentation for yourself, you can do so from inside the `docs` directory in the `vocdoni-sdk` project. 
+If you want to generate the SDK documentation for yourself, you can do so from inside the `docs` directory in the `vocdoni-sdk` project.
 
 ~~~bash
 yarn
@@ -127,14 +131,14 @@ yarn crowdin:download
 
 This will download translation files to the `i18n/` folder. To test them use `yarn start -- --locale es`.
 
-See these issues [1](https://community.crowdin.com/t/exclude-single-line-on-markdown-headers/2897), 
-[2](https://community.crowdin.com/t/broken-mdx-components-on-download/2912) to understand why the `pre`/`post` scripts 
-on crowdin download and upload. 
+See these issues [1](https://community.crowdin.com/t/exclude-single-line-on-markdown-headers/2897),
+[2](https://community.crowdin.com/t/broken-mdx-components-on-download/2912) to understand why the `pre`/`post` scripts
+on crowdin download and upload.
 
 
-## Contributing 
+## Contributing
 
-While we welcome contributions from the community, we do not track all of our issues on Github and we may not have the resources to onboard developers and review complex pull requests. That being said, there are multiple ways you can get involved with the project. 
+While we welcome contributions from the community, we do not track all of our issues on Github and we may not have the resources to onboard developers and review complex pull requests. That being said, there are multiple ways you can get involved with the project.
 
 Please review our [development guidelines](https://developer.vocdoni.io/development-guidelines).
 
