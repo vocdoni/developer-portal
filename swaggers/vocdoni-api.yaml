@@ -2565,6 +2565,8 @@ components:
           type: integer
         Tx_SetProcessCensus:
           type: integer
+        Tx_SetProcessDuration:
+          type: integer
         Tx_SetProcessQuestionIndex:
           type: integer
         Tx_SetProcessStatus:
@@ -3129,6 +3131,8 @@ components:
           items:
             type: integer
           type: array
+        censusSize:
+          type: integer
         censusURI:
           type: string
         duration:
