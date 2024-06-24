@@ -296,6 +296,54 @@ Returns the information about the token referenced by the provided ID and chain 
 | 500 | `error getting number of token holders` | 5020 | 
 | 500 | `error getting last block number from web3 endpoint` | 5021 | 
 
+#### POST `/tokens/update/{tokenID}?chainID={chainID}`
+Launch a token scan process from the creation block of the contract in the chain defined. It returns the queue process ID to track its status.
+
+> `chainID` URL parameter is *mandatory*.
+
+- 📥 response:
+
+```json
+{
+    "queueID": "9da34fc1"
+}
+```
+
+- ⚠️ errors:
+
+| HTTP Status  | Message | Internal error |
+|:---:|:---|:---:|
+| 400 | `malformed token information` | 4001 |
+| 400 | `malformed chain ID` | 4018 |
+| 400 | `token is not synced yet` | 4024 | 
+| 404 | `no token found` | 4003 |
+| 500 | `error getting token information` | 5004 | 
+| 500 | `error encoding item` | 5022 | 
+
+#### GET `/tokens/update/queue/{queueID}`
+Returns the status of the token rescan process. This includes whether the process is complete, the number of logs scanned, the new logs scanned and the logs already scanned.
+
+- 📥 response:
+
+```json
+{
+    "address": "9da34fc1",
+    "chainID": 1,
+    "done": false,
+    "logsScanned": 200,
+    "newLogs": 100,
+    "duplicatedLogs": 100,
+}
+```
+
+- ⚠️ errors:
+
+| HTTP Status  | Message | Internal error |
+|:---:|:---|:---:|
+| 400 | `malformed queue id` | 4025 |
+| 404 | `no token found` | 4003 |
+| 500 | `error encoding queue item` | 5022 | 
+
 #### GET `/tokens/{tokenID}/holders/{holderID}?chainID={chainID}&externalID={externalID}`
 Returns the holder balance if the holder ID is already registered in the database as a holder of the token ID and chain ID provided, the external ID is optional.
 
