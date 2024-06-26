@@ -672,31 +672,47 @@ Returns the estimation of size and time (in milliseconds) to create the census g
 | 500 | `error evaluating strategy predicate` | 5026 |
 
 #### GET `/strategies/{strategyID}/holders`
-Returns the list of holders with their balances for a strategy. This endpoint only works with single token strategies like default ones.
-
-**Pagination URL params**
-
-| URL key | Description | Example |
-|:---|:---|:---|
-| `pageSize` | (optional) Defines the number of results per page. By default, `1000`. | `?pageSize=2` |
-| `nextCursor` | (optional) When is defined, it is used to get the page results, going forward. By default, `""`. | `?nextCursor=0x1234` |
-| `prevCursor` | (optional) When is defined, it is used to get the page results, going backwards. By default, `""`. | `?prevCursor=0x1234` |
+Launch the query about holders of a strategy. Returns a queue ID to check the status of the query.
 
 - 📥 response:
 
 ```json
 {
-    "holders": {
-        "0x1": "1",
-        "0x2": "2",
-        "0x3": "3",
-        "0x4": "4",
-        "0x...": "1000",
+    "queueID": "28ae56fe1320f45a5af31abb4923326882b2b652"
+}
+```
+
+- ⚠️ errors:
+
+| HTTP Status  | Message | Internal error |
+|:---:|:---|:---:|
+| 400 | `malformed strategy ID, it must be an integer` | 4002 | 
+| 400 | `the predicate provided is not valid` | 4015 | 
+| 404 | `no token holders found` | 4004 |
+| 404 | `no strategy found with the ID provided` | 4005 |
+| 500 | `error encoding token holders` | 5013 |
+| 500 | `error encoding queue item` | 5022 |
+| 500 | `error getting strategy holders` | 5030 |
+
+#### GET `/strategies/{strategyID}/holders/queue/{queueID}`
+Returns the status of the query about holders of a strategy, it includes a boolean if it is done, an error if it was wrong, the progress of the task, and the resulting data if it is done, in this case, the list of holders address and balances.
+
+- 📥 response:
+
+```json
+{
+    "done": true,
+    "error": {
+        "code": 0,
+        "error": "error message or null"
     },
-    "pagination": {
-        "nextCursor": "0x5",
-        "prevCursor": "0x1",
-        "pageSize": 5
+    "progress": 50,
+    "data": {
+        "0x1": 1,
+        "0x2": 1,
+        "0x3": 1,
+        "0x4": 1,
+        "0x5": 1,
     }
 }
 ```
@@ -706,10 +722,17 @@ Returns the list of holders with their balances for a strategy. This endpoint on
 | HTTP Status  | Message | Internal error |
 |:---:|:---|:---:|
 | 400 | `malformed strategy ID, it must be an integer` | 4002 | 
-| 404 | `no token holders found` | 4004 |
 | 404 | `no strategy found with the ID provided` | 4005 |
-| 400 | `malformed pagination params` | 4022 |
-| 500 | `error encoding token holders` | 5013 |
+| 500 | `error encoding queue item` | 5022 |
+
+- ⚠️ possible error values inside the body:
+
+<small>The request could response `OK 200` and at the same time includes an error because it is an error of the enqueued process and not of the request processing).</small>
+
+| HTTP Status  | Message | Internal error |
+|:---:|:---|:---:|
+| 204 | `strategy has not registered holders` | 4017 |
+| 500 | `error evaluating strategy predicate` | 5026 |
 | 500 | `error getting strategy holders` | 5030 |
 
 
