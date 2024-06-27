@@ -43,7 +43,7 @@ Creates a new election.
 
 #### Defined in
 
-[api/election.ts:410](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/election.ts#L410)
+[api/election.ts:410](https://github.com/vocdoni/vocdoni-sdk/blob/2a0ec87982785c655be456e64cc5f20055ff5da5/src/api/election.ts#L410)
 
 ___
 
@@ -67,7 +67,7 @@ Return list of all elections in the chain
 
 #### Defined in
 
-[api/election.ts:477](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/election.ts#L477)
+[api/election.ts:480](https://github.com/vocdoni/vocdoni-sdk/blob/2a0ec87982785c655be456e64cc5f20055ff5da5/src/api/election.ts#L480)
 
 ___
 
@@ -90,7 +90,7 @@ Fetches info about the specified process.
 
 #### Defined in
 
-[api/election.ts:383](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/election.ts#L383)
+[api/election.ts:383](https://github.com/vocdoni/vocdoni-sdk/blob/2a0ec87982785c655be456e64cc5f20055ff5da5/src/api/election.ts#L383)
 
 ___
 
@@ -113,24 +113,25 @@ Fetches the encryption keys from the specified process.
 
 #### Defined in
 
-[api/election.ts:396](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/election.ts#L396)
+[api/election.ts:396](https://github.com/vocdoni/vocdoni-sdk/blob/2a0ec87982785c655be456e64cc5f20055ff5da5/src/api/election.ts#L396)
 
 ___
 
 ### nextElectionId
 
-▸ **nextElectionId**(`url`, `organizationId`, `censusOrigin`, `envelopeType?`): `Promise`\<[`IElectionNextIdResponse`](../interfaces/IElectionNextIdResponse)\>
+▸ **nextElectionId**(`url`, `organizationId`, `censusOrigin`, `delta?`, `envelopeType?`): `Promise`\<[`IElectionNextIdResponse`](../interfaces/IElectionNextIdResponse)\>
 
 Returns the next election id.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `url` | `string` | API endpoint URL |
-| `organizationId` | `string` | The identifier of the organization |
-| `censusOrigin` | `number` | The census origin |
-| `envelopeType?` | `Partial`\<[`IVoteMode`](../interfaces/IVoteMode)\> | The envelope type |
+| Name | Type | Default value | Description |
+| :------ | :------ | :------ | :------ |
+| `url` | `string` | `undefined` | API endpoint URL |
+| `organizationId` | `string` | `undefined` | The identifier of the organization |
+| `censusOrigin` | `number` | `undefined` | The census origin |
+| `delta` | `number` | `0` | The stride to next election id, being 0 the next one |
+| `envelopeType?` | `Partial`\<[`IVoteMode`](../interfaces/IVoteMode)\> | `undefined` | The envelope type |
 
 #### Returns
 
@@ -138,7 +139,7 @@ Returns the next election id.
 
 #### Defined in
 
-[api/election.ts:425](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/election.ts#L425)
+[api/election.ts:426](https://github.com/vocdoni/vocdoni-sdk/blob/2a0ec87982785c655be456e64cc5f20055ff5da5/src/api/election.ts#L426)
 
 ___
 
@@ -165,13 +166,13 @@ Calculates the election price.
 
 #### Defined in
 
-[api/election.ts:509](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/election.ts#L509)
+[api/election.ts:512](https://github.com/vocdoni/vocdoni-sdk/blob/2a0ec87982785c655be456e64cc5f20055ff5da5/src/api/election.ts#L512)
 
 ___
 
 ### votesCount
 
-▸ **votesCount**(`url`, `electionId`): `Promise`\<`IElectionVotesCountResponse`\>
+▸ **votesCount**(`url`, `electionId`): `Promise`\<[`IElectionVotesCountResponse`](../interfaces/IElectionVotesCountResponse)\>
 
 Returns the number of votes of a given election
 
@@ -184,11 +185,11 @@ Returns the number of votes of a given election
 
 #### Returns
 
-`Promise`\<`IElectionVotesCountResponse`\>
+`Promise`\<[`IElectionVotesCountResponse`](../interfaces/IElectionVotesCountResponse)\>
 
 #### Defined in
 
-[api/election.ts:447](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/election.ts#L447)
+[api/election.ts:450](https://github.com/vocdoni/vocdoni-sdk/blob/2a0ec87982785c655be456e64cc5f20055ff5da5/src/api/election.ts#L450)
 
 ___
 
@@ -212,4 +213,4 @@ Returns the list of votes for a given election
 
 #### Defined in
 
-[api/election.ts:461](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/election.ts#L461)
+[api/election.ts:464](https://github.com/vocdoni/vocdoni-sdk/blob/2a0ec87982785c655be456e64cc5f20055ff5da5/src/api/election.ts#L464)
