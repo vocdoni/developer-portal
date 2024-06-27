@@ -30,7 +30,7 @@ The different block times from the chain.
 
 #### Defined in
 
-[api/chain.ts:38](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain.ts#L38)
+[api/chain.ts:38](https://github.com/vocdoni/vocdoni-sdk/blob/2a0ec87982785c655be456e64cc5f20055ff5da5/src/api/chain.ts#L38)
 
 ___
 
@@ -42,7 +42,7 @@ The timestamp of the actual block.
 
 #### Defined in
 
-[api/chain.ts:68](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain.ts#L68)
+[api/chain.ts:68](https://github.com/vocdoni/vocdoni-sdk/blob/2a0ec87982785c655be456e64cc5f20055ff5da5/src/api/chain.ts#L68)
 
 ___
 
@@ -54,7 +54,7 @@ The id of the current chain
 
 #### Defined in
 
-[api/chain.ts:33](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain.ts#L33)
+[api/chain.ts:33](https://github.com/vocdoni/vocdoni-sdk/blob/2a0ec87982785c655be456e64cc5f20055ff5da5/src/api/chain.ts#L33)
 
 ___
 
@@ -66,7 +66,7 @@ The circuit configuration tag.
 
 #### Defined in
 
-[api/chain.ts:88](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain.ts#L88)
+[api/chain.ts:88](https://github.com/vocdoni/vocdoni-sdk/blob/2a0ec87982785c655be456e64cc5f20055ff5da5/src/api/chain.ts#L88)
 
 ___
 
@@ -78,7 +78,7 @@ The number of elections existing on the Vochain.
 
 #### Defined in
 
-[api/chain.ts:43](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain.ts#L43)
+[api/chain.ts:43](https://github.com/vocdoni/vocdoni-sdk/blob/2a0ec87982785c655be456e64cc5f20055ff5da5/src/api/chain.ts#L43)
 
 ___
 
@@ -90,7 +90,7 @@ The time of the genesis block.
 
 #### Defined in
 
-[api/chain.ts:53](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain.ts#L53)
+[api/chain.ts:53](https://github.com/vocdoni/vocdoni-sdk/blob/2a0ec87982785c655be456e64cc5f20055ff5da5/src/api/chain.ts#L53)
 
 ___
 
@@ -102,7 +102,7 @@ The height or actual block of the current chain.
 
 #### Defined in
 
-[api/chain.ts:58](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain.ts#L58)
+[api/chain.ts:58](https://github.com/vocdoni/vocdoni-sdk/blob/2a0ec87982785c655be456e64cc5f20055ff5da5/src/api/chain.ts#L58)
 
 ___
 
@@ -114,7 +114,7 @@ The maximum size of a census.
 
 #### Defined in
 
-[api/chain.ts:93](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain.ts#L93)
+[api/chain.ts:93](https://github.com/vocdoni/vocdoni-sdk/blob/2a0ec87982785c655be456e64cc5f20055ff5da5/src/api/chain.ts#L93)
 
 ___
 
@@ -126,7 +126,7 @@ The number of organizations existing on the Vochain.
 
 #### Defined in
 
-[api/chain.ts:48](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain.ts#L48)
+[api/chain.ts:48](https://github.com/vocdoni/vocdoni-sdk/blob/2a0ec87982785c655be456e64cc5f20055ff5da5/src/api/chain.ts#L48)
 
 ___
 
@@ -138,7 +138,7 @@ Whether the blockchain is syncing.
 
 #### Defined in
 
-[api/chain.ts:63](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain.ts#L63)
+[api/chain.ts:63](https://github.com/vocdoni/vocdoni-sdk/blob/2a0ec87982785c655be456e64cc5f20055ff5da5/src/api/chain.ts#L63)
 
 ___
 
@@ -150,7 +150,7 @@ The number of transactions.
 
 #### Defined in
 
-[api/chain.ts:73](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain.ts#L73)
+[api/chain.ts:73](https://github.com/vocdoni/vocdoni-sdk/blob/2a0ec87982785c655be456e64cc5f20055ff5da5/src/api/chain.ts#L73)
 
 ___
 
@@ -162,7 +162,7 @@ The number of validators.
 
 #### Defined in
 
-[api/chain.ts:78](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain.ts#L78)
+[api/chain.ts:78](https://github.com/vocdoni/vocdoni-sdk/blob/2a0ec87982785c655be456e64cc5f20055ff5da5/src/api/chain.ts#L78)
 
 ___
 
@@ -174,4 +174,4 @@ The number of votes.
 
 #### Defined in
 
-[api/chain.ts:83](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain.ts#L83)
+[api/chain.ts:83](https://github.com/vocdoni/vocdoni-sdk/blob/2a0ec87982785c655be456e64cc5f20055ff5da5/src/api/chain.ts#L83)

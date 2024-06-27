@@ -19,7 +19,7 @@ The nonce of the vote package
 
 #### Defined in
 
-[api/vote.ts:26](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/vote.ts#L26)
+[api/vote.ts:26](https://github.com/vocdoni/vocdoni-sdk/blob/2a0ec87982785c655be456e64cc5f20055ff5da5/src/api/vote.ts#L26)
 
 ___
 
@@ -31,4 +31,4 @@ The raw vote package
 
 #### Defined in
 
-[api/vote.ts:31](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/vote.ts#L31)
+[api/vote.ts:31](https://github.com/vocdoni/vocdoni-sdk/blob/2a0ec87982785c655be456e64cc5f20055ff5da5/src/api/vote.ts#L31)

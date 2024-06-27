@@ -19,7 +19,7 @@ The index of the encryption key
 
 #### Defined in
 
-[api/election.ts:257](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/election.ts#L257)
+[api/election.ts:257](https://github.com/vocdoni/vocdoni-sdk/blob/2a0ec87982785c655be456e64cc5f20055ff5da5/src/api/election.ts#L257)
 
 ___
 
@@ -31,4 +31,4 @@ The encryption key
 
 #### Defined in
 
-[api/election.ts:262](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/election.ts#L262)
+[api/election.ts:262](https://github.com/vocdoni/vocdoni-sdk/blob/2a0ec87982785c655be456e64cc5f20055ff5da5/src/api/election.ts#L262)
