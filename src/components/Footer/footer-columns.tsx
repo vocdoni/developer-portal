@@ -1,7 +1,6 @@
+import VocdoniLogo from '@site/static/img/footer-build-change.svg';
 import React from "react";
 import styled from 'styled-components';
-import VocdoniLogo from '@site/static/img/footer-build-change.svg'
-import PoweredByAragon from '@site/static/img/powered-by-aragon.svg'
 
 interface ISections {
     title: string
@@ -75,7 +74,6 @@ export const FooterColumns = () => {
         <FooterColumnsWrapper>
             <FooterSectionWrapperLogos>
                 <VocdoniLogo />
-                <PoweredByAragon  height="93px" width="130px" />
             </FooterSectionWrapperLogos>
             {footerColumns.map((s, i) => (
                 <FooterSection key={i} title={s.title} links={s.links} />
