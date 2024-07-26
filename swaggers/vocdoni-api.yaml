@@ -8,6 +8,30 @@ servers:
   - url: 'https://api-dev.vocdoni.net/v2'
 paths:
   /accounts:
+    get:
+      parameters:
+        - description: Page
+          in: query
+          name: page
+          schema:
+            type: number
+        - description: Items per page
+          in: query
+          name: limit
+          schema:
+            type: number
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/api.AccountsList'
+          description: OK
+      tags:
+        - Accounts
+      description: >-
+        Returns information (address, balance and nonce) of the existing accounts
+      summary: List of the existing accounts
     post:
       responses:
         '200':
@@ -39,10 +63,7 @@ paths:
           content:
             application/json:
               schema:
-                properties:
-                  count:
-                    type: integer
-                type: object
+                $ref: '#/components/schemas/api.CountResult'
           description: OK
       tags:
         - Accounts
@@ -51,44 +72,42 @@ paths:
   '/accounts/page/{page}':
     get:
       parameters:
-        - description: Paginator page
+        - description: Page
           in: path
           name: page
           required: true
           schema:
-            type: string
+            type: number
       responses:
         '200':
           content:
             application/json:
               schema:
-                properties:
-                  accounts:
-                    items:
-                      $ref: '#/components/schemas/indexertypes.Account'
-                    type: array
-                type: object
+                $ref: '#/components/schemas/api.AccountsList'
           description: OK
       tags:
         - Accounts
+      deprecated: true
       description: >-
-        Returns information (address, balance and nonce) of the existing accounts
+        Returns information (address, balance and nonce) of the existing accounts.
+
+        (deprecated, in favor of /accounts?page=xxx)
       summary: List of the existing accounts
-  '/accounts/{accountID}/fees/page/{page}':
+  '/accounts/{accountId}/fees/page/{page}':
     get:
       parameters:
-        - description: Specific accountID
+        - description: Specific accountId
           in: path
-          name: accountID
+          name: accountId
           required: true
           schema:
             type: string
-        - description: Paginator page
+        - description: Page
           in: path
           name: page
           required: true
           schema:
-            type: string
+            type: number
       responses:
         '200':
           content:
@@ -106,12 +125,12 @@ paths:
       description: >-
         Returns the token fees for an account. A spending is an amount of tokens burnt from one account for executing transactions.
       summary: List account token fees
-  '/accounts/{accountID}/transfers/count':
+  '/accounts/{accountId}/transfers/count':
     get:
       parameters:
-        - description: Specific accountID
+        - description: Specific accountId
           in: path
-          name: accountID
+          name: accountId
           required: true
           schema:
             type: string
@@ -120,31 +139,28 @@ paths:
           content:
             application/json:
               schema:
-                properties:
-                  count:
-                    type: integer
-                type: object
+                $ref: '#/components/schemas/api.CountResult'
           description: Number of transaction sent and received for the account
       tags:
         - Accounts
       description: >-
         Returns the count of total number of sent and received transactions for an account. A transaction is a token transfer from one account to another existing account
       summary: Total number of sent and received transactions
-  '/accounts/{accountID}/transfers/page/{page}':
+  '/accounts/{accountId}/transfers/page/{page}':
     get:
       parameters:
-        - description: Specific accountID
+        - description: Specific accountId
           in: path
-          name: accountID
+          name: accountId
           required: true
           schema:
             type: string
-        - description: Paginator page
+        - description: Page
           in: path
           name: page
           required: true
           schema:
-            type: string
+            type: number
       responses:
         '200':
           content:
@@ -206,12 +222,12 @@ paths:
 
         The `meta` object inside the `metadata` property is left to the user to add random information about the account.
       summary: Get account
-  '/accounts/{organizationID}/elections/count':
+  '/accounts/{organizationId}/elections/count':
     get:
       parameters:
-        - description: Specific organizationID
+        - description: Specific organizationId
           in: path
-          name: organizationID
+          name: organizationId
           required: true
           schema:
             type: string
@@ -220,25 +236,22 @@ paths:
           content:
             application/json:
               schema:
-                properties:
-                  count:
-                    type: number
-                type: object
+                $ref: '#/components/schemas/api.CountResult'
           description: OK
       tags:
         - Accounts
       description: Returns the number of elections for an organization
       summary: Count organization elections
-  '/accounts/{organizationID}/elections/page/{page}':
+  '/accounts/{organizationId}/elections/page/{page}':
     get:
       parameters:
-        - description: Specific organizationID
+        - description: Specific organizationId
           in: path
-          name: organizationID
+          name: organizationId
           required: true
           schema:
             type: string
-        - description: Define de page number
+        - description: Page
           in: path
           name: page
           required: true
@@ -249,27 +262,25 @@ paths:
           content:
             application/json:
               schema:
-                properties:
-                  elections:
-                    items:
-                      $ref: '#/components/schemas/api.ElectionSummary'
-                    type: array
-                type: object
+                $ref: '#/components/schemas/api.ElectionsList'
           description: OK
       tags:
         - Accounts
-      description: List the elections of an organization
+      deprecated: true
+      description: |-
+        List the elections of an organization
+        (deprecated, in favor of /elections?page=xxx&organizationId=xxx)
       summary: List organization elections
-  '/accounts/{organizationID}/elections/status/{status}/page/{page}':
+  '/accounts/{organizationId}/elections/status/{status}/page/{page}':
     get:
       parameters:
-        - description: Specific organizationID
+        - description: Specific organizationId
           in: path
-          name: organizationID
+          name: organizationId
           required: true
           schema:
             type: string
-        - description: Status of the election
+        - description: Election status
           in: path
           name: status
           required: true
@@ -281,7 +292,7 @@ paths:
               - ended
               - results
             type: string
-        - description: Define de page number
+        - description: Page
           in: path
           name: page
           required: true
@@ -292,18 +303,34 @@ paths:
           content:
             application/json:
               schema:
-                properties:
-                  elections:
-                    items:
-                      $ref: '#/components/schemas/api.ElectionSummary'
-                    type: array
-                type: object
+                $ref: '#/components/schemas/api.ElectionsList'
           description: OK
       tags:
         - Accounts
-      description: List the elections of an organization by status
+      deprecated: true
+      description: >-
+        List the elections of an organization by status
+
+        (deprecated, in favor of /elections?page=xxx&organizationId=xxx&status=xxx)
       summary: List organization elections by status
-  '/censuses/export/{ipfs}':
+  /censuses/export:
+    get:
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  valid:
+                    type: boolean
+                type: object
+          description: OK
+      tags:
+        - Censuses
+      description: >-
+        Export the whole census database to a JSON file. Requires Admin Bearer token.
+      summary: Export census database
+  /censuses/export/ipfs:
     get:
       parameters:
         - description: Export to IPFS. Blank to return the JSON file
@@ -327,7 +354,7 @@ paths:
       description: >-
         Export the whole census database to a JSON file. Requires Admin Bearer token.
       summary: Export census database
-  '/censuses/import/{ipfscid}':
+  /censuses/import:
     post:
       responses:
         '200':
@@ -343,7 +370,23 @@ paths:
         - Censuses
       description: Import the whole census database from a JSON file.
       summary: Import census database
-  /censuses/list/:
+  '/censuses/import/{ipfscid}':
+    get:
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  valid:
+                    type: boolean
+                type: object
+          description: OK
+      tags:
+        - Censuses
+      description: Import the whole census database from a JSON file.
+      summary: Import census database
+  /censuses/list:
     get:
       responses:
         '200':
@@ -359,12 +402,12 @@ paths:
         - Censuses
       description: List all census references. Requires Admin Bearer token.
       summary: List all census references
-  '/censuses/{censusID}':
+  '/censuses/{censusId}':
     delete:
       parameters:
         - description: Census id
           in: path
-          name: censusID
+          name: censusId
           required: true
           schema:
             type: string
@@ -382,12 +425,12 @@ paths:
 
         - Published census cannot be deleted
       summary: Delete census
-  '/censuses/{censusID}/check':
+  '/censuses/{censusId}/check':
     get:
       parameters:
         - description: Census id
           in: path
-          name: censusID
+          name: censusId
           required: true
           schema:
             type: string
@@ -414,12 +457,12 @@ paths:
 
         This endpoint can be useful for anyone looking to verify the publication status of a census, and it facilitates accessing the published data directly through the returned URI.
       summary: Check census publish status
-  '/censuses/{censusID}/export':
+  '/censuses/{censusId}/export':
     get:
       parameters:
         - description: Census id
           in: path
-          name: censusID
+          name: censusId
           required: true
           schema:
             type: string
@@ -436,12 +479,12 @@ paths:
         - Censuses
       description: Export census to JSON format. Requires Bearer token
       summary: Export census
-  '/censuses/{censusID}/import':
+  '/censuses/{censusId}/import':
     post:
       parameters:
         - description: Census id
           in: path
-          name: censusID
+          name: censusId
           required: true
           schema:
             type: string
@@ -455,12 +498,12 @@ paths:
       description: >-
         Import census from JSON previously exported using [`/censuses/{censusId}/export`](census-export). Requires Bearer token
       summary: Import census
-  '/censuses/{censusID}/participants':
+  '/censuses/{censusId}/participants':
     post:
       parameters:
         - description: Census id
           in: path
-          name: censusID
+          name: censusId
           required: true
           schema:
             type: string
@@ -480,12 +523,12 @@ paths:
         description: 'PublicKey - weight array '
         required: true
       summary: Add participants to census
-  '/censuses/{censusID}/proof/{key}':
+  '/censuses/{censusId}/proof/{key}':
     get:
       parameters:
         - description: Census id
           in: path
-          name: censusID
+          name: censusId
           required: true
           schema:
             type: string
@@ -516,12 +559,12 @@ paths:
         - Censuses
       description: "Proves that the key and weight belong to the census root hash.\n\nIf the key exists on the census, returns Merkle root information. The `Proof` property refers to the key's siblings on the Merkle tree, the `value` points to the leaf of the Merkle Tree for this key (in this case, the weight), and weight is just the key's weight for this census. \n\n[Further reading](/protocol/Census/off-chain-tree)\n\n- Requires Bearer token \n- Returns a merkle proof, proving the key and weight belongs to the census root hash"
       summary: Prove key to census
-  '/censuses/{censusID}/publish':
+  '/censuses/{censusId}/publish':
     post:
       parameters:
         - description: Census id
           in: path
-          name: censusID
+          name: censusId
           required: true
           schema:
             type: string
@@ -546,12 +589,12 @@ paths:
         - Censuses
       description: "Registers a census to storage (IPFS in our case). After this, the census can't be edited. \n        \nYou can optionally provide the census Merkle root to specify census publication at a specific snapshot. See [censuses/{censusId}/participants](census-add-participants-to-census)\n\n- Requires Bearer token\n- The census is copied to a new census identified by its Merkle Root\n- The new census **cannot be modified**\n- The census is published to the storage provided (IPFS in our case)\n- The new census ID is returned and can be used for querying\n- If a censusID with the same root has been already published, the request will fail\n- If `root` is specified as path parameter, it publish the census at specific  root (append the census to existing one)."
       summary: Publish census
-  '/censuses/{censusID}/publish/async':
+  '/censuses/{censusId}/publish/async':
     post:
       parameters:
         - description: Census id
           in: path
-          name: censusID
+          name: censusId
           required: true
           schema:
             type: string
@@ -576,12 +619,12 @@ paths:
         - Censuses
       description: "Registers a census to storage (IPFS in our case). After this, the census can't be edited. \n        \nYou can optionally provide the census Merkle root to specify census publication at a specific snapshot. See [censuses/{censusId}/participants](census-add-participants-to-census)\n\n- Requires Bearer token\n- The census is copied to a new census identified by its Merkle Root\n- The new census **cannot be modified**\n- The census is published to the storage provided (IPFS in our case)\n- The new census ID is returned and can be used for querying\n- If a censusID with the same root has been already published, the request will fail\n- If `root` is specified as path parameter, it publish the census at specific  root (append the census to existing one)."
       summary: Publish census
-  '/censuses/{censusID}/publish/{root}':
+  '/censuses/{censusId}/publish/{root}':
     post:
       parameters:
         - description: Census id
           in: path
-          name: censusID
+          name: censusId
           required: true
           schema:
             type: string
@@ -611,13 +654,13 @@ paths:
       tags:
         - Censuses
       description: "Registers a census to storage (IPFS in our case). After this, the census can't be edited. \n        \nYou can optionally provide the census Merkle root to specify census publication at a specific snapshot. See [censuses/{censusId}/participants](census-add-participants-to-census)\n\n- Requires Bearer token\n- The census is copied to a new census identified by its Merkle Root\n- The new census **cannot be modified**\n- The census is published to the storage provided (IPFS in our case)\n- The new census ID is returned and can be used for querying\n- If a censusID with the same root has been already published, the request will fail\n- If `root` is specified as path parameter, it publish the census at specific  root (append the census to existing one)."
-      summary: Publish census at root
-  '/censuses/{censusID}/root':
+      summary: Publish census
+  '/censuses/{censusId}/root':
     get:
       parameters:
         - description: Census id
           in: path
-          name: censusID
+          name: censusId
           required: true
           schema:
             type: string
@@ -636,12 +679,12 @@ paths:
       description: >-
         Get census [Merkle Tree root](https://docs.vocdoni.io/architecture/census/off-chain-tree.html) hash, used to identify the census at specific snapshot.\n\n- Bearer token not required
       summary: Census Merkle Root
-  '/censuses/{censusID}/size':
+  '/censuses/{censusId}/size':
     get:
       parameters:
         - description: Census id
           in: path
-          name: censusID
+          name: censusId
           required: true
           schema:
             type: string
@@ -659,12 +702,12 @@ paths:
         - Censuses
       description: Total number of keys added to the census. Size as integer
       summary: Census size
-  '/censuses/{censusID}/type':
+  '/censuses/{censusId}/type':
     get:
       parameters:
         - description: Census id
           in: path
-          name: censusID
+          name: censusId
           required: true
           schema:
             type: string
@@ -682,12 +725,12 @@ paths:
         - Censuses
       description: Get the census type
       summary: Get type of census
-  '/censuses/{censusID}/verify':
+  '/censuses/{censusId}/verify':
     post:
       parameters:
         - description: Census id
           in: path
-          name: censusID
+          name: censusId
           required: true
           schema:
             type: string
@@ -706,12 +749,12 @@ paths:
       description: >-
         Verify that a previously obtained Merkle proof for a key, acquired via [/censuses/{censusId}/proof/{publicKey}](prove-key-to-census) is still correct.
       summary: Verify merkle proof
-  '/censuses/{censusID}/weight':
+  '/censuses/{censusId}/weight':
     get:
       parameters:
         - description: Census id
           in: path
-          name: censusID
+          name: censusId
           required: true
           schema:
             type: string
@@ -830,7 +873,7 @@ paths:
           required: true
           schema:
             type: number
-        - description: Page to paginate
+        - description: Page
           in: path
           name: page
           required: true
@@ -841,13 +884,14 @@ paths:
           content:
             application/json:
               schema:
-                items:
-                  $ref: '#/components/schemas/api.TransactionMetadata'
-                type: array
+                $ref: '#/components/schemas/api.TransactionsList'
           description: OK
       tags:
         - Chain
-      description: Given a block returns the list of transactions for that block
+      deprecated: true
+      description: |-
+        Given a block returns the list of transactions for that block
+        (deprecated, in favor of /chain/transactions?page=xxx&height=xxx)
       summary: Transactions in a block
   '/chain/dateToBlock/{timestamp}':
     get:
@@ -885,13 +929,32 @@ paths:
         - Indexer
       description: Exports the indexer SQL database in raw format
       summary: Exports the indexer database
-  '/chain/fees/page/{page}':
+  /chain/fees:
     get:
       parameters:
-        - description: Paginator page
-          in: path
+        - description: Page
+          in: query
           name: page
-          required: true
+          schema:
+            type: number
+        - description: Items per page
+          in: query
+          name: limit
+          schema:
+            type: number
+        - description: Reference filter
+          in: query
+          name: reference
+          schema:
+            type: string
+        - description: Type filter
+          in: query
+          name: type
+          schema:
+            type: string
+        - description: Specific accountId
+          in: query
+          name: accountId
           schema:
             type: string
       responses:
@@ -899,17 +962,36 @@ paths:
           content:
             application/json:
               schema:
-                properties:
-                  fees:
-                    items:
-                      $ref: '#/components/schemas/indexertypes.TokenFeeMeta'
-                    type: array
-                type: object
+                $ref: '#/components/schemas/api.FeesList'
           description: OK
       tags:
-        - Accounts
+        - Chain
       description: >-
         Returns the token fees list ordered by date. A spending is an amount of tokens burnt from one account for executing transactions.
+      summary: List all token fees
+  '/chain/fees/page/{page}':
+    get:
+      parameters:
+        - description: Page
+          in: path
+          name: page
+          required: true
+          schema:
+            type: number
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/api.FeesList'
+          description: OK
+      tags:
+        - Chain
+      deprecated: true
+      description: >-
+        Returns the token fees list ordered by date. A spending is an amount of tokens burnt from one account for executing transactions.
+
+        (deprecated, in favor of /chain/fees?page=xxx)
       summary: List all token fees
   '/chain/fees/reference/{reference}/page/{page}':
     get:
@@ -920,28 +1002,26 @@ paths:
           required: true
           schema:
             type: string
-        - description: Paginator page
+        - description: Page
           in: path
           name: page
           required: true
           schema:
-            type: string
+            type: number
       responses:
         '200':
           content:
             application/json:
               schema:
-                properties:
-                  fees:
-                    items:
-                      $ref: '#/components/schemas/indexertypes.TokenFeeMeta'
-                    type: array
-                type: object
+                $ref: '#/components/schemas/api.FeesList'
           description: OK
       tags:
-        - Accounts
+        - Chain
+      deprecated: true
       description: >-
         Returns the token fees list filtered by reference and ordered by date. A spending is an amount of tokens burnt from one account for executing transactions.
+
+        (deprecated, in favor of /chain/fees?page=xxx)
       summary: List all token fees by reference
   '/chain/fees/type/{type}/page/{page}':
     get:
@@ -952,28 +1032,26 @@ paths:
           required: true
           schema:
             type: string
-        - description: Paginator page
+        - description: Page
           in: path
           name: page
           required: true
           schema:
-            type: string
+            type: number
       responses:
         '200':
           content:
             application/json:
               schema:
-                properties:
-                  fees:
-                    items:
-                      $ref: '#/components/schemas/indexertypes.TokenFeeMeta'
-                    type: array
-                type: object
+                $ref: '#/components/schemas/api.FeesList'
           description: OK
       tags:
-        - Accounts
+        - Chain
+      deprecated: true
       description: >-
         Returns the token fees list filtered by type and ordered by date. A spending is an amount of tokens burnt from one account for executing transactions.
+
+        (deprecated, in favor of /chain/fees?page=xxx)
       summary: List all token fees by type
   /chain/info:
     get:
@@ -1067,6 +1145,35 @@ paths:
         - **k7 (Size non-linear trigger)**: This constant factor represents a threshold value for the maximum number of votes (maxCensusSize) in an election. When the election size exceeds k7, the price growth becomes non-linear, increasing more rapidly beyond this point. The rationale behind k7 is to create a pricing model that accommodates a "freemium" approach, where smaller elections (under the k7 threshold) are priced affordably, while larger elections are priced more significantly due to their increased resource requirements and complexity. By adjusting k7, you can control the point at which the price transition from linear to non-linear growth occurs. A higher k7 value would allow for more affordable pricing for a larger range of election sizes, while a lower k7 value would result in more rapid price increases for smaller election sizes. This flexibility enables the pricing model to be tailored to the specific needs and goals of the Vocdoni blockchain, ensuring that small elections remain accessible and affordable,while larger elections are priced to reflect their higher resource demands.
 
       summary: Price factors information
+  /chain/organizations:
+    get:
+      parameters:
+        - description: Page
+          in: query
+          name: page
+          schema:
+            type: number
+        - description: Items per page
+          in: query
+          name: limit
+          schema:
+            type: number
+        - description: Filter by partial organizationId
+          in: query
+          name: organizationId
+          schema:
+            type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/api.OrganizationsList'
+          description: OK
+      tags:
+        - Chain
+      description: "An **Organization** is an account with an `infoUri` that contains organization-associated  metadata. \nAn **Account** could be a validator, an oracle, a voter or just someone who wants to transfer tokens. \n\nThe `/chain/organizations` endpoints are related only to the Organization account type.\n\n- Return list of organizations ids.\n- If no page is defined, will assume page 0."
+      summary: List organizations
   /chain/organizations/count:
     get:
       responses:
@@ -1074,10 +1181,7 @@ paths:
           content:
             application/json:
               schema:
-                properties:
-                  count:
-                    type: integer
-                type: object
+                $ref: '#/components/schemas/api.CountResult'
           description: Number of registered organizations
       tags:
         - Chain
@@ -1086,60 +1190,92 @@ paths:
   '/chain/organizations/filter/page/{page}':
     post:
       parameters:
-        - description: Current page
+        - description: Page
           in: path
           name: page
           required: true
           schema:
-            type: integer
+            type: number
       responses:
         '200':
           content:
             application/json:
               schema:
-                properties:
-                  organizations:
-                    items:
-                      $ref: '#/components/schemas/api.OrganizationList'
-                    type: array
-                type: object
+                $ref: '#/components/schemas/api.OrganizationsList'
           description: OK
       tags:
         - Chain
+      deprecated: true
       description: >-
         Returns a list of organizations filtered by its partial id, paginated by the given page
+
+        (deprecated, in favor of /chain/organizations?page=xxx&organizationId=xxx)
       requestBody:
         content:
           application/json:
             schema:
-              properties:
-                organizationId:
-                  type: string
-              type: object
+              $ref: '#/components/schemas/api.OrganizationParams'
         description: Partial organizationId to filter by
         required: true
       summary: List organizations (filtered)
   '/chain/organizations/page/{page}':
     get:
       parameters:
-        - description: Page number
+        - description: Page
           in: path
           name: page
           required: true
           schema:
-            type: integer
+            type: number
       responses:
         '200':
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/api.organizationListHandler.response'
+                $ref: '#/components/schemas/api.OrganizationsList'
           description: OK
       tags:
         - Chain
-      description: "An **Organization** is an account with an `infoUri` that contains organization-associated  metadata. \nAn **Account** could be a validator, an oracle, a voter or just someone who wants to transfer tokens. \n\nThe `/chain/organizations` endpoints are related only to the Organization account type.\n\n- Return list of organizations ids.\n- If no page is defined, will assume page 0."
+      deprecated: true
+      description: |-
+        List all organizations
+        (deprecated, in favor of /chain/organizations?page=xxx)
       summary: List organizations
   /chain/transactions:
+    get:
+      parameters:
+        - description: Page
+          in: query
+          name: page
+          schema:
+            type: number
+        - description: Items per page
+          in: query
+          name: limit
+          schema:
+            type: number
+        - description: Block height
+          in: query
+          name: height
+          schema:
+            type: number
+        - description: Tx type
+          in: query
+          name: type
+          schema:
+            type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/api.TransactionsList'
+          description: List of transactions references
+      tags:
+        - Chain
+      description: >-
+        To get full transaction information use  [/chain/transaction/{blockHeight}/{txIndex}](transaction-by-block-index).\nWhere transactionIndex is the index of the transaction on the containing block.
+      summary: List transactions
     post:
       responses:
         '200':
@@ -1192,10 +1328,7 @@ paths:
           content:
             application/json:
               schema:
-                properties:
-                  count:
-                    type: number
-                type: object
+                $ref: '#/components/schemas/api.CountResult'
           description: OK
       tags:
         - Chain
@@ -1204,24 +1337,27 @@ paths:
   '/chain/transactions/page/{page}':
     get:
       parameters:
-        - description: Page number
+        - description: Page
           in: path
           name: page
           required: true
           schema:
-            type: integer
+            type: number
       responses:
         '200':
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/api.chainTxListPaginated.response'
-          description: It return a list of transactions references
+                $ref: '#/components/schemas/api.TransactionsList'
+          description: List of transactions references
       tags:
         - Chain
+      deprecated: true
       description: >-
         To get full transaction information use  [/chain/transaction/{blockHeight}/{txIndex}](transaction-by-block-index).\nWhere transactionIndex is the index of the transaction on the containing block.
-      summary: List Transactions
+
+        (deprecated, in favor of /chain/transactions?page=xxx)
+      summary: List transactions
   '/chain/transactions/reference/index/{index}':
     get:
       parameters:
@@ -1311,6 +1447,65 @@ paths:
       description: Returns the list of validators
       summary: List validators
   /elections:
+    get:
+      parameters:
+        - description: Page
+          in: query
+          name: page
+          schema:
+            type: number
+        - description: Items per page
+          in: query
+          name: limit
+          schema:
+            type: number
+        - description: Filter by partial organizationId
+          in: query
+          name: organizationId
+          schema:
+            type: string
+        - description: Election status
+          in: query
+          name: status
+          schema:
+            enum:
+              - ready
+              - paused
+              - canceled
+              - ended
+              - results
+            type: string
+        - description: Filter by partial electionId
+          in: query
+          name: electionId
+          schema:
+            type: string
+        - description: Filter by (partial or final) results available or not
+          in: query
+          name: withResults
+          schema:
+            type: boolean
+        - description: Filter by final results available or not
+          in: query
+          name: finalResults
+          schema:
+            type: boolean
+        - description: Filter by whether the election was manually ended or not
+          in: query
+          name: manuallyEnded
+          schema:
+            type: boolean
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/api.ElectionsList'
+          description: OK
+      tags:
+        - Elections
+      description: Get a list of elections summaries.
+      summary: List elections
     post:
       responses:
         '200':
@@ -1332,10 +1527,32 @@ paths:
           Uses `txPayload` protobuf signed transaction, and the `metadata` base64-encoded JSON object
         required: true
       summary: Create election
+  /elections/filter:
+    post:
+      parameters:
+        - description: Page
+          in: query
+          name: page
+          schema:
+            type: number
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/api.ElectionsList'
+          description: OK
+      tags:
+        - Elections
+      deprecated: true
+      description: "Returns a filtered list of elections. The filters have to be sent on the request body. The valid filters are: \n        \n```json\n{\n    \"organizationId\": \"hexString\",\n    \"electionId\": \"hexString\",\n    \"withResults\": false,\n    \"status\": \"READY\",\n}\n```\n\n`electionId` can be partial. \n\nSee [elections list](elections-list)\n\n(deprecated, in favor of /elections?page=xxx&organizationId=xxx&status=xxx)\n"
+      requestBody:
+        $ref: '#/components/requestBodies/api.ElectionParams'
+      summary: List elections (filtered)
   '/elections/filter/page/{page}':
     post:
       parameters:
-        - description: Page to paginate
+        - description: Page
           in: path
           name: page
           required: true
@@ -1346,18 +1563,20 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/api.ElectionSummary'
+                $ref: '#/components/schemas/api.ElectionsList'
           description: OK
       tags:
         - Elections
-      description: "Returns a filtered list of elections. The filters have to be sent on the request body. The valid filters are: \n        \n```json\n{\n    \"organizationId\": \"hexString\",\n    \"electionId\": \"hexString\",\n    \"withResults\": false,\n    \"status\": \"READY\",\n}\n```\n\n`electionId` can be partial. \n\nSee [elections list](elections-list)"
+      deprecated: true
+      description: >-
+        (deprecated, in favor of /elections?page=xxx&organizationId=xxx&status=xxx)
       requestBody:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/api.ElectionFilter'
+              $ref: '#/components/schemas/api.ElectionParams'
         description: >-
-          Filtered by partial organizationID, partial processID, process status and with results available or not
+          Filtered by partial organizationId, partial electionId, election status and with results available or not
         required: true
       summary: List elections (filtered)
   /elections/id:
@@ -1380,13 +1599,13 @@ paths:
           application/json:
             schema:
               $ref: '#/components/schemas/api.BuildElectionID'
-        description: 'Delta, OrganizationID, CensusOrigin and EnvelopeType'
+        description: 'delta, organizationId, censusOrigin and envelopeType'
         required: true
       summary: Build an election ID
   '/elections/page/{page}':
     get:
       parameters:
-        - description: 'Page '
+        - description: Page
           in: path
           name: page
           required: true
@@ -1397,11 +1616,14 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/api.ElectionSummary'
+                $ref: '#/components/schemas/api.ElectionsList'
           description: OK
       tags:
         - Elections
-      description: Get a list of elections summaries.
+      deprecated: true
+      description: |-
+        Get a list of elections summaries
+        (deprecated, in favor of /elections?page=xxx)
       summary: List elections
   /elections/price:
     post:
@@ -1426,12 +1648,12 @@ paths:
         description: 5 election parameters that are required for calculating the price
         required: true
       summary: Compute election price
-  '/elections/{electionID}':
+  '/elections/{electionId}':
     get:
       parameters:
         - description: Election id
           in: path
-          name: electionID
+          name: electionId
           required: true
           schema:
             type: string
@@ -1446,12 +1668,12 @@ paths:
         - Elections
       description: Get full election information
       summary: Election information
-  '/elections/{electionID}/keys':
+  '/elections/{electionId}/keys':
     get:
       parameters:
         - description: Election id
           in: path
-          name: electionID
+          name: electionId
           required: true
           schema:
             type: string
@@ -1466,12 +1688,12 @@ paths:
         - Elections
       description: Returns the list of public/private encryption keys
       summary: List encryption keys
-  '/elections/{electionID}/scrutiny':
+  '/elections/{electionId}/scrutiny':
     get:
       parameters:
         - description: Election id
           in: path
-          name: electionID
+          name: electionId
           required: true
           schema:
             type: string
@@ -1495,12 +1717,12 @@ paths:
 
         For discovering more about the on-chain results, please refer to [chainlink-tally](https://github.com/vocdoni/chainlink-tally#chainlink-tally) repository.
       summary: Election results
-  '/elections/{electionID}/votes/count':
+  '/elections/{electionId}/votes/count':
     get:
       parameters:
         - description: Election id
           in: path
-          name: electionID
+          name: electionId
           required: true
           schema:
             type: string
@@ -1509,25 +1731,25 @@ paths:
           content:
             application/json:
               schema:
-                properties:
-                  count:
-                    type: number
-                type: object
+                $ref: '#/components/schemas/api.CountResult'
           description: OK
       tags:
         - Elections
-      description: Get the number of votes for an election
+      deprecated: true
+      description: |-
+        Get the number of votes for an election
+        (deprecated, in favor of /votes?electionId=xxx which reports totalItems)
       summary: Count election votes
-  '/elections/{electionID}/votes/page/{page}':
+  '/elections/{electionId}/votes/page/{page}':
     get:
       parameters:
         - description: Election id
           in: path
-          name: electionID
+          name: electionId
           required: true
           schema:
             type: string
-        - description: 'Page '
+        - description: Page
           in: path
           name: page
           required: true
@@ -1538,11 +1760,14 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/api.Vote'
+                $ref: '#/components/schemas/api.VotesList'
           description: OK
       tags:
         - Elections
-      description: Returns the list of voteIDs for an election (paginated)
+      deprecated: true
+      description: |-
+        Returns the list of voteIDs for an election (paginated)
+        (deprecated, in favor of /votes?page=xxx&electionId=xxx)
       summary: List election votes
   /files/cid:
     post:
@@ -1627,6 +1852,34 @@ paths:
         Returns if the address provided, associated to an a registered account or not, has a valid SIK already registered or not.
       summary: Returns if the address provided has a valid SIK
   /votes:
+    get:
+      parameters:
+        - description: Page
+          in: query
+          name: page
+          schema:
+            type: number
+        - description: Items per page
+          in: query
+          name: limit
+          schema:
+            type: number
+        - description: Election id
+          in: query
+          name: electionId
+          schema:
+            type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/api.VotesList'
+          description: OK
+      tags:
+        - Votes
+      description: Returns the list of votes
+      summary: List votes
     post:
       responses:
         '200':
@@ -1655,18 +1908,18 @@ paths:
         description: Requires a protobuf signed transaction
         required: true
       summary: Submit a vote
-  '/votes/verify/{electionID}/{voteID}':
+  '/votes/verify/{electionId}/{voteId}':
     get:
       parameters:
         - description: Election id
           in: path
-          name: electionID
+          name: electionId
           required: true
           schema:
             type: string
         - description: Nullifier of the vote
           in: path
-          name: voteID
+          name: voteId
           required: true
           schema:
             type: string
@@ -1684,7 +1937,7 @@ paths:
       description: >-
         Check if vote is registered on the blockchain on specific election. Just return Ok status code
       summary: Verify vote
-  '/votes/{voteID}':
+  '/votes/{voteId}':
     get:
       parameters:
         - description: Nullifier of the vote
@@ -1821,6 +2074,15 @@ paths:
         Transfer balance to another account. Needed the bearer token associated the account.
       summary: Transfer tokens
 components:
+  requestBodies:
+    api.ElectionParams:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/api.ElectionParams'
+      description: >-
+        Filtered by partial organizationId, partial electionId, election status and with results available or not
+      required: true
   schemas:
     api.Account:
       properties:
@@ -1873,6 +2135,15 @@ components:
           type: string
         txHash:
           type: string
+      type: object
+    api.AccountsList:
+      properties:
+        accounts:
+          items:
+            $ref: '#/components/schemas/indexertypes.Account'
+          type: array
+        pagination:
+          $ref: '#/components/schemas/api.Pagination'
       type: object
     api.Block:
       properties:
@@ -1939,6 +2210,9 @@ components:
       type: object
     api.ChainInfo:
       properties:
+        blockStoreBase:
+          example: 5467
+          type: integer
         blockTime:
           example:
             - 12000
@@ -1999,6 +2273,12 @@ components:
         title:
           $ref: '#/components/schemas/api.LanguageString'
         value:
+          type: integer
+      type: object
+    api.CountResult:
+      properties:
+        count:
+          example: 10
           type: integer
       type: object
     api.Election:
@@ -2100,17 +2380,6 @@ components:
         voteType:
           $ref: '#/components/schemas/api.VoteType'
       type: object
-    api.ElectionFilter:
-      properties:
-        electionId:
-          type: string
-        organizationId:
-          type: string
-        status:
-          type: string
-        withResults:
-          type: boolean
-      type: object
     api.ElectionKeys:
       properties:
         privateKeys:
@@ -2129,6 +2398,25 @@ components:
         interruptible:
           type: boolean
         preRegister:
+          type: boolean
+      type: object
+    api.ElectionParams:
+      properties:
+        electionId:
+          type: string
+        finalResults:
+          type: boolean
+        limit:
+          type: integer
+        manuallyEnded:
+          type: boolean
+        organizationId:
+          type: string
+        page:
+          type: integer
+        status:
+          type: string
+        withResults:
           type: boolean
       type: object
     api.ElectionResults:
@@ -2195,6 +2483,24 @@ components:
         secretUntilTheEnd:
           type: boolean
       type: object
+    api.ElectionsList:
+      properties:
+        elections:
+          items:
+            $ref: '#/components/schemas/api.ElectionSummary'
+          type: array
+        pagination:
+          $ref: '#/components/schemas/api.Pagination'
+      type: object
+    api.FeesList:
+      properties:
+        fees:
+          items:
+            $ref: '#/components/schemas/indexertypes.TokenFeeMeta'
+          type: array
+        pagination:
+          $ref: '#/components/schemas/api.Pagination'
+      type: object
     api.File:
       properties:
         cid:
@@ -2222,7 +2528,16 @@ components:
       additionalProperties:
         type: string
       type: object
-    api.OrganizationList:
+    api.OrganizationParams:
+      properties:
+        limit:
+          type: integer
+        organizationId:
+          type: string
+        page:
+          type: integer
+      type: object
+    api.OrganizationSummary:
       properties:
         electionCount:
           example: 1
@@ -2230,6 +2545,28 @@ components:
         organizationID:
           example: 3.1407138843303053e+47
           type: string
+      type: object
+    api.OrganizationsList:
+      properties:
+        organizations:
+          items:
+            $ref: '#/components/schemas/api.OrganizationSummary'
+          type: array
+        pagination:
+          $ref: '#/components/schemas/api.Pagination'
+      type: object
+    api.Pagination:
+      properties:
+        currentPage:
+          type: integer
+        lastPage:
+          type: integer
+        nextPage:
+          type: integer
+        previousPage:
+          type: integer
+        totalItems:
+          type: integer
       type: object
     api.Question:
       properties:
@@ -2268,16 +2605,14 @@ components:
           type: string
           x-omitempty: true
       type: object
-    api.TransactionMetadata:
+    api.TransactionsList:
       properties:
-        transactionHash:
-          type: string
-        transactionIndex:
-          type: integer
-        transactionNumber:
-          type: integer
-        transactionType:
-          type: string
+        pagination:
+          $ref: '#/components/schemas/api.Pagination'
+        transactions:
+          items:
+            $ref: '#/components/schemas/indexertypes.Transaction'
+          type: array
       type: object
     api.Validator:
       properties:
@@ -2344,6 +2679,10 @@ components:
           type: string
           x-omitempty: true
         voteID:
+          description: >-
+            VoteID here produces a `voteID` over JSON that differs in casing from the rest of params and JSONs
+
+            but is kept for backwards compatibility
           type: string
           x-omitempty: true
         voterID:
@@ -2382,18 +2721,13 @@ components:
         uniqueChoices:
           type: boolean
       type: object
-    api.chainTxListPaginated.response:
+    api.VotesList:
       properties:
-        transactions:
+        pagination:
+          $ref: '#/components/schemas/api.Pagination'
+        votes:
           items:
-            $ref: '#/components/schemas/indexertypes.Transaction'
-          type: array
-      type: object
-    api.organizationListHandler.response:
-      properties:
-        organizations:
-          items:
-            $ref: '#/components/schemas/api.OrganizationList'
+            $ref: '#/components/schemas/api.Vote'
           type: array
       type: object
     apirest.APIerror:
