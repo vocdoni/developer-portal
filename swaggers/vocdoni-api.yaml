@@ -20,6 +20,11 @@ paths:
           name: limit
           schema:
             type: number
+        - description: Filter by partial accountId
+          in: query
+          name: accountId
+          schema:
+            type: string
       responses:
         '200':
           content:
@@ -113,17 +118,15 @@ paths:
           content:
             application/json:
               schema:
-                properties:
-                  fees:
-                    items:
-                      $ref: '#/components/schemas/indexertypes.TokenFeeMeta'
-                    type: array
-                type: object
+                $ref: '#/components/schemas/api.FeesList'
           description: OK
       tags:
         - Accounts
+      deprecated: true
       description: >-
         Returns the token fees for an account. A spending is an amount of tokens burnt from one account for executing transactions.
+
+        (deprecated, in favor of /chain/transfers?accountId=xxx&page=xxx)
       summary: List account token fees
   '/accounts/{accountId}/transfers/count':
     get:
@@ -149,7 +152,7 @@ paths:
   '/accounts/{accountId}/transfers/page/{page}':
     get:
       parameters:
-        - description: Specific accountId
+        - description: Specific accountId that sent or received the tokens
           in: path
           name: accountId
           required: true
@@ -166,15 +169,15 @@ paths:
           content:
             application/json:
               schema:
-                properties:
-                  transfers:
-                    $ref: '#/components/schemas/indexertypes.TokenTransfersAccount'
-                type: object
+                $ref: '#/components/schemas/api.TransfersList'
           description: OK
       tags:
         - Accounts
+      deprecated: true
       description: >-
         Returns the token transfers for an account. A transfer is a token transference from one account to other (excepting the burn address).
+
+        (deprecated, in favor of /chain/transfers?accountId=xxx&page=xxx)
       summary: List account received and sent token transfers
   '/accounts/{address}':
     get:
@@ -1433,6 +1436,45 @@ paths:
       description: >-
         Get transaction full information by block height and index. It returns JSON transaction protobuf encoded. Depending of transaction type will return different types of objects. Current transaction types can be found calling `/chain/transactions/cost`
       summary: Transaction by block height and index
+  /chain/transfers:
+    get:
+      parameters:
+        - description: Page
+          in: query
+          name: page
+          schema:
+            type: number
+        - description: Items per page
+          in: query
+          name: limit
+          schema:
+            type: number
+        - description: Specific accountId that sent or received the tokens
+          in: query
+          name: accountId
+          schema:
+            type: string
+        - description: Specific accountId that sent the tokens
+          in: query
+          name: accountIdFrom
+          schema:
+            type: string
+        - description: Specific accountId that received the tokens
+          in: query
+          name: accountIdTo
+          schema:
+            type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/api.TransfersList'
+          description: OK
+      tags:
+        - Chain
+      description: Returns the token transfers list ordered by date.
+      summary: List all token transfers
   /chain/validators:
     get:
       responses:
@@ -2092,6 +2134,8 @@ components:
           type: integer
         electionIndex:
           type: integer
+        feesCount:
+          type: integer
         infoURL:
           type: string
         metadata:
@@ -2100,6 +2144,8 @@ components:
           type: integer
         sik:
           type: string
+        transfersCount:
+          type: integer
       type: object
     api.AccountMedia:
       properties:
@@ -2614,6 +2660,15 @@ components:
             $ref: '#/components/schemas/indexertypes.Transaction'
           type: array
       type: object
+    api.TransfersList:
+      properties:
+        pagination:
+          $ref: '#/components/schemas/api.Pagination'
+        transfers:
+          items:
+            $ref: '#/components/schemas/indexertypes.TokenTransferMeta'
+          type: array
+      type: object
     api.Validator:
       properties:
         address:
@@ -3018,20 +3073,7 @@ components:
             type: integer
           type: array
         txHash:
-          items:
-            type: integer
-          type: array
-      type: object
-    indexertypes.TokenTransfersAccount:
-      properties:
-        received:
-          items:
-            $ref: '#/components/schemas/indexertypes.TokenTransferMeta'
-          type: array
-        sent:
-          items:
-            $ref: '#/components/schemas/indexertypes.TokenTransferMeta'
-          type: array
+          type: string
       type: object
     indexertypes.Transaction:
       properties:
