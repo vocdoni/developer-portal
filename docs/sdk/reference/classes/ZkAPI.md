@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `API`
+- [`API`](API)
 
   ↳ **`ZkAPI`**
 
@@ -38,7 +38,7 @@ The ZK proof
 
 #### Defined in
 
-[api/zk.ts:54](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/zk.ts#L54)
+[src/api/zk.ts:54](https://github.com/vocdoni/vocdoni-sdk/blob/0f6707560b7c8d3f10888ef928ae6edaf9aeab57/src/api/zk.ts#L54)
 
 ___
 
@@ -63,4 +63,4 @@ The ZK proof
 
 #### Defined in
 
-[api/zk.ts:68](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/zk.ts#L68)
+[src/api/zk.ts:68](https://github.com/vocdoni/vocdoni-sdk/blob/0f6707560b7c8d3f10888ef928ae6edaf9aeab57/src/api/zk.ts#L68)

@@ -22,7 +22,7 @@ The number of the block where the transaction is.
 
 #### Defined in
 
-[api/chain.ts:196](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain.ts#L196)
+[src/api/chain.ts:220](https://github.com/vocdoni/vocdoni-sdk/blob/0f6707560b7c8d3f10888ef928ae6edaf9aeab57/src/api/chain.ts#L220)
 
 ___
 
@@ -34,7 +34,7 @@ The hash of the transaction.
 
 #### Defined in
 
-[api/chain.ts:191](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain.ts#L191)
+[src/api/chain.ts:215](https://github.com/vocdoni/vocdoni-sdk/blob/0f6707560b7c8d3f10888ef928ae6edaf9aeab57/src/api/chain.ts#L215)
 
 ___
 
@@ -46,7 +46,7 @@ The index of the transaction inside the block.
 
 #### Defined in
 
-[api/chain.ts:201](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain.ts#L201)
+[src/api/chain.ts:225](https://github.com/vocdoni/vocdoni-sdk/blob/0f6707560b7c8d3f10888ef928ae6edaf9aeab57/src/api/chain.ts#L225)
 
 ___
 
@@ -58,7 +58,7 @@ The number of the transaction.
 
 #### Defined in
 
-[api/chain.ts:186](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain.ts#L186)
+[src/api/chain.ts:210](https://github.com/vocdoni/vocdoni-sdk/blob/0f6707560b7c8d3f10888ef928ae6edaf9aeab57/src/api/chain.ts#L210)
 
 ___
 
@@ -70,4 +70,4 @@ The type of the transaction.
 
 #### Defined in
 
-[api/chain.ts:206](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain.ts#L206)
+[src/api/chain.ts:230](https://github.com/vocdoni/vocdoni-sdk/blob/0f6707560b7c8d3f10888ef928ae6edaf9aeab57/src/api/chain.ts#L230)

@@ -2,11 +2,20 @@
 
 # Interface: IChainFeesListResponse
 
+## Hierarchy
+
+- [`IFeesList`](IFeesList)
+
+- [`PaginationResponse`](PaginationResponse)
+
+  ↳ **`IChainFeesListResponse`**
+
 ## Table of contents
 
 ### Properties
 
 - [fees](IChainFeesListResponse#fees)
+- [pagination](IChainFeesListResponse#pagination)
 
 ## Properties
 
@@ -16,6 +25,34 @@
 
 The list of fees
 
+#### Inherited from
+
+[IFeesList](IFeesList.md).[fees](IFeesList#fees)
+
 #### Defined in
 
-[api/chain.ts:393](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain.ts#L393)
+[src/api/chain.ts:452](https://github.com/vocdoni/vocdoni-sdk/blob/0f6707560b7c8d3f10888ef928ae6edaf9aeab57/src/api/chain.ts#L452)
+
+___
+
+### pagination
+
+• **pagination**: `Object`
+
+#### Type declaration
+
+| Name | Type |
+| :------ | :------ |
+| `currentPage` | `number` |
+| `lastPage` | `number` |
+| `nextPage` | `number` |
+| `previousPage` | `number` |
+| `totalItems` | `number` |
+
+#### Inherited from
+
+[PaginationResponse](PaginationResponse.md).[pagination](PaginationResponse#pagination)
+
+#### Defined in
+
+[src/api/api.ts:113](https://github.com/vocdoni/vocdoni-sdk/blob/0f6707560b7c8d3f10888ef928ae6edaf9aeab57/src/api/api.ts#L113)

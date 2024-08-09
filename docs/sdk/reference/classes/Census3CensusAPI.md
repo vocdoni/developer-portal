@@ -38,7 +38,7 @@ Returns the information of the census
 
 #### Defined in
 
-[api/census3/census.ts:119](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/census3/census.ts#L119)
+[src/api/census3/census.ts:119](https://github.com/vocdoni/vocdoni-sdk/blob/0f6707560b7c8d3f10888ef928ae6edaf9aeab57/src/api/census3/census.ts#L119)
 
 ___
 
@@ -64,7 +64,7 @@ The queue identifier
 
 #### Defined in
 
-[api/census3/census.ts:147](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/census3/census.ts#L147)
+[src/api/census3/census.ts:147](https://github.com/vocdoni/vocdoni-sdk/blob/0f6707560b7c8d3f10888ef928ae6edaf9aeab57/src/api/census3/census.ts#L147)
 
 ___
 
@@ -87,7 +87,7 @@ Fetches list of census based on given strategy
 
 #### Defined in
 
-[api/census3/census.ts:106](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/census3/census.ts#L106)
+[src/api/census3/census.ts:106](https://github.com/vocdoni/vocdoni-sdk/blob/0f6707560b7c8d3f10888ef928ae6edaf9aeab57/src/api/census3/census.ts#L106)
 
 ___
 
@@ -110,4 +110,4 @@ Returns the information of the census queue
 
 #### Defined in
 
-[api/census3/census.ts:132](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/census3/census.ts#L132)
+[src/api/census3/census.ts:132](https://github.com/vocdoni/vocdoni-sdk/blob/0f6707560b7c8d3f10888ef928ae6edaf9aeab57/src/api/census3/census.ts#L132)
