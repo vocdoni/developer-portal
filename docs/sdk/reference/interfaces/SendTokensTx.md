@@ -20,7 +20,7 @@
 
 #### Defined in
 
-[api/chain/transactions.ts:136](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain/transactions.ts#L136)
+[src/api/chain/transactions.ts:136](https://github.com/vocdoni/vocdoni-sdk/blob/0f6707560b7c8d3f10888ef928ae6edaf9aeab57/src/api/chain/transactions.ts#L136)
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 #### Defined in
 
-[api/chain/transactions.ts:135](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain/transactions.ts#L135)
+[src/api/chain/transactions.ts:135](https://github.com/vocdoni/vocdoni-sdk/blob/0f6707560b7c8d3f10888ef928ae6edaf9aeab57/src/api/chain/transactions.ts#L135)
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 #### Defined in
 
-[api/chain/transactions.ts:137](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain/transactions.ts#L137)
+[src/api/chain/transactions.ts:137](https://github.com/vocdoni/vocdoni-sdk/blob/0f6707560b7c8d3f10888ef928ae6edaf9aeab57/src/api/chain/transactions.ts#L137)
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 #### Defined in
 
-[api/chain/transactions.ts:134](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain/transactions.ts#L134)
+[src/api/chain/transactions.ts:134](https://github.com/vocdoni/vocdoni-sdk/blob/0f6707560b7c8d3f10888ef928ae6edaf9aeab57/src/api/chain/transactions.ts#L134)
 
 ___
 
@@ -60,4 +60,4 @@ ___
 
 #### Defined in
 
-[api/chain/transactions.ts:138](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain/transactions.ts#L138)
+[src/api/chain/transactions.ts:138](https://github.com/vocdoni/vocdoni-sdk/blob/0f6707560b7c8d3f10888ef928ae6edaf9aeab57/src/api/chain/transactions.ts#L138)

@@ -21,7 +21,7 @@ The data of the census
 
 #### Defined in
 
-[api/census.ts:54](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/census.ts#L54)
+[src/api/census.ts:64](https://github.com/vocdoni/vocdoni-sdk/blob/0f6707560b7c8d3f10888ef928ae6edaf9aeab57/src/api/census.ts#L64)
 
 ___
 
@@ -33,7 +33,7 @@ The max levels of the census
 
 #### Defined in
 
-[api/census.ts:59](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/census.ts#L59)
+[src/api/census.ts:69](https://github.com/vocdoni/vocdoni-sdk/blob/0f6707560b7c8d3f10888ef928ae6edaf9aeab57/src/api/census.ts#L69)
 
 ___
 
@@ -45,7 +45,7 @@ The root hash of the census
 
 #### Defined in
 
-[api/census.ts:49](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/census.ts#L49)
+[src/api/census.ts:59](https://github.com/vocdoni/vocdoni-sdk/blob/0f6707560b7c8d3f10888ef928ae6edaf9aeab57/src/api/census.ts#L59)
 
 ___
 
@@ -57,4 +57,4 @@ The type of the census
 
 #### Defined in
 
-[api/census.ts:44](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/census.ts#L44)
+[src/api/census.ts:54](https://github.com/vocdoni/vocdoni-sdk/blob/0f6707560b7c8d3f10888ef928ae6edaf9aeab57/src/api/census.ts#L54)

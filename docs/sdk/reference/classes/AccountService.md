@@ -53,7 +53,7 @@ Service.constructor
 
 #### Defined in
 
-[services/account.ts:45](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/services/account.ts#L45)
+[src/services/account.ts:46](https://github.com/vocdoni/vocdoni-sdk/blob/0f6707560b7c8d3f10888ef928ae6edaf9aeab57/src/services/account.ts#L46)
 
 ## Methods
 
@@ -75,7 +75,7 @@ Fetches account information.
 
 #### Defined in
 
-[services/account.ts:55](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/services/account.ts#L55)
+[src/services/account.ts:56](https://github.com/vocdoni/vocdoni-sdk/blob/0f6707560b7c8d3f10888ef928ae6edaf9aeab57/src/services/account.ts#L56)
 
 ___
 
@@ -100,7 +100,7 @@ The transaction hash
 
 #### Defined in
 
-[services/account.ts:95](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/services/account.ts#L95)
+[src/services/account.ts:96](https://github.com/vocdoni/vocdoni-sdk/blob/0f6707560b7c8d3f10888ef928ae6edaf9aeab57/src/services/account.ts#L96)
 
 ___
 
@@ -122,7 +122,7 @@ ___
 
 #### Defined in
 
-[services/account.ts:100](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/services/account.ts#L100)
+[src/services/account.ts:101](https://github.com/vocdoni/vocdoni-sdk/blob/0f6707560b7c8d3f10888ef928ae6edaf9aeab57/src/services/account.ts#L101)
 
 ## Properties
 
@@ -136,7 +136,7 @@ AccountServiceProperties.chainService
 
 #### Defined in
 
-[services/account.ts:38](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/services/account.ts#L38)
+[src/services/account.ts:39](https://github.com/vocdoni/vocdoni-sdk/blob/0f6707560b7c8d3f10888ef928ae6edaf9aeab57/src/services/account.ts#L39)
 
 ___
 
@@ -150,4 +150,4 @@ ___
 
 #### Defined in
 
-[services/service.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/services/service.ts#L6)
+[src/services/service.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/0f6707560b7c8d3f10888ef928ae6edaf9aeab57/src/services/service.ts#L6)

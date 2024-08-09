@@ -7,9 +7,14 @@
 ### Properties
 
 - [address](IChainValidator#address)
+- [joinHeight](IChainValidator#joinheight)
 - [name](IChainValidator#name)
 - [power](IChainValidator#power)
+- [proposals](IChainValidator#proposals)
 - [pubKey](IChainValidator#pubkey)
+- [score](IChainValidator#score)
+- [validatorAddress](IChainValidator#validatoraddress)
+- [votes](IChainValidator#votes)
 
 ## Properties
 
@@ -21,7 +26,19 @@ Validator address
 
 #### Defined in
 
-[api/chain.ts:342](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain.ts#L342)
+[src/api/chain.ts:374](https://github.com/vocdoni/vocdoni-sdk/blob/0f6707560b7c8d3f10888ef928ae6edaf9aeab57/src/api/chain.ts#L374)
+
+___
+
+### joinHeight
+
+• **joinHeight**: `number`
+
+Block height when validator joint
+
+#### Defined in
+
+[src/api/chain.ts:384](https://github.com/vocdoni/vocdoni-sdk/blob/0f6707560b7c8d3f10888ef928ae6edaf9aeab57/src/api/chain.ts#L384)
 
 ___
 
@@ -33,7 +50,7 @@ Validator name reference. Could be empty.
 
 #### Defined in
 
-[api/chain.ts:347](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain.ts#L347)
+[src/api/chain.ts:379](https://github.com/vocdoni/vocdoni-sdk/blob/0f6707560b7c8d3f10888ef928ae6edaf9aeab57/src/api/chain.ts#L379)
 
 ___
 
@@ -45,7 +62,19 @@ Current power of the validator
 
 #### Defined in
 
-[api/chain.ts:332](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain.ts#L332)
+[src/api/chain.ts:364](https://github.com/vocdoni/vocdoni-sdk/blob/0f6707560b7c8d3f10888ef928ae6edaf9aeab57/src/api/chain.ts#L364)
+
+___
+
+### proposals
+
+• **proposals**: `number`
+
+Total block proposals count
+
+#### Defined in
+
+[src/api/chain.ts:389](https://github.com/vocdoni/vocdoni-sdk/blob/0f6707560b7c8d3f10888ef928ae6edaf9aeab57/src/api/chain.ts#L389)
 
 ___
 
@@ -57,4 +86,40 @@ Validator public key
 
 #### Defined in
 
-[api/chain.ts:337](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain.ts#L337)
+[src/api/chain.ts:369](https://github.com/vocdoni/vocdoni-sdk/blob/0f6707560b7c8d3f10888ef928ae6edaf9aeab57/src/api/chain.ts#L369)
+
+___
+
+### score
+
+• **score**: `number`
+
+Validatos effectivity. Between 0 and 100
+
+#### Defined in
+
+[src/api/chain.ts:394](https://github.com/vocdoni/vocdoni-sdk/blob/0f6707560b7c8d3f10888ef928ae6edaf9aeab57/src/api/chain.ts#L394)
+
+___
+
+### validatorAddress
+
+• **validatorAddress**: `string`
+
+Validator address
+
+#### Defined in
+
+[src/api/chain.ts:399](https://github.com/vocdoni/vocdoni-sdk/blob/0f6707560b7c8d3f10888ef928ae6edaf9aeab57/src/api/chain.ts#L399)
+
+___
+
+### votes
+
+• **votes**: `number`
+
+Number ob validated blocks (not created)
+
+#### Defined in
+
+[src/api/chain.ts:404](https://github.com/vocdoni/vocdoni-sdk/blob/0f6707560b7c8d3f10888ef928ae6edaf9aeab57/src/api/chain.ts#L404)
