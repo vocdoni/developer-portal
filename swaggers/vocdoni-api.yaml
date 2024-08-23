@@ -72,7 +72,10 @@ paths:
           description: OK
       tags:
         - Accounts
-      description: Returns the count of total number of existing accounts
+      deprecated: true
+      description: |-
+        Returns the count of total number of existing accounts
+        (deprecated, in favor of /accounts which reports totalItems)
       summary: Total number of accounts
   '/accounts/page/{page}':
     get:
@@ -146,8 +149,11 @@ paths:
           description: Number of transaction sent and received for the account
       tags:
         - Accounts
+      deprecated: true
       description: >-
         Returns the count of total number of sent and received transactions for an account. A transaction is a token transfer from one account to another existing account
+
+        (deprecated, in favor of /chain/transfers?accountId=xxx which reports totalItems)
       summary: Total number of sent and received transactions
   '/accounts/{accountId}/transfers/page/{page}':
     get:
@@ -243,7 +249,11 @@ paths:
           description: OK
       tags:
         - Accounts
-      description: Returns the number of elections for an organization
+      deprecated: true
+      description: >-
+        Returns the number of elections for an organization
+
+        (deprecated, in favor of /elections?organizationId=xxx which reports totalItems)
       summary: Count organization elections
   '/accounts/{organizationId}/elections/page/{page}':
     get:
@@ -827,6 +837,45 @@ paths:
         - Chain
       description: Returns the estimated timestamp for the block height provided
       summary: Estimate block to date
+  /chain/blocks:
+    get:
+      parameters:
+        - description: Page
+          in: query
+          name: page
+          schema:
+            type: number
+        - description: Items per page
+          in: query
+          name: limit
+          schema:
+            type: number
+        - description: Filter by exact chainId
+          in: query
+          name: chainId
+          schema:
+            type: string
+        - description: Filter by partial hash
+          in: query
+          name: hash
+          schema:
+            type: string
+        - description: Filter by exact proposerAddress
+          in: query
+          name: proposerAddress
+          schema:
+            type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/api.BlockList'
+          description: OK
+      tags:
+        - Chain
+      description: 'Returns the list of blocks, ordered by descending height.'
+      summary: List all blocks
   '/chain/blocks/hash/{hash}':
     get:
       parameters:
@@ -1188,7 +1237,10 @@ paths:
           description: Number of registered organizations
       tags:
         - Chain
-      description: Return the number of organizations
+      deprecated: true
+      description: |-
+        Return the number of organizations
+        (deprecated, in favor of /chain/organizations which reports totalItems)
       summary: Count organizations
   '/chain/organizations/filter/page/{page}':
     post:
@@ -1335,7 +1387,10 @@ paths:
           description: OK
       tags:
         - Chain
-      description: Returns the number of transactions
+      deprecated: true
+      description: |-
+        Returns the number of transactions
+        (deprecated, in favor of /chain/transactions which reports totalItems)
       summary: Transactions count
   '/chain/transactions/page/{page}':
     get:
@@ -1589,7 +1644,13 @@ paths:
       deprecated: true
       description: "Returns a filtered list of elections. The filters have to be sent on the request body. The valid filters are: \n        \n```json\n{\n    \"organizationId\": \"hexString\",\n    \"electionId\": \"hexString\",\n    \"withResults\": false,\n    \"status\": \"READY\",\n}\n```\n\n`electionId` can be partial. \n\nSee [elections list](elections-list)\n\n(deprecated, in favor of /elections?page=xxx&organizationId=xxx&status=xxx)\n"
       requestBody:
-        $ref: '#/components/requestBodies/api.ElectionParams'
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/api.ElectionParams'
+        description: >-
+          Filtered by partial organizationId, partial electionId, election status and with results available or not
+        required: true
       summary: List elections (filtered)
   '/elections/filter/page/{page}':
     post:
@@ -1618,7 +1679,7 @@ paths:
             schema:
               $ref: '#/components/schemas/api.ElectionParams'
         description: >-
-          Filtered by partial organizationId, partial electionId, election status and with results available or not
+          Filtered by exact organizationId, partial electionId, election status, results available or not, etc
         required: true
       summary: List elections (filtered)
   /elections/id:
@@ -2116,15 +2177,6 @@ paths:
         Transfer balance to another account. Needed the bearer token associated the account.
       summary: Transfer tokens
 components:
-  requestBodies:
-    api.ElectionParams:
-      content:
-        application/json:
-          schema:
-            $ref: '#/components/schemas/api.ElectionParams'
-      description: >-
-        Filtered by partial organizationId, partial electionId, election status and with results available or not
-      required: true
   schemas:
     api.Account:
       properties:
@@ -2203,6 +2255,15 @@ components:
           $ref: '#/components/schemas/github_com_cometbft_cometbft_types.Header'
         last_commit:
           $ref: '#/components/schemas/types.Commit'
+      type: object
+    api.BlockList:
+      properties:
+        blocks:
+          items:
+            $ref: '#/components/schemas/indexertypes.Block'
+          type: array
+        pagination:
+          $ref: '#/components/schemas/api.Pagination'
       type: object
     api.BuildElectionID:
       properties:
@@ -2450,6 +2511,10 @@ components:
       properties:
         electionId:
           type: string
+        endDateAfter:
+          type: string
+        endDateBefore:
+          type: string
         finalResults:
           type: boolean
         limit:
@@ -2460,6 +2525,10 @@ components:
           type: string
         page:
           type: integer
+        startDateAfter:
+          type: string
+        startDateBefore:
+          type: string
         status:
           type: string
         withResults:
@@ -3037,6 +3106,23 @@ components:
         balance:
           type: integer
         nonce:
+          type: integer
+      type: object
+    indexertypes.Block:
+      properties:
+        chainId:
+          type: string
+        hash:
+          type: string
+        height:
+          type: integer
+        lastBlockHash:
+          type: string
+        proposer:
+          type: string
+        time:
+          type: string
+        txCount:
           type: integer
       type: object
     indexertypes.TokenFeeMeta:
