@@ -124,6 +124,27 @@ Ended-->Results
 + **Encrypted:** If enabled, the payload of the votes emitted will remain encrypted until the end of the process. The results will be available once the encryption keys are published by the miners at the end of the process. If disabled, the results can be seen in real time.
 + **CostFromWeight:** If enabled, the total cost defined in the ballot protocol will equal the voter's census weight.
 
+#### Election ID
+
+An election ID is a 32-byte identifier that encodes several important pieces of information about a voting process.
+
++ **Components of an election ID**
+
+    + Chain ID (6 bytes): A 6-byte truncated hash of the blockchain identifier. ChainID is: `ChainID = H(C)[:6]` where `H()` is the `Keccak256` Ethereum hash function without any prefix. The first 6 bytes of the hash are taken as the ChainID.
+    + Organization Address (20 bytes): The Ethereum address of the wallet that created the process.
+    + Census Origin (1 byte): The type of census used for the process. This is a single byte (uint8) value, which represents a specific census origin type.
+    + Envelope Type (1 byte): The configuration of ballot properties, represented as a single byte. This byte is constructed by combining several boolean flags (Serial, Anonymous, EncryptedVotes, UniqueValues, CostFromWeight) using the following bitwise OR operations in the 32 byte election ID: `EnvelopeType = (Serial×20) ∣ (Anonymous×21) ∣ (EncryptedVotes×22) ∣ (UniqueValues×23) ∣ (CostFromWeight×24)`.
+    Each flag is either 0 (false) or 1 (true), and the result is a single byte.
+    + Nonce (4 bytes): A 4-byte unsigned integer that represents an incremental process index. It is the account’s ProcessIndex
+
++ **Construction of the election ID**
+    
+    The election ID is a concatenation of the above components in the following order:
+    
+    `ProcessID = ChainID (6 bytes) || OrganizationAddr (20 bytes) || CensusOrigin (1 byte) || EnvelopeType (1 byte) || Nonce (4 bytes)`.
+    
+    Where `||` represents the concatenation of the byte sequences.
+
 ### Anonymous Voting
 
 A voting envelope is composed of two parts: the census proof (which defines the eligibility of the voter) and the ballot (the actual contents of the vote, containing the chosen options). The anonymization of the voting envelope is achieved by anonymizing the census proof using zk-SNARKs technology.
