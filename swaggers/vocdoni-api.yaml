@@ -1,7 +1,7 @@
 openapi: 3.0.0
 info:
   contact: {}
-  description: "\nThe Vocdoni API is a REST API that substitutes the previous RPCs in order to make it easier for  developers/integrators to build on top of the voting protocol. This API facilitates the creation of voting processes with Vocdoni, without the hassle of integrating with a complex distributed stack with blockchain components. The API allows integrators to perform all the features enabled by the Vocdoni voting protocol, such as creating accounts, organizations, voting processes, and censuses, as well as casting votes. The API is designed to abstract away the complexity of the Vocdoni protocol as much as possible, offering a simple and straightforward way to performing these actions. \n\nThe API contains the following endpoints: \n\n- [**Chain**](chain): The Vocdoni blockchain is named Vochain. It is a Byzantine fault-tolerant network based on Tendermint that executes the Vocdoni Protocol logic represented as a state machine. Its main purpose is to register votes to a decentralized data store that is able to guarantee univeral verifiability. The chain endpoints allow you to consult the state of the chain, estimate transactions costs, list organizations, and get more Vochain info.\n- [**Accounts**](accounts): Identified by an Ethereum-like address. An account can create and manage elections, transfer tokens, give power to other accounts on its behalf (delegation) and manage its metadata. This endpoint allows users to set the metadata associated with an existing account and to query for information related to existing accounts.\n- [**Elections**](elections): The elections endpoint serves information related to elections such as basic election information, election keys, and submitted votes, as well as enabling users to create a new election and modify existing ones. There is a set of [options, specifications, and lifecycle states](https://developer.vocdoni.io/protocol#elections) that determine the behavior of an election and how votes are counted. \n- [**Censuses**](censuses): The census is a key component of any voting process. It specifies the set of users (each identified by a public key or address) eligible to participate in an election. The various types of census are documented [here](https://developer.vocdoni.io/protocol/census). This endpoint provides census information like the Merkle root, type, total weight, and size of a census. It also allows you to import/export censuses and create new ones.\n- [**Votes**](votes): This endpoint serves all the information associated with any specific vote, including its validity. It is also how users can cast votes.\n- [**Wallet**](wallet): The wallet endpoint facilitates the creation of accounts on the Vochain. This endpoint fulfills requests relating to the token balance held by a given account. \n- [**SIK**](sik): The Secret Identity Key is a user-generated piece of information that proves the user's identity without revealing it. It is the hash of the user's address, the signature of a public message, and an optional secret part. It is used to ensure anonymous voting. All registered accounts or anonymous voters must register a SIK, and these keys are all stored in a Merkle tree. The `/siks` endpoints helps to generate a proof of membership, get the current valid SIK roots, or check if an account has a valid SIK.\n\n\n### Errors \n\nBackend error messages list are defined here: https://github.com/vocdoni/vocdoni-node/blob/master/api/errors.go\n\nAbout the **204 no content** error: this message will be returned only if the asset being queried cannot be found but no other errors have occurred. This response is commonly used to prevent Javascript errors that may arise when a client is waiting for a  transaction to be published. During this waiting period, the client can repeatedly query the endpoint until a  successful response with a status code of 200 is received, thereby avoiding any errors that may occur due to the transaction not being published yet."
+  description: "\nThe Vocdoni API is a REST API that substitutes the previous RPCs in order to make it easier for  developers/integrators to build on top of the voting protocol. This API facilitates the creation of voting processes with Vocdoni, without the hassle of integrating with a complex distributed stack with blockchain components. The API allows integrators to perform all the features enabled by the Vocdoni voting protocol, such as creating accounts, organizations, voting processes, and censuses, as well as casting votes. The API is designed to abstract away the complexity of the Vocdoni protocol as much as possible, offering a simple and straightforward way to performing these actions.\n\nVocdoni API URLs: \n\n- **Production**: https://api.vocdoni.io/v2\n- **Staging**: https://api-stg.vocdoni.net/v2\n- **Development**: https://api-dev.vocdoni.net/v2\n\nThe API contains the following endpoints: \n\n- [**Chain**](chain): The Vocdoni blockchain is named Vochain. It is a Byzantine fault-tolerant network based on Tendermint that executes the Vocdoni Protocol logic represented as a state machine. Its main purpose is to register votes to a decentralized data store that is able to guarantee univeral verifiability. The chain endpoints allow you to consult the state of the chain, estimate transactions costs, list organizations, and get more Vochain info.\n- [**Accounts**](accounts): Identified by an Ethereum-like address. An account can create and manage elections, transfer tokens, give power to other accounts on its behalf (delegation) and manage its metadata. This endpoint allows users to set the metadata associated with an existing account and to query for information related to existing accounts.\n- [**Elections**](elections): The elections endpoint serves information related to elections such as basic election information, election keys, and submitted votes, as well as enabling users to create a new election and modify existing ones. There is a set of [options, specifications, and lifecycle states](https://developer.vocdoni.io/protocol#elections) that determine the behavior of an election and how votes are counted. \n- [**Censuses**](censuses): The census is a key component of any voting process. It specifies the set of users (each identified by a public key or address) eligible to participate in an election. The various types of census are documented [here](https://developer.vocdoni.io/protocol/census). This endpoint provides census information like the Merkle root, type, total weight, and size of a census. It also allows you to import/export censuses and create new ones.\n- [**Votes**](votes): This endpoint serves all the information associated with any specific vote, including its validity. It is also how users can cast votes.\n- [**Wallet**](wallet): The wallet endpoint facilitates the creation of accounts on the Vochain. This endpoint fulfills requests relating to the token balance held by a given account. \n- [**SIK**](sik): The Secret Identity Key is a user-generated piece of information that proves the user's identity without revealing it. It is the hash of the user's address, the signature of a public message, and an optional secret part. It is used to ensure anonymous voting. All registered accounts or anonymous voters must register a SIK, and these keys are all stored in a Merkle tree. The `/siks` endpoints helps to generate a proof of membership, get the current valid SIK roots, or check if an account has a valid SIK.\n\n\n### Errors \n\nBackend error messages list are defined here: https://github.com/vocdoni/vocdoni-node/blob/master/api/errors.go\n\nAbout the **204 no content** error: this message will be returned only if the asset being queried cannot be found but no other errors have occurred. This response is commonly used to prevent Javascript errors that may arise when a client is waiting for a  transaction to be published. During this waiting period, the client can repeatedly query the endpoint until a  successful response with a status code of 200 is received, thereby avoiding any errors that may occur due to the transaction not being published yet."
   title: Vocdoni API
   version: 2.0.0
 servers:
@@ -1309,6 +1309,11 @@ paths:
           name: limit
           schema:
             type: number
+        - description: Tx hash
+          in: query
+          name: hash
+          schema:
+            type: string
         - description: Block height
           in: query
           name: height
@@ -1319,17 +1324,27 @@ paths:
           name: type
           schema:
             type: string
+        - description: Tx subtype
+          in: query
+          name: subtype
+          schema:
+            type: string
+        - description: Tx signer
+          in: query
+          name: signer
+          schema:
+            type: string
       responses:
         '200':
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/api.TransactionsList'
-          description: List of transactions references
+          description: List of transactions (metadata only)
       tags:
         - Chain
       description: >-
-        To get full transaction information use  [/chain/transaction/{blockHeight}/{txIndex}](transaction-by-block-index).\nWhere transactionIndex is the index of the transaction on the containing block.
+        To get full transaction information use  [/chain/transaction/{hash}](transaction-by-hash).
       summary: List transactions
     post:
       responses:
@@ -1407,7 +1422,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/api.TransactionsList'
-          description: List of transactions references
+          description: List of transactions (metadata only)
       tags:
         - Chain
       deprecated: true
@@ -1415,30 +1430,7 @@ paths:
         To get full transaction information use  [/chain/transaction/{blockHeight}/{txIndex}](transaction-by-block-index).\nWhere transactionIndex is the index of the transaction on the containing block.
 
         (deprecated, in favor of /chain/transactions?page=xxx)
-      summary: List transactions
-  '/chain/transactions/reference/index/{index}':
-    get:
-      parameters:
-        - description: Index of the transaction
-          in: path
-          name: index
-          required: true
-          schema:
-            type: integer
-      responses:
-        '200':
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/indexertypes.Transaction'
-          description: OK
-        '204':
-          description: 'See [errors](vocdoni-api#errors) section'
-      tags:
-        - Chain
-      description: >-
-        Get transaction by its index. This is not transaction reference (hash), and neither the block height and block  index. The transaction index is an incremental counter for each transaction.  You could use the transaction `block` and `index` to retrieve full info using [transaction by block and index](transaction-by-block-index).
-      summary: Transaction by index
+      summary: List transactions (legacy)
   '/chain/transactions/reference/{hash}':
     get:
       parameters:
@@ -1461,6 +1453,29 @@ paths:
         - Chain
       description: >-
         Using a transaction's hash, returns the `block` and `index` that contains the transaction. You can use this `block` and `index` to retrieve the full transaction info using [transaction by block and index](transaction-by-block-index)
+      summary: Transaction by hash
+  '/chain/transactions/{hash}':
+    get:
+      parameters:
+        - description: Transaction hash
+          in: path
+          name: hash
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/api.GenericTransactionWithInfo'
+          description: OK
+        '204':
+          description: 'See [errors](vocdoni-api#errors) section'
+      tags:
+        - Chain
+      description: >-
+        Get transaction full information by hash. It returns JSON transaction protobuf encoded. Depending of transaction type will return different types of objects. Current transaction types can be found calling `/chain/transactions/cost`
       summary: Transaction by hash
   '/chain/transactions/{height}/{index}':
     get:
@@ -1488,8 +1503,11 @@ paths:
           description: 'See [errors](vocdoni-api#errors) section'
       tags:
         - Chain
+      deprecated: true
       description: >-
         Get transaction full information by block height and index. It returns JSON transaction protobuf encoded. Depending of transaction type will return different types of objects. Current transaction types can be found calling `/chain/transactions/cost`
+
+        (deprecated, in favor of /chain/transactions/{hash})
       summary: Transaction by block height and index
   /chain/transfers:
     get:
@@ -2245,16 +2263,12 @@ components:
       type: object
     api.Block:
       properties:
-        data:
-          $ref: '#/components/schemas/types.Data'
-        evidence:
-          $ref: '#/components/schemas/types.EvidenceData'
         hash:
           type: string
         header:
           $ref: '#/components/schemas/github_com_cometbft_cometbft_types.Header'
-        last_commit:
-          $ref: '#/components/schemas/types.Commit'
+        txCount:
+          type: integer
       type: object
     api.BlockList:
       properties:
@@ -2726,7 +2740,7 @@ components:
           $ref: '#/components/schemas/api.Pagination'
         transactions:
           items:
-            $ref: '#/components/schemas/indexertypes.Transaction'
+            $ref: '#/components/schemas/indexertypes.TransactionMetadata'
           type: array
       type: object
     api.TransfersList:
@@ -3163,22 +3177,59 @@ components:
       type: object
     indexertypes.Transaction:
       properties:
-        blockHeight:
+        hash:
+          example: 75e8f822f5dd13973ac5158d600f0a2a5fea4bfefce9712ab5195bf17884cfad
+          type: string
+        height:
           example: 64924
           format: int32
           type: integer
-        transactionHash:
-          example: 75e8f822f5dd13973ac5158d600f0a2a5fea4bfefce9712ab5195bf17884cfad
-          type: string
-        transactionIndex:
+        index:
           example: 0
           format: int32
           type: integer
-        transactionNumber:
-          example: 944
-          format: int64
+        signer:
+          example: 0e45513942cf95330fc5e9020851b8bdd9b9c9df
+          type: string
+        subtype:
+          example: set_process_census
+          type: string
+        type:
+          enum:
+            - vote
+            - newProcess
+            - admin
+            - setProcess
+            - registerKey
+            - mintTokens
+            - sendTokens
+            - setTransactionCosts
+            - setAccount
+            - collectFaucet
+            - setKeykeeper
+          example: Vote
+          type: string
+      type: object
+    indexertypes.TransactionMetadata:
+      properties:
+        hash:
+          example: 75e8f822f5dd13973ac5158d600f0a2a5fea4bfefce9712ab5195bf17884cfad
+          type: string
+        height:
+          example: 64924
+          format: int32
           type: integer
-        transactionType:
+        index:
+          example: 0
+          format: int32
+          type: integer
+        signer:
+          example: 0e45513942cf95330fc5e9020851b8bdd9b9c9df
+          type: string
+        subtype:
+          example: set_process_census
+          type: string
+        type:
           enum:
             - vote
             - newProcess
@@ -3838,73 +3889,6 @@ components:
           type: array
         parts:
           $ref: '#/components/schemas/types.PartSetHeader'
-      type: object
-    types.BlockIDFlag:
-      enum:
-        - 1
-        - 2
-        - 3
-      type: integer
-      x-enum-varnames:
-        - BlockIDFlagAbsent
-        - BlockIDFlagCommit
-        - BlockIDFlagNil
-    types.Commit:
-      properties:
-        block_id:
-          $ref: '#/components/schemas/types.BlockID'
-        height:
-          description: >-
-            NOTE: The signatures are in order of address to preserve the bonded
-
-            ValidatorSet order.
-
-            Any peer with a block can gossip signatures by index with a peer without
-
-            recalculating the active ValidatorSet.
-          type: integer
-        round:
-          type: integer
-        signatures:
-          items:
-            $ref: '#/components/schemas/types.CommitSig'
-          type: array
-      type: object
-    types.CommitSig:
-      properties:
-        block_id_flag:
-          $ref: '#/components/schemas/types.BlockIDFlag'
-        signature:
-          items:
-            type: integer
-          type: array
-        timestamp:
-          type: string
-        validator_address:
-          items:
-            type: integer
-          type: array
-      type: object
-    types.Data:
-      properties:
-        txs:
-          description: >-
-            Txs that will be applied by state @ block.Height+1.
-
-            NOTE: not all txs here are valid.  We're just agreeing on the order first.
-
-            This means that block.AppHash does not include these txs.
-          items:
-            items:
-              type: integer
-            type: array
-          type: array
-      type: object
-    types.EvidenceData:
-      properties:
-        evidence:
-          items: {}
-          type: array
       type: object
     types.PartSetHeader:
       properties:
