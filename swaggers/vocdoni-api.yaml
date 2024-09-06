@@ -3353,6 +3353,8 @@ components:
       type: object
     models.NewProcessTx:
       properties:
+        faucetPackage:
+          $ref: '#/components/schemas/models.FaucetPackage'
         nonce:
           type: integer
         process:
@@ -3650,6 +3652,8 @@ components:
           type: string
         duration:
           type: integer
+        faucetPackage:
+          $ref: '#/components/schemas/models.FaucetPackage'
         nonce:
           type: integer
         processId:
