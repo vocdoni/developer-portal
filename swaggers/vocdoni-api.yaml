@@ -367,6 +367,22 @@ paths:
       description: >-
         Export the whole census database to a JSON file. Requires Admin Bearer token.
       summary: Export census database
+  /censuses/export/ipfs/list:
+    get:
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  valid:
+                    type: boolean
+                type: object
+          description: OK
+      tags:
+        - Censuses
+      description: List the IPFS URIs of the census database exports
+      summary: List export census database to IPFS
   /censuses/import:
     post:
       responses:
