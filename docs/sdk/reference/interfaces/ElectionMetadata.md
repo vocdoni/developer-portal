@@ -25,7 +25,7 @@ More info: https://vocdoni.io/docs/#/architecture/components/process?id=process-
 
 #### Defined in
 
-[types/metadata/election.ts:127](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/types/metadata/election.ts#L127)
+[src/types/metadata/election.ts:139](https://github.com/vocdoni/vocdoni-sdk/blob/1347b8ec17da122a7e3a17b12e8afb2da1e80984/src/types/metadata/election.ts#L139)
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 #### Defined in
 
-[types/metadata/election.ts:128](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/types/metadata/election.ts#L128)
+[src/types/metadata/election.ts:140](https://github.com/vocdoni/vocdoni-sdk/blob/1347b8ec17da122a7e3a17b12e8afb2da1e80984/src/types/metadata/election.ts#L140)
 
 ___
 
@@ -58,7 +58,7 @@ Arbitrary key/value data that specific applications can use for their own needs
 
 #### Defined in
 
-[types/metadata/election.ts:133](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/types/metadata/election.ts#L133)
+[src/types/metadata/election.ts:145](https://github.com/vocdoni/vocdoni-sdk/blob/1347b8ec17da122a7e3a17b12e8afb2da1e80984/src/types/metadata/election.ts#L145)
 
 ___
 
@@ -68,7 +68,7 @@ ___
 
 #### Defined in
 
-[types/metadata/election.ts:136](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/types/metadata/election.ts#L136)
+[src/types/metadata/election.ts:148](https://github.com/vocdoni/vocdoni-sdk/blob/1347b8ec17da122a7e3a17b12e8afb2da1e80984/src/types/metadata/election.ts#L148)
 
 ___
 
@@ -78,7 +78,7 @@ ___
 
 #### Defined in
 
-[types/metadata/election.ts:126](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/types/metadata/election.ts#L126)
+[src/types/metadata/election.ts:138](https://github.com/vocdoni/vocdoni-sdk/blob/1347b8ec17da122a7e3a17b12e8afb2da1e80984/src/types/metadata/election.ts#L138)
 
 ___
 
@@ -88,7 +88,7 @@ ___
 
 #### Defined in
 
-[types/metadata/election.ts:137](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/types/metadata/election.ts#L137)
+[src/types/metadata/election.ts:149](https://github.com/vocdoni/vocdoni-sdk/blob/1347b8ec17da122a7e3a17b12e8afb2da1e80984/src/types/metadata/election.ts#L149)
 
 ___
 
@@ -98,4 +98,4 @@ ___
 
 #### Defined in
 
-[types/metadata/election.ts:125](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/types/metadata/election.ts#L125)
+[src/types/metadata/election.ts:137](https://github.com/vocdoni/vocdoni-sdk/blob/1347b8ec17da122a7e3a17b12e8afb2da1e80984/src/types/metadata/election.ts#L137)
