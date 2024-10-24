@@ -2407,6 +2407,7 @@ components:
       type: object
     api.ChoiceMetadata:
       properties:
+        meta: {}
         title:
           $ref: '#/components/schemas/api.LanguageString'
         value:
@@ -2721,6 +2722,7 @@ components:
           type: array
         description:
           $ref: '#/components/schemas/api.LanguageString'
+        meta: {}
         title:
           $ref: '#/components/schemas/api.LanguageString'
       type: object
