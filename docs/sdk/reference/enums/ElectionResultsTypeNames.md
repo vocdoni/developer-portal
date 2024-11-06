@@ -9,6 +9,7 @@
 - [APPROVAL](ElectionResultsTypeNames#approval)
 - [BUDGET](ElectionResultsTypeNames#budget)
 - [MULTIPLE\_CHOICE](ElectionResultsTypeNames.md#multiple_choice)
+- [QUADRATIC](ElectionResultsTypeNames#quadratic)
 - [SINGLE\_CHOICE\_MULTIQUESTION](ElectionResultsTypeNames.md#single_choice_multiquestion)
 
 ## Enumeration Members
@@ -19,7 +20,7 @@
 
 #### Defined in
 
-[types/metadata/election.ts:41](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/types/metadata/election.ts#L41)
+[src/types/metadata/election.ts:46](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/types/metadata/election.ts#L46)
 
 ___
 
@@ -29,7 +30,7 @@ ___
 
 #### Defined in
 
-[types/metadata/election.ts:40](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/types/metadata/election.ts#L40)
+[src/types/metadata/election.ts:45](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/types/metadata/election.ts#L45)
 
 ___
 
@@ -39,7 +40,17 @@ ___
 
 #### Defined in
 
-[types/metadata/election.ts:39](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/types/metadata/election.ts#L39)
+[src/types/metadata/election.ts:44](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/types/metadata/election.ts#L44)
+
+___
+
+### QUADRATIC
+
+• **QUADRATIC** = ``"quadratic"``
+
+#### Defined in
+
+[src/types/metadata/election.ts:47](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/types/metadata/election.ts#L47)
 
 ___
 
@@ -49,4 +60,4 @@ ___
 
 #### Defined in
 
-[types/metadata/election.ts:38](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/types/metadata/election.ts#L38)
+[src/types/metadata/election.ts:43](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/types/metadata/election.ts#L43)

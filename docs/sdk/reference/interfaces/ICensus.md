@@ -22,7 +22,7 @@ The type of the census
 
 #### Defined in
 
-[api/election.ts:21](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/election.ts#L21)
+[src/api/election.ts:19](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/election.ts#L19)
 
 ___
 
@@ -34,7 +34,7 @@ The root of the census
 
 #### Defined in
 
-[api/election.ts:26](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/election.ts#L26)
+[src/api/election.ts:24](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/election.ts#L24)
 
 ___
 
@@ -46,7 +46,7 @@ The URL of the census
 
 #### Defined in
 
-[api/election.ts:36](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/election.ts#L36)
+[src/api/election.ts:34](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/election.ts#L34)
 
 ___
 
@@ -58,7 +58,7 @@ Max size of the census. How many voters the census can have.
 
 #### Defined in
 
-[api/election.ts:41](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/election.ts#L41)
+[src/api/election.ts:39](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/election.ts#L39)
 
 ___
 
@@ -70,4 +70,4 @@ The post register root of the census
 
 #### Defined in
 
-[api/election.ts:31](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/election.ts#L31)
+[src/api/election.ts:29](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/election.ts#L29)

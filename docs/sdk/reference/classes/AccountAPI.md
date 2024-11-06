@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `API`
+- [`API`](API)
 
   ↳ **`AccountAPI`**
 
@@ -12,91 +12,16 @@
 
 ### Methods
 
-- [count](AccountAPI#count)
-- [electionsList](AccountAPI#electionslist)
-- [fees](AccountAPI#fees)
 - [info](AccountAPI#info)
 - [list](AccountAPI#list)
 - [metadata](AccountAPI#metadata)
 - [setInfo](AccountAPI#setinfo)
-- [transfersCount](AccountAPI#transferscount)
-- [transfersList](AccountAPI#transferslist)
 
 ## Methods
 
-### count
-
-▸ **count**(`url`): `Promise`\<[`IAccountsCountResponse`](../interfaces/IAccountsCountResponse)\>
-
-Returns the number of accounts
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `url` | `string` | API endpoint URL |
-
-#### Returns
-
-`Promise`\<[`IAccountsCountResponse`](../interfaces/IAccountsCountResponse)\>
-
-#### Defined in
-
-[api/account.ts:133](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/account.ts#L133)
-
-___
-
-### electionsList
-
-▸ **electionsList**(`url`, `accountId`, `page?`): `Promise`\<[`IElectionListResponse`](../interfaces/IElectionListResponse)\>
-
-Returns paginated list of elections for a specific account
-
-#### Parameters
-
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `url` | `string` | `undefined` | API endpoint URL |
-| `accountId` | `string` | `undefined` | accountId to get elections |
-| `page` | `number` | `0` | The page number |
-
-#### Returns
-
-`Promise`\<[`IElectionListResponse`](../interfaces/IElectionListResponse)\>
-
-#### Defined in
-
-[api/account.ts:214](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/account.ts#L214)
-
-___
-
-### fees
-
-▸ **fees**(`url`, `account`, `page?`): `Promise`\<[`IChainFeesListResponse`](../interfaces/IChainFeesListResponse)\>
-
-Returns the list of fees by account
-
-#### Parameters
-
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `url` | `string` | `undefined` | {string} url API endpoint URL |
-| `account` | `string` | `undefined` | {string} account The account |
-| `page` | `number` | `0` | {number} page The page number |
-
-#### Returns
-
-`Promise`\<[`IChainFeesListResponse`](../interfaces/IChainFeesListResponse)\>
-
-#### Defined in
-
-[api/account.ts:228](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/account.ts#L228)
-
-___
-
 ### info
 
-▸ **info**(`url`, `accountId`): `Promise`\<`IAccountInfoResponse`\>
+▸ **info**(`url`, `accountId`): `Promise`\<[`IAccountInfoResponse`](../interfaces/IAccountInfoResponse)\>
 
 Fetches an Account information
 
@@ -109,26 +34,26 @@ Fetches an Account information
 
 #### Returns
 
-`Promise`\<`IAccountInfoResponse`\>
+`Promise`\<[`IAccountInfoResponse`](../interfaces/IAccountInfoResponse)\>
 
 #### Defined in
 
-[api/account.ts:146](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/account.ts#L146)
+[src/api/account.ts:114](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/account.ts#L114)
 
 ___
 
 ### list
 
-▸ **list**(`url`, `page?`): `Promise`\<[`IAccountsListResponse`](../interfaces/IAccountsListResponse)\>
+▸ **list**(`url`, `params?`): `Promise`\<[`IAccountsListResponse`](../interfaces/IAccountsListResponse)\>
 
-Returns paginated list of accounts
+Returns list of accounts
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `url` | `string` | `undefined` | API endpoint URL |
-| `page` | `number` | `0` | The page number |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `url` | `string` | API endpoint URL |
+| `params?` | `Partial`\<[`FetchAccountsParametersWithPagination`](../sdk-reference#fetchaccountsparameterswithpagination)\> | The parameters to filter the accounts |
 
 #### Returns
 
@@ -136,7 +61,7 @@ Returns paginated list of accounts
 
 #### Defined in
 
-[api/account.ts:121](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/account.ts#L121)
+[src/api/account.ts:97](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/account.ts#L97)
 
 ___
 
@@ -159,7 +84,7 @@ Fetches the account metadata
 
 #### Defined in
 
-[api/account.ts:159](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/account.ts#L159)
+[src/api/account.ts:127](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/account.ts#L127)
 
 ___
 
@@ -183,51 +108,4 @@ Sets Account information
 
 #### Defined in
 
-[api/account.ts:173](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/account.ts#L173)
-
-___
-
-### transfersCount
-
-▸ **transfersCount**(`url`, `accountId`): `Promise`\<[`IAccountTransfersCountResponse`](../interfaces/IAccountTransfersCountResponse)\>
-
-Returns the account's transfers count
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `url` | `string` | API endpoint URL |
-| `accountId` | `string` | accountId to get the transfers count |
-
-#### Returns
-
-`Promise`\<[`IAccountTransfersCountResponse`](../interfaces/IAccountTransfersCountResponse)\>
-
-#### Defined in
-
-[api/account.ts:200](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/account.ts#L200)
-
-___
-
-### transfersList
-
-▸ **transfersList**(`url`, `accountId`, `page?`): `Promise`\<`IAccountTransfersResponse`\>
-
-Returns paginated list of transfers for a specific account
-
-#### Parameters
-
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `url` | `string` | `undefined` | API endpoint URL |
-| `accountId` | `string` | `undefined` | accountId to get transfers |
-| `page` | `number` | `0` | The page number |
-
-#### Returns
-
-`Promise`\<`IAccountTransfersResponse`\>
-
-#### Defined in
-
-[api/account.ts:187](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/account.ts#L187)
+[src/api/account.ts:141](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/account.ts#L141)

@@ -5,6 +5,57 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.9.1] - 2024-09-17
+
+### Fixed
+
+- Added missing `Buffer` dependency in the remote signer service.
+- Fixed blocks parameters and added `proposerAddress` in the list.
+
+## [0.9.0] - 2024-09-04
+
+### Added
+
+- New `RemoteSigner` signer that can be handled by the client.
+- New election type `QuadraticElection`.
+- Added new count fields information for `AccountData`.
+- New errors generated in the API.
+
+### Changed
+
+-  [**BREAKING**] New pagination system and removed deprecated API functions.
+- Better and new improvements to the SDK bundling system.
+
+### Removed
+
+- Removed archive functionality for elections and all their components.
+- Removed deprecated `autoStart` field from elections.
+
+## [0.8.3] - 2024-06-12
+
+### Added
+
+- Added new transaction for changing an election duration.
+- Added new functions `changeElectionEndDate` and `changeElectionDuration`.
+- Added new raw information when election data is not complete.
+
+### Changed
+
+- Census3 `getStrategyHolders` changed for using queues instead of direct endpoint call.
+
+## [0.8.2] - 2024-06-12
+
+### Added
+
+- Added API fees calls functions for checking all fees and account fees.
+- Added new function to modify an election maximum census size.
+- Added new `delta` parameter when checking for next election identifiers.
+
+### Changed
+
+- Census publishing is done async to avoid 502 errors when uploading large censuses.
+- Modified change census function to accept a new maximum census size.
+
 ## [0.8.1] - 2024-05-21
 
 ### Added
@@ -473,6 +524,10 @@ which extend from the abstract `Election` class.
 
 - First unstable version of the SDK for testing purposes
 
+[0.9.1]: https://github.com/vocdoni/vocdoni-sdk/releases/tag/v0.9.1
+[0.9.0]: https://github.com/vocdoni/vocdoni-sdk/releases/tag/v0.9.0
+[0.8.3]: https://github.com/vocdoni/vocdoni-sdk/releases/tag/v0.8.3
+[0.8.2]: https://github.com/vocdoni/vocdoni-sdk/releases/tag/v0.8.2
 [0.8.1]: https://github.com/vocdoni/vocdoni-sdk/releases/tag/v0.8.1
 [0.8.0]: https://github.com/vocdoni/vocdoni-sdk/releases/tag/v0.8.0
 [0.7.5]: https://github.com/vocdoni/vocdoni-sdk/releases/tag/v0.7.5

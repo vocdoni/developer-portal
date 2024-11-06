@@ -26,7 +26,7 @@
 
 #### Defined in
 
-[api/chain.ts:171](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain.ts#L171)
+[src/api/chain.ts:175](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/chain.ts#L175)
 
 ___
 
@@ -36,7 +36,7 @@ ___
 
 #### Defined in
 
-[api/chain.ts:178](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain.ts#L178)
+[src/api/chain.ts:182](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/chain.ts#L182)
 
 ___
 
@@ -46,7 +46,7 @@ ___
 
 #### Defined in
 
-[api/chain.ts:174](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain.ts#L174)
+[src/api/chain.ts:178](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/chain.ts#L178)
 
 ___
 
@@ -56,7 +56,7 @@ ___
 
 #### Defined in
 
-[api/chain.ts:170](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain.ts#L170)
+[src/api/chain.ts:174](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/chain.ts#L174)
 
 ___
 
@@ -66,7 +66,7 @@ ___
 
 #### Defined in
 
-[api/chain.ts:173](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain.ts#L173)
+[src/api/chain.ts:177](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/chain.ts#L177)
 
 ___
 
@@ -76,7 +76,7 @@ ___
 
 #### Defined in
 
-[api/chain.ts:175](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain.ts#L175)
+[src/api/chain.ts:179](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/chain.ts#L179)
 
 ___
 
@@ -86,7 +86,7 @@ ___
 
 #### Defined in
 
-[api/chain.ts:177](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain.ts#L177)
+[src/api/chain.ts:181](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/chain.ts#L181)
 
 ___
 
@@ -96,7 +96,7 @@ ___
 
 #### Defined in
 
-[api/chain.ts:179](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain.ts#L179)
+[src/api/chain.ts:183](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/chain.ts#L183)
 
 ___
 
@@ -106,7 +106,7 @@ ___
 
 #### Defined in
 
-[api/chain.ts:172](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain.ts#L172)
+[src/api/chain.ts:176](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/chain.ts#L176)
 
 ___
 
@@ -116,7 +116,7 @@ ___
 
 #### Defined in
 
-[api/chain.ts:176](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain.ts#L176)
+[src/api/chain.ts:180](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/chain.ts#L180)
 
 ___
 
@@ -126,4 +126,4 @@ ___
 
 #### Defined in
 
-[api/chain.ts:169](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain.ts#L169)
+[src/api/chain.ts:173](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/chain.ts#L173)

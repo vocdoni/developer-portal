@@ -6,45 +6,11 @@
 
 ### Properties
 
-- [data](IChainBlockInfoResponse#data)
-- [evidence](IChainBlockInfoResponse#evidence)
 - [hash](IChainBlockInfoResponse#hash)
 - [header](IChainBlockInfoResponse#header)
-- [lastCommit](IChainBlockInfoResponse#lastcommit)
+- [txCount](IChainBlockInfoResponse#txcount)
 
 ## Properties
-
-### data
-
-• **data**: `Object`
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `txs` | `string`[] |
-
-#### Defined in
-
-[api/chain.ts:275](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain.ts#L275)
-
-___
-
-### evidence
-
-• **evidence**: `Object`
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `evidence` | `string`[] |
-
-#### Defined in
-
-[api/chain.ts:278](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain.ts#L278)
-
-___
 
 ### hash
 
@@ -52,7 +18,7 @@ ___
 
 #### Defined in
 
-[api/chain.ts:281](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain.ts#L281)
+[src/api/chain.ts:331](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/chain.ts#L331)
 
 ___
 
@@ -83,23 +49,14 @@ ___
 
 #### Defined in
 
-[api/chain.ts:282](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain.ts#L282)
+[src/api/chain.ts:332](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/chain.ts#L332)
 
 ___
 
-### lastCommit
+### txCount
 
-• **lastCommit**: `Object`
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `blockId` | `BlockID` |
-| `height` | `number` |
-| `round` | `number` |
-| `signatures` | \{ `blockIdFlag`: `number` ; `signature`: `string` ; `timestamp`: `string` ; `validatorAddress`: `string`  }[] |
+• **txCount**: `number`
 
 #### Defined in
 
-[api/chain.ts:301](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain.ts#L301)
+[src/api/chain.ts:351](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/chain.ts#L351)

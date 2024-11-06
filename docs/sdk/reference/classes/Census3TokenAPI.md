@@ -45,7 +45,7 @@ promised IFileCIDResponse
 
 #### Defined in
 
-[api/census3/token.ts:226](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/census3/token.ts#L226)
+[src/api/census3/token.ts:226](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/census3/token.ts#L226)
 
 ___
 
@@ -73,7 +73,7 @@ The balance of holder
 
 #### Defined in
 
-[api/census3/token.ts:196](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/census3/token.ts#L196)
+[src/api/census3/token.ts:196](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/census3/token.ts#L196)
 
 ___
 
@@ -96,7 +96,7 @@ Fetches list of already added tokens
 
 #### Defined in
 
-[api/census3/token.ts:148](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/census3/token.ts#L148)
+[src/api/census3/token.ts:148](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/census3/token.ts#L148)
 
 ___
 
@@ -121,7 +121,7 @@ Fetch the full token information
 
 #### Defined in
 
-[api/census3/token.ts:175](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/census3/token.ts#L175)
+[src/api/census3/token.ts:175](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/census3/token.ts#L175)
 
 ___
 
@@ -143,4 +143,4 @@ Fetches list of tokens types
 
 #### Defined in
 
-[api/census3/token.ts:160](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/census3/token.ts#L160)
+[src/api/census3/token.ts:160](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/census3/token.ts#L160)

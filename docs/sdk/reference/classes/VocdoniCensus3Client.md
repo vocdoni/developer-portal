@@ -62,7 +62,7 @@ To instantiate the client just pass the `ClientOptions` you want or use an empty
 
 #### Defined in
 
-[census3.ts:49](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/census3.ts#L49)
+[src/census3.ts:47](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/census3.ts#L47)
 
 ## Methods
 
@@ -87,7 +87,7 @@ The census information
 
 #### Defined in
 
-[census3.ts:379](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/census3.ts#L379)
+[src/census3.ts:398](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/census3.ts#L398)
 
 ___
 
@@ -113,7 +113,7 @@ The strategy id
 
 #### Defined in
 
-[census3.ts:296](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/census3.ts#L296)
+[src/census3.ts:315](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/census3.ts#L315)
 
 ___
 
@@ -138,7 +138,7 @@ The strategy census
 
 #### Defined in
 
-[census3.ts:439](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/census3.ts#L439)
+[src/census3.ts:458](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/census3.ts#L458)
 
 ___
 
@@ -164,7 +164,7 @@ Creates a new token to be tracked in the service
 
 #### Defined in
 
-[census3.ts:164](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/census3.ts#L164)
+[src/census3.ts:162](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/census3.ts#L162)
 
 ___
 
@@ -191,7 +191,7 @@ The token census
 
 #### Defined in
 
-[census3.ts:416](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/census3.ts#L416)
+[src/census3.ts:435](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/census3.ts#L435)
 
 ___
 
@@ -215,7 +215,7 @@ The census3 census
 
 #### Defined in
 
-[census3.ts:367](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/census3.ts#L367)
+[src/census3.ts:386](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/census3.ts#L386)
 
 ___
 
@@ -239,7 +239,7 @@ The list of census3 censuses
 
 #### Defined in
 
-[census3.ts:356](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/census3.ts#L356)
+[src/census3.ts:375](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/census3.ts#L375)
 
 ___
 
@@ -265,7 +265,7 @@ The predicate estimation
 
 #### Defined in
 
-[census3.ts:252](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/census3.ts#L252)
+[src/census3.ts:271](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/census3.ts#L271)
 
 ___
 
@@ -283,7 +283,7 @@ The list of strategies
 
 #### Defined in
 
-[census3.ts:182](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/census3.ts#L182)
+[src/census3.ts:180](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/census3.ts#L180)
 
 ___
 
@@ -309,7 +309,7 @@ The list of strategies
 
 #### Defined in
 
-[census3.ts:208](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/census3.ts#L208)
+[src/census3.ts:227](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/census3.ts#L227)
 
 ___
 
@@ -333,7 +333,7 @@ The strategy information
 
 #### Defined in
 
-[census3.ts:222](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/census3.ts#L222)
+[src/census3.ts:241](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/census3.ts#L241)
 
 ___
 
@@ -358,13 +358,13 @@ The strategy estimation
 
 #### Defined in
 
-[census3.ts:234](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/census3.ts#L234)
+[src/census3.ts:253](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/census3.ts#L253)
 
 ___
 
 ### getStrategyHolders
 
-▸ **getStrategyHolders**(`id`, `pagination?`): `Promise`\<[`StrategyHolders`](../sdk-reference#strategyholders)\>
+▸ **getStrategyHolders**(`id`): `Promise`\<[`StrategyHolders`](../sdk-reference#strategyholders)\>
 
 Returns the strategy holders
 
@@ -373,7 +373,6 @@ Returns the strategy holders
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `id` | `number` | The id of the strategy |
-| `pagination` | `Census3Pagination` | Pagination options |
 
 #### Returns
 
@@ -383,7 +382,7 @@ The list strategy holders
 
 #### Defined in
 
-[census3.ts:193](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/census3.ts#L193)
+[src/census3.ts:190](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/census3.ts#L190)
 
 ___
 
@@ -401,7 +400,7 @@ Supported chain list
 
 #### Defined in
 
-[census3.ts:77](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/census3.ts#L77)
+[src/census3.ts:75](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/census3.ts#L75)
 
 ___
 
@@ -419,7 +418,7 @@ Supported strategies operators list
 
 #### Defined in
 
-[census3.ts:95](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/census3.ts#L95)
+[src/census3.ts:93](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/census3.ts#L93)
 
 ___
 
@@ -437,7 +436,7 @@ Token summary list
 
 #### Defined in
 
-[census3.ts:62](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/census3.ts#L62)
+[src/census3.ts:60](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/census3.ts#L60)
 
 ___
 
@@ -455,7 +454,7 @@ Supported tokens type list
 
 #### Defined in
 
-[census3.ts:86](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/census3.ts#L86)
+[src/census3.ts:84](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/census3.ts#L84)
 
 ___
 
@@ -481,7 +480,7 @@ The token information
 
 #### Defined in
 
-[census3.ts:107](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/census3.ts#L107)
+[src/census3.ts:105](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/census3.ts#L105)
 
 ___
 
@@ -505,7 +504,7 @@ The strategy information
 
 #### Defined in
 
-[census3.ts:311](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/census3.ts#L311)
+[src/census3.ts:330](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/census3.ts#L330)
 
 ___
 
@@ -532,7 +531,7 @@ If the holder is in the token
 
 #### Defined in
 
-[census3.ts:125](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/census3.ts#L125)
+[src/census3.ts:123](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/census3.ts#L123)
 
 ___
 
@@ -559,7 +558,7 @@ The balance of the holder
 
 #### Defined in
 
-[census3.ts:146](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/census3.ts#L146)
+[src/census3.ts:144](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/census3.ts#L144)
 
 ___
 
@@ -583,7 +582,7 @@ The parsed predicate
 
 #### Defined in
 
-[census3.ts:345](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/census3.ts#L345)
+[src/census3.ts:364](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/census3.ts#L364)
 
 ## Properties
 
@@ -600,7 +599,7 @@ The parsed predicate
 
 #### Defined in
 
-[census3.ts:38](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/census3.ts#L38)
+[src/census3.ts:36](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/census3.ts#L36)
 
 ___
 
@@ -610,4 +609,4 @@ ___
 
 #### Defined in
 
-[census3.ts:37](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/census3.ts#L37)
+[src/census3.ts:35](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/census3.ts#L35)

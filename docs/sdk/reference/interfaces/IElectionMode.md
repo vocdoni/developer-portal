@@ -6,25 +6,12 @@
 
 ### Properties
 
-- [autoStart](IElectionMode#autostart)
 - [dynamicCensus](IElectionMode#dynamiccensus)
 - [encryptedMetaData](IElectionMode#encryptedmetadata)
 - [interruptible](IElectionMode#interruptible)
 - [preRegister](IElectionMode#preregister)
 
 ## Properties
-
-### autoStart
-
-• **autoStart**: `boolean`
-
-If the election should start automatically
-
-#### Defined in
-
-[api/election.ts:75](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/election.ts#L75)
-
-___
 
 ### dynamicCensus
 
@@ -34,7 +21,7 @@ If the election has a dynamic census
 
 #### Defined in
 
-[api/election.ts:85](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/election.ts#L85)
+[src/api/election.ts:78](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/election.ts#L78)
 
 ___
 
@@ -46,7 +33,7 @@ If the election has encrypted metadata
 
 #### Defined in
 
-[api/election.ts:90](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/election.ts#L90)
+[src/api/election.ts:83](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/election.ts#L83)
 
 ___
 
@@ -58,7 +45,7 @@ If the election is interruptible
 
 #### Defined in
 
-[api/election.ts:80](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/election.ts#L80)
+[src/api/election.ts:73](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/election.ts#L73)
 
 ___
 
@@ -70,4 +57,4 @@ If the election has preregister phase
 
 #### Defined in
 
-[api/election.ts:95](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/election.ts#L95)
+[src/api/election.ts:88](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/election.ts#L88)

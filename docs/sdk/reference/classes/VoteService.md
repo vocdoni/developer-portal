@@ -54,7 +54,7 @@ Service.constructor
 
 #### Defined in
 
-[services/vote.ts:45](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/services/vote.ts#L45)
+[src/services/vote.ts:52](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/services/vote.ts#L52)
 
 ## Methods
 
@@ -74,13 +74,13 @@ Service.constructor
 
 #### Defined in
 
-[services/vote.ts:58](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/services/vote.ts#L58)
+[src/services/vote.ts:69](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/services/vote.ts#L69)
 
 ___
 
 ### info
 
-▸ **info**(`voteId`): `Promise`\<[`IVoteInfoResponse`](../interfaces/IVoteInfoResponse)\>
+▸ **info**(`voteId`): `Promise`\<[`VoteInfoResponse`](../sdk-reference#voteinforesponse)\>
 
 Get the vote information
 
@@ -92,11 +92,11 @@ Get the vote information
 
 #### Returns
 
-`Promise`\<[`IVoteInfoResponse`](../interfaces/IVoteInfoResponse)\>
+`Promise`\<[`VoteInfoResponse`](../sdk-reference#voteinforesponse)\>
 
 #### Defined in
 
-[services/vote.ts:68](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/services/vote.ts#L68)
+[src/services/vote.ts:79](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/services/vote.ts#L79)
 
 ___
 
@@ -110,7 +110,7 @@ ___
 | :------ | :------ |
 | `tx` | `Uint8Array` |
 | `message` | `string` |
-| `walletOrSigner` | `Signer` \| `Wallet` |
+| `walletOrSigner` | `Signer` \| `Wallet` \| [`RemoteSigner`](RemoteSigner) |
 
 #### Returns
 
@@ -118,7 +118,7 @@ ___
 
 #### Defined in
 
-[services/vote.ts:50](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/services/vote.ts#L50)
+[src/services/vote.ts:57](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/services/vote.ts#L57)
 
 ___
 
@@ -140,7 +140,7 @@ Submit the vote to the chain
 
 #### Defined in
 
-[services/vote.ts:79](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/services/vote.ts#L79)
+[src/services/vote.ts:90](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/services/vote.ts#L90)
 
 ## Properties
 
@@ -154,7 +154,7 @@ VoteServiceProperties.chainService
 
 #### Defined in
 
-[services/vote.ts:38](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/services/vote.ts#L38)
+[src/services/vote.ts:45](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/services/vote.ts#L45)
 
 ___
 
@@ -168,4 +168,4 @@ ___
 
 #### Defined in
 
-[services/service.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/services/service.ts#L6)
+[src/services/service.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/services/service.ts#L6)

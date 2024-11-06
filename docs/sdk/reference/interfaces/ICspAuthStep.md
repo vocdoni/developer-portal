@@ -19,7 +19,7 @@ The title of the step
 
 #### Defined in
 
-[api/csp.ts:15](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/csp.ts#L15)
+[src/api/csp.ts:15](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/csp.ts#L15)
 
 ___
 
@@ -31,4 +31,4 @@ The type of data of the step
 
 #### Defined in
 
-[api/csp.ts:20](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/csp.ts#L20)
+[src/api/csp.ts:20](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/csp.ts#L20)

@@ -34,7 +34,7 @@ Represents a vote
 
 #### Defined in
 
-[types/vote/vote.ts:16](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/types/vote/vote.ts#L16)
+[src/types/vote/vote.ts:16](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/types/vote/vote.ts#L16)
 
 • `set` **votes**(`value`): `void`
 
@@ -50,7 +50,7 @@ Represents a vote
 
 #### Defined in
 
-[types/vote/vote.ts:20](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/types/vote/vote.ts#L20)
+[src/types/vote/vote.ts:20](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/types/vote/vote.ts#L20)
 
 ## Constructors
 
@@ -72,4 +72,4 @@ Constructs a vote
 
 #### Defined in
 
-[types/vote/vote.ts:12](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/types/vote/vote.ts#L12)
+[src/types/vote/vote.ts:12](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/types/vote/vote.ts#L12)

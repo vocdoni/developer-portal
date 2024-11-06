@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `API`
+- [`API`](API)
 
   ↳ **`CensusAPI`**
 
@@ -13,12 +13,14 @@
 ### Methods
 
 - [add](CensusAPI#add)
+- [check](CensusAPI#check)
 - [create](CensusAPI#create)
 - [delete](CensusAPI#delete)
 - [export](CensusAPI#export)
 - [import](CensusAPI#import)
 - [proof](CensusAPI#proof)
-- [publish](CensusAPI#publish)
+- [publishAsync](CensusAPI#publishasync)
+- [publishSync](CensusAPI#publishsync)
 - [size](CensusAPI#size)
 - [type](CensusAPI#type)
 - [weight](CensusAPI#weight)
@@ -46,7 +48,33 @@ Adds participants to a census
 
 #### Defined in
 
-[api/census.ts:151](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/census.ts#L151)
+[src/api/census.ts:161](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/census.ts#L161)
+
+___
+
+### check
+
+▸ **check**(`url`, `authToken`, `censusId`): `Promise`\<[`ICensusPublishResponse`](../interfaces/ICensusPublishResponse)\>
+
+Checks that the census is published
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `url` | `string` | API endpoint URL |
+| `authToken` | `string` | Authentication token |
+| `censusId` | `string` | The census ID we're checking |
+
+#### Returns
+
+`Promise`\<[`ICensusPublishResponse`](../interfaces/ICensusPublishResponse)\>
+
+on success
+
+#### Defined in
+
+[src/api/census.ts:235](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/census.ts#L235)
 
 ___
 
@@ -70,7 +98,7 @@ Create's a new census in the API.
 
 #### Defined in
 
-[api/census.ts:132](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/census.ts#L132)
+[src/api/census.ts:142](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/census.ts#L142)
 
 ___
 
@@ -96,7 +124,7 @@ on success
 
 #### Defined in
 
-[api/census.ts:273](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/census.ts#L273)
+[src/api/census.ts:326](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/census.ts#L326)
 
 ___
 
@@ -122,7 +150,7 @@ on success
 
 #### Defined in
 
-[api/census.ts:221](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/census.ts#L221)
+[src/api/census.ts:274](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/census.ts#L274)
 
 ___
 
@@ -151,7 +179,7 @@ on success
 
 #### Defined in
 
-[api/census.ts:243](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/census.ts#L243)
+[src/api/census.ts:296](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/census.ts#L296)
 
 ___
 
@@ -177,13 +205,39 @@ on success
 
 #### Defined in
 
-[api/census.ts:206](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/census.ts#L206)
+[src/api/census.ts:259](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/census.ts#L259)
 
 ___
 
-### publish
+### publishAsync
 
-▸ **publish**(`url`, `authToken`, `censusId`): `Promise`\<[`ICensusPublishResponse`](../interfaces/ICensusPublishResponse)\>
+▸ **publishAsync**(`url`, `authToken`, `censusId`): `Promise`\<[`ICensusPublishAsyncResponse`](../interfaces/ICensusPublishAsyncResponse)\>
+
+Publishes the census using an async call
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `url` | `string` | API endpoint URL |
+| `authToken` | `string` | Authentication token |
+| `censusId` | `string` | The census ID we're publishing |
+
+#### Returns
+
+`Promise`\<[`ICensusPublishAsyncResponse`](../interfaces/ICensusPublishAsyncResponse)\>
+
+on success
+
+#### Defined in
+
+[src/api/census.ts:216](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/census.ts#L216)
+
+___
+
+### publishSync
+
+▸ **publishSync**(`url`, `authToken`, `censusId`): `Promise`\<[`ICensusPublishResponse`](../interfaces/ICensusPublishResponse)\>
 
 Publishes the census, so it can be used in processes
 
@@ -203,7 +257,7 @@ on success
 
 #### Defined in
 
-[api/census.ts:187](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/census.ts#L187)
+[src/api/census.ts:197](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/census.ts#L197)
 
 ___
 
@@ -226,7 +280,7 @@ Returns the size of a given census
 
 #### Defined in
 
-[api/census.ts:290](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/census.ts#L290)
+[src/api/census.ts:343](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/census.ts#L343)
 
 ___
 
@@ -249,7 +303,7 @@ Returns the type of given census
 
 #### Defined in
 
-[api/census.ts:316](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/census.ts#L316)
+[src/api/census.ts:369](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/census.ts#L369)
 
 ___
 
@@ -272,4 +326,4 @@ Returns the weight of a given census
 
 #### Defined in
 
-[api/census.ts:303](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/census.ts#L303)
+[src/api/census.ts:356](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/census.ts#L356)

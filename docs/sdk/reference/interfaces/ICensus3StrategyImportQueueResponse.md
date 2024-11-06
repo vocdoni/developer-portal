@@ -21,7 +21,7 @@ The imported data strategy
 
 #### Defined in
 
-[api/census3/strategy.ts:178](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/census3/strategy.ts#L178)
+[src/api/census3/strategy.ts:165](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/census3/strategy.ts#L165)
 
 ___
 
@@ -33,7 +33,7 @@ If the queue has been done
 
 #### Defined in
 
-[api/census3/strategy.ts:158](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/census3/strategy.ts#L158)
+[src/api/census3/strategy.ts:145](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/census3/strategy.ts#L145)
 
 ___
 
@@ -52,7 +52,7 @@ The error of the queue
 
 #### Defined in
 
-[api/census3/strategy.ts:163](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/census3/strategy.ts#L163)
+[src/api/census3/strategy.ts:150](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/census3/strategy.ts#L150)
 
 ___
 
@@ -64,4 +64,4 @@ The importing progress
 
 #### Defined in
 
-[api/census3/strategy.ts:183](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/census3/strategy.ts#L183)
+[src/api/census3/strategy.ts:170](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/census3/strategy.ts#L170)

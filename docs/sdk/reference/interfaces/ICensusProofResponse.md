@@ -23,7 +23,7 @@ The proof for the given key
 
 #### Defined in
 
-[api/census.ts:83](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/census.ts#L83)
+[src/api/census.ts:93](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/census.ts#L93)
 
 ___
 
@@ -35,7 +35,7 @@ The root (id) of the census
 
 #### Defined in
 
-[api/census.ts:78](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/census.ts#L78)
+[src/api/census.ts:88](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/census.ts#L88)
 
 ___
 
@@ -47,7 +47,7 @@ The census siblings
 
 #### Defined in
 
-[api/census.ts:93](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/census.ts#L93)
+[src/api/census.ts:103](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/census.ts#L103)
 
 ___
 
@@ -59,7 +59,7 @@ The type of the census
 
 #### Defined in
 
-[api/census.ts:68](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/census.ts#L68)
+[src/api/census.ts:78](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/census.ts#L78)
 
 ___
 
@@ -71,7 +71,7 @@ The value for the given key
 
 #### Defined in
 
-[api/census.ts:88](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/census.ts#L88)
+[src/api/census.ts:98](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/census.ts#L98)
 
 ___
 
@@ -83,4 +83,4 @@ The weight as a string
 
 #### Defined in
 
-[api/census.ts:73](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/census.ts#L73)
+[src/api/census.ts:83](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/census.ts#L83)

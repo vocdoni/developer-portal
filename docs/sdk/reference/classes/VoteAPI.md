@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `API`
+- [`API`](API)
 
   ↳ **`VoteAPI`**
 
@@ -13,6 +13,7 @@
 ### Methods
 
 - [info](VoteAPI#info)
+- [list](VoteAPI#list)
 - [submit](VoteAPI#submit)
 - [verify](VoteAPI#verify)
 
@@ -20,7 +21,7 @@
 
 ### info
 
-▸ **info**(`url`, `voteId`): `Promise`\<[`IVoteInfoResponse`](../interfaces/IVoteInfoResponse)\>
+▸ **info**(`url`, `voteId`): `Promise`\<[`VoteInfoResponse`](../sdk-reference#voteinforesponse)\>
 
 Vote info
 
@@ -33,11 +34,34 @@ Vote info
 
 #### Returns
 
-`Promise`\<[`IVoteInfoResponse`](../interfaces/IVoteInfoResponse)\>
+`Promise`\<[`VoteInfoResponse`](../sdk-reference#voteinforesponse)\>
 
 #### Defined in
 
-[api/vote.ts:127](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/vote.ts#L127)
+[src/api/vote.ts:143](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/vote.ts#L143)
+
+___
+
+### list
+
+▸ **list**(`url`, `params?`): `Promise`\<[`IVoteListResponse`](../interfaces/IVoteListResponse)\>
+
+Fetches the vote list
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `url` | `string` | API endpoint URL |
+| `params?` | `Partial`\<[`FetchVotesParametersWithPagination`](../sdk-reference#fetchvotesparameterswithpagination)\> | The parameters to filter the votes |
+
+#### Returns
+
+`Promise`\<[`IVoteListResponse`](../interfaces/IVoteListResponse)\>
+
+#### Defined in
+
+[src/api/vote.ts:156](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/vote.ts#L156)
 
 ___
 
@@ -45,7 +69,7 @@ ___
 
 ▸ **submit**(`url`, `payload`): `Promise`\<[`IVoteSubmitResponse`](../interfaces/IVoteSubmitResponse)\>
 
-Voting
+Submits a payload representing the vote transaction to the chain
 
 #### Parameters
 
@@ -60,13 +84,13 @@ Voting
 
 #### Defined in
 
-[api/vote.ts:113](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/vote.ts#L113)
+[src/api/vote.ts:129](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/vote.ts#L129)
 
 ___
 
 ### verify
 
-▸ **verify**(`url`, `processId`, `voteId`): `Promise`\<`boolean`\>
+▸ **verify**(`url`, `electionId`, `voteId`): `Promise`\<`boolean`\>
 
 Verify vote. A vote exists in a process.
 
@@ -75,7 +99,7 @@ Verify vote. A vote exists in a process.
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `url` | `string` | API endpoint URL |
-| `processId` | `string` | The process identifier |
+| `electionId` | `string` | The process identifier |
 | `voteId` | `string` | The identifier of the vote |
 
 #### Returns
@@ -86,4 +110,4 @@ Return true if response has status 200
 
 #### Defined in
 
-[api/vote.ts:143](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/vote.ts#L143)
+[src/api/vote.ts:173](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/vote.ts#L173)
