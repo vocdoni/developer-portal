@@ -19,7 +19,7 @@
 
 #### Defined in
 
-[services/csp.ts:15](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/services/csp.ts#L15)
+[src/services/csp.ts:15](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/services/csp.ts#L15)
 
 ___
 
@@ -29,7 +29,7 @@ ___
 
 #### Defined in
 
-[services/csp.ts:17](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/services/csp.ts#L17)
+[src/services/csp.ts:17](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/services/csp.ts#L17)
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 #### Defined in
 
-[services/csp.ts:18](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/services/csp.ts#L18)
+[src/services/csp.ts:18](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/services/csp.ts#L18)
 
 ___
 
@@ -49,4 +49,4 @@ ___
 
 #### Defined in
 
-[services/csp.ts:16](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/services/csp.ts#L16)
+[src/services/csp.ts:16](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/services/csp.ts#L16)

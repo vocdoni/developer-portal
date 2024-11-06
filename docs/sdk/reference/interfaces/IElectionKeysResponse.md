@@ -17,7 +17,7 @@
 
 #### Defined in
 
-[api/election.ts:267](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/election.ts#L267)
+[src/api/election.ts:255](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/election.ts#L255)
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 #### Defined in
 
-[api/election.ts:266](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/election.ts#L266)
+[src/api/election.ts:254](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/election.ts#L254)

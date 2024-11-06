@@ -50,7 +50,7 @@ Service.constructor
 
 #### Defined in
 
-[services/file.ts:16](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/services/file.ts#L16)
+[src/services/file.ts:16](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/services/file.ts#L16)
 
 ## Methods
 
@@ -74,7 +74,7 @@ Resulting CID
 
 #### Defined in
 
-[services/file.ts:27](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/services/file.ts#L27)
+[src/services/file.ts:27](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/services/file.ts#L27)
 
 ## Properties
 
@@ -88,4 +88,4 @@ Resulting CID
 
 #### Defined in
 
-[services/service.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/services/service.ts#L6)
+[src/services/service.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/services/service.ts#L6)

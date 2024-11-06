@@ -58,7 +58,7 @@ Service.constructor
 
 #### Defined in
 
-[services/chain.ts:47](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/services/chain.ts#L47)
+[src/services/chain.ts:84](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/services/chain.ts#L84)
 
 ## Methods
 
@@ -82,7 +82,7 @@ The block number
 
 #### Defined in
 
-[services/chain.ts:112](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/services/chain.ts#L112)
+[src/services/chain.ts:149](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/services/chain.ts#L149)
 
 ___
 
@@ -98,7 +98,7 @@ Fetches blockchain costs information if needed.
 
 #### Defined in
 
-[services/chain.ts:72](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/services/chain.ts#L72)
+[src/services/chain.ts:109](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/services/chain.ts#L109)
 
 ___
 
@@ -114,7 +114,7 @@ Fetches blockchain information if needed.
 
 #### Defined in
 
-[services/chain.ts:56](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/services/chain.ts#L56)
+[src/services/chain.ts:93](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/services/chain.ts#L93)
 
 ___
 
@@ -138,13 +138,13 @@ The transaction hash
 
 #### Defined in
 
-[services/chain.ts:90](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/services/chain.ts#L90)
+[src/services/chain.ts:127](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/services/chain.ts#L127)
 
 ___
 
 ### txInfo
 
-▸ **txInfo**(`txHash`): `Promise`\<[`IChainTxReference`](../interfaces/IChainTxReference)\>
+▸ **txInfo**(`txHash`): `Promise`\<[`Tx`](../interfaces/Tx)\>
 
 Fetches information about a transaction from the blockchain.
 
@@ -156,13 +156,13 @@ Fetches information about a transaction from the blockchain.
 
 #### Returns
 
-`Promise`\<[`IChainTxReference`](../interfaces/IChainTxReference)\>
+`Promise`\<[`Tx`](../interfaces/Tx)\>
 
 The chain transaction
 
 #### Defined in
 
-[services/chain.ts:101](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/services/chain.ts#L101)
+[src/services/chain.ts:138](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/services/chain.ts#L138)
 
 ___
 
@@ -188,7 +188,7 @@ it fails.
 
 #### Defined in
 
-[services/chain.ts:126](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/services/chain.ts#L126)
+[src/services/chain.ts:163](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/services/chain.ts#L163)
 
 ## Properties
 
@@ -202,7 +202,7 @@ ChainServiceProperties.chainCosts
 
 #### Defined in
 
-[services/chain.ts:38](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/services/chain.ts#L38)
+[src/services/chain.ts:75](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/services/chain.ts#L75)
 
 ___
 
@@ -216,7 +216,7 @@ ChainServiceProperties.chainData
 
 #### Defined in
 
-[services/chain.ts:39](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/services/chain.ts#L39)
+[src/services/chain.ts:76](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/services/chain.ts#L76)
 
 ___
 
@@ -230,7 +230,7 @@ ChainServiceProperties.txWait
 
 #### Defined in
 
-[services/chain.ts:40](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/services/chain.ts#L40)
+[src/services/chain.ts:77](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/services/chain.ts#L77)
 
 ___
 
@@ -244,4 +244,4 @@ ___
 
 #### Defined in
 
-[services/service.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/services/service.ts#L6)
+[src/services/service.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/services/service.ts#L6)

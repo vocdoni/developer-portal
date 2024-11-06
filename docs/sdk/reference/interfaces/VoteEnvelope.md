@@ -23,7 +23,7 @@ On encrypted votes, contains the (sorted) indexes of the keys used to encrypt
 
 #### Defined in
 
-[api/chain/transactions.ts:80](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain/transactions.ts#L80)
+[src/api/chain/transactions.ts:81](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/chain/transactions.ts#L81)
 
 ___
 
@@ -35,7 +35,7 @@ Unique number per vote attempt, so that replay attacks can't reuse this payload
 
 #### Defined in
 
-[api/chain/transactions.ts:60](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain/transactions.ts#L60)
+[src/api/chain/transactions.ts:61](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/chain/transactions.ts#L61)
 
 ___
 
@@ -47,7 +47,7 @@ Hash of the private key + processId
 
 #### Defined in
 
-[api/chain/transactions.ts:76](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain/transactions.ts#L76)
+[src/api/chain/transactions.ts:77](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/chain/transactions.ts#L77)
 
 ___
 
@@ -59,7 +59,7 @@ The process for which the vote is casted
 
 #### Defined in
 
-[api/chain/transactions.ts:64](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain/transactions.ts#L64)
+[src/api/chain/transactions.ts:65](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/chain/transactions.ts#L65)
 
 ___
 
@@ -71,7 +71,7 @@ Franchise proof
 
 #### Defined in
 
-[api/chain/transactions.ts:68](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain/transactions.ts#L68)
+[src/api/chain/transactions.ts:69](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/chain/transactions.ts#L69)
 
 ___
 
@@ -83,4 +83,4 @@ JSON string of the Vote Package (potentially encrypted), encoded as bytes.
 
 #### Defined in
 
-[api/chain/transactions.ts:72](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain/transactions.ts#L72)
+[src/api/chain/transactions.ts:73](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/chain/transactions.ts#L73)

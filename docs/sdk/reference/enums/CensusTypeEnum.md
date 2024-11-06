@@ -24,7 +24,7 @@
 
 #### Defined in
 
-[api/election.ts:150](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/election.ts#L150)
+[src/api/election.ts:143](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/election.ts#L143)
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 #### Defined in
 
-[api/election.ts:156](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/election.ts#L156)
+[src/api/election.ts:149](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/election.ts#L149)
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 #### Defined in
 
-[api/election.ts:154](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/election.ts#L154)
+[src/api/election.ts:147](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/election.ts#L147)
 
 ___
 
@@ -54,7 +54,7 @@ ___
 
 #### Defined in
 
-[api/election.ts:155](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/election.ts#L155)
+[src/api/election.ts:148](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/election.ts#L148)
 
 ___
 
@@ -64,7 +64,7 @@ ___
 
 #### Defined in
 
-[api/election.ts:157](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/election.ts#L157)
+[src/api/election.ts:150](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/election.ts#L150)
 
 ___
 
@@ -74,7 +74,7 @@ ___
 
 #### Defined in
 
-[api/election.ts:158](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/election.ts#L158)
+[src/api/election.ts:151](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/election.ts#L151)
 
 ___
 
@@ -84,7 +84,7 @@ ___
 
 #### Defined in
 
-[api/election.ts:153](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/election.ts#L153)
+[src/api/election.ts:146](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/election.ts#L146)
 
 ___
 
@@ -94,7 +94,7 @@ ___
 
 #### Defined in
 
-[api/election.ts:151](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/election.ts#L151)
+[src/api/election.ts:144](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/election.ts#L144)
 
 ___
 
@@ -104,4 +104,4 @@ ___
 
 #### Defined in
 
-[api/election.ts:152](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/election.ts#L152)
+[src/api/election.ts:145](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/election.ts#L145)

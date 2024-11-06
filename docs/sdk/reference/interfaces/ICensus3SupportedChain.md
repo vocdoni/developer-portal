@@ -20,7 +20,7 @@ The identifier of the chain
 
 #### Defined in
 
-[api/census3/service.ts:12](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/census3/service.ts#L12)
+[src/api/census3/service.ts:12](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/census3/service.ts#L12)
 
 ___
 
@@ -32,7 +32,7 @@ The name of the chain
 
 #### Defined in
 
-[api/census3/service.ts:22](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/census3/service.ts#L22)
+[src/api/census3/service.ts:22](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/census3/service.ts#L22)
 
 ___
 
@@ -44,4 +44,4 @@ The short name of the chain
 
 #### Defined in
 
-[api/census3/service.ts:17](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/census3/service.ts#L17)
+[src/api/census3/service.ts:17](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/census3/service.ts#L17)

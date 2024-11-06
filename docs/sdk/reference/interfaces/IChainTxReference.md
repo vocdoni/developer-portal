@@ -6,68 +6,81 @@
 
 ### Properties
 
-- [blockHeight](IChainTxReference#blockheight)
-- [transactionHash](IChainTxReference#transactionhash)
-- [transactionIndex](IChainTxReference#transactionindex)
-- [transactionNumber](IChainTxReference#transactionnumber)
-- [transactionType](IChainTxReference#transactiontype)
+- [hash](IChainTxReference#hash)
+- [height](IChainTxReference#height)
+- [index](IChainTxReference#index)
+- [signer](IChainTxReference#signer)
+- [subtype](IChainTxReference#subtype)
+- [type](IChainTxReference#type)
 
 ## Properties
 
-### blockHeight
+### hash
 
-• **blockHeight**: `number`
-
-The number of the block where the transaction is.
-
-#### Defined in
-
-[api/chain.ts:196](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain.ts#L196)
-
-___
-
-### transactionHash
-
-• **transactionHash**: `string`
+• **hash**: `string`
 
 The hash of the transaction.
 
 #### Defined in
 
-[api/chain.ts:191](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain.ts#L191)
+[src/api/chain.ts:210](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/chain.ts#L210)
 
 ___
 
-### transactionIndex
+### height
 
-• **transactionIndex**: `number`
+• **height**: `number`
+
+The number of the block where the transaction is.
+
+#### Defined in
+
+[src/api/chain.ts:215](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/chain.ts#L215)
+
+___
+
+### index
+
+• **index**: `number`
 
 The index of the transaction inside the block.
 
 #### Defined in
 
-[api/chain.ts:201](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain.ts#L201)
+[src/api/chain.ts:220](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/chain.ts#L220)
 
 ___
 
-### transactionNumber
+### signer
 
-• **transactionNumber**: `number`
+• **signer**: `string`
 
-The number of the transaction.
+The signer of the transaction.
 
 #### Defined in
 
-[api/chain.ts:186](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain.ts#L186)
+[src/api/chain.ts:235](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/chain.ts#L235)
 
 ___
 
-### transactionType
+### subtype
 
-• **transactionType**: [`TransactionType`](../enums/TransactionType)
+• **subtype**: `string`
+
+The subtype of the transaction.
+
+#### Defined in
+
+[src/api/chain.ts:230](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/chain.ts#L230)
+
+___
+
+### type
+
+• **type**: [`TransactionType`](../enums/TransactionType)
 
 The type of the transaction.
 
 #### Defined in
 
-[api/chain.ts:206](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain.ts#L206)
+[src/api/chain.ts:225](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/chain.ts#L225)

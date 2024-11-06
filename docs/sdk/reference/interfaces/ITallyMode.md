@@ -22,7 +22,7 @@ The cost exponent of the vote
 
 #### Defined in
 
-[api/election.ts:122](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/election.ts#L122)
+[src/api/election.ts:115](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/election.ts#L115)
 
 ___
 
@@ -34,7 +34,7 @@ The max count of the vote's values sum
 
 #### Defined in
 
-[api/election.ts:102](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/election.ts#L102)
+[src/api/election.ts:95](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/election.ts#L95)
 
 ___
 
@@ -46,7 +46,7 @@ The max total cost of the votes
 
 #### Defined in
 
-[api/election.ts:117](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/election.ts#L117)
+[src/api/election.ts:110](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/election.ts#L110)
 
 ___
 
@@ -58,7 +58,7 @@ The max value of the vote's values
 
 #### Defined in
 
-[api/election.ts:107](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/election.ts#L107)
+[src/api/election.ts:100](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/election.ts#L100)
 
 ___
 
@@ -70,4 +70,4 @@ The max number of votes overwrites
 
 #### Defined in
 
-[api/election.ts:112](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/election.ts#L112)
+[src/api/election.ts:105](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/election.ts#L105)

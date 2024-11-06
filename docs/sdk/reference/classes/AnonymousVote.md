@@ -34,7 +34,7 @@ Represents a vote
 
 #### Defined in
 
-[types/vote/anonymous.ts:20](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/types/vote/anonymous.ts#L20)
+[src/types/vote/anonymous.ts:20](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/types/vote/anonymous.ts#L20)
 
 • `set` **password**(`value`): `void`
 
@@ -50,7 +50,7 @@ Represents a vote
 
 #### Defined in
 
-[types/vote/anonymous.ts:24](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/types/vote/anonymous.ts#L24)
+[src/types/vote/anonymous.ts:24](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/types/vote/anonymous.ts#L24)
 
 ___
 
@@ -64,7 +64,7 @@ ___
 
 #### Defined in
 
-[types/vote/anonymous.ts:28](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/types/vote/anonymous.ts#L28)
+[src/types/vote/anonymous.ts:28](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/types/vote/anonymous.ts#L28)
 
 • `set` **signature**(`value`): `void`
 
@@ -80,7 +80,7 @@ ___
 
 #### Defined in
 
-[types/vote/anonymous.ts:32](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/types/vote/anonymous.ts#L32)
+[src/types/vote/anonymous.ts:32](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/types/vote/anonymous.ts#L32)
 
 ___
 
@@ -98,7 +98,7 @@ Vote.votes
 
 #### Defined in
 
-[types/vote/vote.ts:16](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/types/vote/vote.ts#L16)
+[src/types/vote/vote.ts:16](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/types/vote/vote.ts#L16)
 
 • `set` **votes**(`value`): `void`
 
@@ -118,7 +118,7 @@ Vote.votes
 
 #### Defined in
 
-[types/vote/vote.ts:20](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/types/vote/vote.ts#L20)
+[src/types/vote/vote.ts:20](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/types/vote/vote.ts#L20)
 
 ## Constructors
 
@@ -146,4 +146,4 @@ Constructs an anonymous vote
 
 #### Defined in
 
-[types/vote/anonymous.ts:14](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/types/vote/anonymous.ts#L14)
+[src/types/vote/anonymous.ts:14](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/types/vote/anonymous.ts#L14)

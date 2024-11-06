@@ -27,7 +27,7 @@
 
 #### Defined in
 
-[services/anonymous.ts:43](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/services/anonymous.ts#L43)
+[src/services/anonymous.ts:44](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/services/anonymous.ts#L44)
 
 ___
 
@@ -37,7 +37,7 @@ ___
 
 #### Defined in
 
-[services/anonymous.ts:38](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/services/anonymous.ts#L38)
+[src/services/anonymous.ts:39](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/services/anonymous.ts#L39)
 
 ___
 
@@ -47,7 +47,7 @@ ___
 
 #### Defined in
 
-[services/anonymous.ts:41](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/services/anonymous.ts#L41)
+[src/services/anonymous.ts:42](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/services/anonymous.ts#L42)
 
 ___
 
@@ -57,7 +57,7 @@ ___
 
 #### Defined in
 
-[services/anonymous.ts:48](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/services/anonymous.ts#L48)
+[src/services/anonymous.ts:49](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/services/anonymous.ts#L49)
 
 ___
 
@@ -67,7 +67,7 @@ ___
 
 #### Defined in
 
-[services/anonymous.ts:36](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/services/anonymous.ts#L36)
+[src/services/anonymous.ts:37](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/services/anonymous.ts#L37)
 
 ___
 
@@ -77,7 +77,7 @@ ___
 
 #### Defined in
 
-[services/anonymous.ts:37](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/services/anonymous.ts#L37)
+[src/services/anonymous.ts:38](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/services/anonymous.ts#L38)
 
 ___
 
@@ -87,7 +87,7 @@ ___
 
 #### Defined in
 
-[services/anonymous.ts:44](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/services/anonymous.ts#L44)
+[src/services/anonymous.ts:45](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/services/anonymous.ts#L45)
 
 ___
 
@@ -97,7 +97,7 @@ ___
 
 #### Defined in
 
-[services/anonymous.ts:45](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/services/anonymous.ts#L45)
+[src/services/anonymous.ts:46](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/services/anonymous.ts#L46)
 
 ___
 
@@ -107,7 +107,7 @@ ___
 
 #### Defined in
 
-[services/anonymous.ts:40](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/services/anonymous.ts#L40)
+[src/services/anonymous.ts:41](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/services/anonymous.ts#L41)
 
 ___
 
@@ -117,7 +117,7 @@ ___
 
 #### Defined in
 
-[services/anonymous.ts:47](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/services/anonymous.ts#L47)
+[src/services/anonymous.ts:48](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/services/anonymous.ts#L48)
 
 ___
 
@@ -127,7 +127,7 @@ ___
 
 #### Defined in
 
-[services/anonymous.ts:39](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/services/anonymous.ts#L39)
+[src/services/anonymous.ts:40](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/services/anonymous.ts#L40)
 
 ___
 
@@ -137,4 +137,4 @@ ___
 
 #### Defined in
 
-[services/anonymous.ts:46](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/services/anonymous.ts#L46)
+[src/services/anonymous.ts:47](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/services/anonymous.ts#L47)

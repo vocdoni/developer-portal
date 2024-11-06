@@ -57,7 +57,7 @@ Service.constructor
 
 #### Defined in
 
-[services/csp.ts:29](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/services/csp.ts#L29)
+[src/services/csp.ts:29](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/services/csp.ts#L29)
 
 ## Methods
 
@@ -79,7 +79,7 @@ Service.constructor
 
 #### Defined in
 
-[services/csp.ts:64](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/services/csp.ts#L64)
+[src/services/csp.ts:64](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/services/csp.ts#L64)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-[services/csp.ts:49](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/services/csp.ts#L49)
+[src/services/csp.ts:49](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/services/csp.ts#L49)
 
 ___
 
@@ -124,7 +124,7 @@ ___
 
 #### Defined in
 
-[services/csp.ts:75](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/services/csp.ts#L75)
+[src/services/csp.ts:75](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/services/csp.ts#L75)
 
 ___
 
@@ -138,7 +138,7 @@ ___
 
 #### Defined in
 
-[services/csp.ts:43](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/services/csp.ts#L43)
+[src/services/csp.ts:43](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/services/csp.ts#L43)
 
 ___
 
@@ -158,7 +158,7 @@ ___
 
 #### Defined in
 
-[services/csp.ts:39](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/services/csp.ts#L39)
+[src/services/csp.ts:39](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/services/csp.ts#L39)
 
 ___
 
@@ -180,7 +180,7 @@ ___
 
 #### Defined in
 
-[services/csp.ts:79](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/services/csp.ts#L79)
+[src/services/csp.ts:79](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/services/csp.ts#L79)
 
 ___
 
@@ -200,7 +200,7 @@ ___
 
 #### Defined in
 
-[services/csp.ts:34](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/services/csp.ts#L34)
+[src/services/csp.ts:34](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/services/csp.ts#L34)
 
 ## Properties
 
@@ -214,7 +214,7 @@ CspServiceProperties.info
 
 #### Defined in
 
-[services/csp.ts:22](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/services/csp.ts#L22)
+[src/services/csp.ts:22](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/services/csp.ts#L22)
 
 ___
 
@@ -228,4 +228,4 @@ ___
 
 #### Defined in
 
-[services/service.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/services/service.ts#L6)
+[src/services/service.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/services/service.ts#L6)

@@ -52,7 +52,7 @@ Service.constructor
 
 #### Defined in
 
-[services/faucet.ts:38](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/services/faucet.ts#L38)
+[src/services/faucet.ts:38](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/services/faucet.ts#L38)
 
 ## Methods
 
@@ -76,7 +76,7 @@ The encoded faucet package
 
 #### Defined in
 
-[services/faucet.ts:49](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/services/faucet.ts#L49)
+[src/services/faucet.ts:49](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/services/faucet.ts#L49)
 
 ___
 
@@ -98,7 +98,7 @@ Parses a faucet package.
 
 #### Defined in
 
-[services/faucet.ts:58](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/services/faucet.ts#L58)
+[src/services/faucet.ts:58](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/services/faucet.ts#L58)
 
 ## Properties
 
@@ -112,7 +112,7 @@ FaucetServiceProperties.token\_limit
 
 #### Defined in
 
-[services/faucet.ts:31](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/services/faucet.ts#L31)
+[src/services/faucet.ts:31](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/services/faucet.ts#L31)
 
 ___
 
@@ -126,4 +126,4 @@ ___
 
 #### Defined in
 
-[services/service.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/services/service.ts#L6)
+[src/services/service.ts:6](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/services/service.ts#L6)

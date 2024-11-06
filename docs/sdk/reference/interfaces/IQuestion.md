@@ -8,6 +8,7 @@
 
 - [choices](IQuestion#choices)
 - [description](IQuestion#description)
+- [meta](IQuestion#meta)
 - [numAbstains](IQuestion#numabstains)
 - [title](IQuestion#title)
 
@@ -19,7 +20,7 @@
 
 #### Defined in
 
-[types/metadata/election.ts:34](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/types/metadata/election.ts#L34)
+[src/types/metadata/election.ts:39](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/types/metadata/election.ts#L39)
 
 ___
 
@@ -29,7 +30,17 @@ ___
 
 #### Defined in
 
-[types/metadata/election.ts:32](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/types/metadata/election.ts#L32)
+[src/types/metadata/election.ts:36](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/types/metadata/election.ts#L36)
+
+___
+
+### meta
+
+• `Optional` **meta**: `any`
+
+#### Defined in
+
+[src/types/metadata/election.ts:38](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/types/metadata/election.ts#L38)
 
 ___
 
@@ -39,7 +50,7 @@ ___
 
 #### Defined in
 
-[types/metadata/election.ts:33](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/types/metadata/election.ts#L33)
+[src/types/metadata/election.ts:37](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/types/metadata/election.ts#L37)
 
 ___
 
@@ -49,4 +60,4 @@ ___
 
 #### Defined in
 
-[types/metadata/election.ts:31](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/types/metadata/election.ts#L31)
+[src/types/metadata/election.ts:35](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/types/metadata/election.ts#L35)

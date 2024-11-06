@@ -7,7 +7,6 @@
 ### Properties
 
 - [anonymous](IElectionType#anonymous)
-- [autoStart](IElectionType#autostart)
 - [dynamicCensus](IElectionType#dynamiccensus)
 - [interruptible](IElectionType#interruptible)
 - [metadata](IElectionType#metadata)
@@ -23,19 +22,7 @@ Enable anonymous voting.
 
 #### Defined in
 
-[types/election/election.ts:92](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/types/election/election.ts#L92)
-
-___
-
-### autoStart
-
-• `Optional` **autoStart**: `boolean`
-
-If false, election will start PAUSED and will have to be resumed manually.
-
-#### Defined in
-
-[types/election/election.ts:76](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/types/election/election.ts#L76)
+[src/types/election/election.ts:88](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/types/election/election.ts#L88)
 
 ___
 
@@ -47,7 +34,7 @@ Can add more voters to the census tree during the election.
 
 #### Defined in
 
-[types/election/election.ts:84](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/types/election/election.ts#L84)
+[src/types/election/election.ts:80](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/types/election/election.ts#L80)
 
 ___
 
@@ -59,7 +46,7 @@ The process can be paused and resumed.
 
 #### Defined in
 
-[types/election/election.ts:80](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/types/election/election.ts#L80)
+[src/types/election/election.ts:76](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/types/election/election.ts#L76)
 
 ___
 
@@ -78,7 +65,7 @@ If the metadata has to be encrypted or not.
 
 #### Defined in
 
-[types/election/election.ts:96](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/types/election/election.ts#L96)
+[src/types/election/election.ts:92](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/types/election/election.ts#L92)
 
 ___
 
@@ -90,4 +77,4 @@ Protect the results until the end of the process if true. It will show live resu
 
 #### Defined in
 
-[types/election/election.ts:88](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/types/election/election.ts#L88)
+[src/types/election/election.ts:84](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/types/election/election.ts#L84)

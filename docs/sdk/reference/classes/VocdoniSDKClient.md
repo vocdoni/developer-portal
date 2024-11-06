@@ -25,6 +25,9 @@ point.
 - [calculateElectionCost](VocdoniSDKClient#calculateelectioncost)
 - [cancelElection](VocdoniSDKClient#cancelelection)
 - [changeElectionCensus](VocdoniSDKClient#changeelectioncensus)
+- [changeElectionDuration](VocdoniSDKClient#changeelectionduration)
+- [changeElectionEndDate](VocdoniSDKClient#changeelectionenddate)
+- [changeElectionMaxCensusSize](VocdoniSDKClient#changeelectionmaxcensussize)
 - [continueElection](VocdoniSDKClient#continueelection)
 - [createElection](VocdoniSDKClient#createelection)
 - [createElectionSteps](VocdoniSDKClient#createelectionsteps)
@@ -107,7 +110,7 @@ To instantiate the client just pass the `ClientOptions` you want or empty object
 
 #### Defined in
 
-[client.ts:128](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/client.ts#L128)
+[src/client.ts:152](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/client.ts#L152)
 
 ## Account Methods
 
@@ -133,7 +136,7 @@ Registers an account against vochain, so it can create new elections.
 
 #### Defined in
 
-[client.ts:421](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/client.ts#L421)
+[src/client.ts:445](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/client.ts#L445)
 
 ___
 
@@ -159,7 +162,7 @@ Creates an account with information.
 
 #### Defined in
 
-[client.ts:331](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/client.ts#L331)
+[src/client.ts:355](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/client.ts#L355)
 
 ___
 
@@ -181,7 +184,7 @@ Fetches account.
 
 #### Defined in
 
-[client.ts:198](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/client.ts#L198)
+[src/client.ts:226](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/client.ts#L226)
 
 ___
 
@@ -203,7 +206,7 @@ Fetches account information.
 
 #### Defined in
 
-[client.ts:179](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/client.ts#L179)
+[src/client.ts:207](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/client.ts#L207)
 
 ___
 
@@ -225,7 +228,7 @@ Updates an account with information
 
 #### Defined in
 
-[client.ts:375](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/client.ts#L375)
+[src/client.ts:399](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/client.ts#L399)
 
 ___
 
@@ -251,7 +254,7 @@ The cost in tokens.
 
 #### Defined in
 
-[client.ts:1043](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/client.ts#L1043)
+[src/client.ts:1136](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/client.ts#L1136)
 
 ___
 
@@ -273,13 +276,13 @@ Cancels an election.
 
 #### Defined in
 
-[client.ts:634](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/client.ts#L634)
+[src/client.ts:658](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/client.ts#L658)
 
 ___
 
 ### changeElectionCensus
 
-▸ **changeElectionCensus**(`electionId`, `censusId`, `censusURI`): `Promise`\<`void`\>
+▸ **changeElectionCensus**(`electionId`, `censusId`, `censusURI`, `maxCensusSize?`): `Promise`\<`void`\>
 
 Changes the census of an election.
 
@@ -290,6 +293,7 @@ Changes the census of an election.
 | `electionId` | `string` | The id of the election |
 | `censusId` | `string` | The new census id (root) |
 | `censusURI` | `string` | The new census URI |
+| `maxCensusSize?` | `number` | The new max census size |
 
 #### Returns
 
@@ -297,7 +301,76 @@ Changes the census of an election.
 
 #### Defined in
 
-[client.ts:680](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/client.ts#L680)
+[src/client.ts:705](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/client.ts#L705)
+
+___
+
+### changeElectionDuration
+
+▸ **changeElectionDuration**(`electionId`, `duration`): `Promise`\<`void`\>
+
+Changes the duration of an election.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `electionId` | `string` | The id of the election |
+| `duration` | `number` | The new duration of the election |
+
+#### Returns
+
+`Promise`\<`void`\>
+
+#### Defined in
+
+[src/client.ts:758](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/client.ts#L758)
+
+___
+
+### changeElectionEndDate
+
+▸ **changeElectionEndDate**(`electionId`, `endDate`): `Promise`\<`void`\>
+
+Changes the end date of an election.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `electionId` | `string` | The id of the election |
+| `endDate` | `string` \| `number` \| `Date` | The new end date |
+
+#### Returns
+
+`Promise`\<`void`\>
+
+#### Defined in
+
+[src/client.ts:779](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/client.ts#L779)
+
+___
+
+### changeElectionMaxCensusSize
+
+▸ **changeElectionMaxCensusSize**(`electionId`, `maxCensusSize`): `Promise`\<`void`\>
+
+Changes the max census size of an election.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `electionId` | `string` | The id of the election |
+| `maxCensusSize` | `number` | The new max census size |
+
+#### Returns
+
+`Promise`\<`void`\>
+
+#### Defined in
+
+[src/client.ts:736](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/client.ts#L736)
 
 ___
 
@@ -319,7 +392,7 @@ Continues an election.
 
 #### Defined in
 
-[client.ts:644](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/client.ts#L644)
+[src/client.ts:668](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/client.ts#L668)
 
 ___
 
@@ -343,7 +416,7 @@ Resulting election id.
 
 #### Defined in
 
-[client.ts:515](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/client.ts#L515)
+[src/client.ts:539](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/client.ts#L539)
 
 ___
 
@@ -367,7 +440,7 @@ The async step returns.
 
 #### Defined in
 
-[client.ts:532](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/client.ts#L532)
+[src/client.ts:556](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/client.ts#L556)
 
 ___
 
@@ -389,7 +462,7 @@ Ends an election.
 
 #### Defined in
 
-[client.ts:614](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/client.ts#L614)
+[src/client.ts:638](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/client.ts#L638)
 
 ___
 
@@ -413,13 +486,13 @@ The cost in tokens.
 
 #### Defined in
 
-[client.ts:1033](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/client.ts#L1033)
+[src/client.ts:1126](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/client.ts#L1126)
 
 ___
 
 ### fetchElection
 
-▸ **fetchElection**(`electionId?`, `password?`): `Promise`\<[`PublishedElection`](PublishedElection.md) \| [`ArchivedElection`](ArchivedElection)\>
+▸ **fetchElection**(`electionId?`, `password?`): `Promise`\<[`PublishedElection`](PublishedElection)\>
 
 Fetches info about an election.
 
@@ -432,34 +505,33 @@ Fetches info about an election.
 
 #### Returns
 
-`Promise`\<[`PublishedElection`](PublishedElection.md) \| [`ArchivedElection`](ArchivedElection)\>
+`Promise`\<[`PublishedElection`](PublishedElection)\>
 
 #### Defined in
 
-[client.ts:227](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/client.ts#L227)
+[src/client.ts:255](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/client.ts#L255)
 
 ___
 
 ### fetchElections
 
-▸ **fetchElections**(`account?`, `page?`): `Promise`\<([`PublishedElection`](PublishedElection.md) \| [`ArchivedElection`](ArchivedElection.md) \| [`InvalidElection`](InvalidElection))[]\>
+▸ **fetchElections**(`params?`): `Promise`\<[`ElectionListWithPagination`](../sdk-reference#electionlistwithpagination)\>
 
-Fetches info about all elections created by the given account
+Fetches info about all elections
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `account?` | `string` | `undefined` | specify an account to search for. Otherwise client wallet address is used. |
-| `page` | `number` | `0` | - |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `params?` | `Partial`\<[`FetchElectionsParametersWithPagination`](../sdk-reference#fetchelectionsparameterswithpagination)\> | The parameters to filter the elections |
 
 #### Returns
 
-`Promise`\<([`PublishedElection`](PublishedElection.md) \| [`ArchivedElection`](ArchivedElection.md) \| [`InvalidElection`](InvalidElection))[]\>
+`Promise`\<[`ElectionListWithPagination`](../sdk-reference#electionlistwithpagination)\>
 
 #### Defined in
 
-[client.ts:241](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/client.ts#L241)
+[src/client.ts:268](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/client.ts#L268)
 
 ___
 
@@ -481,7 +553,7 @@ Pauses an election.
 
 #### Defined in
 
-[client.ts:624](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/client.ts#L624)
+[src/client.ts:648](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/client.ts#L648)
 
 ___
 
@@ -503,7 +575,7 @@ Sets an election id. Required by other methods like submitVote or createElection
 
 #### Defined in
 
-[client.ts:169](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/client.ts#L169)
+[src/client.ts:197](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/client.ts#L197)
 
 ___
 
@@ -529,7 +601,7 @@ The id of the vote
 
 #### Defined in
 
-[client.ts:726](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/client.ts#L726)
+[src/client.ts:819](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/client.ts#L819)
 
 ___
 
@@ -551,7 +623,7 @@ Checks if the user is able to vote
 
 #### Defined in
 
-[client.ts:758](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/client.ts#L758)
+[src/client.ts:851](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/client.ts#L851)
 
 ___
 
@@ -573,7 +645,7 @@ Checks if the user is in census.
 
 #### Defined in
 
-[client.ts:704](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/client.ts#L704)
+[src/client.ts:797](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/client.ts#L797)
 
 ___
 
@@ -587,7 +659,7 @@ Submits a vote.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `vote` | [`Vote`](Vote.md) \| [`AnonymousVote`](AnonymousVote.md) \| [`CspVote`](CspVote) | The vote (or votes) to be sent. |
+| `vote` | [`Vote`](Vote.md) \| [`CspVote`](CspVote.md) \| [`AnonymousVote`](AnonymousVote) | The vote (or votes) to be sent. |
 
 #### Returns
 
@@ -597,7 +669,7 @@ Vote confirmation id.
 
 #### Defined in
 
-[client.ts:806](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/client.ts#L806)
+[src/client.ts:899](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/client.ts#L899)
 
 ___
 
@@ -611,7 +683,7 @@ Submits a vote by steps.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `vote` | [`Vote`](Vote.md) \| [`AnonymousVote`](AnonymousVote.md) \| [`CspVote`](CspVote) | The vote (or votes) to be sent. |
+| `vote` | [`Vote`](Vote.md) \| [`CspVote`](CspVote.md) \| [`AnonymousVote`](AnonymousVote) | The vote (or votes) to be sent. |
 
 #### Returns
 
@@ -621,7 +693,7 @@ Vote confirmation id.
 
 #### Defined in
 
-[client.ts:823](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/client.ts#L823)
+[src/client.ts:916](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/client.ts#L916)
 
 ___
 
@@ -643,7 +715,7 @@ Checks how many times a user can submit their vote
 
 #### Defined in
 
-[client.ts:768](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/client.ts#L768)
+[src/client.ts:861](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/client.ts#L861)
 
 ___
 
@@ -669,7 +741,7 @@ Resulting CID
 
 #### Defined in
 
-[client.ts:1053](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/client.ts#L1053)
+[src/client.ts:1146](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/client.ts#L1146)
 
 ___
 
@@ -693,7 +765,7 @@ Account data information updated with new balance
 
 #### Defined in
 
-[client.ts:488](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/client.ts#L488)
+[src/client.ts:512](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/client.ts#L512)
 
 ___
 
@@ -715,7 +787,7 @@ Publishes the given census.
 
 #### Defined in
 
-[client.ts:955](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/client.ts#L955)
+[src/client.ts:1048](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/client.ts#L1048)
 
 ___
 
@@ -729,7 +801,7 @@ ___
 
 #### Defined in
 
-[client.ts:991](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/client.ts#L991)
+[src/client.ts:1084](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/client.ts#L1084)
 
 ___
 
@@ -750,7 +822,7 @@ ___
 
 #### Defined in
 
-[client.ts:1002](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/client.ts#L1002)
+[src/client.ts:1095](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/client.ts#L1095)
 
 ___
 
@@ -772,7 +844,7 @@ ___
 
 #### Defined in
 
-[client.ts:995](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/client.ts#L995)
+[src/client.ts:1088](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/client.ts#L1088)
 
 ___
 
@@ -786,7 +858,7 @@ ___
 
 #### Defined in
 
-[client.ts:986](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/client.ts#L986)
+[src/client.ts:1079](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/client.ts#L1079)
 
 ___
 
@@ -808,7 +880,7 @@ ___
 
 #### Defined in
 
-[client.ts:1007](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/client.ts#L1007)
+[src/client.ts:1100](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/client.ts#L1100)
 
 ___
 
@@ -830,7 +902,7 @@ Fetches the information of a given census.
 
 #### Defined in
 
-[client.ts:964](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/client.ts#L964)
+[src/client.ts:1057](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/client.ts#L1057)
 
 ___
 
@@ -846,7 +918,7 @@ Fetches blockchain costs information if needed.
 
 #### Defined in
 
-[client.ts:1015](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/client.ts#L1015)
+[src/client.ts:1108](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/client.ts#L1108)
 
 ___
 
@@ -862,7 +934,7 @@ Fetches blockchain information if needed and returns the chain id.
 
 #### Defined in
 
-[client.ts:1023](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/client.ts#L1023)
+[src/client.ts:1116](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/client.ts#L1116)
 
 ___
 
@@ -884,7 +956,7 @@ Fetches circuits for anonymous voting
 
 #### Defined in
 
-[client.ts:973](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/client.ts#L973)
+[src/client.ts:1066](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/client.ts#L1066)
 
 ___
 
@@ -900,7 +972,7 @@ Fetches a faucet payload. Only for development.
 
 #### Defined in
 
-[client.ts:1061](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/client.ts#L1061)
+[src/client.ts:1154](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/client.ts#L1154)
 
 ___
 
@@ -923,7 +995,7 @@ Fetches proof that an address is part of the specified census.
 
 #### Defined in
 
-[client.ts:946](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/client.ts#L946)
+[src/client.ts:1039](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/client.ts#L1039)
 
 ___
 
@@ -941,7 +1013,7 @@ The private key.
 
 #### Defined in
 
-[client.ts:918](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/client.ts#L918)
+[src/client.ts:1011](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/client.ts#L1011)
 
 ___
 
@@ -963,7 +1035,7 @@ Parses a faucet package.
 
 #### Defined in
 
-[client.ts:1071](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/client.ts#L1071)
+[src/client.ts:1164](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/client.ts#L1164)
 
 ___
 
@@ -985,7 +1057,7 @@ Send tokens from one account to another.
 
 #### Defined in
 
-[client.ts:459](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/client.ts#L459)
+[src/client.ts:483](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/client.ts#L483)
 
 ___
 
@@ -1007,7 +1079,7 @@ Sets circuits for anonymous voting
 
 #### Defined in
 
-[client.ts:982](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/client.ts#L982)
+[src/client.ts:1075](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/client.ts#L1075)
 
 ___
 
@@ -1033,7 +1105,7 @@ it fails.
 
 #### Defined in
 
-[client.ts:1084](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/client.ts#L1084)
+[src/client.ts:1177](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/client.ts#L1177)
 
 ___
 
@@ -1057,7 +1129,7 @@ The deterministic wallet.
 
 #### Defined in
 
-[client.ts:930](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/client.ts#L930)
+[src/client.ts:1023](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/client.ts#L1023)
 
 ## Properties
 
@@ -1067,7 +1139,7 @@ The deterministic wallet.
 
 #### Defined in
 
-[client.ts:112](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/client.ts#L112)
+[src/client.ts:136](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/client.ts#L136)
 
 ___
 
@@ -1077,7 +1149,7 @@ ___
 
 #### Defined in
 
-[client.ts:106](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/client.ts#L106)
+[src/client.ts:130](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/client.ts#L130)
 
 ___
 
@@ -1087,7 +1159,7 @@ ___
 
 #### Defined in
 
-[client.ts:104](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/client.ts#L104)
+[src/client.ts:128](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/client.ts#L128)
 
 ___
 
@@ -1097,7 +1169,7 @@ ___
 
 #### Defined in
 
-[client.ts:105](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/client.ts#L105)
+[src/client.ts:129](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/client.ts#L129)
 
 ___
 
@@ -1107,7 +1179,7 @@ ___
 
 #### Defined in
 
-[client.ts:107](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/client.ts#L107)
+[src/client.ts:131](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/client.ts#L131)
 
 ___
 
@@ -1117,7 +1189,7 @@ ___
 
 #### Defined in
 
-[client.ts:116](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/client.ts#L116)
+[src/client.ts:140](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/client.ts#L140)
 
 ___
 
@@ -1127,7 +1199,7 @@ ___
 
 #### Defined in
 
-[client.ts:108](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/client.ts#L108)
+[src/client.ts:132](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/client.ts#L132)
 
 ___
 
@@ -1137,7 +1209,7 @@ ___
 
 #### Defined in
 
-[client.ts:117](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/client.ts#L117)
+[src/client.ts:141](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/client.ts#L141)
 
 ___
 
@@ -1147,7 +1219,7 @@ ___
 
 #### Defined in
 
-[client.ts:111](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/client.ts#L111)
+[src/client.ts:135](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/client.ts#L135)
 
 ___
 
@@ -1157,7 +1229,7 @@ ___
 
 #### Defined in
 
-[client.ts:110](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/client.ts#L110)
+[src/client.ts:134](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/client.ts#L134)
 
 ___
 
@@ -1167,7 +1239,7 @@ ___
 
 #### Defined in
 
-[client.ts:114](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/client.ts#L114)
+[src/client.ts:138](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/client.ts#L138)
 
 ___
 
@@ -1177,14 +1249,14 @@ ___
 
 #### Defined in
 
-[client.ts:109](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/client.ts#L109)
+[src/client.ts:133](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/client.ts#L133)
 
 ___
 
 ### wallet
 
-• **wallet**: `Signer` \| `Wallet`
+• **wallet**: `Signer` \| `Wallet` \| [`RemoteSigner`](RemoteSigner)
 
 #### Defined in
 
-[client.ts:115](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/client.ts#L115)
+[src/client.ts:139](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/client.ts#L139)

@@ -22,7 +22,7 @@ If the vote is anonymous
 
 #### Defined in
 
-[api/election.ts:53](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/election.ts#L53)
+[src/api/election.ts:51](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/election.ts#L51)
 
 ___
 
@@ -34,7 +34,7 @@ Cost from weight of the election
 
 #### Defined in
 
-[api/election.ts:68](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/election.ts#L68)
+[src/api/election.ts:66](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/election.ts#L66)
 
 ___
 
@@ -46,7 +46,7 @@ If the vote is encrypted
 
 #### Defined in
 
-[api/election.ts:58](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/election.ts#L58)
+[src/api/election.ts:56](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/election.ts#L56)
 
 ___
 
@@ -58,7 +58,7 @@ If the vote is serial
 
 #### Defined in
 
-[api/election.ts:48](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/election.ts#L48)
+[src/api/election.ts:46](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/election.ts#L46)
 
 ___
 
@@ -70,4 +70,4 @@ If the vote values are unique
 
 #### Defined in
 
-[api/election.ts:63](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/election.ts#L63)
+[src/api/election.ts:61](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/election.ts#L61)

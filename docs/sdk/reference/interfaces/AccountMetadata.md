@@ -25,7 +25,7 @@ More info: https://vocdoni.io/docs/#/architecture/components/entity?id=meta
 
 #### Defined in
 
-[types/metadata/account.ts:53](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/types/metadata/account.ts#L53)
+[src/types/metadata/account.ts:53](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/types/metadata/account.ts#L53)
 
 ___
 
@@ -35,7 +35,7 @@ ___
 
 #### Defined in
 
-[types/metadata/account.ts:50](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/types/metadata/account.ts#L50)
+[src/types/metadata/account.ts:50](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/types/metadata/account.ts#L50)
 
 ___
 
@@ -53,7 +53,7 @@ ___
 
 #### Defined in
 
-[types/metadata/account.ts:57](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/types/metadata/account.ts#L57)
+[src/types/metadata/account.ts:57](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/types/metadata/account.ts#L57)
 
 ___
 
@@ -67,7 +67,7 @@ ___
 
 #### Defined in
 
-[types/metadata/account.ts:62](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/types/metadata/account.ts#L62)
+[src/types/metadata/account.ts:62](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/types/metadata/account.ts#L62)
 
 ___
 
@@ -77,7 +77,7 @@ ___
 
 #### Defined in
 
-[types/metadata/account.ts:52](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/types/metadata/account.ts#L52)
+[src/types/metadata/account.ts:52](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/types/metadata/account.ts#L52)
 
 ___
 
@@ -87,7 +87,7 @@ ___
 
 #### Defined in
 
-[types/metadata/account.ts:55](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/types/metadata/account.ts#L55)
+[src/types/metadata/account.ts:55](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/types/metadata/account.ts#L55)
 
 ___
 
@@ -97,4 +97,4 @@ ___
 
 #### Defined in
 
-[types/metadata/account.ts:49](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/types/metadata/account.ts#L49)
+[src/types/metadata/account.ts:49](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/types/metadata/account.ts#L49)

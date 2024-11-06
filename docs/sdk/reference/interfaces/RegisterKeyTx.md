@@ -22,7 +22,7 @@ New key to register
 
 #### Defined in
 
-[api/chain/transactions.ts:121](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain/transactions.ts#L121)
+[src/api/chain/transactions.ts:122](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/chain/transactions.ts#L122)
 
 ___
 
@@ -34,7 +34,7 @@ Unique number per vote attempt, so that replay attacks can't reuse this payload
 
 #### Defined in
 
-[api/chain/transactions.ts:115](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain/transactions.ts#L115)
+[src/api/chain/transactions.ts:116](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/chain/transactions.ts#L116)
 
 ___
 
@@ -46,7 +46,7 @@ The process for which the vote is casted
 
 #### Defined in
 
-[api/chain/transactions.ts:117](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain/transactions.ts#L117)
+[src/api/chain/transactions.ts:118](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/chain/transactions.ts#L118)
 
 ___
 
@@ -58,7 +58,7 @@ Franchise proof
 
 #### Defined in
 
-[api/chain/transactions.ts:119](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain/transactions.ts#L119)
+[src/api/chain/transactions.ts:120](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/chain/transactions.ts#L120)
 
 ___
 
@@ -70,4 +70,4 @@ Weight to delegate to newKey
 
 #### Defined in
 
-[api/chain/transactions.ts:123](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain/transactions.ts#L123)
+[src/api/chain/transactions.ts:124](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/chain/transactions.ts#L124)

@@ -22,7 +22,7 @@
 
 #### Defined in
 
-[types/election/published.ts:15](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/types/election/published.ts#L15)
+[src/types/election/published.ts:16](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/types/election/published.ts#L16)
 
 ___
 
@@ -32,7 +32,7 @@ ___
 
 #### Defined in
 
-[types/election/published.ts:14](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/types/election/published.ts#L14)
+[src/types/election/published.ts:15](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/types/election/published.ts#L15)
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 #### Defined in
 
-[types/election/published.ts:13](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/types/election/published.ts#L13)
+[src/types/election/published.ts:14](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/types/election/published.ts#L14)
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 #### Defined in
 
-[types/election/published.ts:16](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/types/election/published.ts#L16)
+[src/types/election/published.ts:17](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/types/election/published.ts#L17)
 
 ___
 
@@ -62,7 +62,7 @@ ___
 
 #### Defined in
 
-[types/election/published.ts:11](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/types/election/published.ts#L11)
+[src/types/election/published.ts:12](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/types/election/published.ts#L12)
 
 ___
 
@@ -72,7 +72,7 @@ ___
 
 #### Defined in
 
-[types/election/published.ts:17](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/types/election/published.ts#L17)
+[src/types/election/published.ts:18](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/types/election/published.ts#L18)
 
 ___
 
@@ -82,4 +82,4 @@ ___
 
 #### Defined in
 
-[types/election/published.ts:12](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/types/election/published.ts#L12)
+[src/types/election/published.ts:13](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/types/election/published.ts#L13)

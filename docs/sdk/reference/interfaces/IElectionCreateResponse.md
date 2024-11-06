@@ -20,7 +20,7 @@ The election identifier
 
 #### Defined in
 
-[api/election.ts:134](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/election.ts#L134)
+[src/api/election.ts:127](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/election.ts#L127)
 
 ___
 
@@ -32,7 +32,7 @@ The metadata URL
 
 #### Defined in
 
-[api/election.ts:139](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/election.ts#L139)
+[src/api/election.ts:132](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/election.ts#L132)
 
 ___
 
@@ -44,4 +44,4 @@ The hash of the transaction
 
 #### Defined in
 
-[api/election.ts:129](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/election.ts#L129)
+[src/api/election.ts:122](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/api/election.ts#L122)

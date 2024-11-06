@@ -46,7 +46,7 @@ assigned to each voter determines the credits they have available for voting.
 
 #### Defined in
 
-[types/election/election.ts:46](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/types/election/election.ts#L46)
+[src/types/election/election.ts:46](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/types/election/election.ts#L46)
 
 ___
 
@@ -59,7 +59,7 @@ several choices, even including quadratic voting scenarios.
 
 #### Defined in
 
-[types/election/election.ts:20](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/types/election/election.ts#L20)
+[src/types/election/election.ts:20](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/types/election/election.ts#L20)
 
 ___
 
@@ -76,7 +76,7 @@ this value should match the total number of choices available for voting.
 
 #### Defined in
 
-[types/election/election.ts:62](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/types/election/election.ts#L62)
+[src/types/election/election.ts:62](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/types/election/election.ts#L62)
 
 ___
 
@@ -91,7 +91,7 @@ A value of 0 implies no maximum limit or that this parameter is not applicable i
 
 #### Defined in
 
-[types/election/election.ts:69](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/types/election/election.ts#L69)
+[src/types/election/election.ts:69](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/types/election/election.ts#L69)
 
 ___
 
@@ -106,7 +106,7 @@ In the context of a quadratic voting system, this value should typically be set 
 
 #### Defined in
 
-[types/election/election.ts:53](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/types/election/election.ts#L53)
+[src/types/election/election.ts:53](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/types/election/election.ts#L53)
 
 ___
 
@@ -118,7 +118,7 @@ The number of times a voter con overwrite its vote (change vote option).
 
 #### Defined in
 
-[types/election/election.ts:15](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/types/election/election.ts#L15)
+[src/types/election/election.ts:15](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/types/election/election.ts#L15)
 
 ___
 
@@ -130,4 +130,4 @@ Voter can only select one answer for question
 
 #### Defined in
 
-[types/election/election.ts:11](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/types/election/election.ts#L11)
+[src/types/election/election.ts:11](https://github.com/vocdoni/vocdoni-sdk/blob/179c92b4cecfec787d968dc02b519f64ee15c5d3/src/types/election/election.ts#L11)
