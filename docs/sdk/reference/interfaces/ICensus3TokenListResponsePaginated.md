@@ -25,7 +25,7 @@ The pagination information
 
 #### Defined in
 
-[api/census3/token.ts:124](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/census3/token.ts#L124)
+[src/api/census3/token.ts:124](https://github.com/vocdoni/vocdoni-sdk/blob/09401e1099a0f03641b994ed392235bc78fec830/src/api/census3/token.ts#L124)
 
 ___
 
@@ -41,4 +41,4 @@ The list of the tokens
 
 #### Defined in
 
-[api/census3/token.ts:110](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/census3/token.ts#L110)
+[src/api/census3/token.ts:110](https://github.com/vocdoni/vocdoni-sdk/blob/09401e1099a0f03641b994ed392235bc78fec830/src/api/census3/token.ts#L110)
