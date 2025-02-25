@@ -6,10 +6,21 @@
 
 ### Properties
 
+- [signature](Tx#signature)
 - [tx](Tx#tx)
 - [txInfo](Tx#txinfo)
 
 ## Properties
+
+### signature
+
+• **signature**: `string`
+
+#### Defined in
+
+[src/api/chain/transactions.ts:54](https://github.com/vocdoni/vocdoni-sdk/blob/09401e1099a0f03641b994ed392235bc78fec830/src/api/chain/transactions.ts#L54)
+
+___
 
 ### tx
 
@@ -17,7 +28,7 @@
 
 #### Defined in
 
-[api/chain/transactions.ts:4](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain/transactions.ts#L4)
+[src/api/chain/transactions.ts:4](https://github.com/vocdoni/vocdoni-sdk/blob/09401e1099a0f03641b994ed392235bc78fec830/src/api/chain/transactions.ts#L4)
 
 ___
 
@@ -27,4 +38,4 @@ ___
 
 #### Defined in
 
-[api/chain/transactions.ts:53](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/chain/transactions.ts#L53)
+[src/api/chain/transactions.ts:53](https://github.com/vocdoni/vocdoni-sdk/blob/09401e1099a0f03641b994ed392235bc78fec830/src/api/chain/transactions.ts#L53)

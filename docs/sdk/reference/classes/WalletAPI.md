@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `API`
+- [`API`](API)
 
   ↳ **`WalletAPI`**
 
@@ -33,4 +33,4 @@
 
 #### Defined in
 
-[api/wallet.ts:29](https://github.com/vocdoni/vocdoni-sdk/blob/2ec9544f0d792289a6e591f4f269c47a23ca40a1/src/api/wallet.ts#L29)
+[src/api/wallet.ts:29](https://github.com/vocdoni/vocdoni-sdk/blob/09401e1099a0f03641b994ed392235bc78fec830/src/api/wallet.ts#L29)
