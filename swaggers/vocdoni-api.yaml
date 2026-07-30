@@ -1231,6 +1231,12 @@ paths:
           name: organizationId
           schema:
             type: string
+        - description: >-
+            Filter by organization name, case-insensitive substring match (ASCII case folding only)
+          in: query
+          name: name
+          schema:
+            type: string
       responses:
         '200':
           content:
@@ -1312,6 +1318,22 @@ paths:
         List all organizations
         (deprecated, in favor of /chain/organizations?page=xxx)
       summary: List organizations
+  /chain/stats:
+    get:
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/api.ChainStats'
+          description: OK
+      tags:
+        - Chain
+      description: |-
+        Returns the chain-wide counters in a single response: transactions
+        grouped by type, elections grouped by status, and the total number of
+        accounts, elections and votes. Buckets with a count of zero are omitted.
+      summary: Chain statistics
   /chain/transactions:
     get:
       parameters:
@@ -1394,6 +1416,47 @@ paths:
         description: Base64 payload string containing transaction data and signature
         required: true
       summary: Submit transaction
+  /chain/transactions/batch:
+    post:
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/api.TransactionBatchResult'
+          description: Every input transaction grouped as submitted / failed / pending
+      tags:
+        - Chain
+      description: >
+        Submits several pre-signed transactions in a single request, **in order**.
+
+
+        The transactions are submitted sequentially and **fail-fast**: the first one that fails to be submitted is placed in `failed` and submission stops, leaving the remaining transactions in `pending`. Every input transaction is returned in exactly one group:
+
+
+        - `submitted`: accepted by the mempool (broadcast).
+
+        - `failed`: the first transaction that failed to be submitted (its `error` is set).
+
+        - `pending`: the transactions after the failed one, which were not sent.
+
+
+        For a `NewProcess` (create election) transaction, each item includes its predicted `processId`.
+
+
+        > **Note:** `submitted` means the mempool accepted the broadcast, **not** that the transaction is included in a block. A mempool-accepted transaction can still be discarded at commit (for example, a stale or contended account nonce, which is not checked at mempool admission). The caller must confirm each `submitted` item on-chain (e.g. via [`chain/transactions/reference/{hash}`](transaction-by-reference)) and resubmit any that did not land, together with the `failed` and `pending` items, reusing the same account nonces.
+
+
+        Intended for creating multiple dependent processes at once: build and sign all transactions up front with contiguous account nonces (and, for elections, predicted `processId`s), then submit them together so they land in the same block in order.
+
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/api.TransactionBatch'
+        description: 'List of base64 transaction payloads, submitted in order'
+        required: true
+      summary: Submit a batch of transactions
   /chain/transactions/cost:
     get:
       responses:
@@ -1854,6 +1917,61 @@ paths:
 
         For discovering more about the on-chain results, please refer to [chainlink-tally](https://github.com/vocdoni/chainlink-tally#chainlink-tally) repository.
       summary: Election results
+  '/elections/{electionId}/votes/activity':
+    get:
+      parameters:
+        - description: Election id
+          in: path
+          name: electionId
+          required: true
+          schema:
+            type: string
+        - description: 'Time bucket granularity, either hour (default) or day'
+          in: query
+          name: bucket
+          schema:
+            enum:
+              - hour
+              - day
+            type: string
+        - description: Only count votes cast at or after this RFC3339 timestamp
+          in: query
+          name: from
+          schema:
+            type: string
+        - description: Only count votes cast at or before this RFC3339 timestamp
+          in: query
+          name: to
+          schema:
+            type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/api.VoteActivity'
+          description: OK
+      tags:
+        - Elections
+      description: >-
+        Returns the number of votes cast in an election, aggregated into time buckets.
+
+        Only buckets containing at least one vote are returned, ordered chronologically.
+
+        A vote is dated by the block that included it. Votes whose block is not indexed
+
+        cannot be dated, and are reported apart as undatedVotes rather than bucketed.
+
+        Since a vote is keyed by its nullifier, an overwritten vote is dated by the block
+
+        of its last overwrite, so the count of a past bucket can decrease over time.
+
+        The from and to params bound the aggregation; by default it covers the whole election.
+
+        At most 1000 buckets are aggregated per request: a wider window needs a coarser
+
+        bucket or a narrower from/to range.
+      summary: Vote activity over time
   '/elections/{electionId}/votes/count':
     get:
       parameters:
@@ -2405,6 +2523,43 @@ components:
           example: 432
           type: integer
       type: object
+    api.ChainStats:
+      properties:
+        accountCount:
+          description: AccountCount is the total number of indexed accounts.
+          example: 2618
+          type: integer
+        electionCount:
+          description: ElectionCount is the total number of indexed elections.
+          example: 2602
+          type: integer
+        electionCountByStatus:
+          additionalProperties:
+            format: int64
+            type: integer
+          description: >-
+            ElectionCountByStatus holds the number of elections in each status, keyed
+
+            by the same status names reported by the election endpoints (READY,
+
+            ENDED...). A status with no election is absent rather than zero.
+          type: object
+        txCountByType:
+          additionalProperties:
+            format: int64
+            type: integer
+          description: >-
+            TxCountByType holds the number of transactions of each type, keyed by the
+
+            same type names accepted by the transaction list type filter. A type with
+
+            no transaction indexed is absent rather than reported as zero.
+          type: object
+        voteCount:
+          description: VoteCount is the total number of indexed votes.
+          example: 134523
+          type: integer
+      type: object
     api.ChoiceMetadata:
       properties:
         meta: {}
@@ -2435,6 +2590,16 @@ components:
           type: string
         finalResults:
           type: boolean
+        keyRevealHeight:
+          description: >-
+            KeyRevealHeight and KeyRevealTxHash locate the transaction that revealed
+
+            the encryption keys of an encrypted election. Both are omitted unless the
+
+            keys were revealed and the revealing transaction is indexed.
+          type: integer
+        keyRevealTxHash:
+          type: string
         manuallyEnded:
           type: boolean
         metadata: {}
@@ -2454,6 +2619,14 @@ components:
           type: string
         tallyMode:
           $ref: '#/components/schemas/api.TallyMode'
+        title:
+          description: >-
+            Title comes from the election off-chain metadata. It is omitted when it
+
+            has not been resolved, in which case a client that needs it has to fall
+
+            back to the election detail endpoint for that row.
+          type: string
         voteCount:
           type: integer
         voteMode:
@@ -2599,6 +2772,16 @@ components:
           type: string
         finalResults:
           type: boolean
+        keyRevealHeight:
+          description: >-
+            KeyRevealHeight and KeyRevealTxHash locate the transaction that revealed
+
+            the encryption keys of an encrypted election. Both are omitted unless the
+
+            keys were revealed and the revealing transaction is indexed.
+          type: integer
+        keyRevealTxHash:
+          type: string
         manuallyEnded:
           type: boolean
         organizationId:
@@ -2612,6 +2795,14 @@ components:
         startDate:
           type: string
         status:
+          type: string
+        title:
+          description: >-
+            Title comes from the election off-chain metadata. It is omitted when it
+
+            has not been resolved, in which case a client that needs it has to fall
+
+            back to the election detail endpoint for that row.
           type: string
         voteCount:
           type: integer
@@ -2678,6 +2869,8 @@ components:
       properties:
         limit:
           type: integer
+        name:
+          type: string
         organizationId:
           type: string
         page:
@@ -2685,9 +2878,19 @@ components:
       type: object
     api.OrganizationSummary:
       properties:
+        avatar:
+          type: string
         electionCount:
           example: 1
           type: integer
+        name:
+          description: >-
+            Name and Avatar come from the organization off-chain metadata. They are
+
+            omitted when it has not been resolved, in which case a client that needs
+
+            them has to fall back to the account endpoint for that row.
+          type: string
         organizationID:
           example: 3.1407138843303053e+47
           type: string
@@ -2747,10 +2950,81 @@ components:
         hash:
           type: string
           x-omitempty: true
+        processId:
+          type: string
+          x-omitempty: true
         response:
           format: base64
           type: string
           x-omitempty: true
+      type: object
+    api.TransactionBatch:
+      properties:
+        transactions:
+          items:
+            $ref: '#/components/schemas/api.TransactionPayload'
+          type: array
+      type: object
+    api.TransactionBatchItem:
+      properties:
+        code:
+          description: >-
+            Code is the mempool CheckTx response code. For submitted items it is always
+
+            0: a non-zero CheckTx code is turned into a submit error, so the item lands
+
+            in Failed instead. The field is kept for parity with the single-tx endpoint.
+          type: integer
+          x-omitempty: true
+        error:
+          type: string
+          x-omitempty: true
+        hash:
+          type: string
+          x-omitempty: true
+        metadataURL:
+          type: string
+          x-omitempty: true
+        processId:
+          type: string
+          x-omitempty: true
+      type: object
+    api.TransactionBatchResult:
+      properties:
+        failed:
+          description: >-
+            Failed holds the first transaction that failed to be submitted (Error set);
+
+            submission stops there.
+          items:
+            $ref: '#/components/schemas/api.TransactionBatchItem'
+          type: array
+        pending:
+          description: >-
+            Pending are the transactions after the failed one that were not sent.
+          items:
+            $ref: '#/components/schemas/api.TransactionBatchItem'
+          type: array
+        submitted:
+          description: 'Submitted are the transactions accepted by the mempool, in order.'
+          items:
+            $ref: '#/components/schemas/api.TransactionBatchItem'
+          type: array
+      type: object
+    api.TransactionPayload:
+      properties:
+        metadata:
+          description: >-
+            Metadata is the optional raw election metadata for a NewProcess payload. When
+
+            provided, its CID must match the metadata URI in the transaction, and it is
+
+            pinned to IPFS on submission (same as POST /elections).
+          format: base64
+          type: string
+        payload:
+          format: base64
+          type: string
       type: object
     api.TransactionsList:
       properties:
@@ -2803,6 +3077,15 @@ components:
         blockHeight:
           type: integer
           x-omitempty: true
+        blockTime:
+          description: >-
+            BlockTime is the timestamp of the block that included the vote. It is the
+
+            same instant as Date, reported on list rows so that clients don't need a
+
+            per-vote request to date them. Omitted when the block is not indexed.
+          type: string
+          x-omitempty: true
         date:
           description: Date when the vote was emitted
           type: string
@@ -2847,6 +3130,38 @@ components:
         weight:
           description: '[math/big.Int.String]'
           type: string
+          x-omitempty: true
+      type: object
+    api.VoteActivity:
+      properties:
+        bucket:
+          description: 'Bucket is the granularity used, either "hour" or "day".'
+          example: hour
+          type: string
+        buckets:
+          description: >-
+            Buckets holds one entry per time bucket that contains at least one vote,
+
+            ordered chronologically.
+          items:
+            $ref: '#/components/schemas/indexertypes.VoteBucket'
+          type: array
+        totalVotes:
+          description: >-
+            TotalVotes is the sum of the counts of all buckets, so it does not include
+
+            UndatedVotes. With no time window requested, the vote count of the election
+
+            is TotalVotes plus UndatedVotes.
+          type: integer
+        undatedVotes:
+          description: >-
+            UndatedVotes is the number of votes which could not be placed in any bucket,
+
+            because the block that included them is not indexed. It is not affected by the
+
+            requested time window, and is omitted when every vote could be dated.
+          type: integer
           x-omitempty: true
       type: object
     api.VoteMode:
@@ -3263,6 +3578,13 @@ components:
           example: Vote
           type: string
       type: object
+    indexertypes.VoteBucket:
+      properties:
+        count:
+          type: integer
+        period:
+          type: string
+      type: object
     models.AdminTx:
       properties:
         address:
@@ -3306,6 +3628,7 @@ components:
         - 14
         - 15
         - 16
+      format: int32
       type: integer
       x-enum-varnames:
         - CensusOrigin_CENSUS_UNKNOWN
@@ -3327,6 +3650,7 @@ components:
         - 4
         - 5
         - 6
+      format: int32
       type: integer
       x-enum-varnames:
         - Census_UNKNOWN
@@ -3540,6 +3864,7 @@ components:
         - 3
         - 4
         - 5
+      format: int32
       type: integer
       x-enum-varnames:
         - ProcessStatus_PROCESS_UNKNOWN
@@ -3571,6 +3896,7 @@ components:
         question:
           items:
             items:
+              format: int32
               type: integer
             type: array
           type: array
@@ -3629,6 +3955,7 @@ components:
         delegates:
           items:
             items:
+              format: int32
               type: integer
             type: array
           type: array
@@ -3741,6 +4068,7 @@ components:
         - 12
         - 13
         - 14
+      format: int32
       type: integer
       x-enum-varnames:
         - SourceNetworkId_UNKNOWN
@@ -3787,6 +4115,7 @@ components:
         - 26
         - 27
         - 28
+      format: int32
       type: integer
       x-enum-varnames:
         - TxType_TX_UNKNOWN
